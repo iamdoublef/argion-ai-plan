@@ -17,6 +17,6 @@ commit: 62d23f6
 - ptr: `git:62d23f6:research/yjs-ai-transform/deliverables/executive-summary.md` — 上游依赖：AI转型高管摘要v2.0
 
 ### 2026-02-17 PPT文案+演讲注解v2完成：9页PPT + LLM-ready备注 + 完整数据嵌入 + Q&A预案
-commit: 2064235
-- ptr: `git:2064235:research/yjs-boss-pitch/ppt-script-v1.md` — PPT文案+演讲注解v1（9页，纯文案版）
-- ptr: `git:2064235:research/yjs-boss-pitch/ppt-script-v2.md` — PPT文案+演讲注解v2（9页，LLM生成PPT用：每页含【备注/Prompt】代码块 + 完整原文vs AI生成内容对比 + 6维度加权评分35.7%→89.6% + 143K+评价痛点数据 + 6个Q&A预案）
+commit: 0e0ad9d
+- ptr: `git:0e0ad9d:research/yjs-boss-pitch/ppt-script-v1.md` — PPT文案+演讲注解v1（9页，纯文案版）
+- ptr: `git:0e0ad9d:research/yjs-boss-pitch/ppt-script-v2.md` — PPT文案+演讲注解v2（9页，LLM生成PPT用：每页含【备注/Prompt】代码块 + 完整原文vs AI生成内容对比 + 6维度加权评分35.7%→89.6% + 143K+评价痛点数据 + 6个Q&A预案）
