@@ -27,5 +27,5 @@ commit: 7a97eb0
 - ptr: `git:7a97eb0:research/yjs-mfg-ai/data/b5-ai-design.md` — B5 AI辅助产品设计（成熟度2-4/5，概念设计提速50-70%⚠️）
 
 ### 2026-02-17 阶段3：10场景横向对比汇总报告
-commit: uncommitted
-- ptr: `file:research/yjs-mfg-ai/analysis/scenarios-comparison.md` — 横向对比（P0: A5+B5 / P1: B2+A3+B1 / P2: 其余5个）
+commit: cc35c7f
+- ptr: `git:cc35c7f:research/yjs-mfg-ai/analysis/scenarios-comparison.md` — 横向对比（P0: A5+B5 / P1: B2+A3+B1 / P2: 其余5个）
