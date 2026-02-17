@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>真空封口机竞品智能分析仪表盘</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#1a1a2e;--card:#16213e;--border:#0f3460;--text:#e0e0e0;--accent:#e94560;
+--fs:#0f3460;--an:#16213e;--ne:#533483;--mu:#e07c24;--ge:#1a936f;--we:#f39c12;--vesta:#e94560}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.header{text-align:center;padding:24px 16px 8px;border-bottom:1px solid var(--border)}
+.header h1{font-size:1.6rem;color:#fff;margin-bottom:4px}
+.header p{font-size:.85rem;color:#888}
+.tabs{display:flex;gap:4px;padding:12px 16px;overflow-x:auto;border-bottom:1px solid var(--border);background:#12122a}
+.tab-btn{padding:8px 16px;border:1px solid var(--border);border-radius:6px;background:transparent;color:var(--text);cursor:pointer;white-space:nowrap;font-size:.85rem;transition:.2s}
+.tab-btn:hover{background:var(--card)}
+.tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tab-content{display:none;padding:20px 16px;max-width:1400px;margin:0 auto}
+.tab-content.active{display:block}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(500px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px}
+.card h3{font-size:1rem;color:#fff;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.1)}
+.cb{position:relative;width:100%;min-height:350px}
+.cb canvas{width:100%!important}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08)}
+th{color:#aaa;font-weight:600;font-size:.78rem;text-transform:uppercase}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:16px}
+.kpi{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center}
+.kpi .v{font-size:1.8rem;font-weight:700;color:#fff}
+.kpi .l{font-size:.78rem;color:#888;margin-top:4px}
+.ck{color:#1a936f}.cx{color:#e94560}
+.ic{background:linear-gradient(135deg,rgba(233,69,96,.08),rgba(83,52,131,.08));border:1px solid rgba(233,69,96,.3);border-radius:8px;padding:16px;margin-top:12px}
+.ic h4{color:var(--accent);font-size:.9rem;margin-bottom:6px}
+.ic p{font-size:.82rem;line-height:1.5;color:#ccc}
+.p0{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75rem;font-weight:700;background:rgba(233,69,96,.25);color:#e94560}
+.p1{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75rem;font-weight:700;background:rgba(243,156,18,.25);color:#f39c12}
+.p2{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75rem;font-weight:700;background:rgba(26,147,111,.25);color:#1a936f}
+.tree{display:flex;flex-direction:column;align-items:center;gap:0;font-size:.85rem}
+.tree .node{background:var(--card);border:2px solid;border-radius:8px;padding:12px 20px;text-align:center;position:relative}
+.tree .line{width:2px;height:24px;background:#555}
+.tree .hline{display:flex;align-items:flex-start;gap:40px;position:relative}
+.tree .hline::before{content:'';position:absolute;top:0;left:25%;right:25%;height:2px;background:#555}
+.tree .branch{display:flex;flex-direction:column;align-items:center}
+.vs-table td,.vs-table th{padding:6px 10px;font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>真空封口机竞品智能分析仪表盘</h1>
+<p>数据采集日期: 2026-02-15 | Argion / Vesta Precision / Wevac vs FoodSaver / Anova / Nesco / Mueller / GERYON</p>
+</div>
+<div class="tabs">
+<button class="tab-btn active" onclick="switchTab(0)">市场概览</button>
+<button class="tab-btn" onclick="switchTab(1)">技术规格对比</button>
+<button class="tab-btn" onclick="switchTab(2)">价值曲线</button>
+<button class="tab-btn" onclick="switchTab(3)">用户评价分析</button>
+<button class="tab-btn" onclick="switchTab(4)">品牌关系</button>
+<button class="tab-btn" onclick="switchTab(5)">战略建议</button>
+</div>
+
+<!-- Tab 1: 市场概览 -->
+<div class="tab-content active" id="tab0">
+<div class="kpi-row">
+<div class="kpi"><div class="v" style="color:#e94560">67</div><div class="l">Vesta封口机评价数</div></div>
+<div class="kpi"><div class="v" style="color:#f39c12">65.6K</div><div class="l">Wevac旗舰袋评价数</div></div>
+<div class="kpi"><div class="v">30.1K</div><div class="l">FoodSaver V4400评价</div></div>
+<div class="kpi"><div class="v" style="color:#1a936f">30.4K</div><div class="l">GERYON评价(共享池)</div></div>
+<div class="kpi"><div class="v">$22.8B</div><div class="l">全球真空包装市场(2024)</div></div>
+<div class="kpi"><div class="v">~5%</div><div class="l">行业CAGR</div></div>
+</div>
+<div class="grid g2">
+<div class="card"><h3>市场气泡图: 价格 vs 评分 vs 评价数</h3><div class="cb"><canvas id="bubbleChart"></canvas></div></div>
+<div class="card"><h3>Amazon "vacuum sealer" 搜索排名 Top 10</h3><div class="cb"><canvas id="rankChart"></canvas></div></div>
+</div>
+</div>
+
+<!-- Tab 2: 技术规格对比 -->
+<div class="tab-content" id="tab1">
+<div class="grid g2">
+<div class="card"><h3>技术雷达图: 核心参数对比</h3><div class="cb"><canvas id="radarChart"></canvas></div></div>
+<div class="card"><h3>功能特性矩阵</h3><div style="overflow-x:auto">
+<table>
+<tr><th>功能</th><th style="color:#e94560">Vesta V22</th><th style="color:#0f3460">FoodSaver</th><th style="color:#16213e">Anova Pro</th><th style="color:#533483">Nesco VS-12</th><th style="color:#e07c24">Mueller</th><th style="color:#1a936f">GERYON</th></tr>
+<tr><td>干湿模式</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td></tr>
+<tr><td>脉冲真空</td><td class="cx">&#10007;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td></tr>
+<tr><td>罐装密封</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td></tr>
+<tr><td>内置切刀</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="cx">&#10007;</td><td class="ck">&#10003;</td></tr>
+<tr><td>卷袋存储</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td></tr>
+<tr><td>自动袋口检测</td><td class="cx">&#10007;</td><td class="ck">&#10003;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td></tr>
+<tr><td>液体直封</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="ck">&#10003;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td></tr>
+<tr><td>Smart Seal连续密封</td><td class="ck" style="font-weight:700">&#10003; 专利</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td></tr>
+<tr><td>App/IoT</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td><td class="cx">&#10007;</td></tr>
+</table></div></div>
+</div>
+</div>
+
+<!-- Tab 3: 价值曲线 -->
+<div class="tab-content" id="tab2">
+<div class="card"><h3>价值曲线: 12要素竞争力评分 (1-10)</h3><div class="cb" style="min-height:420px"><canvas id="valueChart"></canvas></div></div>
+<div class="grid g3" style="margin-top:16px">
+<div class="ic"><h4>消除 (Eliminate)</h4><p>消除"ODM不做品牌"的惯性思维; 消除对FoodSaver专用袋锁定策略的模仿</p></div>
+<div class="ic"><h4>减少 (Reduce)</h4><p>减少SKU分散投入 -- 40+款聚焦2-3款打爆Amazon; 减少对官网DTC的依赖</p></div>
+<div class="ic"><h4>提升 (Raise)</h4><p>提升Amazon搜索可见度(当前Top 20不可见); 提升产品耐久性口碑(直击Nesco寿命痛点); 提升品牌叙事</p></div>
+<div class="ic"><h4>创造 (Create)</h4><p>创造"智能封口机"品类(全行业空白); 创造"制造商直营"信任模式; 创造Wevac耗材流量向Vesta封口机的交叉导流</p></div>
+</div>
+</div>
+
+<!-- Tab 4: 用户评价分析 -->
+<div class="tab-content" id="tab3">
+<div class="grid g2">
+<div class="card"><h3>好评维度对比 (提及次数)</h3><div class="cb"><canvas id="posChart"></canvas></div></div>
+<div class="card"><h3>差评维度对比 (提及次数)</h3><div class="cb"><canvas id="negChart"></canvas></div></div>
+</div>
+<div class="grid g3" style="margin-top:16px">
+<div class="ic"><h4>Nesco寿命问题最突出</h4><p>Lifespan维度490条负面评价 -- "3-4个月后停止工作"，是唯一被Amazon标记为纯负面的维度。Vesta的Smart Seal专利+Argion制造品质可作为"更耐用"的差异化卖点。</p></div>
+<div class="ic"><h4>密封性是全行业痛点</h4><p>4个品牌的密封性维度均为"混合"评价: FoodSaver 679 / Nesco 793 / Mueller 620 / Anova 199。这是整个品类的共同挑战。</p></div>
+<div class="ic"><h4>Mueller功能故障投诉量最大</h4><p>Functionality维度1.4K条混合评价，大量提及"真空部分不工作"。Mueller主力款库存仅1件，可能即将停售。</p></div>
+</div>
+</div>
+
+<!-- Tab 5: 品牌关系 -->
+<div class="tab-content" id="tab4">
+<div class="grid g2">
+<div class="card"><h3>Argion 品牌关系树</h3>
+<div style="padding:20px 0">
+<div style="text-align:center;margin-bottom:0">
+<div style="display:inline-block;background:#1a1a2e;border:2px solid #e94560;border-radius:10px;padding:14px 28px">
+<div style="font-weight:700;color:#fff;font-size:1rem">Guangzhou Argion Electric Appliance Co., Ltd.</div>
+<div style="color:#888;font-size:.78rem;margin-top:4px">广州亚俊氏真空科技股份有限公司 | 成立2007年 | ODM/OEM</div>
+<div style="color:#e94560;font-size:.75rem;margin-top:2px">Metro铂金供应商(全球仅3家) | 100名工程师 | 60+款产品</div>
+</div>
+</div>
+<div style="text-align:center"><div style="width:2px;height:20px;background:#555;margin:0 auto"></div></div>
+<div style="text-align:center;margin-bottom:0">
+<div style="display:inline-block;background:#1a1a2e;border:2px solid #888;border-radius:8px;padding:10px 24px">
+<div style="color:#ccc;font-size:.85rem">美国运营: Precision Appliance Technology, Inc. (PAT), Seattle</div>
+</div>
+</div>
+<div style="text-align:center"><div style="width:2px;height:20px;background:#555;margin:0 auto"></div></div>
+<div style="display:flex;justify-content:center;gap:40px;position:relative">
+<div style="position:absolute;top:0;left:calc(50% - 120px);width:240px;height:2px;background:#555"></div>
+<div style="text-align:center">
+<div style="width:2px;height:20px;background:#555;margin:0 auto"></div>
+<div style="background:#1a1a2e;border:2px solid #f39c12;border-radius:10px;padding:14px 20px;min-width:220px">
+<div style="font-weight:700;color:#f39c12;font-size:1rem">Wevac</div>
+<div style="color:#ccc;font-size:.78rem;margin-top:4px">耗材品牌 | "Waste Less, Enjoy More"</div>
+<div style="color:#888;font-size:.75rem;margin-top:2px">真空袋为核心(95%+ SKU)</div>
+<div style="color:#f39c12;font-size:.75rem;margin-top:2px">旗舰65.6K评价 | BSR #948</div>
+</div>
+</div>
+<div style="text-align:center">
+<div style="width:2px;height:20px;background:#555;margin:0 auto"></div>
+<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:10px;padding:14px 20px;min-width:220px">
+<div style="font-weight:700;color:#e94560;font-size:1rem">Vesta Precision</div>
+<div style="color:#ccc;font-size:.78rem;margin-top:4px">设备+耗材全线品牌</div>
+<div style="color:#888;font-size:.75rem;margin-top:2px">封口机+低温烹饪+制冷+袋子</div>
+<div style="color:#e94560;font-size:.75rem;margin-top:2px">旗舰67评价 | Shopify DTC</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card"><h3>Wevac vs Vesta 定位对比</h3>
+<table class="vs-table">
+<tr><th>维度</th><th style="color:#f39c12">Wevac</th><th style="color:#e94560">Vesta Precision</th></tr>
+<tr><td>核心品类</td><td>真空袋 (占95%+ SKU)</td><td>封口机+低温烹饪器+真空袋</td></tr>
+<tr><td>价格带</td><td>$9.99 - $32.99</td><td>$29.99 - $7,397</td></tr>
+<tr><td>Amazon BSR</td><td>#948 Kitchen & Dining</td><td>#23,683 Kitchen & Dining</td></tr>
+<tr><td>旗舰评价量</td><td>65,600+ (4.6★)</td><td>67 (4.0★)</td></tr>
+<tr><td>官网</td><td>仅B2B联系表单</td><td>完整Shopify DTC商城</td></tr>
+<tr><td>品牌叙事</td><td>无 (纯功能导向)</td><td>有 (25年研发/精准温控)</td></tr>
+<tr><td>社交媒体</td><td>无可见账号</td><td>FB/TW/IG/YT/TikTok/LinkedIn</td></tr>
+<tr><td>目标客户</td><td>家庭用户 (走量)</td><td>家庭+商用 (走价值)</td></tr>
+</table>
+<div class="ic" style="margin-top:16px"><h4>SKU编码铁证: Argion = Vesta</h4><p>Vesta产品SKU直接使用Argion内部型号: TRAY-YJS604 → YJS604cfm, TRAY-YJS780 → YJS780cf。YJS前缀 = 亚俊氏内部编码体系。</p></div>
+</div>
+</div>
+</div>
+
+<!-- Tab 6: 战略建议 -->
+<div class="tab-content" id="tab5">
+<div class="kpi-row">
+<div class="kpi"><div class="v">$22.8B</div><div class="l">全球真空包装市场规模</div></div>
+<div class="kpi"><div class="v">~5%</div><div class="l">行业CAGR</div></div>
+<div class="kpi"><div class="v" style="color:#f39c12">65.6K</div><div class="l">Wevac旗舰评价数</div></div>
+<div class="kpi"><div class="v" style="color:#e94560">449:1</div><div class="l">FoodSaver vs Vesta评价比</div></div>
+<div class="kpi"><div class="v">60+</div><div class="l">Argion产品型号数</div></div>
+<div class="kpi"><div class="v">3</div><div class="l">生产基地(广州/佛山/新加坡)</div></div>
+</div>
+<div class="card"><h3>行动优先级矩阵</h3>
+<table>
+<tr><th>优先级</th><th>行动</th><th>预期效果</th><th>投入</th><th>时间线</th></tr>
+<tr><td><span class="p0">P0</span></td><td>V22/V23解决缺货, Amazon铺货</td><td>基础前提, 无货则一切无效</td><td>供应链</td><td>0-3月</td></tr>
+<tr><td><span class="p0">P0</span></td><td>Amazon Listing优化 (突出185W/-28.3inHg/Smart Seal)</td><td>提升搜索可见性和转化率</td><td>低</td><td>0-3月</td></tr>
+<tr><td><span class="p0">P0</span></td><td>Sponsored Products广告投放</td><td>打破零可见性困局</td><td>中</td><td>0-3月</td></tr>
+<tr><td><span class="p1">P1</span></td><td>评价积累 (Vine计划+售后邀评)</td><td>从67突破至500+</td><td>中</td><td>0-6月</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Wevac袋 → Vesta封口机交叉导流</td><td>利用65.6K评价流量池</td><td>低</td><td>0-6月</td></tr>
+<tr><td><span class="p1">P1</span></td><td>向Wirecutter/CNET/Serious Eats送测</td><td>获取权威背书</td><td>低</td><td>6-12月</td></tr>
+<tr><td><span class="p1">P1</span></td><td>VestaEco可降解袋差异化推广</td><td>独家卖点(全球首家双认证)</td><td>低-中</td><td>0-12月</td></tr>
+<tr><td><span class="p2">P2</span></td><td>App/IoT智能封口机研发</td><td>开辟全行业空白蓝海</td><td>高</td><td>12-24月</td></tr>
+<tr><td><span class="p2">P2</span></td><td>内容营销+YouTube频道建设</td><td>品牌认知度提升</td><td>中</td><td>6-18月</td></tr>
+<tr><td><span class="p2">P2</span></td><td>生态捆绑 (封口机+低温烹饪器套装)</td><td>提升客单价和LTV</td><td>中</td><td>12-24月</td></tr>
+</table>
+</div>
+<div class="grid g2" style="margin-top:16px">
+<div class="ic"><h4>核心判断: 制造巨人, 品牌婴儿</h4><p>Argion制造能力(60+型号/7项认证/3基地/Metro铂金)远超所有竞品, 但Vesta封口机67条评价远低于最弱竞品Mueller的12.6K。制造能力到品牌价值的转化率极低。Wevac耗材(65.6K评价)是体系内最大用户触点。</p></div>
+<div class="ic"><h4>$80-$200价格带品牌真空</h4><p>白牌占据$25-$80, FoodSaver/Nesco占据$130-$340。中间地带缺乏有品牌力的产品。Vesta V22官网$129.99恰好处于这个区间, 技术参数(185W/-28.3inHg)碾压同价位竞品。</p></div>
+</div>
+</div>
+
+<script>
+const C={vesta:'#e94560',fs:'#0f3460',an:'#4a6fa5',ne:'#533483',mu:'#e07c24',ge:'#1a936f',we:'#f39c12'};
+const dOpt={responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#ccc',font:{size:11}}}}};
+function switchTab(i){document.querySelectorAll('.tab-content').forEach((t,j)=>{t.classList.toggle('active',j===i)});document.querySelectorAll('.tab-btn').forEach((b,j)=>{b.classList.toggle('active',j===i)})}
+
+// Tab 1: Bubble Chart
+new Chart(document.getElementById('bubbleChart'),{type:'bubble',data:{datasets:[
+{label:'FoodSaver V4400',data:[{x:139.99,y:4.6,r:22}],backgroundColor:'rgba(15,52,96,.7)',borderColor:C.fs},
+{label:'FoodSaver FM2100',data:[{x:139.91,y:4.6,r:14}],backgroundColor:'rgba(15,52,96,.5)',borderColor:C.fs},
+{label:'Anova Pro',data:[{x:109.99,y:4.0,r:10}],backgroundColor:'rgba(74,111,165,.6)',borderColor:C.an},
+{label:'Nesco VS-12',data:[{x:128.99,y:4.3,r:17}],backgroundColor:'rgba(83,52,131,.6)',borderColor:C.ne},
+{label:'Mueller',data:[{x:39.99,y:4.1,r:16}],backgroundColor:'rgba(224,124,36,.6)',borderColor:C.mu},
+{label:'GERYON',data:[{x:38.99,y:4.3,r:22}],backgroundColor:'rgba(26,147,111,.6)',borderColor:C.ge},
+{label:'Vesta Vac\'n Seal',data:[{x:299,y:4.0,r:4}],backgroundColor:'rgba(233,69,96,.7)',borderColor:C.vesta}
+]},options:{...dOpt,scales:{x:{title:{display:true,text:'Amazon价格 ($)',color:'#aaa'},ticks:{color:'#888'},grid:{color:'rgba(255,255,255,.05)'}},y:{title:{display:true,text:'评分 (★)',color:'#aaa'},min:3.5,max:5,ticks:{color:'#888'},grid:{color:'rgba(255,255,255,.05)'}}},plugins:{...dOpt.plugins,tooltip:{callbacks:{label:function(c){const d=c.raw;return c.dataset.label+': $'+d.x+', '+d.y+'★'}}}}}});
+
+// Tab 1: Rank Chart
+new Chart(document.getElementById('rankChart'),{type:'bar',data:{labels:['白牌 75KPa','Chef Preserve','NutriChef','Bonsenkitchen','白牌 95KPa','MEGAWISE','Bonsenkitchen','Nesco VS-12','Chef Preserve','FoodSaver FM2100'],datasets:[{label:'月销量(估)',data:[0,20000,4000,0,0,6000,2000,2000,3000,5000],backgroundColor:['#555',C.mu,'#4a6fa5','#4a6fa5','#555','#4a6fa5','#4a6fa5',C.ne,C.mu,C.fs]},{label:'评价数',data:[58,10600,8300,54,54,12700,3000,14500,2900,9600],backgroundColor:['rgba(85,85,85,.4)','rgba(224,124,36,.4)','rgba(74,111,165,.4)','rgba(74,111,165,.4)','rgba(85,85,85,.4)','rgba(74,111,165,.4)','rgba(74,111,165,.4)','rgba(83,52,131,.4)','rgba(224,124,36,.4)','rgba(15,52,96,.4)']}]},options:{...dOpt,indexAxis:'y',scales:{x:{ticks:{color:'#888'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#ccc',font:{size:10}},grid:{display:false}}}}});
+
+// Tab 2: Radar Chart
+new Chart(document.getElementById('radarChart'),{type:'radar',data:{labels:['功率(W)','真空强度(inHg)','功能数','密封模式数','轻量化(反向)'],datasets:[
+{label:'Vesta V22',data:[185/5.5,28.3/2.83,7/0.7,3/0.3,(10-5.3)/0.47],borderColor:C.vesta,backgroundColor:'rgba(233,69,96,.1)',pointBackgroundColor:C.vesta},
+{label:'Nesco VS-12',data:[130/5.5,25.1/2.83,5/0.7,5/0.3,(10-6)/0.47],borderColor:C.ne,backgroundColor:'rgba(83,52,131,.1)',pointBackgroundColor:C.ne},
+{label:'Anova Pro',data:[110/5.5,21/2.83,7/0.7,3/0.3,(10-5)/0.47],borderColor:C.an,backgroundColor:'rgba(74,111,165,.1)',pointBackgroundColor:C.an},
+{label:'GERYON',data:[110/5.5,0,4/0.7,2/0.3,(10-2.2)/0.47],borderColor:C.ge,backgroundColor:'rgba(26,147,111,.1)',pointBackgroundColor:C.ge},
+{label:'FoodSaver Elite',data:[186/5.5,0,6/0.7,6/0.3,(10-9.5)/0.47],borderColor:C.fs,backgroundColor:'rgba(15,52,96,.1)',pointBackgroundColor:C.fs}
+]},options:{...dOpt,scales:{r:{angleLines:{color:'rgba(255,255,255,.1)'},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#ccc',font:{size:11}},ticks:{display:false},suggestedMin:0,suggestedMax:10}}}});
+
+// Tab 3: Value Curve
+new Chart(document.getElementById('valueChart'),{type:'line',data:{labels:['价格竞争力','密封性能','产品耐用性','功能丰富度','易用性','工业设计','智能化程度','品牌知名度','渠道覆盖','耗材生态','售后服务','产品线完整度'],datasets:[
+{label:'Vesta V22',data:[4,8,6,8,6,7,1,2,4,7,5,9],borderColor:C.vesta,backgroundColor:'rgba(233,69,96,.05)',tension:.3,borderWidth:3,pointRadius:4},
+{label:'FoodSaver',data:[3,6,7,9,7,6,2,10,10,9,9,8],borderColor:C.fs,backgroundColor:'transparent',tension:.3,borderWidth:2,pointRadius:3},
+{label:'Anova Pro',data:[6,7,5,7,6,8,2,7,7,5,5,4],borderColor:C.an,backgroundColor:'transparent',tension:.3,borderWidth:2,pointRadius:3},
+{label:'Nesco VS-12',data:[5,7,3,7,8,5,1,6,6,5,3,6],borderColor:C.ne,backgroundColor:'transparent',tension:.3,borderWidth:2,pointRadius:3},
+{label:'Mueller',data:[9,4,4,4,8,4,1,4,2,3,2,2],borderColor:C.mu,backgroundColor:'transparent',tension:.3,borderWidth:2,pointRadius:3},
+{label:'GERYON',data:[9,4,3,3,7,5,1,4,2,5,3,2],borderColor:C.ge,backgroundColor:'transparent',tension:.3,borderWidth:2,pointRadius:3}
+]},options:{...dOpt,scales:{y:{min:0,max:10,ticks:{color:'#888',stepSize:2},grid:{color:'rgba(255,255,255,.05)'}},x:{ticks:{color:'#ccc',font:{size:10},maxRotation:45},grid:{color:'rgba(255,255,255,.03)'}}}}});
+
+// Tab 4: Positive Reviews
+new Chart(document.getElementById('posChart'),{type:'bar',data:{labels:['FoodSaver V4400','Nesco VS-12','Mueller','Anova Pro'],datasets:[
+{label:'功能性(Functionality)',data:[1500,1200,1400,325],backgroundColor:'rgba(233,69,96,.7)'},
+{label:'质量(Quality)',data:[1200,935,935,190],backgroundColor:'rgba(74,111,165,.7)'},
+{label:'易用性(Ease of use)',data:[697,763,1100,111],backgroundColor:'rgba(26,147,111,.7)'}
+]},options:{...dOpt,indexAxis:'y',scales:{x:{ticks:{color:'#888'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#ccc'},grid:{display:false}}}}});
+
+// Tab 4: Negative Reviews
+new Chart(document.getElementById('negChart'),{type:'bar',data:{labels:['FoodSaver V4400','Nesco VS-12','Mueller','Anova Pro'],datasets:[
+{label:'密封性(Seal)',data:[679,793,620,199],backgroundColor:'rgba(233,69,96,.7)'},
+{label:'吸力(Suction)',data:[0,288,413,110],backgroundColor:'rgba(243,156,18,.7)'},
+{label:'耐久性(Durability)',data:[270,490,0,0],backgroundColor:'rgba(83,52,131,.7)'},
+{label:'寿命(Lifespan)',data:[0,490,0,0],backgroundColor:'rgba(224,124,36,.7)'}
+]},options:{...dOpt,indexAxis:'y',scales:{x:{ticks:{color:'#888'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#ccc'},grid:{display:false}}}}});
+</script>
+</body>
+</html>
+

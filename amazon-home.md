@@ -1,0 +1,273 @@
+- generic [ref=e24]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "导视" [ref=e8] [cursor=pointer]:
+          - generic [ref=e26]:
+            - img
+        - link "YouTube 首页" [ref=e27] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e32]:
+            - img
+        - button "跳过导航" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: 跳过导航
+      - generic [ref=e11]:
+        - search [ref=e12]:
+          - generic [ref=e13]:
+            - combobox "搜索" [expanded] [ref=e41]
+            - button "Search" [ref=e17] [cursor=pointer]:
+              - generic [ref=e43]:
+                - img
+        - generic [ref=e45]:
+          - button "通过语音搜索内容" [ref=e47] [cursor=pointer]
+          - tooltip "tooltip"
+      - generic [ref=e53]:
+        - button "设置" [ref=e58] [cursor=pointer]
+        - link "登录" [ref=e62] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F%2540anovaculinary&hl=zh-CN&ec=65620
+          - generic [ref=e65]: 登录
+  - navigation [ref=e69]:
+    - generic [ref=e70]:
+      - link "首页" [ref=e72] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e74]: 首页
+      - link "Shorts" [ref=e76] [cursor=pointer]:
+        - /url: /shorts/
+        - generic [ref=e78]: Shorts
+      - link "订阅" [ref=e80] [cursor=pointer]:
+        - /url: /feed/subscriptions
+        - generic [ref=e82]: 订阅
+      - link "我" [ref=e84] [cursor=pointer]:
+        - /url: /feed/you
+        - generic [ref=e86]: 我
+  - generic [ref=e87]:
+    - main [ref=e88]:
+      - generic [ref=e95]:
+        - generic [ref=e111]:
+          - heading "Anova Culinary" [level=1] [ref=e113]
+          - generic [ref=e114]:
+            - generic [ref=e116]: "@Anovaculinary"
+            - generic [ref=e117]: •
+            - generic [ref=e118]:
+              - generic [ref=e119]: 1.46万位订阅者
+              - generic [ref=e120]: •
+              - generic [ref=e121]: 195 个视频
+          - generic [ref=e123] [cursor=pointer]:
+            - generic [ref=e124]: "The Anova Precision Cooker is the world’s top-selling sous vide device. It’s incredibly easy to set up and delivers restaurant-quality results, every time. Use the WI-FI or Bluetooth connection to control your cook from wherever you are, and check out the Anova Culinary App for recipes and guides to get you inspired in the kitchen. Cook like a pro with Anova Precision Cooker: anovaculinary.com"
+            - button "说明。The Anova Precision Cooker is the world’s top-selling sous…点按即可了解详情。" [ref=e125]:
+              - generic [ref=e126]: …更多
+          - generic [ref=e127]:
+            - link "anovaculinary.com" [ref=e130] [cursor=pointer]:
+              - /url: https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqblMwWWpkTzFiV1BGa21ORXdIQ0JNQTM3akJoQXxBQ3Jtc0tsVDdpOHhnRGlVc1RqOTg4VnB3cXJ3UHF4eXlWWWIzTmM4RmtibkRna0NzX3FwbVBENXRKRkJQQWF2azB6dTBiLXpyWllNNEZlY1NpNzVYSFR0QmNONzkzMHRycWd2MXBINE9kRHhhc0hfbmp2SXpaNA&q=https%3A%2F%2Fanovaculinary.com
+            - button "和另外 8 个链接" [ref=e133] [cursor=pointer]
+          - button "订阅" [ref=e137] [cursor=pointer]:
+            - generic [ref=e138]: 订阅
+        - tablist [ref=e145]:
+          - tablist [ref=e149]:
+            - tab "首页" [selected] [ref=e150] [cursor=pointer]:
+              - generic [ref=e151]: 首页
+            - tab "视频" [ref=e152] [cursor=pointer]:
+              - generic [ref=e153]: 视频
+            - tab "Shorts" [ref=e154] [cursor=pointer]:
+              - generic [ref=e155]: Shorts
+            - tab "播放列表" [ref=e156] [cursor=pointer]:
+              - generic [ref=e157]: 播放列表
+            - button "搜索" [ref=e161] [cursor=pointer]:
+              - generic [ref=e164]:
+                - img
+      - generic [ref=e171]:
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - heading "NEW Anova Precision™ Oven 2.0 - importance of precision in the kitchen thanks to steam 1分钟37秒钟" [level=3] [ref=e180]:
+              - link "NEW Anova Precision™ Oven 2.0 - importance of precision in the kitchen thanks to steam" [ref=e181] [cursor=pointer]:
+                - /url: /watch?v=iNTCmUm-EOo
+            - generic [ref=e184]:
+              - generic [ref=e185]: 4,503次观看
+              - generic [ref=e186]: •1年前
+          - generic [ref=e187]:
+            - generic [ref=e189]: "Power your kitchen with Anova’s latest and greatest. The Anova Precision Oven 2.0 has all the features we've already revolutionized: bagless sous vide, precision temperature control, effortless steam cooking. This new version brings even more technology to the table. With leveled up features like an easy to use touchscreen, a smart camera with food recognition, and integrated cooking guides. It's a professional grade combi oven at a fraction of the price. It is the kitchen workhorse. It's a 12 and one. It can steam. It can convection bake, air fry, proof, bake, dehydrate, broil. So you too can cook like a pro. Get ready for restaurant level cooking right in your kitchen. One powerful appliance. Perfect results every time."
+            - button "了解详情" [ref=e190] [cursor=pointer]:
+              - link "了解详情" [ref=e192]:
+                - /url: /watch?v=iNTCmUm-EOo
+        - generic [ref=e196]:
+          - heading "视频" [level=2] [ref=e199]:
+            - link "视频" [ref=e202] [cursor=pointer]:
+              - /url: /@Anovaculinary/videos?view=0&sort=dd&shelf_id=1
+              - generic [ref=e203]: 视频
+          - generic [ref=e205]:
+            - generic [ref=e208]:
+              - generic [ref=e210]:
+                - link [ref=e212] [cursor=pointer]:
+                  - /url: /watch?v=thMqS8yQ6Yg&pp=0gcJCYcKAYcqIYzv
+                  - img [ref=e214]
+                  - img [ref=e217]:
+                    - generic [ref=e218]: 1:52
+                  - generic:
+                    - generic: 正在播放
+                    - generic:
+                      - img
+                - generic [ref=e219] [cursor=pointer]:
+                  - generic [ref=e221]:
+                    - heading "Anova Precision™ Oven 2.0 - innovation in the kitchen with Anova Intelligence 1分钟52秒钟" [level=3] [ref=e222]:
+                      - link "Anova Precision™ Oven 2.0 - innovation in the kitchen with Anova Intelligence 1分钟52秒钟" [ref=e223]:
+                        - /url: /watch?v=thMqS8yQ6Yg&pp=0gcJCYcKAYcqIYzv
+                        - text: Anova Precision™ Oven 2.0 - innovation in the kitchen with Anova Intelligence
+                    - generic [ref=e226]:
+                      - generic [ref=e227]: 8342次观看
+                      - generic [ref=e228]: •1年前
+                  - button "操作菜单" [ref=e231]
+              - generic [ref=e234]:
+                - link [ref=e236] [cursor=pointer]:
+                  - /url: /watch?v=XAt76eVgLEY
+                  - img [ref=e238]
+                  - img [ref=e241]:
+                    - generic [ref=e242]: 1:29
+                  - generic:
+                    - generic: 正在播放
+                    - generic:
+                      - img
+                - generic [ref=e243] [cursor=pointer]:
+                  - generic [ref=e245]:
+                    - heading "Anova Precision™ Oven 2.0 - bathless, bagless sous vide in a combi oven 1分钟29秒钟" [level=3] [ref=e246]:
+                      - link "Anova Precision™ Oven 2.0 - bathless, bagless sous vide in a combi oven 1分钟29秒钟" [ref=e247]:
+                        - /url: /watch?v=XAt76eVgLEY
+                        - text: Anova Precision™ Oven 2.0 - bathless, bagless sous vide in a combi oven
+                    - generic [ref=e250]:
+                      - generic [ref=e251]: 6751次观看
+                      - generic [ref=e252]: •1年前
+                  - button "操作菜单" [ref=e255]
+              - generic [ref=e258]:
+                - link [ref=e260] [cursor=pointer]:
+                  - /url: /watch?v=iNTCmUm-EOo
+                  - img [ref=e262]
+                  - img [ref=e265]:
+                    - generic [ref=e266]: 1:37
+                  - generic:
+                    - generic: 正在播放
+                    - generic:
+                      - img
+                - generic [ref=e267] [cursor=pointer]:
+                  - generic [ref=e269]:
+                    - heading "NEW Anova Precision™ Oven 2.0 - importance of precision in the kitchen thanks to steam 1分钟37秒钟" [level=3] [ref=e270]:
+                      - link "NEW Anova Precision™ Oven 2.0 - importance of precision in the kitchen thanks to steam 1分钟37秒钟" [ref=e271]:
+                        - /url: /watch?v=iNTCmUm-EOo
+                        - text: NEW Anova Precision™ Oven 2.0 - importance of precision in the kitchen thanks to steam
+                    - generic [ref=e274]:
+                      - generic [ref=e275]: 4503次观看
+                      - generic [ref=e276]: •1年前
+                  - button "操作菜单" [ref=e279]
+              - generic [ref=e282]:
+                - link [ref=e284] [cursor=pointer]:
+                  - /url: /watch?v=7d8UfasSAmg
+                  - img [ref=e286]
+                  - img [ref=e289]:
+                    - generic [ref=e290]: 0:31
+                  - generic:
+                    - generic: 正在播放
+                    - generic:
+                      - img
+                - generic [ref=e291] [cursor=pointer]:
+                  - generic [ref=e293]:
+                    - 'heading "Introducing the Anova Precision® Cooker Mini: Sous Vide Cooking Just Got A LOT More Affordable 31秒钟" [level=3] [ref=e294]':
+                      - 'link "Introducing the Anova Precision® Cooker Mini: Sous Vide Cooking Just Got A LOT More Affordable 31秒钟" [ref=e295]':
+                        - /url: /watch?v=7d8UfasSAmg
+                        - text: "Introducing the Anova Precision® Cooker Mini: Sous Vide Cooking Just Got A LOT More Affordable"
+                    - generic [ref=e298]:
+                      - generic [ref=e299]: 9226次观看
+                      - generic [ref=e300]: •1年前
+                  - button "操作菜单" [ref=e303]
+              - generic [ref=e306]:
+                - link [ref=e308] [cursor=pointer]:
+                  - /url: /watch?v=3uaoWEuyqkY
+                  - img [ref=e310]
+                  - img [ref=e313]:
+                    - generic [ref=e314]: 2:56
+                  - generic:
+                    - generic: 正在播放
+                    - generic:
+                      - img
+                - generic [ref=e315] [cursor=pointer]:
+                  - generic [ref=e317]:
+                    - heading "Steam Roasting Salmon in the Anova Precision Oven with Seamus Mullen 2分钟56秒钟" [level=3] [ref=e318]:
+                      - link "Steam Roasting Salmon in the Anova Precision Oven with Seamus Mullen 2分钟56秒钟" [ref=e319]:
+                        - /url: /watch?v=3uaoWEuyqkY
+                        - text: Steam Roasting Salmon in the Anova Precision Oven with Seamus Mullen
+                    - generic [ref=e322]:
+                      - generic [ref=e323]: 2786次观看
+                      - generic [ref=e324]: •1年前
+                  - button "操作菜单" [ref=e327]
+              - generic [ref=e330]:
+                - link [ref=e332] [cursor=pointer]:
+                  - /url: /watch?v=0IHJd9-BjX4
+                - generic [ref=e334] [cursor=pointer]:
+                  - generic [ref=e336]:
+                    - heading "Dry Sous Vide in the Anova Precision Oven with Seamus Mullen - Chicken and Sweet Potatoes 4分钟5秒钟" [level=3] [ref=e337]:
+                      - link "Dry Sous Vide in the Anova Precision Oven with Seamus Mullen - Chicken and Sweet Potatoes 4分钟5秒钟" [ref=e338]:
+                        - /url: /watch?v=0IHJd9-BjX4
+                        - text: Dry Sous Vide in the Anova Precision Oven with Seamus Mullen - Chicken and Sweet Potatoes
+                    - generic [ref=e341]:
+                      - generic [ref=e342]: 3132次观看
+                      - generic [ref=e343]: •1年前
+                  - button "操作菜单" [ref=e346]
+            - button "下一页" [ref=e350] [cursor=pointer]:
+              - generic [ref=e354]:
+                - img
+        - generic [ref=e360]:
+          - generic [ref=e361]:
+            - heading "Shorts" [level=2] [ref=e365]:
+              - generic [ref=e367]: Shorts
+            - button "其他操作" [ref=e371] [cursor=pointer]
+          - generic [ref=e374]:
+            - generic [ref=e377]:
+              - generic [ref=e379]:
+                - link [ref=e380] [cursor=pointer]:
+                  - /url: /shorts/ZhQ0gR3jTcU
+                - generic [ref=e384] [cursor=pointer]:
+                  - link "The NEW Anova Precision Oven" [ref=e385]:
+                    - /url: /shorts/ZhQ0gR3jTcU
+                  - generic [ref=e386]: 4874次观看
+                - button "其他操作" [ref=e388] [cursor=pointer]
+              - generic [ref=e395]:
+                - link [ref=e396] [cursor=pointer]:
+                  - /url: /shorts/tAfvgRbtnCk
+                - generic [ref=e400] [cursor=pointer]:
+                  - 'link "Combi ovens & cooking sous vide at home is the only way to go #cooking #anovafoodnerd #food #kitchen" [ref=e401]':
+                    - /url: /shorts/tAfvgRbtnCk
+                  - generic [ref=e402]: 3094次观看
+                - button "其他操作" [ref=e404] [cursor=pointer]
+              - generic [ref=e411]:
+                - link [ref=e412] [cursor=pointer]:
+                  - /url: /shorts/bMgrrAI3S98
+                - generic [ref=e416] [cursor=pointer]:
+                  - link "Fermented Thai Chili w/the Anova Precision Chamber Vacuum Sealer and Cody Splane" [ref=e417]:
+                    - /url: /shorts/bMgrrAI3S98
+                  - generic [ref=e418]: 1万次观看
+                - button "其他操作" [ref=e420] [cursor=pointer]
+              - generic [ref=e427]:
+                - link [ref=e428] [cursor=pointer]:
+                  - /url: /shorts/1xSLDthhVWI
+                - generic [ref=e432] [cursor=pointer]:
+                  - 'link "Seamus Mullen air fries some shrimp tacos in the Anova Precision Oven #anovafoodnerd #airfried #" [ref=e433]':
+                    - /url: /shorts/1xSLDthhVWI
+                  - generic [ref=e434]: 791次观看
+                - button "其他操作" [ref=e436] [cursor=pointer]
+              - generic [ref=e443]:
+                - link [ref=e444] [cursor=pointer]:
+                  - /url: /shorts/Du9Krg3vkDw
+                - generic [ref=e448] [cursor=pointer]:
+                  - 'link "Compress your Pineapple in the Anova Chamber Vacuum Sealer with Cody Splane #anovafoodnerd" [ref=e449]':
+                    - /url: /shorts/Du9Krg3vkDw
+                  - generic [ref=e450]: 1.1万次观看
+                - button "其他操作" [ref=e452] [cursor=pointer]
+              - generic [ref=e459]:
+                - link [ref=e460] [cursor=pointer]:
+                  - /url: /shorts/2Lj-l7vRurk
+                - generic [ref=e464] [cursor=pointer]:
+                  - 'link "Quick Pickled Jalapenos in the Anova Chamber Vacuum Sealer w/Cody Splane #anovafoodnerd" [ref=e465]':
+                    - /url: /shorts/2Lj-l7vRurk
+                  - generic [ref=e466]: 1.8万次观看
+                - button "其他操作" [ref=e468] [cursor=pointer]
+            - button "下一批" [ref=e476] [cursor=pointer]:
+              - generic [ref=e480]:
+                - img
+    - text: •

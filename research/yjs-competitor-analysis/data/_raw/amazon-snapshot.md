@@ -1,0 +1,2312 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Shortcuts menu" [ref=e3]:
+      - heading "Skip to" [level=2] [ref=e4]
+      - list "Skip to" [ref=e5]:
+        - listitem [ref=e6]:
+          - link "main content" [ref=e7] [cursor=pointer]:
+            - /url: "#skippedLink"
+            - text: Main content
+        - listitem [ref=e8]:
+          - link "Results" [ref=e9] [cursor=pointer]:
+            - /url: .s-asin a:has(h2)
+        - listitem [ref=e10]:
+          - link "Filters" [ref=e11] [cursor=pointer]:
+            - /url: "#s-refinements > div.a-section > div:first-child"
+      - separator [ref=e12]
+      - heading "Keyboard shortcuts" [level=2] [ref=e13]
+      - list "Keyboard shortcuts" [ref=e14]:
+        - listitem [ref=e15]:
+          - link "Search, alt, forward slash" [ref=e16] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e17]:
+              - generic [ref=e18]: Search
+              - generic [ref=e19]:
+                - generic [ref=e20]: alt
+                - generic [ref=e21]: +
+                - generic [ref=e22]: /
+        - listitem [ref=e23]:
+          - link "Cart, shift, alt, c" [ref=e24] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e25]:
+              - generic [ref=e26]: Cart
+              - generic [ref=e27]:
+                - generic [ref=e28]: shift
+                - generic [ref=e29]: +
+                - generic [ref=e30]: alt
+                - generic [ref=e31]: +
+                - generic [ref=e32]: C
+        - listitem [ref=e33]:
+          - link "Home, shift, alt, h" [ref=e34] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e35]:
+              - generic [ref=e36]: Home
+              - generic [ref=e37]:
+                - generic [ref=e38]: shift
+                - generic [ref=e39]: +
+                - generic [ref=e40]: alt
+                - generic [ref=e41]: +
+                - generic [ref=e42]: H
+        - listitem [ref=e43]:
+          - link "Your orders, shift, alt, o" [ref=e44] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e45]:
+              - generic [ref=e46]: Orders
+              - generic [ref=e47]:
+                - generic [ref=e48]: shift
+                - generic [ref=e49]: +
+                - generic [ref=e50]: alt
+                - generic [ref=e51]: +
+                - generic [ref=e52]: O
+        - listitem [ref=e53]:
+          - button "Show/hide shortcuts, shift, alt, z" [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: Show/Hide shortcuts
+              - generic [ref=e57]:
+                - generic [ref=e58]: shift
+                - generic [ref=e59]: +
+                - generic [ref=e60]: alt
+                - generic [ref=e61]: +
+                - generic [ref=e62]: Z
+      - generic [ref=e68]: To move between items, use your keyboard's up or down arrows.
+    - banner [ref=e69]:
+      - navigation "Primary" [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - link "Amazon" [ref=e74] [cursor=pointer]:
+              - /url: /ref=nav_logo
+            - button "Delivering to Salt Lake... 84189 Update location" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: Delivering to Salt Lake... 84189
+                - generic [ref=e81]: Update location
+          - search [ref=e84]:
+            - generic [ref=e87]:
+              - generic [ref=e89]: All
+              - combobox "Select the department you want to search in" [ref=e91] [cursor=pointer]:
+                - option "All Departments" [selected]
+                - option "Alexa Skills"
+                - option "Amazon Autos"
+                - option "Amazon Devices"
+                - option "Amazon Global Store"
+                - option "Amazon Haul"
+                - option "Amazon One Medical"
+                - option "Amazon Pharmacy"
+                - option "Amazon Resale"
+                - option "Appliances"
+                - option "Apps & Games"
+                - option "Arts, Crafts & Sewing"
+                - option "Audible Books & Originals"
+                - option "Automotive Parts & Accessories"
+                - option "Baby"
+                - option "Beauty & Personal Care"
+                - option "Books"
+                - option "CDs & Vinyl"
+                - option "Cell Phones & Accessories"
+                - option "Clothing, Shoes & Jewelry"
+                - option "Women's Clothing, Shoes & Jewelry"
+                - option "Men's Clothing, Shoes & Jewelry"
+                - option "Girl's Clothing, Shoes & Jewelry"
+                - option "Boy's Clothing, Shoes & Jewelry"
+                - option "Baby Clothing, Shoes & Jewelry"
+                - option "Collectibles & Fine Art"
+                - option "Computers"
+                - option "Credit and Payment Cards"
+                - option "Digital Music"
+                - option "Electronics"
+                - option "Garden & Outdoor"
+                - option "Gift Cards"
+                - option "Grocery & Gourmet Food"
+                - option "Handmade"
+                - option "Health, Household & Baby Care"
+                - option "Home & Business Services"
+                - option "Home & Kitchen"
+                - option "Industrial & Scientific"
+                - option "Just for Prime"
+                - option "Kindle Store"
+                - option "Luggage & Travel Gear"
+                - option "Luxury Stores"
+                - option "Magazine Subscriptions"
+                - option "Movies & TV"
+                - option "Musical Instruments"
+                - option "Office Products"
+                - option "Pet Supplies"
+                - option "Premium Beauty"
+                - option "Prime Video"
+                - option "Same-Day Store"
+                - option "Smart Home"
+                - option "Software"
+                - option "Sports & Outdoors"
+                - option "Subscribe & Save"
+                - option "Subscription Boxes"
+                - option "Tools & Home Improvement"
+                - option "Toys & Games"
+                - option "Under $10"
+                - option "Video Games"
+                - option "Whole Foods Market"
+            - searchbox "Search Amazon" [ref=e94]: vacuum sealer
+            - generic "Go" [ref=e97] [cursor=pointer]:
+              - button "Go" [ref=e98]
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - link "Choose a language for shopping in Amazon United States. The current selection is English (EN)." [ref=e102] [cursor=pointer]:
+                - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+                - generic [ref=e105]:
+                  - img "United States" [ref=e106]
+                  - generic [ref=e107]: EN
+              - button "Expand to Change Language or Country" [ref=e108] [cursor=pointer]
+            - generic [ref=e109]:
+              - link "Hello, sign in Account & Lists" [ref=e110] [cursor=pointer]:
+                - /url: https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fs%3Fk%3Dvacuum%2Bsealer%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+                - generic [ref=e112]: Hello, sign in
+                - generic [ref=e113]: Account & Lists
+              - button "Expand Account and Lists" [ref=e114] [cursor=pointer]
+            - link "Returns & Orders" [ref=e115] [cursor=pointer]:
+              - /url: /gp/css/order-history?ref_=nav_orders_first
+              - generic [ref=e116]: Returns
+              - generic [ref=e117]: "& Orders"
+            - link "0 items in cart" [ref=e118] [cursor=pointer]:
+              - /url: /gp/cart/view.html?ref_=nav_cart
+              - generic [ref=e120]: "0"
+              - generic [ref=e123]: Cart
+        - generic [ref=e136]:
+          - button "Open All Categories Menu" [ref=e138] [cursor=pointer]:
+            - generic [ref=e140]: All
+          - list [ref=e144]:
+            - listitem [ref=e145]:
+              - link "Amazon Haul" [ref=e147] [cursor=pointer]:
+                - /url: /haul/store?ref_=nav_cs_hul_disb
+            - listitem [ref=e148]:
+              - generic [ref=e149]:
+                - link "Medical Care" [ref=e150] [cursor=pointer]:
+                  - /url: https://health.amazon.com/prime?ref_=nav_cs_all_health_ingress_onem_h
+                - button "Medical Care Details" [ref=e151] [cursor=pointer]
+            - listitem [ref=e152]:
+              - link "Amazon Basics" [ref=e154] [cursor=pointer]:
+                - /url: /Amazon_Basics?channel=discovbar&field-lbr_brands_browse-bin=AmazonBasics&ref_=nav_cs_amazonbasics
+            - listitem [ref=e155]:
+              - link "Best Sellers" [ref=e157] [cursor=pointer]:
+                - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+            - listitem [ref=e158]:
+              - generic [ref=e159]:
+                - link "Prime" [ref=e160] [cursor=pointer]:
+                  - /url: /prime?ref_=nav_cs_primelink_nonmember
+                - button "Prime Details" [ref=e161] [cursor=pointer]
+            - listitem [ref=e162]:
+              - link "Books" [ref=e164] [cursor=pointer]:
+                - /url: /books-used-books-textbooks/b/?ie=UTF8&node=283155&ref_=nav_cs_books
+            - listitem [ref=e165]:
+              - link "Registry" [ref=e167] [cursor=pointer]:
+                - /url: /gp/browse.html?node=16115931011&ref_=nav_cs_registry
+            - listitem [ref=e168]:
+              - generic [ref=e169]:
+                - link "Gift Cards" [ref=e170] [cursor=pointer]:
+                  - /url: /gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc
+                - button "Gift Cards Details" [ref=e171] [cursor=pointer]
+            - listitem [ref=e172]:
+              - link "Smart Home" [ref=e174] [cursor=pointer]:
+                - /url: /Smart-Home/b/?ie=UTF8&node=6563140011&ref_=nav_cs_smart_home
+            - listitem [ref=e175]:
+              - link "New Releases" [ref=e177] [cursor=pointer]:
+                - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+            - listitem [ref=e178]:
+              - generic [ref=e179]:
+                - link "Groceries" [ref=e180] [cursor=pointer]:
+                  - /url: /fmc/learn-more?ref_=nav_cs_groceries
+                - button "Groceries Details" [ref=e181] [cursor=pointer]
+            - listitem [ref=e182]:
+              - link "Today's Deals" [ref=e184] [cursor=pointer]:
+                - /url: /deals?ref_=nav_cs_gb
+            - listitem [ref=e185]:
+              - link "Pharmacy" [ref=e187] [cursor=pointer]:
+                - /url: https://pharmacy.amazon.com/?nodl=0&ref_=nav_cs_pharmacy
+            - listitem [ref=e188]:
+              - link "Customer Service" [ref=e190] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_fs_hub_navbar_c
+            - listitem [ref=e191]:
+              - link "Music" [ref=e193] [cursor=pointer]:
+                - /url: /music/player?ref_=nav_cs_music
+            - listitem [ref=e194]:
+              - link "Fashion" [ref=e196] [cursor=pointer]:
+                - /url: /amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=nav_cs_fashion
+            - listitem [ref=e197]:
+              - link "Amazon Home" [ref=e199] [cursor=pointer]:
+                - /url: /home-garden-kitchen-furniture-bedding/b/?ie=UTF8&node=1055398&ref_=nav_cs_home
+            - listitem [ref=e200]:
+              - link "Kindle Books" [ref=e202] [cursor=pointer]:
+                - /url: /Kindle-eBooks/b/?ie=UTF8&node=154606011&ref_=nav_cs_kindle_books
+            - listitem [ref=e203]:
+              - link "Automotive" [ref=e205] [cursor=pointer]:
+                - /url: /automotive-auto-truck-replacements-parts/b/?ie=UTF8&node=15684181&ref_=nav_cs_automotive
+            - listitem [ref=e206]:
+              - link "Toys & Games" [ref=e208] [cursor=pointer]:
+                - /url: /toys/b/?ie=UTF8&node=165793011&ref_=nav_cs_toys
+            - listitem [ref=e209]:
+              - link "Baby" [ref=e211] [cursor=pointer]:
+                - /url: /baby-car-seats-strollers-bedding/b/?ie=UTF8&node=165796011&ref_=nav_cs_baby
+            - listitem [ref=e212]:
+              - link "Sports & Outdoors" [ref=e214] [cursor=pointer]:
+                - /url: /sports-outdoors/b/?ie=UTF8&node=3375251&ref_=nav_cs_sports
+            - listitem [ref=e215]:
+              - link "Home Improvement" [ref=e217] [cursor=pointer]:
+                - /url: /Tools-and-Home-Improvement/b/?ie=UTF8&node=228013&ref_=nav_cs_hi
+            - listitem [ref=e218]:
+              - link "Sell" [ref=e220] [cursor=pointer]:
+                - /url: /b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell
+        - dialog [ref=e223]
+    - generic [ref=e225]:
+      - 'heading "1-16 of over 40,000 results for \"vacuum sealer\" Sort by: Featured" [level=1] [ref=e228]':
+        - generic [ref=e229]:
+          - heading "1-16 of over 40,000 results for \"vacuum sealer\"" [level=2] [ref=e232]
+          - generic [ref=e237]:
+            - generic [ref=e238]: "Sort by:"
+            - combobox "Sort by:" [ref=e239]:
+              - option "Featured" [selected]
+              - 'option "Price: Low to High"'
+              - 'option "Price: High to Low"'
+              - option "Avg. Customer Review"
+              - option "Newest Arrivals"
+              - option "Best Sellers"
+            - generic [ref=e242] [cursor=pointer]: Sort by:Featured
+      - generic [ref=e244]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - generic [ref=e251]:
+              - link "Sponsored ad from Potane Professional. \"Professional Vacuum Sealers.\" Shop Potane Professional." [ref=e252] [cursor=pointer]:
+                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/stores/page/3DDA1B14-77CB-4FCF-BC0B-E405FA20B678/?_encoding=UTF8&store_ref=SB_A09110241YKMFCFAKM7ZS-A08984482S9JAUY55ARNL&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&lp_asins=B08QGX549G%2CB0DXPTJD3M%2CB08BRN1B7Q&lp_query=vacuum%20sealer&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_s_sparkle_sbtcd_bkgd&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+              - generic [ref=e253]:
+                - generic [ref=e255]:
+                  - link "Potane Professional" [ref=e257] [cursor=pointer]:
+                    - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/stores/page/3DDA1B14-77CB-4FCF-BC0B-E405FA20B678/?_encoding=UTF8&store_ref=SB_A09110241YKMFCFAKM7ZS-A08984482S9JAUY55ARNL&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&lp_asins=B08QGX549G%2CB0DXPTJD3M%2CB08BRN1B7Q&lp_query=vacuum%20sealer&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_s_sparkle_sbtcd_logo&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                    - img "Potane Professional" [ref=e259]
+                  - generic [ref=e261]:
+                    - link "Professional Vacuum Sealers" [ref=e262] [cursor=pointer]:
+                      - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/stores/page/3DDA1B14-77CB-4FCF-BC0B-E405FA20B678/?_encoding=UTF8&store_ref=SB_A09110241YKMFCFAKM7ZS-A08984482S9JAUY55ARNL&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&lp_asins=B08QGX549G%2CB0DXPTJD3M%2CB08BRN1B7Q&lp_query=vacuum%20sealer&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_s_sparkle_sbtcd_hl&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                      - generic [ref=e263]:
+                        - generic [ref=e264]: Professional Vacuum Sealers
+                        - generic [ref=e265]: Professional Vacuum Sealers
+                    - generic [ref=e266]:
+                      - button "Leave feedback on Sponsored ad" [ref=e270] [cursor=pointer]: Sponsored
+                      - generic [ref=e272]: "|"
+                      - generic [ref=e273]: Top 10 best-selling brand in vacuum sealers
+                      - generic [ref=e274]: "|"
+                      - link "Shop Potane Professional" [ref=e276] [cursor=pointer]:
+                        - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/stores/page/3DDA1B14-77CB-4FCF-BC0B-E405FA20B678/?_encoding=UTF8&store_ref=SB_A09110241YKMFCFAKM7ZS-A08984482S9JAUY55ARNL&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&lp_asins=B08QGX549G%2CB0DXPTJD3M%2CB08BRN1B7Q&lp_query=vacuum%20sealer&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_s_sparkle_sbtcd_cta&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                        - generic [ref=e279]:
+                          - text: Shop Potane
+                          - generic [ref=e280]:
+                            - text: Professional
+                            - img [ref=e281]
+                - group [ref=e283]:
+                  - generic [ref=e285]:
+                    - group [ref=e287]:
+                      - list [ref=e288]:
+                        - listitem [ref=e289]:
+                          - generic [ref=e291]:
+                            - link [ref=e292] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_0_bkgd&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                            - link "Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System, Full Auto/Manual Functions, Built-in Safety Cutter&Guided Seal Bar, Start Kit Bags to Seal a Meal" [ref=e294] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_0_img&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                              - img "Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System, Full Auto/Manual Functions, Built-in Safety Cutter&Guided Seal Bar, Start Kit Bags to Seal a Meal" [ref=e297]
+                            - generic [ref=e299]:
+                              - link [ref=e300] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_0_bkgd&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                              - link "Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System, Full Auto/Manual Functions, Built-in Safety Cutter&Guided Seal Bar, Start Kit Bags to Seal a Meal" [ref=e302] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_0_title&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                                - generic [ref=e303]:
+                                  - generic [ref=e304]: Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System, Full Auto/Manual Functions, Built-in Safety Cutter&Guided Seal Bar, Start Kit Bags to Seal a Meal
+                                  - generic [ref=e305]: Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacu…
+                              - link "Rated 4.5 out of 5 stars by 186 reviews. Go to review section." [ref=e306] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_0_rating&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e#customerReviews
+                                - generic [ref=e307]:
+                                  - generic [ref=e308]: "4.5"
+                                  - generic [ref=e310]: 4.5 out of 5 stars.
+                                  - generic [ref=e311]: (186)
+                              - link "Limited time deal" [ref=e313] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_0_badge&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                                - generic [ref=e316]: Limited time deal
+                              - link "-23% $99.87" [ref=e318] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_0_price&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                                - generic [ref=e319]:
+                                  - generic [ref=e320]: "-23%"
+                                  - generic [ref=e321]:
+                                    - generic [ref=e322]: $99.87
+                                    - generic [ref=e323]:
+                                      - text: $
+                                      - generic [ref=e324]:
+                                        - text: "99"
+                                        - generic [ref=e325]: .
+                                      - text: "87"
+                              - generic [ref=e328]: "List: $129.99"
+                              - img "Eligible for Prime." [ref=e330]
+                        - listitem [ref=e331]:
+                          - generic [ref=e333]:
+                            - link [ref=e334] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_1_bkgd&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                            - link [ref=e336] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_1_img&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                              - img [ref=e339]
+                            - generic [ref=e341]:
+                              - link [ref=e342] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_1_bkgd&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                              - link [ref=e344] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_1_title&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                                - generic [ref=e345]:
+                                  - generic [ref=e346]: Potane Precision Vacuum Machine,Pro Food Sealer with Built-in Cutter and Bag Storage(Up to 20 Feet Length), Both Auto&Manual Options,2 Modes,Includes 2 Bag Rolls 11”x16’ and 8”x16’,Compact Design
+                                  - generic [ref=e347]: Potane Precision Vacuum Machine,Pro Food Sealer with B…
+                              - link [ref=e348] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_1_rating&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e#customerReviews
+                                - generic [ref=e349]:
+                                  - generic [ref=e350]: "4.6"
+                                  - generic [ref=e352]: 4.6 out of 5 stars.
+                                  - generic [ref=e353]: (6k)
+                              - link [ref=e355] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_1_price&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                                - generic [ref=e357]:
+                                  - generic [ref=e358]: $149.99
+                                  - generic [ref=e359]:
+                                    - text: $
+                                    - generic [ref=e360]:
+                                      - text: "149"
+                                      - generic [ref=e361]: .
+                                    - text: "99"
+                              - generic [ref=e364]: "List: $174.99"
+                              - img [ref=e366]
+                        - listitem [ref=e367]:
+                          - generic [ref=e369]:
+                            - link [ref=e370] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_2_bkgd&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                            - link [ref=e372] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_2_img&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                              - img [ref=e375]
+                            - generic [ref=e377]:
+                              - link [ref=e378] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_2_bkgd&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                              - link [ref=e380] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_2_title&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                                - generic [ref=e381]:
+                                  - generic [ref=e382]: POTANE Precision Vacuum Sealer Machine, Powerful Pro Vacuum Food Sealer, 8-in-1 Easy Presets, 4 Food Modes, Dry&Moist&Soft&Delicate with Starter Kit, Compact Design(Silver)
+                                  - generic [ref=e383]: POTANE Precision Vacuum Sealer Machine, Powerful Pro Vacuum F…
+                              - link [ref=e384] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_2_rating&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e#customerReviews
+                                - generic [ref=e385]:
+                                  - generic [ref=e386]: "4.4"
+                                  - generic [ref=e388]: 4.4 out of 5 stars.
+                                  - generic [ref=e389]: (9.4k)
+                              - link [ref=e391] [cursor=pointer]:
+                                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JPrSxEvl34zN4QtclxRyHkAAAAGcYULAOAEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBWVJfA/clv1c_ek-YBPHXUsbWHn2mJtYb8xPASX0CAxjPxeEJ-9z22lZpYw-oXItEwJ8G-EP2yFNG27SARPXLfzsdF2nWmACyk6D0fZK9Ci0G6oxJRCvz944u6JX_J7OcAxDDwzpwogbZ5xBmO26ZuHs9bdCsnUDOzhjUspUclFn7sCTF3U-SjCccX2Arkp4JHEhWNf3akLAoS93pjM4Hh-cplWM2M07k3jmPeFZHUBov3DyXjL4T-xqs1IC8PK-iss3EQzAU99l8Ys_gQ7Ex8ymQogtRLhB73JYW-bP0Hgx_nu-XeDjIaNWxOrwwOsWMWhr41nWUKKe4zE72gGtjZpJ-pp3svZCPjc02BIJVg6RkyHcLOtffPVbV9M5bzfkqrW61HRdijt1DBwWyOkZDjUFJ0350mY2JZ0naUdHn9Qa5G-AfRk7r-_KgMTPVOdH9FWUOGnNRciLyHpZ942k8PHbsu8j5X_GdwqqYXhKKRPayGVK4NHGvntg77hOjrzh1i65uGW3GhvJ1BAVoLtC18MDFdfKjcA_1lv7flVwzXdNy2g4gW3U2BFJmwa6yPeQp9gvmJybM_4KQ9WZo5ipzTm7KP9SecFo13iz84vKniwlCap1j78flgtgUpCBs20goe9skIep63GBD2AOdvL96YNSfgEyJ7PBGicn6pR9OWpuSt5_rONVezsG46ACwXGfiNCHvBHFQ-EcUJ-57Phb8RLB1dDnCqKA41aIMPBog6drGy8U8q9AL4tfNJJ5ls81QoHkE8MgJYqHXO1XODRRPMhXC9Gi0Mrg8acd8CpcRgip1yQWI-QeuMZ1X-pJCnrHYpX-rtSEW7GjH061Pw1grvs7kKO_bVfk5-iNyYILxmlfImiz-l75HVQwdQulF9kFtTcCbRkBsYEqkrNWPJl3jGWVqp6EuiDYspW9qS-Fs7bdecSjlUDUS0_Nl6WXZO5mv7tyTlfflSVVolu437ON6ezJHyZ78svCSJMaU1Oii8gXsZIFIFRUVfHMSY0yUb9vpMPs44zcLLHb0Z34-usavBOoLuI3IZmNq_GcLirUFffww9NOro5ophFMhPYA6fsSKb87Z5hMuMiJlfgRTSchEm5w1jk27Xdh1yiKooWyqLAlW6X8-_gcW3VYbw9gzNwXGi1JJEiZm3Hlf6Q6Imy6J9fFvuZeFgBh6jDN18EX9yRbTaW6D1603_Le629TbrN6jfUZcg7R44S8TO1DWWdTv1AaZYsImGmRZDRRdNBu_XWxtcQ7qnoVSy6t-cdMT4e8zO5_zOddL9oBc2T_6vhsaLTU-dk8IXAfGmp2vf9O7Ty603siE51_iEskioD7yoB9gbf455JViuipbL777Q7av-YyjKpgvcAMty-2A_LyBrQdrlWhIeZwP-waKVhNY12LGxm1yDL5-rGh_AS8uYHPmkBqNdTQ6lRVarETM8SHSqdjHNb7embEP_Suqn3XddVvXiLaocnvsSHnsH17eQeMVXgHCoaeO6GfHAil_QcvNCOF81XyZfeYkm-VM4bfzaXm1um5dbhccjOqWG1tGJtMJ05zCdbQkyF2f-ZcZgngL_xALfLph56_rNqEV030v0k1Cl2G7UUBcXOAssf5MVshPRZqmxQPHHeVr9BBI-pUOZvwMDd1A9VqfGE6HsHL-4pszBbvZfCvzJAw2e7yAbme_jO1wKjTtfi_glvRV/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_2_price&pd_rd_w=WtIQa&content-id=amzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d%3Aamzn1.sym.9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_p=9f2b2b9e-47e9-4764-a4dc-2be2f6fca36d&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Dck8O&pd_rd_r=be9f38dc-ba0a-4064-8e10-6980b04abb3e
+                                - generic [ref=e393]:
+                                  - generic [ref=e394]: $79.99
+                                  - generic [ref=e395]:
+                                    - text: $
+                                    - generic [ref=e396]:
+                                      - text: "79"
+                                      - generic [ref=e397]: .
+                                    - text: "99"
+                              - img [ref=e399]
+                    - button "Next page" [ref=e401] [cursor=pointer]:
+                      - generic [ref=e404]: Next page
+            - generic [ref=e406]:
+              - generic [ref=e409]:
+                - heading "Results" [level=2] [ref=e410]
+                - generic [ref=e411]: Check each product page for other buying options.
+              - generic:
+                - list:
+                  - listitem [ref=e412]:
+                    - generic [ref=e418]:
+                      - link [ref=e424] [cursor=pointer]:
+                        - /url: /Vacuum-Machine-Digital-Compact-Lightweight/dp/B0GHMBYJD4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-1
+                        - img [ref=e426]
+                      - generic [ref=e429]:
+                        - link "Vacuum Sealer Machine 75KPa Food with 6-in-1 Dry/Moist Modes & Digital Timer, Compact Lightweight Design, Built-in Cutter + 10 Bags (Black Silver)" [ref=e431] [cursor=pointer]:
+                          - /url: /Vacuum-Machine-Digital-Compact-Lightweight/dp/B0GHMBYJD4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-1
+                          - heading "Vacuum Sealer Machine 75KPa Food with 6-in-1 Dry/Moist Modes & Digital Timer, Compact Lightweight Design, Built-in Cutter + 10 Bags (Black Silver)" [level=2] [ref=e432]
+                        - generic [ref=e434]:
+                          - text: "5.0"
+                          - button "5.0 out of 5 stars, rating details" [ref=e436] [cursor=pointer]:
+                            - generic [ref=e438]: 5.0 out of 5 stars
+                          - link "58 ratings" [ref=e442] [cursor=pointer]:
+                            - /url: /Vacuum-Machine-Digital-Compact-Lightweight/dp/B0GHMBYJD4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-1#customerReviews
+                            - text: (58)
+                        - generic [ref=e445]:
+                          - generic [ref=e446]:
+                            - generic [ref=e448]:
+                              - generic [ref=e449]: Price, product page
+                              - 'link "$29.99 Typical price: $134.99 Typical price: $134.99" [ref=e450] [cursor=pointer]':
+                                - /url: /Vacuum-Machine-Digital-Compact-Lightweight/dp/B0GHMBYJD4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-1
+                                - generic [ref=e451]:
+                                  - generic [ref=e452]: $29.99
+                                  - generic [ref=e453]:
+                                    - text: $
+                                    - generic [ref=e454]:
+                                      - text: "29"
+                                      - generic [ref=e455]: .
+                                    - text: "99"
+                                - generic [ref=e456]: "Typical price: $134.99"
+                                - generic [ref=e457]:
+                                  - text: "Typical price:"
+                                  - generic [ref=e458]:
+                                    - generic [ref=e459]: $134.99
+                                    - text: $134.99
+                            - generic [ref=e460]: Exclusive Prime price
+                          - generic [ref=e463]:
+                            - generic [ref=e467]: FREE delivery Fri, Feb 20 on $35 of items shipped by Amazon
+                            - generic [ref=e469]: Or fastest delivery Thu, Feb 19
+                          - link "See options" [ref=e477] [cursor=pointer]:
+                            - /url: /Vacuum-Machine-Digital-Compact-Lightweight/dp/B0GHMBYJD4/ref=sr_1_1_so_VACUUM_SEALER_MACHINE?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-1
+                  - listitem [ref=e480]:
+                    - generic [ref=e486]:
+                      - generic [ref=e488]:
+                        - generic "Amazon's Choice" [ref=e491]:
+                          - generic [ref=e500]: Overall Pick
+                        - link [ref=e505] [cursor=pointer]:
+                          - /url: /Chef-Preserve-Vacuum-Sealer-Bags/dp/B0D3ZBFMW6/ref=sr_1_2?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-2
+                          - img [ref=e507]
+                      - generic [ref=e510]:
+                        - link "Chef Preserve Compact Vacuum Sealer for Food (Vacuum Sealer Machine + 30 Reusable Vacuum Bags) Powerful Handheld Vacuum Sealer Machine, Seal Meal Saver, Portable Food Sealer" [ref=e512] [cursor=pointer]:
+                          - /url: /Chef-Preserve-Vacuum-Sealer-Bags/dp/B0D3ZBFMW6/ref=sr_1_2?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-2
+                          - heading "Chef Preserve Compact Vacuum Sealer for Food (Vacuum Sealer Machine + 30 Reusable Vacuum Bags) Powerful Handheld Vacuum Sealer Machine, Seal Meal Saver, Portable Food Sealer" [level=2] [ref=e513]
+                        - generic [ref=e514]:
+                          - generic [ref=e515]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e517] [cursor=pointer]:
+                              - generic [ref=e519]: 4.6 out of 5 stars
+                            - link "10,606 ratings" [ref=e523] [cursor=pointer]:
+                              - /url: /Chef-Preserve-Vacuum-Sealer-Bags/dp/B0D3ZBFMW6/ref=sr_1_2?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-2#customerReviews
+                              - text: (10.6K)
+                          - generic [ref=e524]: 20K+ bought in past month
+                        - generic [ref=e527]:
+                          - generic [ref=e528]:
+                            - link "Limited time deal" [ref=e530] [cursor=pointer]:
+                              - /url: /deals
+                              - generic [ref=e533]: Limited time deal
+                            - generic [ref=e535]:
+                              - generic [ref=e536]: Price, product page
+                              - 'link "$79.98 List: $109.00 List: $109.00" [ref=e537] [cursor=pointer]':
+                                - /url: /Chef-Preserve-Vacuum-Sealer-Bags/dp/B0D3ZBFMW6/ref=sr_1_2?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-2
+                                - generic [ref=e538]:
+                                  - generic [ref=e539]: $79.98
+                                  - generic [ref=e540]:
+                                    - text: $
+                                    - generic [ref=e541]:
+                                      - text: "79"
+                                      - generic [ref=e542]: .
+                                    - text: "98"
+                                - generic [ref=e543]: "List: $109.00"
+                                - generic [ref=e544]:
+                                  - text: "List:"
+                                  - generic [ref=e545]:
+                                    - generic [ref=e546]: $109.00
+                                    - text: $109.00
+                          - generic [ref=e549]:
+                            - generic [ref=e553]: FREE delivery Fri, Feb 20
+                            - generic [ref=e555]: Or fastest delivery Tue, Feb 17
+                          - button "Small Business" [ref=e564] [cursor=pointer]:
+                            - generic [ref=e565]: Small Business
+                          - button "Add to cart" [ref=e580] [cursor=pointer]
+            - generic [ref=e590]:
+              - link "Sponsored video, click to navigate to featured product page. Vacuum Sealer Machine with AirLock ProSeal System, 10-in-1 Vacuum Sealer for Food, Dry & Moist Modes, Compact Design with Digital Timer, Built-in Cutter & Roll Storage, Stainless Steel" [ref=e594] [cursor=pointer]:
+                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJcSZyIJ73ilLPrKaFy7F88AAAGcYULAQwEAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICCWxBUU/clv1c_ek-ABPf3VcbW3TI2mAX3I_BwCvKxcAf4M3qOf5B3NUF9EH6gYPyo9KgOwkqSCFXEsnBiiL4jjp-ObOIdjoW8gLC8t__shvzO8ZN9h7Z27coHg3MtJruUeQDLIrpzoiaZB4hZhcsoFnWF-GwOHdzqG_EhKP2cnGXS4kQlX_dqzpQKUXMtv7XhbG-gvN7_vhPS0SFw8o5cO--otaV4esjC5mbAiwo6XCrSgY-pChEs4-Eag6JqQ5ckTbSeoLl2P-7myqceADPHoEzELtwOSi7hnWNWjUzJzdQsu_PtkKkW2rPEyhBIcwSd9mHDIg3_oHFe-vTcRh0JG-4E73EWsEUt2U9nOzVHbvv5cO-wWDWU2vu3yldTgne6zrXy7DweRJtGreiIHlvrri5DwsoPCQ-7h1qry_D_LfDouAsXGaFD14ivdPWEob8EE9HuyX8xqgBmSvBm42ldCDT8L6AtX_DyMArPx1VMMlHDs4Mq2WH5Z10AXB8VAPumFon-1YQdLsaFwU1K0QqXPhhnDEBqspyr9w8vCktSB9EbCL42AZWv4WwWRtIG_rPbrqxLIQOb_8rzsp8t2mp4BTCPw2IUoARm1dkT_XJcL8ccuetjoZh3u-93bsYiaUlwaXZaorz55RubtdMfVTNc25cLX5atWalCHFwtjuB1ET_zCk_yX3afmazcleHWhSTGwXzXaNW20Nxfz2psmhugJbW6UT_Mfa5oZZK3E9nvT3JiDZj4iC4UV-MDCHxpc02KI3haxzF5MMwsqSdufZTEkZ1HVX9WY0VpyU7P4t4iTIY901VLFTTVUmth5iuOAeYuNhQV9uZiESH_SBRJQt_nH7T_H9riKY15M-btHD4Wy3W1L1vQ7SBoh14ZqpDcdLgaCU_aRBE0V9ISOQLWpaEs1ZV6OCCqTIHcUS64KW3Vq4X1RTxKeMcvVuGVZXK05AWIoccXlDpfQWmzhKvlq_nUrWfybiZfjh8SAtZim-F_v9sSurAQtMt344gEv1KQBY6JXs7WhgMmBLSvIyrIplYq-wiNXQgnNuxWrELj3sBoNAwn9HniZdNCmc36lhUlEVYalUw6uH1wYJI4ovFzHGH_b1XT6HPE1ywZ9m_iTp5HiEXTGxqDb8ITIpjzM-BU8SC6Y0QnKtHItZ2GgF5wVZwWGTbuU7FKm4gzjH6QM-5eZoqoj4Aq2z2f_svCU5Tl9GI2y9LQj0tSNtDPoiejIKR8uG97BSkpkr9UsMJ83Gt39PRHTMLhUT49uWB_bCLvuh2egcgBkHe2s34nF_Xq3Ze582N4OaX_zrd163JBM42uEA9coZmGZc6rp-s3wpXGsGUkCnpcnU25ckA4oxoekdq7N_GryBG1KemV3IpVQqC3RoVUbdOkQ2_m-6XgFNsrpGeiP30JqubcSJmaFh4mRCluYFY-iP0dsd8AaJauFwIvLL3BSnfbYPlKK3dSu4dnWdhkco7WAuzIDM69-AZ596ZXfpp-vZyAo8JQqLrs7mnhxMADhughiCmFp44PDJybqUf2BVfJykYx4OJwZiEL9XYyQjZdmeXou9NHsskvg1DtXLQCq_r-moN-Pc4-_oTdudVJjiO4_3kLBdHjwpBZuNvqriBVHkJashBEo9w4suJ575UwixhBZ8eOXVcU7HDXEty4ClEVaWdYYQ5mHAZ4D6s91AVGnn16Yg/https://www.amazon.com/dp/B0GD1ZY1PR?pd_rd_i=B0GD1ZY1PR&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_w=7y6iJ&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                - generic "Sponsored video, click to navigate to featured product page. Vacuum Sealer Machine with AirLock ProSeal System, 10-in-1 Vacuum Sealer for Food, Dry & Moist Modes, Compact Design with Digital Timer, Built-in Cutter & Roll Storage, Stainless Steel" [ref=e595]
+              - generic [ref=e603]:
+                - link [ref=e609] [cursor=pointer]:
+                  - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJcSZyIJ73ilLPrKaFy7F88AAAGcYULAQwEAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICCWxBUU/clv1c_ek-ABPf3VcbW3TI2mAX3I_BwCvKxcAf4M3qOf5B3NUF9EH6gYPyo9KgOwkqSCFXEsnBiiL4jjp-ObOIdjoW8gLC8t__shvzO8ZN9h7Z27coHg3MtJruUeQDLIrpzoiaZB4hZhcsoFnWF-GwOHdzqG_EhKP2cnGXS4kQlX_dqzpQKUXMtv7XhbG-gvN7_vhPS0SFw8o5cO--otaV4esjC5mbAiwo6XCrSgY-pChEs4-Eag6JqQ5ckTbSeoLl2P-7myqceADPHoEzELtwOSi7hnWNWjUzJzdQsu_PtkKkW2rPEyhBIcwSd9mHDIg3_oHFe-vTcRh0JG-4E73EWsEUt2U9nOzVHbvv5cO-wWDWU2vu3yldTgne6zrXy7DweRJtGreiIHlvrri5DwsoPCQ-7h1qry_D_LfDouAsXGaFD14ivdPWEob8EE9HuyX8xqgBmSvBm42ldCDT8L6AtX_DyMArPx1VMMlHDs4Mq2WH5Z10AXB8VAPumFon-1YQdLsaFwU1K0QqXPhhnDEBqspyr9w8vCktSB9EbCL42AZWv4WwWRtIG_rPbrqxLIQOb_8rzsp8t2mp4BTCPw2IUoARm1dkT_XJcL8ccuetjoZh3u-93bsYiaUlwaXZaorz55RubtdMfVTNc25cLX5atWalCHFwtjuB1ET_zCk_yX3afmazcleHWhSTGwXzXaNW20Nxfz2psmhugJbW6UT_Mfa5oZZK3E9nvT3JiDZj4iC4UV-MDCHxpc02KI3haxzF5MMwsqSdufZTEkZ1HVX9WY0VpyU7P4t4iTIY901VLFTTVUmth5iuOAeYuNhQV9uZiESH_SBRJQt_nH7T_H9riKY15M-btHD4Wy3W1L1vQ7SBoh14ZqpDcdLgaCU_aRBE0V9ISOQLWpaEs1ZV6OCCqTIHcUS64KW3Vq4X1RTxKeMcvVuGVZXK05AWIoccXlDpfQWmzhKvlq_nUrWfybiZfjh8SAtZim-F_v9sSurAQtMt344gEv1KQBY6JXs7WhgMmBLSvIyrIplYq-wiNXQgnNuxWrELj3sBoNAwn9HniZdNCmc36lhUlEVYalUw6uH1wYJI4ovFzHGH_b1XT6HPE1ywZ9m_iTp5HiEXTGxqDb8ITIpjzM-BU8SC6Y0QnKtHItZ2GgF5wVZwWGTbuU7FKm4gzjH6QM-5eZoqoj4Aq2z2f_svCU5Tl9GI2y9LQj0tSNtDPoiejIKR8uG97BSkpkr9UsMJ83Gt39PRHTMLhUT49uWB_bCLvuh2egcgBkHe2s34nF_Xq3Ze582N4OaX_zrd163JBM42uEA9coZmGZc6rp-s3wpXGsGUkCnpcnU25ckA4oxoekdq7N_GryBG1KemV3IpVQqC3RoVUbdOkQ2_m-6XgFNsrpGeiP30JqubcSJmaFh4mRCluYFY-iP0dsd8AaJauFwIvLL3BSnfbYPlKK3dSu4dnWdhkco7WAuzIDM69-AZ596ZXfpp-vZyAo8JQqLrs7mnhxMADhughiCmFp44PDJybqUf2BVfJykYx4OJwZiEL9XYyQjZdmeXou9NHsskvg1DtXLQCq_r-moN-Pc4-_oTdudVJjiO4_3kLBdHjwpBZuNvqriBVHkJashBEo9w4suJ575UwixhBZ8eOXVcU7HDXEty4ClEVaWdYYQ5mHAZ4D6s91AVGnn16Yg/https://www.amazon.com/Machine-AirLock-ProSeal-Compact-Stainless/dp/B0GD1ZY1PR/ref=sxin_17_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=vacuum+sealer&keywords=vacuum+sealer&pd_rd_i=B0GD1ZY1PR&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0&pd_rd_w=7y6iJ&pd_rd_wg=w1BwT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&qid=1771158290&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776
+                  - img [ref=e611]
+                - generic [ref=e614]:
+                  - generic [ref=e615]:
+                    - generic [ref=e618] [cursor=pointer]: Sponsored
+                    - link "Vacuum Sealer Machine with AirLock ProSeal System, 10-in-1 Vacuum Sealer for Food, Dry & Moist Modes, Compact Design with Digital Timer, Built-in Cutter & Roll Storage, Stainless Steel" [ref=e620] [cursor=pointer]:
+                      - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJcSZyIJ73ilLPrKaFy7F88AAAGcYULAQwEAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICCWxBUU/clv1c_ek-ABPf3VcbW3TI2mAX3I_BwCvKxcAf4M3qOf5B3NUF9EH6gYPyo9KgOwkqSCFXEsnBiiL4jjp-ObOIdjoW8gLC8t__shvzO8ZN9h7Z27coHg3MtJruUeQDLIrpzoiaZB4hZhcsoFnWF-GwOHdzqG_EhKP2cnGXS4kQlX_dqzpQKUXMtv7XhbG-gvN7_vhPS0SFw8o5cO--otaV4esjC5mbAiwo6XCrSgY-pChEs4-Eag6JqQ5ckTbSeoLl2P-7myqceADPHoEzELtwOSi7hnWNWjUzJzdQsu_PtkKkW2rPEyhBIcwSd9mHDIg3_oHFe-vTcRh0JG-4E73EWsEUt2U9nOzVHbvv5cO-wWDWU2vu3yldTgne6zrXy7DweRJtGreiIHlvrri5DwsoPCQ-7h1qry_D_LfDouAsXGaFD14ivdPWEob8EE9HuyX8xqgBmSvBm42ldCDT8L6AtX_DyMArPx1VMMlHDs4Mq2WH5Z10AXB8VAPumFon-1YQdLsaFwU1K0QqXPhhnDEBqspyr9w8vCktSB9EbCL42AZWv4WwWRtIG_rPbrqxLIQOb_8rzsp8t2mp4BTCPw2IUoARm1dkT_XJcL8ccuetjoZh3u-93bsYiaUlwaXZaorz55RubtdMfVTNc25cLX5atWalCHFwtjuB1ET_zCk_yX3afmazcleHWhSTGwXzXaNW20Nxfz2psmhugJbW6UT_Mfa5oZZK3E9nvT3JiDZj4iC4UV-MDCHxpc02KI3haxzF5MMwsqSdufZTEkZ1HVX9WY0VpyU7P4t4iTIY901VLFTTVUmth5iuOAeYuNhQV9uZiESH_SBRJQt_nH7T_H9riKY15M-btHD4Wy3W1L1vQ7SBoh14ZqpDcdLgaCU_aRBE0V9ISOQLWpaEs1ZV6OCCqTIHcUS64KW3Vq4X1RTxKeMcvVuGVZXK05AWIoccXlDpfQWmzhKvlq_nUrWfybiZfjh8SAtZim-F_v9sSurAQtMt344gEv1KQBY6JXs7WhgMmBLSvIyrIplYq-wiNXQgnNuxWrELj3sBoNAwn9HniZdNCmc36lhUlEVYalUw6uH1wYJI4ovFzHGH_b1XT6HPE1ywZ9m_iTp5HiEXTGxqDb8ITIpjzM-BU8SC6Y0QnKtHItZ2GgF5wVZwWGTbuU7FKm4gzjH6QM-5eZoqoj4Aq2z2f_svCU5Tl9GI2y9LQj0tSNtDPoiejIKR8uG97BSkpkr9UsMJ83Gt39PRHTMLhUT49uWB_bCLvuh2egcgBkHe2s34nF_Xq3Ze582N4OaX_zrd163JBM42uEA9coZmGZc6rp-s3wpXGsGUkCnpcnU25ckA4oxoekdq7N_GryBG1KemV3IpVQqC3RoVUbdOkQ2_m-6XgFNsrpGeiP30JqubcSJmaFh4mRCluYFY-iP0dsd8AaJauFwIvLL3BSnfbYPlKK3dSu4dnWdhkco7WAuzIDM69-AZ596ZXfpp-vZyAo8JQqLrs7mnhxMADhughiCmFp44PDJybqUf2BVfJykYx4OJwZiEL9XYyQjZdmeXou9NHsskvg1DtXLQCq_r-moN-Pc4-_oTdudVJjiO4_3kLBdHjwpBZuNvqriBVHkJashBEo9w4suJ575UwixhBZ8eOXVcU7HDXEty4ClEVaWdYYQ5mHAZ4D6s91AVGnn16Yg/https://www.amazon.com/Machine-AirLock-ProSeal-Compact-Stainless/dp/B0GD1ZY1PR/ref=sxin_17_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=vacuum+sealer&keywords=vacuum+sealer&pd_rd_i=B0GD1ZY1PR&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0&pd_rd_w=7y6iJ&pd_rd_wg=w1BwT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&qid=1771158290&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776
+                      - heading "Vacuum Sealer Machine with AirLock ProSeal System, 10-in-1 Vacuum Sealer for Food, Dry & Moist Modes, Compact Design with Digital Timer, Built-in Cutter & Roll Storage, Stainless Steel" [level=2] [ref=e621]
+                  - generic [ref=e622]:
+                    - generic [ref=e623]:
+                      - text: "4.6"
+                      - button "4.6 out of 5 stars, rating details" [ref=e625] [cursor=pointer]:
+                        - generic [ref=e627]: 4.6 out of 5 stars
+                      - link "62 ratings" [ref=e631] [cursor=pointer]:
+                        - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJcSZyIJ73ilLPrKaFy7F88AAAGcYULAQwEAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICCWxBUU/clv1c_ek-ABPf3VcbW3TI2mAX3I_BwCvKxcAf4M3qOf5B3NUF9EH6gYPyo9KgOwkqSCFXEsnBiiL4jjp-ObOIdjoW8gLC8t__shvzO8ZN9h7Z27coHg3MtJruUeQDLIrpzoiaZB4hZhcsoFnWF-GwOHdzqG_EhKP2cnGXS4kQlX_dqzpQKUXMtv7XhbG-gvN7_vhPS0SFw8o5cO--otaV4esjC5mbAiwo6XCrSgY-pChEs4-Eag6JqQ5ckTbSeoLl2P-7myqceADPHoEzELtwOSi7hnWNWjUzJzdQsu_PtkKkW2rPEyhBIcwSd9mHDIg3_oHFe-vTcRh0JG-4E73EWsEUt2U9nOzVHbvv5cO-wWDWU2vu3yldTgne6zrXy7DweRJtGreiIHlvrri5DwsoPCQ-7h1qry_D_LfDouAsXGaFD14ivdPWEob8EE9HuyX8xqgBmSvBm42ldCDT8L6AtX_DyMArPx1VMMlHDs4Mq2WH5Z10AXB8VAPumFon-1YQdLsaFwU1K0QqXPhhnDEBqspyr9w8vCktSB9EbCL42AZWv4WwWRtIG_rPbrqxLIQOb_8rzsp8t2mp4BTCPw2IUoARm1dkT_XJcL8ccuetjoZh3u-93bsYiaUlwaXZaorz55RubtdMfVTNc25cLX5atWalCHFwtjuB1ET_zCk_yX3afmazcleHWhSTGwXzXaNW20Nxfz2psmhugJbW6UT_Mfa5oZZK3E9nvT3JiDZj4iC4UV-MDCHxpc02KI3haxzF5MMwsqSdufZTEkZ1HVX9WY0VpyU7P4t4iTIY901VLFTTVUmth5iuOAeYuNhQV9uZiESH_SBRJQt_nH7T_H9riKY15M-btHD4Wy3W1L1vQ7SBoh14ZqpDcdLgaCU_aRBE0V9ISOQLWpaEs1ZV6OCCqTIHcUS64KW3Vq4X1RTxKeMcvVuGVZXK05AWIoccXlDpfQWmzhKvlq_nUrWfybiZfjh8SAtZim-F_v9sSurAQtMt344gEv1KQBY6JXs7WhgMmBLSvIyrIplYq-wiNXQgnNuxWrELj3sBoNAwn9HniZdNCmc36lhUlEVYalUw6uH1wYJI4ovFzHGH_b1XT6HPE1ywZ9m_iTp5HiEXTGxqDb8ITIpjzM-BU8SC6Y0QnKtHItZ2GgF5wVZwWGTbuU7FKm4gzjH6QM-5eZoqoj4Aq2z2f_svCU5Tl9GI2y9LQj0tSNtDPoiejIKR8uG97BSkpkr9UsMJ83Gt39PRHTMLhUT49uWB_bCLvuh2egcgBkHe2s34nF_Xq3Ze582N4OaX_zrd163JBM42uEA9coZmGZc6rp-s3wpXGsGUkCnpcnU25ckA4oxoekdq7N_GryBG1KemV3IpVQqC3RoVUbdOkQ2_m-6XgFNsrpGeiP30JqubcSJmaFh4mRCluYFY-iP0dsd8AaJauFwIvLL3BSnfbYPlKK3dSu4dnWdhkco7WAuzIDM69-AZ596ZXfpp-vZyAo8JQqLrs7mnhxMADhughiCmFp44PDJybqUf2BVfJykYx4OJwZiEL9XYyQjZdmeXou9NHsskvg1DtXLQCq_r-moN-Pc4-_oTdudVJjiO4_3kLBdHjwpBZuNvqriBVHkJashBEo9w4suJ575UwixhBZ8eOXVcU7HDXEty4ClEVaWdYYQ5mHAZ4D6s91AVGnn16Yg/https://www.amazon.com/Machine-AirLock-ProSeal-Compact-Stainless/dp/B0GD1ZY1PR/ref=sxin_17_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=vacuum+sealer&keywords=vacuum+sealer&pd_rd_i=B0GD1ZY1PR&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0&pd_rd_w=7y6iJ&pd_rd_wg=w1BwT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&qid=1771158290&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776#customerReviews
+                        - text: (62)
+                    - generic [ref=e632]: 1K+ bought in past month
+                  - generic [ref=e635]:
+                    - generic [ref=e636]:
+                      - link "Ends in 19:34:34" [ref=e2939] [cursor=pointer]:
+                        - /url: /deals
+                        - generic [ref=e641]: Ends in 19:34:34
+                      - generic [ref=e643]:
+                        - generic [ref=e644]: Price, product page
+                        - 'link "$59.98 List: $98.99 List: $98.99" [ref=e645] [cursor=pointer]':
+                          - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJcSZyIJ73ilLPrKaFy7F88AAAGcYULAQwEAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICCWxBUU/clv1c_ek-ABPf3VcbW3TI2mAX3I_BwCvKxcAf4M3qOf5B3NUF9EH6gYPyo9KgOwkqSCFXEsnBiiL4jjp-ObOIdjoW8gLC8t__shvzO8ZN9h7Z27coHg3MtJruUeQDLIrpzoiaZB4hZhcsoFnWF-GwOHdzqG_EhKP2cnGXS4kQlX_dqzpQKUXMtv7XhbG-gvN7_vhPS0SFw8o5cO--otaV4esjC5mbAiwo6XCrSgY-pChEs4-Eag6JqQ5ckTbSeoLl2P-7myqceADPHoEzELtwOSi7hnWNWjUzJzdQsu_PtkKkW2rPEyhBIcwSd9mHDIg3_oHFe-vTcRh0JG-4E73EWsEUt2U9nOzVHbvv5cO-wWDWU2vu3yldTgne6zrXy7DweRJtGreiIHlvrri5DwsoPCQ-7h1qry_D_LfDouAsXGaFD14ivdPWEob8EE9HuyX8xqgBmSvBm42ldCDT8L6AtX_DyMArPx1VMMlHDs4Mq2WH5Z10AXB8VAPumFon-1YQdLsaFwU1K0QqXPhhnDEBqspyr9w8vCktSB9EbCL42AZWv4WwWRtIG_rPbrqxLIQOb_8rzsp8t2mp4BTCPw2IUoARm1dkT_XJcL8ccuetjoZh3u-93bsYiaUlwaXZaorz55RubtdMfVTNc25cLX5atWalCHFwtjuB1ET_zCk_yX3afmazcleHWhSTGwXzXaNW20Nxfz2psmhugJbW6UT_Mfa5oZZK3E9nvT3JiDZj4iC4UV-MDCHxpc02KI3haxzF5MMwsqSdufZTEkZ1HVX9WY0VpyU7P4t4iTIY901VLFTTVUmth5iuOAeYuNhQV9uZiESH_SBRJQt_nH7T_H9riKY15M-btHD4Wy3W1L1vQ7SBoh14ZqpDcdLgaCU_aRBE0V9ISOQLWpaEs1ZV6OCCqTIHcUS64KW3Vq4X1RTxKeMcvVuGVZXK05AWIoccXlDpfQWmzhKvlq_nUrWfybiZfjh8SAtZim-F_v9sSurAQtMt344gEv1KQBY6JXs7WhgMmBLSvIyrIplYq-wiNXQgnNuxWrELj3sBoNAwn9HniZdNCmc36lhUlEVYalUw6uH1wYJI4ovFzHGH_b1XT6HPE1ywZ9m_iTp5HiEXTGxqDb8ITIpjzM-BU8SC6Y0QnKtHItZ2GgF5wVZwWGTbuU7FKm4gzjH6QM-5eZoqoj4Aq2z2f_svCU5Tl9GI2y9LQj0tSNtDPoiejIKR8uG97BSkpkr9UsMJ83Gt39PRHTMLhUT49uWB_bCLvuh2egcgBkHe2s34nF_Xq3Ze582N4OaX_zrd163JBM42uEA9coZmGZc6rp-s3wpXGsGUkCnpcnU25ckA4oxoekdq7N_GryBG1KemV3IpVQqC3RoVUbdOkQ2_m-6XgFNsrpGeiP30JqubcSJmaFh4mRCluYFY-iP0dsd8AaJauFwIvLL3BSnfbYPlKK3dSu4dnWdhkco7WAuzIDM69-AZ596ZXfpp-vZyAo8JQqLrs7mnhxMADhughiCmFp44PDJybqUf2BVfJykYx4OJwZiEL9XYyQjZdmeXou9NHsskvg1DtXLQCq_r-moN-Pc4-_oTdudVJjiO4_3kLBdHjwpBZuNvqriBVHkJashBEo9w4suJ575UwixhBZ8eOXVcU7HDXEty4ClEVaWdYYQ5mHAZ4D6s91AVGnn16Yg/https://www.amazon.com/Machine-AirLock-ProSeal-Compact-Stainless/dp/B0GD1ZY1PR/ref=sxin_17_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=vacuum+sealer&keywords=vacuum+sealer&pd_rd_i=B0GD1ZY1PR&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0&pd_rd_w=7y6iJ&pd_rd_wg=w1BwT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&qid=1771158290&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776
+                          - generic [ref=e646]:
+                            - generic [ref=e647]: $59.98
+                            - generic [ref=e648]:
+                              - text: $
+                              - generic [ref=e649]:
+                                - text: "59"
+                                - generic [ref=e650]: .
+                              - text: "98"
+                          - generic [ref=e651]: "List: $98.99"
+                          - generic [ref=e652]:
+                            - text: "List:"
+                            - generic [ref=e653]:
+                              - generic [ref=e654]: $98.99
+                              - text: $98.99
+                    - generic [ref=e657]:
+                      - generic [ref=e661]: FREE delivery Fri, Feb 20
+                      - generic [ref=e663]: Or fastest delivery Tue, Feb 17
+            - generic [ref=e667]:
+              - heading "More results" [level=2] [ref=e671]
+              - generic:
+                - list:
+                  - listitem [ref=e672]:
+                    - generic [ref=e678]:
+                      - link [ref=e684] [cursor=pointer]:
+                        - /url: /NutriChef-Vacuum-Sealer-Food-Automatic/dp/B0GL91G9QM/ref=sr_1_3?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-3
+                        - img [ref=e686]
+                      - generic [ref=e689]:
+                        - link "NutriChef Vacuum Sealer for Food - Automatic Electric Air Sealing Preserver System with Gentle and Normal Modes, Roll Cutter, Reusable Bags, Meal Prep Storage, Suitable for Dry/Moist Foods" [ref=e691] [cursor=pointer]:
+                          - /url: /NutriChef-Vacuum-Sealer-Food-Automatic/dp/B0GL91G9QM/ref=sr_1_3?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-3
+                          - heading "NutriChef Vacuum Sealer for Food - Automatic Electric Air Sealing Preserver System with Gentle and Normal Modes, Roll Cutter, Reusable Bags, Meal Prep Storage, Suitable for Dry/Moist Foods" [level=2] [ref=e692]
+                        - generic [ref=e694]: New on Amazon in past month
+                        - generic [ref=e697]:
+                          - generic [ref=e700]:
+                            - generic [ref=e701]: Price, product page
+                            - link "$62.99" [ref=e702] [cursor=pointer]:
+                              - /url: /NutriChef-Vacuum-Sealer-Food-Automatic/dp/B0GL91G9QM/ref=sr_1_3?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-3
+                              - generic [ref=e703]:
+                                - generic [ref=e704]: $62.99
+                                - generic [ref=e705]:
+                                  - text: $
+                                  - generic [ref=e706]:
+                                    - text: "62"
+                                    - generic [ref=e707]: .
+                                  - text: "99"
+                          - generic [ref=e710]:
+                            - generic [ref=e714]: FREE delivery Fri, Feb 20
+                            - generic [ref=e716]: Or fastest delivery Thu, Feb 19
+                          - button "Add to cart" [ref=e732] [cursor=pointer]
+                  - listitem [ref=e735]:
+                    - generic [ref=e741]:
+                      - link [ref=e747] [cursor=pointer]:
+                        - /url: /Updated-Bonsenkitchen-Fast-Compact-Multi-Functional-Accessory/dp/B0D91CQ69R/ref=sr_1_4?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-4
+                        - img [ref=e749]
+                      - generic [ref=e752]:
+                        - link "Bonsenkitchen Vacuum Sealer Machine with 40 Bags | Compact Food Sealer for Kitchen Storage & Meal Prep | Multiple Modes | External Vacuum System, Silver" [ref=e754] [cursor=pointer]:
+                          - /url: /Updated-Bonsenkitchen-Fast-Compact-Multi-Functional-Accessory/dp/B0D91CQ69R/ref=sr_1_4?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-4
+                          - heading "Bonsenkitchen Vacuum Sealer Machine with 40 Bags | Compact Food Sealer for Kitchen Storage & Meal Prep | Multiple Modes | External Vacuum System, Silver" [level=2] [ref=e755]
+                        - generic [ref=e756]:
+                          - generic [ref=e757]:
+                            - text: "4.3"
+                            - button "4.3 out of 5 stars, rating details" [ref=e759] [cursor=pointer]:
+                              - generic [ref=e761]: 4.3 out of 5 stars
+                            - link "8,365 ratings" [ref=e765] [cursor=pointer]:
+                              - /url: /Updated-Bonsenkitchen-Fast-Compact-Multi-Functional-Accessory/dp/B0D91CQ69R/ref=sr_1_4?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-4#customerReviews
+                              - text: (8.3K)
+                          - generic [ref=e766]: 4K+ bought in past month
+                        - generic [ref=e769]:
+                          - generic [ref=e770]:
+                            - generic [ref=e772]:
+                              - generic [ref=e773]: Price, product page
+                              - 'link "$36.99 List Price: $49.99 List Price: $49.99" [ref=e774] [cursor=pointer]':
+                                - /url: /Updated-Bonsenkitchen-Fast-Compact-Multi-Functional-Accessory/dp/B0D91CQ69R/ref=sr_1_4?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-4
+                                - generic [ref=e775]:
+                                  - generic [ref=e776]: $36.99
+                                  - generic [ref=e777]:
+                                    - text: $
+                                    - generic [ref=e778]:
+                                      - text: "36"
+                                      - generic [ref=e779]: .
+                                    - text: "99"
+                                - generic [ref=e780]: "List Price: $49.99"
+                                - generic [ref=e781]:
+                                  - text: "List Price:"
+                                  - generic [ref=e782]:
+                                    - generic [ref=e783]: $49.99
+                                    - text: $49.99
+                            - generic [ref=e784]: Exclusive Prime price
+                          - generic [ref=e787]:
+                            - generic [ref=e791]: FREE delivery Fri, Feb 20
+                            - generic [ref=e793]: Or fastest delivery Tue, Feb 17
+                          - button "1 sustainability certification" [ref=e802] [cursor=pointer]:
+                            - generic [ref=e803]: 1 sustainability certification
+                          - link "See options" [ref=e810] [cursor=pointer]:
+                            - /url: /Updated-Bonsenkitchen-Fast-Compact-Multi-Functional-Accessory/dp/B0D91CQ69R/ref=sr_1_4_so_VACUUM_SEALER_MACHINE?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-4
+                  - listitem [ref=e813]:
+                    - generic [ref=e819]:
+                      - link [ref=e825] [cursor=pointer]:
+                        - /url: /Machine-Powerful-Commercial-Strength-Easy-Lock/dp/B0GF6C3FC1/ref=sr_1_5?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-5
+                        - img [ref=e827]
+                      - generic [ref=e830]:
+                        - link "Vacuum Sealer Machine, Updated Powerful 95KPa Commercial Food Saver with Double Seal for 2X Strength, Built-in Cutter, Bags Storage & Easy-Lock Handle, Includes Free Bags (1 Roll + 10 Pre-cut) Black" [ref=e832] [cursor=pointer]:
+                          - /url: /Machine-Powerful-Commercial-Strength-Easy-Lock/dp/B0GF6C3FC1/ref=sr_1_5?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-5
+                          - heading "Vacuum Sealer Machine, Updated Powerful 95KPa Commercial Food Saver with Double Seal for 2X Strength, Built-in Cutter, Bags Storage & Easy-Lock Handle, Includes Free Bags (1 Roll + 10 Pre-cut) Black" [level=2] [ref=e833]
+                        - generic [ref=e835]:
+                          - text: "4.8"
+                          - button "4.8 out of 5 stars, rating details" [ref=e837] [cursor=pointer]:
+                            - generic [ref=e839]: 4.8 out of 5 stars
+                          - link "54 ratings" [ref=e843] [cursor=pointer]:
+                            - /url: /Machine-Powerful-Commercial-Strength-Easy-Lock/dp/B0GF6C3FC1/ref=sr_1_5?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-5#customerReviews
+                            - text: (54)
+                        - generic [ref=e846]:
+                          - generic [ref=e847]:
+                            - link "Ends in 19:34:34" [ref=e2940] [cursor=pointer]:
+                              - /url: /deals
+                              - generic [ref=e852]: Ends in 19:34:34
+                            - generic [ref=e854]:
+                              - generic [ref=e855]: Price, product page
+                              - 'link "$79.99 Typical: $269.99 Typical: $269.99" [ref=e856] [cursor=pointer]':
+                                - /url: /Machine-Powerful-Commercial-Strength-Easy-Lock/dp/B0GF6C3FC1/ref=sr_1_5?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-5
+                                - generic [ref=e857]:
+                                  - generic [ref=e858]: $79.99
+                                  - generic [ref=e859]:
+                                    - text: $
+                                    - generic [ref=e860]:
+                                      - text: "79"
+                                      - generic [ref=e861]: .
+                                    - text: "99"
+                                - generic [ref=e862]: "Typical: $269.99"
+                                - generic [ref=e863]:
+                                  - text: "Typical:"
+                                  - generic [ref=e864]:
+                                    - generic [ref=e865]: $269.99
+                                    - text: $269.99
+                          - generic [ref=e868]:
+                            - generic [ref=e872]: FREE delivery Fri, Feb 20
+                            - generic [ref=e874]: Or fastest delivery Tue, Feb 17
+                          - button "Add to cart" [ref=e890] [cursor=pointer]
+            - generic [ref=e895]:
+              - link "Sponsored ad from Potane Professional. \"Professional Vacuum Sealers.\" Shop Potane Professional." [ref=e896] [cursor=pointer]:
+                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/stores/page/3DDA1B14-77CB-4FCF-BC0B-E405FA20B678/?_encoding=UTF8&store_ref=SB_A09110241YKMFCFAKM7ZS-A08984482S9JAUY55ARNL&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&lp_asins=B08QGX549G%2CB0DXPTJD3M%2CB08BRN1B7Q&lp_query=vacuum%20sealer&lp_slot=desktop-inline&ref_=sbx__sbtcd2_bkgd&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+              - generic [ref=e897]:
+                - generic [ref=e899]:
+                  - link "Potane Professional" [ref=e901] [cursor=pointer]:
+                    - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/stores/page/3DDA1B14-77CB-4FCF-BC0B-E405FA20B678/?_encoding=UTF8&store_ref=SB_A09110241YKMFCFAKM7ZS-A08984482S9JAUY55ARNL&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&lp_asins=B08QGX549G%2CB0DXPTJD3M%2CB08BRN1B7Q&lp_query=vacuum%20sealer&lp_slot=desktop-inline&ref_=sbx__sbtcd2_logo&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                    - img "Potane Professional" [ref=e903]
+                  - generic [ref=e905]:
+                    - link "Professional Vacuum Sealers" [ref=e906] [cursor=pointer]:
+                      - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/stores/page/3DDA1B14-77CB-4FCF-BC0B-E405FA20B678/?_encoding=UTF8&store_ref=SB_A09110241YKMFCFAKM7ZS-A08984482S9JAUY55ARNL&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&lp_asins=B08QGX549G%2CB0DXPTJD3M%2CB08BRN1B7Q&lp_query=vacuum%20sealer&lp_slot=desktop-inline&ref_=sbx__sbtcd2_hl&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                      - generic [ref=e907]:
+                        - generic [ref=e908]: Professional Vacuum Sealers
+                        - generic [ref=e909]: Professional Vacuum Sealers
+                    - generic [ref=e910]:
+                      - button "Leave feedback on Sponsored ad" [ref=e914] [cursor=pointer]: Sponsored
+                      - generic [ref=e916]: "|"
+                      - generic [ref=e917]: Top 10 best-selling brand in vacuum sealers
+                      - generic [ref=e918]: "|"
+                      - link "Shop Potane Professional" [ref=e920] [cursor=pointer]:
+                        - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/stores/page/3DDA1B14-77CB-4FCF-BC0B-E405FA20B678/?_encoding=UTF8&store_ref=SB_A09110241YKMFCFAKM7ZS-A08984482S9JAUY55ARNL&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&lp_asins=B08QGX549G%2CB0DXPTJD3M%2CB08BRN1B7Q&lp_query=vacuum%20sealer&lp_slot=desktop-inline&ref_=sbx__sbtcd2_cta&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                        - generic [ref=e923]:
+                          - text: Shop Potane
+                          - generic [ref=e924]:
+                            - text: Professional
+                            - img [ref=e925]
+                - group [ref=e928]:
+                  - group [ref=e932]:
+                    - list [ref=e933]:
+                      - listitem [ref=e934]:
+                        - generic [ref=e936]:
+                          - link [ref=e937] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_bkgd&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                          - link "Potane Precision Vacuum Machine,Pro Food Sealer with Built-in Cutter and Bag Storage(Up to 20 Feet Length), Both Auto&Manual Options,2 Modes,Includes 2 Bag Rolls 11”x16’ and 8”x16’,Compact Design" [ref=e938] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_img&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                            - img "Potane Precision Vacuum Machine,Pro Food Sealer with Built-in Cutter and Bag Storage(Up to 20 Feet Length), Both Auto&Manual Options,2 Modes,Includes 2 Bag Rolls 11”x16’ and 8”x16’,Compact Design" [ref=e941]
+                          - generic [ref=e942]:
+                            - link [ref=e943] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_bkgd&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                            - link "Potane Precision Vacuum Machine,Pro Food Sealer with Built-in Cutter and Bag Storage(Up to 20 Feet Length), Both Auto&Manual Options,2 Modes,Includes 2 Bag Rolls 11”x16’ and 8”x16’,Compact Design" [ref=e945] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_title&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                              - generic [ref=e946]:
+                                - generic [ref=e947]: Potane Precision Vacuum Machine,Pro Food Sealer with Built-in Cutter and Bag Storage(Up to 20 Feet Length), Both Auto&Manual Options,2 Modes,Includes 2 Bag Rolls 11”x16’ and 8”x16’,Compact Design
+                                - generic [ref=e948]: Potane Precision Vacuum Machine,Pro Food Sealer with Built-in Cutter and Bag Storage(Up to 20 Feet Lengt…
+                            - link "Rated 4.6 out of 5 stars by 6034 reviews. Go to review section." [ref=e949] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_rating&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0#customerReviews
+                              - generic [ref=e950]:
+                                - generic [ref=e951]: "4.6"
+                                - generic [ref=e953]: 4.6 out of 5 stars.
+                                - generic [ref=e954]: 6,034
+                            - link "$149.99" [ref=e956] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08QGX549G/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_price&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                              - generic [ref=e958]:
+                                - generic [ref=e959]: $149.99
+                                - generic [ref=e960]:
+                                  - text: $
+                                  - generic [ref=e961]:
+                                    - text: "149"
+                                    - generic [ref=e962]: .
+                                  - text: "99"
+                            - generic [ref=e965]: "List: $174.99"
+                            - img "Eligible for Prime." [ref=e967]
+                      - listitem [ref=e968]:
+                        - generic [ref=e970]:
+                          - link [ref=e971] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_1_bkgd&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                          - link "Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System, Full Auto/Manual Functions, Built-in Safety Cutter&Guided Seal Bar, Start Kit Bags to Seal a Meal" [ref=e972] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_1_img&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                            - img "Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System, Full Auto/Manual Functions, Built-in Safety Cutter&Guided Seal Bar, Start Kit Bags to Seal a Meal" [ref=e975]
+                          - generic [ref=e976]:
+                            - link [ref=e977] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_1_bkgd&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                            - link "Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System, Full Auto/Manual Functions, Built-in Safety Cutter&Guided Seal Bar, Start Kit Bags to Seal a Meal" [ref=e979] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_1_title&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                              - generic [ref=e980]:
+                                - generic [ref=e981]: Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System, Full Auto/Manual Functions, Built-in Safety Cutter&Guided Seal Bar, Start Kit Bags to Seal a Meal
+                                - generic [ref=e982]: Next Gen Vacuum Sealer Machine, Potane Double Pump Food Vacuum Saver With Smart Visual Status System,…
+                            - link "Rated 4.5 out of 5 stars by 186 reviews. Go to review section." [ref=e983] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_1_rating&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0#customerReviews
+                              - generic [ref=e984]:
+                                - generic [ref=e985]: "4.5"
+                                - generic [ref=e987]: 4.5 out of 5 stars.
+                                - generic [ref=e988]: "186"
+                            - link "Limited time deal" [ref=e990] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_1_badge&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                              - generic [ref=e993]: Limited time deal
+                            - link "-23% $99.87" [ref=e995] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B0DXPTJD3M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-2-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_1_price&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                              - generic [ref=e996]:
+                                - generic [ref=e997]: "-23%"
+                                - generic [ref=e998]:
+                                  - generic [ref=e999]: $99.87
+                                  - generic [ref=e1000]:
+                                    - text: $
+                                    - generic [ref=e1001]:
+                                      - text: "99"
+                                      - generic [ref=e1002]: .
+                                    - text: "87"
+                            - generic [ref=e1005]: "List: $129.99"
+                            - img "Eligible for Prime." [ref=e1007]
+                      - listitem [ref=e1008]:
+                        - generic [ref=e1010]:
+                          - link [ref=e1011] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_2_bkgd&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                          - link "POTANE Precision Vacuum Sealer Machine, Powerful Pro Vacuum Food Sealer, 8-in-1 Easy Presets, 4 Food Modes, Dry&Moist&Soft&Delicate with Starter Kit, Compact Design(Silver)" [ref=e1012] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_2_img&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                            - img "POTANE Precision Vacuum Sealer Machine, Powerful Pro Vacuum Food Sealer, 8-in-1 Easy Presets, 4 Food Modes, Dry&Moist&Soft&Delicate with Starter Kit, Compact Design(Silver)" [ref=e1015]
+                          - generic [ref=e1016]:
+                            - link [ref=e1017] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_2_bkgd&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                            - link "POTANE Precision Vacuum Sealer Machine, Powerful Pro Vacuum Food Sealer, 8-in-1 Easy Presets, 4 Food Modes, Dry&Moist&Soft&Delicate with Starter Kit, Compact Design(Silver)" [ref=e1019] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_2_title&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                              - generic [ref=e1020]:
+                                - generic [ref=e1021]: POTANE Precision Vacuum Sealer Machine, Powerful Pro Vacuum Food Sealer, 8-in-1 Easy Presets, 4 Food Modes, Dry&Moist&Soft&Delicate with Starter Kit, Compact Design(Silver)
+                                - generic [ref=e1022]: POTANE Precision Vacuum Sealer Machine, Powerful Pro Vacuum Food Sealer, 8-in-1 Easy Presets, 4 Food Modes,…
+                            - link "Rated 4.4 out of 5 stars by 9494 reviews. Go to review section." [ref=e1023] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_2_rating&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0#customerReviews
+                              - generic [ref=e1024]:
+                                - generic [ref=e1025]: "4.4"
+                                - generic [ref=e1027]: 4.4 out of 5 stars.
+                                - generic [ref=e1028]: 9,494
+                            - link "$79.99" [ref=e1030] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JJUjQYJOXskqylQ6-K-iK9YAAAGcYULAKwEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDIgICAZeeUb/clv1c_ek-wBPHXKjbXDkeLEb_5m_ZISohW2vKWNunKyy_I35vJKzW3JrPb0ETB61uFmmT0epABIeKqE9hoDQDm-2TfSETi4IHP_wjx-6hyCg3o0-26u9OoL6VQWqAXInh2hlJz15FW5fDZyJlWgUJOzcmGJhB19B2ektUqkM8g0wv63IeRUQtNX8MEyE0qD21osdt--faF6EzQ_zns_aS8M0j65y4bnDW1pmK3npAYbtikwfzLCJzfQ1P9V-_PhrnPu2kbBwpF5IoxIwgqUwvCe7HxZAFmAZYwOopGfty6RHPR9KfUKEcu89aOaMmPVmcIM3afU_dnWX52KLgTvDCaw9WyXpSejRV-MacBHLJHz3KpAbxeVcJBxdmCExqpXejk4kfxqO0W1xo7_iHZ3WJH2sQ7MRDe5FDwF-4505I-vkPPCU1q7TgDVOaFqMD5t15lmEnjR7s1kfGZDlmappiZeUc1gZMZOS4GWqP0EHXEhECVwcIczIJRmam4vIEX9MsyeBlHugIYMyYbbilzAg32Aay3_N6ByV-DehKZ89bZmLD9L0yIFfCn1xpXyPX2-ccaJ5cFjV4fcX3rVOtAnvhlzcftZS7Dnc5kcDn9kskHHhsQMei5d7XALK3jtzDwYzeHZwPoAsnO57kBqmSPw9HbxCIZfcX5sWxvudNwr9hxOHACQlggO8RcfbZfzt2p-5Qnc53_RedNV9scBZhnCJBmR4dYezFqYynUFvpzZMwgkOst-ij9TusbfIYqldJlpyvlAGeAgbdK74oNobfSlG6zrGj17M3KjFvaNz4buhddb42MOpPfie6jRwqaRwNc4djah0zftT-qzCBsftljjzELr1TkKV6eBnkBakljjE8p6X01AoBtG8WKrSyJpEWsHkunV0q8_HMgPPFSUY_xbQ6LVNXEsyO3d2yMzGJ4n07Gf3zPhcybWRoRusRjOutJbBxXpms2xjQOOAYLyYO5z0sAY5fAtQcV-9WuJRo7cDtxUU2sYlkvleaNOK_hqQO_Fk0pM8rTG6w7Hkim1MUSSmLZymgZFz5cS2uveWjK_I7SRIrBdaklYnnnBaQcwjRKWPq7-CXlkLHnNNCbKyd5laYv-28mCckiVopfDYMwtuROIBf0WGh4Xsnab_LvZBPQ3ugelRH7S5KgoMf1u9AjZaEH65Dq6fSV-5sFR27zHY9H_OlMD27zTTUuegSouCzf39F_UUKPAr8KdmMQJqHlsn6McmKoALD6n9PlWiLm4PIFoR0cNzktdeSbMqxSRjkcZ5Sm7SuBLpIiIQKKMNYye-Sx-imk8v9lGZkIyB0TSSTXh6nHu2GbL3_27YO8KDCvuMQF9IuYusC88OxAMgRT3yhRGyabmMsauoHm9KKt6bhYxLbD7q4i8S2NZ2Bkzg8oN3gmVoTTggIeYf-jF8xO6j0C144OFhyjtQZrehFzoMZx8sJKjOgMoBszmy-tbys5_QLeC9VeUT1HhNRk6m6xhKGQURUPYHPHie1Ch3tiRO1zeI--4Fl6r6ce3Aao4qF9O1um_DrIskQ6pqgxVYScNUnIacnqRuB3mHuCxJw57FtqSsdt9ECvPHoe_Fv54LK0ns521_B9KQhQmru6hrk_szqorPSg7ZMNVzRWrQn7CVnxC0WumlTr8iDCInR2Jf2tpUSgURtX74OksopdTjuJAMpZBIk3W8Lb4iICsxxGAVBF__DNvvhmH4krVA/https://www.amazon.com/gp/aw/d/B08BRN1B7Q/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=da0d876db58d3a13650030988ec5a469&hsa_cr_id=0&qid=1771158290&sr=1-3-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_2_price&pd_rd_w=Y9TcV&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=w1BwT&pd_rd_r=bf9dbc6c-b810-44bb-a1a4-b28d5c83cfb0
+                              - generic [ref=e1032]:
+                                - generic [ref=e1033]: $79.99
+                                - generic [ref=e1034]:
+                                  - text: $
+                                  - generic [ref=e1035]:
+                                    - text: "79"
+                                    - generic [ref=e1036]: .
+                                  - text: "99"
+                            - img "Eligible for Prime." [ref=e1038]
+            - generic [ref=e1040]:
+              - heading "More results" [level=2] [ref=e1044]
+              - generic:
+                - list:
+                  - listitem [ref=e1045]:
+                    - generic [ref=e1051]:
+                      - link [ref=e1057] [cursor=pointer]:
+                        - /url: /Vacuum-Machine-MEGAWISE-Starter-Compact/dp/B08XJW5LHG/ref=sr_1_6?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-6
+                        - img [ref=e1059]
+                      - generic [ref=e1062]:
+                        - link "MEGAWISE 2025 Powerful Vacuum Sealer Machine | Compact Design | One-Touch Automatic | Seal in 10-20 Seconds | Dry, Moist, Wet, and Cold Modes | With 10 Vacuum Bags & Built-in Cutter (Grey)" [ref=e1064] [cursor=pointer]:
+                          - /url: /Vacuum-Machine-MEGAWISE-Starter-Compact/dp/B08XJW5LHG/ref=sr_1_6?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-6
+                          - heading "MEGAWISE 2025 Powerful Vacuum Sealer Machine | Compact Design | One-Touch Automatic | Seal in 10-20 Seconds | Dry, Moist, Wet, and Cold Modes | With 10 Vacuum Bags & Built-in Cutter (Grey)" [level=2] [ref=e1065]
+                        - generic [ref=e1066]:
+                          - generic [ref=e1067]:
+                            - text: "4.3"
+                            - button "4.3 out of 5 stars, rating details" [ref=e1069] [cursor=pointer]:
+                              - generic [ref=e1071]: 4.3 out of 5 stars
+                            - link "12,710 ratings" [ref=e1075] [cursor=pointer]:
+                              - /url: /Vacuum-Machine-MEGAWISE-Starter-Compact/dp/B08XJW5LHG/ref=sr_1_6?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-6#customerReviews
+                              - text: (12.7K)
+                          - generic [ref=e1076]: 6K+ bought in past month
+                        - generic [ref=e1079]:
+                          - generic [ref=e1080]:
+                            - link "Limited time deal" [ref=e1082] [cursor=pointer]:
+                              - /url: /deals
+                              - generic [ref=e1085]: Limited time deal
+                            - generic [ref=e1087]:
+                              - generic [ref=e1088]: Price, product page
+                              - 'link "$26.28 Typical: $33.99 Typical: $33.99" [ref=e1089] [cursor=pointer]':
+                                - /url: /Vacuum-Machine-MEGAWISE-Starter-Compact/dp/B08XJW5LHG/ref=sr_1_6?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-6
+                                - generic [ref=e1090]:
+                                  - generic [ref=e1091]: $26.28
+                                  - generic [ref=e1092]:
+                                    - text: $
+                                    - generic [ref=e1093]:
+                                      - text: "26"
+                                      - generic [ref=e1094]: .
+                                    - text: "28"
+                                - generic [ref=e1095]: "Typical: $33.99"
+                                - generic [ref=e1096]:
+                                  - text: "Typical:"
+                                  - generic [ref=e1097]:
+                                    - generic [ref=e1098]: $33.99
+                                    - text: $33.99
+                          - generic [ref=e1101]:
+                            - generic [ref=e1105]: FREE delivery Fri, Feb 20 on $35 of items shipped by Amazon
+                            - generic [ref=e1107]: Or fastest delivery Tue, Feb 17
+                          - button "Recycled materials +2 more" [ref=e1116] [cursor=pointer]:
+                            - generic [ref=e1117]: Recycled materials +2 more
+                          - button "Add to cart" [ref=e1132] [cursor=pointer]
+                          - generic [ref=e1134]:
+                            - text: More Buying Choices
+                            - text: $24.18
+                            - link "(4+ used & new offers)" [ref=e1136] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B08XJW5LHG/ref=sr_1_6_olp?keywords=vacuum+sealer&dib_tag=se&dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&qid=1771158290&sr=8-6
+                  - listitem [ref=e1139]:
+                    - generic [ref=e1145]:
+                      - link [ref=e1151] [cursor=pointer]:
+                        - /url: /Bonsenkitchen-Low-Noise-Technology-High-Speed-Continuous/dp/B0CNGHRVZT/ref=sr_1_7?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-7
+                        - img [ref=e1153]
+                      - generic [ref=e1156]:
+                        - link "Bonsenkitchen Vacuum Sealer Machine, Globefish Technology for Perfect Vacuum Sealing, Powerful Low-Noise Food Vacuum Sealer with Easy Handle Design, Built-in Cutter & Bag Storage, 1 Bag Roll & 10 Bags" [ref=e1158] [cursor=pointer]:
+                          - /url: /Bonsenkitchen-Low-Noise-Technology-High-Speed-Continuous/dp/B0CNGHRVZT/ref=sr_1_7?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-7
+                          - heading "Bonsenkitchen Vacuum Sealer Machine, Globefish Technology for Perfect Vacuum Sealing, Powerful Low-Noise Food Vacuum Sealer with Easy Handle Design, Built-in Cutter & Bag Storage, 1 Bag Roll & 10 Bags" [level=2] [ref=e1159]
+                        - generic [ref=e1160]:
+                          - generic [ref=e1161]:
+                            - text: "4.5"
+                            - button "4.5 out of 5 stars, rating details" [ref=e1163] [cursor=pointer]:
+                              - generic [ref=e1165]: 4.5 out of 5 stars
+                            - link "3,009 ratings" [ref=e1169] [cursor=pointer]:
+                              - /url: /Bonsenkitchen-Low-Noise-Technology-High-Speed-Continuous/dp/B0CNGHRVZT/ref=sr_1_7?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-7#customerReviews
+                              - text: (3K)
+                          - generic [ref=e1170]: 2K+ bought in past month
+                        - generic [ref=e1173]:
+                          - generic [ref=e1174]:
+                            - generic [ref=e1176]:
+                              - generic [ref=e1177]: Price, product page
+                              - 'link "$85.49 List Price: $106.99 List Price: $106.99" [ref=e1178] [cursor=pointer]':
+                                - /url: /Bonsenkitchen-Low-Noise-Technology-High-Speed-Continuous/dp/B0CNGHRVZT/ref=sr_1_7?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-7
+                                - generic [ref=e1179]:
+                                  - generic [ref=e1180]: $85.49
+                                  - generic [ref=e1181]:
+                                    - text: $
+                                    - generic [ref=e1182]:
+                                      - text: "85"
+                                      - generic [ref=e1183]: .
+                                    - text: "49"
+                                - generic [ref=e1184]: "List Price: $106.99"
+                                - generic [ref=e1185]:
+                                  - text: "List Price:"
+                                  - generic [ref=e1186]:
+                                    - generic [ref=e1187]: $106.99
+                                    - text: $106.99
+                            - generic [ref=e1188]: Exclusive Prime price
+                          - generic [ref=e1191]:
+                            - generic [ref=e1195]: FREE delivery Fri, Feb 20
+                            - generic [ref=e1197]: Or fastest delivery Tue, Feb 17
+                          - button "1 sustainability certification" [ref=e1206] [cursor=pointer]:
+                            - generic [ref=e1207]: 1 sustainability certification
+                          - link "See options" [ref=e1214] [cursor=pointer]:
+                            - /url: /Bonsenkitchen-Low-Noise-Technology-High-Speed-Continuous/dp/B0CNGHRVZT/ref=sr_1_7_so_VACUUM_SEALER_MACHINE?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-7
+                  - listitem [ref=e1217]:
+                    - generic [ref=e1223]:
+                      - link [ref=e1229] [cursor=pointer]:
+                        - /url: /VS-12-Deluxe-Starter-Viewing-Compact/dp/B01KCK9W1K/ref=sr_1_8?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-8
+                        - img [ref=e1231]
+                      - generic [ref=e1234]:
+                        - link "Nesco Deluxe Food VS-12 Vacuum Sealer, 130 Watts, Kit Bags & Viewing Lid, Compact, Silver" [ref=e1236] [cursor=pointer]:
+                          - /url: /VS-12-Deluxe-Starter-Viewing-Compact/dp/B01KCK9W1K/ref=sr_1_8?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-8
+                          - heading "Nesco Deluxe Food VS-12 Vacuum Sealer, 130 Watts, Kit Bags & Viewing Lid, Compact, Silver" [level=2] [ref=e1237]
+                        - generic [ref=e1238]:
+                          - generic [ref=e1239]:
+                            - text: "4.3"
+                            - button "4.3 out of 5 stars, rating details" [ref=e1241] [cursor=pointer]:
+                              - generic [ref=e1243]: 4.3 out of 5 stars
+                            - link "14,587 ratings" [ref=e1247] [cursor=pointer]:
+                              - /url: /VS-12-Deluxe-Starter-Viewing-Compact/dp/B01KCK9W1K/ref=sr_1_8?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-8#customerReviews
+                              - text: (14.5K)
+                          - generic [ref=e1248]: 2K+ bought in past month
+                        - generic [ref=e1251]:
+                          - generic [ref=e1254]:
+                            - generic [ref=e1255]: Price, product page
+                            - 'link "$128.99 List: $139.99 List: $139.99" [ref=e1256] [cursor=pointer]':
+                              - /url: /VS-12-Deluxe-Starter-Viewing-Compact/dp/B01KCK9W1K/ref=sr_1_8?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-8
+                              - generic [ref=e1257]:
+                                - generic [ref=e1258]: $128.99
+                                - generic [ref=e1259]:
+                                  - text: $
+                                  - generic [ref=e1260]:
+                                    - text: "128"
+                                    - generic [ref=e1261]: .
+                                  - text: "99"
+                              - generic [ref=e1262]: "List: $139.99"
+                              - generic [ref=e1263]:
+                                - text: "List:"
+                                - generic [ref=e1264]:
+                                  - generic [ref=e1265]: $139.99
+                                  - text: $139.99
+                          - generic [ref=e1268]:
+                            - generic [ref=e1272]: FREE delivery Fri, Feb 20
+                            - generic [ref=e1274]: Or fastest delivery Thu, Feb 19
+                          - button "Small Business" [ref=e1283] [cursor=pointer]:
+                            - generic [ref=e1284]: Small Business
+                          - button "Add to cart" [ref=e1299] [cursor=pointer]
+                          - generic [ref=e1301]:
+                            - text: More Buying Choices
+                            - text: $104.61
+                            - link "(8+ used & new offers)" [ref=e1303] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B01KCK9W1K/ref=sr_1_8_olp?keywords=vacuum+sealer&dib_tag=se&dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&qid=1771158290&sr=8-8
+                  - listitem [ref=e1306]:
+                    - generic [ref=e1312]:
+                      - link [ref=e1318] [cursor=pointer]:
+                        - /url: /Chef-Preserve-Containers-Reusable-Powerful/dp/B0DS1Z2VW1/ref=sr_1_9?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-9
+                        - img [ref=e1320]
+                      - generic [ref=e1323]:
+                        - link "Chef Preserve Compact Vacuum Sealer for Food (Vacuum Sealer Machine + 3 Glass Vacuum Containers + 30 Reusable Vacuum Bags) Powerful Handheld Vacuum Seal Machine, Seal Meal Saver, Portable Food Sealer" [ref=e1325] [cursor=pointer]:
+                          - /url: /Chef-Preserve-Containers-Reusable-Powerful/dp/B0DS1Z2VW1/ref=sr_1_9?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-9
+                          - heading "Chef Preserve Compact Vacuum Sealer for Food (Vacuum Sealer Machine + 3 Glass Vacuum Containers + 30 Reusable Vacuum Bags) Powerful Handheld Vacuum Seal Machine, Seal Meal Saver, Portable Food Sealer" [level=2] [ref=e1326]
+                        - generic [ref=e1327]:
+                          - generic [ref=e1328]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e1330] [cursor=pointer]:
+                              - generic [ref=e1332]: 4.6 out of 5 stars
+                            - link "2,909 ratings" [ref=e1336] [cursor=pointer]:
+                              - /url: /Chef-Preserve-Containers-Reusable-Powerful/dp/B0DS1Z2VW1/ref=sr_1_9?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-9#customerReviews
+                              - text: (2.9K)
+                          - generic [ref=e1337]: 3K+ bought in past month
+                        - generic [ref=e1340]:
+                          - generic [ref=e1341]:
+                            - link "Limited time deal" [ref=e1343] [cursor=pointer]:
+                              - /url: /deals
+                              - generic [ref=e1346]: Limited time deal
+                            - generic [ref=e1348]:
+                              - generic [ref=e1349]: Price, product page
+                              - 'link "$124.98 List: $169.00 List: $169.00" [ref=e1350] [cursor=pointer]':
+                                - /url: /Chef-Preserve-Containers-Reusable-Powerful/dp/B0DS1Z2VW1/ref=sr_1_9?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-9
+                                - generic [ref=e1351]:
+                                  - generic [ref=e1352]: $124.98
+                                  - generic [ref=e1353]:
+                                    - text: $
+                                    - generic [ref=e1354]:
+                                      - text: "124"
+                                      - generic [ref=e1355]: .
+                                    - text: "98"
+                                - generic [ref=e1356]: "List: $169.00"
+                                - generic [ref=e1357]:
+                                  - text: "List:"
+                                  - generic [ref=e1358]:
+                                    - generic [ref=e1359]: $169.00
+                                    - text: $169.00
+                          - generic [ref=e1362]:
+                            - generic [ref=e1366]: FREE delivery Fri, Feb 20
+                            - generic [ref=e1368]: Or fastest delivery Tue, Feb 17
+                          - button "Small Business" [ref=e1377] [cursor=pointer]:
+                            - generic [ref=e1378]: Small Business
+                          - button "Add to cart" [ref=e1393] [cursor=pointer]
+                          - generic [ref=e1395]:
+                            - text: More Buying Choices
+                            - text: $117.54
+                            - link "(2 used & new offers)" [ref=e1397] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B0DS1Z2VW1/ref=sr_1_9_olp?keywords=vacuum+sealer&dib_tag=se&dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&qid=1771158290&sr=8-9
+                  - listitem [ref=e1400]:
+                    - generic [ref=e1406]:
+                      - link [ref=e1412] [cursor=pointer]:
+                        - /url: /FoodSaver-FM2100-Manual-Sealing-Preservation/dp/B00LUGK5QW/ref=sr_1_10?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-10
+                        - img [ref=e1414]
+                      - generic [ref=e1417]:
+                        - link "FoodSaver Vacuum Sealer Machine, Automatic Bag Detection, Sous Vide Friendly, with sealer bags, roll, handheld vacuum sealer, black" [ref=e1419] [cursor=pointer]:
+                          - /url: /FoodSaver-FM2100-Manual-Sealing-Preservation/dp/B00LUGK5QW/ref=sr_1_10?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-10
+                          - heading "FoodSaver Vacuum Sealer Machine, Automatic Bag Detection, Sous Vide Friendly, with sealer bags, roll, handheld vacuum sealer, black" [level=2] [ref=e1420]
+                        - generic [ref=e1421]:
+                          - generic [ref=e1422]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e1424] [cursor=pointer]:
+                              - generic [ref=e1426]: 4.6 out of 5 stars
+                            - link "9,613 ratings" [ref=e1430] [cursor=pointer]:
+                              - /url: /FoodSaver-FM2100-Manual-Sealing-Preservation/dp/B00LUGK5QW/ref=sr_1_10?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-10#customerReviews
+                              - text: (9.6K)
+                          - generic [ref=e1431]: 5K+ bought in past month
+                        - generic [ref=e1434]:
+                          - generic [ref=e1437]:
+                            - generic [ref=e1438]: Price, product page
+                            - 'link "$139.91 ( $1.65 /ounce) List: $146.98 List: $146.98" [ref=e1439] [cursor=pointer]':
+                              - /url: /FoodSaver-FM2100-Manual-Sealing-Preservation/dp/B00LUGK5QW/ref=sr_1_10?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-10
+                              - generic [ref=e1440]:
+                                - generic [ref=e1441]: $139.91
+                                - generic [ref=e1442]:
+                                  - text: $
+                                  - generic [ref=e1443]:
+                                    - text: "139"
+                                    - generic [ref=e1444]: .
+                                  - text: "91"
+                              - generic [ref=e1445]:
+                                - text: (
+                                - generic [ref=e1446]:
+                                  - generic [ref=e1447]: $1.65
+                                  - text: $1.65
+                                - text: /ounce)
+                              - generic [ref=e1448]: "List: $146.98"
+                              - generic [ref=e1449]:
+                                - text: "List:"
+                                - generic [ref=e1450]:
+                                  - generic [ref=e1451]: $146.98
+                                  - text: $146.98
+                          - generic [ref=e1458]: FREE delivery Fri, Feb 20
+                          - button "Add to cart" [ref=e1476] [cursor=pointer]
+                          - generic [ref=e1478]:
+                            - text: More Buying Choices
+                            - text: $90.66
+                            - link "(7+ used & new offers)" [ref=e1480] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B00LUGK5QW/ref=sr_1_10_olp?keywords=vacuum+sealer&dib_tag=se&dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&qid=1771158290&sr=8-10
+                  - listitem [ref=e1483]:
+                    - generic [ref=e1489]:
+                      - link [ref=e1495] [cursor=pointer]:
+                        - /url: /Bonsenkitchen-Multi-Functional-Accessory-Fast-Compact-Preservation/dp/B0F82F9C9L/ref=sr_1_11?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-11
+                        - img [ref=e1497]
+                      - generic [ref=e1500]:
+                        - link "Bonsenkitchen Vacuum Sealer, Multi-Functional Food Sealer with 5 Vacuum Bags, External Vacuum System & Accessory Tube,Fast-Compact Design, Bright Black" [ref=e1502] [cursor=pointer]:
+                          - /url: /Bonsenkitchen-Multi-Functional-Accessory-Fast-Compact-Preservation/dp/B0F82F9C9L/ref=sr_1_11?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-11
+                          - heading "Bonsenkitchen Vacuum Sealer, Multi-Functional Food Sealer with 5 Vacuum Bags, External Vacuum System & Accessory Tube,Fast-Compact Design, Bright Black" [level=2] [ref=e1503]
+                        - generic [ref=e1504]:
+                          - generic [ref=e1505]:
+                            - text: "4.3"
+                            - button "4.3 out of 5 stars, rating details" [ref=e1507] [cursor=pointer]:
+                              - generic [ref=e1509]: 4.3 out of 5 stars
+                            - link "17,523 ratings" [ref=e1513] [cursor=pointer]:
+                              - /url: /Bonsenkitchen-Multi-Functional-Accessory-Fast-Compact-Preservation/dp/B0F82F9C9L/ref=sr_1_11?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-11#customerReviews
+                              - text: (17.5K)
+                          - generic [ref=e1514]: 1K+ bought in past month
+                        - generic [ref=e1517]:
+                          - generic [ref=e1518]:
+                            - generic [ref=e1522]: Save 46%
+                            - generic [ref=e1524]:
+                              - generic [ref=e1525]: Price, product page
+                              - 'link "$26.99 List: $49.99 List: $49.99" [ref=e1526] [cursor=pointer]':
+                                - /url: /Bonsenkitchen-Multi-Functional-Accessory-Fast-Compact-Preservation/dp/B0F82F9C9L/ref=sr_1_11?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-11
+                                - generic [ref=e1527]:
+                                  - generic [ref=e1528]: $26.99
+                                  - generic [ref=e1529]:
+                                    - text: $
+                                    - generic [ref=e1530]:
+                                      - text: "26"
+                                      - generic [ref=e1531]: .
+                                    - text: "99"
+                                - generic [ref=e1532]: "List: $49.99"
+                                - generic [ref=e1533]:
+                                  - text: "List:"
+                                  - generic [ref=e1534]:
+                                    - generic [ref=e1535]: $49.99
+                                    - text: $49.99
+                            - generic "Lowest price in 30 days" [ref=e1537]
+                          - generic [ref=e1540]:
+                            - generic [ref=e1544]: FREE delivery Fri, Feb 20 on $35 of items shipped by Amazon
+                            - generic [ref=e1546]: Or fastest delivery Tue, Feb 17
+                          - button "1 sustainability certification" [ref=e1555] [cursor=pointer]:
+                            - generic [ref=e1556]: 1 sustainability certification
+                          - button "Add to cart" [ref=e1571] [cursor=pointer]
+                  - listitem [ref=e1574]:
+                    - generic [ref=e1580]:
+                      - link [ref=e1586] [cursor=pointer]:
+                        - /url: /FoodSaver-VS0150-PowerVac-Compact-Vertical/dp/B08BF3GB5Q/ref=sr_1_12?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-12
+                        - img [ref=e1588]
+                      - generic [ref=e1591]:
+                        - link "FoodSaver PowerVac Compact Vacuum Sealing Machine Stainless Steel & Black Vertical Storage VS0150 | Preserves freshness reduces bag waste for both dry and wet food" [ref=e1593] [cursor=pointer]:
+                          - /url: /FoodSaver-VS0150-PowerVac-Compact-Vertical/dp/B08BF3GB5Q/ref=sr_1_12?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-12
+                          - heading "FoodSaver PowerVac Compact Vacuum Sealing Machine Stainless Steel & Black Vertical Storage VS0150 | Preserves freshness reduces bag waste for both dry and wet food" [level=2] [ref=e1594]
+                        - generic [ref=e1595]:
+                          - generic [ref=e1596]:
+                            - text: "4.2"
+                            - button "4.2 out of 5 stars, rating details" [ref=e1598] [cursor=pointer]:
+                              - generic [ref=e1600]: 4.2 out of 5 stars
+                            - link "15,565 ratings" [ref=e1604] [cursor=pointer]:
+                              - /url: /FoodSaver-VS0150-PowerVac-Compact-Vertical/dp/B08BF3GB5Q/ref=sr_1_12?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-12#customerReviews
+                              - text: (15.5K)
+                          - generic [ref=e1605]: 1K+ bought in past month
+                        - generic [ref=e1608]:
+                          - generic [ref=e1609]:
+                            - link "Limited time deal" [ref=e1611] [cursor=pointer]:
+                              - /url: /deals
+                              - generic [ref=e1614]: Limited time deal
+                            - generic [ref=e1616]:
+                              - generic [ref=e1617]: Price, product page
+                              - 'link "$69.99 List: $99.99 List: $99.99" [ref=e1618] [cursor=pointer]':
+                                - /url: /FoodSaver-VS0150-PowerVac-Compact-Vertical/dp/B08BF3GB5Q/ref=sr_1_12?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-12
+                                - generic [ref=e1619]:
+                                  - generic [ref=e1620]: $69.99
+                                  - generic [ref=e1621]:
+                                    - text: $
+                                    - generic [ref=e1622]:
+                                      - text: "69"
+                                      - generic [ref=e1623]: .
+                                    - text: "99"
+                                - generic [ref=e1624]: "List: $99.99"
+                                - generic [ref=e1625]:
+                                  - text: "List:"
+                                  - generic [ref=e1626]:
+                                    - generic [ref=e1627]: $99.99
+                                    - text: $99.99
+                          - generic [ref=e1630]:
+                            - generic [ref=e1634]: FREE delivery Fri, Feb 20
+                            - generic [ref=e1636]: Or fastest delivery Tue, Feb 17
+                          - button "Add to cart" [ref=e1652] [cursor=pointer]
+                          - generic [ref=e1654]:
+                            - text: More Buying Choices
+                            - text: $40.99
+                            - link "(2+ used & new offers)" [ref=e1656] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B08BF3GB5Q/ref=sr_1_12_olp?keywords=vacuum+sealer&dib_tag=se&dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&qid=1771158290&sr=8-12
+                  - listitem [ref=e1659]:
+                    - generic [ref=e1665]:
+                      - link [ref=e1671] [cursor=pointer]:
+                        - /url: /Potane-Precision-Machine-Storage-Options/dp/B08QGX549G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-13
+                        - img [ref=e1673]
+                      - generic [ref=e1676]:
+                        - link "Precision Vacuum Machine,Pro Food Sealer with Built-in Cutter and Bag Storage(Up to 20 Feet Length), Both Auto&Manual Options,2 Modes,Includes 2 Bag Rolls 11”x16’ and 8”x16’,Compact Design" [ref=e1678] [cursor=pointer]:
+                          - /url: /Potane-Precision-Machine-Storage-Options/dp/B08QGX549G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-13
+                          - heading "Precision Vacuum Machine,Pro Food Sealer with Built-in Cutter and Bag Storage(Up to 20 Feet Length), Both Auto&Manual Options,2 Modes,Includes 2 Bag Rolls 11”x16’ and 8”x16’,Compact Design" [level=2] [ref=e1679]
+                        - generic [ref=e1680]:
+                          - generic [ref=e1681]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e1683] [cursor=pointer]:
+                              - generic [ref=e1685]: 4.6 out of 5 stars
+                            - link "6,034 ratings" [ref=e1689] [cursor=pointer]:
+                              - /url: /Potane-Precision-Machine-Storage-Options/dp/B08QGX549G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-13#customerReviews
+                              - text: (6K)
+                          - generic [ref=e1690]: 1K+ bought in past month
+                        - generic [ref=e1693]:
+                          - generic [ref=e1694]:
+                            - generic [ref=e1696]:
+                              - generic [ref=e1697]: Price, product page
+                              - 'link "$149.99 List: $174.99 List: $174.99" [ref=e1698] [cursor=pointer]':
+                                - /url: /Potane-Precision-Machine-Storage-Options/dp/B08QGX549G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-13
+                                - generic [ref=e1699]:
+                                  - generic [ref=e1700]: $149.99
+                                  - generic [ref=e1701]:
+                                    - text: $
+                                    - generic [ref=e1702]:
+                                      - text: "149"
+                                      - generic [ref=e1703]: .
+                                    - text: "99"
+                                - generic [ref=e1704]: "List: $174.99"
+                                - generic [ref=e1705]:
+                                  - text: "List:"
+                                  - generic [ref=e1706]:
+                                    - generic [ref=e1707]: $174.99
+                                    - text: $174.99
+                            - generic [ref=e1710]:
+                              - generic [ref=e1711]: Save $20.00
+                              - text: with coupon
+                          - generic [ref=e1714]:
+                            - generic [ref=e1718]: FREE delivery Fri, Feb 20
+                            - generic [ref=e1720]: Or fastest delivery Wed, Feb 18
+                          - button "Add to cart" [ref=e1736] [cursor=pointer]
+                          - generic [ref=e1738]:
+                            - text: More Buying Choices
+                            - text: $104.99
+                            - link "(3+ used & new offers)" [ref=e1740] [cursor=pointer]:
+                              - /url: /gp/offer-listing/B08QGX549G/ref=sr_1_13_olp?keywords=vacuum+sealer&dib_tag=se&dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&qid=1771158290&sr=8-13
+                  - listitem [ref=e1743]:
+                    - generic [ref=e1749]:
+                      - link [ref=e1755] [cursor=pointer]:
+                        - /url: /Machine-AirLock-ProSeal-Compact-Stainless/dp/B0GD1ZY1PR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-14
+                        - img [ref=e1757]
+                      - generic [ref=e1760]:
+                        - link "Vacuum Sealer Machine with AirLock ProSeal System, 10-in-1 Vacuum Sealer for Food, Dry & Moist Modes, Compact Design with Digital Timer, Built-in Cutter & Roll Storage, Stainless Steel" [ref=e1762] [cursor=pointer]:
+                          - /url: /Machine-AirLock-ProSeal-Compact-Stainless/dp/B0GD1ZY1PR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-14
+                          - heading "Vacuum Sealer Machine with AirLock ProSeal System, 10-in-1 Vacuum Sealer for Food, Dry & Moist Modes, Compact Design with Digital Timer, Built-in Cutter & Roll Storage, Stainless Steel" [level=2] [ref=e1763]
+                        - generic [ref=e1764]:
+                          - generic [ref=e1765]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e1767] [cursor=pointer]:
+                              - generic [ref=e1769]: 4.6 out of 5 stars
+                            - link "62 ratings" [ref=e1773] [cursor=pointer]:
+                              - /url: /Machine-AirLock-ProSeal-Compact-Stainless/dp/B0GD1ZY1PR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-14#customerReviews
+                              - text: (62)
+                          - generic [ref=e1774]: 1K+ bought in past month
+                        - generic [ref=e1777]:
+                          - generic [ref=e1778]:
+                            - link "Ends in 19:34:34" [ref=e2941] [cursor=pointer]:
+                              - /url: /deals
+                              - generic [ref=e1783]: Ends in 19:34:34
+                            - generic [ref=e1785]:
+                              - generic [ref=e1786]: Price, product page
+                              - 'link "$59.98 List: $98.99 List: $98.99" [ref=e1787] [cursor=pointer]':
+                                - /url: /Machine-AirLock-ProSeal-Compact-Stainless/dp/B0GD1ZY1PR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-14
+                                - generic [ref=e1788]:
+                                  - generic [ref=e1789]: $59.98
+                                  - generic [ref=e1790]:
+                                    - text: $
+                                    - generic [ref=e1791]:
+                                      - text: "59"
+                                      - generic [ref=e1792]: .
+                                    - text: "98"
+                                - generic [ref=e1793]: "List: $98.99"
+                                - generic [ref=e1794]:
+                                  - text: "List:"
+                                  - generic [ref=e1795]:
+                                    - generic [ref=e1796]: $98.99
+                                    - text: $98.99
+                          - generic [ref=e1799]:
+                            - generic [ref=e1803]: FREE delivery Fri, Feb 20
+                            - generic [ref=e1805]: Or fastest delivery Tue, Feb 17
+                          - button "Add to cart" [ref=e1821] [cursor=pointer]
+                  - listitem [ref=e1824]:
+                    - generic [ref=e1830]:
+                      - link [ref=e1836] [cursor=pointer]:
+                        - /url: /Machine-Powerful-Suction-Compact-Indicator/dp/B0GGMRCX6J/ref=sr_1_15?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-15
+                        - img [ref=e1838]
+                      - generic [ref=e1841]:
+                        - link "Food Vacuum Sealer Machine, 75KPA Powerful Suction, Dry/Wet Modes, Compact Vacuum Sealer for Food, with Led Indicator Lights, 20 Vacuum Sealer Bags" [ref=e1843] [cursor=pointer]:
+                          - /url: /Machine-Powerful-Suction-Compact-Indicator/dp/B0GGMRCX6J/ref=sr_1_15?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-15
+                          - heading "Food Vacuum Sealer Machine, 75KPA Powerful Suction, Dry/Wet Modes, Compact Vacuum Sealer for Food, with Led Indicator Lights, 20 Vacuum Sealer Bags" [level=2] [ref=e1844]
+                        - generic [ref=e1845]:
+                          - generic [ref=e1846]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e1848] [cursor=pointer]:
+                              - generic [ref=e1850]: 4.8 out of 5 stars
+                            - link "12 ratings" [ref=e1854] [cursor=pointer]:
+                              - /url: /Machine-Powerful-Suction-Compact-Indicator/dp/B0GGMRCX6J/ref=sr_1_15?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-15#customerReviews
+                              - text: (12)
+                          - generic [ref=e1855]: 300+ bought in past month
+                        - generic [ref=e1858]:
+                          - generic [ref=e1859]:
+                            - generic [ref=e1861]:
+                              - generic [ref=e1862]: Price, product page
+                              - 'link "$24.99 Typical price: $99.99 Typical price: $99.99" [ref=e1863] [cursor=pointer]':
+                                - /url: /Machine-Powerful-Suction-Compact-Indicator/dp/B0GGMRCX6J/ref=sr_1_15?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-15
+                                - generic [ref=e1864]:
+                                  - generic [ref=e1865]: $24.99
+                                  - generic [ref=e1866]:
+                                    - text: $
+                                    - generic [ref=e1867]:
+                                      - text: "24"
+                                      - generic [ref=e1868]: .
+                                    - text: "99"
+                                - generic [ref=e1869]: "Typical price: $99.99"
+                                - generic [ref=e1870]:
+                                  - text: "Typical price:"
+                                  - generic [ref=e1871]:
+                                    - generic [ref=e1872]: $99.99
+                                    - text: $99.99
+                            - generic [ref=e1873]: Exclusive Prime price
+                          - generic [ref=e1876]:
+                            - generic [ref=e1880]: FREE delivery Fri, Feb 20 on $35 of items shipped by Amazon
+                            - generic [ref=e1882]: Or fastest delivery Wed, Feb 18
+                          - link "See options" [ref=e1890] [cursor=pointer]:
+                            - /url: /Machine-Powerful-Suction-Compact-Indicator/dp/B0GGMRCX6J/ref=sr_1_15_so_VACUUM_SEALER_MACHINE?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-15
+                  - listitem [ref=e1893]:
+                    - generic [ref=e1899]:
+                      - link [ref=e1905] [cursor=pointer]:
+                        - /url: /Portable-One-Touch-Detachable-Vertical-Placement/dp/B0GJ67Z57P/ref=sr_1_16?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-16
+                        - img [ref=e1907]
+                      - generic [ref=e1910]:
+                        - link "90KPa Portable Vacuum Sealer Machine for Food, One-Touch Open Lid, Detachable & Easy to Clean, Vertical Placement Saves Space, Powerful Suction for Freezer Bags & Food Storage" [ref=e1912] [cursor=pointer]:
+                          - /url: /Portable-One-Touch-Detachable-Vertical-Placement/dp/B0GJ67Z57P/ref=sr_1_16?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-16
+                          - heading "90KPa Portable Vacuum Sealer Machine for Food, One-Touch Open Lid, Detachable & Easy to Clean, Vertical Placement Saves Space, Powerful Suction for Freezer Bags & Food Storage" [level=2] [ref=e1913]
+                        - generic [ref=e1914]:
+                          - generic [ref=e1915]:
+                            - text: "5.0"
+                            - button "5.0 out of 5 stars, rating details" [ref=e1917] [cursor=pointer]:
+                              - generic [ref=e1919]: 5.0 out of 5 stars
+                            - link "44 ratings" [ref=e1923] [cursor=pointer]:
+                              - /url: /Portable-One-Touch-Detachable-Vertical-Placement/dp/B0GJ67Z57P/ref=sr_1_16?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-16#customerReviews
+                              - text: (44)
+                          - generic [ref=e1924]: New on Amazon in past month
+                        - generic [ref=e1927]:
+                          - generic [ref=e1928]:
+                            - link "Limited time deal" [ref=e1930] [cursor=pointer]:
+                              - /url: /deals
+                              - generic [ref=e1933]: Limited time deal
+                            - generic [ref=e1935]:
+                              - generic [ref=e1936]: Price, product page
+                              - 'link "$59.99 List: $199.99 List: $199.99" [ref=e1937] [cursor=pointer]':
+                                - /url: /Portable-One-Touch-Detachable-Vertical-Placement/dp/B0GJ67Z57P/ref=sr_1_16?dib=eyJ2IjoiMSJ9.XQ2vls-XZcAHGj0YkPbhWVm0rH6ky_MzlNfzAtCvY1vPpRUd8dvamvy7Xr-R5m-1XS3yuDUd3PPCapj3k-_Qs7cOdbOlR2oCsJNX-XpSTNj8PM3HyOUbkkHmNXhbwWBp7dpbt3i3BJ6IYKb5_FWlN6PcWHz5lLSjUDB7Bqr9690Sga6gLuvManOdvoxO8UCfAN9JlzMyZpXwO6j1wok1Lfhl9JD5zJ_ikl9qLXozK78.4Vsy5Tr-eknw0VLM3zkworXMn1JxwfOk2J3yrDoTEYE&dib_tag=se&keywords=vacuum+sealer&qid=1771158290&sr=8-16
+                                - generic [ref=e1938]:
+                                  - generic [ref=e1939]: $59.99
+                                  - generic [ref=e1940]:
+                                    - text: $
+                                    - generic [ref=e1941]:
+                                      - text: "59"
+                                      - generic [ref=e1942]: .
+                                    - text: "99"
+                                - generic [ref=e1943]: "List: $199.99"
+                                - generic [ref=e1944]:
+                                  - text: "List:"
+                                  - generic [ref=e1945]:
+                                    - generic [ref=e1946]: $199.99
+                                    - text: $199.99
+                          - generic [ref=e1949]:
+                            - generic [ref=e1953]: FREE delivery Fri, Feb 20
+                            - generic [ref=e1955]: Or fastest delivery Tue, Feb 17
+                          - button "Add to cart" [ref=e1971] [cursor=pointer]
+            - generic [ref=e1981]:
+              - link "Sponsored video, click to navigate to featured product page. 5.0 Precision Food Vacuum Sealer Machine, Commercial Full Automatic Vacuum Sealer Machine, Deluxe Powerful Vacuum Sealing System, Double Heat Seal, Built-in Cutter&Storage, 2 Bag Rolls&Hose,Sous Vide" [ref=e1985] [cursor=pointer]:
+                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCzF99vuZEnde4nZUrI0zMoAAAGcYULANwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICATFSU6/clv1c_ek-wBIHXFcbWDn2nI4trJ16WpAxSuEaPTrweSl7ym5m4Qc2eLkm4CZl-YwrCBmh491F4isL0hqmAeoDJ8OgWlir0GpP96tT6WOxlcrWg1O-yunPtLxXWUbnZoPps0lphxm-Wja1wRxMG58o6jPQ_g-rS5J2cFFXrQtbC9y_qbIUZRH-1VjGH8XEYLmb7xIIzPHzqymsLHADL36jHvwiCRQ_CSN96Rx1HkBnj0LElbLGCeuPvJ5vXiKUJPd8at8V0m-bsR9B1x12PB01y0QXHEOtnMHm44rJRMsjeBiLVIFydUPkD06QDlP6NSpAK5bcc-ZIl0jOKMus6K0nDWjDlv_fCEaXDB4vO1jtpJA4IENfN2uFG0G5xM6ZEVJEwx1GokqMGZkS0hnehpwh73Y65N8NEVmX-zBp7sADOCEJ_sDwytZyVR9tbPmkdi1Mdp3dZjubKpZTuBifXXIAWln_aAjPC6o6A5i2e2Wph1pDBHnzneS_Qp9CgRmDYmVCzTkCjV_KhXwO1dQ-SzwH_imSnGNUCPzJhF4KIqafOEv0t5JTEBF-Zic6GBh2FQb6gm7dN5K2CaPH8BURRkViYJACUdj6JkXIl5rVjbCzp4nYQDaOLz8nis1EPImSyStS8v3GH2YFet1_7Al7GjcxaW_nbuYDC1-vQOa5MxEbGrGMzJMyb6qB_9laJ8PB9qNSl7L6jed7AFoDCyH73vidT4fpOXQtIUL61a1IOoMpSZYcWvOAlLcDWGAxVmSf7DcHOgCCfqj8gLYC1mOS9S4HIXe352xgBApQ3WuILmyMYR5GCdgtqIYL8v-BhPjZ3IfOl0oI-BN6IaQHXZ1HBiwv0WGOsPgJSBYVnnDFMbb0_5HPQ9dd8MJ5s2v6s252yfI_32Ahp4PRtL8WxO-ewtg5gepvtoIEEJXswV0pww3C5Xm3HSPn-pI04V3TDI7RhuwgCozU7Im6w8QprxMTVWnTtJWlP2maD0HgOBefsbCLg1kGpQU7nYjaAa2CTp_8mqnTu6ywVvei3AgFQe1ekPOWwhPcUjVU9g37KXnDtPN40osFkeO-IWffy4RD5AybGtTH3QR9o7lgFvZ_49PlFei_JroKj2MNQZcrsKSIwWoZ9SwdMFG7kuraAmpd19skcmF2uY5Yaj-N11Qjs7RjcRLtnAPpZsoiYRz7PIYJz0szQea4U8RaMLcRJp7n2vCW8-CaplSJlZOe1brHtrBu9kmuE1mKHFVHK6hK_UIVh1TNorldSbPgYdXGFjpnDiLVsJcMebrDujmGb5dqM7TV8OvfdD9RyJyhuRTLXH-VpNbjGsHLHy7d55_E1vLLHwisCq8Vyf_b_ZoYQRI2Aw3Ght1wYaGahHHasE8pDx96NpLjiCDLPRB2vT2iD3XfosSPt7c4LWpxiAM5tq_-utYMulGn2_A1mTl9BJx0GFBGmdLPZWnVYHWpxQPS8HlcdcUqJpSfrmTOhAkAuOAwYxIeah6vbKoC00urHxfrtpGgE1_GPPLtOmKSl07UeuCFvIbUzi6DZUFEWJVNu4_ZILvqVV0Eq9FxQRbS67cU00meVewcTv0tQMEUE7Sn2GrFelGJRK7gmHlZm5__YvbrqjBdiGLKRPlxlUv0oNzdPzALg2Nv2Rj4G2zNC4tpbnl07G5zx3CLBkJUjBRXEIkVpyig7AgWNSPGUreBnSFO5/https://www.amazon.com/dp/B0FVSJP73K?pd_rd_i=B0FVSJP73K&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Ov1EQ&pd_rd_w=9OnIf&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1
+                - generic "Sponsored video, click to navigate to featured product page. 5.0 Precision Food Vacuum Sealer Machine, Commercial Full Automatic Vacuum Sealer Machine, Deluxe Powerful Vacuum Sealing System, Double Heat Seal, Built-in Cutter&Storage, 2 Bag Rolls&Hose,Sous Vide" [ref=e1986]
+              - generic [ref=e1994]:
+                - link [ref=e2000] [cursor=pointer]:
+                  - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCzF99vuZEnde4nZUrI0zMoAAAGcYULANwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICATFSU6/clv1c_ek-wBIHXFcbWDn2nI4trJ16WpAxSuEaPTrweSl7ym5m4Qc2eLkm4CZl-YwrCBmh491F4isL0hqmAeoDJ8OgWlir0GpP96tT6WOxlcrWg1O-yunPtLxXWUbnZoPps0lphxm-Wja1wRxMG58o6jPQ_g-rS5J2cFFXrQtbC9y_qbIUZRH-1VjGH8XEYLmb7xIIzPHzqymsLHADL36jHvwiCRQ_CSN96Rx1HkBnj0LElbLGCeuPvJ5vXiKUJPd8at8V0m-bsR9B1x12PB01y0QXHEOtnMHm44rJRMsjeBiLVIFydUPkD06QDlP6NSpAK5bcc-ZIl0jOKMus6K0nDWjDlv_fCEaXDB4vO1jtpJA4IENfN2uFG0G5xM6ZEVJEwx1GokqMGZkS0hnehpwh73Y65N8NEVmX-zBp7sADOCEJ_sDwytZyVR9tbPmkdi1Mdp3dZjubKpZTuBifXXIAWln_aAjPC6o6A5i2e2Wph1pDBHnzneS_Qp9CgRmDYmVCzTkCjV_KhXwO1dQ-SzwH_imSnGNUCPzJhF4KIqafOEv0t5JTEBF-Zic6GBh2FQb6gm7dN5K2CaPH8BURRkViYJACUdj6JkXIl5rVjbCzp4nYQDaOLz8nis1EPImSyStS8v3GH2YFet1_7Al7GjcxaW_nbuYDC1-vQOa5MxEbGrGMzJMyb6qB_9laJ8PB9qNSl7L6jed7AFoDCyH73vidT4fpOXQtIUL61a1IOoMpSZYcWvOAlLcDWGAxVmSf7DcHOgCCfqj8gLYC1mOS9S4HIXe352xgBApQ3WuILmyMYR5GCdgtqIYL8v-BhPjZ3IfOl0oI-BN6IaQHXZ1HBiwv0WGOsPgJSBYVnnDFMbb0_5HPQ9dd8MJ5s2v6s252yfI_32Ahp4PRtL8WxO-ewtg5gepvtoIEEJXswV0pww3C5Xm3HSPn-pI04V3TDI7RhuwgCozU7Im6w8QprxMTVWnTtJWlP2maD0HgOBefsbCLg1kGpQU7nYjaAa2CTp_8mqnTu6ywVvei3AgFQe1ekPOWwhPcUjVU9g37KXnDtPN40osFkeO-IWffy4RD5AybGtTH3QR9o7lgFvZ_49PlFei_JroKj2MNQZcrsKSIwWoZ9SwdMFG7kuraAmpd19skcmF2uY5Yaj-N11Qjs7RjcRLtnAPpZsoiYRz7PIYJz0szQea4U8RaMLcRJp7n2vCW8-CaplSJlZOe1brHtrBu9kmuE1mKHFVHK6hK_UIVh1TNorldSbPgYdXGFjpnDiLVsJcMebrDujmGb5dqM7TV8OvfdD9RyJyhuRTLXH-VpNbjGsHLHy7d55_E1vLLHwisCq8Vyf_b_ZoYQRI2Aw3Ght1wYaGahHHasE8pDx96NpLjiCDLPRB2vT2iD3XfosSPt7c4LWpxiAM5tq_-utYMulGn2_A1mTl9BJx0GFBGmdLPZWnVYHWpxQPS8HlcdcUqJpSfrmTOhAkAuOAwYxIeah6vbKoC00urHxfrtpGgE1_GPPLtOmKSl07UeuCFvIbUzi6DZUFEWJVNu4_ZILvqVV0Eq9FxQRbS67cU00meVewcTv0tQMEUE7Sn2GrFelGJRK7gmHlZm5__YvbrqjBdiGLKRPlxlUv0oNzdPzALg2Nv2Rj4G2zNC4tpbnl07G5zx3CLBkJUjBRXEIkVpyig7AgWNSPGUreBnSFO5/https://www.amazon.com/Precision-Machine-Commercial-Automatic-Powerful/dp/B0FVSJP73K/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6%3Aamzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6&cv_ct_cx=vacuum+sealer&keywords=vacuum+sealer&pd_rd_i=B0FVSJP73K&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&pd_rd_w=9OnIf&pd_rd_wg=Ov1EQ&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&qid=1771158290&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-a61ee601-6e56-4862-a8a2-1d3da5a5406f
+                  - img [ref=e2002]
+                - generic [ref=e2005]:
+                  - generic [ref=e2006]:
+                    - generic [ref=e2009] [cursor=pointer]: Sponsored
+                    - link "5.0 Precision Food Vacuum Sealer Machine, Commercial Full Automatic Vacuum Sealer Machine, Deluxe Powerful Vacuum Sealing System, Double Heat Seal, Built-in Cutter&Storage, 2 Bag Rolls&Hose,Sous Vide" [ref=e2011] [cursor=pointer]:
+                      - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCzF99vuZEnde4nZUrI0zMoAAAGcYULANwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICATFSU6/clv1c_ek-wBIHXFcbWDn2nI4trJ16WpAxSuEaPTrweSl7ym5m4Qc2eLkm4CZl-YwrCBmh491F4isL0hqmAeoDJ8OgWlir0GpP96tT6WOxlcrWg1O-yunPtLxXWUbnZoPps0lphxm-Wja1wRxMG58o6jPQ_g-rS5J2cFFXrQtbC9y_qbIUZRH-1VjGH8XEYLmb7xIIzPHzqymsLHADL36jHvwiCRQ_CSN96Rx1HkBnj0LElbLGCeuPvJ5vXiKUJPd8at8V0m-bsR9B1x12PB01y0QXHEOtnMHm44rJRMsjeBiLVIFydUPkD06QDlP6NSpAK5bcc-ZIl0jOKMus6K0nDWjDlv_fCEaXDB4vO1jtpJA4IENfN2uFG0G5xM6ZEVJEwx1GokqMGZkS0hnehpwh73Y65N8NEVmX-zBp7sADOCEJ_sDwytZyVR9tbPmkdi1Mdp3dZjubKpZTuBifXXIAWln_aAjPC6o6A5i2e2Wph1pDBHnzneS_Qp9CgRmDYmVCzTkCjV_KhXwO1dQ-SzwH_imSnGNUCPzJhF4KIqafOEv0t5JTEBF-Zic6GBh2FQb6gm7dN5K2CaPH8BURRkViYJACUdj6JkXIl5rVjbCzp4nYQDaOLz8nis1EPImSyStS8v3GH2YFet1_7Al7GjcxaW_nbuYDC1-vQOa5MxEbGrGMzJMyb6qB_9laJ8PB9qNSl7L6jed7AFoDCyH73vidT4fpOXQtIUL61a1IOoMpSZYcWvOAlLcDWGAxVmSf7DcHOgCCfqj8gLYC1mOS9S4HIXe352xgBApQ3WuILmyMYR5GCdgtqIYL8v-BhPjZ3IfOl0oI-BN6IaQHXZ1HBiwv0WGOsPgJSBYVnnDFMbb0_5HPQ9dd8MJ5s2v6s252yfI_32Ahp4PRtL8WxO-ewtg5gepvtoIEEJXswV0pww3C5Xm3HSPn-pI04V3TDI7RhuwgCozU7Im6w8QprxMTVWnTtJWlP2maD0HgOBefsbCLg1kGpQU7nYjaAa2CTp_8mqnTu6ywVvei3AgFQe1ekPOWwhPcUjVU9g37KXnDtPN40osFkeO-IWffy4RD5AybGtTH3QR9o7lgFvZ_49PlFei_JroKj2MNQZcrsKSIwWoZ9SwdMFG7kuraAmpd19skcmF2uY5Yaj-N11Qjs7RjcRLtnAPpZsoiYRz7PIYJz0szQea4U8RaMLcRJp7n2vCW8-CaplSJlZOe1brHtrBu9kmuE1mKHFVHK6hK_UIVh1TNorldSbPgYdXGFjpnDiLVsJcMebrDujmGb5dqM7TV8OvfdD9RyJyhuRTLXH-VpNbjGsHLHy7d55_E1vLLHwisCq8Vyf_b_ZoYQRI2Aw3Ght1wYaGahHHasE8pDx96NpLjiCDLPRB2vT2iD3XfosSPt7c4LWpxiAM5tq_-utYMulGn2_A1mTl9BJx0GFBGmdLPZWnVYHWpxQPS8HlcdcUqJpSfrmTOhAkAuOAwYxIeah6vbKoC00urHxfrtpGgE1_GPPLtOmKSl07UeuCFvIbUzi6DZUFEWJVNu4_ZILvqVV0Eq9FxQRbS67cU00meVewcTv0tQMEUE7Sn2GrFelGJRK7gmHlZm5__YvbrqjBdiGLKRPlxlUv0oNzdPzALg2Nv2Rj4G2zNC4tpbnl07G5zx3CLBkJUjBRXEIkVpyig7AgWNSPGUreBnSFO5/https://www.amazon.com/Precision-Machine-Commercial-Automatic-Powerful/dp/B0FVSJP73K/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6%3Aamzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6&cv_ct_cx=vacuum+sealer&keywords=vacuum+sealer&pd_rd_i=B0FVSJP73K&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&pd_rd_w=9OnIf&pd_rd_wg=Ov1EQ&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&qid=1771158290&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-a61ee601-6e56-4862-a8a2-1d3da5a5406f
+                      - heading "5.0 Precision Food Vacuum Sealer Machine, Commercial Full Automatic Vacuum Sealer Machine, Deluxe Powerful Vacuum Sealing System, Double Heat Seal, Built-in Cutter&Storage, 2 Bag Rolls&Hose,Sous Vide" [level=2] [ref=e2012]
+                  - generic [ref=e2013]:
+                    - generic [ref=e2014]:
+                      - text: "4.5"
+                      - button "4.5 out of 5 stars, rating details" [ref=e2016] [cursor=pointer]:
+                        - generic [ref=e2018]: 4.5 out of 5 stars
+                      - link "149 ratings" [ref=e2022] [cursor=pointer]:
+                        - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCzF99vuZEnde4nZUrI0zMoAAAGcYULANwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICATFSU6/clv1c_ek-wBIHXFcbWDn2nI4trJ16WpAxSuEaPTrweSl7ym5m4Qc2eLkm4CZl-YwrCBmh491F4isL0hqmAeoDJ8OgWlir0GpP96tT6WOxlcrWg1O-yunPtLxXWUbnZoPps0lphxm-Wja1wRxMG58o6jPQ_g-rS5J2cFFXrQtbC9y_qbIUZRH-1VjGH8XEYLmb7xIIzPHzqymsLHADL36jHvwiCRQ_CSN96Rx1HkBnj0LElbLGCeuPvJ5vXiKUJPd8at8V0m-bsR9B1x12PB01y0QXHEOtnMHm44rJRMsjeBiLVIFydUPkD06QDlP6NSpAK5bcc-ZIl0jOKMus6K0nDWjDlv_fCEaXDB4vO1jtpJA4IENfN2uFG0G5xM6ZEVJEwx1GokqMGZkS0hnehpwh73Y65N8NEVmX-zBp7sADOCEJ_sDwytZyVR9tbPmkdi1Mdp3dZjubKpZTuBifXXIAWln_aAjPC6o6A5i2e2Wph1pDBHnzneS_Qp9CgRmDYmVCzTkCjV_KhXwO1dQ-SzwH_imSnGNUCPzJhF4KIqafOEv0t5JTEBF-Zic6GBh2FQb6gm7dN5K2CaPH8BURRkViYJACUdj6JkXIl5rVjbCzp4nYQDaOLz8nis1EPImSyStS8v3GH2YFet1_7Al7GjcxaW_nbuYDC1-vQOa5MxEbGrGMzJMyb6qB_9laJ8PB9qNSl7L6jed7AFoDCyH73vidT4fpOXQtIUL61a1IOoMpSZYcWvOAlLcDWGAxVmSf7DcHOgCCfqj8gLYC1mOS9S4HIXe352xgBApQ3WuILmyMYR5GCdgtqIYL8v-BhPjZ3IfOl0oI-BN6IaQHXZ1HBiwv0WGOsPgJSBYVnnDFMbb0_5HPQ9dd8MJ5s2v6s252yfI_32Ahp4PRtL8WxO-ewtg5gepvtoIEEJXswV0pww3C5Xm3HSPn-pI04V3TDI7RhuwgCozU7Im6w8QprxMTVWnTtJWlP2maD0HgOBefsbCLg1kGpQU7nYjaAa2CTp_8mqnTu6ywVvei3AgFQe1ekPOWwhPcUjVU9g37KXnDtPN40osFkeO-IWffy4RD5AybGtTH3QR9o7lgFvZ_49PlFei_JroKj2MNQZcrsKSIwWoZ9SwdMFG7kuraAmpd19skcmF2uY5Yaj-N11Qjs7RjcRLtnAPpZsoiYRz7PIYJz0szQea4U8RaMLcRJp7n2vCW8-CaplSJlZOe1brHtrBu9kmuE1mKHFVHK6hK_UIVh1TNorldSbPgYdXGFjpnDiLVsJcMebrDujmGb5dqM7TV8OvfdD9RyJyhuRTLXH-VpNbjGsHLHy7d55_E1vLLHwisCq8Vyf_b_ZoYQRI2Aw3Ght1wYaGahHHasE8pDx96NpLjiCDLPRB2vT2iD3XfosSPt7c4LWpxiAM5tq_-utYMulGn2_A1mTl9BJx0GFBGmdLPZWnVYHWpxQPS8HlcdcUqJpSfrmTOhAkAuOAwYxIeah6vbKoC00urHxfrtpGgE1_GPPLtOmKSl07UeuCFvIbUzi6DZUFEWJVNu4_ZILvqVV0Eq9FxQRbS67cU00meVewcTv0tQMEUE7Sn2GrFelGJRK7gmHlZm5__YvbrqjBdiGLKRPlxlUv0oNzdPzALg2Nv2Rj4G2zNC4tpbnl07G5zx3CLBkJUjBRXEIkVpyig7AgWNSPGUreBnSFO5/https://www.amazon.com/Precision-Machine-Commercial-Automatic-Powerful/dp/B0FVSJP73K/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6%3Aamzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6&cv_ct_cx=vacuum+sealer&keywords=vacuum+sealer&pd_rd_i=B0FVSJP73K&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&pd_rd_w=9OnIf&pd_rd_wg=Ov1EQ&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&qid=1771158290&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-a61ee601-6e56-4862-a8a2-1d3da5a5406f#customerReviews
+                        - text: (149)
+                    - generic [ref=e2023]: 50+ bought in past month
+                  - generic [ref=e2026]:
+                    - generic [ref=e2027]:
+                      - generic [ref=e2029]:
+                        - generic [ref=e2030]: Price, product page
+                        - link "$179.99" [ref=e2031] [cursor=pointer]:
+                          - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JCzF99vuZEnde4nZUrI0zMoAAAGcYULANwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICATFSU6/clv1c_ek-wBIHXFcbWDn2nI4trJ16WpAxSuEaPTrweSl7ym5m4Qc2eLkm4CZl-YwrCBmh491F4isL0hqmAeoDJ8OgWlir0GpP96tT6WOxlcrWg1O-yunPtLxXWUbnZoPps0lphxm-Wja1wRxMG58o6jPQ_g-rS5J2cFFXrQtbC9y_qbIUZRH-1VjGH8XEYLmb7xIIzPHzqymsLHADL36jHvwiCRQ_CSN96Rx1HkBnj0LElbLGCeuPvJ5vXiKUJPd8at8V0m-bsR9B1x12PB01y0QXHEOtnMHm44rJRMsjeBiLVIFydUPkD06QDlP6NSpAK5bcc-ZIl0jOKMus6K0nDWjDlv_fCEaXDB4vO1jtpJA4IENfN2uFG0G5xM6ZEVJEwx1GokqMGZkS0hnehpwh73Y65N8NEVmX-zBp7sADOCEJ_sDwytZyVR9tbPmkdi1Mdp3dZjubKpZTuBifXXIAWln_aAjPC6o6A5i2e2Wph1pDBHnzneS_Qp9CgRmDYmVCzTkCjV_KhXwO1dQ-SzwH_imSnGNUCPzJhF4KIqafOEv0t5JTEBF-Zic6GBh2FQb6gm7dN5K2CaPH8BURRkViYJACUdj6JkXIl5rVjbCzp4nYQDaOLz8nis1EPImSyStS8v3GH2YFet1_7Al7GjcxaW_nbuYDC1-vQOa5MxEbGrGMzJMyb6qB_9laJ8PB9qNSl7L6jed7AFoDCyH73vidT4fpOXQtIUL61a1IOoMpSZYcWvOAlLcDWGAxVmSf7DcHOgCCfqj8gLYC1mOS9S4HIXe352xgBApQ3WuILmyMYR5GCdgtqIYL8v-BhPjZ3IfOl0oI-BN6IaQHXZ1HBiwv0WGOsPgJSBYVnnDFMbb0_5HPQ9dd8MJ5s2v6s252yfI_32Ahp4PRtL8WxO-ewtg5gepvtoIEEJXswV0pww3C5Xm3HSPn-pI04V3TDI7RhuwgCozU7Im6w8QprxMTVWnTtJWlP2maD0HgOBefsbCLg1kGpQU7nYjaAa2CTp_8mqnTu6ywVvei3AgFQe1ekPOWwhPcUjVU9g37KXnDtPN40osFkeO-IWffy4RD5AybGtTH3QR9o7lgFvZ_49PlFei_JroKj2MNQZcrsKSIwWoZ9SwdMFG7kuraAmpd19skcmF2uY5Yaj-N11Qjs7RjcRLtnAPpZsoiYRz7PIYJz0szQea4U8RaMLcRJp7n2vCW8-CaplSJlZOe1brHtrBu9kmuE1mKHFVHK6hK_UIVh1TNorldSbPgYdXGFjpnDiLVsJcMebrDujmGb5dqM7TV8OvfdD9RyJyhuRTLXH-VpNbjGsHLHy7d55_E1vLLHwisCq8Vyf_b_ZoYQRI2Aw3Ght1wYaGahHHasE8pDx96NpLjiCDLPRB2vT2iD3XfosSPt7c4LWpxiAM5tq_-utYMulGn2_A1mTl9BJx0GFBGmdLPZWnVYHWpxQPS8HlcdcUqJpSfrmTOhAkAuOAwYxIeah6vbKoC00urHxfrtpGgE1_GPPLtOmKSl07UeuCFvIbUzi6DZUFEWJVNu4_ZILvqVV0Eq9FxQRbS67cU00meVewcTv0tQMEUE7Sn2GrFelGJRK7gmHlZm5__YvbrqjBdiGLKRPlxlUv0oNzdPzALg2Nv2Rj4G2zNC4tpbnl07G5zx3CLBkJUjBRXEIkVpyig7AgWNSPGUreBnSFO5/https://www.amazon.com/Precision-Machine-Commercial-Automatic-Powerful/dp/B0FVSJP73K/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6%3Aamzn1.sym.37132d36-da68-4ed0-8d23-842f0825e4d6&cv_ct_cx=vacuum+sealer&keywords=vacuum+sealer&pd_rd_i=B0FVSJP73K&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&pd_rd_w=9OnIf&pd_rd_wg=Ov1EQ&pf_rd_p=37132d36-da68-4ed0-8d23-842f0825e4d6&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&qid=1771158290&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-a61ee601-6e56-4862-a8a2-1d3da5a5406f
+                          - generic [ref=e2032]:
+                            - generic [ref=e2033]: $179.99
+                            - generic [ref=e2034]:
+                              - text: $
+                              - generic [ref=e2035]:
+                                - text: "179"
+                                - generic [ref=e2036]: .
+                              - text: "99"
+                      - generic [ref=e2037]: Save 33% at checkout
+                    - generic [ref=e2040]:
+                      - generic [ref=e2044]: FREE delivery Fri, Feb 20
+                      - generic [ref=e2046]: Or fastest delivery Thu, Feb 19
+            - generic [ref=e2054]:
+              - generic "Related searches in vacuum sealer" [ref=e2055]:
+                - heading "Related searches" [level=2] [ref=e2058]
+              - list [ref=e2060]:
+                - generic [ref=e2061]:
+                  - link "vacuum sealer bags" [ref=e2062] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer+bags&ref=rsl_sug_0_0&pd_rd_w=NJNHO&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Ov1EQ&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&qid=1771158290
+                    - listitem [ref=e2063]:
+                      - generic [ref=e2069]: vacuum sealer bags
+                  - link "vacuum sealer for jars" [ref=e2070] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer+for+jars&ref=rsl_sug_0_3&pd_rd_w=NJNHO&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Ov1EQ&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&qid=1771158290
+                    - listitem [ref=e2071]:
+                      - generic [ref=e2077]: vacuum sealer for jars
+                - generic [ref=e2078]:
+                  - link "vacuum sealer for clothes" [ref=e2079] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer+for+clothes&ref=rsl_sug_0_1&pd_rd_w=NJNHO&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Ov1EQ&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&qid=1771158290
+                    - listitem [ref=e2080]:
+                      - generic [ref=e2086]: vacuum sealer for clothes
+                  - link "vacuum sealer foodsaver" [ref=e2087] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer+foodsaver&ref=rsl_sug_0_4&pd_rd_w=NJNHO&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Ov1EQ&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&qid=1771158290
+                    - listitem [ref=e2088]:
+                      - generic [ref=e2094]: vacuum sealer foodsaver
+                - generic [ref=e2095]:
+                  - link "food saver vacuum sealer machine" [ref=e2096] [cursor=pointer]:
+                    - /url: /s?k=food+saver+vacuum+sealer+machine&ref=rsl_sug_0_2&pd_rd_w=NJNHO&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Ov1EQ&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&qid=1771158290
+                    - listitem [ref=e2097]:
+                      - generic [ref=e2103]: food saver vacuum sealer machine
+                  - link "food saver" [ref=e2104] [cursor=pointer]:
+                    - /url: /s?k=food+saver&ref=rsl_sug_0_5&pd_rd_w=NJNHO&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=Ov1EQ&pd_rd_r=57c53b87-61bc-4206-97c7-fbe0c52508b1&qid=1771158290
+                    - listitem [ref=e2105]:
+                      - generic [ref=e2111]: food saver
+            - navigation "pagination" [ref=e2114]:
+              - list [ref=e2116]:
+                - listitem [ref=e2117]:
+                  - button "Previous" [disabled] [ref=e2119]:
+                    - img [ref=e2120]
+                    - text: Previous
+                - listitem [ref=e2122]:
+                  - button "Page 1" [ref=e2124]: "1"
+                - listitem [ref=e2125]:
+                  - button "Go to page 2" [ref=e2127] [cursor=pointer]: "2"
+                - listitem [ref=e2128]:
+                  - button "Go to page 3" [ref=e2130] [cursor=pointer]: "3"
+                - button [disabled] [ref=e2131]:
+                  - img [ref=e2132]: ...
+                - button "20" [disabled] [ref=e2134]
+                - listitem [ref=e2135]:
+                  - button "Go to next page, page 2" [ref=e2137] [cursor=pointer]:
+                    - text: Next
+                    - img [ref=e2138]
+            - generic [ref=e2142]:
+              - link "Sponsored ad from Avid Armor. \"Premium Vacuum Sealers from Avid Armor.\" Shop Avid Armor." [ref=e2143] [cursor=pointer]:
+                - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/stores/page/0472F686-925A-457A-AD79-215542B6396D/?_encoding=UTF8&store_ref=SB_A018288839K0E89A4ESK3-A091629273KHNGOD187J&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&lp_asins=B08GZH6Y36%2CB07YLGRZFJ%2CB092SNB643&lp_query=vacuum%20sealer&lp_slot=desktop-hsa-3psl&ref_=sbx_s_3psl_sbcd3_bkgd&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+              - generic [ref=e2144]:
+                - generic [ref=e2146]:
+                  - link "Avid Armor" [ref=e2148] [cursor=pointer]:
+                    - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/stores/page/0472F686-925A-457A-AD79-215542B6396D/?_encoding=UTF8&store_ref=SB_A018288839K0E89A4ESK3-A091629273KHNGOD187J&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&lp_asins=B08GZH6Y36%2CB07YLGRZFJ%2CB092SNB643&lp_query=vacuum%20sealer&lp_slot=desktop-hsa-3psl&ref_=sbx_s_3psl_sbcd3_logo&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                    - img "Avid Armor" [ref=e2150]
+                  - generic [ref=e2152]:
+                    - link "Premium Vacuum Sealers from Avid Armor" [ref=e2153] [cursor=pointer]:
+                      - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/stores/page/0472F686-925A-457A-AD79-215542B6396D/?_encoding=UTF8&store_ref=SB_A018288839K0E89A4ESK3-A091629273KHNGOD187J&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&lp_asins=B08GZH6Y36%2CB07YLGRZFJ%2CB092SNB643&lp_query=vacuum%20sealer&lp_slot=desktop-hsa-3psl&ref_=sbx_s_3psl_sbcd3_hl&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                      - generic [ref=e2154]:
+                        - generic [ref=e2155]: Premium Vacuum Sealers from Avid Armor
+                        - generic [ref=e2156]: Premium Vacuum Sealers from Avid Armor
+                    - generic [ref=e2157]:
+                      - button "Leave feedback on Sponsored ad" [ref=e2161] [cursor=pointer]: Sponsored
+                      - generic [ref=e2163]: "|"
+                      - generic [ref=e2164]: Top 10 best-selling brand in vacuum sealers
+                      - generic [ref=e2165]: "|"
+                      - link "Shop Avid Armor" [ref=e2167] [cursor=pointer]:
+                        - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/stores/page/0472F686-925A-457A-AD79-215542B6396D/?_encoding=UTF8&store_ref=SB_A018288839K0E89A4ESK3-A091629273KHNGOD187J&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&lp_asins=B08GZH6Y36%2CB07YLGRZFJ%2CB092SNB643&lp_query=vacuum%20sealer&lp_slot=desktop-hsa-3psl&ref_=sbx_s_3psl_sbcd3_cta&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                        - generic [ref=e2170]:
+                          - text: Shop Avid
+                          - generic [ref=e2171]:
+                            - text: Armor
+                            - img [ref=e2172]
+                - group [ref=e2174]:
+                  - group [ref=e2178]:
+                    - list [ref=e2179]:
+                      - listitem [ref=e2180]:
+                        - generic [ref=e2182]:
+                          - link [ref=e2183] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B08GZH6Y36/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-1-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_0_bkgd&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                          - link "Avid Armor Chamber Vacuum Sealer Machine USV20 Ultra Series for Wet Foods, Meat Vacuum Packing Machine, Compact with 11.5-Inch Vaccum Sealer Bar" [ref=e2185] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B08GZH6Y36/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-1-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_0_img&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                            - img "Avid Armor Chamber Vacuum Sealer Machine USV20 Ultra Series for Wet Foods, Meat Vacuum Packing Machine, Compact with 11.5-Inch Vaccum Sealer Bar" [ref=e2188]
+                          - generic [ref=e2190]:
+                            - link [ref=e2191] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B08GZH6Y36/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-1-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_0_bkgd&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                            - link "Avid Armor Chamber Vacuum Sealer Machine USV20 Ultra Series for Wet Foods, Meat Vacuum Packing Machine, Compact with 11.5-Inch Vaccum Sealer Bar" [ref=e2193] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B08GZH6Y36/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-1-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_0_title&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                              - generic [ref=e2194]:
+                                - generic [ref=e2195]: Avid Armor Chamber Vacuum Sealer Machine USV20 Ultra Series for Wet Foods, Meat Vacuum Packing Machine, Compact with 11.5-Inch Vaccum Sealer Bar
+                                - generic [ref=e2196]: Avid Armor Chamber Vacuum Sealer Machine USV20 Ultra Seri…
+                            - link "Rated 4.7 out of 5 stars by 1123 reviews. Go to review section." [ref=e2197] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B08GZH6Y36/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-1-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_0_rating&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217#customerReviews
+                              - generic [ref=e2198]:
+                                - generic [ref=e2199]: "4.7"
+                                - generic [ref=e2201]: 4.7 out of 5 stars.
+                                - generic [ref=e2202]: (1.1k)
+                            - link "$328.00" [ref=e2204] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B08GZH6Y36/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-1-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_0_price&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                              - generic [ref=e2206]:
+                                - generic [ref=e2207]: $328.00
+                                - generic [ref=e2208]:
+                                  - text: $
+                                  - generic [ref=e2209]:
+                                    - text: "328"
+                                    - generic [ref=e2210]: .
+                                  - text: "00"
+                            - img "Eligible for Prime." [ref=e2212]
+                      - listitem [ref=e2213]:
+                        - generic [ref=e2215]:
+                          - link [ref=e2216] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B07YLGRZFJ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-2-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_1_bkgd&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                          - 'link "Avid Armor Ultra Series USV32: Premium Chamber Vacuum Sealer Machine High-Performance Vacuum Chamber Sealer for Professional and Home Use, Ideal Commercial Vacuum Sealer Machine for Food Preservation" [ref=e2218] [cursor=pointer]':
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B07YLGRZFJ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-2-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_1_img&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                            - 'img "Avid Armor Ultra Series USV32: Premium Chamber Vacuum Sealer Machine High-Performance Vacuum Chamber Sealer for Professional and Home Use, Ideal Commercial Vacuum Sealer Machine for Food Preservation" [ref=e2221]'
+                          - generic [ref=e2223]:
+                            - link [ref=e2224] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B07YLGRZFJ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-2-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_1_bkgd&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                            - 'link "Avid Armor Ultra Series USV32: Premium Chamber Vacuum Sealer Machine High-Performance Vacuum Chamber Sealer for Professional and Home Use, Ideal Commercial Vacuum Sealer Machine for Food Preservation" [ref=e2226] [cursor=pointer]':
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B07YLGRZFJ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-2-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_1_title&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                              - generic [ref=e2227]:
+                                - generic [ref=e2228]: "Avid Armor Ultra Series USV32: Premium Chamber Vacuum Sealer Machine High-Performance Vacuum Chamber Sealer for Professional and Home Use, Ideal Commercial Vacuum Sealer Machine for Food Preservation"
+                                - generic [ref=e2229]: "Avid Armor Ultra Series USV32: Premium Chamber Vacuum Seal…"
+                            - link "Rated 4.6 out of 5 stars by 988 reviews. Go to review section." [ref=e2230] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B07YLGRZFJ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-2-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_1_rating&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217#customerReviews
+                              - generic [ref=e2231]:
+                                - generic [ref=e2232]: "4.6"
+                                - generic [ref=e2234]: 4.6 out of 5 stars.
+                                - generic [ref=e2235]: (988)
+                            - link "$569.00" [ref=e2237] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B07YLGRZFJ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-2-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_1_price&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                              - generic [ref=e2239]:
+                                - generic [ref=e2240]: $569.00
+                                - generic [ref=e2241]:
+                                  - text: $
+                                  - generic [ref=e2242]:
+                                    - text: "569"
+                                    - generic [ref=e2243]: .
+                                  - text: "00"
+                            - img "Eligible for Prime." [ref=e2245]
+                      - listitem [ref=e2246]:
+                        - generic [ref=e2248]:
+                          - link [ref=e2249] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B092SNB643/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-3-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_2_bkgd&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                          - link "Avid Armor Vacuum Sealer A420 – 12\" Wide Seal Bar for Wider Bags, Fits 50 ft Rolls, Seals Multiple Quart Bags, Food Saver for Kitchen Storage, Sous Vide, Marinating" [ref=e2251] [cursor=pointer]:
+                            - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B092SNB643/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-3-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_2_img&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                            - img "Avid Armor Vacuum Sealer A420 – 12\" Wide Seal Bar for Wider Bags, Fits 50 ft Rolls, Seals Multiple Quart Bags, Food Saver for Kitchen Storage, Sous Vide, Marinating" [ref=e2254]
+                          - generic [ref=e2256]:
+                            - link [ref=e2257] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B092SNB643/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-3-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_2_bkgd&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                            - link "Avid Armor Vacuum Sealer A420 – 12\" Wide Seal Bar for Wider Bags, Fits 50 ft Rolls, Seals Multiple Quart Bags, Food Saver for Kitchen Storage, Sous Vide, Marinating" [ref=e2259] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B092SNB643/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-3-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_2_title&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                              - generic [ref=e2260]:
+                                - generic [ref=e2261]: Avid Armor Vacuum Sealer A420 – 12" Wide Seal Bar for Wider Bags, Fits 50 ft Rolls, Seals Multiple Quart Bags, Food Saver for Kitchen Storage, Sous Vide, Marinating
+                                - generic [ref=e2262]: Avid Armor Vacuum Sealer A420 – 12" Wide Seal Bar for Wider Bag…
+                            - link "Rated 4.3 out of 5 stars by 304 reviews. Go to review section." [ref=e2263] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B092SNB643/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-3-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_2_rating&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217#customerReviews
+                              - generic [ref=e2264]:
+                                - generic [ref=e2265]: "4.3"
+                                - generic [ref=e2267]: 4.3 out of 5 stars.
+                                - generic [ref=e2268]: (304)
+                            - link "$199.00" [ref=e2270] [cursor=pointer]:
+                              - /url: https://aax-us-east-retail-direct.amazon.com/x/c/JE2ASPVy8C0E_GF5ZDDmNQ0AAAGcYULAyAEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICAz-x0_/clv1c_ek-wBIPXIkbXDv4is65tu1aQUEhz8qKF75seZYpWnkr1DWfi5kq_zqOUsx9d6s7-dNjhL7fRK-mrWEE0GCPrZqqedhvVzhkuO2hkKsLFWPz0Aw-zohWDh2LK-jl1uGDZI03IscDrJ9iAbaHqZEJN9nPLcP2cmnXql6T-xBXOzKUdVk1Fvrs-XBo-5yj6uNfiwW97VWvOf4fAzPYl4xjB8syyl-07DDbOjYSRuB2kGemMaLC0PJM1tAS5BAk76t1lUsJmr6opMYwDKoGxKqC5fA1wCJP0FTcx5mS52uot2aZS2MLUaWQ_QEfxEv0NkoVwx0WroV0ZPKPu1tbDnQzHa24SynN_Xcq0YQlog3NI1Uisto3_MkjbQXCbIPIu0OuzzjPcnwrTnmspMx3e2FDgiboYavhUNbKL1z6r3rUfkWQn_Al6BdZL6S4GBc7VjozHwtER-TJ0H4wvdMefFy-dZWQXhk4M8xkJyUZHYYIADMp_CpGvX85IZ5lBhN_vNwtowil2BBHb58QVEUk32LEg2XC7YJRpSQhfD2f3tAoyPdTQIIqyLRdqR_BLvv2lWjFlN91ngSkQau7gk24nHIZDM3Ox9vzAPHM9KhJdhQ5CcowcDJjUfuYxWquyhMMMAgqPam7SjBWGn10fenkMABGPs91nM0y6Csf2hip5iFOYZyPzfQOcVkFDpHXrBWczaSG2JKF0oRUqMVkVH0yjB92PKIMznVK2WiDp8fGOl1IRF4JSjgEobNlRNdNPJqg0qMh9pdesYuRF7A03FjuiAPd7juBtGFHBapQ9Bw8O2QIh11jsL_ZtYHU6zY-5w96m6oJfj506jRN64UM1vVNNRkTFtwBl84GU5I4GXJqMS8xd-vsXJZV4DGr7a2VvkJ-Y-nuuqtgBY4xAejTWXsSFF1T85Nv1MJsvxGw2ZS-Z5WxTRtpPjVzMAQojurnc-5VfLVsoxCPRp3dsqp8ucxR_584JZU4W7on11RBRVe-Cs05FJEA4546MJrjT8oUOagbIO4hObAnpWZI6choRsBfekrH8Xwc6lrblv0kuzfMg9SEnZ75C-aN_uu6X_ymWfz35nAOEU4wYZs-1AamvDEdvXYkdMu0ouqGNPl5ktH6E4NorTcYkLUFex6uMO1qUHMdG7A3Qk3FKCuwCuOdiQvoquTETcPwEP-y-kMD-SRdQRTGE-t-Q702DprYPkdD0B-IQfHo1l3asGcJ4Wp1Tgqg2s7bkP8yRSS4HEHhTPTIBHsv5OkynjbRbHATB2psyr_Z4PYgt9Mz0stYD4xg0WIfwve3MJ3d2Y7RNMDCNDVc9b3KDIMTH8iZlnM5uiciLgC0mn2JdAy8LdnrqE1ezAt7RndItMRuw1cEHrrlpfTmHmHmLr0gjAT8Q9DAIRrJG04OZ7Czn06wkbEUMKYOV4H1WJpvDhCrLDy57BHilQfech3O9R0AM7Q3Prf_f-973pZILOZ-DcErol-VzzI2W_wnu8cAjp1yLZ4V_zTpBQNLiSn_UusunleWJref0FEZL7uEo31djrBfevqh87hHw7rLg54Ivm3zSQDTsWMnzeIo5Vd4MOUPQwg0PZJEW7MX6BxwB0215dJG5q21C19dVWsLwo0B6pPBcCG8a9raPXx5FwiW4heG0BLR54tH5TfUOvY6L0ToKTGuxKUmuw5D8uD08OifXRGI7sunt4lWzpiPs51osyl6qrmqwOnQbLmpdwqnTPSiYDXxTP2qVxHxoMszk/https://www.amazon.com/gp/aw/d/B092SNB643/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=f755c321e00deabd4a13cc8264cb65e1&hsa_cr_id=0&qid=1771158290&sr=1-3-7350ff0b-0901-4bc5-8134-c5f6594b6546&ref_=sbx_s_3psl_sbcd3_asin_2_price&pd_rd_w=HezUp&content-id=amzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311%3Aamzn1.sym.c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_p=c76b3f09-06ab-4a24-90d3-cc188524b311&pf_rd_r=9PWZWJ2Z7MR51H3CAVHH&pd_rd_wg=zIiGs&pd_rd_r=1078a0d8-a5ad-478c-a1f0-de02096c7217
+                              - generic [ref=e2272]:
+                                - generic [ref=e2273]: $199.00
+                                - generic [ref=e2274]:
+                                  - text: $
+                                  - generic [ref=e2275]:
+                                    - text: "199"
+                                    - generic [ref=e2276]: .
+                                  - text: "00"
+                            - generic [ref=e2279]: "List: $299.00"
+            - generic [ref=e2285]:
+              - heading "Need help?" [level=2] [ref=e2288]
+              - generic [ref=e2289]:
+                - link "Visit the help section" [ref=e2290] [cursor=pointer]:
+                  - /url: /gp/help/customer/display.html?nodeId=468556
+                - text: or
+                - link "contact us" [ref=e2291] [cursor=pointer]:
+                  - /url: /gp/help/customer/contact-us
+          - link "Go back to filtering menu" [ref=e2292] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForFilterOptions"
+        - generic [ref=e2294]:
+          - link "Skip to main search results" [ref=e2295] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForMainSearchResults"
+          - generic [ref=e2301]:
+            - group [ref=e2302]:
+              - heading "Popular Shopping Ideas" [level=2] [ref=e2303]
+              - list [ref=e2304]:
+                - listitem [ref=e2305]:
+                  - link "Professional" [ref=e2307] [cursor=pointer]:
+                    - /url: /s?k=professional+vacuum+sealer&ref=sr_nr_p_rag_integrated_qb_0
+                - listitem [ref=e2308]:
+                  - link "Wet Dry" [ref=e2310] [cursor=pointer]:
+                    - /url: /s?k=wet+dry+vacuum+sealer&ref=sr_nr_p_rag_integrated_qb_1
+                - listitem [ref=e2311]:
+                  - link "Handheld" [ref=e2313] [cursor=pointer]:
+                    - /url: /s?k=handheld+vacuum+sealer&ref=sr_nr_p_rag_integrated_qb_2
+                - listitem [ref=e2314]:
+                  - link "Portable" [ref=e2316] [cursor=pointer]:
+                    - /url: /s?k=portable+vacuum+sealer&ref=sr_nr_p_rag_integrated_qb_3
+                - listitem [ref=e2317]:
+                  - button "See more" [ref=e2320] [cursor=pointer]: See more
+            - separator [ref=e2322]
+            - group "Eligible for Free Shipping" [ref=e2323]:
+              - heading "Eligible for Free Shipping" [level=2] [ref=e2324]
+              - list "Eligible for Free Shipping" [ref=e2325]:
+                - listitem "Popular Shopping Ideas" [ref=e2326]:
+                  - link "Apply Free Shipping by Amazon filter to narrow results" [ref=e2328] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_76%3A1249155011&dc&qid=1771158290&rnid=1249153011&ref=sr_nr_p_76_1&ds=v1%3A6ozLR30rwzvC2Qb263TRX20Ip0erXCmApGLqs5%2BvQPw
+                    - checkbox [ref=e2331]
+                    - text: Free Shipping by Amazon
+                    - generic [ref=e2333]: Get FREE Shipping on eligible orders shipped by Amazon
+            - group "Customer Reviews" [ref=e2334]:
+              - heading "Customer Reviews" [level=2] [ref=e2335]
+              - list "Customer Reviews" [ref=e2336]:
+                - listitem [ref=e2337]:
+                  - link "Apply 4 Stars & Up filter to narrow results" [ref=e2340] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_72%3A1248915011&dc&qid=1771158290&rnid=1248913011&ref=sr_nr_p_72_1&ds=v1%3AoKZpphFS4dnw12TTeMSj1kVn2ABOQRKxk5oGW8I%2BsYE
+                    - generic [ref=e2342]: 4 Stars
+                    - text: "& Up"
+            - group [ref=e2343]:
+              - generic [ref=e2344]:
+                - generic [ref=e2345]: Price
+                - generic [ref=e2348]:
+                  - generic [ref=e2349]:
+                    - generic [ref=e2350]: $0
+                    - generic [ref=e2351]: –
+                    - generic [ref=e2352]: $20,400+
+                  - generic [ref=e2354]:
+                    - generic:
+                      - slider "Minimum price": "0"
+                    - generic [ref=e2355]:
+                      - slider "Maximum price": "185"
+              - list [ref=e2356]:
+                - listitem [ref=e2357]:
+                  - link "Up to $15" [ref=e2359] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_36%3A-1500&dc&qid=1771158290&rnid=386465011&ref=sr_nr_p_36_1&ds=v1%3Anf%2FvQUSRPhpNCu2jVlKFQNPfhd1hRD4FUAHPMZiD61k
+                - listitem [ref=e2360]:
+                  - link "$15 to $40" [ref=e2362] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_36%3A1500-4000&dc&qid=1771158290&rnid=386465011&ref=sr_nr_p_36_2&ds=v1%3AiWlRVJVpCk%2F7TbhP3QUZJKhDpbMLbWEuXv2iHHMOdiY
+                - listitem [ref=e2363]:
+                  - link "$40 to $80" [ref=e2365] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_36%3A4000-8000&dc&qid=1771158290&rnid=386465011&ref=sr_nr_p_36_3&ds=v1%3A7y%2Fbr2mlLBE5yEvwqUR7zuG2sa6F0mgQAEn6m3mZcuA
+                - listitem [ref=e2366]:
+                  - link "$80 & above" [ref=e2368] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_36%3A8000-&dc&qid=1771158290&rnid=386465011&ref=sr_nr_p_36_4&ds=v1%3A1iPzx9U2506IhQ29iq8agC1SsUCchr%2FukxUJw6199fU
+              - heading "Deals & Discounts" [level=2] [ref=e2369]
+              - list "Deals & Discounts" [ref=e2370]:
+                - listitem [ref=e2371]:
+                  - link "All Discounts" [ref=e2373] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_deal_type%3A23566065011&dc&qid=1771158290&rnid=23566063011&ref=sr_nr_p_n_deal_type_1&ds=v1%3AzcC7%2BOKZyMpAK40OgNFOeXbftTzNyhV0c9aFFoXgHP4
+                - listitem [ref=e2374]:
+                  - link "Today's Deals" [ref=e2376] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_deal_type%3A23566064011&dc&qid=1771158290&rnid=23566063011&ref=sr_nr_p_n_deal_type_2&ds=v1%3AzXa4JuDNdzCZaFcGC15k3zncSF7TXcjetQgXjqvvbgY
+            - group "Brands" [ref=e2377]:
+              - heading "Brands" [level=2] [ref=e2378]
+              - list "Brands" [ref=e2379]:
+                - listitem "Popular Shopping Ideas" [ref=e2380]:
+                  - link "Apply FoodSaver filter to narrow results" [ref=e2382] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_123%3A237222&dc&qid=1771158290&rnid=85457740011&ref=sr_nr_p_123_1&ds=v1%3AH0ujdFYsMKfVHoPQDBFTIG5v%2FFRATvQsqS%2FsYFiO09Y
+                    - checkbox [ref=e2385]
+                    - text: FoodSaver
+                - listitem "Popular Shopping Ideas" [ref=e2387]:
+                  - link "Apply NESCO filter to narrow results" [ref=e2389] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_123%3A264134&dc&qid=1771158290&rnid=85457740011&ref=sr_nr_p_123_2&ds=v1%3AlJ9W%2Bn3zWvJV9CaS0k4SbRuEoVKZqUJ2%2FmSWfr6YDyM
+                    - checkbox [ref=e2392]
+                    - text: NESCO
+                - listitem "Popular Shopping Ideas" [ref=e2394]:
+                  - link "Apply Anova Culinary filter to narrow results" [ref=e2396] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_123%3A43465&dc&qid=1771158290&rnid=85457740011&ref=sr_nr_p_123_3&ds=v1%3Adb47DCdu7EI0%2BtJc9QOuMNdNUZCWzm8jwC8HvErJts4
+                    - checkbox [ref=e2399]
+                    - text: Anova Culinary
+                - listitem "Popular Shopping Ideas" [ref=e2401]:
+                  - link "Apply Weston filter to narrow results" [ref=e2403] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_123%3A236770&dc&qid=1771158290&rnid=85457740011&ref=sr_nr_p_123_4&ds=v1%3AZB%2BDSjqjV634LayzYRL3VCoXToW4qhTrjD9HQLZtIsY
+                    - checkbox [ref=e2406]
+                    - text: Weston
+                - listitem "Popular Shopping Ideas" [ref=e2408]:
+                  - link "Apply NutriChef filter to narrow results" [ref=e2410] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_123%3A383080&dc&qid=1771158290&rnid=85457740011&ref=sr_nr_p_123_5&ds=v1%3A%2B%2BKchjO6CKYf4p4Zkp42y43a03Ha4O15NVsejfxspkY
+                    - checkbox [ref=e2413]
+                    - text: NutriChef
+                - listitem "Popular Shopping Ideas" [ref=e2415]:
+                  - link "Apply Avid Armor filter to narrow results" [ref=e2417] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_123%3A164101&dc&qid=1771158290&rnid=85457740011&ref=sr_nr_p_123_6&ds=v1%3AzaYi58QHryrHmBB3Db31uMFIbB756TdvzLRFV2YqMBM
+                    - checkbox [ref=e2420]
+                    - text: Avid Armor
+                - listitem "Popular Shopping Ideas" [ref=e2422]:
+                  - link "Apply Inkbird filter to narrow results" [ref=e2424] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_123%3A63080&dc&qid=1771158290&rnid=85457740011&ref=sr_nr_p_123_7&ds=v1%3AwOLwiiAcFhmonmYZZudniZnLsfuAXTzbpG47og4Zq9I
+                    - checkbox [ref=e2427]
+                    - text: Inkbird
+                - listitem [ref=e2429]:
+                  - button "See more, Brands" [ref=e2432] [cursor=pointer]: See more
+            - group "Condition" [ref=e2434]:
+              - heading "Condition" [level=2] [ref=e2435]
+              - list "Condition" [ref=e2436]:
+                - listitem "Popular Shopping Ideas" [ref=e2437]:
+                  - link "Apply New filter to narrow results" [ref=e2439] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_condition-type%3A6358196011&dc&qid=1771158290&rnid=6358194011&ref=sr_nr_p_n_condition-type_1&ds=v1%3AVMVwbCA%2FrbOJxNMZTIyjmDrP65pStmFY64NIqNVKpyk
+                    - checkbox [ref=e2442]
+                    - text: New
+                - listitem "Popular Shopping Ideas" [ref=e2444]:
+                  - link "Apply Used filter to narrow results" [ref=e2446] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_condition-type%3A6358198011&dc&qid=1771158290&rnid=6358194011&ref=sr_nr_p_n_condition-type_2&ds=v1%3AQxoWd72JxkeSM5q2Tzxwkx9kS7yMhfgSiuSNeQRrgVc
+                    - checkbox [ref=e2449]
+                    - text: Used
+            - group "Color" [ref=e2451]:
+              - heading "Color" [level=2] [ref=e2452]
+              - list "Color" [ref=e2453]:
+                - listitem [ref=e2454]:
+                  - generic:
+                    - link "Apply White filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254100011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_1&ds=v1%3AHlR0pdZq9qSMkDPgRwkKGeepdyMYele0fQMSdzqCVYw
+                - listitem [ref=e2456]:
+                  - generic:
+                    - link "Apply Black filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254098011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_2&ds=v1%3AiAFweAGPDC1IVi0A3c7FqwvNkmXwF5gtaWlnf8loLJc
+                - listitem [ref=e2458]:
+                  - generic:
+                    - link "Apply Silver filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254112011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_3&ds=v1%3AtsSflUfWqjz3ji%2BNdacvcB8iDFj6o0G%2BQYSiaiyiV24
+                - listitem [ref=e2460]:
+                  - generic:
+                    - link "Apply Grey filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254099011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_4&ds=v1%3APp3ifeGX8syITcfC35fk9ovHeTKUlg1TtiQaGCwMLzg
+                - listitem [ref=e2462]:
+                  - generic:
+                    - link "Apply Brown filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254101011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_5&ds=v1%3AOiJ4%2F3snl7g6kQ%2F29w0xyXhl%2FINUNV8ccZhob8NxXI0
+                - listitem [ref=e2464]:
+                  - generic:
+                    - link "Apply Beige filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254102011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_6&ds=v1%3A7dEVOvgiQYFeZyDrwl8p%2FsKc7Vq0N5X2XJdvxG0BE2w
+                - listitem [ref=e2466]:
+                  - generic:
+                    - link "Apply Red filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254103011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_7&ds=v1%3A%2FlHj8b%2FoV8be%2FySxd4NvY%2Fk4%2F0URuR7rkVuiEOPUFTc
+                - listitem [ref=e2468]:
+                  - generic:
+                    - link "Apply Pink filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254104011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_8&ds=v1%3AhLY%2BopBqN%2FcOZAPeCIeZtenp%2B5nejjNZyOhSmiWTe%2Bo
+                - listitem [ref=e2470]:
+                  - generic:
+                    - link "Apply Orange filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254105011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_9&ds=v1%3AQsSWwmjH2tu7ltbfllkYyk3onCdxBXhRllIZC86AGh0
+                - listitem [ref=e2472]:
+                  - generic:
+                    - link "Apply Yellow filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254106011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_10&ds=v1%3AOc%2FWr5A%2FLWXZhISM9UIN7taMigjdZ13K3FqUAPFXqJM
+                - listitem [ref=e2474]:
+                  - generic:
+                    - link "Apply Ivory filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254107011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_11&ds=v1%3AL6Q%2BaoolZWhBvnWMfkycLP9iuVNyibC8z2wixt9twVg
+                - listitem [ref=e2476]:
+                  - generic:
+                    - link "Apply Green filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254108011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_12&ds=v1%3AceMWBXe%2FBgkOrr85aH2cbBPg%2FZC4VIEroVLVi4R%2Fmoo
+                - listitem [ref=e2478]:
+                  - generic:
+                    - link "Apply Blue filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254109011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_13&ds=v1%3AXsS%2FKoXT9EXG0oAV1Wjc2JKI%2BHP%2F9LFFRHbmFgzfak4
+                - listitem [ref=e2480]:
+                  - generic:
+                    - link "Apply Purple filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254110011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_14&ds=v1%3AuH48ZFpb9V9U76BMF9pIR%2B%2BFrecJugox%2B6sOff49pSs
+                - listitem [ref=e2482]:
+                  - generic:
+                    - link "Apply Gold filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254111011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_15&ds=v1%3Au%2FsD5u%2FiYZWF%2F96repTFUkG7uWovTmZoJSfGmzRfN0M
+                - listitem [ref=e2484]:
+                  - generic:
+                    - link "Apply Multi filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254113011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_16&ds=v1%3Asrz0WHy5A326glo9PO9Rpg9isczai3xyKAI0f3LxbiM
+                - listitem [ref=e2486]:
+                  - generic:
+                    - link "Apply Clear filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254114011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_17&ds=v1%3AVoDYOiWfSzfaODkwl3CUwjCnHsPow9F3xyxswSXY0kw
+                - listitem [ref=e2488]:
+                  - generic:
+                    - link "Apply Stainless Steel filter to narrow results":
+                      - /url: /s?k=vacuum+sealer&rh=p_n_g-1004162223091%3A3254115011&dc&qid=1771158290&rnid=3254097011&ref=sr_nr_p_n_g-1004162223091_18&ds=v1%3AwQPuljJn%2BFfABtc27xDMJ6dygysC2qadsicw%2BE0ndAo
+            - group "Grade" [ref=e2490]:
+              - heading "Grade" [level=2] [ref=e2491]
+              - list "Grade" [ref=e2492]:
+                - listitem "Popular Shopping Ideas" [ref=e2493]:
+                  - link "Apply Commercial Grade filter to narrow results" [ref=e2495] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-1001308806111%3A5616183011&dc&qid=1771158290&rnid=5616182011&ref=sr_nr_p_n_g-1001308806111_1&ds=v1%3AeslW8gLtPX9A5uXoW1ewRsIIaBC1THAsat6oWOZrGJM
+                    - checkbox [ref=e2498]
+                    - text: Commercial Grade
+            - group "Mode" [ref=e2500]:
+              - heading "Mode" [level=2] [ref=e2501]
+              - list "Mode" [ref=e2502]:
+                - listitem "Popular Shopping Ideas" [ref=e2503]:
+                  - link "Apply Automatic filter to narrow results" [ref=e2505] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-1003337498111%3A23966092011&dc&qid=1771158290&rnid=23966000011&ref=sr_nr_p_n_g-1003337498111_1&ds=v1%3AQPf61FLl8tB9vuto73lkTlU0dPXZ8QzeiYVCc4dAx88
+                    - checkbox [ref=e2508]
+                    - text: Automatic
+                - listitem "Popular Shopping Ideas" [ref=e2510]:
+                  - link "Apply Manual filter to narrow results" [ref=e2512] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-1003337498111%3A23966090011&dc&qid=1771158290&rnid=23966000011&ref=sr_nr_p_n_g-1003337498111_2&ds=v1%3An7c73dmSsaKl%2FRSkjs2IAk0WyXcqBT53NPiY%2Bn3944I
+                    - checkbox [ref=e2515]
+                    - text: Manual
+                - listitem "Popular Shopping Ideas" [ref=e2517]:
+                  - link "Apply Semi-Automatic filter to narrow results" [ref=e2519] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-1003337498111%3A23966091011&dc&qid=1771158290&rnid=23966000011&ref=sr_nr_p_n_g-1003337498111_3&ds=v1%3AOITgrGIXNIs6%2BLALPHUqCgjl6vT5XgUCS6o92ugjatg
+                    - checkbox [ref=e2522]
+                    - text: Semi-Automatic
+            - group "Item Length Longer Edge" [ref=e2524]:
+              - heading "Item Length Longer Edge" [level=2] [ref=e2525]
+              - list "Item Length Longer Edge" [ref=e2526]:
+                - listitem "Popular Shopping Ideas" [ref=e2527]:
+                  - link "Apply Up to 4.9 in filter to narrow results" [ref=e2529] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-101014801449111%3A116623914011&dc&qid=1771158290&rnid=116623540011&ref=sr_nr_p_n_g-101014801449111_1&ds=v1%3ASouoJuwxt5ug1Lg0Zz7jOnEHkhnUGV9Ks2jEcs%2FcyGQ
+                    - checkbox [ref=e2532]
+                    - text: Up to 4.9 in
+                - listitem "Popular Shopping Ideas" [ref=e2534]:
+                  - link "Apply 5 to 9.9 in filter to narrow results" [ref=e2536] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-101014801449111%3A116623915011&dc&qid=1771158290&rnid=116623540011&ref=sr_nr_p_n_g-101014801449111_2&ds=v1%3Au7p87Ua9cH2FIy3G%2B32XnD1%2BLYE8huIewZVjxNbw800
+                    - checkbox [ref=e2539]
+                    - text: 5 to 9.9 in
+                - listitem "Popular Shopping Ideas" [ref=e2541]:
+                  - link "Apply 10 to 14.9 in filter to narrow results" [ref=e2543] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-101014801449111%3A116623913011&dc&qid=1771158290&rnid=116623540011&ref=sr_nr_p_n_g-101014801449111_3&ds=v1%3AqoCivLjMNB%2FXOPkwk%2Bshn8XBI%2BGSc8F%2B2zNCBwTLYqA
+                    - checkbox [ref=e2546]
+                    - text: 10 to 14.9 in
+                - listitem "Popular Shopping Ideas" [ref=e2548]:
+                  - link "Apply 15 in & above filter to narrow results" [ref=e2550] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-101014801449111%3A116623916011&dc&qid=1771158290&rnid=116623540011&ref=sr_nr_p_n_g-101014801449111_4&ds=v1%3A6p4h5AW68V5B1HzACzM4fXQ1Jp3E6Gll9%2FD7Hq2zXa4
+                    - checkbox [ref=e2553]
+                    - text: 15 in & above
+            - group "Width" [ref=e2555]:
+              - heading "Width" [level=2] [ref=e2556]
+              - list "Width" [ref=e2557]:
+                - listitem "Popular Shopping Ideas" [ref=e2558]:
+                  - link "Apply Up to 1.9 in filter to narrow results" [ref=e2560] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-101014803629111%3A116623919011&dc&qid=1771158290&rnid=116623541011&ref=sr_nr_p_n_g-101014803629111_1&ds=v1%3A3OeYROKWhxlBQZTt%2FNPhYg6EvemGJkPCXEgeKOqcRCk
+                    - checkbox [ref=e2563]
+                    - text: Up to 1.9 in
+                - listitem "Popular Shopping Ideas" [ref=e2565]:
+                  - link "Apply 2 to 3.9 in filter to narrow results" [ref=e2567] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-101014803629111%3A116623920011&dc&qid=1771158290&rnid=116623541011&ref=sr_nr_p_n_g-101014803629111_2&ds=v1%3Auc6hCU6N7XilFBIoTOP9NWrxUT%2FVSsJ4DXYest3HdbM
+                    - checkbox [ref=e2570]
+                    - text: 2 to 3.9 in
+                - listitem "Popular Shopping Ideas" [ref=e2572]:
+                  - link "Apply 4 to 5.9 in filter to narrow results" [ref=e2574] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-101014803629111%3A116623918011&dc&qid=1771158290&rnid=116623541011&ref=sr_nr_p_n_g-101014803629111_3&ds=v1%3AWZijXMOKYtEGzOFO5rkNfOdNCX5d%2FveUyTs6C7%2Fz1Zs
+                    - checkbox [ref=e2577]
+                    - text: 4 to 5.9 in
+                - listitem "Popular Shopping Ideas" [ref=e2579]:
+                  - link "Apply 6 in & above filter to narrow results" [ref=e2581] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_g-101014803629111%3A116623917011&dc&qid=1771158290&rnid=116623541011&ref=sr_nr_p_n_g-101014803629111_4&ds=v1%3ACkqmf8A8glztUqArL7Sy35U5PU0ipsqmUSa%2FgpdfaBU
+                    - checkbox [ref=e2584]
+                    - text: 6 in & above
+            - group "Seller" [ref=e2586]:
+              - heading "Seller" [level=2] [ref=e2587]
+              - list "Seller" [ref=e2588]:
+                - listitem "Popular Shopping Ideas" [ref=e2589]:
+                  - link "Apply TD Mech filter to narrow results" [ref=e2591] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_6%3AALIOE0GZQRC3U&dc&qid=1771158290&rnid=331544011&ref=sr_nr_p_6_1&ds=v1%3AhPvALuBXNzjdWy3ppZNNBzEdFcWx%2BKQ5Kjy%2FzRNpDCE
+                    - checkbox [ref=e2594]
+                    - text: TD Mech
+                - listitem "Popular Shopping Ideas" [ref=e2596]:
+                  - link "Apply MIX PACKING filter to narrow results" [ref=e2598] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_6%3AA32KY69L1BB326&dc&qid=1771158290&rnid=331544011&ref=sr_nr_p_6_2&ds=v1%3AfHyjGbBiEPW%2FeZEwps8cyyuCaZsAz%2FSs9adKm8oJDuo
+                    - checkbox [ref=e2601]
+                    - text: MIX PACKING
+                - listitem [ref=e2603]:
+                  - button "See more, Seller" [ref=e2606] [cursor=pointer]: See more
+            - group "Sustainability Features" [ref=e2608]:
+              - heading "Sustainability Features" [level=2] [ref=e2609]
+              - list "Sustainability Features" [ref=e2610]:
+                - listitem [ref=e2611]:
+                  - link "Any Feature" [ref=e2613] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_cpf_labels%3A121136630011&dc&qid=1771158290&rnid=116845681011&ref=sr_nr_p_n_cpf_labels_1&ds=v1%3ANz0rIX0cP96HqSqZCMaCOkYFxA7zT%2FsfZCfwLq6An4g
+                - listitem [ref=e2614]:
+                  - link "Recycled Materials" [ref=e2616] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_cpf_labels%3A116845689011&dc&qid=1771158290&rnid=116845681011&ref=sr_nr_p_n_cpf_labels_2&ds=v1%3AYm5OiLNOnWFT6YoIfxD4jKeJjNfpks7E%2Br38Q7aWED8
+                - listitem [ref=e2617]:
+                  - button "See more, Sustainability Features" [ref=e2620] [cursor=pointer]: See more
+            - group "Subscribe & Save" [ref=e2622]:
+              - heading "Subscribe & Save" [level=2] [ref=e2623]
+              - list "Subscribe & Save" [ref=e2624]:
+                - listitem "Popular Shopping Ideas" [ref=e2625]:
+                  - link "Apply Subscribe & Save Eligible filter to narrow results" [ref=e2627] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_is_sns_available%3A2617006011&dc&qid=1771158290&rnid=2617005011&ref=sr_nr_p_n_is_sns_available_1&ds=v1%3AJYvQbLweq9yxG%2BUgCyQaUu6Y2JtdCh5y8PGvEAVB7u0
+                    - checkbox [ref=e2630]
+                    - text: Subscribe & Save Eligible
+            - group "Premium Brands" [ref=e2632]:
+              - heading "Premium Brands" [level=2] [ref=e2633]
+              - list "Premium Brands" [ref=e2634]:
+                - listitem "Popular Shopping Ideas" [ref=e2635]:
+                  - link "Apply Premium Brands filter to narrow results" [ref=e2637] [cursor=pointer]:
+                    - /url: /s?k=vacuum+sealer&rh=p_n_feature_keywords_browse-bin%3A204376014011&dc&qid=1771158290&rnid=204376013011&ref=sr_nr_p_n_feature_keywords_browse-bin_1&ds=v1%3A0y9%2Fiun4j2FnKSg2kVmaTY2tF4ocStXA%2B5sT%2FGxlPqg
+                    - checkbox [ref=e2640]
+                    - text: Premium Brands
+    - complementary "Your recently viewed items and featured recommendations"
+    - generic [ref=e2642]:
+      - button "Back to top" [ref=e2643] [cursor=pointer]:
+        - generic [ref=e2644]: Back to top
+      - generic [ref=e2645]:
+        - generic [ref=e2646]:
+          - heading "Get to Know Us" [level=6] [ref=e2647]
+          - list [ref=e2648]:
+            - listitem [ref=e2649]:
+              - link "Careers" [ref=e2650] [cursor=pointer]:
+                - /url: https://www.amazon.jobs
+            - listitem [ref=e2651]:
+              - link "Amazon Newsletter" [ref=e2652] [cursor=pointer]:
+                - /url: https://email.aboutamazon.com/l/637851/2020-10-29/pd87g?utm_source=gateway&utm_medium=amazonfooters&utm_campaign=newslettersubscribers&utm_content=amazonnewssignup
+            - listitem [ref=e2653]:
+              - link "About Amazon" [ref=e2654] [cursor=pointer]:
+                - /url: https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer&token=about
+            - listitem [ref=e2655]:
+              - link "Accessibility" [ref=e2656] [cursor=pointer]:
+                - /url: https://www.amazon.com/b?node=15701038011&ie=UTF8
+            - listitem [ref=e2657]:
+              - link "Sustainability" [ref=e2658] [cursor=pointer]:
+                - /url: https://sustainability.aboutamazon.com/?utm_source=gateway&utm_medium=footer&ref_=susty_footer
+            - listitem [ref=e2659]:
+              - link "Press Center" [ref=e2660] [cursor=pointer]:
+                - /url: https://www.amazon.com/pr
+            - listitem [ref=e2661]:
+              - link "Investor Relations" [ref=e2662] [cursor=pointer]:
+                - /url: https://www.amazon.com/ir
+            - listitem [ref=e2663]:
+              - link "Amazon Devices" [ref=e2664] [cursor=pointer]:
+                - /url: /gp/browse.html?node=2102313011&ref_=footer_devices
+            - listitem [ref=e2665]:
+              - link "Amazon Science" [ref=e2666] [cursor=pointer]:
+                - /url: https://www.amazon.science
+        - generic [ref=e2668]:
+          - heading "Make Money with Us" [level=6] [ref=e2669]
+          - list [ref=e2670]:
+            - listitem [ref=e2671]:
+              - link "Sell on Amazon" [ref=e2672] [cursor=pointer]:
+                - /url: https://sell.amazon.com/?ld=AZFSSOA_FTSELL-C&ref_=footer_soa
+            - listitem [ref=e2673]:
+              - link "Sell apps on Amazon" [ref=e2674] [cursor=pointer]:
+                - /url: https://developer.amazon.com
+            - listitem [ref=e2675]:
+              - link "Supply to Amazon" [ref=e2676] [cursor=pointer]:
+                - /url: https://supply.amazon.com
+            - listitem [ref=e2677]:
+              - link "Protect & Build Your Brand" [ref=e2678] [cursor=pointer]:
+                - /url: https://sell.amazon.com/brand-registry?ld=AZUSSOA_ABR-FT
+            - listitem [ref=e2679]:
+              - link "Become an Affiliate" [ref=e2680] [cursor=pointer]:
+                - /url: https://affiliate-program.amazon.com/
+            - listitem [ref=e2681]:
+              - link "Become a Delivery Driver" [ref=e2682] [cursor=pointer]:
+                - /url: https://dspjobhub.com/
+            - listitem [ref=e2683]:
+              - link "Start a Package Delivery Business" [ref=e2684] [cursor=pointer]:
+                - /url: https://logistics.amazon.com/marketing?utm_source=amzn&utm_medium=footer&utm_campaign=home
+            - listitem [ref=e2685]:
+              - link "Advertise Your Products" [ref=e2686] [cursor=pointer]:
+                - /url: https://advertising.amazon.com/?ref=ext_amzn_ftr
+            - listitem [ref=e2687]:
+              - link "Self-Publish with Us" [ref=e2688] [cursor=pointer]:
+                - /url: /gp/seller-account/mm-summary-page.html?ld=AZFooterSelfPublish&topic=200260520&ref_=footer_publishing
+            - listitem [ref=e2689]:
+              - link "Become an Amazon Hub Partner" [ref=e2690] [cursor=pointer]:
+                - /url: https://www.amazon.com/b/?node=120788043011
+            - listitem [ref=e2691]:
+              - text: ›
+              - link "See More Ways to Make Money" [ref=e2692] [cursor=pointer]:
+                - /url: /b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore
+        - generic [ref=e2694]:
+          - heading "Amazon Payment Products" [level=6] [ref=e2695]
+          - list [ref=e2696]:
+            - listitem [ref=e2697]:
+              - link "Amazon Visa" [ref=e2698] [cursor=pointer]:
+                - /url: /iss/credit/rewardscardmember?plattr=CBFOOT&ref_=footer_cbcc
+            - listitem [ref=e2699]:
+              - link "Amazon Store Card" [ref=e2700] [cursor=pointer]:
+                - /url: /credit/storecard/member?plattr=PLCCFOOT&ref_=footer_plcc
+            - listitem [ref=e2701]:
+              - link "Amazon Secured Card" [ref=e2702] [cursor=pointer]:
+                - /url: /dp/product/B084KP3NG6?plattr=SCFOOT&ref_=footer_ACB
+            - listitem [ref=e2703]:
+              - link "Amazon Business Card" [ref=e2704] [cursor=pointer]:
+                - /url: /dp/B07984JN3L?plattr=ACOMFO&ie=UTF-8
+            - listitem [ref=e2705]:
+              - link "Shop with Points" [ref=e2706] [cursor=pointer]:
+                - /url: https://www.amazon.com/hp/shopwithpoints/servicing
+            - listitem [ref=e2707]:
+              - link "Credit Card Marketplace" [ref=e2708] [cursor=pointer]:
+                - /url: /gp/browse.html?node=3561432011&ref_=footer_ccmp
+            - listitem [ref=e2709]:
+              - link "Reload Your Balance" [ref=e2710] [cursor=pointer]:
+                - /url: /gp/browse.html?node=10232440011&ref_=footer_reload_us
+            - listitem [ref=e2711]:
+              - link "Gift Cards" [ref=e2712] [cursor=pointer]:
+                - /url: https://www.amazon.com/b/?node=2238192011&ref=shop_footer_payments_gc_desktop
+            - listitem [ref=e2713]:
+              - link "Amazon Currency Converter" [ref=e2714] [cursor=pointer]:
+                - /url: /gp/browse.html?node=388305011&ref_=footer_tfx
+        - generic [ref=e2716]:
+          - heading "Let Us Help You" [level=6] [ref=e2717]
+          - list [ref=e2718]:
+            - listitem [ref=e2719]:
+              - link "Your Account" [ref=e2720] [cursor=pointer]:
+                - /url: https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya
+            - listitem [ref=e2721]:
+              - link "Your Orders" [ref=e2722] [cursor=pointer]:
+                - /url: https://www.amazon.com/gp/css/order-history?ref_=footer_yo
+            - listitem [ref=e2723]:
+              - link "Shipping Rates & Policies" [ref=e2724] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=468520&ref_=footer_shiprates
+            - listitem [ref=e2725]:
+              - link "Amazon Prime" [ref=e2726] [cursor=pointer]:
+                - /url: /gp/prime?ref_=footer_prime
+            - listitem [ref=e2727]:
+              - link "Returns & Replacements" [ref=e2728] [cursor=pointer]:
+                - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+            - listitem [ref=e2729]:
+              - link "Manage Your Content and Devices" [ref=e2730] [cursor=pointer]:
+                - /url: /hz/mycd/myx?ref_=footer_myk
+            - listitem [ref=e2731]:
+              - link "Recalls and Product Safety Alerts" [ref=e2732] [cursor=pointer]:
+                - /url: https://www.amazon.com/product-safety-alerts?ref_=footer_bsx_ypsa
+            - listitem [ref=e2733]:
+              - link "Registry & Gift List" [ref=e2734] [cursor=pointer]:
+                - /url: /registries?ref_=nav_footer_registry_giftlist_desktop
+            - listitem [ref=e2735]:
+              - link "Help" [ref=e2736] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=508510&ref_=footer_gw_m_b_he
+      - generic [ref=e2738]:
+        - link "Amazon US Home" [ref=e2741] [cursor=pointer]:
+          - /url: /?ref_=footer_logo
+        - generic [ref=e2744]:
+          - generic [ref=e2745]:
+            - link "Choose a language for shopping. Current selection is English." [ref=e2746] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+              - generic [ref=e2748]: English
+            - button "Expand to Change Language or Country" [ref=e2749] [cursor=pointer]
+          - button "Choose a country/region for shopping. The current selection is United States." [ref=e2750] [cursor=pointer]:
+            - generic [ref=e2752]: United States
+      - navigation "More on Amazon" [ref=e2753]:
+        - generic "More on Amazon" [ref=e2754]:
+          - list [ref=e2755]:
+            - listitem [ref=e2756]:
+              - link "Amazon Music Stream millions of songs" [ref=e2757] [cursor=pointer]:
+                - /url: https://music.amazon.com?ref=dm_aff_amz_com
+                - heading "Amazon Music" [level=5] [ref=e2758]
+                - generic [ref=e2759]:
+                  - text: Stream millions
+                  - text: of songs
+            - listitem [ref=e2760]
+            - listitem [ref=e2761]:
+              - link "Amazon Ads Reach customers wherever they spend their time" [ref=e2762] [cursor=pointer]:
+                - /url: https://advertising.amazon.com/?ref=footer_advtsing_amzn_com
+                - heading "Amazon Ads" [level=5] [ref=e2763]
+                - generic [ref=e2764]:
+                  - text: Reach customers
+                  - text: wherever they
+                  - text: spend their time
+            - listitem [ref=e2765]
+            - listitem [ref=e2766]:
+              - link "6pm Score deals on fashion brands" [ref=e2767] [cursor=pointer]:
+                - /url: https://www.6pm.com
+                - heading "6pm" [level=5] [ref=e2768]
+                - generic [ref=e2769]:
+                  - text: Score deals
+                  - text: on fashion brands
+            - listitem [ref=e2770]
+            - listitem [ref=e2771]:
+              - link "AbeBooks Books, art & collectibles" [ref=e2772] [cursor=pointer]:
+                - /url: https://www.abebooks.com
+                - heading "AbeBooks" [level=5] [ref=e2773]
+                - generic [ref=e2774]:
+                  - text: Books, art
+                  - text: "& collectibles"
+            - listitem [ref=e2775]
+            - listitem [ref=e2776]:
+              - link "ACX Audiobook Publishing Made Easy" [ref=e2777] [cursor=pointer]:
+                - /url: https://www.acx.com/
+                - heading "ACX" [level=5] [ref=e2778]
+                - generic [ref=e2779]:
+                  - text: Audiobook Publishing
+                  - text: Made Easy
+            - listitem [ref=e2780]
+            - listitem [ref=e2781]:
+              - link "Sell on Amazon Start a Selling Account" [ref=e2782] [cursor=pointer]:
+                - /url: https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell
+                - heading "Sell on Amazon" [level=5] [ref=e2783]
+                - generic [ref=e2784]: Start a Selling Account
+            - listitem [ref=e2785]
+            - listitem [ref=e2786]:
+              - link "Veeqo Shipping Software Inventory Management" [ref=e2787] [cursor=pointer]:
+                - /url: https://www.veeqo.com/?utm_source=amazon&utm_medium=website&utm_campaign=footer
+                - heading "Veeqo" [level=5] [ref=e2788]
+                - generic [ref=e2789]:
+                  - text: Shipping Software
+                  - text: Inventory Management
+          - list [ref=e2790]:
+            - listitem [ref=e2791]:
+              - link "Amazon Business Everything For Your Business" [ref=e2792] [cursor=pointer]:
+                - /url: /business?ref_=footer_retail_b2b
+                - heading "Amazon Business" [level=5] [ref=e2793]
+                - generic [ref=e2794]:
+                  - text: Everything For
+                  - text: Your Business
+            - listitem [ref=e2795]
+            - listitem [ref=e2796]:
+              - link "Amazon Fresh Groceries & More Right To Your Door" [ref=e2797] [cursor=pointer]:
+                - /url: /alm/storefront?almBrandId=QW1hem9uIEZyZXNo&ref_=footer_aff_fresh
+                - heading "Amazon Fresh" [level=5] [ref=e2798]
+                - generic [ref=e2799]:
+                  - text: Groceries & More
+                  - text: Right To Your Door
+            - listitem [ref=e2800]
+            - listitem [ref=e2801]:
+              - link "AmazonGlobal Ship Orders Internationally" [ref=e2802] [cursor=pointer]:
+                - /url: /gp/browse.html?node=230659011&ref_=footer_amazonglobal
+                - heading "AmazonGlobal" [level=5] [ref=e2803]
+                - generic [ref=e2804]:
+                  - text: Ship Orders
+                  - text: Internationally
+            - listitem [ref=e2805]
+            - listitem [ref=e2806]:
+              - link "Home Services Experienced Pros Happiness Guarantee" [ref=e2807] [cursor=pointer]:
+                - /url: /services?ref_=footer_services
+                - heading "Home Services" [level=5] [ref=e2808]
+                - generic [ref=e2809]:
+                  - text: Experienced Pros
+                  - text: Happiness Guarantee
+            - listitem [ref=e2810]
+            - listitem [ref=e2811]:
+              - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e2812] [cursor=pointer]:
+                - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter
+                - heading "Amazon Web Services" [level=5] [ref=e2813]
+                - generic [ref=e2814]:
+                  - text: Scalable Cloud
+                  - text: Computing Services
+            - listitem [ref=e2815]
+            - listitem [ref=e2816]:
+              - link "Audible Listen to Books & Original Audio Performances" [ref=e2817] [cursor=pointer]:
+                - /url: https://www.audible.com
+                - heading "Audible" [level=5] [ref=e2818]
+                - generic [ref=e2819]:
+                  - text: Listen to Books & Original
+                  - text: Audio Performances
+            - listitem [ref=e2820]
+            - listitem [ref=e2821]:
+              - link "Box Office Mojo Find Movie Box Office Data" [ref=e2822] [cursor=pointer]:
+                - /url: https://www.boxofficemojo.com/?ref_=amzn_nav_ftr
+                - heading "Box Office Mojo" [level=5] [ref=e2823]
+                - generic [ref=e2824]:
+                  - text: Find Movie
+                  - text: Box Office Data
+          - list [ref=e2825]:
+            - listitem [ref=e2826]:
+              - link "Goodreads Book reviews & recommendations" [ref=e2827] [cursor=pointer]:
+                - /url: https://www.goodreads.com
+                - heading "Goodreads" [level=5] [ref=e2828]
+                - generic [ref=e2829]:
+                  - text: Book reviews
+                  - text: "& recommendations"
+            - listitem [ref=e2830]
+            - listitem [ref=e2831]:
+              - link "IMDb Movies, TV & Celebrities" [ref=e2832] [cursor=pointer]:
+                - /url: https://www.imdb.com
+                - heading "IMDb" [level=5] [ref=e2833]
+                - generic [ref=e2834]:
+                  - text: Movies, TV
+                  - text: "& Celebrities"
+            - listitem [ref=e2835]
+            - listitem [ref=e2836]:
+              - link "IMDbPro Get Info Entertainment Professionals Need" [ref=e2837] [cursor=pointer]:
+                - /url: https://pro.imdb.com?ref_=amzn_nav_ftr
+                - heading "IMDbPro" [level=5] [ref=e2838]
+                - generic [ref=e2839]:
+                  - text: Get Info Entertainment
+                  - text: Professionals Need
+            - listitem [ref=e2840]
+            - listitem [ref=e2841]:
+              - link "Kindle Direct Publishing Indie Digital & Print Publishing Made Easy" [ref=e2842] [cursor=pointer]:
+                - /url: https://kdp.amazon.com
+                - heading "Kindle Direct Publishing" [level=5] [ref=e2843]
+                - generic [ref=e2844]:
+                  - text: Indie Digital & Print Publishing
+                  - text: Made Easy
+            - listitem [ref=e2845]
+            - listitem [ref=e2846]:
+              - link "Amazon Photos Unlimited Photo Storage Free With Prime" [ref=e2847] [cursor=pointer]:
+                - /url: /gp/browse.html?node=13234696011&ref_=_gno_p_foot
+                - heading "Amazon Photos" [level=5] [ref=e2848]
+                - generic [ref=e2849]:
+                  - text: Unlimited Photo Storage
+                  - text: Free With Prime
+            - listitem [ref=e2850]
+            - listitem [ref=e2851]:
+              - link "Prime Video Direct Video Distribution Made Easy" [ref=e2852] [cursor=pointer]:
+                - /url: https://videodirect.amazon.com/home/landing
+                - heading "Prime Video Direct" [level=5] [ref=e2853]
+                - generic [ref=e2854]:
+                  - text: Video Distribution
+                  - text: Made Easy
+            - listitem [ref=e2855]
+            - listitem [ref=e2856]:
+              - link "Shopbop Designer Fashion Brands" [ref=e2857] [cursor=pointer]:
+                - /url: https://www.shopbop.com
+                - heading "Shopbop" [level=5] [ref=e2858]
+                - generic [ref=e2859]:
+                  - text: Designer
+                  - text: Fashion Brands
+          - list [ref=e2860]:
+            - listitem [ref=e2861]:
+              - link "Amazon Resale Great Deals on Quality Used Products" [ref=e2862] [cursor=pointer]:
+                - /url: /gp/browse.html?node=10158976011&ref_=footer_wrhsdls
+                - heading "Amazon Resale" [level=5] [ref=e2863]
+                - generic [ref=e2864]:
+                  - text: Great Deals on
+                  - text: Quality Used Products
+            - listitem [ref=e2865]
+            - listitem [ref=e2866]:
+              - link "Whole Foods Market America’s Healthiest Grocery Store" [ref=e2867] [cursor=pointer]:
+                - /url: https://www.wholefoodsmarket.com
+                - heading "Whole Foods Market" [level=5] [ref=e2868]
+                - generic [ref=e2869]:
+                  - text: America’s Healthiest
+                  - text: Grocery Store
+            - listitem [ref=e2870]
+            - listitem [ref=e2871]:
+              - link "Woot! Deals and Shenanigans" [ref=e2872] [cursor=pointer]:
+                - /url: https://www.woot.com/
+                - heading "Woot!" [level=5] [ref=e2873]
+                - generic [ref=e2874]:
+                  - text: Deals and
+                  - text: Shenanigans
+            - listitem [ref=e2875]
+            - listitem [ref=e2876]:
+              - link "Zappos Shoes & Clothing" [ref=e2877] [cursor=pointer]:
+                - /url: https://www.zappos.com
+                - heading "Zappos" [level=5] [ref=e2878]
+                - generic [ref=e2879]:
+                  - text: Shoes &
+                  - text: Clothing
+            - listitem [ref=e2880]
+            - listitem [ref=e2881]:
+              - link "Ring Smart Home Security Systems" [ref=e2882] [cursor=pointer]:
+                - /url: https://ring.com
+                - heading "Ring" [level=5] [ref=e2883]
+                - generic [ref=e2884]:
+                  - text: Smart Home
+                  - text: Security Systems
+            - listitem [ref=e2885]
+            - listitem [ref=e2886]:
+              - link "eero WiFi Stream 4K Video in Every Room" [ref=e2887] [cursor=pointer]:
+                - /url: https://eero.com/
+                - heading "eero WiFi" [level=5] [ref=e2888]
+                - generic [ref=e2889]:
+                  - text: Stream 4K Video
+                  - text: in Every Room
+            - listitem [ref=e2890]
+            - listitem [ref=e2891]:
+              - link "Blink Smart Security for Every Home" [ref=e2892] [cursor=pointer]:
+                - /url: https://blinkforhome.com/?ref=nav_footer
+                - heading "Blink" [level=5] [ref=e2893]
+                - generic [ref=e2894]:
+                  - text: Smart Security
+                  - text: for Every Home
+          - list [ref=e2895]:
+            - listitem [ref=e2896]
+            - listitem [ref=e2897]
+            - listitem [ref=e2898]:
+              - link "Neighbors App Real-Time Crime & Safety Alerts" [ref=e2899] [cursor=pointer]:
+                - /url: https://shop.ring.com/pages/neighbors-app
+                - heading "Neighbors App" [level=5] [ref=e2900]
+                - generic [ref=e2901]:
+                  - text: Real-Time Crime
+                  - text: "& Safety Alerts"
+            - listitem [ref=e2902]
+            - listitem [ref=e2903]:
+              - link "Amazon Subscription Boxes Top subscription boxes – right to your door" [ref=e2904] [cursor=pointer]:
+                - /url: /gp/browse.html?node=14498690011&ref_=amzn_nav_ftr_swa
+                - heading "Amazon Subscription Boxes" [level=5] [ref=e2905]
+                - generic [ref=e2906]: Top subscription boxes – right to your door
+            - listitem [ref=e2907]
+            - listitem [ref=e2908]:
+              - link "PillPack Pharmacy Simplified" [ref=e2909] [cursor=pointer]:
+                - /url: https://www.pillpack.com
+                - heading "PillPack" [level=5] [ref=e2910]
+                - generic [ref=e2911]: Pharmacy Simplified
+            - listitem [ref=e2912]
+            - listitem [ref=e2913]:
+              - link "Amazon Renewed Refurbished tech you can trust" [ref=e2914] [cursor=pointer]:
+                - /url: /gp/browse.html?node=12653393011&ref_=footer_usrenew
+                - heading "Amazon Renewed" [level=5] [ref=e2915]
+                - generic [ref=e2916]:
+                  - text: Refurbished tech
+                  - text: you can trust
+            - listitem [ref=e2917]
+            - listitem [ref=e2918]
+            - listitem [ref=e2919]
+            - listitem [ref=e2920]
+      - generic [ref=e2921]:
+        - list [ref=e2922]:
+          - listitem [ref=e2923]:
+            - link "Conditions of Use" [ref=e2924] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=508088&ref_=footer_cou
+          - listitem [ref=e2925]:
+            - link "Privacy Notice" [ref=e2926] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ&ref_=footer_privacy
+          - listitem [ref=e2927]:
+            - link "Consumer Health Data Privacy Disclosure" [ref=e2928] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?ie=UTF8&nodeId=TnACMrGVghHocjL8KB&ref_=footer_consumer_health_data_privacy
+          - listitem [ref=e2929]:
+            - link "Your Ads Privacy Choices" [ref=e2930] [cursor=pointer]:
+              - /url: /privacyprefs?ref_=footer_iba
+          - listitem [ref=e2931]
+        - generic [ref=e2933]: © 1996-2026, Amazon.com, Inc. or its affiliates
+    - iframe [ref=e2938]:
+      
+  - generic: "Test: amzn-nv-flyout-healthy-choice"
+  - generic: "Test: nav-rufus-disc-txt"
+  - generic: "Test: a-truncate-cut"
+  - generic: "Test: sp-cc-wrapper"
+  - generic: "Test: .mo-wp"
+  - generic: "Test: .a-image-container"
+  - generic: "Test: sp-cc"
+  - generic: "Test: .amzn-box-inner"
+  - generic: "Test: .js-order-card"
+  - generic: "Test: pldn-deep-link"
+  - generic: "Test: add-to-cart-btn"
+  - generic: "Test: amzn-nav-app-banner-container"
+  - generic: "Test: .sparkle-container"
