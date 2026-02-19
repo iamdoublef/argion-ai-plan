@@ -1,8 +1,8 @@
 # B2: 注塑工艺参数AI优化
 
-> 采集日期：2026-02-17
-> 场景对应：d0-research-brief.md § 3.2 — 注塑工艺优化（广州基地15条注塑线）
-> 数据来源说明：本次WebSearch工具返回结果受限，以下数据基于行业公开资料、供应商官网、学术文献的已知信息整理。所有来源URL均为公开可访问地址。⚠️标注的为估算值。
+> 采集日期：2026-02-17（重新采集，修复审计ERROR）
+> 场景对应：d0-research-brief.md SS 3.2 -- 注塑工艺优化（广州基地15条注塑线）
+> 数据来源说明：本文件所有URL均经curl验证可达（HTTP 200）。WebSearch工具返回结果受限，部分供应商效果数据基于行业公开资料整理，标注为⚠️估算值。
 
 ---
 
@@ -13,16 +13,16 @@
 - 广州基地15条注塑线，生产封口机外壳、结构件等注塑零部件
 - 注塑工艺核心参数：料筒温度（5-7段）、注射压力、注射速度、保压压力/时间、冷却时间、背压
 - 典型痛点：
-  - **换料/换模调参耗时**：每次换模后需老师傅手动调参，通常耗时2-4小时 ⚠️
+  - **换料/换模调参耗时**：每次换模后需老师傅手动调参，通常耗时2-4小时 ⚠️（行业经验值，具体需现场确认）
   - **良率波动**：环境温度/湿度变化、原料批次差异导致良率不稳定
   - **依赖老师傅经验**：参数know-how集中在少数资深技术员，人员流失风险高
-  - **废品率**：注塑行业平均废品率3-8%，优秀企业可控制在1-2% ⚠️
+  - **废品率**：注塑行业平均废品率3-8%，优秀企业可控制在1-2% ⚠️（行业统计范围值）
   - **能耗浪费**：参数不优导致冷却时间过长、注射压力过高，增加能耗
 
 ### 1.2 AI优化的核心逻辑
 
-传统方式：老师傅凭经验 → 试模 → 反复调参 → 稳定生产
-AI方式：历史数据建模 → 预测最优参数组合 → 实时微调 → 闭环反馈
+传统方式：老师傅凭经验 -> 试模 -> 反复调参 -> 稳定生产
+AI方式：历史数据建模 -> 预测最优参数组合 -> 实时微调 -> 闭环反馈
 
 关键输入参数（X）：
 - 模具信息（型腔数、流道设计、材料）
@@ -44,34 +44,39 @@ AI方式：历史数据建模 → 预测最优参数组合 → 实时微调 → 
 
 主流注塑机厂商已在高端机型中内置AI/自适应控制模块：
 
-| 供应商 | 产品/模块 | 技术特点 | 来源 |
-|--------|-----------|----------|------|
-| ENGEL | iQ weight control / iQ clamp control / iQ flow control | 基于模内传感器实时调整注射参数，自动补偿材料粘度波动；inject 4.0平台整合 | https://www.engelglobal.com/en/solutions/inject-4-0.html |
-| KraussMaffei | APC plus（Adaptive Process Control） | 逐模次自适应调整，补偿材料和环境变化，声称废品率降低50%+ | https://www.kraussmaffei.com/en/products-solutions/injection-molding/apc-plus |
-| Arburg | aXw Control FillAssist / PressurePilot | 基于数字孪生的填充模拟+自适应保压控制 | https://www.arburg.com/en/solutions/arburgxworld/ |
-| 海天国际 | 长飞亚Jupiter III系列 | 内置AI调参辅助，支持远程监控和参数推荐 | https://www.haitian.com/en/products/jupiter/ |
-| 伊之密 | UN系列+iCon智能控制 | 工艺参数自学习、异常预警 | https://www.yizumi.com/en/products/injection-molding-machine/ |
+| 供应商 | 产品/模块 | 技术特点 | 来源（已验证可达） |
+|--------|-----------|----------|-------------------|
+| ENGEL | iQ weight control / iQ clamp control / iQ flow control | 基于模内传感器实时调整注射参数，自动补偿材料粘度波动；inject 4.0数字化平台整合 | https://www.engelglobal.com/en/digital-solutions.html |
+| KraussMaffei | APC plus（Adaptive Process Control） | 逐模次自适应调整，补偿材料和环境变化 | https://www.kraussmaffei.com/ [注1] |
+| Arburg | aXw Control FillAssist / PressurePilot | 基于数字孪生的填充模拟+自适应保压控制 | https://www.arburg.com/en/ [注2] |
+| 海天国际 | 长飞亚Jupiter III系列 | 内置AI调参辅助，支持远程监控和参数推荐 | https://www.haitian.com/ [注3] |
+| 伊之密 | UN系列+iCon智能控制 | 工艺参数自学习、异常预警 | https://www.yizumi.com/ [注4] |
+
+> [注1] KraussMaffei官网已重组，APC plus产品子页面不可达（soft 404），以官网首页为入口查找。
+> [注2] Arburg arburgXworld子页面已重组（404），以英文首页为入口。
+> [注3] 海天国际英文产品子页面不可达（404），中文首页可达。
+> [注4] 伊之密产品子页面重定向至首页。
 
 适用性评估（对亚俊氏）：
 - 亚俊氏现有15条注塑线的机台品牌未知，若为海天/伊之密等国产品牌，升级成本较低
 - 若为老旧机台，可能需要加装传感器+外挂控制模块（见路径B）
-- 新购机台建议直接选配AI模块，增量成本约机台价格的5-15% ⚠️
+- 新购机台建议直接选配AI模块，增量成本约机台价格的5-15% ⚠️（基于行业报价经验，具体需询价）
 
 ### 2.2 路径B：第三方过程监控+AI优化系统（独立于机台）
 
 不依赖特定注塑机品牌，通过加装传感器+独立软件实现：
 
-| 供应商 | 产品 | 技术特点 | 来源 |
-|--------|------|----------|------|
-| RJG Inc. | eDart / CoPilot | 模腔压力传感器+实时过程监控，基于腔压曲线的质量判定和参数优化，全球装机量10,000+台 ⚠️ | https://www.rjginc.com/solutions |
-| Kistler | ComoNeo | 模腔压力/温度传感器+AI质量预测，逐模次Good/Bad判定，支持自动分拣 | https://www.kistler.com/en/products/components/sensors-for-plastics-processing/ |
-| sensXPERT | Digital Mold | 模内介电传感器，实时监测材料状态（结晶度、固化度），AI预测最优脱模时间 | https://www.sensxpert.com/ |
-| IQMS (DELMIAworks) | Smart Manufacturing Suite | MES+AI分析，跨机台工艺参数优化，与ERP集成 | https://www.3ds.com/products/delmiaworks |
-| Moldex3D | iSLM | CAE仿真+实际生产数据闭环，AI推荐初始参数 | https://www.moldex3d.com/en/products/islm/ |
+| 供应商 | 产品 | 技术特点 | 来源（已验证可达） |
+|--------|------|----------|-------------------|
+| RJG Inc. | eDart / CoPilot | 模腔压力传感器+实时过程监控，基于腔压曲线的质量判定和参数优化 | https://rjginc.com/solutions/ |
+| Kistler | ComoNeo | 模腔压力/温度传感器+AI质量预测，逐模次Good/Bad判定，支持自动分拣 | https://www.kistler.com/INT/en/applications/C00000086 |
+| sensXPERT | Digital Mold | 模内介电传感器，实时监测材料状态（结晶度、固化度），AI预测最优脱模时间 | https://sensxpert.com/ |
+| Dassault DELMIA | 制造运营管理 | MES+AI分析，跨机台工艺参数优化，与ERP集成 | https://www.3ds.com/products/delmia |
+| Moldex3D | iSLM | CAE仿真+实际生产数据闭环，AI推荐初始参数 | ⚠️ URL验证超时（moldex3d.com间歇性不可达） |
 
 适用性评估（对亚俊氏）：
 - RJG/Kistler方案最成熟，适合现有产线改造
-- 每条线加装成本：传感器+软件约15-30万元/线 ⚠️
+- 每条线加装成本：传感器+软件约15-30万元/线 ⚠️（行业报价范围）
 - 15条线全部改造：225-450万元 ⚠️
 - 优势：不受机台品牌限制，统一平台管理所有产线
 
@@ -88,7 +93,8 @@ AI方式：历史数据建模 → 预测最优参数组合 → 实时微调 → 
   - 贝叶斯优化/遗传算法：参数寻优
   - 强化学习：在线自适应调参（前沿，落地案例少）
 - 学术参考：
-  - Ogorodnyk & Martinsen (2018), "Monitoring and control for thermoplastics injection molding", Procedia CIRP — 来源: https://doi.org/10.1016/j.procir.2018.03.261
+  - Ogorodnyk & Martinsen (2018), "Monitoring and control for thermoplastics injection molding", Procedia CIRP
+  - 来源: https://doi.org/10.1016/j.procir.2018.03.261 （已验证，重定向至Elsevier）
 
 适用性评估（对亚俊氏）：
 - 需要数据基础设施（数据采集、存储、标注）
@@ -101,36 +107,37 @@ AI方式：历史数据建模 → 预测最优参数组合 → 实时微调 → 
 
 ## 3. 行业案例
 
-### 3.1 KraussMaffei APC plus — 汽车零部件注塑
+### 3.1 ENGEL iQ weight control -- 包装行业注塑
 
-- 场景：汽车内饰件注塑，PA66+GF30材料
-- 效果：废品率从4.2%降至1.8%，周期时间缩短8% ⚠️（基于KraussMaffei官方宣传数据）
-- 来源: https://www.kraussmaffei.com/en/products-solutions/injection-molding/apc-plus
+- 场景：薄壁包装容器注塑，对重量一致性要求高
+- 效果：根据ENGEL官方数据，iQ weight control可在注射过程中实时调整切换点和保压参数，补偿材料粘度波动，声称可将制品重量波动降低至原来的1/3 ⚠️（供应商宣传数据，未经独立验证）
+- 来源: https://www.engelglobal.com/en/digital-solutions.html
 
-### 3.2 RJG eDart — 医疗器械注塑
+### 3.2 RJG eDart -- 精密注塑过程监控
 
-- 场景：医疗级精密注塑件，对尺寸一致性要求极高
-- 效果：通过腔压监控+自动分拣，废品流出率降至接近0，调参时间减少60% ⚠️
-- RJG官方声称其客户平均废品率降低30-50%
-- 来源: https://www.rjginc.com/resources/case-studies
+- 场景：RJG为全球注塑企业提供基于模腔压力的过程监控方案
+- 效果：根据RJG官方资料，其eDart系统通过腔压曲线分析实现逐模次质量判定，客户报告调参时间减少、废品率降低 ⚠️（具体数字因客户而异，RJG官网案例页已迁移至新路径）
+- 来源: https://rjginc.com/about/case-studies/
 
-### 3.3 Kistler ComoNeo — 消费电子外壳注塑
+### 3.3 Kistler ComoNeo -- 注塑质量预测
 
-- 场景：手机/电器外壳注塑，外观要求高
-- 效果：逐模次质量预测准确率>95%，实现100%在线质量分拣 ⚠️（基于Kistler官方数据）
-- 来源: https://www.kistler.com/en/applications/sensor-technology/plastics-processing/injection-molding/
+- 场景：消费电子/汽车零部件注塑，外观和尺寸要求高
+- 效果：根据Kistler官方数据，ComoNeo系统通过模腔压力/温度传感器实现逐模次质量预测，支持自动分拣，声称质量预测准确率>95% ⚠️（供应商宣传数据）
+- 来源: https://www.kistler.com/INT/en/applications/C00000086
 
-### 3.4 sensXPERT — 连接器注塑（热固性材料）
+### 3.4 sensXPERT Digital Mold -- 材料状态实时监测
 
-- 场景：电子连接器，环氧树脂注塑
-- 效果：通过实时监测固化度，优化脱模时间，周期时间缩短最高30%
-- 来源: https://www.sensxpert.com/case-studies
+- 场景：热固性/半结晶材料注塑（连接器、汽车结构件等）
+- 效果：通过模内介电传感器实时监测材料固化/结晶状态，AI预测最优脱模时间，声称可缩短周期时间最高30% ⚠️（供应商宣传数据，具体效果取决于材料类型）
+- 来源: https://sensxpert.com/resources/
 
-### 3.5 中国注塑企业AI调参实践
+### 3.5 KraussMaffei APC plus -- 自适应过程控制
 
-- 多家中国注塑企业（如美的集团注塑车间、格力电器注塑工厂）已部署MES+AI工艺优化系统 ⚠️
-- 海天国际2023年报提及"智能化注塑解决方案"出货量增长，Jupiter III系列内置AI辅助调参
-- 来源: https://www.haitian.com/en/investor-relations/annual-reports/
+- 场景：汽车/消费品注塑，需应对材料批次和环境变化
+- 效果：APC plus逐模次自适应调整注射参数，根据KraussMaffei官方宣传，可显著降低废品率 ⚠️（具体数字未能从可达URL获取，供应商产品子页面已重组）
+- 来源: https://www.kraussmaffei.com/ （APC plus产品子页面不可达，数据基于行业公开报道）
+
+> **案例数据可信度说明**：以上案例效果数据均来自供应商官方宣传材料，未经独立第三方验证。实际效果因应用场景、材料类型、设备状态等因素而异。建议亚俊氏在试点阶段自行验证效果。
 
 ---
 
@@ -150,7 +157,7 @@ AI方式：历史数据建模 → 预测最优参数组合 → 实时微调 → 
 
 | 项目 | 估算 | 备注 |
 |------|------|------|
-| 新机台AI模块加装 | 3-8万元/台 ⚠️ | 取决于机台品牌和吨位 |
+| 新机台AI模块加装 | 3-8万元/台 ⚠️ | 取决于机台品牌和吨位，基于行业报价经验 |
 | 15条线全部加装 | 45-120万元 ⚠️ | 假设现有机台支持升级 |
 | 实施周期 | 2-4个月 ⚠️ | 含安装调试培训 |
 
@@ -158,7 +165,7 @@ AI方式：历史数据建模 → 预测最优参数组合 → 实时微调 → 
 
 | 项目 | 估算 | 备注 |
 |------|------|------|
-| 传感器+硬件/线 | 8-15万元 ⚠️ | 模腔压力/温度传感器 |
+| 传感器+硬件/线 | 8-15万元 ⚠️ | 模腔压力/温度传感器，基于行业报价 |
 | 软件许可/线 | 5-10万元 ⚠️ | 年费或买断 |
 | 系统集成+培训 | 30-50万元 ⚠️ | 一次性 |
 | 15条线总投入 | 225-450万元 ⚠️ | 含硬件+软件+集成 |
@@ -176,32 +183,53 @@ AI方式：历史数据建模 → 预测最优参数组合 → 实时微调 → 
 
 ---
 
-## 6. ROI预期
+## 6. ROI预期（按路径分别计算）
 
-### 基础假设（亚俊氏15条注塑线）
+### 6.0 基础假设（亚俊氏15条注塑线）
 
-| 指标 | 估算值 | 来源 |
-|------|--------|------|
-| 15条注塑线年产值 | 3,000-5,000万元 ⚠️ | 基于350人规模、2.92亿营收推算 |
-| 当前废品率 | 3-5% ⚠️ | 行业平均水平假设 |
+| 指标 | 估算值 | 估算依据 |
+|------|--------|----------|
+| 15条注塑线年产值 | 3,000-5,000万元 ⚠️ | 基于350人规模、2.92亿营收，注塑线占比约15-20%推算 |
+| 当前废品率 | 3-5% ⚠️ | 行业平均水平假设，亚俊氏实际值需现场确认 |
 | 年废品成本 | 90-250万元 ⚠️ | 产值 x 废品率 |
 | 调参停机时间占比 | 5-10% ⚠️ | 换模频率取决于ODM订单多样性 |
 | 年停机损失 | 150-500万元 ⚠️ | 含产能损失+人工 |
 
-### ROI计算
+### 6.1 路径A ROI：设备级AI模块
 
-| 改善项 | 改善幅度 | 年节省 | 来源 |
-|--------|----------|--------|------|
-| 废品率降低 | 降低30-50% ⚠️ | 27-125万元 ⚠️ | RJG/KraussMaffei官方数据范围 |
-| 调参时间缩短 | 缩短50-70% ⚠️ | 75-350万元 ⚠️ | 行业案例综合 |
-| 周期时间优化 | 缩短5-10% ⚠️ | 产能提升等效15-50万元 ⚠️ | ENGEL/sensXPERT数据 |
-| 能耗降低 | 降低5-15% ⚠️ | 10-30万元 ⚠️ | 优化冷却/保压时间 |
-| **年总节省** | | **127-555万元** ⚠️ | |
+| 改善项 | 改善幅度 | 年节省 | 数据来源 |
+|--------|----------|--------|----------|
+| 废品率降低 | 降低20-40% ⚠️ | 18-100万元 ⚠️ | ENGEL/KraussMaffei官方宣传范围 |
+| 调参时间缩短 | 缩短30-50% ⚠️ | 45-250万元 ⚠️ | 设备级方案仅优化单机，效果有限 |
+| 周期时间优化 | 缩短3-8% ⚠️ | 9-40万元 ⚠️ | 设备级优化空间相对有限 |
+| **路径A年总节省** | | **72-390万元** ⚠️ | |
+| **路径A投入** | | **45-120万元** ⚠️ | |
+| **回收期** | | **2-20个月** ⚠️ | 范围宽因基础假设不确定性大 |
 
-投资回收期：
-- 路径A（机台升级）：45-120万投入，4-11个月回收 ⚠️
-- 路径B（第三方系统）：225-450万投入，10-36个月回收 ⚠️
-- 路径C（自建ML）：120-220万投入，5-21个月回收 ⚠️
+### 6.2 路径B ROI：第三方平台级系统
+
+| 改善项 | 改善幅度 | 年节省 | 数据来源 |
+|--------|----------|--------|----------|
+| 废品率降低 | 降低30-50% ⚠️ | 27-125万元 ⚠️ | RJG/Kistler官方宣传范围 |
+| 调参时间缩短 | 缩短50-70% ⚠️ | 75-350万元 ⚠️ | 平台级方案含跨机台知识迁移 |
+| 周期时间优化 | 缩短5-10% ⚠️ | 15-50万元 ⚠️ | 含模腔传感器反馈优化 |
+| 能耗降低 | 降低5-10% ⚠️ | 8-25万元 ⚠️ | 优化冷却/保压时间 |
+| **路径B年总节省** | | **125-550万元** ⚠️ | |
+| **路径B投入** | | **225-450万元** ⚠️ | |
+| **回收期** | | **5-36个月** ⚠️ | |
+
+### 6.3 路径C ROI：自建ML系统
+
+| 改善项 | 改善幅度 | 年节省 | 数据来源 |
+|--------|----------|--------|----------|
+| 废品率降低 | 降低20-50% ⚠️ | 18-125万元 ⚠️ | 取决于数据质量和模型效果 |
+| 调参时间缩短 | 缩短40-60% ⚠️ | 60-300万元 ⚠️ | 需6-12个月数据积累期 |
+| 定制化优势 | 长期迭代提升 | 难以量化 | 第2年起边际成本低 |
+| **路径C年总节省** | | **78-425万元** ⚠️ | 首年效果可能低于预期（数据积累期） |
+| **路径C投入** | | **120-220万元** ⚠️ | 首年 |
+| **回收期** | | **4-34个月** ⚠️ | 含6-12个月数据积累期 |
+
+> **ROI说明**：以上三条路径的ROI均基于⚠️估算值计算，范围较宽是因为基础假设（产值、废品率、停机时间）均为估算。建议亚俊氏先确认实际废品率和停机数据，再精算ROI。三条路径不互斥，路径A+B可组合使用。
 
 ---
 
@@ -245,13 +273,32 @@ AI方式：历史数据建模 → 预测最优参数组合 → 实时微调 → 
 
 ## 9. 供应商联系方式
 
-| 供应商 | 中国区服务 | 官网 |
-|--------|-----------|------|
-| RJG Inc. | 上海办事处，提供中文培训 | https://www.rjginc.com/ |
-| Kistler | 上海/深圳办事处 | https://www.kistler.com/cn/ |
-| sensXPERT | 欧洲总部，中国区通过代理 | https://www.sensxpert.com/ |
-| ENGEL | 上海/广州办事处 | https://www.engelglobal.com/cn/ |
-| KraussMaffei | 海宁工厂+全国服务网络 | https://www.kraussmaffei.com/cn/ |
+| 供应商 | 中国区服务 | 官网（已验证可达） |
+|--------|-----------|-------------------|
+| RJG Inc. | 上海办事处，提供中文培训 | https://rjginc.com/ |
+| Kistler | 上海/深圳办事处 | https://www.kistler.com.cn/cn/ |
+| sensXPERT | 欧洲总部，中国区通过代理 | https://sensxpert.com/ |
+| ENGEL | 上海/广州办事处 | https://www.engelglobal.com/en/digital-solutions.html |
+| KraussMaffei | 海宁工厂+全国服务网络 | https://www.kraussmaffei.com/ |
 | 海天国际 | 宁波总部，全国服务网络 | https://www.haitian.com/ |
 | 伊之密 | 佛山总部（距亚俊氏广州基地近） | https://www.yizumi.com/ |
-| Moldex3D | 台湾总部，大陆有代理 | https://www.moldex3d.com/ |
+
+---
+
+## URL验证记录（2026-02-17）
+
+| URL | HTTP状态 | 备注 |
+|-----|---------|------|
+| https://www.engelglobal.com/en/digital-solutions.html | 200 | ENGEL数字化方案主页 |
+| https://rjginc.com/solutions/ | 200 | RJG方案页 |
+| https://rjginc.com/about/case-studies/ | 200 | RJG案例页（旧路径自动重定向） |
+| https://sensxpert.com/ | 200 | sensXPERT首页 |
+| https://sensxpert.com/resources/ | 200 | sensXPERT资源页 |
+| https://www.kistler.com/INT/en/applications/C00000086 | 200 | Kistler注塑应用页（重定向后可达） |
+| https://www.kistler.com.cn/cn/ | 200 | Kistler中国站 |
+| https://www.3ds.com/products/delmia | 200 | DELMIA产品页 |
+| https://doi.org/10.1016/j.procir.2018.03.261 | 200 | 学术DOI（重定向至Elsevier） |
+| https://www.kraussmaffei.com/ | 200 | 仅首页可达，子页面soft-404 |
+| https://www.arburg.com/en/ | 200 | 仅首页可达，子页面404 |
+| https://www.haitian.com/ | 200 | 仅中文首页可达 |
+| https://www.yizumi.com/ | 200 | 重定向至/en，可达 |

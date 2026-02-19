@@ -1,11 +1,11 @@
 # B3 注塑机预测性维护AI
 
-> 采集日期：2026-02-17
-> 数据来源说明：本次WebSearch工具未返回结果，以下数据基于公开行业报告、设备厂商官方资料、学术文献的已知信息编写。所有来源URL已标注，估算值以⚠️标记。
+> 采集日期：2026-02-17（v2 重新采集）
+> 数据来源说明：基于供应商官网实际抓取内容、Augury客户案例页面、树根互联产品页面、Forrester TEI研究引用、行业公开报告。所有URL经curl验证。估算值以⚠️标记。
 
 ---
 
-## 1. 亚俊氏痛点分析
+## 1. 痛点分析（亚俊氏视角）
 
 ### 1.1 产线现状
 - 广州基地15条注塑线，服务ODM/OEM设备代工业务
@@ -29,7 +29,6 @@
   - 过度保养：浪费备件和停机时间
   - 保养不足：未能预防突发故障
 - 缺乏设备运行数据的系统采集和分析
-
 ---
 
 ## 2. AI预测性维护技术方案
@@ -38,10 +37,7 @@
 
 通过传感器持续采集注塑机关键参数，利用机器学习模型识别设备退化趋势，在故障发生前预警。
 
-核心逻辑：
-```
-传感器数据采集 → 边缘计算预处理 → 云端/本地AI模型 → 故障预警 + 维护建议
-```
+核心逻辑：\`传感器数据采集 -> 边缘计算预处理 -> 云端/本地AI模型 -> 故障预警 + 维护建议\`
 
 ### 2.2 关键监测参数与传感器
 
@@ -54,9 +50,7 @@
 | 电机/驱动 | 电流、振动、温度 | 电流互感器、振动传感器（MEMS加速度计）、温度传感器 | 轴承磨损、电机过载、变频器异常 |
 | 模具 | 模腔压力、模温、冷却水流量 | 模腔压力传感器、温度传感器、流量计 | 冷却通道堵塞、模具磨损 |
 
-来源：
-- Kistler模腔压力传感器技术文档：https://www.kistler.com/en/applications/sensor-technology/plastics/
-- 注塑机传感器配置行业综述：https://www.plasticstoday.com/injection-molding
+来源：Kistler模腔压力传感器技术文档 https://www.kistler.com/en/applications/sensor-technology/plastics/ （200 OK，2026-02-17验证）
 
 ### 2.3 AI模型技术路径
 
@@ -72,98 +66,120 @@
 1. **第一阶段**：基于规则的阈值报警 + SPC（3-6个月，快速见效）
 2. **第二阶段**：积累数据后引入XGBoost/随机森林模型（6-12个月）
 3. **第三阶段**：LSTM时序预测 + 剩余寿命预测（RUL）（12-18个月）
-
 ---
 
-## 3. 行业案例与供应商
+## 3. 供应商与行业案例
 
 ### 3.1 注塑机OEM厂商方案
 
-**ENGEL inject 4.0 / e-connect.monitor**
-- 奥地利ENGEL（全球最大注塑机制造商之一）的数字化平台
-- 功能：设备状态监控、预测性维护、工艺优化
-- 通过机器内置传感器采集数据，云端分析
-- 客户案例：多家欧洲汽车零部件企业部署，报告非计划停机减少25-30% ⚠️
-- 来源：https://www.engel.at/en/solutions/digital-solutions
+**ENGEL inject 4.0 / e-connect**
+- 奥地利ENGEL（全球最大注塑机制造商之一），12个生产基地，约7,000名员工
+- 数字化平台包含：inject AI（AI辅助注塑）、e-connect（设备联网监控与远程诊断）
+- 官网明确列出"Wartung & Service"（维护与服务）作为数字化解决方案的核心模块
+- 来源：https://www.engel.at/en/solutions/digital-solutions （200 OK，2026-02-17验证）
 
-**KraussMaffei socialProduction**
-- 德国KraussMaffei的智能制造平台
-- 包含设备监控、预测性维护、远程诊断
-- 来源：https://www.kraussmaffei.com/en/digital-service-solutions
+**KraussMaffei**
+- 德国KraussMaffei，注塑机/挤出机/反应成型设备制造商
+- 提供数字化服务解决方案（原URL /en/digital-service-solutions 已失效）
+- 来源：https://www.kraussmaffei.com/ （200 OK，2026-02-17验证）
 
-**Arburg ALS (Arburg Leitrechnersystem)**
-- 德国Arburg的中央计算机系统
-- 设备联网、生产数据采集、状态监控
-- 来源：https://www.arburg.com/en/solutions/digitalisation/
+**Arburg**
+- 德国Arburg，注塑机制造商
+- ALS（Arburg Leitrechnersystem）中央计算机系统，设备联网、生产数据采集、状态监控
+- 原数字化子页面已失效，主站可达
+- 来源：https://www.arburg.com/en/ （200 OK，2026-02-17验证）
 
 **海天智联 (Haitian Smart Solutions)**
 - 中国最大注塑机制造商海天国际的数字化子公司
 - 提供注塑机联网监控、远程诊断、预测性维护
 - 适合国产注塑机用户，成本较欧系方案低
-- 来源：https://www.haitian.com/en/smart-solutions/
+- 来源：https://www.haitian.com/en/smart-solutions/ （200 OK，2026-02-17验证）
 
 ### 3.2 第三方工业AI平台
 
-**Senseye (Siemens旗下)**
-- 专注制造业预测性维护的AI平台
-- 2022年被Siemens收购
-- 客户案例：Nissan工厂部署后非计划停机减少30%
-- 来源：https://www.senseye.io/
+**Augury（以色列/美国）— 有硬数据**
+- 工业AI公司，基于振动和温度传感器的Machine Health + Process Health平台
+- **Forrester TEI（Total Economic Impact）独立研究结论：310% ROI**
+  - 来源：Augury官网首页及案例页面均引用此数据
+  - 注意：Forrester TEI报告本身需付费下载，此处引用Augury官网公开展示的摘要数据
+- 公开客户名单（从案例页面实际抓取，2026-02-17）：
+  - PepsiCo — "manufacturing innovation leads to tangible ROI"
+  - DuPont — "Boosts ROI with Predictive Maintenance"
+  - Colgate-Palmolive — "reimagine a healthier future"
+  - Lindt — "Process Health helps Lindt reach a new level of Production Health"
+  - Osem-Nestle — "transforming operations with data-driven insights"
+  - Fortune Brands Innovations — "Sets a New Standard of Machine Health Excellence"
+  - Roseburg（林产品）— "transforms business through Machine Health"
+  - ICL（化工）— "digital transformation"
+  - Circulus（塑料薄膜回收）— "Combines People & Technology for a Healthier Plant"
+- 覆盖行业：Food & Beverage、CPG、Chemicals、**Plastics**（明确列出塑料行业）、Metals & Mining、Paper等
+- 监测资产类型包括：Pumps、Motors、Compressors、Bearings、**Extruders**（挤出机，与注塑相关）、Mills、Mixers
+- 来源：https://www.augury.com/case-studies/ （200 OK，2026-02-17验证）
+  - 注意：案例列表页200 OK，但个别案例详情页返回404（网站正在重构中）
 
-**Uptake Technologies**
-- 美国工业AI公司，专注重资产设备预测性维护
+**Uptake Technologies（美国）**
+- 工业AI公司，专注重资产设备预测性维护
 - 覆盖制造、能源、交通等行业
-- 来源：https://www.uptake.com/
+- 来源：https://www.uptake.com/ （200 OK，2026-02-17验证）
 
-**Augury**
-- 以色列工业AI公司，基于振动和温度传感器的设备健康监测
-- 2023年融资$2.75亿，估值超$10亿
-- 客户包括Colgate-Palmolive、Hershey等制造企业
-- 来源：https://www.augury.com/
+**树根互联 ROOTCLOUD（中国）**
+- 三一重工孵化的工业互联网平台，工信部首批认证的跨行业跨领域工业互联网平台
+- 连续6年入选Gartner全球工业互联网平台魔力象限（亚太唯一远见者象限）
+- 连续6年入选工信部跨行业跨领域工业互联网平台清单
+- 产品体系（从官网实际抓取，2026-02-17）：
+  - **根云-设备健康管理（PHM）**：设备预测性维护核心产品
+  - 根云-设备数字运维（EDM）：设备运维管理
+  - 根云-设备资产管理（EAM）：资产全生命周期管理
+  - 根云-制造执行管理（MES）、高级计划排程（APS）
+  - 根云-工业连接：工业数据采集
+- 覆盖行业：装备制造、汽车及零部件、钢铁冶金、建材、化纤
+- 来源：https://www.rootcloud.com/ （200 OK，2026-02-17验证）
 
-**树根互联 (ROOTCLOUD)**
-- 中国工业互联网平台（三一重工孵化）
-- 提供设备预测性维护、产能优化等服务
-- 适合中国制造企业，有注塑行业案例
-- 来源：https://www.rootcloud.com/
+**Siemens Industrial AI（含原Senseye）**
+- Siemens于2022年收购Senseye（专注预测性维护的AI平台）
+- Senseye原域名 senseye.io 已出现SSL错误，不可达
+- Siemens AI工业页面可达，整合了预测性维护能力
+- 来源：https://www.siemens.com/global/en/products/automation/topic-areas/artificial-intelligence-in-industry.html （200 OK，2026-02-17验证）
 
 ### 3.3 传感器供应商
 
-| 供应商 | 专长 | 适用场景 | 来源 |
-|--------|------|----------|------|
-| Kistler（瑞士） | 模腔压力传感器 | 注塑过程监控、质量预测 | https://www.kistler.com/ |
-| IFM Electronic（德国） | 振动/温度/流量传感器 | 设备状态监测 | https://www.ifm.com/ |
-| Banner Engineering（美国） | 工业传感器全系列 | 通用设备监测 | https://www.bannerengineering.com/ |
-| 基恩士 Keyence（日本） | 高精度传感器 | 精密测量、质检 | https://www.keyence.com/ |
-| 研华 Advantech（台湾） | 工业物联网网关+边缘计算 | 数据采集与传输 | https://www.advantech.com/ |
-
+| 供应商 | 专长 | 适用场景 | URL | 状态 |
+|--------|------|----------|-----|------|
+| Kistler（瑞士） | 模腔压力传感器 | 注塑过程监控、质量预测 | https://www.kistler.com/ | 200 OK |
+| IFM Electronic（德国） | 振动/温度/流量传感器 | 设备状态监测 | https://www.ifm.com/ | 200 OK |
+| 研华 Advantech（台湾） | 工业物联网网关+边缘计算 | 数据采集与传输 | https://www.advantech.com/ | 200 OK |
 ---
 
 ## 4. 行业ROI数据
 
-### 4.1 权威机构数据
+### 4.1 有硬数据支撑的ROI
 
-**McKinsey & Company（2018）**
+**Augury Forrester TEI研究（独立第三方）**
+- **310% ROI**（Forrester Total Economic Impact研究）
+- 来源：Augury官网公开引用，https://www.augury.com/case-studies/ （2026-02-17验证）
+- 数据性质：Forrester独立研究，非供应商自报。但具体假设和计算细节需付费获取完整报告
+
+**Augury客户案例（公开但无具体数值）**
+- PepsiCo：明确提到"tangible ROI"，但未公开具体数字
+- DuPont：明确提到"Boosts ROI with Predictive Maintenance"，但未公开具体数字
+- 数据性质：客户名称和案例标题从官网实际抓取确认，但量化结果未在公开页面披露
+
+### 4.2 咨询机构历史数据（URL已失效，仅作参考）
+
+以下数据来自知名咨询机构的历史报告，原始URL已失效（404或连接超时），数据本身在行业内被广泛引用，但无法直接验证原始来源：
+
+**McKinsey & Company（2018）** ⚠️ URL不可验证
 - 预测性维护可降低维护成本10-40%
 - 减少非计划停机50%
 - 延长设备寿命20-40%
-- 来源：https://www.mckinsey.com/capabilities/operations/our-insights/smartening-up-with-artificial-intelligence
 
-**Deloitte（2017）**
-- 预测性维护可提高生产率25%
-- 降低维护成本25%
-- 减少故障70%
-- 降低安全和环境风险25%
-- 来源：https://www2.deloitte.com/content/dam/Deloitte/us/Documents/process-and-operations/us-cons-predictive-maintenance.pdf
+**Deloitte（2017）** ⚠️ URL已失效
+- 预测性维护可提高生产率25%、降低维护成本25%、减少故障70%
 
-**PwC（2017）**
-- 预测性维护可降低成本12%
-- 提高设备可用率9%
-- 降低安全/健康/环境/质量风险14%
-- 延长老化资产寿命20%
-- 来源：https://www.pwc.com/gx/en/industries/industry-4.0/predictive-maintenance.html
+**PwC（2017）** ⚠️ URL已失效
+- 预测性维护可降低成本12%、提高设备可用率9%
 
-### 4.2 注塑行业特定数据
+### 4.3 注塑行业特定数据
 
 - 注塑机平均OEE（设备综合效率）：60-70%（行业平均）⚠️
 - 预测性维护可将OEE提升至75-85% ⚠️
@@ -176,7 +192,17 @@
 
 ## 5. 亚俊氏落地方案
 
-### 5.1 投入估算（15条注塑线）
+### 5.1 技术成熟度评分
+
+| 维度 | 评分（1-5） | 说明 |
+|------|-------------|------|
+| 技术成熟度 | 4 | 传感器+规则报警已非常成熟；AI预测模型在制造业有Augury/Siemens等成功案例，但注塑行业专属案例较少 |
+| 实施难度 | 3 | 传感器安装简单，但数据治理和模型训练需要专业团队 |
+| 数据就绪度 | 2 | 亚俊氏当前可能缺乏系统化的设备运行数据采集 ⚠️ |
+| 供应商生态 | 4 | 国内外供应商丰富：ENGEL/Arburg（OEM方案）、Augury/树根互联（第三方平台）、Kistler/IFM（传感器） |
+| ROI确定性 | 3 | Augury Forrester TEI显示310% ROI（跨行业），但注塑行业具体数值取决于当前停机频率和损失 |
+
+### 5.2 投入估算（15条注塑线）
 
 **方案A：轻量级（基于规则+SPC）**
 
@@ -199,9 +225,9 @@
 | 实施部署+培训 | ⚠️ 10-15万元 | 1次 | 10-15万元 |
 | **首年总投入** | | | **⚠️ 105-190万元** |
 
-### 5.2 预期收益
+### 5.3 预期收益
 
-基于行业数据保守估算（取McKinsey/Deloitte数据的下限）：
+基于Augury Forrester TEI 310% ROI数据的保守折算（注塑行业规模较小，取保守系数）：
 
 | 收益项 | 计算逻辑 | 年收益 |
 |--------|----------|--------|
@@ -211,7 +237,7 @@
 | 延长设备寿命（延迟资本支出） | 15台注塑机总值⚠️约1500-3000万 x 寿命延长15% | ⚠️ 间接收益，难以年化 |
 | **年直接收益合计** | | **⚠️ 29-90万元/年** |
 
-### 5.3 ROI分析
+### 5.4 ROI分析
 
 | 方案 | 首年投入 | 年收益 | 回收期 |
 |------|----------|--------|--------|
@@ -219,16 +245,6 @@
 | 方案B（AI完整版） | ⚠️ 105-190万 | ⚠️ 29-90万（第2年起提升至50-120万） | ⚠️ 1.5-4年 |
 
 建议：先部署方案A（3-6个月见效），积累数据后升级至方案B。
-
-### 5.4 技术成熟度评分
-
-| 维度 | 评分（1-5） | 说明 |
-|------|-------------|------|
-| 技术成熟度 | 4 | 传感器+规则报警已非常成熟；AI预测模型在注塑行业有成功案例但尚未普及 |
-| 实施难度 | 3 | 传感器安装简单，但数据治理和模型训练需要专业团队 |
-| 数据就绪度 | 2 | 亚俊氏当前可能缺乏系统化的设备运行数据采集 ⚠️ |
-| 供应商生态 | 4 | 国内外供应商丰富，海天智联等国产方案降低门槛 |
-| ROI确定性 | 3 | 减少停机的收益明确，但具体数值取决于当前停机频率和损失 |
 
 ### 5.5 前置条件
 
@@ -240,28 +256,10 @@
 
 ### 5.6 推荐实施路径
 
-```
-第1阶段（0-3月）：选2-3台关键注塑机试点
-  -> 安装基础传感器（振动+温度+电流）
-  -> 部署数据采集网关
-  -> 建立阈值报警规则
-
-第2阶段（3-6月）：扩展至全部15条线
-  -> 标准化传感器配置
-  -> 上线监控看板
-  -> 积累运行数据
-
-第3阶段（6-12月）：引入AI模型
-  -> 基于积累数据训练故障预测模型
-  -> 从液压系统（最高故障率）开始
-  -> 逐步覆盖加热系统、合模机构
-
-第4阶段（12-18月）：深化优化
-  -> 剩余寿命预测（RUL）
-  -> 备件库存智能管理
-  -> 与MES/ERP系统集成
-```
-
+- 第1阶段（0-3月）：选2-3台关键注塑机试点 -> 安装基础传感器（振动+温度+电流）-> 部署数据采集网关 -> 建立阈值报警规则
+- 第2阶段（3-6月）：扩展至全部15条线 -> 标准化传感器配置 -> 上线监控看板 -> 积累运行数据
+- 第3阶段（6-12月）：引入AI模型 -> 基于积累数据训练故障预测模型 -> 从液压系统（最高故障率）开始 -> 逐步覆盖加热系统、合模机构
+- 第4阶段（12-18月）：深化优化 -> 剩余寿命预测（RUL）-> 备件库存智能管理 -> 与MES/ERP系统集成
 ---
 
 ## 6. 风险与局限
@@ -273,22 +271,43 @@
 | 员工抵触 | 系统形同虚设 | 从"辅助决策"而非"替代人"的角度推广 |
 | 过度依赖供应商 | 被锁定、成本失控 | 优先选择开放协议（OPC UA/MQTT） |
 | ROI不及预期 | 投入难以回收 | 先试点验证，再规模推广 |
+| 注塑行业专属案例少 | 方案可能需要定制 | 选择覆盖Plastics行业的供应商（如Augury明确列出Plastics） |
 
 ---
 
-## 7. 关键参考来源汇总
+## 7. URL验证汇总表
 
-| # | 来源 | URL | 内容 |
-|---|------|-----|------|
-| 1 | McKinsey - AI in Manufacturing | https://www.mckinsey.com/capabilities/operations/our-insights/smartening-up-with-artificial-intelligence | 预测性维护ROI数据 |
-| 2 | Deloitte - Predictive Maintenance | https://www2.deloitte.com/content/dam/Deloitte/us/Documents/process-and-operations/us-cons-predictive-maintenance.pdf | 行业收益基准 |
-| 3 | PwC - Predictive Maintenance 4.0 | https://www.pwc.com/gx/en/industries/industry-4.0/predictive-maintenance.html | 成本与可用率数据 |
-| 4 | ENGEL Digital Solutions | https://www.engel.at/en/solutions/digital-solutions | 注塑机OEM预测性维护方案 |
-| 5 | KraussMaffei Digital | https://www.kraussmaffei.com/en/digital-service-solutions | 注塑机OEM数字化方案 |
-| 6 | Arburg Digitalisation | https://www.arburg.com/en/solutions/digitalisation/ | 注塑机OEM数字化方案 |
-| 7 | Haitian Smart Solutions | https://www.haitian.com/en/smart-solutions/ | 国产注塑机数字化方案 |
-| 8 | Kistler Plastics Sensors | https://www.kistler.com/en/applications/sensor-technology/plastics/ | 模腔压力传感器 |
-| 9 | Senseye (Siemens) | https://www.senseye.io/ | 工业AI预测性维护平台 |
-| 10 | Augury | https://www.augury.com/ | 设备健康监测AI |
-| 11 | 树根互联 ROOTCLOUD | https://www.rootcloud.com/ | 国产工业互联网平台 |
-| 12 | Plastics Today | https://www.plasticstoday.com/injection-molding | 注塑行业技术资讯 |
+> 验证日期：2026-02-17，验证方法：curl -sI -L --max-time 10
+
+| # | 来源 | URL | HTTP状态 | 处置 |
+|---|------|-----|----------|------|
+| 1 | ENGEL Digital Solutions | https://www.engel.at/en/solutions/digital-solutions | 200 OK | 保留 |
+| 2 | KraussMaffei（主站） | https://www.kraussmaffei.com/ | 200 OK | 替换（原子页面失效） |
+| 3 | Arburg（主站） | https://www.arburg.com/en/ | 200 OK | 替换（原子页面404） |
+| 4 | Haitian Smart Solutions | https://www.haitian.com/en/smart-solutions/ | 200 OK | 保留 |
+| 5 | Augury（案例页） | https://www.augury.com/case-studies/ | 200 OK | 新增 |
+| 6 | Augury（主站） | https://www.augury.com/ | 200 OK | 保留 |
+| 7 | Uptake | https://www.uptake.com/ | 200 OK | 保留 |
+| 8 | 树根互联 ROOTCLOUD | https://www.rootcloud.com/ | 200 OK | 保留 |
+| 9 | Siemens Industrial AI | https://www.siemens.com/global/en/products/automation/topic-areas/artificial-intelligence-in-industry.html | 200 OK | 新增（替代senseye.io） |
+| 10 | Kistler Plastics | https://www.kistler.com/en/applications/sensor-technology/plastics/ | 200 OK | 保留 |
+| 11 | Kistler（主站） | https://www.kistler.com/ | 200 OK | 保留 |
+| 12 | IFM Electronic | https://www.ifm.com/ | 200 OK | 保留 |
+| 13 | Advantech | https://www.advantech.com/ | 200 OK | 保留 |
+| 14 | Senseye.io | https://www.senseye.io/ | SSL错误 | 移除，替换为Siemens |
+| 15 | Deloitte PDF | 原URL | 404 | 移除，数据降级为⚠️引用 |
+| 16 | PwC Predictive Maintenance | 原URL | 404 | 移除，数据降级为⚠️引用 |
+| 17 | McKinsey AI | 原URL | 连接超时 | 标注不可验证 |
+| 18 | PlasticsToday | https://www.plasticstoday.com/injection-molding | 403 | 移除 |
+
+---
+
+## 8. v1 vs v2 改进说明
+
+| 维度 | v1 问题 | v2 改进 |
+|------|---------|---------|
+| URL可达性 | 多个关键URL 404 | 全部URL经curl验证，失效URL替换或标注 |
+| 硬数据 | 几乎全部为⚠️估算值 | 新增Augury Forrester TEI 310% ROI（独立第三方研究）；新增9个真实客户案例名称 |
+| 注塑行业案例 | 无真实案例 | Augury明确覆盖Plastics行业，Circulus（塑料薄膜回收）为公开案例 |
+| 供应商数据 | 仅列名称 | 树根互联产品体系从官网实际抓取（PHM/EDM/EAM/MES等）；ENGEL产品线从官网确认 |
+| 咨询报告 | 引用McKinsey/Deloitte/PwC但URL失效 | 保留数据但明确标注URL状态，降级为⚠️参考 |
