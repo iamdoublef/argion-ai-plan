@@ -36,30 +36,30 @@ commit: uncommitted (v1审计已被v2覆盖)
 - 主要问题：URL编造（A3失效率53%）、案例空白（A1）、ROI跨方案混合（B4/A2）
 
 ### 2026-02-17 v2重新采集：10场景数据+横向对比+审计
-commit: uncommitted
+commit: 4e437bf
 
 v2改进：v1的24个ERROR全部修复，所有URL经curl验证，ROI分方案独立计算。
 
 **v2数据文件（10场景全部重写）：**
 
 业务线A：Wevac真空袋产线
-- ptr: `file:research/yjs-mfg-ai/data/a1-film-inspection.md` — A1 薄膜视觉质检（成熟度4/5，投入550-1270万⚠️，回收期0.7-4.4年⚠️）
-- ptr: `file:research/yjs-mfg-ai/data/a2-blown-film-optimization.md` — A2 吹膜工艺优化（成熟度3.5/5，先导100-250万⚠️，回收期1.2-8.3年⚠️）
-- ptr: `file:research/yjs-mfg-ai/data/a3-production-scheduling.md` — A3 排产优化（成熟度4/5，投入/ROI数据不足，Panasonic案例：工时-75%）
-- ptr: `file:research/yjs-mfg-ai/data/a4-biodegradable-formulation.md` — A4 配方优化（成熟度3.5/5，投入95-220万⚠️，回收期6-18月⚠️）
-- ptr: `file:research/yjs-mfg-ai/data/a5-fba-demand-forecast.md` — A5 FBA需求预测（成熟度4.5/5，SaaS $3-6K/年，ROI 12-59x⚠️）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/a1-film-inspection.md` — A1 薄膜视觉质检（成熟度4/5，投入550-1270万⚠️，回收期0.7-4.4年⚠️）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/a2-blown-film-optimization.md` — A2 吹膜工艺优化（成熟度3.5/5，先导100-250万⚠️，回收期1.2-8.3年⚠️）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/a3-production-scheduling.md` — A3 排产优化（成熟度4/5，投入/ROI数据不足，Panasonic案例：工时-75%）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/a4-biodegradable-formulation.md` — A4 配方优化（成熟度3.5/5，投入95-220万⚠️，回收期6-18月⚠️）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/a5-fba-demand-forecast.md` — A5 FBA需求预测（成熟度4.5/5，SaaS $3-6K/年，ROI 12-59x⚠️）
 
 业务线B：ODM设备代工
-- ptr: `file:research/yjs-mfg-ai/data/b1-injection-inspection.md` — B1 注塑件质检（成熟度4/5，投入150-500万⚠️，回收期1-3年⚠️）
-- ptr: `file:research/yjs-mfg-ai/data/b2-injection-process-optimization.md` — B2 注塑工艺优化（成熟度3-4/5，路径A 45-120万⚠️，ROI分3路径独立计算）
-- ptr: `file:research/yjs-mfg-ai/data/b3-predictive-maintenance.md` — B3 预测性维护（成熟度4/5，Augury Forrester TEI 310% ROI）
-- ptr: `file:research/yjs-mfg-ai/data/b4-smart-quoting.md` — B4 智能报价（成熟度3.3/5，方案A 30-50万⚠️，回收期0.7-1.1年⚠️）
-- ptr: `file:research/yjs-mfg-ai/data/b5-ai-design.md` — B5 AI辅助设计（成熟度2-4/5，投入5-12万⚠️，回收期6-12月⚠️）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/b1-injection-inspection.md` — B1 注塑件质检（成熟度4/5，投入150-500万⚠️，回收期1-3年⚠️）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/b2-injection-process-optimization.md` — B2 注塑工艺优化（成熟度3-4/5，路径A 45-120万⚠️，ROI分3路径独立计算）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/b3-predictive-maintenance.md` — B3 预测性维护（成熟度4/5，Augury Forrester TEI 310% ROI）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/b4-smart-quoting.md` — B4 智能报价（成熟度3.3/5，方案A 30-50万⚠️，回收期0.7-1.1年⚠️）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/data/b5-ai-design.md` — B5 AI辅助设计（成熟度2-4/5，投入5-12万⚠️，回收期6-12月⚠️）
 
 **v2横向对比：**
-- ptr: `file:research/yjs-mfg-ai/analysis/scenarios-comparison.md` — 横向对比v2（P0: A5+B5 / P1: B2路径A+B1+B4 / P2: 其余，ROI分16行独立列示）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/analysis/scenarios-comparison.md` — 横向对比v2（P0: A5+B5 / P1: B2路径A+B1+B4 / P2: 其余，ROI分16行独立列示）
 
 **v2审计：**
-- ptr: `file:research/yjs-mfg-ai/analysis/audit-a-line.md` — A线审计v2（A2回收期ERROR已修复，其余A/B级）
-- ptr: `file:research/yjs-mfg-ai/analysis/audit-b-line.md` — B线审计v2（A级：0 ERROR，9 WARNING）
-- ptr: `file:research/yjs-mfg-ai/analysis/audit-comparison.md` — 对比报告审计v2（A级：0 ERROR，5 WARNING）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/analysis/audit-a-line.md` — A线审计v2（A2回收期ERROR已修复，其余A/B级）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/analysis/audit-b-line.md` — B线审计v2（A级：0 ERROR，9 WARNING）
+- ptr: `git:4e437bf:research/yjs-mfg-ai/analysis/audit-comparison.md` — 对比报告审计v2（A级：0 ERROR，5 WARNING）
