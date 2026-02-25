@@ -8,7 +8,13 @@
       "Bash",
       "mcp__playwright__browser_snapshot",
       "WebSearch",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.baidu.com)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:asq.org)",
+      "WebFetch(domain:www.investopedia.com)",
+      "WebFetch(domain:www.sciencedirect.com)"
     ]
   }
 }

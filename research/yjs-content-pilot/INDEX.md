@@ -34,4 +34,4 @@ commit: nogit
 
 ### 2026-02-15 管理层汇报材料：用AI vs 不用AI的10项对比，综合评分88.5 vs 25.5
 commit: nogit
-- ptr: `file:research/yjs-content-pilot/pilot/boss-report-ai-vs-manual.md` — 10项逐条对比（标题/卖点/描述/参数/场景/差异化/信任/SEO/多语言/准确性），含评分表和投入产出比，可直接给老板看
+- ptr: `file:research/yjs-content-pilot/pilot/boss-report-ai-vs-manual.md` — 10项逐条对比（标题/卖点/描述/参数/场景/差异化/信任/SEO/多语言/准确性），含评分表和投入产出比，可直接给管理者看
