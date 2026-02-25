@@ -29,10 +29,18 @@ commit: uncommitted
 - ptr: `file:research/yjs-decision-audit/analysis/boss-briefing-appendix.md`
 - 重写说明：去掉Swiss Cheese/RACI等专业术语，用管理者语言从痛点出发，方案讲得简单直白，附录单独放方法论依据和案例
 
-### 2026-02-25 错误信息入口全景分析 + 企业系统调研清单
+### 2026-02-25 错误信息入口精简：从18个砍到5个
 commit: uncommitted
 - ptr: `file:research/yjs-decision-audit/analysis/error-input-channels.md`
-  - 18个错误信息入口（A数字系统/B文档流程/C线下人工/D无形决策），逐入口评估预警价值和接入难度
-  - 四象限优先级矩阵 + 分4阶段实施路径（一人约束）
+  - Top 5入口：B1说明书AI核查、A2电商后台、A1 ERP、B5客诉、错误台账+评分
+  - 每个入口附管理之神点评（制造业实战视角）+ 砍掉13个的一句话理由
+  - 3阶段实施路径（一人约束，3个月见效）
 - ptr: `file:research/yjs-decision-audit/analysis/system-survey-checklist.md`
-  - 给管理者/企业内部人员填写的信息系统现状调研表（14类问题）
+  - 给管理者/企业内部人员填写的信息系统现状调研表（精简为4项待确认）
+
+### 2026-02-25 管理需求确认清单（重写版）：一条主线串到底
+commit: uncommitted
+- ptr: `file:research/yjs-decision-audit/analysis/requirement-priority-checklist.md`
+  - 主线：入口采证据→台账记录+分级+追溯→评分卡统计→考核挂钩→副总自驱动
+  - 5个环节逐一拆解：做什么、现在什么状态、需要确认什么
+  - 11项待确认事项（5项企业侧信息 + 5项管理者规则 + 1项远期确认）
