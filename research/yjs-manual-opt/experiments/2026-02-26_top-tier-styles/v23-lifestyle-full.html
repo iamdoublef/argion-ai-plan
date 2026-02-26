@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>V23 Full Manual - Editorial Lifestyle</title>
+    <style>
+        /* CSS 系统定义 */
+        :root {
+            --life-warm-white: #FCFAFA;
+            --life-accent: #5D6D7E;
+            --life-text: #2E4053;
+            --life-serif: 'Georgia', serif;
+            --page-margin: 20mm;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #F4F4F4; font-family: 'Inter', sans-serif; color: var(--life-text); }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: var(--page-margin);
+            background: var(--life-warm-white);
+            margin: 10mm auto;
+            position: relative;
+            page-break-after: always;
+        }
+
+        /* 杂志封面风格 */
+        .lifestyle-cover { text-align: center; padding-top: 40mm; }
+        .lifestyle-cover h1 { font-family: var(--life-serif); font-size: 48px; font-weight: 400; line-height: 1.2; margin-bottom: 10px; }
+        .lifestyle-cover p { text-transform: uppercase; letter-spacing: 5px; font-size: 14px; color: var(--life-accent); }
+
+        /* 内容布局 */
+        .section-header { font-family: var(--life-serif); font-size: 32px; border-bottom: 1px solid #EEE; padding-bottom: 15px; margin: 30px 0 20px; }
+        .content-flow { display: flex; gap: 40px; margin-top: 20px; }
+        .main-text { flex: 2; font-size: 15px; line-height: 1.8; }
+        .side-note { flex: 1; font-size: 13px; font-style: italic; color: #777; border-left: 1px solid #DDD; padding-left: 20px; }
+
+        /* 优雅步骤 */
+        .narrative-step { margin-bottom: 30px; }
+        .narrative-step b { display: block; font-family: var(--life-serif); font-size: 18px; color: var(--life-accent); margin-bottom: 8px; }
+
+        /* 食物保鲜 Infographic 样式 */
+        .food-card { background: #FFF; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); padding: 20px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+        .food-name { font-weight: bold; }
+        .life-tag { background: #F0F4F8; color: var(--life-accent); padding: 2px 10px; border-radius: 20px; font-size: 11px; }
+
+        /* 页脚 */
+        .footer { position: absolute; bottom: 10mm; left: var(--page-margin); right: var(--page-margin); font-family: var(--life-serif); font-size: 12px; color: #AAA; display: flex; justify-content: space-between; }
+
+        @media print { body { background: #FFF; } .page { margin: 0; } }
+    </style>
+</head>
+<body>
+
+    <!-- P1: 封面 -->
+    <div class="page">
+        <div class="lifestyle-cover">
+            <p>The Art of Preservation</p>
+            <h1>留住时光，<br>只为那一口新鲜。</h1>
+            <div style="width: 40px; height: 1px; background: #000; margin: 30px auto;"></div>
+            <img src="../output/images_v23/image1.png" style="width: 100%; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.08)); margin-top: 40px;">
+            <div style="margin-top: 40px; font-size: 12px; letter-spacing: 2px; color: #999;">WEVAC V23 / 真空封装系列</div>
+        </div>
+    </div>
+
+    <!-- P2: 设计理念 -->
+    <div class="page">
+        <div class="section-header">探索 V23</div>
+        <div class="content-flow">
+            <div class="main-text">
+                <p>在快节奏的现代生活中，食材的新鲜度往往决定了生活的品质。V23 的诞生，就是为了在繁杂的厨事中，为您找回那份最原始的美味感受。</p>
+                <p>其极简的工业设计逻辑，不仅是为了视觉上的美感，更是为了操作上的极致顺滑。从<b>锁扣把手</b>的力度反馈，到<b>控制面板</b>的直观交互，每一处细节都在向您传达一个信息：新鲜，可以如此简单。</p>
+            </div>
+            <div class="side-note">
+                "新鲜，不应只是一个词汇，而是一种可以被封装、被保存的生活态度。"
+            </div>
+        </div>
+        <img src="../output/images_v23/image1.png" style="width: 100%; margin-top: 40px; border-radius: 8px;">
+        <div class="footer"><span>WEVAC ESSENTIALS</span><span>02</span></div>
+    </div>
+
+    <!-- P3: 操作指引 (Pulse Vac) -->
+    <div class="page">
+        <div class="section-header">生活的节奏，由您掌控</div>
+        <div class="main-text">
+            <div class="narrative-step">
+                <b>01. 安置与准备</b>
+                将精心准备的食材装入真空袋，并确保袋口平整地躺在真空腔内。这一刻，保鲜仪式正式开始。
+            </div>
+            <div class="narrative-step">
+                <b>02. 锁定新鲜</b>
+                轻轻下压手柄，听见那声清脆的“咔哒”，代表气密系统已严阵以待。
+            </div>
+            <div class="narrative-step">
+                <b>03. 脉冲抽气 (Pulse Vac)</b>
+                针对那些娇嫩的食材——如娇艳的红莓或酥脆的饼干，您可以通过 [Pulse Vac] 按键进行微调，直到每一寸包装都完美贴合。
+            </div>
+            <div style="background: #F9FAFB; padding: 24px; border-left: 2px solid var(--life-accent); font-style: italic;">
+                "当达到您心仪的真空程度时，只需轻点 [Seal]，一份完美的保鲜作品便宣告诞生。"
+            </div>
+        </div>
+        <div class="footer"><span>V23 / LIFESTYLE GUIDE</span><span>03</span></div>
+    </div>
+
+    <!-- P4: 保鲜百科 -->
+    <div class="page">
+        <div class="section-header">保鲜百科 / Storage Guide</div>
+        <p style="margin-bottom: 30px;">我们为您整理了常用食材在真空包装下的保鲜表现。这不仅是数据，更是对美味的承诺。</p>
+
+        <div class="food-card"><div class="food-name">冷冻肉类</div><div class="life-tag">延长至 20 个月</div></div>
+        <div class="food-card"><div class="food-name">新鲜海产</div><div class="life-tag">延长至 12 个月</div></div>
+        <div class="food-card"><div class="food-name">咖啡豆/干果</div><div class="life-tag">保持原味 2 年</div></div>
+        <div class="food-card"><div class="food-name">冷藏蔬菜</div><div class="life-tag">脆嫩口感 10 天</div></div>
+
+        <div style="margin-top: 50px; font-size: 13px; line-height: 1.8; color: #888;">
+            * 以上数据基于理想储存环境，实际情况可能因食材初始状态而异。
+        </div>
+        <div class="footer"><span>FOOD SCIENCE</span><span>04</span></div>
+    </div>
+
+    <!-- P5: 保修与服务 -->
+    <div class="page">
+        <div class="section-header">遇见，并长久陪伴</div>
+        <div class="main-text">
+            <p>感谢您选择 WEVAC。我们的产品提供 2 年有限保修服务，只为让您的新鲜旅程无后顾之忧。</p>
+            <div style="margin-top: 30px; border-top: 1px solid #EEE; padding-top: 20px;">
+                <p><b>联系我们 / Support</b></p>
+                <p>Email: support@wevactech.com</p>
+                <p>Web: www.wevactech.com</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; border: 1px solid #DDD; padding: 30px; background: #FFF;">
+            <div style="font-family: var(--life-serif); font-size: 20px; margin-bottom: 20px;">保修卡 (Warranty)</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 13px;">
+                <div>姓名: ________________</div>
+                <div>日期: ________________</div>
+                <div>型号: V23 Sealer</div>
+                <div>序列号: ______________</div>
+            </div>
+        </div>
+        <div class="footer"><span>SINCE 2026</span><span>05</span></div>
+    </div>
+
+</body>
+</html>

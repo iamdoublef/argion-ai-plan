@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>V23 Manual - Mi-Industrial 2.0</title>
+    <link rel="stylesheet" href="css/style-mi-2.0.css">
+    <style>
+        /* 补充页面特有样式 */
+        .cover-img { width: 100%; margin-top: 50px; }
+        .part-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 20px; }
+        .part-item-mi { display: flex; align-items: center; font-size: 13px; color: #666; }
+        .part-item-mi span { color: #FF6900; font-weight: bold; margin-right: 8px; width: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- 封面页 -->
+    <div class="page">
+        <div style="font-size: 12px; font-weight: 700; letter-spacing: 2px;">WEVAC</div>
+        <div style="margin-top: 100px;">
+            <div style="color: #FF6900; font-size: 12px; font-weight: 700; margin-bottom: 10px;">VACUUM SEALER V23</div>
+            <div style="font-size: 48px; font-weight: 200; line-height: 1.1;">简单，<br>封装新鲜。</div>
+            <div style="width: 30px; height: 2px; background: #FF6900; margin-top: 20px;"></div>
+        </div>
+        <img src="../output/images_v23/image1.png" class="cover-img" alt="V23">
+        <div style="position: absolute; bottom: 40px; font-size: 10px; color: #999;">
+            广州亚俊氏真空科技股份有限公司 | 使用说明书
+        </div>
+    </div>
+
+    <!-- 产品结构 -->
+    <div class="page">
+        <div class="section-title"><span class="num">01</span>产品概览</div>
+        <div class="info-card" style="text-align: center;">
+            <img src="../output/images_v23/image1.png" style="max-height: 250px;" alt="Structure">
+            <div style="font-size: 12px; color: #AAA; margin-top: 10px;">Figure 1 — 产品结构</div>
+        </div>
+        <div class="part-list">
+            <div class="part-item-mi"><span>1</span> 锁扣把手</div>
+            <div class="part-item-mi"><span>2</span> 控制面板</div>
+            <div class="part-item-mi"><span>3</span> 外抽气孔</div>
+            <div class="part-item-mi"><span>4</span> 面盖</div>
+            <div class="part-item-mi"><span>5</span> 密封压条</div>
+            <div class="part-item-mi"><span>6</span> 密封圈</div>
+            <div class="part-item-mi"><span>7</span> 卷袋仓</div>
+            <div class="part-item-mi"><span>8</span> 卷袋支撑管</div>
+        </div>
+    </div>
+
+    <!-- 操作指引：Pulse Vac -->
+    <div class="page">
+        <div class="section-title"><span class="num">02</span>操作指引</div>
+        <div style="font-size: 18px; font-weight: 600; margin-bottom: 20px;">如何使用手动真空（Pulse Vac）</div>
+        
+        <div class="step-item">
+            <div class="step-num">1</div>
+            <div>将装有食物的袋口放入真空腔。</div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">2</div>
+            <div>按下锁扣把手，确保机器已锁定。</div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">3</div>
+            <div>连续点击 <span class="btn-icon">Pulse Vac</span> 按键，手动控制抽气程度。</div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">4</div>
+            <div>达到理想真空度后，点击 <span class="btn-icon">Seal</span> 完成密封。</div>
+        </div>
+
+        <div class="info-card" style="margin-top: 40px; border-left: 4px solid #FF6900;">
+            <div style="font-weight: 700; color: #FF6900; margin-bottom: 8px;">提示 Note</div>
+            <div style="font-size: 13px; line-height: 1.6;">工作结束后，发热器温度很高，请不要触摸，以免烫伤！</div>
+        </div>
+    </div>
+
+</body>
+</html>

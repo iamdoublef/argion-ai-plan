@@ -1,0 +1,71 @@
+/* Editorial-Lifestyle - 画报生活美学风格 */
+:root {
+    --life-warm-white: #FCFAFA;
+    --life-accent: #5D6D7E;
+    --life-text: #2E4053;
+    --life-serif: 'Source Serif Pro', 'Georgia', serif;
+    --page-margin: 20mm;
+}
+
+body {
+    background: #F4F4F4;
+    font-family: 'Inter', sans-serif;
+    color: var(--life-text);
+}
+
+.page {
+    width: 210mm;
+    height: 297mm;
+    padding: var(--page-margin);
+    background: var(--life-warm-white);
+    margin: 10mm auto;
+}
+
+/* 封面风格：大留白，优雅衬线 */
+.cover-title {
+    font-family: var(--life-serif);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 40mm;
+}
+
+.cover-subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--life-accent);
+    margin-top: 10px;
+}
+
+/* 内容布局：非对称两栏 */
+.content-layout {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.main-column { flex: 2; }
+.side-column { flex: 1; font-size: 12px; font-style: italic; color: #888; }
+
+/* 提示框：优雅的小报引用风格 */
+.lifestyle-note {
+    border-left: 2px solid var(--life-accent);
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: var(--life-accent);
+}
+
+/* 步骤设计：带有温度的叙述感 */
+.step-narrative {
+    margin-bottom: 24px;
+    line-height: 1.8;
+}
+
+.step-narrative b {
+    display: block;
+    font-family: var(--life-serif);
+    font-size: 18px;
+    margin-bottom: 4px;
+}

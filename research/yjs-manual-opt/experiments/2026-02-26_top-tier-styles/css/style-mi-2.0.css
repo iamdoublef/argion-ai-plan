@@ -1,0 +1,83 @@
+/* Mi-Industrial 2.0 - 极致极简风格 */
+:root {
+    --mi-orange: #FF6900;
+    --mi-black: #1A1A1A;
+    --mi-gray-bg: #F7F7F7;
+    --mi-border: #EEEEEE;
+    --page-margin: 15mm;
+}
+
+body {
+    background: #E0E0E0;
+    font-family: 'HarmonyOS Sans SC', 'Inter', sans-serif;
+    color: var(--mi-black);
+}
+
+.page {
+    width: 210mm;
+    height: 297mm;
+    padding: var(--page-margin);
+    background: #FFF;
+    margin: 10mm auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 极简章节标题：无边框，仅用间距和字重 */
+.section-title {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: baseline;
+}
+
+.section-title .num {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--mi-orange);
+    margin-right: 12px;
+}
+
+/* 呼吸感卡片 */
+.info-card {
+    background: var(--mi-gray-bg);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+/* 步骤数字：小米标志性圆圈 */
+.step-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.step-num {
+    width: 20px;
+    height: 20px;
+    background: var(--mi-orange);
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* 按钮图标化 */
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    background: #FFF;
+    border: 1px solid var(--mi-border);
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}

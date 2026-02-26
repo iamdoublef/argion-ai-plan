@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>V23 Full Manual - Mi-Industrial 2.0</title>
+    <style>
+        /* CSS 系统定义 */
+        :root {
+            --mi-orange: #FF6900;
+            --mi-black: #1A1A1A;
+            --mi-gray-dark: #333333;
+            --mi-gray-light: #F7F7F7;
+            --mi-border: #E5E5E5;
+            --page-margin: 15mm;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #E0E0E0; font-family: 'HarmonyOS Sans SC', 'PingFang SC', sans-serif; color: var(--mi-black); -webkit-font-smoothing: antialiased; }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: var(--page-margin);
+            background: #FFF;
+            margin: 10mm auto;
+            position: relative;
+            page-break-after: always;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* 封面 */
+        .cover { height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+        .cover-brand { font-size: 14px; font-weight: 700; letter-spacing: 4px; }
+        .cover-content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+        .cover-title { font-size: 52px; font-weight: 200; line-height: 1.1; margin: 20px 0; }
+        .cover-model { color: var(--mi-orange); font-size: 14px; font-weight: 700; letter-spacing: 2px; }
+        .cover-divider { width: 40px; height: 3px; background: var(--mi-orange); margin-top: 10px; }
+        .cover-img { width: 100%; object-fit: contain; margin-top: 40px; }
+
+        /* 章节标题 */
+        .section-title { font-size: 24px; font-weight: 300; margin: 30px 0 20px; display: flex; align-items: baseline; border-bottom: 1px solid var(--mi-border); padding-bottom: 10px; }
+        .section-title span { font-size: 14px; font-weight: 700; color: var(--mi-orange); margin-right: 12px; }
+        .sub-title { font-size: 16px; font-weight: 700; margin: 24px 0 12px; color: var(--mi-gray-dark); }
+
+        /* 正文与列表 */
+        p { font-size: 14px; line-height: 1.8; margin-bottom: 12px; color: #444; }
+        .steps { list-style: none; margin: 16px 0; }
+        .step-item { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
+        .step-num { width: 22px; height: 22px; background: var(--mi-orange); color: #FFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+        .step-text { font-size: 14px; line-height: 1.6; }
+
+        /* 提示框 */
+        .alert-box { border-radius: 8px; padding: 16px; margin: 20px 0; position: relative; }
+        .warning { background: #FFF3E0; border-left: 4px solid var(--mi-orange); }
+        .caution { background: #FFFDE7; border-left: 4px solid #FBC02D; }
+        .notice { background: var(--mi-gray-light); border-left: 4px solid #CCC; }
+        .alert-title { font-size: 13px; font-weight: 700; margin-bottom: 6px; text-transform: uppercase; }
+
+        /* 表格 */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; }
+        th { text-align: left; padding: 12px; background: var(--mi-gray-light); color: #666; font-weight: 500; border-bottom: 2px solid var(--mi-border); }
+        td { padding: 12px; border-bottom: 1px solid var(--mi-border); vertical-align: top; line-height: 1.6; }
+
+        /* 按钮样式 */
+        .btn { display: inline-flex; align-items: center; padding: 1px 8px; background: #FFF; border: 1px solid var(--mi-border); border-radius: 4px; font-size: 12px; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.05); margin: 0 2px; }
+
+        /* 页码 */
+        .footer { position: absolute; bottom: 10mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid var(--mi-border); padding-top: 8px; display: flex; justify-content: space-between; font-size: 11px; color: #BBB; }
+
+        @media print {
+            body { background: #FFF; }
+            .page { margin: 0; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- P1: 封面 -->
+    <div class="page">
+        <div class="cover">
+            <div class="cover-brand">WEVAC</div>
+            <div class="cover-content">
+                <div class="cover-model">VACUUM SEALER V23</div>
+                <div class="cover-title">简单，<br>封装新鲜。</div>
+                <div class="cover-divider"></div>
+                <img src="../output/images_v23/image1.png" class="cover-img">
+            </div>
+            <div style="font-size: 11px; color: #999;">广州亚俊氏真空科技股份有限公司 | 2026 版</div>
+        </div>
+    </div>
+
+    <!-- P2: 目录 -->
+    <div class="page">
+        <div class="section-title"><span>01</span>目录</div>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #DDD; padding: 8px 0;">
+                <span>安全须知</span><span>3</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #DDD; padding: 8px 0;">
+                <span>产品结构与功能</span><span>5</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #DDD; padding: 8px 0;">
+                <span>技术参数</span><span>8</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #DDD; padding: 8px 0;">
+                <span>操作指引</span><span>9</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #DDD; padding: 8px 0;">
+                <span>故障排除</span><span>15</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #DDD; padding: 8px 0;">
+                <span>维护与保修</span><span>17</span>
+            </div>
+        </div>
+        <div class="footer"><span>V23 使用说明书</span><span>2</span></div>
+    </div>
+
+    <!-- P3: 安全须知 -->
+    <div class="page">
+        <div class="section-title"><span>02</span>安全须知</div>
+        <p>为确保使用安全，在使用本电器产品前，请阅读并遵守以下安全预防措施：</p>
+        
+        <div class="alert-box warning">
+            <div class="alert-title">警告 WARNING</div>
+            <div style="font-size: 13px; line-height: 1.6;">
+                • 本机仅供家庭使用，请勿用于非设计用途。<br>
+                • 请勿让儿童玩耍本机或电源线。避免窒息危险。<br>
+                • 严禁在有易燃易爆气体的环境中使用。<br>
+                • 密封完成后，密封区域温度较高，请勿触摸，以免烫伤。<br>
+                • 请勿将主机或电源线浸入水中或其他液体中。
+            </div>
+        </div>
+
+        <div class="alert-box caution">
+            <div class="alert-title">注意 CAUTION</div>
+            <div style="font-size: 13px; line-height: 1.6;">
+                • 长时间不使用时，请勿扣上锁扣，以免密封圈受压变形。<br>
+                • 请妥善保管本手册。
+            </div>
+        </div>
+
+        <div class="sub-title">产品及真空袋使用提示</div>
+        <p>• 本机只适用于带有空气通道纹路的真空袋。<br>
+           • 装袋时，请务必在袋口和食物之间预留至少 5cm (2 inch) 的空间。<br>
+           • 如果需要封装质地柔软或含水分多的食物，建议先冷冻后再进行真空封装。</p>
+        <div class="footer"><span>V23 使用说明书</span><span>3</span></div>
+    </div>
+
+    <!-- P4: 产品结构 -->
+    <div class="page">
+        <div class="section-title"><span>03</span>产品概览</div>
+        <div style="background: var(--mi-gray-light); border-radius: 12px; padding: 30px; text-align: center; margin-bottom: 20px;">
+            <img src="../output/images_v23/image1.png" style="max-height: 240px;">
+            <div style="font-size: 12px; color: #AAA; margin-top: 10px;">Figure 1 — 产品结构</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <p>1. 锁扣把手</p><p>2. 控制面板</p>
+            <p>3. 外抽气孔</p><p>4. 面盖</p>
+            <p>5. 密封压条</p><p>6. 密封圈</p>
+            <p>7. 卷袋仓</p><p>8. 卷袋支撑管</p>
+        </div>
+        <div class="alert-box notice">
+            <div class="alert-title">提示 Note</div>
+            <p style="font-size: 13px; margin: 0;">工作结束后，发热器温度很高，请不要触摸，以免烫伤！</p>
+        </div>
+        <div class="footer"><span>V23 使用说明书</span><span>4</span></div>
+    </div>
+
+    <!-- P5: 功能说明 -->
+    <div class="page">
+        <div class="section-title"><span>04</span>产品功能</div>
+        <div class="sub-title">控制按键</div>
+        
+        <p><strong><span class="btn">Vac&Seal / Start</span> 抽气密封</strong><br>执行选定的真空及密封模式。</p>
+        <p><strong><span class="btn">Stop</span> 停止</strong><br>随时终止当前进程。</p>
+        <p><strong><span class="btn">Vac Mode</span> 真空模式选择</strong><br>Normal (标准) / Gentle (轻柔) / Liquid (液体)。</p>
+        <p><strong><span class="btn">Pulse Vac</span> 手动真空</strong><br>长按控制抽气，松开暂停。精准控制易碎食物的真空度。</p>
+        <p><strong><span class="btn">Seal</span> 密封</strong><br>立即执行密封动作。</p>
+        <p><strong><span class="btn">Accessories</span> 附件类</strong><br>Mason Jar (梅森罐) / Canister (真空罐) / Marinate (腌制)。</p>
+        <p><strong><span class="btn">Extend Seal Time</span> 延长密封时间</strong><br>应对厚袋子或潮湿袋口，增强密封强度。</p>
+        <div class="footer"><span>V23 使用说明书</span><span>5</span></div>
+    </div>
+
+    <!-- P6: 技术参数 -->
+    <div class="page">
+        <div class="section-title"><span>05</span>技术参数</div>
+        <table>
+            <thead>
+                <tr><th>参数</th><th>规格 (中国/欧洲/澳洲)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>电压</td><td>220~240 Vac</td></tr>
+                <tr><td>频率</td><td>50 Hz</td></tr>
+                <tr><td>功率</td><td>190 W</td></tr>
+                <tr><td>泵类型</td><td>双泵 (Dual Pump)</td></tr>
+                <tr><td>泵抽气压力</td><td>-958 mbar</td></tr>
+                <tr><td>发热丝宽度</td><td>1.8 mm × 2</td></tr>
+                <tr><td>最大密封宽度</td><td>315 mm</td></tr>
+                <tr><td>外形尺寸</td><td>380 × 205 × 155 mm</td></tr>
+                <tr><td>整机重量</td><td>3.0 kg</td></tr>
+            </tbody>
+        </table>
+        <div class="footer"><span>V23 使用说明书</span><span>6</span></div>
+    </div>
+
+    <!-- P7: 操作指引 1 -->
+    <div class="page">
+        <div class="section-title"><span>06</span>操作指引</div>
+        <div class="sub-title">如何使用切袋刀</div>
+        <div class="steps">
+            <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-text">打开面盖及切袋刀架。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-text">拉出所需长度的卷袋。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-text">将刀架压在袋子上，滑动刀头进行整齐切割。</div>
+            </div>
+        </div>
+
+        <div class="sub-title">制作袋子并密封</div>
+        <div class="steps">
+            <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-text">将切好的袋子一端平整放入真空腔。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-text">关闭面盖并下压把手锁紧。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-text">点击 <span class="btn">Seal</span>，待指示灯熄灭后解锁。</div>
+            </div>
+        </div>
+        <div class="footer"><span>V23 使用说明书</span><span>7</span></div>
+    </div>
+
+    <!-- P8: 操作指引 2 -->
+    <div class="page">
+        <div class="section-title"><span>07</span>如何使用真空密封</div>
+        <div class="steps">
+            <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-text">将袋口平整放入真空腔。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-text">根据食材选择 <span class="btn">Normal</span> 或 <span class="btn">Gentle</span>。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-text">点击 <span class="btn">Vac&Seal / Start</span> 开始工作。</div>
+            </div>
+        </div>
+        
+        <div class="alert-box notice">
+            <div class="alert-title">密封液体建议</div>
+            <p style="font-size: 13px; margin: 0;">保持袋子直立，袋内预留至少 18cm 空间，模式选择为 <span class="btn">Liquid</span>。</p>
+        </div>
+
+        <div class="sub-title">手动真空 (Pulse Vac) 技巧</div>
+        <p>长按 <span class="btn">Pulse Vac</span>，观察抽气进度；松开即停止抽气并保压；达到理想状态后点 <span class="btn">Seal</span> 封口。</p>
+        <div class="footer"><span>V23 使用说明书</span><span>8</span></div>
+    </div>
+
+    <!-- P9: 故障排除 -->
+    <div class="page">
+        <div class="section-title"><span>08</span>故障排除</div>
+        <table>
+            <thead>
+                <tr><th style="width: 25%;">故障现象</th><th>可能原因及解决方案</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>不能开机</td>
+                    <td>• 检查电源线是否插紧。<br>• 检查电源线是否破损。</td>
+                </tr>
+                <tr>
+                    <td>抽气不干净</td>
+                    <td>• 确保袋口完全放入真空腔内。<br>• 检查密封圈是否变形或破损。<br>• 确保使用带有纹路的真空袋。</td>
+                </tr>
+                <tr>
+                    <td>密封不理想</td>
+                    <td>• 检查密封区域是否有水分、颗粒。<br>• 尝试开启 <span class="btn">Extend Seal Time</span>。</td>
+                </tr>
+                <tr>
+                    <td>机器漏气报警</td>
+                    <td>• 检查面盖把手是否完全压下锁紧。<br>• 检查袋子是否被锋利物品刺穿。</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer"><span>V23 使用说明书</span><span>9</span></div>
+    </div>
+
+    <!-- P10: 维护与保修 -->
+    <div class="page">
+        <div class="section-title"><span>09</span>维护保养</div>
+        <p>• 清洁前请务必拔下电源，并等待发热器冷却。<br>
+           • 每周使用软毛刷清洁密封圈、真空腔及液体槽。<br>
+           • 液体槽支持取出清洗，但不可放入洗碗机。</p>
+        
+        <div class="section-title"><span>10</span>保修信息</div>
+        <p>本产品提供 2 年有限保修。如有疑问，请通过以下方式联系我们：</p>
+        <p><strong>客服邮箱：</strong> support@wevactech.com<br>
+           <strong>官方网站：</strong> www.wevactech.com</p>
+
+        <div style="margin-top: 40px; border: 1px solid var(--mi-border); padding: 20px; border-radius: 8px;">
+            <div style="font-weight: 700; border-bottom: 1px solid var(--mi-border); padding-bottom: 10px; margin-bottom: 15px;">保修卡 (Warranty Card)</div>
+            <p style="font-size: 12px;">客户名称：____________________</p>
+            <p style="font-size: 12px;">购买日期：____________________</p>
+            <p style="font-size: 12px;">产品型号：V23 Vacuum Sealer</p>
+            <p style="font-size: 12px;">序列号：______________________</p>
+        </div>
+        <div class="footer"><span>V23 使用说明书</span><span>10</span></div>
+    </div>
+
+</body>
+</html>

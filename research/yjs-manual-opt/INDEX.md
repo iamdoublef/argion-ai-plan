@@ -11,17 +11,30 @@ research/yjs-manual-opt/
   INDEX.md                          ← 本文件
   research-log.md                   ← 研究过程日志
   _inbox/                           ← 原始说明书 docx（只读输入）
-  data/                             ← 研究数据（需求画像、诊断、问题清单、规范）
-  images_v23/                       ← V23 产品线稿图（18张 PNG，HTML 引用源）
-  images_imt050/                    ← IMT050 产品线稿图（14张 PNG）
-  source/                           ← 中间产物（提取文本、base64、缩略图、修正版 docx）
-  output/                           ← 最终交付物（HTML + PDF + 生成脚本）
-    v23-manual-cn.html              ← 中文版完整说明书（17页）
-    v23-manual-en.html              ← 英文版完整说明书（17页，仅美标）
+  data/                             ← 研究数据 + 规范
+    d0-research-brief.md            ← 需求画像
+    d1-current-state.md             ← 现状诊断
+    d2-ai-flow-proposal.md          ← AI流程方案
+    d3-problem-list.md              ← 问题清单（初版）
+    d4-full-issue-list.md           ← 全量问题清单（19个）
+    d5-manual-standard.md           ← 编写规范 v2.0（唯一事实来源）
+    audit-report.md                 ← 最新审计报告
+  source/                           ← 原始素材 + 中间产物
+    extracted_v23.txt               ← V23 原文文本
+    extracted_imt050.txt            ← IMT050 原文文本
+    product-config.json             ← 产品配置（品牌、参数、图片映射）
+    V23-修正版-20260225.docx        ← 修正版 Word 源文件
+    images_v23_raw/                 ← V23 原始提取图片（18张 PNG）
+    images_imt050_raw/              ← IMT050 原始提取图片（14张 PNG）
+  output/                           ← 最终交付物
+    v23-manual-cn.html              ← 中文版说明书（17页）
+    v23-manual-en.html              ← 英文版说明书（17页，仅美标）
     V23-Manual-CN-Wevac.pdf         ← 中文 PDF
     V23-Manual-EN-Wevac.pdf         ← 英文 PDF
     generate-pdf.js                 ← Playwright PDF 生成脚本
-    images_v23/                     ← 图片副本（HTML 相对路径引用）
+    images_v23/                     ← SVG 矢量图（HTML 引用，13张）
+  experiments/                      ← 实验/POC（归档）
+    2026-02-26_top-tier-styles/     ← 三种高端风格探索（lifestyle/mi-2.0/swiss）
 ```
 
 ## 阶段索引
@@ -67,3 +80,11 @@ commit: 8c8da28
 - ptr: `git:8c8da28:.claude/agents/manual-auditor.md`
 - ptr: `git:8c8da28:.claude/agents/manual-writer.md`
 - ptr: `git:8c8da28:research/yjs-manual-opt/source/product-config.json`
+
+### 2026-02-26 规范重构：d5升级为唯一事实来源 + 审计修复3ERROR
+commit: 0914fd3
+第二轮审计评级B（3 ERROR + 9 WARNING）。修复：EN版补制造商表格、非标准警示框归入NOTICE、overflow/表头色/边框色。重构三文件关系：d5 v2.0整合CSS设计系统+HTML模板库+已知陷阱+检查清单，writer 472→78行、auditor 335→137行，均改为引用d5。
+- ptr: `git:0914fd3:research/yjs-manual-opt/data/d5-manual-standard.md`
+- ptr: `git:0914fd3:.claude/agents/manual-writer.md`
+- ptr: `git:0914fd3:.claude/agents/manual-auditor.md`
+- ptr: `git:0914fd3:research/yjs-manual-opt/data/audit-report.md`
