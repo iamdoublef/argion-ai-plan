@@ -1,0 +1,172 @@
+{
+  "_comment": "V23 真空封口机产品配置文件 — 所有因产品/品牌/市场不同而变化的字段",
+  "product": {
+    "model": "V23",
+    "name_cn": "真空封装口机",
+    "name_en": "Vacuum Sealer",
+    "active_brand": "wevac",
+    "_comment": "active_brand 决定使用哪个品牌信息"
+  },
+  "brands": {
+    "wevac": {
+      "name": "WEVAC TECHNOLOGY CO., LIMITED",
+      "address": "FLAT/RM 404A BEVERLEY COMMERCIAL CENTRE 87-105 CHATHAM ROAD SOUTH TSIM SHA TSUI KL HONG KONG",
+      "website": "www.wevactech.com",
+      "support_email": "support@wevactech.com"
+    },
+    "vesta": {
+      "name": "Precision Appliance Technology, Inc.",
+      "address": "3120 139th Ave SE Suite 500 Bellevue, WA 98005",
+      "website": "www.vestaprecision.com",
+      "support_email": "support@vestaprecision.com"
+    },
+    "act": {
+      "name": "ADVANCED CUISINE TECHNOLOGY PTE. LTD.",
+      "address": "60 Paya Lebar Road, #11-19 Paya Lebar Square, Singapore 409051",
+      "website": "www.thespacetec.com",
+      "support_email": "support@thespacetec.com"
+    }
+  },
+  "manufacturer": {
+    "name_cn": "广州亚俊氏真空科技股份有限公司",
+    "name_en": "Guangzhou Argion Electric Appliance Co., Ltd.",
+    "address_cn": "广东省广州市番禺区南村镇启业路1号",
+    "website": "www.argiontechnology.com"
+  },
+  "specs": {
+    "us": {
+      "_label": "美标（北美）",
+      "voltage": "110~120 Vac",
+      "frequency": "60 Hz",
+      "power": "190 W",
+      "pump": "双泵",
+      "vacuum_pressure": "-28.3 inHg",
+      "sealer_width": "0.07 inch × 2",
+      "max_bag_width": "12.4 inch",
+      "dimensions": "15 × 8.1 × 6.1 inch",
+      "weight": "6.6 lb"
+    },
+    "eu": {
+      "_label": "欧标（欧洲、澳洲）",
+      "voltage": "220~240 Vac",
+      "frequency": "50 Hz",
+      "power": "190 W",
+      "pump": "双泵",
+      "vacuum_pressure": "-958 mbar",
+      "sealer_width": "1.8 mm × 2",
+      "max_bag_width": "315 mm",
+      "dimensions": "380 × 205 × 155 mm",
+      "weight": "3.0 kg"
+    }
+  },
+  "warranty": {
+    "years": 2,
+    "description_cn": "本产品提供 2 年有限保修。自原始购买日期起 2 年内可享受保修更换服务。"
+  },
+  "images": {
+    "_comment": "key=用途, value=SVG文件名（相对路径 images_v23/），png_fallback=低分辨率回退",
+    "cover":              { "svg": "image2.svg",  "png_fallback": "image1.png" },
+    "structure":          { "svg": "image5.svg",  "png_fallback": "image4.png" },
+    "control_panel":      { "svg": "image10.svg", "png_fallback": "image9.png" },
+    "operation_cutter":   { "svg": "image12.svg", "png_fallback": "image11.png" },
+    "operation_seal":     { "svg": "image14.svg", "png_fallback": "image13.png" },
+    "operation_liquid":   { "svg": "image16.svg", "png_fallback": "image15.png" },
+    "accessory_hose":     { "svg": "image18.svg", "png_fallback": "image17.png" },
+    "accessory_mason":    { "svg": "image22.svg", "png_fallback": "image21.png" },
+    "accessory_canister": { "svg": "image24.svg", "png_fallback": "image23.png" },
+    "accessory_marinate": { "svg": "image26.svg", "png_fallback": "image25.png" },
+    "roll_bag_single":    { "svg": "image28.svg", "png_fallback": "image27.png" },
+    "roll_bag_double":    { "svg": "image30.svg", "png_fallback": "image29.png" }
+  },
+  "parts": [
+    {
+      "id": 1,
+      "name_cn": "锁扣把手"
+    },
+    {
+      "id": 2,
+      "name_cn": "控制面板"
+    },
+    {
+      "id": 3,
+      "name_cn": "外抽气孔"
+    },
+    {
+      "id": 4,
+      "name_cn": "面盖"
+    },
+    {
+      "id": 5,
+      "name_cn": "密封压条"
+    },
+    {
+      "id": 6,
+      "name_cn": "密封圈"
+    },
+    {
+      "id": 7,
+      "name_cn": "卷袋仓"
+    },
+    {
+      "id": 8,
+      "name_cn": "卷袋支撑管"
+    },
+    {
+      "id": 9,
+      "name_cn": "主体"
+    },
+    {
+      "id": 10,
+      "name_cn": "切袋刀支架"
+    },
+    {
+      "id": 11,
+      "name_cn": "液体槽（下方为真空腔）"
+    },
+    {
+      "id": 12,
+      "name_cn": "高温胶布与发热器"
+    },
+    {
+      "id": 13,
+      "name_cn": "切袋刀"
+    }
+  ],
+  "buttons": [
+    {
+      "key": "Vac&Seal / Start",
+      "name_cn": "抽气密封 / 开始",
+      "desc_cn": "点击此按键，将执行所选模式进行工作。"
+    },
+    {
+      "key": "Stop",
+      "name_cn": "停止",
+      "desc_cn": "可以在任意工作进程中点击此按键来终止工作。"
+    },
+    {
+      "key": "Vac Mode",
+      "name_cn": "真空模式选择",
+      "desc_cn": "Normal（默认压力）/ Gentle（轻柔压力）/ Liquid（液体状物品）。"
+    },
+    {
+      "key": "Pulse Vac",
+      "name_cn": "手动抽气",
+      "desc_cn": "长按进行手动控制抽气，松开暂停，达到所需状态后点击 Seal 密封。"
+    },
+    {
+      "key": "Seal",
+      "name_cn": "密封",
+      "desc_cn": "点击此按键，机器立即执行密封工作。"
+    },
+    {
+      "key": "Accessories",
+      "name_cn": "附件类",
+      "desc_cn": "Mason Jar（梅森罐）/ Canister（真空罐）/ Marinate（腌制）。"
+    },
+    {
+      "key": "Extend Seal Time",
+      "name_cn": "延长密封时间",
+      "desc_cn": "在工作前点击，可延长密封时间。"
+    }
+  ]
+}
