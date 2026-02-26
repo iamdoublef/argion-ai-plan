@@ -27,25 +27,25 @@ research/yjs-manual-opt/
 ## 阶段索引
 
 ### 2026-02-25 阶段0完成：目录初始化 + 需求画像确认
-commit: uncommitted
-- ptr: `file:research/yjs-manual-opt/data/d0-research-brief.md`
-- ptr: `file:research/yjs-manual-opt/research-log.md`
+commit: 8c8da28
+- ptr: `git:8c8da28:research/yjs-manual-opt/data/d0-research-brief.md`
+- ptr: `git:8c8da28:research/yjs-manual-opt/research-log.md`
 
 ### 2026-02-25 阶段3完成：说明书编写规范（对标小米）
-commit: uncommitted
-- ptr: `file:research/yjs-manual-opt/data/d5-manual-standard.md`
+commit: 8c8da28
+- ptr: `git:8c8da28:research/yjs-manual-opt/data/d5-manual-standard.md`
 
 ### 2026-02-25 阶段2完成：全量问题清单（19个问题，含排版+内容）
-commit: uncommitted
-- ptr: `file:research/yjs-manual-opt/data/d4-full-issue-list.md`
+commit: 8c8da28
+- ptr: `git:8c8da28:research/yjs-manual-opt/data/d4-full-issue-list.md`
 
 ### 2026-02-25 阶段1完成：现状诊断 + AI流程方案初稿
-commit: uncommitted
+commit: 8c8da28
 核心结论：图片是难点（AI无法生成技术线稿），文字层AI可全覆盖；建议数据/模板/输出三层分离
-- ptr: `file:research/yjs-manual-opt/data/d1-current-state.md`
-- ptr: `file:research/yjs-manual-opt/data/d2-ai-flow-proposal.md`
-- ptr: `file:research/yjs-manual-opt/images_v23/` （V23图片库，18张PNG）
-- ptr: `file:research/yjs-manual-opt/images_imt050/` （IMT050图片库，14张PNG）
+- ptr: `git:8c8da28:research/yjs-manual-opt/data/d1-current-state.md`
+- ptr: `git:8c8da28:research/yjs-manual-opt/data/d2-ai-flow-proposal.md`
+- ptr: `git:8c8da28:research/yjs-manual-opt/images_v23/` （V23图片库，18张PNG）
+- ptr: `git:8c8da28:research/yjs-manual-opt/images_imt050/` （IMT050图片库，14张PNG）
 
 ### 2026-02-26 V23 小米风格 HTML 说明书完成（中英双版本 + PDF）
 commit: uncommitted
@@ -55,3 +55,15 @@ commit: uncommitted
 - ptr: `file:research/yjs-manual-opt/output/V23-Manual-CN-Wevac.pdf`
 - ptr: `file:research/yjs-manual-opt/output/V23-Manual-EN-Wevac.pdf`
 - ptr: `file:research/yjs-manual-opt/source/product-config.json`
+
+### 2026-02-26 V23说明书完整交付 + 说明书agent体系建立
+commit: 8c8da28
+审计发现图片全部错位（Word SVG/PNG双存储陷阱），MD5分析后从docx提取13张SVG替换。修复：CN版去除美标参数、字体改HarmonyOS Sans SC、边距统一12.7mm、打印CSS增强。审计评级C→A。新建manual-auditor（7维度含多语言一致性8子维度）和manual-writer（小米风格生成）两个agent。
+- ptr: `git:8c8da28:research/yjs-manual-opt/output/v23-manual-cn.html`
+- ptr: `git:8c8da28:research/yjs-manual-opt/output/v23-manual-en.html`
+- ptr: `git:8c8da28:research/yjs-manual-opt/output/V23-Manual-CN-Wevac.pdf`
+- ptr: `git:8c8da28:research/yjs-manual-opt/output/V23-Manual-EN-Wevac.pdf`
+- ptr: `git:8c8da28:research/yjs-manual-opt/data/audit-report.md`
+- ptr: `git:8c8da28:.claude/agents/manual-auditor.md`
+- ptr: `git:8c8da28:.claude/agents/manual-writer.md`
+- ptr: `git:8c8da28:research/yjs-manual-opt/source/product-config.json`

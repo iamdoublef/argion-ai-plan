@@ -1,8 +1,10 @@
 # 亚俊氏产品说明书编写规范
 
-**版本**：v1.0 草稿
-**日期**：2026-02-25
+**版本**：v2.0
+**日期**：2026-02-26
 **参考标准**：小米（Xiaomi）国际版说明书规范（Smart Air Purifier Elite，ManualsLib #3185804）
+
+> 本文件是说明书编写和审计的**唯一事实来源**。manual-writer 和 manual-auditor agent 均引用本文件，不重复定义规范细节。
 
 ---
 
@@ -32,6 +34,10 @@
 | 7 | 维护保养 | 清洁频率、方法、注意事项 |
 | 8 | 品牌与保修信息 | 制造商、品牌商、客服、保修条款 |
 
+可选章节（根据产品特性添加，插入在第7章之后、第8章之前）：
+- 产品功能 / Control Panel Functions
+- 真空包装特性 / Vacuum Packaging Guide
+
 ### 章节标题命名规范（固定，不得随意修改）
 
 | 中文标题 | 英文标题 |
@@ -43,7 +49,7 @@
 | 操作指引 | How to Use |
 | 故障排除 | Troubleshooting |
 | 维护保养 | Maintenance |
-| 品牌与保修信息 | Brand & Warranty Information |
+| 品牌与保修信息 | Brand & Warranty |
 
 ---
 
@@ -51,13 +57,15 @@
 
 ### 三级体系（所有产品统一）
 
-参照小米规范，统一使用以下三级，**不得混用、不得减少**：
+参照小米规范，统一使用以下三级，**不得混用、不得减少、不得自创**：
 
 | 等级 | 标识 | 含义 | 使用场景 |
 |------|------|------|---------|
 | ⚠️ WARNING | 警告 | 可能导致人身伤害或死亡 | 触电、烫伤、火灾风险 |
 | ⚠️ CAUTION | 注意 | 可能导致产品损坏或轻微伤害 | 操作不当、存储不当 |
-| ℹ️ NOTICE | 提示 | 重要使用信息，不涉及安全 | 噪音等级、适用温度范围 |
+| ℹ️ NOTICE | 提示 | 重要使用信息，不涉及安全 | 噪音等级、适用温度范围、食品储存提醒 |
+
+**禁止使用非标准警示框**：不得使用"重要提示""IMPORTANT""注意事项"等自创标题的警示框。所有需要突出显示的提醒信息必须归入上述三级之一（通常归入 NOTICE）。
 
 ### 写作格式
 
@@ -97,8 +105,6 @@ Note：[内容]
 
 ### 数值格式
 
-参照小米规范，统一如下：
-
 | 类型 | 格式 | 示例 |
 |------|------|------|
 | 电压范围 | 用 `~` 连接 | 100~240 V |
@@ -106,6 +112,7 @@ Note：[内容]
 | 噪音 | 带单位括号 | ≤ 68 dB(A) |
 | 温度 | 中文版用 `℃`，英文版同时标 `℉` | 10℃~32℃ / 50℉~89.6℉ |
 | 间距要求 | 标注最小值 | ≥ 120 mm |
+| 数值与单位 | 之间有空格 | 190 W、60 Hz |
 
 ### 禁止事项
 
@@ -113,6 +120,11 @@ Note：[内容]
 - ❌ 禁止在同一文档中保留多个品牌信息（交付前必须只保留对应品牌）
 - ❌ 禁止客服邮箱等关键字段留空占位符
 - ❌ 禁止同一条 Note 重复出现多次
+- ❌ 禁止使用 emoji 图标（如 ⚠/⚡/📝）
+- ❌ 禁止在 CN 版保留美标参数，EN 版保留欧标参数
+- ❌ 禁止使用非标准警示框标题（如"重要提示""IMPORTANT"），必须归入三级体系
+- ❌ 禁止在某个语言版本中遗漏制造商信息表格
+- ❌ 禁止打印 CSS 使用 `height + overflow: hidden`（会截断大表格）
 
 ---
 
@@ -130,43 +142,52 @@ Note：[内容]
 
 | 用途 | 字体 | 字号 |
 |------|------|------|
-| 正文（中文） | HarmonyOS Sans SC | 10pt |
-| 正文（英文） | HarmonyOS Sans SC / Arial | 10pt |
-| 一级标题 | HarmonyOS Sans SC Bold | 14pt |
-| 二级标题 | HarmonyOS Sans SC Bold | 12pt |
-| 三级标题 | HarmonyOS Sans SC Bold | 10pt |
-| Note 文字 | HarmonyOS Sans SC | 9pt，斜体或缩进 |
-| 技术参数 | HarmonyOS Sans SC | 9pt |
+| 正文（中文） | HarmonyOS Sans SC | 14px |
+| 正文（英文） | HarmonyOS Sans SC / Arial | 14px |
+| 一级标题 | HarmonyOS Sans SC Bold | 18px |
+| 二级标题 | HarmonyOS Sans SC Bold | 15px |
+| 三级标题 | HarmonyOS Sans SC Bold | 14px |
+| Note / 表格 | HarmonyOS Sans SC | 13px |
+| 页脚 | HarmonyOS Sans SC | 11px |
 
 ### 颜色规范
 
-| 用途 | 颜色 | 色值 |
-|------|------|------|
-| 正文 | 黑色 | #000000 |
-| 一级标题 | 深灰 | #333333 |
-| WARNING 标题 | 橙红色 | #E97132（参照小米规范） |
-| 表格表头背景 | 浅灰 | #F2F2F2 |
-| 表格表头文字 | 黑色 | #000000 |
-| 超链接 | 蓝色 | #0563C1 |
+| 用途 | 色值 |
+|------|------|
+| 主色（橙色） | #FF6900 |
+| 正文 | #1A1A1A |
+| 一级标题 | #1A1A1A |
+| 次要文字/注释 | #666666 |
+| WARNING 框背景 | #FFF3E0 |
+| WARNING 框竖线 | #FF6900 |
+| WARNING 标题色 | #E65100 |
+| CAUTION 框背景 | #FFFDE7 |
+| CAUTION 框竖线 | #FFC107 |
+| CAUTION 标题色 | #F57F17 |
+| NOTICE 框背景 | #F9F9F9 |
+| NOTICE 框竖线 | #E5E5E5 |
+| 表格表头背景 | #F2F2F2 |
+| 表格边框 | #CCCCCC |
+| 分隔线 | #E5E5E5 |
+| 页码 | #999999 |
 
 **禁止使用**：绿色（#00B050）表头、红色（#EE0000）正文文字
 
 ### 表格规范
 
 - 所有表格统一使用同一样式
-- 表头背景色：浅灰 #F2F2F2，文字加粗
-- 表格边框：细线，颜色 #CCCCCC
-- 技术参数如果只有两列（名称/值），可用无边框键值对格式（参照小米）
+- 表头背景色：#F2F2F2，文字加粗
+- 表格边框：1px solid #CCCCCC
+- 技术参数如果只有两列（名称/值），可用无边框键值对格式
 
 ### 图片规范
 
 | 项目 | 规范 |
 |------|------|
-| 图片类型 | 产品白底渲染图或专业线稿，不用实物照片 |
-| 图片锚定 | 统一使用嵌入式（inline），不用浮动（anchor） |
-| 图片编号 | 格式：Figure 1、Figure 2（英文版）/ 图1、图2（中文版） |
-| 图片命名 | 文件命名：{型号}\_{章节}\_{序号}.png，如 V23\_structure\_01.png |
-| 零件标注 | 引线 + 编号，编号对应下方表格，不在图内直接写文字 |
+| 格式优先级 | SVG > PNG（SVG 矢量清晰，PNG 仅作回退） |
+| 图片锚定 | 统一使用嵌入式（inline），不用浮动 |
+| 图片编号 | Figure 1（英文版）/ 图 1（中文版） |
+| 零件标注 | 引线 + 编号，编号对应下方表格 |
 | 警示图标 | 使用标准 ISO 7010 图标库 |
 
 ---
@@ -174,8 +195,6 @@ Note：[内容]
 ## 六、多版本管理规范
 
 ### 按市场出独立版本
-
-每份交付文件只包含对应市场的内容：
 
 | 版本 | 电压/频率 | 认证标志 | 语言 |
 |------|---------|---------|------|
@@ -186,186 +205,281 @@ Note：[内容]
 
 ### 品牌版本管理
 
-同一产品的不同品牌版本（Wevac / Vesta / OEM客户）通过配置表管理，**不在文档中保留多品牌信息**。
+同一产品的不同品牌版本通过 `product-config.json` 管理，**不在文档中保留多品牌信息**。
 
-每份交付文件末页固定包含：
-- 制造商：广州亚俊氏真空科技股份有限公司（Guangzhou Argion Electric Appliance Co., Ltd.）
-- 品牌商：[对应品牌名称、地址、网址]
-- 客服邮箱：[必填，不得为空]
-- 保修期：[对应市场保修条款]
-- 电子版说明书：[品牌官网链接]
+### 多语言一致性硬规则
+
+- 品牌商和制造商信息必须在所有语言版本中同时出现
+- EN 版制造商地址使用英文翻译，CN 版使用中文原文
+- 不得在某个语言版本中遗漏制造商表格
+- 数值、数量、按键名称在所有版本中必须完全一致
+- 操作步骤数量和顺序在所有版本中必须一致
 
 ---
 
 ## 七、品牌与保修信息规范
 
-### 感谢语（统一模板）
+末页固定包含（所有语言版本均不得遗漏）：
+- 品牌商表格：名称、地址、网址、客服邮箱
+- 制造商表格：公司名（中英双语）、地址、网址
+- 保修信息：年限、条件
+- 保修卡：必填字段表格
 
-```
-感谢您购买 [品牌名] [产品名]。如有任何问题，请通过以下方式联系我们：
-[客服邮箱] | [品牌官网]
-```
+### 感谢语模板
 
-英文版：
-```
-Thank you for choosing [Brand] [Product Name].
-For support, contact us at: [email] | [website]
-```
+CN：`感谢您购买 [品牌名] [产品名]。如有任何问题，请通过以下方式联系我们：[邮箱] | [网址]`
+
+EN：`Thank you for choosing [Brand] [Product Name]. For support, contact us at: [email] | [website]`
 
 ### 保修卡必填字段
 
-- 客户姓名
-- 购买日期
-- 产品型号
-- 序列号
-- 购买渠道（商户名称）
-- 联系邮箱
+客户姓名、地址、城市/州/邮编、电话、邮箱、购买日期、产品型号、序列号、商户名称
 
 ---
 
-## 八、与小米规范的对比参照
+## 八、已知陷阱（经验教训）
 
-| 维度 | 小米做法 | 亚俊氏建议做法 |
-|------|---------|--------------|
-| 安全警示 | WARNING 独立成页，橙红色标题 | 同，三级体系统一 |
-| 操作步骤 | 数字编号 + 配图，图左文右 | 同 |
-| 技术参数 | 键值对格式，不用表格 | 两列表格或键值对均可 |
-| 图片风格 | 白底渲染图，引线标注 | 同，现有线稿质量已达标 |
-| 多语言 | 国际版纯英文，零件标注保留中文 | 中英文分版本，不混排 |
-| 合规信息 | 末页固定格式，含EU声明链接 | 末页固定格式，含对应市场认证 |
-| 电子版入口 | 末页注明官网链接 | 同，加二维码 |
-| 页面尺寸 | A4 | A4 |
-| 字体 | 无衬线体（Roboto系） | HarmonyOS Sans SC |
+| # | 陷阱 | 后果 | 对策 |
+|---|------|------|------|
+| 1 | Word docx 中每张图存 SVG+PNG 两份，多个 Drawing 可能共用同一个 PNG 回退 | 提取图片时只取 PNG 会导致多张图完全相同 | 用 MD5 检测 PNG 重复，以 SVG 为准建立映射 |
+| 2 | 原文中"重要提示""IMPORTANT"等非标准警示框 | 不属于三级体系，审计会报 ERROR | 编写时统一归入 NOTICE |
+| 3 | EN 版遗漏制造商信息表格 | 多语言不一致，审计报 ERROR | 末页品牌商+制造商两个表格，所有版本都要有 |
+| 4 | 打印 CSS 用 `height: 297mm; overflow: hidden` | 大表格（故障排除、食物保鲜表）内容被截断 | 必须用 `min-height: 297mm; overflow: visible` |
+| 5 | 表头背景色/边框色与规范不一致 | 审计报 WARNING | 严格使用 #F2F2F2 / #CCCCCC |
+| 6 | 原文双句号、两句合并为一条 | 安全警示不清晰 | 编写时拆分为独立条目 |
+| 7 | 同一 Note 重复出现多次 | 冗余信息 | 每条 Note 只出现一次 |
 
 ---
 
-## 九、小米说明书实测数据（2026-02-25 抓取）
+## 九、HTML 模板库
 
-来源：`https://home.mi.com/views/introduction.html?model=xiaomi.airc.f55ysj&region=cn&isFloat=0`
-抓取方式：Playwright → react-pdf 文字层坐标解析
+### 页面容器
 
-### 字号实测（PDF渲染坐标，页面宽1037px对应A4 210mm）
+```html
+<div class="page">...</div>           <!-- 普通页 -->
+<div class="page page-cover">...</div> <!-- 封面页 -->
+```
 
-| 元素 | PDF px | 换算pt | 对应CSS |
-|------|--------|--------|---------|
-| 封面产品名 | 62.7px | ~28pt | 2.8rem |
-| 章节标题（一级） | 36.6px | ~16pt | 1.6rem |
-| 正文 | 18.3px | ~8pt | 14px |
-| 页码 | 23.5px | ~10pt | 16px |
-| 注释/说明 | 18.3px | ~8pt | 12px |
+### 章节标题
 
-### 页面边距实测
+```html
+<h2 class="section-title"><span class="chapter-num">01</span>安全须知</h2>
+<div class="sub-title">6.1 如何使用切袋刀</div>
+```
 
-- 左边距：52px / 1037px × 210mm ≈ **10.5mm**（约等于 10mm）
-- 正文行高：约 25px（18.3px字 + 6.7px间距）≈ 行高 1.37
-- 章节标题距页顶：约 54px ≈ **11mm**
+### 安全警示三级体系
 
-### 字体实测
+```html
+<div class="warning-box">
+  <div class="box-title">WARNING</div>
+  <ul class="box-list"><li>...</li></ul>
+</div>
 
-- 页码字体直接标注为 `MILanPro`
-- 正文字体为 `g_d0_f3`（PDF内嵌字体，实为 MILanPro Regular）
-- 标题字体为 `g_d0_f5`（MILanPro Bold）
-- CSS 声明建议：`font-family: "MILanPro", "PingFang SC", "Helvetica Neue", Arial, sans-serif`
+<div class="caution-box">
+  <div class="box-title">CAUTION</div>
+  <ul class="box-list"><li>...</li></ul>
+</div>
 
-### 颜色实测
+<div class="note-box">
+  <div class="box-title">NOTICE</div>
+  <ul class="box-list"><li>...</li></ul>
+</div>
+```
 
-从页面视觉观察（canvas渲染，无法直接抓CSS颜色）：
+CN 版标题格式：`警告 WARNING` / `注意 CAUTION` / `提示 NOTICE`（无 emoji）。
 
-| 用途 | 颜色值 |
-|------|--------|
-| 主色（小米橙） | `#FF6900` |
-| 正文 | `#1A1A1A` |
-| 次要文字/注释 | `#666666` |
-| 分隔线 | `#E5E5E5` |
-| WARNING框背景 | `#FFF3E0` |
-| WARNING框竖线 | `#FF6900` |
-| CAUTION框背景 | `#FFFDE7` |
-| CAUTION框竖线 | `#FFC107` |
-| NOTE框背景 | `#F9F9F9` |
-| NOTE框竖线 | `#E5E5E5` |
+### 操作步骤
 
-### 排版规则实测
+```html
+<ol class="steps">
+  <li><span class="step-num">1</span>打开面盖。</li>
+  <li><span class="step-num">2</span>打开切袋刀架。</li>
+</ol>
+```
 
-**章节标题：**
-- 左侧 4px 橙色竖线（`#FF6900`）
-- 标题文字左边距 12px
-- 上方间距 32px，下方间距 16px
+步骤旁配图（flex 布局）：
+```html
+<div style="display:flex;gap:16px;align-items:flex-start">
+  <div style="flex:1"><ol class="steps">...</ol></div>
+  <div style="flex:0 0 auto">
+    <img src="images_{型号}/xxx.svg" alt="..." style="max-height:45mm;max-width:45mm">
+  </div>
+</div>
+```
 
-**步骤列表：**
-- 数字用橙色圆圈（24×24px，`#FF6900`背景，白色数字）
-- 步骤间距 12px
+### 图片
 
-**图片：**
-- 居中显示
-- 图注：12px，`#666666`，居中，图片下方 6px
+```html
+<div class="fig-wrap">
+  <img src="images_{型号}/{文件名}.svg" alt="描述">
+  <div class="fig-caption">图 1 — 产品结构</div>
+</div>
+```
 
-**页码：**
-- 底部居中，`#999999`，上方细线 1px `#E5E5E5`
+### 按键名称
 
-### HTML/CSS 核心片段
+```html
+<span class="btn-name">Seal</span>
+```
+
+### 技术参数表
+
+```html
+<table>
+  <thead><tr><th>参数</th><th>规格</th></tr></thead>
+  <tbody>
+    <tr><td class="spec-label">电压</td><td class="spec-value">220~240 Vac</td></tr>
+  </tbody>
+</table>
+```
+
+### 故障排除表
+
+```html
+<table>
+  <thead><tr><th style="width:22%">故障现象</th><th style="width:40%">可能原因</th><th style="width:38%">解决方案</th></tr></thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><b>不能开机</b></td>
+      <td>电源线未正确插入</td>
+      <td>确保电源线已正确插入。</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+### 品牌与保修（末页）
+
+```html
+<!-- CN 版 -->
+<div class="sub-title">品牌商</div>
+<table>
+  <tbody>
+    <tr><td class="spec-label" style="width:30%">品牌商</td><td class="spec-value">[品牌名]</td></tr>
+    <tr><td class="spec-label">地址</td><td>[地址]</td></tr>
+    <tr><td class="spec-label">网址</td><td>[网址]</td></tr>
+    <tr><td class="spec-label">客服邮箱</td><td>[邮箱]</td></tr>
+  </tbody>
+</table>
+<div class="sub-title">授权制造商</div>
+<table>
+  <tbody>
+    <tr><td class="spec-label" style="width:30%">制造商</td><td class="spec-value">广州亚俊氏真空科技股份有限公司<br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+    <tr><td class="spec-label">地址</td><td>广东省广州市番禺区南村镇启业路1号</td></tr>
+    <tr><td class="spec-label">网址</td><td>www.argiontechnology.com</td></tr>
+  </tbody>
+</table>
+
+<!-- EN 版 -->
+<div class="sub-title">Brand Information</div>
+<table>
+  <tbody>
+    <tr><td class="spec-label" style="width:30%">Brand</td><td class="spec-value">[Brand Name]</td></tr>
+    <tr><td class="spec-label">Address</td><td>[Address]</td></tr>
+    <tr><td class="spec-label">Website</td><td>[Website]</td></tr>
+    <tr><td class="spec-label">Customer Support</td><td>[Email]</td></tr>
+  </tbody>
+</table>
+<div class="sub-title">Manufacturer</div>
+<table>
+  <tbody>
+    <tr><td class="spec-label" style="width:30%">Manufacturer</td><td class="spec-value">Guangzhou Argion Electric Appliance Co., Ltd.<br><span style="font-weight:400;font-size:12px;color:#666">广州亚俊氏真空科技股份有限公司</span></td></tr>
+    <tr><td class="spec-label">Address</td><td>No. 1, Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
+    <tr><td class="spec-label">Website</td><td>www.argiontechnology.com</td></tr>
+  </tbody>
+</table>
+```
+
+### 页脚
+
+```html
+<div class="page-footer">
+  <span>[品牌] [型号] 使用说明书</span>
+  <span class="page-num">3</span>
+</div>
+```
+
+---
+
+## 十、CSS 设计系统
+
+完整 CSS，直接内嵌在 HTML 的 `<style>` 标签中。所有色值、字号、间距以本文件第五章为准。
 
 ```css
-.page {
-  width: 210mm;
-  min-height: 297mm;
-  padding: 10mm 10.5mm;
-  font-family: "MILanPro", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #1A1A1A;
-  background: #fff;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f0f0f0; font-family: "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif; }
+.page { width: 210mm; min-height: 297mm; padding: 12.7mm; margin: 8mm auto; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.12); position: relative; page-break-after: always; font-size: 14px; line-height: 1.7; color: #1A1A1A; }
 
-.section-title {
-  border-left: 4px solid #FF6900;
-  padding-left: 12px;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin: 32px 0 16px;
-}
+.page-cover { display: flex; flex-direction: column; justify-content: space-between; padding: 20mm 14mm 15mm; }
+.cover-top { display: flex; justify-content: flex-start; align-items: center; }
+.cover-brand { font-size: 13px; font-weight: 700; letter-spacing: 3px; color: #1A1A1A; text-transform: uppercase; }
+.cover-brand span { display: inline-block; width: 28px; height: 4px; background: #FF6900; margin-right: 8px; vertical-align: middle; }
+.cover-center { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 0 20mm; }
+.cover-product-img { width: 100%; max-height: 80mm; object-fit: contain; margin-bottom: 16mm; }
+.cover-model { font-size: 11px; font-weight: 600; letter-spacing: 4px; color: #FF6900; text-transform: uppercase; margin-bottom: 6px; }
+.cover-title { font-size: 32px; font-weight: 700; color: #1A1A1A; line-height: 1.2; margin-bottom: 4px; }
+.cover-subtitle { font-size: 16px; font-weight: 400; color: #666; }
+.cover-divider { width: 40px; height: 3px; background: #FF6900; margin: 14px 0; }
+.cover-bottom { border-top: 1px solid #E5E5E5; padding-top: 8px; font-size: 11px; color: #999; line-height: 1.6; }
 
-.step-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  background: #FF6900;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 12px;
-  font-weight: 700;
-}
+.toc-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #FF6900; }
+.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px dotted #E5E5E5; font-size: 14px; }
+.toc-item:last-child { border-bottom: none; }
+.toc-chapter { color: #FF6900; font-weight: 700; margin-right: 8px; }
+.toc-name { flex: 1; color: #1A1A1A; }
+.toc-page { color: #999; font-size: 13px; min-width: 24px; text-align: right; }
 
-.warning-box {
-  border-left: 4px solid #FF6900;
-  background: #FFF3E0;
-  padding: 12px 16px;
-  margin: 12px 0;
-}
+.section-title { border-left: 4px solid #FF6900; padding-left: 12px; font-size: 18px; font-weight: 700; color: #1A1A1A; margin: 0 0 16px; line-height: 1.3; }
+.section-title .chapter-num { color: #FF6900; margin-right: 6px; }
+.sub-title { font-size: 15px; font-weight: 700; color: #1A1A1A; margin: 20px 0 10px; border-left: 3px solid #E5E5E5; padding-left: 10px; }
 
-.caution-box {
-  border-left: 4px solid #FFC107;
-  background: #FFFDE7;
-  padding: 12px 16px;
-  margin: 12px 0;
-}
+.warning-box { border-left: 4px solid #FF6900; background: #FFF3E0; padding: 12px 16px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+.warning-box .box-title { font-size: 13px; font-weight: 700; color: #E65100; margin-bottom: 8px; }
+.caution-box { border-left: 4px solid #FFC107; background: #FFFDE7; padding: 12px 16px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+.caution-box .box-title { font-size: 13px; font-weight: 700; color: #F57F17; margin-bottom: 8px; }
+.note-box { border-left: 4px solid #E5E5E5; background: #F9F9F9; padding: 10px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; font-size: 13px; color: #555; }
+.note-box .box-title { font-weight: 700; color: #444; margin-bottom: 4px; }
+.box-list { list-style: none; padding: 0; }
+.box-list li { padding: 2px 0 2px 16px; position: relative; font-size: 13px; line-height: 1.6; }
+.box-list li::before { content: "·"; position: absolute; left: 4px; color: #FF6900; font-weight: 700; }
 
-.note-box {
-  border-left: 4px solid #E5E5E5;
-  background: #F9F9F9;
-  padding: 12px 16px;
-  margin: 12px 0;
+.steps { list-style: none; padding: 0; margin: 10px 0; }
+.steps li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; font-size: 14px; line-height: 1.6; }
+.step-num { flex-shrink: 0; width: 24px; height: 24px; background: #FF6900; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; margin-top: 1px; }
+
+.bullet-list { list-style: none; padding: 0; margin: 8px 0; }
+.bullet-list li { padding: 3px 0 3px 18px; position: relative; font-size: 14px; line-height: 1.65; }
+.bullet-list li::before { content: "·"; position: absolute; left: 4px; color: #FF6900; font-size: 18px; line-height: 1.3; }
+
+.fig-wrap { text-align: center; margin: 14px 0; }
+.fig-wrap img { max-width: 80%; max-height: 70mm; object-fit: contain; display: inline-block; }
+.fig-caption { font-size: 12px; color: #888; margin-top: 5px; text-align: center; }
+
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th { background: #F2F2F2; font-weight: 700; padding: 8px 12px; text-align: left; border: 1px solid #CCCCCC; color: #333; }
+td { padding: 7px 12px; border: 1px solid #CCCCCC; color: #1A1A1A; vertical-align: top; }
+tr:nth-child(even) td { background: #FAFAFA; }
+.spec-label { color: #666; font-size: 13px; }
+.spec-value { font-weight: 600; }
+
+.btn-name { display: inline-block; background: #F5F5F5; border: 1px solid #DDD; border-radius: 3px; padding: 1px 6px; font-size: 12px; font-family: monospace; color: #333; white-space: nowrap; }
+
+.page-footer { position: absolute; bottom: 6mm; left: 12.7mm; right: 12.7mm; border-top: 1px solid #E5E5E5; padding-top: 6px; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #BDBDBD; }
+.page-num { font-size: 12px; color: #999; }
+
+@media print {
+  body { background: #fff; }
+  .page { margin: 0; box-shadow: none; min-height: 297mm; overflow: visible; }
+  table, .steps, .warning-box, .caution-box, .note-box { page-break-inside: avoid; }
+  .section-title, .sub-title { page-break-after: avoid; }
 }
 ```
 
 ---
 
-## 十、交付前检查清单
+## 十一、交付前检查清单
 
-在说明书交付给客户前，必须逐项确认：
-
-- [ ] 安全警示三级体系完整（WARNING / CAUTION / NOTICE）
+- [ ] 安全警示三级体系完整（WARNING / CAUTION / NOTICE），无自创警示框
 - [ ] 无语法错误、错别字、双句号
 - [ ] Note 无重复
 - [ ] 按键名称与功能描述一致
@@ -373,7 +487,13 @@ For support, contact us at: [email] | [website]
 - [ ] 文档中只保留一个品牌的信息
 - [ ] 客服邮箱已填写（非占位符）
 - [ ] 技术参数与目标市场匹配（美标/欧标）
-- [ ] 图片全部为嵌入式（非浮动）
-- [ ] 表格表头无绿色背景
+- [ ] 图片全部为嵌入式，优先 SVG
+- [ ] 表格表头背景色 #F2F2F2，边框色 #CCCCCC
 - [ ] 页边距上下左右均为 12.7 mm
 - [ ] 章节标题符合命名规范
+- [ ] 制造商信息在所有语言版本中均存在
+- [ ] 品牌商信息在所有语言版本中完全一致
+- [ ] 打印 CSS 使用 `min-height + overflow: visible`
+- [ ] 大表格在合理位置允许分页
+- [ ] 操作步骤数量和顺序在所有语言版本中一致
+- [ ] 数值、按键名称在所有语言版本中完全一致

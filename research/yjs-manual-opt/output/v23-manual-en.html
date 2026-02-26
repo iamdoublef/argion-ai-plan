@@ -273,16 +273,16 @@ table {
   font-size: 13px;
 }
 th {
-  background: #F5F5F5;
+  background: #F2F2F2;
   font-weight: 700;
   padding: 8px 12px;
   text-align: left;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #CCCCCC;
   color: #333;
 }
 td {
   padding: 7px 12px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #CCCCCC;
   color: #1A1A1A;
   vertical-align: top;
 }
@@ -293,7 +293,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
 /* ===== 按键名称 ===== */
 .btn-name {
   display: inline-block;
-  background: #F5F5F5;
+  background: #F2F2F2;
   border: 1px solid #DDD;
   border-radius: 3px;
   padding: 1px 6px;
@@ -322,7 +322,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
 /* ===== 打印优化 ===== */
 @media print {
   body { background: #fff; }
-  .page { margin: 0; box-shadow: none; height: 297mm; overflow: hidden; }
+  .page { margin: 0; box-shadow: none; min-height: 297mm; overflow: visible; }
   table, .steps, .warning-box, .caution-box, .note-box { page-break-inside: avoid; }
   .section-title, .sub-title { page-break-after: avoid; }
 }
@@ -864,8 +864,8 @@ tr:nth-child(even) td { background: #FAFAFA; }
     <li><b>Bacteria</b> — Bacteria cause unpleasant odors, discoloration, or softening. Under certain conditions, Clostridium botulinum can grow in the absence of air and cannot be detected by smell or taste.</li>
   </ul>
   <p style="margin-top:10px">As with any storage method, it is important to inspect food for spoilage before consumption. At temperatures of 25 °F (-4 °C) or lower, microbial growth is significantly reduced. For long-term storage, vacuum sealing followed by freezing is recommended.</p>
-  <div class="warning-box" style="margin-top:14px">
-    <div class="box-title">IMPORTANT</div>
+  <div class="notice-box" style="margin-top:14px">
+    <div class="box-title">NOTICE</div>
     Vacuum packaging is not a substitute for refrigeration or freezing. Any perishable food that requires refrigeration must still be kept refrigerated or frozen after vacuum packaging.
   </div>
 
@@ -921,6 +921,15 @@ tr:nth-child(even) td { background: #FAFAFA; }
       <tr><td class="spec-label">Address</td><td>FLAT/RM 404A BEVERLEY COMMERCIAL CENTRE 87-105 CHATHAM ROAD SOUTH TSIM SHA TSUI KL HONG KONG</td></tr>
       <tr><td class="spec-label">Website</td><td>www.wevactech.com</td></tr>
       <tr><td class="spec-label">Customer Support</td><td>support@wevactech.com</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-title">Manufacturer</div>
+  <table>
+    <tbody>
+      <tr><td class="spec-label" style="width:30%">Manufacturer</td><td class="spec-value">Guangzhou Argion Electric Appliance Co., Ltd.<br><span style="font-weight:400;font-size:12px;color:#666">广州亚俊氏真空科技股份有限公司</span></td></tr>
+      <tr><td class="spec-label">Address</td><td>No. 1, Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
+      <tr><td class="spec-label">Website</td><td>www.argiontechnology.com</td></tr>
     </tbody>
   </table>
 

@@ -273,16 +273,16 @@ table {
   font-size: 13px;
 }
 th {
-  background: #F5F5F5;
+  background: #F2F2F2;
   font-weight: 700;
   padding: 8px 12px;
   text-align: left;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #CCCCCC;
   color: #333;
 }
 td {
   padding: 7px 12px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #CCCCCC;
   color: #1A1A1A;
   vertical-align: top;
 }
@@ -293,7 +293,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
 /* ===== 按键名称 ===== */
 .btn-name {
   display: inline-block;
-  background: #F5F5F5;
+  background: #F2F2F2;
   border: 1px solid #DDD;
   border-radius: 3px;
   padding: 1px 6px;
@@ -322,7 +322,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
 /* ===== 打印优化 ===== */
 @media print {
   body { background: #fff; }
-  .page { margin: 0; box-shadow: none; height: 297mm; overflow: hidden; }
+  .page { margin: 0; box-shadow: none; min-height: 297mm; overflow: visible; }
   table, .steps, .warning-box, .caution-box, .note-box { page-break-inside: avoid; }
   .section-title, .sub-title { page-break-after: avoid; }
 }
@@ -864,8 +864,8 @@ tr:nth-child(even) td { background: #FAFAFA; }
     <li><b>细菌</b> — 导致难闻的气味、变色或变柔软。在适当的条件下，肉毒梭菌可以在没有空气的情况下生长，且无法通过气味或味道检测到。</li>
   </ul>
   <p style="margin-top:10px">与任何其他储存方式一样，在食用前检查食品是否变质是很重要的。在 -4°C 或更低温度下，可以显著减少微生物的生长。对于长期储存，建议进行真空封装后保持冷冻。</p>
-  <div class="warning-box" style="margin-top:14px">
-    <div class="box-title">重要提示</div>
+  <div class="notice-box" style="margin-top:14px">
+    <div class="box-title">NOTICE</div>
     真空包装不能代替冷藏或冷冻。任何需要冷藏的易腐食品在真空包装后仍必须保持冷藏或冷冻。
   </div>
 
