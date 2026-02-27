@@ -44,3 +44,13 @@ commit: uncommitted
   - 主线：入口采证据→台账记录+分级+追溯→评分卡统计→考核挂钩→副总自驱动
   - 5个环节逐一拆解：做什么、现在什么状态、需要确认什么
   - 11项待确认事项（5项企业侧信息 + 5项管理者规则 + 1项远期确认）
+
+### 2026-02-26 需求调研设计：双层远程调研（语音+问卷）+ 分阶段方案框架
+commit: uncommitted
+- ptr: `file:research/yjs-decision-audit/data/d1-voice-questions.md`
+  - 管理者语音问题清单（5题）：先管谁、考核力度、严重标准、说明书先做否、其他痛点
+- ptr: `file:research/yjs-decision-audit/data/d2-internal-survey.md`
+  - 内部人员在线问卷（12题，3组）：IT/信息化4题、产品/研发4题、运营/电商4题
+- ptr: `file:research/yjs-decision-audit/data/d3-phased-plan.md`
+  - 近/中/远期方案框架 + 调研→方案决策树
+  - 近期（1-4周）零依赖可并行启动；中期路径取决于问卷结果；远期取决于管理者决策
