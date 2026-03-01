@@ -75,3 +75,19 @@
 - Regression results:
   - Playwright render check: all 5 HTML files `zero_render=0`.
   - Visual page checks passed: MI pages 8/9/10/11, CN page 8, EN page 8 show both headers and images.
+
+## 2026-03-01 V24 Full Fix v2 (new release path)
+- New-path policy executed: all outputs moved to `releases/2026-03-01_full-fix-v2/` (no overwrite of old artifacts).
+- Layout refactor:
+  - Removed print `zoom` page-index hotfixes.
+  - Replaced with scoped compact classes (`compact-ops`, `compact-accessories`, `compact-warranty`, `compact-troubleshoot`).
+  - Fixed overflow pages and restored reading PDFs to exactly 18 pages for all 5 variants.
+- Content consistency fixes:
+  - Added control-panel callout mapping `1..7` into function table for all variants.
+  - Unified figure-caption policy in operation chapter (removed Fig.11/12 mixed captions).
+- Validation:
+  - Re-exported 5 reading PDFs + regenerated 5 booklet PDFs.
+  - Reading PDFs: all 18 pages, no missing footer pages beyond cover.
+  - Booklets: all 10 pages.
+  - Image load report: all 5 HTML files `total=15`, `failed=0`, `zero=0`.
+  - Source baseline cross-check archived (`source-media-crosscheck-v2.json`) against `V23-*.docx` media set.

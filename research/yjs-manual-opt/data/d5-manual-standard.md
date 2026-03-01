@@ -565,3 +565,15 @@ tr:nth-child(even) td { background: #FAFAFA; }
 ### 12.9 Reading PDF vs Booklet Acceptance Scope (Added 2026-03-01)
 - 阅读审计对象必须是阅读版 PDF（`*-fixed.pdf` 或主输出 PDF），不得用 booklet 视觉顺序判定正文分页正确性。
 - Booklet 仅审计印刷拼版正确性（页数、补页、正反面配对），不作为“阅读顺序”合规依据。
+
+### 12.10 Print Layout Stability Gate (Added 2026-03-01 v2)
+- 禁止在 `@media print` 中使用按页序号的 `zoom` 热修（如 `.page:nth-of-type(n)`）作为长期方案。
+- 若出现分页溢出，必须优先使用“结构化修复”：
+  - 拆分内容块，或
+  - 对特定页面容器增加显式紧凑类（如 `compact-ops` / `compact-accessories` / `compact-warranty`），并保证语义清晰。
+- 阅读版 PDF 的页数必须与设计页数一致（当前 V23 目标为 18 页）；禁止产生“无页脚的额外物理页”。
+- 封面外（第 2 页起）每页必须存在统一页脚品牌线与页码，缺失即判定为分页溢出 ERROR。
+- 控制面板 callout 映射建议使用可移植字符（ASCII `1..7`），避免使用可能出现字体回退的特殊圈号字符。
+- 以 `V23-修正版-20260225.docx` 为基线时，每份 HTML 的图片加载验收应满足：
+  - `document.images` 总数 = 15（13 SVG + 2 PNG）
+  - `failed = 0` 且 `naturalWidth/naturalHeight` 均大于 0。

@@ -99,3 +99,14 @@ CSS 直接从 d5 第十章复制，HTML 组件从 d5 第九章模板库取用。
 ### 5. 导出后联动动作
 - 导出 `*-fixed.pdf` 后，必须同步执行 `python research/yjs-manual-opt/output/make-booklet.py`。
 - 新增产物时，先补 `make-booklet.py` 的 `jobs`，再执行导出链路。
+
+### 6. 打印稳定性开发要求（新增）
+- 禁止使用按页序号 `zoom` 的打印补丁（如 `.page:nth-of-type(n)`）；这类补丁会导致后续版本出现页眉间距漂移与额外溢出页。
+- 若某页超高，必须采用可追踪的结构化方案：
+  - 给目标页添加语义化紧凑类（例如 `compact-ops`、`compact-accessories`、`compact-warranty`、`compact-troubleshoot`）；
+  - 仅在该类内收紧间距/字号，不允许全局无差别缩放。
+- 控制面板图若存在 1..7 callout，功能表必须同步给出 1..7 映射；编号字符优先使用 ASCII 数字，避免圈号字符的字体兼容风险。
+- V23 链路导出后必须满足：
+  - 阅读版 PDF 固定 18 页；
+  - 封面外所有页都能提取到页脚品牌线；
+  - `document.images` 校验 15 张且 `failed=0`。

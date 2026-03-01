@@ -109,3 +109,30 @@ commit: uncommitted
 - ptr: `file:research/yjs-manual-opt/data/d5-manual-standard.md`
 - ptr: `file:.claude/agents/manual-auditor.md`
 - ptr: `file:.claude/agents/manual-writer.md`
+
+### 2026-03-01 V24 全量版式修复（新路径发布 + 完整审计 PASS）
+commit: uncommitted
+交付策略：不覆盖旧文件，在 `releases/2026-03-01_full-fix-v2/` 新路径重建并导出 5 套阅读版 + booklet。
+
+关键修复：
+- 移除按页序 `zoom` 的打印热修，改为结构化紧凑页类（`compact-ops/accessories/warranty/troubleshoot`）。
+- 修复 `6.x` 与 `10` 章溢出导致的额外物理页（阅读版统一回到 18 页）。
+- 控制面板图补齐 `1..7` 编号映射（No. / Button）。
+- 统一图注策略，移除 6.10 的 Fig.11/12 混用图注。
+- 以 `V23-*.docx` 为源基线做媒体交叉核验；图片加载 15 张全部通过。
+
+审计结论：
+- 5 份阅读版 PDF：全部 18 页，封面外无缺页脚页。
+- 5 份 booklet：全部 10 页。
+- 图片加载：`failed=0`, `zero=0`（5/5 文件）。
+- 总结论：PASS。
+
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/v24-cn-main-fixed.pdf`
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/v24-en-main-fixed.pdf`
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/v24-mi-style-fixed.pdf`
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/v24-lifestyle-style-fixed.pdf`
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/v24-swiss-style-fixed.pdf`
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/audit/audit-report-v2.md`
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/audit/audit-metrics-v2.json`
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/audit/image-load-report.json`
+- ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/audit/source-media-crosscheck-v2.json`
