@@ -75,3 +75,27 @@ CSS 直接从 d5 第十章复制，HTML 组件从 d5 第九章模板库取用。
 - 翻译 EN 版时保持技术术语准确（如 Pulse Vac = Manual Vacuum）
 - 每个 `.page` 容器的内容不要超出 A4 页面高度，内容多时主动分页
 - 所有规范细节（CSS、模板、颜色、禁止事项等）均以 d5 为准，本文件不重复定义
+
+## 2026-03-01 开发补充要求（本轮事故复盘）
+
+### 1. 资源路径规范
+- 在 `experiments/2026-02-26_top-tier-styles/` 下维护的 HTML，图片引用必须使用 `../../output/images_v23/...`。
+- 禁止使用 `../output/images_v23/...`（会导致 PDF 导出时图片全部失效）。
+
+### 2. 结构安全线
+- 禁止批量编辑后残留损坏标签（如 `?/li>`、`?/div>` 等）。
+- 修改后必须验证 `.page` 容器总数与预期一致（当前 V23 完整版为 18）。
+- 页脚编号必须连续，不允许跳号或重复。
+
+### 3. 编码安全线
+- 文件统一 UTF-8；标题和章节名必须可读。
+- 每次大改后最少抽检术语：`真空封口机`、`操作指引`、`故障排除`。
+
+### 4. 导出前预检（强制）
+- Playwright `requestfailed` 必须为 0。
+- `document.images` 每张图必须 `complete=true` 且 `naturalWidth>0`。
+- DOM 页数、首章标题、目录页可读性通过后，才允许导出 PDF。
+
+### 5. 导出后联动动作
+- 导出 `*-fixed.pdf` 后，必须同步执行 `python research/yjs-manual-opt/output/make-booklet.py`。
+- 新增产物时，先补 `make-booklet.py` 的 `jobs`，再执行导出链路。

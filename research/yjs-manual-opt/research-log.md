@@ -50,3 +50,28 @@
 1. 大boss确认待确认事项后，深化方案
 2. 可选：做一个prompt模板demo，验证AI生成内容质量
 3. 可选：做一个python-docx脚本demo，验证自动化输出可行性
+
+## 2026-03-01 MI 2.0 导出故障复盘
+- 现象：`v23-mi-2.0-full-fixed.pdf` 出现图片缺失，部分页眉异常。
+- 根因：
+  - 图片路径误写为 `../output/images_v23/...`（应为 `../../output/images_v23/...`）。
+  - HTML 存在损坏闭合标签（`?/li>`、`?/div>` 等）导致结构与分页异常。
+- 修复：
+  - 重建 `v23-mi-2.0-full.html`，保留 MI 风格并接入已验证正文结构。
+  - 重导出 `v23-mi-2.0-full-fixed.pdf`，再生成 `v23-mi-2.0-full-fixed-booklet-A4.pdf`。
+- 沉淀：
+  - d5 增加导出链路门禁（路径、编码、结构、Playwright 预检、PDF 判定、booklet 联动）。
+  - manual-auditor/manual-writer 同步新增必查项与开发约束。
+
+## 2026-03-01 PDF Missing-Image Follow-up (SVG 0x0)
+- User report: operation pages still missed images and some headers.
+- Root cause confirmed:
+  - Image assets were loadable (`naturalWidth>0`).
+  - In `flex + print` layout, multiple SVG `<img>` nodes with only `max-width/max-height` rendered as `0x0`.
+- Fix applied:
+  - Updated 5 HTML files (`v23-manual-cn/en`, `v23-mi-2.0-full`, `v23-lifestyle-complete`, `v23-swiss-complete`) to explicit `width + height:auto` styles for affected SVG images.
+  - Re-exported CN/EN PDFs and all 3 experiment PDFs.
+  - Re-generated all booklet PDFs via `make-booklet.py`.
+- Regression results:
+  - Playwright render check: all 5 HTML files `zero_render=0`.
+  - Visual page checks passed: MI pages 8/9/10/11, CN page 8, EN page 8 show both headers and images.

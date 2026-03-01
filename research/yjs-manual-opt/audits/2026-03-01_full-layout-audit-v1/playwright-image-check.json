@@ -1,0 +1,42 @@
+[
+  {
+    "file": "D:/work/private/yjsplan/research/yjs-manual-opt/output/v23-manual-cn.html",
+    "failed": 0,
+    "total": 15,
+    "complete": 15,
+    "nonzeroNatural": 15,
+    "zero": 0
+  },
+  {
+    "file": "D:/work/private/yjsplan/research/yjs-manual-opt/output/v23-manual-en.html",
+    "failed": 0,
+    "total": 15,
+    "complete": 15,
+    "nonzeroNatural": 15,
+    "zero": 0
+  },
+  {
+    "file": "D:/work/private/yjsplan/research/yjs-manual-opt/experiments/2026-02-26_top-tier-styles/v23-mi-2.0-full.html",
+    "failed": 0,
+    "total": 15,
+    "complete": 15,
+    "nonzeroNatural": 15,
+    "zero": 0
+  },
+  {
+    "file": "D:/work/private/yjsplan/research/yjs-manual-opt/experiments/2026-02-26_top-tier-styles/v23-lifestyle-complete.html",
+    "failed": 0,
+    "total": 15,
+    "complete": 15,
+    "nonzeroNatural": 15,
+    "zero": 0
+  },
+  {
+    "file": "D:/work/private/yjsplan/research/yjs-manual-opt/experiments/2026-02-26_top-tier-styles/v23-swiss-complete.html",
+    "failed": 0,
+    "total": 15,
+    "complete": 15,
+    "nonzeroNatural": 15,
+    "zero": 0
+  }
+]

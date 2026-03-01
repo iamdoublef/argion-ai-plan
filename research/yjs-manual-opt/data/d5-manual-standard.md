@@ -497,3 +497,71 @@ tr:nth-child(even) td { background: #FAFAFA; }
 - [ ] 大表格在合理位置允许分页
 - [ ] 操作步骤数量和顺序在所有语言版本中一致
 - [ ] 数值、按键名称在所有语言版本中完全一致
+- [ ] 分页无孤立小节：`sub-title` 不得单独落在页底（其后正文少于 2 行视为不合格）
+- [ ] 同一版本正文页页眉策略一致：要么统一有 running header，要么统一无；不得混用
+- [ ] 同一章节同层级示意图图注策略一致：要么统一有图注，要么统一无图注
+- [ ] 图内存在编号 callout（1..N）时，必须提供完整编号映射说明（表格或列表），不得缺号
+
+---
+
+## 十二、2026-03-01 导出链路与质量门禁补充
+
+### 12.1 资源路径硬性规则
+- 在 `experiments/2026-02-26_top-tier-styles/` 下的 HTML，图片相对路径必须使用：`../../output/images_v23/...`。
+- 禁止使用 `../output/images_v23/...`（会被解析到 `experiments/output/...`，导致资源丢失）。
+- 交付前必须逐条验证 `<img src>` 可解析到本地真实文件。
+
+### 12.2 HTML 结构完整性规则
+- 禁止出现损坏闭合标签，如 `?/li>`、`?/div>`、`?/h2>`、`?/td>`、`?/span>`。
+- 所有页面容器必须是完整的 `<div class="page"> ... </div>` 结构。
+- 页脚页码必须连续；当前 V23 完整版要求从 `2` 连续到 `18`。
+
+### 12.3 文本编码规则
+- HTML 与 Markdown 统一使用 UTF-8。
+- 交付前需抽检关键术语，至少包括：`真空封口机`、`操作指引`、`故障排除`。
+- 若出现乱码（如标题或章节名异常字符），必须先修复编码再导出 PDF。
+
+### 12.4 导出前必做预检（Playwright）
+- `page.goto(file://...)` 后监听 `requestfailed`，失败请求数必须为 `0`。
+- 校验图片加载状态：`document.images` 中每张图应满足 `complete=true` 且 `naturalWidth>0`。
+- 校验 DOM 页面数与预期一致（当前 V23 完整手册为 `18` 页容器）。
+
+### 12.5 PDF 质检补充
+- PDF 页数必须与 DOM 页数一致。
+- 每个正文页顶部应可提取到章节号与章节名（如 `01 安全须知`）。
+- 对 SVG 为主的文档，不得仅用 PDF 内嵌位图数量判断“无图”；需结合页面文本、矢量绘制对象、人工抽样联合判定。
+
+### 12.6 Booklet 生成要求
+- `make-booklet.py` 的 `jobs` 必须覆盖当次新增产物（包括实验风格产物）。
+- 生成后验证 booklet 页数满足 `padded_pages / 2`（示例：18 页正文补齐到 20 页后，booklet 应为 10 页）。
+
+### 12.7 SVG Zero-Size Risk (Added 2026-03-01)
+- Experience: for SVG `<img>` inside `flex + print`, using only `max-width/max-height` can collapse rendered size to `0x0`, causing ?loaded but invisible? images in PDF.
+- Development requirements:
+  - For operation-page and cover SVG images, always set explicit `width` and `height:auto`, then keep `max-width/max-height` as upper bounds.
+  - Standard styles:
+    - Operation figures: `style="width:45mm;height:auto;max-height:40mm;max-width:45mm"`
+    - Cover figures: `style="width:100%;height:auto;max-height:85mm;max-width:100%"`
+  - Do not add new SVG `<img>` that has only `max-width/max-height` without explicit `width`.
+- QA requirements:
+  - Add Playwright zero-size gate: if `naturalWidth>0` but `getBoundingClientRect().width==0` or `height==0`, mark build as FAIL.
+  - For current V23, screenshot-sample key operation pages (8~11) after PDF export.
+  - Archive validation logs with image count, `zero_render` count, and failed entries.
+- [ ] Playwright zero-size check passed (`zero_render = 0`)
+- [ ] Key operation pages (8~11) screenshot spot-check passed (image + header both present)
+
+### 12.8 Pagination / Header / Caption Consistency Gate (Added 2026-03-01)
+- Pagination hard rules:
+  - `sub-title` + 其后步骤正文必须作为一个最小块布局；若剩余空间不足，整体换页。
+  - 同一章节跨页时，不得出现“前页大面积留白 + 后页仅延续少量内容”的分页。
+  - 操作图与对应步骤优先同页；若必须跨页，图文需在相邻页且保持顺序一致。
+- Header and vertical rhythm:
+  - 正文页（封面/目录除外）首内容块顶部间距应在同一版本内保持稳定，允许误差不超过 2 mm。
+  - 页眉/章节顶栏不得在同一版本中“部分页面有、部分页面无”。
+- Figure caption and numbering:
+  - 同层级操作示意图图注策略必须一致，不允许混用“部分有 Fig. 标注、部分无标注”。
+  - 存在图内 callout 编号（如控制面板 1..7）时，正文必须给出同编号映射说明，且编号连续无缺失。
+
+### 12.9 Reading PDF vs Booklet Acceptance Scope (Added 2026-03-01)
+- 阅读审计对象必须是阅读版 PDF（`*-fixed.pdf` 或主输出 PDF），不得用 booklet 视觉顺序判定正文分页正确性。
+- Booklet 仅审计印刷拼版正确性（页数、补页、正反面配对），不作为“阅读顺序”合规依据。

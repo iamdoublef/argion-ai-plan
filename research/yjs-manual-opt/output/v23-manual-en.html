@@ -325,6 +325,8 @@ tr:nth-child(even) td { background: #FAFAFA; }
   .page { margin: 0; box-shadow: none; min-height: 297mm; overflow: visible; }
   table, .steps, .warning-box, .caution-box, .note-box { page-break-inside: avoid; }
   .section-title, .sub-title { page-break-after: avoid; }
+  .page:nth-of-type(9), .page:last-of-type { zoom: 0.80; }
+  .page:nth-of-type(12) { zoom: 0.82; }
 }
 </style>
 </head>
@@ -337,7 +339,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
   </div>
   <div class="cover-center">
     <div class="fig-wrap" style="text-align:left;margin:0 0 12mm">
-      <img src="images_v23/image2.svg" alt="V23 Vacuum Sealer" style="max-height:85mm;max-width:100%">
+      <img src="images_v23/image2.svg" alt="V23 Vacuum Sealer" style="width:100%;height:auto;max-height:85mm;max-width:100%">
     </div>
     <div class="cover-model">MODEL V23</div>
     <div class="cover-title">Vacuum Sealer</div>
@@ -360,9 +362,9 @@ tr:nth-child(even) td { background: #FAFAFA; }
   <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Specifications</span></span><span class="toc-page">7</span></div>
   <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Operating Instructions</span></span><span class="toc-page">8</span></div>
   <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Troubleshooting</span></span><span class="toc-page">12</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Maintenance</span></span><span class="toc-page">14</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vacuum Packaging Guide</span></span><span class="toc-page">15</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Brand &amp; Warranty</span></span><span class="toc-page">17</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Maintenance</span></span><span class="toc-page">15</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vacuum Packaging Guide</span></span><span class="toc-page">16</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Brand &amp; Warranty</span></span><span class="toc-page">18</span></div>
   <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">2</span></div>
 </div>
 
@@ -371,7 +373,8 @@ tr:nth-child(even) td { background: #FAFAFA; }
   <h2 class="section-title"><span class="chapter-num">01</span>Safety Instructions</h2>
   <div class="warning-box">
     <div class="box-title">WARNING</div>
-    <ul class="box-list">
+        <div style="margin:6px 0 8px;"><img src="images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
+<ul class="box-list">
       <li>This appliance is for household use only. Do not use it for any purpose other than its intended use.</li>
       <li>Do not allow children to play with the appliance or power cord. Children, persons with reduced physical or cognitive abilities should use this appliance only under adult supervision. Keep children away during operation to prevent accidents.</li>
       <li>Small parts and vacuum bags may pose a choking hazard. Keep them out of reach of children.</li>
@@ -508,7 +511,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="images_v23/image12.svg" alt="Bag Cutter Operation" style="max-height:40mm;max-width:45mm">
+      <img src="images_v23/image12.svg" alt="Bag Cutter Operation" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
     </div>
   </div>
 
@@ -530,7 +533,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="images_v23/image14.svg" alt="Seal Operation" style="max-height:40mm;max-width:45mm">
+      <img src="images_v23/image14.svg" alt="Seal Operation" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
     </div>
   </div>
 
@@ -572,7 +575,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="images_v23/image16.svg" alt="Liquid Mode" style="max-height:45mm;max-width:45mm">
+      <img src="images_v23/image16.svg" alt="Liquid Mode" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
     </div>
   </div>
 
@@ -609,7 +612,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ul>
     </div>
     <div style="flex:0 0 auto">
-      <img src="images_v23/image18.svg" alt="Vacuum Hose" style="max-height:35mm;max-width:40mm">
+      <img src="images_v23/image18.svg" alt="Vacuum Hose" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
     </div>
   </div>
 
@@ -628,8 +631,9 @@ tr:nth-child(even) td { background: #FAFAFA; }
         <li><span class="step-num">9</span>When finished, remove the vacuum hose and adapter.</li>
       </ol>
     </div>
-    <div style="flex:0 0 auto">
-      <img src="images_v23/image22.svg" alt="Mason Jar Operation" style="max-height:45mm;max-width:40mm">
+    <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:center">
+      <img src="images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
     </div>
   </div>
 
@@ -648,7 +652,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="images_v23/image24.svg" alt="Canister Operation" style="max-height:45mm;max-width:40mm">
+      <img src="images_v23/image24.svg" alt="Canister Operation" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
     </div>
   </div>
   <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">10</span></div>
@@ -673,7 +677,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="images_v23/image26.svg" alt="Marinate Operation" style="max-height:45mm;max-width:40mm">
+      <img src="images_v23/image26.svg" alt="Marinate Operation" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
     </div>
   </div>
 
@@ -771,7 +775,26 @@ tr:nth-child(even) td { background: #FAFAFA; }
         <td>Sharp items punctured the bag</td>
         <td>Wrap sharp edges with paper towels or puncture-proof pads and use a new bag.</td>
       </tr>
-      <tr>
+      </tbody>
+  </table>
+
+  <div class="note-box">
+    <div class="box-title">NOTICE</div>
+    Some fruits and vegetables may release gases if not properly blanched before packaging, or if packed while still hot. This can cause the vacuum bag to appear loose — this is normal and does not indicate a leak.
+  </div>
+  <div class="note-box">If the above troubleshooting steps do not resolve the issue, please contact customer support for assistance. Do not disassemble the machine yourself.</div>
+  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">12</span></div>
+</div>
+
+<!-- ========== Troubleshooting (Liquid Ingress) ========== -->
+
+<div class="page">
+  <h2 class="section-title"><span class="chapter-num">07</span>Troubleshooting (Accessories & Alarm)</h2>
+
+  <table>
+    <thead><tr><th style="width:22%">Problem</th><th style="width:40%">Possible Cause</th><th style="width:38%">Solution</th></tr></thead>
+    <tbody>
+<tr>
         <td rowspan="3"><b>Accessories mode cannot vacuum</b></td>
         <td>Flat nozzle of vacuum hose not fully inserted into the external vacuum port</td>
         <td>Firmly twist and push the flat nozzle down until fully inserted.</td>
@@ -796,17 +819,11 @@ tr:nth-child(even) td { background: #FAFAFA; }
     </tbody>
   </table>
 
-  <div class="note-box">
-    <div class="box-title">NOTICE</div>
-    Some fruits and vegetables may release gases if not properly blanched before packaging, or if packed while still hot. This can cause the vacuum bag to appear loose — this is normal and does not indicate a leak.
-  </div>
-  <div class="note-box">If the above troubleshooting steps do not resolve the issue, please contact customer support for assistance. Do not disassemble the machine yourself.</div>
-  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">12</span></div>
+  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">13</span></div>
 </div>
 
-<!-- ========== Troubleshooting (Liquid Ingress) ========== -->
 <div class="page">
-  <h2 class="section-title"><span class="chapter-num">07</span>Troubleshooting (cont.)</h2>
+  <h2 class="section-title"><span class="chapter-num">07</span>Troubleshooting (Liquid Ingress)</h2>
 
   <div class="sub-title">What to Do If Liquid Enters the Machine</div>
 
@@ -834,7 +851,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
     <div class="box-title">CAUTION</div>
     If the internal tubing is not cleaned regularly, it may become clogged over time, affecting vacuum performance. In this case, please contact customer support for tubing replacement.
   </div>
-  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">13</span></div>
+  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">14</span></div>
 </div>
 
 <!-- ========== Chapter 08 Maintenance ========== -->
@@ -851,7 +868,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
     <li>After each use, inspect the sealing gasket for significant deformation and the heat tape for damage or peeling. Replace promptly if needed.</li>
     <li>The drip tray and vacuum hose are not dishwasher-safe and should not be cleaned with high-temperature methods.</li>
   </ul>
-  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">14</span></div>
+  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">15</span></div>
 </div>
 
 <!-- ========== Chapter 09 Vacuum Packaging Guide ========== -->
@@ -875,7 +892,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
     <li>Cruciferous vegetables (broccoli, Brussels sprouts, cabbage, etc.) naturally release gases during storage. After cooking and vacuum sealing, store them in the refrigerator.</li>
     <li>Never vacuum-store garlic, mushrooms, or other fungi. Harmful substances may develop under vacuum conditions, posing a health risk if consumed.</li>
   </ul>
-  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">15</span></div>
+  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">16</span></div>
 </div>
 
 <!-- ========== Vacuum Packaging Guide (Food Storage Table) ========== -->
@@ -905,7 +922,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       <tr><td>Coffee / Tea / Milk Powder</td><td>2–6 months</td><td>12 months</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">16</span></div>
+  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">17</span></div>
 </div>
 
 <!-- ========== Chapter 10 Brand & Warranty ========== -->
@@ -942,7 +959,8 @@ tr:nth-child(even) td { background: #FAFAFA; }
   </ul>
   <p style="margin-top:12px">To request warranty service, send us an email at: <b>support@wevactech.com</b></p>
 
-  <div class="sub-title" style="margin-top:24px">Warranty Card</div>
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="images_v23/image31.png" alt="Warranty Cut Line" style="width:100%;max-height:8mm;object-fit:contain;"></div>
+<div class="sub-title" style="margin-top:24px">Warranty Card</div>
   <table>
     <tbody>
       <tr><td class="spec-label" style="width:35%">Customer Name</td><td></td></tr>
@@ -956,7 +974,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       <tr><td class="spec-label">Retailer Name</td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">17</span></div>
+  <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">18</span></div>
 </div>
 
 </body>

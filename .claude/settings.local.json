@@ -14,7 +14,8 @@
       "WebFetch(domain:www.google.com)",
       "WebFetch(domain:asq.org)",
       "WebFetch(domain:www.investopedia.com)",
-      "WebFetch(domain:www.sciencedirect.com)"
+      "WebFetch(domain:www.sciencedirect.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }

@@ -2,7 +2,7 @@
   "_comment": "V23 真空封口机产品配置文件 — 所有因产品/品牌/市场不同而变化的字段",
   "product": {
     "model": "V23",
-    "name_cn": "真空封装口机",
+    "name_cn": "真空封口机",
     "name_en": "Vacuum Sealer",
     "active_brand": "wevac",
     "_comment": "active_brand 决定使用哪个品牌信息"

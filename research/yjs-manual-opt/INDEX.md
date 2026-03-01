@@ -88,3 +88,24 @@ commit: 0914fd3
 - ptr: `git:0914fd3:.claude/agents/manual-writer.md`
 - ptr: `git:0914fd3:.claude/agents/manual-auditor.md`
 - ptr: `git:0914fd3:research/yjs-manual-opt/data/audit-report.md`
+
+### 2026-02-26 目录整理：归位原始图片、清理调试产物、归档实验
+commit: 7047921
+原始图片移入source/images_*_raw/，output/删除18个未引用PNG只保留13个SVG，删除thumbs/b64等调试产物，top-tier/归档为experiments/，INDEX.md更新目录结构。
+- ptr: `git:7047921:research/yjs-manual-opt/INDEX.md`
+
+### 2026-03-01 MI 2.0 导出链路复盘：图片丢失与页眉异常修复 + 规则补强
+commit: uncommitted
+复盘结论：
+- 根因1：`v23-mi-2.0-full.html` 图片路径写成 `../output/images_v23/...`，在 experiments 目录下解析错误，导致 PDF 导出图片失效。
+- 根因2：HTML 出现损坏闭合标签（如 `?/li>`、`?/div>`），引发结构异常，表现为分页和页眉显示异常。
+- 处置：重建 MI 文件为“MI 样式 + 已验证正文结构”，统一路径到 `../../output/images_v23/...`，并重导出 PDF + booklet。
+- 规则沉淀：已将本次经验补充到 d5/manual-auditor/manual-writer，新增路径、编码、标签完整性、Playwright 预检、PDF 判定与 booklet 联动要求。
+
+- ptr: `file:research/yjs-manual-opt/experiments/2026-02-26_top-tier-styles/v23-mi-2.0-full.html`
+- ptr: `file:research/yjs-manual-opt/experiments/2026-02-26_top-tier-styles/v23-mi-2.0-full-fixed.pdf`
+- ptr: `file:research/yjs-manual-opt/experiments/2026-02-26_top-tier-styles/v23-mi-2.0-full-fixed-booklet-A4.pdf`
+- ptr: `file:research/yjs-manual-opt/output/make-booklet.py`
+- ptr: `file:research/yjs-manual-opt/data/d5-manual-standard.md`
+- ptr: `file:.claude/agents/manual-auditor.md`
+- ptr: `file:.claude/agents/manual-writer.md`
