@@ -2,9 +2,9 @@
   "release": "2026-03-01_full-fix-v2",
   "checks": [
     {
-      "html": "v24-cn-main.html",
-      "pdf": "v24-cn-main-fixed.pdf",
-      "booklet": "v24-cn-main-fixed-booklet-A4.pdf",
+      "html": "v23-cn-main.html",
+      "pdf": "v23-cn-main-fixed.pdf",
+      "booklet": "v23-cn-main-fixed-booklet-A4.pdf",
       "pdf_page_count": 18,
       "booklet_page_count": 10,
       "missing_footer_pages": [],
@@ -115,9 +115,9 @@
       }
     },
     {
-      "html": "v24-en-main.html",
-      "pdf": "v24-en-main-fixed.pdf",
-      "booklet": "v24-en-main-fixed-booklet-A4.pdf",
+      "html": "v23-en-main.html",
+      "pdf": "v23-en-main-fixed.pdf",
+      "booklet": "v23-en-main-fixed-booklet-A4.pdf",
       "pdf_page_count": 18,
       "booklet_page_count": 10,
       "missing_footer_pages": [],
@@ -228,9 +228,9 @@
       }
     },
     {
-      "html": "v24-mi-style.html",
-      "pdf": "v24-mi-style-fixed.pdf",
-      "booklet": "v24-mi-style-fixed-booklet-A4.pdf",
+      "html": "v23-mi-style.html",
+      "pdf": "v23-mi-style-fixed.pdf",
+      "booklet": "v23-mi-style-fixed-booklet-A4.pdf",
       "pdf_page_count": 18,
       "booklet_page_count": 10,
       "missing_footer_pages": [],
@@ -341,9 +341,9 @@
       }
     },
     {
-      "html": "v24-lifestyle-style.html",
-      "pdf": "v24-lifestyle-style-fixed.pdf",
-      "booklet": "v24-lifestyle-style-fixed-booklet-A4.pdf",
+      "html": "v23-lifestyle-style.html",
+      "pdf": "v23-lifestyle-style-fixed.pdf",
+      "booklet": "v23-lifestyle-style-fixed-booklet-A4.pdf",
       "pdf_page_count": 18,
       "booklet_page_count": 10,
       "missing_footer_pages": [],
@@ -454,9 +454,9 @@
       }
     },
     {
-      "html": "v24-swiss-style.html",
-      "pdf": "v24-swiss-style-fixed.pdf",
-      "booklet": "v24-swiss-style-fixed-booklet-A4.pdf",
+      "html": "v23-swiss-style.html",
+      "pdf": "v23-swiss-style-fixed.pdf",
+      "booklet": "v23-swiss-style-fixed-booklet-A4.pdf",
       "pdf_page_count": 18,
       "booklet_page_count": 10,
       "missing_footer_pages": [],

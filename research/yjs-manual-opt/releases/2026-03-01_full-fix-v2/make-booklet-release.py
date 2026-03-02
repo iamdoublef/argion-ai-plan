@@ -37,11 +37,11 @@ def impose_booklet(src_pdf: Path, out_pdf: Path):
 def main():
     root = Path(r'D:/work/private/yjsplan/research/yjs-manual-opt/releases/2026-03-01_full-fix-v2')
     jobs = [
-        ('v24-cn-main-fixed.pdf', 'v24-cn-main-fixed-booklet-A4.pdf'),
-        ('v24-en-main-fixed.pdf', 'v24-en-main-fixed-booklet-A4.pdf'),
-        ('v24-mi-style-fixed.pdf', 'v24-mi-style-fixed-booklet-A4.pdf'),
-        ('v24-lifestyle-style-fixed.pdf', 'v24-lifestyle-style-fixed-booklet-A4.pdf'),
-        ('v24-swiss-style-fixed.pdf', 'v24-swiss-style-fixed-booklet-A4.pdf'),
+        ('v23-cn-main-fixed.pdf', 'v23-cn-main-fixed-booklet-A4.pdf'),
+        ('v23-en-main-fixed.pdf', 'v23-en-main-fixed-booklet-A4.pdf'),
+        ('v23-mi-style-fixed.pdf', 'v23-mi-style-fixed-booklet-A4.pdf'),
+        ('v23-lifestyle-style-fixed.pdf', 'v23-lifestyle-style-fixed-booklet-A4.pdf'),
+        ('v23-swiss-style-fixed.pdf', 'v23-swiss-style-fixed-booklet-A4.pdf'),
     ]
 
     for src_name, out_name in jobs:

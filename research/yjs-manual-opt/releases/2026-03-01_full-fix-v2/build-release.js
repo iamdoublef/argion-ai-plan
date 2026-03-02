@@ -4,11 +4,11 @@ const { chromium } = require(path.resolve(__dirname, '../../output/node_modules/
 
 const ROOT = __dirname;
 const manuals = [
-  { html: 'v24-cn-main.html', pdf: 'v24-cn-main-fixed.pdf' },
-  { html: 'v24-en-main.html', pdf: 'v24-en-main-fixed.pdf' },
-  { html: 'v24-mi-style.html', pdf: 'v24-mi-style-fixed.pdf' },
-  { html: 'v24-lifestyle-style.html', pdf: 'v24-lifestyle-style-fixed.pdf' },
-  { html: 'v24-swiss-style.html', pdf: 'v24-swiss-style-fixed.pdf' },
+  { html: 'v23-cn-main.html', pdf: 'v23-cn-main-fixed.pdf' },
+  { html: 'v23-en-main.html', pdf: 'v23-en-main-fixed.pdf' },
+  { html: 'v23-mi-style.html', pdf: 'v23-mi-style-fixed.pdf' },
+  { html: 'v23-lifestyle-style.html', pdf: 'v23-lifestyle-style-fixed.pdf' },
+  { html: 'v23-swiss-style.html', pdf: 'v23-swiss-style-fixed.pdf' },
 ];
 
 async function waitForAssets(page) {
