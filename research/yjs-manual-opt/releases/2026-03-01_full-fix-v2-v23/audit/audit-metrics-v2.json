@@ -1,0 +1,570 @@
+{
+  "release": "2026-03-01_full-fix-v2",
+  "checks": [
+    {
+      "html": "v23-cn-main.html",
+      "pdf": "v23-cn-main-fixed.pdf",
+      "booklet": "v23-cn-main-fixed-booklet-A4.pdf",
+      "pdf_page_count": 18,
+      "booklet_page_count": 10,
+      "missing_footer_pages": [],
+      "callout_no_count": 8,
+      "has_compact_accessories": true,
+      "has_compact_ops": true,
+      "has_compact_warranty": true,
+      "has_compact_troubleshoot": false,
+      "has_fig11_12_caption": false,
+      "image_load": {
+        "total": 15,
+        "complete": 15,
+        "nonzeroNatural": 15,
+        "zeroNatural": 0,
+        "failed": 0,
+        "src": [
+          {
+            "src": "../../output/images_v23/image2.svg",
+            "complete": true,
+            "nw": 192,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image3.png",
+            "complete": true,
+            "nw": 209,
+            "nh": 194
+          },
+          {
+            "src": "../../output/images_v23/image5.svg",
+            "complete": true,
+            "nw": 229,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image10.svg",
+            "complete": true,
+            "nw": 255,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image12.svg",
+            "complete": true,
+            "nw": 163,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image14.svg",
+            "complete": true,
+            "nw": 226,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image16.svg",
+            "complete": true,
+            "nw": 132,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image18.svg",
+            "complete": true,
+            "nw": 144,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image20.svg",
+            "complete": true,
+            "nw": 241,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image22.svg",
+            "complete": true,
+            "nw": 103,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image24.svg",
+            "complete": true,
+            "nw": 122,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image26.svg",
+            "complete": true,
+            "nw": 102,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image28.svg",
+            "complete": true,
+            "nw": 300,
+            "nh": 87
+          },
+          {
+            "src": "../../output/images_v23/image30.svg",
+            "complete": true,
+            "nw": 212,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image31.png",
+            "complete": true,
+            "nw": 664,
+            "nh": 44
+          }
+        ]
+      }
+    },
+    {
+      "html": "v23-en-main.html",
+      "pdf": "v23-en-main-fixed.pdf",
+      "booklet": "v23-en-main-fixed-booklet-A4.pdf",
+      "pdf_page_count": 18,
+      "booklet_page_count": 10,
+      "missing_footer_pages": [],
+      "callout_no_count": 8,
+      "has_compact_accessories": true,
+      "has_compact_ops": true,
+      "has_compact_warranty": true,
+      "has_compact_troubleshoot": true,
+      "has_fig11_12_caption": false,
+      "image_load": {
+        "total": 15,
+        "complete": 15,
+        "nonzeroNatural": 15,
+        "zeroNatural": 0,
+        "failed": 0,
+        "src": [
+          {
+            "src": "../../output/images_v23/image2.svg",
+            "complete": true,
+            "nw": 192,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image3.png",
+            "complete": true,
+            "nw": 209,
+            "nh": 194
+          },
+          {
+            "src": "../../output/images_v23/image5.svg",
+            "complete": true,
+            "nw": 229,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image10.svg",
+            "complete": true,
+            "nw": 255,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image12.svg",
+            "complete": true,
+            "nw": 163,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image14.svg",
+            "complete": true,
+            "nw": 226,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image16.svg",
+            "complete": true,
+            "nw": 132,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image18.svg",
+            "complete": true,
+            "nw": 144,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image20.svg",
+            "complete": true,
+            "nw": 241,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image22.svg",
+            "complete": true,
+            "nw": 103,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image24.svg",
+            "complete": true,
+            "nw": 122,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image26.svg",
+            "complete": true,
+            "nw": 102,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image28.svg",
+            "complete": true,
+            "nw": 300,
+            "nh": 87
+          },
+          {
+            "src": "../../output/images_v23/image30.svg",
+            "complete": true,
+            "nw": 212,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image31.png",
+            "complete": true,
+            "nw": 664,
+            "nh": 44
+          }
+        ]
+      }
+    },
+    {
+      "html": "v23-mi-style.html",
+      "pdf": "v23-mi-style-fixed.pdf",
+      "booklet": "v23-mi-style-fixed-booklet-A4.pdf",
+      "pdf_page_count": 18,
+      "booklet_page_count": 10,
+      "missing_footer_pages": [],
+      "callout_no_count": 8,
+      "has_compact_accessories": true,
+      "has_compact_ops": true,
+      "has_compact_warranty": true,
+      "has_compact_troubleshoot": false,
+      "has_fig11_12_caption": false,
+      "image_load": {
+        "total": 15,
+        "complete": 15,
+        "nonzeroNatural": 15,
+        "zeroNatural": 0,
+        "failed": 0,
+        "src": [
+          {
+            "src": "../../output/images_v23/image2.svg",
+            "complete": true,
+            "nw": 192,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image3.png",
+            "complete": true,
+            "nw": 209,
+            "nh": 194
+          },
+          {
+            "src": "../../output/images_v23/image5.svg",
+            "complete": true,
+            "nw": 229,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image10.svg",
+            "complete": true,
+            "nw": 255,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image12.svg",
+            "complete": true,
+            "nw": 163,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image14.svg",
+            "complete": true,
+            "nw": 226,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image16.svg",
+            "complete": true,
+            "nw": 132,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image18.svg",
+            "complete": true,
+            "nw": 144,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image20.svg",
+            "complete": true,
+            "nw": 241,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image22.svg",
+            "complete": true,
+            "nw": 103,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image24.svg",
+            "complete": true,
+            "nw": 122,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image26.svg",
+            "complete": true,
+            "nw": 102,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image28.svg",
+            "complete": true,
+            "nw": 300,
+            "nh": 87
+          },
+          {
+            "src": "../../output/images_v23/image30.svg",
+            "complete": true,
+            "nw": 212,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image31.png",
+            "complete": true,
+            "nw": 664,
+            "nh": 44
+          }
+        ]
+      }
+    },
+    {
+      "html": "v23-lifestyle-style.html",
+      "pdf": "v23-lifestyle-style-fixed.pdf",
+      "booklet": "v23-lifestyle-style-fixed-booklet-A4.pdf",
+      "pdf_page_count": 18,
+      "booklet_page_count": 10,
+      "missing_footer_pages": [],
+      "callout_no_count": 8,
+      "has_compact_accessories": true,
+      "has_compact_ops": true,
+      "has_compact_warranty": true,
+      "has_compact_troubleshoot": false,
+      "has_fig11_12_caption": false,
+      "image_load": {
+        "total": 15,
+        "complete": 15,
+        "nonzeroNatural": 15,
+        "zeroNatural": 0,
+        "failed": 0,
+        "src": [
+          {
+            "src": "../../output/images_v23/image2.svg",
+            "complete": true,
+            "nw": 192,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image3.png",
+            "complete": true,
+            "nw": 209,
+            "nh": 194
+          },
+          {
+            "src": "../../output/images_v23/image5.svg",
+            "complete": true,
+            "nw": 229,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image10.svg",
+            "complete": true,
+            "nw": 255,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image12.svg",
+            "complete": true,
+            "nw": 163,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image14.svg",
+            "complete": true,
+            "nw": 226,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image16.svg",
+            "complete": true,
+            "nw": 132,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image18.svg",
+            "complete": true,
+            "nw": 144,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image20.svg",
+            "complete": true,
+            "nw": 241,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image22.svg",
+            "complete": true,
+            "nw": 103,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image24.svg",
+            "complete": true,
+            "nw": 122,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image26.svg",
+            "complete": true,
+            "nw": 102,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image28.svg",
+            "complete": true,
+            "nw": 300,
+            "nh": 87
+          },
+          {
+            "src": "../../output/images_v23/image30.svg",
+            "complete": true,
+            "nw": 212,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image31.png",
+            "complete": true,
+            "nw": 664,
+            "nh": 44
+          }
+        ]
+      }
+    },
+    {
+      "html": "v23-swiss-style.html",
+      "pdf": "v23-swiss-style-fixed.pdf",
+      "booklet": "v23-swiss-style-fixed-booklet-A4.pdf",
+      "pdf_page_count": 18,
+      "booklet_page_count": 10,
+      "missing_footer_pages": [],
+      "callout_no_count": 8,
+      "has_compact_accessories": true,
+      "has_compact_ops": true,
+      "has_compact_warranty": true,
+      "has_compact_troubleshoot": false,
+      "has_fig11_12_caption": false,
+      "image_load": {
+        "total": 15,
+        "complete": 15,
+        "nonzeroNatural": 15,
+        "zeroNatural": 0,
+        "failed": 0,
+        "src": [
+          {
+            "src": "../../output/images_v23/image2.svg",
+            "complete": true,
+            "nw": 192,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image3.png",
+            "complete": true,
+            "nw": 209,
+            "nh": 194
+          },
+          {
+            "src": "../../output/images_v23/image5.svg",
+            "complete": true,
+            "nw": 229,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image10.svg",
+            "complete": true,
+            "nw": 255,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image12.svg",
+            "complete": true,
+            "nw": 163,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image14.svg",
+            "complete": true,
+            "nw": 226,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image16.svg",
+            "complete": true,
+            "nw": 132,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image18.svg",
+            "complete": true,
+            "nw": 144,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image20.svg",
+            "complete": true,
+            "nw": 241,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image22.svg",
+            "complete": true,
+            "nw": 103,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image24.svg",
+            "complete": true,
+            "nw": 122,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image26.svg",
+            "complete": true,
+            "nw": 102,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image28.svg",
+            "complete": true,
+            "nw": 300,
+            "nh": 87
+          },
+          {
+            "src": "../../output/images_v23/image30.svg",
+            "complete": true,
+            "nw": 212,
+            "nh": 150
+          },
+          {
+            "src": "../../output/images_v23/image31.png",
+            "complete": true,
+            "nw": 664,
+            "nh": 44
+          }
+        ]
+      }
+    }
+  ]
+}
