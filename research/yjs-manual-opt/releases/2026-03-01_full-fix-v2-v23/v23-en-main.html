@@ -330,6 +330,30 @@ tr:nth-child(even) td { background: #FAFAFA; }
 .compact-warranty .fig-wrap { margin: 4px 0 2px !important; }
 .compact-warranty .fig-wrap img { max-height: 6mm !important; }
 
+.rollbag-guide .bullet-list { margin: 4px 0; }
+.rollbag-guide .bullet-list li { line-height: 1.45; padding-top: 1px; padding-bottom: 1px; }
+.rollbag-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4mm;
+  margin-top: 4px;
+  align-items: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure {
+  width: 100%;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure img {
+  width: 100%;
+  max-width: 102mm;
+  height: auto;
+  display: inline-block;
+}
+
 @media print {
   .compact-accessories .sub-title { margin: 10px 0 5px; }
   .compact-accessories .steps li { margin-bottom: 5px; }
@@ -340,6 +364,8 @@ tr:nth-child(even) td { background: #FAFAFA; }
   .compact-warranty { font-size: 13px; line-height: 1.5; }
   .compact-warranty table { margin: 6px 0; font-size: 11.5px; }
   .compact-warranty th, .compact-warranty td { padding-top: 4px; padding-bottom: 4px; }
+  .rollbag-stack { gap: 4mm; margin-top: 4px; }
+  .rollbag-figure img { max-width: 98mm; }
 }
 
 .page-footer {
@@ -377,7 +403,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
   </div>
   <div class="cover-center">
     <div class="fig-wrap" style="text-align:left;margin:0 0 12mm">
-      <img src="../../output/images_v23/image2.svg" alt="V23 Vacuum Sealer" style="width:100%;height:auto;max-height:85mm;max-width:100%">
+      <img src="./images_v23/image2.svg" alt="V23 Vacuum Sealer" style="width:100%;height:auto;max-height:85mm;max-width:100%">
     </div>
     <div class="cover-model">MODEL V23</div>
     <div class="cover-title">Vacuum Sealer</div>
@@ -411,7 +437,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
   <h2 class="section-title"><span class="chapter-num">01</span>Safety Instructions</h2>
   <div class="warning-box">
     <div class="box-title">WARNING</div>
-        <div style="margin:6px 0 8px;"><img src="../../output/images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
+        <div style="margin:6px 0 8px;"><img src="./images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
 <ul class="box-list">
       <li>This appliance is for household use only. Do not use it for any purpose other than its intended use.</li>
       <li>Do not allow children to play with the appliance or power cord. Children, persons with reduced physical or cognitive abilities should use this appliance only under adult supervision. Keep children away during operation to prevent accidents.</li>
@@ -469,7 +495,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
 <div class="page">
   <h2 class="section-title"><span class="chapter-num">03</span>Product Structure</h2>
   <div class="fig-wrap">
-    <img src="../../output/images_v23/image5.svg" alt="Product Structure">
+    <img src="./images_v23/image5.svg" alt="Product Structure">
     <div class="fig-caption">Fig. 1 — Product Structure</div>
   </div>
   <table>
@@ -495,7 +521,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
 <div class="page">
   <h2 class="section-title"><span class="chapter-num">04</span>Control Panel Functions</h2>
   <div class="fig-wrap">
-    <img src="../../output/images_v23/image10.svg" alt="Control Panel">
+    <img src="./images_v23/image10.svg" alt="Control Panel">
     <div class="fig-caption">Fig. 2 — Control Panel</div>
   </div>
   <table>
@@ -549,7 +575,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image12.svg" alt="Bag Cutter Operation" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+      <img src="./images_v23/image12.svg" alt="Bag Cutter Operation" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
     </div>
   </div>
 
@@ -571,7 +597,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image14.svg" alt="Seal Operation" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+      <img src="./images_v23/image14.svg" alt="Seal Operation" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
     </div>
   </div>
 
@@ -613,7 +639,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image16.svg" alt="Liquid Mode" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
+      <img src="./images_v23/image16.svg" alt="Liquid Mode" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
     </div>
   </div>
 
@@ -650,7 +676,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ul>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image18.svg" alt="Vacuum Hose" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
+      <img src="./images_v23/image18.svg" alt="Vacuum Hose" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
     </div>
   </div>
 
@@ -670,8 +696,8 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:center">
-      <img src="../../output/images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
-      <img src="../../output/images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
     </div>
   </div>
 
@@ -690,7 +716,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image24.svg" alt="Canister Operation" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+      <img src="./images_v23/image24.svg" alt="Canister Operation" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
     </div>
   </div>
   <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">10</span></div>
@@ -715,22 +741,24 @@ tr:nth-child(even) td { background: #FAFAFA; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image26.svg" alt="Marinate Operation" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+      <img src="./images_v23/image26.svg" alt="Marinate Operation" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
     </div>
   </div>
 
-  <div class="sub-title">6.10 Roll Bag Compartment Guide</div>
-  <ul class="bullet-list">
-    <li>This machine can hold two rolls of bags at the same time (e.g., two rolls of 20 feet / 6 m or shorter).</li>
-    <li>If using a single roll, the maximum length is 50 feet (15 m).</li>
-    <li>The roll bag compartment accommodates rolls up to 12 inches (300 mm) wide. A dedicated slot at the bottom is designed for rolls 8 inches (200 mm) wide or narrower.</li>
-  </ul>
-  <div style="display:flex;gap:16px;margin-top:12px">
-    <div style="flex:1;text-align:center">
-      <img src="../../output/images_v23/image28.svg" alt="Single Roll Placement" style="max-height:40mm;max-width:80%">
-    </div>
-    <div style="flex:1;text-align:center">
-      <img src="../../output/images_v23/image30.svg" alt="Dual Roll Placement" style="max-height:40mm;max-width:80%">
+  <div class="rollbag-guide">
+    <div class="sub-title">6.10 Roll Bag Compartment Guide</div>
+    <ul class="bullet-list">
+      <li>This machine can hold two rolls of bags at the same time (e.g., two rolls of 20 feet / 6 m or shorter).</li>
+      <li>If using a single roll, the maximum length is 50 feet (15 m).</li>
+      <li>The roll bag compartment accommodates rolls up to 12 inches (300 mm) wide. A dedicated slot at the bottom is designed for rolls 8 inches (200 mm) wide or narrower.</li>
+    </ul>
+    <div class="rollbag-stack">
+      <div class="rollbag-figure">
+        <img src="./images_v23/image28.svg" alt="Single Roll Placement">
+      </div>
+      <div class="rollbag-figure">
+        <img src="./images_v23/image30.svg" alt="Dual Roll Placement">
+      </div>
     </div>
   </div>
   <div class="page-footer"><span>WEVAC V23 User Manual</span><span class="page-num">11</span></div>
@@ -995,7 +1023,7 @@ tr:nth-child(even) td { background: #FAFAFA; }
   </ul>
   <p style="margin-top:12px">To request warranty service, send us an email at: <b>support@wevactech.com</b></p>
 
-  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="../../output/images_v23/image31.png" alt="Warranty Cut Line" style="width:100%;max-height:8mm;object-fit:contain;"></div>
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_v23/image31.png" alt="Warranty Cut Line" style="width:100%;max-height:8mm;object-fit:contain;"></div>
 <div class="sub-title" style="margin-top:14px">Warranty Card</div>
   <table>
     <tbody>

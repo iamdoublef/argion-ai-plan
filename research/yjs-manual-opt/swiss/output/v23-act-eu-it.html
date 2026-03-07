@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V23 Sigillatrice Sottovuoto Manuale d'uso — ACT</title>
+<style>
+:root {
+    --swiss-black: #000000;
+    --swiss-red: #E63946;
+    --swiss-gray-bg: #F2F2F7;
+    --swiss-gray-text: #8E8E93;
+    --page-margin: 12.7mm;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #2C2C2E; font-family: 'Helvetica Neue', 'Inter', Arial, sans-serif; color: var(--swiss-black); }
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: var(--page-margin);
+    background: #FFF;
+    margin: 10mm auto;
+    position: relative;
+    page-break-after: always;
+}
+
+/* 顶部装饰条 */
+.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+.header-brand { font-weight: 900; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; }
+.header-ref { font-family: 'Courier New', monospace; font-size: 10px; color: var(--swiss-gray-text); }
+
+/* 标题系统 */
+.section-title { font-size: 26px; font-weight: 900; text-transform: uppercase; margin: 0 0 16px; letter-spacing: -0.5px; border-left: 6px solid var(--swiss-black); padding-left: 12px; }
+.section-title .chapter-num { color: var(--swiss-red); margin-right: 8px; }
+.sub-title { font-size: 14px; font-weight: 700; border-bottom: 2px solid var(--swiss-black); padding-bottom: 4px; margin: 20px 0 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* 正文 */
+p { font-size: 13px; line-height: 1.65; margin-bottom: 10px; color: #222; }
+
+/* 步骤列表 */
+.steps { list-style: none; padding: 0; margin: 10px 0; }
+.steps li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; font-size: 13px; line-height: 1.6; }
+.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
+
+/* 普通列表 */
+.bullet-list { list-style: none; padding: 0; margin: 8px 0; }
+.bullet-list li { padding: 3px 0 3px 16px; position: relative; font-size: 13px; line-height: 1.65; }
+.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
+
+/* 警告框 */
+.warning-box { border: 2px solid var(--swiss-red); padding: 12px 16px; margin: 14px 0; }
+.warning-box .box-title { font-size: 11px; font-weight: 900; color: var(--swiss-red); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.caution-box { border: 2px solid #000; padding: 12px 16px; margin: 14px 0; }
+.caution-box .box-title { font-size: 11px; font-weight: 900; color: #000; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.note-box { background: var(--swiss-gray-bg); padding: 10px 14px; margin: 12px 0; border-left: 4px solid var(--swiss-gray-text); font-size: 12px; color: #444; }
+.note-box .box-title { font-weight: 900; color: #333; margin-bottom: 4px; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+.box-list { list-style: none; padding: 0; }
+.box-list li { padding: 2px 0 2px 14px; position: relative; font-size: 12px; line-height: 1.6; }
+.box-list li::before { content: "·"; position: absolute; left: 2px; color: var(--swiss-red); font-weight: 900; }
+
+/* 图片 */
+.fig-wrap { text-align: center; margin: 14px 0; }
+.fig-wrap img { max-width: 80%; max-height: 70mm; object-fit: contain; display: inline-block; }
+.fig-caption { font-size: 10px; color: var(--swiss-gray-text); margin-top: 4px; text-align: center; font-family: 'Courier New', monospace; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* 表格 */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+th { background: var(--swiss-black); color: #FFF; padding: 8px 10px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+td { border: 1px solid #CCC; padding: 7px 10px; color: #1A1A1A; vertical-align: top; }
+tr:nth-child(even) td { background: var(--swiss-gray-bg); }
+
+/* 按键名称 */
+.btn-name { display: inline-block; background: #FFF; border: 1.5px solid var(--swiss-black); padding: 1px 6px; font-size: 11px; font-family: 'Courier New', monospace; color: #000; font-weight: 700; white-space: nowrap; }
+
+/* 目录 */
+.toc-title { font-size: 28px; font-weight: 900; text-transform: uppercase; margin-bottom: 24px; letter-spacing: -1px; }
+.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 13px; }
+.toc-chapter { color: var(--swiss-red); font-weight: 900; margin-right: 8px; font-family: 'Courier New', monospace; }
+.toc-name { flex: 1; }
+.toc-page { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 12px; }
+
+/* 页脚 */
+.callout-no {
+  display: inline-block;
+  min-width: 16px;
+  font-weight: 700;
+}
+
+.compact-accessories .sub-title { margin: 12px 0 6px; }
+.compact-accessories .steps li { margin-bottom: 6px; line-height: 1.5; }
+.compact-accessories .bullet-list li { padding-top: 1px; padding-bottom: 1px; line-height: 1.5; }
+.compact-accessories .btn-name { font-size: 11px; padding: 0 4px; }
+
+.compact-ops .sub-title { margin: 11px 0 6px; }
+.compact-ops .steps li { margin-bottom: 5px; line-height: 1.5; }
+.compact-ops .note-box { margin: 8px 0; padding: 8px 12px; font-size: 12px; }
+
+.compact-troubleshoot table { font-size: 12px; margin: 8px 0; }
+.compact-troubleshoot th, .compact-troubleshoot td { padding-top: 5px; padding-bottom: 5px; }
+
+.compact-warranty .sub-title { margin: 12px 0 6px !important; font-size: 14px; }
+.compact-warranty p { margin-bottom: 8px; line-height: 1.55; }
+.compact-warranty .bullet-list li { padding-top: 1px; padding-bottom: 1px; line-height: 1.5; }
+.compact-warranty table { margin: 8px 0; font-size: 12px; }
+.compact-warranty th, .compact-warranty td { padding-top: 5px; padding-bottom: 5px; }
+.compact-warranty .fig-wrap { margin: 4px 0 2px !important; }
+.compact-warranty .fig-wrap img { max-height: 6mm !important; }
+
+.rollbag-guide .bullet-list { margin: 6px 0; }
+.rollbag-guide .bullet-list li { line-height: 1.55; padding-top: 2px; padding-bottom: 2px; }
+.rollbag-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8mm;
+  margin-top: 8px;
+  align-items: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure {
+  width: 100%;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure img {
+  width: 100%;
+  max-width: 114mm;
+  height: auto;
+  display: inline-block;
+}
+
+@media print {
+  .compact-accessories .sub-title { margin: 10px 0 5px; }
+  .compact-accessories .steps li { margin-bottom: 5px; }
+  .compact-ops .sub-title { margin: 9px 0 5px; }
+  .compact-ops .steps li { margin-bottom: 4px; }
+  .compact-troubleshoot table { font-size: 11.5px; margin: 6px 0; }
+  .compact-troubleshoot th, .compact-troubleshoot td { padding-top: 4px; padding-bottom: 4px; }
+  .compact-warranty { font-size: 13px; line-height: 1.5; }
+  .compact-warranty table { margin: 6px 0; font-size: 11.5px; }
+  .compact-warranty th, .compact-warranty td { padding-top: 4px; padding-bottom: 4px; }
+  .rollbag-stack { gap: 6mm; margin-top: 6px; }
+  .rollbag-figure img { max-width: 108mm; }
+}
+
+.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+
+/* 封面 */
+.cover-brand { font-size: 13px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; }
+.cover-brand span { display: inline-block; width: 28px; height: 4px; background: var(--swiss-red); margin-right: 8px; vertical-align: middle; }
+.cover-model { font-size: 11px; font-weight: 900; letter-spacing: 4px; color: var(--swiss-red); text-transform: uppercase; margin-bottom: 6px; font-family: 'Courier New', monospace; }
+.cover-title { font-size: 52px; font-weight: 900; color: var(--swiss-black); line-height: 0.95; margin-bottom: 4px; text-transform: uppercase; letter-spacing: -2px; }
+.cover-subtitle { font-size: 16px; font-weight: 400; color: var(--swiss-gray-text); margin-bottom: 0; text-transform: uppercase; letter-spacing: 2px; }
+.cover-divider { width: 40px; height: 4px; background: var(--swiss-red); margin: 14px 0; }
+.cover-bottom { border-top: 2px solid var(--swiss-black); padding-top: 8px; font-size: 10px; color: var(--swiss-gray-text); line-height: 1.6; font-family: 'Courier New', monospace; }
+
+@media print { body { background: #FFF; } .page { margin: 0; }  }
+</style>
+</head>
+<body>
+
+<!-- ========== 封面页 ========== -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+  <div>
+    <div class="cover-brand"><span></span>ACT</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
+    <div style="text-align:left;margin:0 0 12mm;">
+      <img src="./images_v23/image2.svg" alt="V23 Sigillatrice Sottovuoto" style="width:100%;height:auto;max-height:85mm;max-width:100%;">
+    </div>
+    <div class="cover-model">MODEL V23</div>
+    <div class="cover-title">Sigillatrice Sottovuoto</div>
+    <div class="cover-subtitle">Manuale d'uso</div>
+    <div class="cover-divider"></div>
+  </div>
+  <div class="cover-bottom">
+    Si prega di leggere attentamente questo manuale prima dell'uso e conservarlo per riferimento futuro.<br>
+    Tutte le illustrazioni di prodotti e accessori in questo manuale sono solo a scopo di riferimento. A causa di aggiornamenti del prodotto, i prodotti reali potrebbero differire leggermente dalle illustrazioni.
+  </div>
+</div>
+
+<!-- ========== 目录页 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">V23 — USER MANUAL</div>
+  </div>
+  <div class="toc-title">Indice</div>
+  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Istruzioni di sicurezza</span></span><span class="toc-page">3</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Consigli per prodotto e sacchetti</span></span><span class="toc-page">4</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Struttura del prodotto</span></span><span class="toc-page">5</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Funzioni del prodotto</span></span><span class="toc-page">6</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Specifiche tecniche</span></span><span class="toc-page">7</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Guida operativa</span></span><span class="toc-page">8</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Risoluzione dei problemi</span></span><span class="toc-page">12</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Manutenzione</span></span><span class="toc-page">15</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Proprietà del confezionamento sottovuoto</span></span><span class="toc-page">16</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Informazioni su marchio e garanzia</span></span><span class="toc-page">18</span></div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>2</span></div>
+</div>
+
+<!-- ========== 第1章 安全须知 ========== -->
+<!-- @CONTENT:safety:start — 以下内容为产品特定安全须知，新产品需重新编写 -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.01 — SAFETY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">01</span>Istruzioni di sicurezza</h2>
+  <div class="warning-box">
+    <div class="box-title">AVVERTENZA</div>
+        <div style="margin:6px 0 8px;"><img src="./images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
+<ul class="box-list">
+      <li>Questo apparecchio è destinato esclusivamente all'uso domestico. Non utilizzarlo per scopi diversi da quelli previsti.</li>
+      <li>Non consentire ai bambini di giocare con l'apparecchio o il cavo di alimentazione. I bambini, le persone con mobilità ridotta o con capacità cognitive limitate devono utilizzare l'apparecchio solo sotto la supervisione di un adulto. Tenere i bambini sotto controllo durante l'uso.</li>
+      <li>Le parti piccole e i sacchetti sottovuoto possono causare rischio di soffocamento; non consentire ai bambini di toccarli.</li>
+      <li>Non utilizzare l'apparecchio in ambienti ad alta umidità o temperatura elevata. È vietato l'uso in presenza di gas infiammabili o esplosivi.</li>
+      <li>Assicurarsi che la tensione di alimentazione corrisponda a quella indicata sulla targhetta dell'apparecchio.</li>
+      <li>Non allontanarsi dall'apparecchio durante il funzionamento.</li>
+      <li>Al termine della sigillatura, l'area di sigillatura è calda; non toccarla per evitare ustioni.</li>
+      <li>Disconnettere l'alimentazione dopo l'uso.</li>
+      <li>Quando si scollega la spina dalla presa, afferrare la spina e non tirare il cavo di alimentazione.</li>
+      <li>Non immergere l'apparecchio o il cavo di alimentazione in acqua o altri liquidi.</li>
+      <li>Il cavo di alimentazione deve essere collegato direttamente a una presa conforme alle normative di sicurezza.</li>
+      <li>In caso di danni a spina, cavo o apparecchio, interrompere immediatamente l'uso e contattare il produttore o un centro di assistenza autorizzato; non riparare da soli.</li>
+      <li>Non lasciare il cavo di alimentazione penzolante dal bordo del piano di lavoro, per evitare che i bambini lo tirino o che qualcuno inciampi.</li>
+    </ul>
+  </div>
+  <div class="caution-box">
+    <div class="box-title">ATTENZIONE</div>
+    <ul class="box-list">
+      <li>Conservare con cura questo manuale.</li>
+      <li>L'apparecchio non richiede lubrificanti; non utilizzare solventi organici per la pulizia.</li>
+      <li>Durante periodi di inutilizzo prolungato, non chiudere le clip di blocco per evitare deformazioni della guarnizione.</li>
+      <li>Non smaltire questo prodotto insieme ai rifiuti domestici; riciclare o smaltire secondo le normative locali sui rifiuti elettronici.</li>
+    </ul>
+  </div>
+  <div class="note-box">
+    <div class="box-title">AVVISO</div>
+    <ul class="box-list">
+      <li>Questo prodotto è destinato alla conservazione alimentare domestica.</li>
+      <li>Prima del primo utilizzo, leggere integralmente questo manuale.</li>
+      <li>Conservare lo scontrino d'acquisto per usufruire del servizio di garanzia.</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>3</span></div>
+</div>
+
+<!-- @CONTENT:safety:end -->
+
+<!-- ========== 第2章 使用提示 ========== -->
+<!-- @CONTENT:usage_tips:start — 产品使用提示，同品类可复用大部分 -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.02 — USAGE TIPS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">02</span>Consigli per prodotto e sacchetti</h2>
+  <ul class="bullet-list">
+    <li>L'apparecchio è compatibile solo con sacchetti sottovuoto dotati di canali per l'aria.</li>
+    <li>Per oggetti con punte o spigoli, avvolgere gli angoli con fogli protettivi, carta assorbente o altro materiale morbido per evitare di perforare il sacchetto.</li>
+    <li>I sacchetti sottovuoto possono essere riscaldati o messi nel microonde, ma è necessario praticare prima un piccolo taglio nell'angolo per far uscire l'aria.</li>
+    <li>I sacchetti per la conservazione possono essere riutilizzati; quelli usati per riscaldamento o microonde vanno usati una sola volta. Non riutilizzare sacchetti che hanno contenuto frutti di mare o alimenti grassi.</li>
+    <li>Posizionare il sacchetto in modo che l'apertura sia ben distesa sopra l'elemento riscaldante.</li>
+    <li>Durante il riempimento, lasciare almeno 2 inch (5 cm) di spazio tra l'apertura del sacchetto e gli alimenti.</li>
+    <li>Con liquidi, salse o alimenti con liquidi, evitare di bagnare l'apertura del sacchetto. Si consiglia di asciugare l'apertura dopo il riempimento per non compromettere la sigillatura.</li>
+    <li>Per alimenti morbidi o molto umidi che devono mantenere la forma dopo il confezionamento, si può congelare prima del sottovuoto.</li>
+    <li>Non appoggiare oggetti pesanti sul coperchio; potrebbero danneggiare l'apparecchio.</li>
+  </ul>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>4</span></div>
+</div>
+
+<!-- @CONTENT:usage_tips:end -->
+
+<!-- ========== 第3章 产品结构 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.03 — STRUCTURE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">03</span>Struttura del prodotto</h2>
+  <div class="fig-wrap">
+    <img src="./images_v23/image5.svg" alt="Struttura del prodotto">
+    <div class="fig-caption">Fig. 1 — Struttura del prodotto</div>
+  </div>
+  <table>
+    <thead><tr><th style="width:60px">No.</th><th>Nome</th><th style="width:60px">No.</th><th>Nome</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Maniglia di chiusura</td><td>8</td><td>Tubo di supporto rotolo</td></tr>
+      <tr><td>2</td><td>Pannello di controllo</td><td>9</td><td>Corpo principale</td></tr>
+      <tr><td>3</td><td>Porta aspirazione esterna</td><td>10</td><td>Staffa taglierina</td></tr>
+      <tr><td>4</td><td>Coperchio</td><td>11</td><td>Vaschetta raccogli-liquidi (camera a vuoto sotto)</td></tr>
+      <tr><td>5</td><td>Guarnizione di tenuta</td><td>12</td><td>Nastro termoresistente & elemento riscaldante</td></tr>
+      <tr><td>6</td><td>Anello di tenuta</td><td>13</td><td>Taglierina</td></tr>
+      <tr><td>7</td><td>Vano rotolo sacchetti</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="note-box">
+    <div class="box-title">NOTA</div>
+    Al termine del lavoro, l'elemento riscaldante è molto caldo; non toccarlo per evitare ustioni.
+  </div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>5</span></div>
+</div>
+
+<!-- ========== 第4章 产品功能 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.04 — FUNCTIONS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">04</span>Funzioni del prodotto</h2>
+  <div class="fig-wrap">
+    <img src="./images_v23/image10.svg" alt="Pannello di controllo">
+    <div class="fig-caption">Fig. 2 — Pannello di controllo</div>
+  </div>
+  <table>
+    <thead><tr><th style="width:45%">No. / Button</th><th>Descrizione</th></tr></thead>
+    <tbody>
+      <tr><td><span class="callout-no">1</span> <span class="btn-name">Vac&amp;Seal / Start</span>　Aspira e sigilla / Avvio</td><td>Premere questo pulsante per avviare la modalità selezionata.</td></tr>
+      <tr><td><span class="callout-no">2</span> <span class="btn-name">Stop</span>　Stop</td><td>Premere questo pulsante durante qualsiasi processo per interrompere l'operazione.</td></tr>
+      <tr><td><span class="callout-no">3</span> <span class="btn-name">Vac Mode</span>　Selezione modalità vuoto</td><td><b>Normal</b> (pressione predefinita) / <b>Gentle</b> (pressione delicata) / <b>Liquid</b> (alimenti liquidi)</td></tr>
+      <tr><td><span class="callout-no">4</span> <span class="btn-name">Pulse Vac</span>　Aspirazione manuale</td><td>Tenere premuto per il controllo manuale del vuoto; rilasciare per mettere in pausa. Premere Seal quando si raggiunge il livello desiderato.</td></tr>
+      <tr><td><span class="callout-no">5</span> <span class="btn-name">Seal</span>　Sigillatura</td><td>Premere questo pulsante per sigillare immediatamente.</td></tr>
+      <tr><td><span class="callout-no">6</span> <span class="btn-name">Accessories</span>　Accessori</td><td><b>Mason Jar</b> (barattolo) / <b>Canister</b> (contenitore sottovuoto) / <b>Marinate</b> (marinatura)</td></tr>
+      <tr><td><span class="callout-no">7</span> <span class="btn-name">Extend Seal Time</span>　Prolunga tempo sigillatura</td><td>Premere prima dell'operazione per prolungare il tempo di sigillatura.</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>6</span></div>
+</div>
+
+<!-- ========== 第5章 技术参数 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.05 — SPECIFICATIONS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">05</span>Specifiche tecniche</h2>
+  <table>
+    <thead><tr><th>Parametro</th><th>Specifica</th></tr></thead>
+    <tbody>
+      <tr><td>Tensione</td><td>220~240 Vac</td></tr>
+      <tr><td>Frequenza</td><td>50 Hz</td></tr>
+      <tr><td>Potenza</td><td>190 W</td></tr>
+      <tr><td>Pompa</td><td>Doppia pompa</td></tr>
+      <tr><td>Pressione di vuoto</td><td>-958 mbar</td></tr>
+      <tr><td>Larghezza filo saldante</td><td>1.8 mm × 2</td></tr>
+      <tr><td>Largh. max sacchetto</td><td>315 mm</td></tr>
+      <tr><td>Dimensioni (L×P×A)</td><td>380 × 205 × 155 mm</td></tr>
+      <tr><td>Peso</td><td>3.0 kg</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>7</span></div>
+</div>
+
+<!-- @CONTENT:operations:start — 操作步骤为最产品特定的部分，新产品需全面重写 -->
+<!-- ========== 第6章 操作指引 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Guida operativa</h2>
+
+  <div class="sub-title">6.1 Come usare la taglierina</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Aprire il coperchio.</li>
+        <li><span class="step-num">2</span>Aprire il supporto della taglierina.</li>
+        <li><span class="step-num">3</span>Tirare dal rotolo la lunghezza desiderata di sacchetto.</li>
+        <li><span class="step-num">4</span>Spostare la taglierina all'estrema sinistra o destra, poi abbassare il supporto sul sacchetto.</li>
+        <li><span class="step-num">5</span>Premere la taglierina e farla scorrere sul sacchetto per un taglio netto.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image12.svg" alt="Operazione taglierina" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.2 Come usare la funzione di sigillatura</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Creare un sacchetto dal rotolo e sigillare:</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Creare un sacchetto aperto alle due estremità come descritto nella sezione Come usare la taglierina.</li>
+    <li><span class="step-num">2</span>Inserire l'apertura di un'estremità del sacchetto nella camera del vuoto.</li>
+    <li><span class="step-num">3</span>Chiudere il coperchio e abbassare la maniglia per bloccare il coperchio.</li>
+    <li><span class="step-num">4</span>Premere il pulsante <span class="btn-name">Seal</span> e attendere il completamento del ciclo.</li>
+  </ol>
+  <p style="font-size:13px;color:#555;margin:10px 0 8px"><b>Sigillare solo un sacchetto:</b></p>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Inserire gli alimenti nel sacchetto e posizionare l'apertura nella camera del vuoto.</li>
+        <li><span class="step-num">2</span>Chiudere il coperchio e abbassare la maniglia per bloccare il coperchio.</li>
+        <li><span class="step-num">3</span>Premere il pulsante <span class="btn-name">Seal</span> e attendere il completamento del ciclo.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image14.svg" alt="Operazione sigillatura" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.3 Come prolungare il tempo di sigillatura</div>
+  <div class="note-box">
+    Per prolungare il tempo di sigillatura, premere il pulsante <span class="btn-name">Extend Seal Time</span> prima dell'operazione per accendere l'indicatore. L'impostazione rimane attiva. Per ripristinare il tempo predefinito, premere nuovamente il pulsante prima dell'operazione successiva. In caso di spegnimento o riavvio, il tempo di sigillatura torna alle impostazioni predefinite.
+  </div>
+  <div class="caution-box">
+    <div class="box-title">ATTENZIONE</div>
+    Con Extend Seal Time attivo, la regolazione intelligente della sigillatura è temporaneamente disattivata; attendere almeno 20 s tra un ciclo e l'altro e aprire il coperchio per permettere la dissipazione del calore.
+  </div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>8</span></div>
+</div>
+
+<!-- ========== 操作指引（续）========== -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.06 — OPERATION (CONT.)</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Guida operativa (segue)</h2>
+
+  <div class="sub-title">6.4 Come usare il sottovuoto e sigillatura</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Sottovuoto e sigillatura di alimenti solidi:</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Inserire l'apertura del sacchetto nella camera del vuoto.</li>
+    <li><span class="step-num">2</span>Chiudere il coperchio e abbassare la maniglia per bloccarlo.</li>
+    <li><span class="step-num">3</span>Premere il pulsante <span class="btn-name">Vac Mode</span> per selezionare la modalità: <b>Normal</b> o <b>Gentle</b>.</li>
+    <li><span class="step-num">4</span>Premere il pulsante <span class="btn-name">Vac&amp;Seal / Start</span> per avviare.</li>
+    <li><span class="step-num">5</span>Per interrompere, premere il pulsante <span class="btn-name">Stop</span>.</li>
+  </ol>
+  <div class="note-box">Prima di usare la modalità Gentle per oggetti delicati, si consiglia di provare con altri articoli per verificare il grado di compressione.</div>
+
+  <p style="font-size:13px;color:#555;margin:12px 0 8px"><b>Sottovuoto e sigillatura di liquidi:</b></p>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Tenere il sacchetto in verticale; il livello del liquido deve restare sotto l'elemento riscaldante. Lasciare circa 7 inch (18 cm) tra il liquido e l'apertura.</li>
+        <li><span class="step-num">2</span>Inserire l'apertura del sacchetto nella camera del vuoto.</li>
+        <li><span class="step-num">3</span>Chiudere il coperchio e abbassare la maniglia per bloccarlo.</li>
+        <li><span class="step-num">4</span>Premere il pulsante <span class="btn-name">Vac Mode</span> e selezionare la modalità <b>Liquid</b>.</li>
+        <li><span class="step-num">5</span>Premere il pulsante <span class="btn-name">Vac&amp;Seal / Start</span> per avviare.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image16.svg" alt="Modalità liquido" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.5 Come usare il vuoto manuale</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Metodo 1 (Passaggio a Pulse Vac durante il vuoto automatico):</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Tenere premuto il pulsante <span class="btn-name">Pulse Vac</span> per aspirare.</li>
+    <li><span class="step-num">2</span>Rilasciare il pulsante per sospendere l'aspirazione.</li>
+    <li><span class="step-num">3</span>Raggiunto il vuoto desiderato, premere il pulsante <span class="btn-name">Seal</span> per sigillare.</li>
+  </ol>
+  <p style="font-size:13px;color:#555;margin:10px 0 8px"><b>Metodo 2 (Utilizzo diretto della modalità Pulse Vac):</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Inserire l'apertura del sacchetto nella camera del vuoto.</li>
+    <li><span class="step-num">2</span>Chiudere il coperchio e abbassare la maniglia per bloccarlo.</li>
+    <li><span class="step-num">3</span>Tenere premuto il pulsante <span class="btn-name">Pulse Vac</span> per aspirare.</li>
+    <li><span class="step-num">4</span>Rilasciare il pulsante per sospendere l'aspirazione.</li>
+    <li><span class="step-num">5</span>Raggiunto il vuoto desiderato, premere il pulsante <span class="btn-name">Seal</span> per sigillare.</li>
+  </ol>
+  <div class="note-box">In modalità vuoto manuale, tenere premuto per aspirare e rilasciare per sospendere; la pressione viene mantenuta. Se non si effettua alcuna operazione entro 10 secondi, l'apparecchio rilascia automaticamente la pressione ed esce dalla modalità vuoto manuale.</div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>9</span></div>
+</div>
+
+<!-- ========== 操作指引（附件使用）========== -->
+<div class="page compact-accessories">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.06 — ACCESSORIES</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Guida operativa (Accessori)</h2>
+
+  <div class="sub-title">6.6 Utilizzo del tubo flessibile</div>
+  <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:12px">
+    <div style="flex:1">
+      <ul class="bullet-list">
+        <li>Per barattoli Mason e sacchetti con zip e valvola: usare l'ugello circolare in direzione 1.</li>
+        <li>Per contenitori sottovuoto e tappi: scegliere direzione 1 o 2 in base alla dimensione dell'apertura.</li>
+        <li>L'ugello piatto 3 del tubo si collega all'aspirazione esterna 3 sul coperchio.</li>
+      </ul>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image18.svg" alt="Tubo flessibile" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.7 Come fare il sottovuoto nei barattoli Mason</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Chiudere il coperchio dell'apparecchio.</li>
+        <li><span class="step-num">2</span>Posizionare il coperchio del barattolo sull'apertura senza avvitare il collarino (se presente).</li>
+        <li><span class="step-num">3</span>Montare l'adattatore sul barattolo Mason.</li>
+        <li><span class="step-num">4</span>Inserire l'ugello piatto del tubo nell'aspirazione esterna sul coperchio.</li>
+        <li><span class="step-num">5</span>Abbassare la maniglia per bloccare il coperchio.</li>
+        <li><span class="step-num">6</span>Premere il pulsante <span class="btn-name">Accessories</span> e selezionare <b>Mason Jar</b>.</li>
+        <li><span class="step-num">7</span>Appoggiare l'ugello circolare sull'apertura dell'adattatore e premere leggermente con la mano.</li>
+        <li><span class="step-num">8</span>Premere il pulsante <span class="btn-name">Vac&amp;Seal / Start</span> per avviare.</li>
+        <li><span class="step-num">9</span>Al termine, rimuovere il tubo e l'adattatore.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:center">
+      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.8 Come fare il sottovuoto nei contenitori</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Prima dell'uso, verificare che il contenitore sia compatibile con il tubo dell'apparecchio.</li>
+        <li><span class="step-num">2</span>Verificare che il contenitore sia in modalità sottovuoto (Vacuum).</li>
+        <li><span class="step-num">3</span>Inserire l'ugello piatto del tubo nell'aspirazione esterna sul coperchio.</li>
+        <li><span class="step-num">4</span>Abbassare la maniglia per bloccare il coperchio.</li>
+        <li><span class="step-num">5</span>Premere il pulsante <span class="btn-name">Accessories</span> e selezionare <b>Canister</b>.</li>
+        <li><span class="step-num">6</span>Appoggiare l'ugello circolare sull'apertura della valvola del contenitore e premere leggermente.</li>
+        <li><span class="step-num">7</span>Premere il pulsante <span class="btn-name">Vac&amp;Seal / Start</span> per avviare.</li>
+        <li><span class="step-num">8</span>Al termine, rimuovere il tubo.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image24.svg" alt="Operazione contenitore" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+    </div>
+  </div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>10</span></div>
+</div>
+
+<!-- ========== 操作指引（腌制+卷袋）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.06 — MARINATE &amp; ROLL BAG</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Guida operativa (segue)</h2>
+
+  <div class="sub-title">6.9 Come marinare</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Coprire gli alimenti con la marinata e metterli nel contenitore sottovuoto.</li>
+        <li><span class="step-num">2</span>Verificare che il contenitore sia in modalità sottovuoto (Vacuum).</li>
+        <li><span class="step-num">3</span>Inserire l'ugello piatto del tubo nell'aspirazione esterna sul coperchio.</li>
+        <li><span class="step-num">4</span>Inserire l'ugello circolare nell'apertura della valvola.</li>
+        <li><span class="step-num">5</span>Abbassare la maniglia per bloccare il coperchio.</li>
+        <li><span class="step-num">6</span>Premere il pulsante <span class="btn-name">Accessories</span> e selezionare <b>Canister</b>.</li>
+        <li><span class="step-num">7</span>Premere il pulsante <span class="btn-name">Vac&amp;Seal / Start</span> per avviare.</li>
+        <li><span class="step-num">8</span>Al termine, rimuovere il tubo.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image26.svg" alt="Operazione marinatura" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="rollbag-guide">
+    <div class="sub-title">6.10 Guida al vano rotolo sacchetti</div>
+    <ul class="bullet-list">
+      <li>L'apparecchio può contenere due rotoli (es. due rotoli da max 20 feet/6 m).</li>
+      <li>Con un solo rotolo, la lunghezza massima è 50 feet (15 m).</li>
+      <li>Il vano accoglie rotoli fino a 12 inch (300 mm) di larghezza. In basso è previsto uno spazio per rotoli fino a 8 inch (200 mm).</li>
+    </ul>
+    <div class="rollbag-stack">
+      <div class="rollbag-figure">
+        <img src="./images_v23/image28.svg" alt="Posizionamento rotolo singolo">
+      </div>
+      <div class="rollbag-figure">
+        <img src="./images_v23/image30.svg" alt="Posizionamento doppio rotolo">
+      </div>
+    </div>
+  </div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>11</span></div>
+</div>
+
+<!-- @CONTENT:operations:end -->
+
+<!-- @CONTENT:troubleshooting:start — 故障排除表，新产品需根据产品特性重写 -->
+<!-- ========== 第7章 故障排除 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi</h2>
+
+  <table>
+    <thead><tr><th style="width:22%">Problema</th><th style="width:40%">Possibile causa</th><th style="width:38%">Soluzione</th></tr></thead>
+    <tbody>
+      <tr>
+        <td rowspan="3"><b>L'apparecchio non si accende</b></td>
+        <td>Il cavo non è inserito correttamente nella presa</td>
+        <td>Verificare che il cavo sia inserito correttamente.</td>
+      </tr>
+      <tr>
+        <td>Cavo danneggiato o usurato</td>
+        <td>Staccare la corrente e controllare il cavo; in caso di danni, rivolgersi a personale qualificato per la sostituzione.</td>
+      </tr>
+      <tr>
+        <td>Connettori del pannello o della scheda allentati</td>
+        <td>Rivolgersi a personale qualificato per la riparazione.</td>
+      </tr>
+      <tr>
+        <td rowspan="6"><b>Aspirazione insufficiente</b></td>
+        <td>L'apertura del sacchetto non è completamente nella guarnizione</td>
+        <td>Assicurarsi che l'apertura sia completamente nella guarnizione della camera inferiore.</td>
+      </tr>
+      <tr>
+        <td>Uso di sacchetti senza canali per l'aria</td>
+        <td>Utilizzare sacchetti sottovuoto con canali per l'aria.</td>
+      </tr>
+      <tr>
+        <td>Guarnizione danneggiata, sollevata o montata male</td>
+        <td>Controllare la guarnizione e montarla correttamente.</td>
+      </tr>
+      <tr>
+        <td>Sacchetto danneggiato o con fori</td>
+        <td>Sostituire con un nuovo sacchetto.</td>
+      </tr>
+      <tr>
+        <td>Corpi estranei sull'apertura che impediscono la sigillatura</td>
+        <td>Pulire l'apertura e riprovare.</td>
+      </tr>
+      <tr>
+        <td>Tempo di sigillatura eccessivo con surriscaldamento</td>
+        <td>Aprire il coperchio, lasciare raffreddare e riprovare.</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><b>Sigillatura non riuscita o scarsa</b></td>
+        <td>L'apertura non è posizionata correttamente sull'elemento riscaldante</td>
+        <td>Riposizionare l'apertura, assicurandosi che sia ben distesa sull'elemento riscaldante.</td>
+      </tr>
+      <tr>
+        <td>Umidità, particelle o residui nell'area di sigillatura</td>
+        <td>Pulire l'area di sigillatura e riprovare.</td>
+      </tr>
+      <tr>
+        <td>Barra di sigillatura non montata</td>
+        <td>Montare la barra di sigillatura.</td>
+      </tr>
+      <tr>
+        <td>Tempo di sigillatura predefinito insufficiente</td>
+        <td>Premere <span class="btn-name">Extend Seal Time</span> per prolungare il tempo e riprovare.</td>
+      </tr>
+      <tr>
+        <td rowspan="3"><b>Il sacchetto perde aria dopo il sottovuoto</b></td>
+        <td>Nastro ad alta temperatura danneggiato o staccato</td>
+        <td>Sostituire il nastro ad alta temperatura.</td>
+      </tr>
+      <tr>
+        <td>Temperatura anomala che scioglie il sacchetto o sigillatura insufficiente</td>
+        <td>Vedere le soluzioni per aspirazione insufficiente e sigillatura non riuscita.</td>
+      </tr>
+      <tr>
+        <td>Oggetti appuntiti che perforano il sacchetto</td>
+        <td>Avvolgere gli spigoli con carta assorbente o fogli protettivi e usare un sacchetto nuovo.</td>
+      </tr>
+      </tbody>
+  </table>
+
+  <div class="note-box">
+    <div class="box-title">NOTA</div>
+    Alcuni frutti e verdure, se non sbollentati correttamente prima del confezionamento, o alimenti caldi, rilasciano gas e il sacchetto non si contrae; è un comportamento normale, non una perdita.
+  </div>
+  <div class="note-box">Se nessuna delle soluzioni sopra risolve il problema, contattare l'assistenza clienti; non smontare l'apparecchio da soli.</div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>12</span></div>
+</div>
+
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING ADDENDUM</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi (Accessori e allarmi)</h2>
+
+  <table>
+    <thead><tr><th style="width:22%">Problema</th><th style="width:40%">Possibile causa</th><th style="width:38%">Soluzione</th></tr></thead>
+    <tbody>
+<tr>
+        <td rowspan="3"><b>La modalità Accessories non aspira</b></td>
+        <td>L'ugello piatto non è completamente inserito nell'aspirazione esterna</td>
+        <td>Premere e ruotare con forza l'ugello piatto fino a inserimento completo.</td>
+      </tr>
+      <tr>
+        <td>La maniglia del coperchio non è abbassata e bloccata</td>
+        <td>Abbassare la maniglia per bloccare il coperchio e riprovare.</td>
+      </tr>
+      <tr>
+        <td>Corpi estranei su guarnizione o camera del vuoto</td>
+        <td>Aprire il coperchio, rimuovere i corpi estranei, chiudere e riprovare.</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><b>Allarme errore (beep prolungato + LED lampeggianti)</b></td>
+        <td>Allarme dopo aver premuto Vac&amp;Seal/Start o Seal</td>
+        <td>Verificare che il coperchio sia chiuso e la maniglia abbassata e bloccata.</td>
+      </tr>
+      <tr>
+        <td>Beep continuo durante il vuoto</td>
+        <td>L'apparecchio non raggiunge la pressione target; verificare il blocco della maniglia e l'integrità del sacchetto; sostituire con un sacchetto nuovo.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>13</span></div>
+</div>
+
+<!-- ========== 故障排除（液体进入）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.07 — LIQUID RECOVERY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi (segue)</h2>
+
+  <div class="sub-title">Procedura in caso di liquidi entrati nell'apparecchio</div>
+
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Liquido nella camera del vuoto:</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Spegnere immediatamente l'alimentazione e attendere almeno 5 minuti per il raffreddamento dell'elemento riscaldante.</li>
+    <li><span class="step-num">2</span>Rimuovere il vassoio del liquido e asciugare il liquido.</li>
+    <li><span class="step-num">3</span>Asciugare il liquido nella camera del vuoto.</li>
+    <li><span class="step-num">4</span>Posizionare carta da cucina o un vassoio sotto l'apparecchio e riaccendere.</li>
+    <li><span class="step-num">5</span>Chiudere il coperchio, tenere premuto <span class="btn-name">Pulse Vac</span> per 20 secondi, poi premere <span class="btn-name">Stop</span> per rilasciare; ripetere 5 volte per espellere il liquido dai tubi interni.</li>
+    <li><span class="step-num">6</span>Aprire il coperchio, posizionare carta da cucina o un vassoio sotto l'apparecchio e lasciare asciugare in luogo ventilato per 48 ore senza capovolgere l'apparecchio.</li>
+  </ol>
+
+  <p style="font-size:13px;color:#555;margin:16px 0 8px"><b>Liquido sull'elemento riscaldante:</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Non capovolgere l'apparecchio; spegnere l'alimentazione, attendere 10 minuti per il raffreddamento e lo scarico del liquido interno.</li>
+    <li><span class="step-num">2</span>Pulire e asciugare il liquido dal vassoio, dalla camera del vuoto e dalla base.</li>
+    <li><span class="step-num">3</span>Aprire il coperchio, posizionare carta da cucina o un vassoio sotto l'apparecchio e lasciare asciugare in luogo ventilato per 24 ore senza capovolgere.</li>
+    <li><span class="step-num">4</span>Posizionare carta da cucina o un vassoio sotto l'apparecchio e riaccendere.</li>
+    <li><span class="step-num">5</span>Chiudere il coperchio, tenere premuto <span class="btn-name">Pulse Vac</span> per 20 secondi, poi premere <span class="btn-name">Stop</span> per rilasciare; ripetere 5 volte per espellere il liquido dai tubi interni.</li>
+    <li><span class="step-num">6</span>Aprire il coperchio, posizionare carta da cucina o un vassoio sotto l'apparecchio e lasciare asciugare in luogo ventilato per 48 ore senza capovolgere.</li>
+  </ol>
+
+  <div class="caution-box">
+    <div class="box-title">ATTENZIONE</div>
+    Se non si pulisce regolarmente, i tubi interni possono intasarsi e compromettere l'aspirazione; in tal caso contattare l'assistenza per la sostituzione dei tubi.
+  </div>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>14</span></div>
+</div>
+
+<!-- @CONTENT:troubleshooting:end -->
+
+<!-- @CONTENT:maintenance:start — 维护保养，同品类可复用大部分 -->
+<!-- ========== 第8章 维护保养 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.08 — MAINTENANCE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">08</span>Manutenzione</h2>
+  <ul class="bullet-list">
+    <li>Assicurarsi che il piano di lavoro sia piano, pulito e asciutto.</li>
+    <li>Quando l'apparecchio non è in uso, non chiudere le clip di blocco per evitare che la guarnizione sia compressa a lungo.</li>
+    <li>Pulire settimanalmente guarnizione, barra di sigillatura, elemento riscaldante, vassoio del liquido e camera del vuoto.</li>
+    <li>L'elemento riscaldante e la barra di sigillatura restano caldi dopo l'uso; attendere il raffreddamento prima della manutenzione.</li>
+    <li>Scollegare l'alimentazione prima della pulizia.</li>
+    <li>Usare una spazzola morbida per guarnizione, barra di sigillatura, elemento riscaldante, vassoio, camera del vuoto e tubo; evitare spazzole dure che potrebbero danneggiare l'apparecchio.</li>
+    <li>Al termine di ogni giornata, rimuovere e pulire il vassoio del liquido e rimuovere residui e polvere dalla camera del vuoto con un panno umido o carta.</li>
+    <li>Dopo ogni utilizzo, controllare che la guarnizione non sia gravemente deformata e che il nastro ad alta temperatura non sia danneggiato o staccato; in caso affermativo, sostituire.</li>
+    <li>Il vassoio del liquido e il tubo non supportano la pulizia ad alta temperatura (es. lavastoviglie).</li>
+  </ul>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>15</span></div>
+</div>
+
+<!-- @CONTENT:maintenance:end -->
+
+<!-- @CONTENT:vacuum_features:start — 真空包装科普，同品类真空封口机可完全复用 -->
+<!-- ========== 第9章 真空包装特性 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.09 — VACUUM PROPERTIES</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">09</span>Proprietà del confezionamento sottovuoto</h2>
+  <p>Il confezionamento sottovuoto prolunga la durata degli alimenti rimuovendo la maggior parte dell'aria dal contenitore sigillato e impedendone il ritorno, riducendo così l'ossidazione. Aiuta a mantenere sapore e qualità. Inoltre limita la crescita di microrganismi aerobici; in alcune condizioni si possono osservare:</p>
+  <ul class="bullet-list" style="margin-top:8px">
+    <li><b>Muffa</b> — La muffa non si sviluppa in ambiente a basso ossigeno; il sottovuoto ne limita la crescita.</li>
+    <li><b>Lieviti</b> — I lieviti necessitano di acqua, zucchero e temperatura moderata; possono sopravvivere con o senza aria. Per rallentarne la crescita serve refrigerazione; il congelamento li inibisce efficacemente.</li>
+    <li><b>Batteri</b> — Causano odori sgradevoli, scolorimento o rammollimento. In condizioni adeguate, il Clostridium botulinum può crescere senza aria e non è rilevabile da odore o sapore.</li>
+  </ul>
+  <p style="margin-top:10px">Come per qualsiasi altro metodo di conservazione, è importante controllare gli alimenti prima del consumo. A -4°C o meno si riduce significativamente la crescita microbica. Per la conservazione a lungo termine si consiglia il congelamento dopo il sottovuoto.</p>
+  <div class="note-box" style="margin-top:14px">
+    <div class="box-title">NOTICE</div>
+    Il confezionamento sottovuoto non sostituisce refrigerazione o congelamento. Gli alimenti deperibili che richiedono refrigerazione devono restare refrigerati o congelati anche dopo il sottovuoto.
+  </div>
+
+  <div class="sub-title">Guida alla conservazione</div>
+  <ul class="bullet-list">
+    <li>Le verdure vanno sbollentate prima del sottovuoto: immergerle in acqua bollente, poi in acqua fredda, infine asciugarle con un panno prima del confezionamento.</li>
+    <li>Le crucifere (broccoli, germogli, cavolo, ecc.) rilasciano gas naturalmente durante la conservazione; dopo cottura e sottovuoto conservare in frigorifero.</li>
+    <li>Non conservare sottovuoto aglio o funghi: il sottovuoto può produrre sostanze dannose per la salute.</li>
+  </ul>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>16</span></div>
+</div>
+
+<!-- ========== 真空包装特性（食物保鲜表）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.09 — FRESHNESS GUIDE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">09</span>Proprietà del confezionamento sottovuoto (segue)</h2>
+
+  <div class="sub-title">Riferimento durata conservazione sottovuoto</div>
+  <table>
+    <thead><tr><th>Metodo di conservazione</th><th>Categoria alimenti</th><th>Conservazione normale</th><th>Sottovuoto</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="4" style="font-weight:600">Congelamento</td><td>Carne</td><td>6 mesi</td><td>15–20 mesi</td></tr>
+      <tr><td>Pesce e frutti di mare</td><td>6 mesi</td><td>10–12 mesi</td></tr>
+      <tr><td>Frutta secca e caffè</td><td>6–9 mesi</td><td>18–24 mesi</td></tr>
+      <tr><td colspan="3" style="border:none;height:4px"></td></tr>
+      <tr><td rowspan="5" style="font-weight:600">Refrigerazione</td><td>Carne</td><td>2–3 giorni</td><td>12–13 giorni</td></tr>
+      <tr><td>Pesce e frutti di mare</td><td>2–3 giorni</td><td>6–8 giorni</td></tr>
+      <tr><td>Carne cotta</td><td>2–3 giorni</td><td>10–14 giorni</td></tr>
+      <tr><td>Uova</td><td>2–3 giorni</td><td>30–50 giorni</td></tr>
+      <tr><td>Verdure</td><td>2–3 giorni</td><td>7–10 giorni</td></tr>
+      <tr><td colspan="4" style="border:none;height:4px"></td></tr>
+      <tr><td rowspan="7" style="font-weight:600">Temperatura ambiente</td><td>Pane</td><td>1–2 giorni</td><td>6–8 giorni</td></tr>
+      <tr><td>Biscotti confezionati</td><td>4–6 mesi</td><td>12 mesi</td></tr>
+      <tr><td>Pasta</td><td>5–6 mesi</td><td>12 mesi</td></tr>
+      <tr><td>Riso</td><td>5–6 mesi</td><td>12 mesi</td></tr>
+      <tr><td>Farina</td><td>4–5 mesi</td><td>12 mesi</td></tr>
+      <tr><td>Prodotti secchi</td><td>3–4 mesi</td><td>12 mesi</td></tr>
+      <tr><td>Caffè / Tè / Latte in polvere</td><td>2–6 mesi</td><td>12 mesi</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>17</span></div>
+</div>
+
+<!-- @CONTENT:vacuum_features:end -->
+
+<!-- ========== 第10章 品牌与保修信息 ========== -->
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.10 — WARRANTY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">10</span>Informazioni su marchio e garanzia</h2>
+
+  <p>Grazie per aver acquistato ACT Sigillatrice Sottovuoto. Per qualsiasi domanda, contattarci: <br>support@thespacetec.com | www.thespacetec.com</p>
+
+  <div class="sub-title">Informazioni sul marchio</div>
+  <table>
+    <tbody>
+      <tr><td style="width:30%">Marchio</td><td><b>ADVANCED CUISINE TECHNOLOGY PTE. LTD.</b></td></tr>
+      <tr><td>Indirizzo</td><td>60 Paya Lebar Road, #11-19 Paya Lebar Square, Singapore 409051</td></tr>
+      <tr><td>Sito web</td><td>www.thespacetec.com</td></tr>
+      <tr><td>Assistenza clienti</td><td>support@thespacetec.com</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-title">Produttore autorizzato</div>
+  <table>
+    <tbody>
+      <tr><td style="width:30%">Produttore</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td>Indirizzo</td><td>No. 1, Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
+      <tr><td>Sito web</td><td>www.argiontechnology.com</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-title">Informazioni sulla garanzia</div>
+  <p>Questo prodotto è coperto da <b>garanzia limitata di 2 anni</b>. È possibile richiedere la sostituzione in garanzia entro 2 anni dalla data di acquisto originale. Per usufruire della garanzia è necessario:</p>
+  <ul class="bullet-list">
+    <li>Aver acquistato il prodotto negli ultimi 2 anni.</li>
+    <li>Disporre del numero d'ordine originale o dell'e-mail usata per l'acquisto.</li>
+    <li>In caso di acquisto tramite rivenditore, fornire copia dello scontrino originale.</li>
+  </ul>
+  <p style="margin-top:12px">Per richiedere la garanzia, inviare un'e-mail a: <b>support@thespacetec.com</b></p>
+
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_v23/image31.png" alt="Scheda garanzia" style="width:100%;max-height:8mm;object-fit:contain;"></div>
+  <div class="sub-title" style="margin-top:14px">Scheda garanzia</div>
+  <table>
+    <tbody>
+      <tr><td style="width:35%">Nome cliente</td><td></td></tr>
+      <tr><td>Indirizzo</td><td></td></tr>
+      <tr><td>Città / Provincia / CAP</td><td></td></tr>
+      <tr><td>Numero di telefono</td><td></td></tr>
+      <tr><td>Indirizzo e-mail</td><td></td></tr>
+      <tr><td>Data di acquisto originale</td><td></td></tr>
+      <tr><td>Modello prodotto</td><td></td></tr>
+      <tr><td>Numero di serie (se applicabile)</td><td></td></tr>
+      <tr><td>Nome rivenditore</td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT V23 Manuale d'uso</span><span>18</span></div>
+</div>
+
+</body>
+</html>

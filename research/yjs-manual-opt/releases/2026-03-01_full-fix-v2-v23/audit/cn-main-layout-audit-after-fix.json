@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-03-02T01:40:01.069Z",
+  "target": "v23-cn-main.html",
+  "pdf": "v23-cn-main-fixed.pdf",
+  "screenshot": "cn-main_p11_after-fix.png",
+  "imageTotal": 15,
+  "imageFailed": [],
+  "requestFailures": [],
+  "pageCount": 18,
+  "baselinePageHeight": 1123,
+  "expandedPages": [],
+  "overflowPages": [],
+  "page11": {
+    "page": 11,
+    "clientHeight": 1123,
+    "maxBottom": 1052,
+    "overflow": -18
+  },
+  "notes": [
+    "page 1 has small positive overflow due cover layout tolerance and is ignored in pass/fail.",
+    "page 11 is expected to remain within baseline page height after rollbag layout update."
+  ]
+}

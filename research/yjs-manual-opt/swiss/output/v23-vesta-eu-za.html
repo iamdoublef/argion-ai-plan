@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V23 Vacuum Sealer User Manual — Vesta</title>
+<style>
+:root {
+    --swiss-black: #000000;
+    --swiss-red: #E63946;
+    --swiss-gray-bg: #F2F2F7;
+    --swiss-gray-text: #8E8E93;
+    --page-margin: 12.7mm;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #2C2C2E; font-family: 'Helvetica Neue', 'Inter', Arial, sans-serif; color: var(--swiss-black); }
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: var(--page-margin);
+    background: #FFF;
+    margin: 10mm auto;
+    position: relative;
+    page-break-after: always;
+}
+
+/* 顶部装饰条 */
+.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+.header-brand { font-weight: 900; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; }
+.header-ref { font-family: 'Courier New', monospace; font-size: 10px; color: var(--swiss-gray-text); }
+
+/* 标题系统 */
+.section-title { font-size: 26px; font-weight: 900; text-transform: uppercase; margin: 0 0 16px; letter-spacing: -0.5px; border-left: 6px solid var(--swiss-black); padding-left: 12px; }
+.section-title .chapter-num { color: var(--swiss-red); margin-right: 8px; }
+.sub-title { font-size: 14px; font-weight: 700; border-bottom: 2px solid var(--swiss-black); padding-bottom: 4px; margin: 20px 0 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* 正文 */
+p { font-size: 13px; line-height: 1.65; margin-bottom: 10px; color: #222; }
+
+/* 步骤列表 */
+.steps { list-style: none; padding: 0; margin: 10px 0; }
+.steps li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; font-size: 13px; line-height: 1.6; }
+.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
+
+/* 普通列表 */
+.bullet-list { list-style: none; padding: 0; margin: 8px 0; }
+.bullet-list li { padding: 3px 0 3px 16px; position: relative; font-size: 13px; line-height: 1.65; }
+.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
+
+/* 警告框 */
+.warning-box { border: 2px solid var(--swiss-red); padding: 12px 16px; margin: 14px 0; }
+.warning-box .box-title { font-size: 11px; font-weight: 900; color: var(--swiss-red); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.caution-box { border: 2px solid #000; padding: 12px 16px; margin: 14px 0; }
+.caution-box .box-title { font-size: 11px; font-weight: 900; color: #000; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.note-box { background: var(--swiss-gray-bg); padding: 10px 14px; margin: 12px 0; border-left: 4px solid var(--swiss-gray-text); font-size: 12px; color: #444; }
+.note-box .box-title { font-weight: 900; color: #333; margin-bottom: 4px; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+.box-list { list-style: none; padding: 0; }
+.box-list li { padding: 2px 0 2px 14px; position: relative; font-size: 12px; line-height: 1.6; }
+.box-list li::before { content: "·"; position: absolute; left: 2px; color: var(--swiss-red); font-weight: 900; }
+
+/* 图片 */
+.fig-wrap { text-align: center; margin: 14px 0; }
+.fig-wrap img { max-width: 80%; max-height: 70mm; object-fit: contain; display: inline-block; }
+.fig-caption { font-size: 10px; color: var(--swiss-gray-text); margin-top: 4px; text-align: center; font-family: 'Courier New', monospace; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* 表格 */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+th { background: var(--swiss-black); color: #FFF; padding: 8px 10px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+td { border: 1px solid #CCC; padding: 7px 10px; color: #1A1A1A; vertical-align: top; }
+tr:nth-child(even) td { background: var(--swiss-gray-bg); }
+
+/* 按键名称 */
+.btn-name { display: inline-block; background: #FFF; border: 1.5px solid var(--swiss-black); padding: 1px 6px; font-size: 11px; font-family: 'Courier New', monospace; color: #000; font-weight: 700; white-space: nowrap; }
+
+/* 目录 */
+.toc-title { font-size: 28px; font-weight: 900; text-transform: uppercase; margin-bottom: 24px; letter-spacing: -1px; }
+.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 13px; }
+.toc-chapter { color: var(--swiss-red); font-weight: 900; margin-right: 8px; font-family: 'Courier New', monospace; }
+.toc-name { flex: 1; }
+.toc-page { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 12px; }
+
+/* 页脚 */
+.callout-no {
+  display: inline-block;
+  min-width: 16px;
+  font-weight: 700;
+}
+
+.compact-accessories .sub-title { margin: 12px 0 6px; }
+.compact-accessories .steps li { margin-bottom: 6px; line-height: 1.5; }
+.compact-accessories .bullet-list li { padding-top: 1px; padding-bottom: 1px; line-height: 1.5; }
+.compact-accessories .btn-name { font-size: 11px; padding: 0 4px; }
+
+.compact-ops .sub-title { margin: 11px 0 6px; }
+.compact-ops .steps li { margin-bottom: 5px; line-height: 1.5; }
+.compact-ops .note-box { margin: 8px 0; padding: 8px 12px; font-size: 12px; }
+
+.compact-troubleshoot table { font-size: 12px; margin: 8px 0; }
+.compact-troubleshoot th, .compact-troubleshoot td { padding-top: 5px; padding-bottom: 5px; }
+
+.compact-warranty .sub-title { margin: 12px 0 6px !important; font-size: 14px; }
+.compact-warranty p { margin-bottom: 8px; line-height: 1.55; }
+.compact-warranty .bullet-list li { padding-top: 1px; padding-bottom: 1px; line-height: 1.5; }
+.compact-warranty table { margin: 8px 0; font-size: 12px; }
+.compact-warranty th, .compact-warranty td { padding-top: 5px; padding-bottom: 5px; }
+.compact-warranty .fig-wrap { margin: 4px 0 2px !important; }
+.compact-warranty .fig-wrap img { max-height: 6mm !important; }
+
+.rollbag-guide .bullet-list { margin: 6px 0; }
+.rollbag-guide .bullet-list li { line-height: 1.55; padding-top: 2px; padding-bottom: 2px; }
+.rollbag-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8mm;
+  margin-top: 8px;
+  align-items: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure {
+  width: 100%;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure img {
+  width: 100%;
+  max-width: 114mm;
+  height: auto;
+  display: inline-block;
+}
+
+@media print {
+  .compact-accessories .sub-title { margin: 10px 0 5px; }
+  .compact-accessories .steps li { margin-bottom: 5px; }
+  .compact-ops .sub-title { margin: 9px 0 5px; }
+  .compact-ops .steps li { margin-bottom: 4px; }
+  .compact-troubleshoot table { font-size: 11.5px; margin: 6px 0; }
+  .compact-troubleshoot th, .compact-troubleshoot td { padding-top: 4px; padding-bottom: 4px; }
+  .compact-warranty { font-size: 13px; line-height: 1.5; }
+  .compact-warranty table { margin: 6px 0; font-size: 11.5px; }
+  .compact-warranty th, .compact-warranty td { padding-top: 4px; padding-bottom: 4px; }
+  .rollbag-stack { gap: 6mm; margin-top: 6px; }
+  .rollbag-figure img { max-width: 108mm; }
+}
+
+.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+
+/* 封面 */
+.cover-brand { font-size: 13px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; }
+.cover-brand span { display: inline-block; width: 28px; height: 4px; background: var(--swiss-red); margin-right: 8px; vertical-align: middle; }
+.cover-model { font-size: 11px; font-weight: 900; letter-spacing: 4px; color: var(--swiss-red); text-transform: uppercase; margin-bottom: 6px; font-family: 'Courier New', monospace; }
+.cover-title { font-size: 52px; font-weight: 900; color: var(--swiss-black); line-height: 0.95; margin-bottom: 4px; text-transform: uppercase; letter-spacing: -2px; }
+.cover-subtitle { font-size: 16px; font-weight: 400; color: var(--swiss-gray-text); margin-bottom: 0; text-transform: uppercase; letter-spacing: 2px; }
+.cover-divider { width: 40px; height: 4px; background: var(--swiss-red); margin: 14px 0; }
+.cover-bottom { border-top: 2px solid var(--swiss-black); padding-top: 8px; font-size: 10px; color: var(--swiss-gray-text); line-height: 1.6; font-family: 'Courier New', monospace; }
+
+@media print { body { background: #FFF; } .page { margin: 0; }  }
+</style>
+</head>
+<body>
+
+<!-- ========== 封面页 ========== -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+  <div>
+    <div class="cover-brand"><span></span>Vesta</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
+    <div style="text-align:left;margin:0 0 12mm;">
+      <img src="./images_v23/image2.svg" alt="V23 Vacuum Sealer" style="width:100%;height:auto;max-height:85mm;max-width:100%;">
+    </div>
+    <div class="cover-model">MODEL V23</div>
+    <div class="cover-title">Vacuum Sealer</div>
+    <div class="cover-subtitle">User Manual</div>
+    <div class="cover-divider"></div>
+  </div>
+  <div class="cover-bottom">
+    Please read this manual carefully before use and keep it for future reference.<br>
+    All illustrations of products and accessories in this manual are for reference only. Due to product updates and upgrades, actual products may differ slightly from illustrations.
+  </div>
+</div>
+
+<!-- ========== 目录页 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">V23 — USER MANUAL</div>
+  </div>
+  <div class="toc-title">Contents</div>
+  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Safety Instructions</span></span><span class="toc-page">3</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Product & Vacuum Bag Tips</span></span><span class="toc-page">4</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Product Structure</span></span><span class="toc-page">5</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Product Functions</span></span><span class="toc-page">6</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Specifications</span></span><span class="toc-page">7</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Operation Guide</span></span><span class="toc-page">8</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Troubleshooting</span></span><span class="toc-page">12</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Maintenance</span></span><span class="toc-page">15</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vacuum Packaging Properties</span></span><span class="toc-page">16</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Brand & Warranty Information</span></span><span class="toc-page">18</span></div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>2</span></div>
+</div>
+
+<!-- ========== 第1章 安全须知 ========== -->
+<!-- @CONTENT:safety:start — 以下内容为产品特定安全须知，新产品需重新编写 -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.01 — SAFETY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">01</span>Safety Instructions</h2>
+  <div class="warning-box">
+    <div class="box-title">WARNING</div>
+        <div style="margin:6px 0 8px;"><img src="./images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
+<ul class="box-list">
+      <li>This machine is for household use only. Do not use for any purpose other than its intended design.</li>
+      <li>Do not allow children to play with the machine or power cord. Children and persons with reduced physical, sensory or mental capabilities should use the machine under adult supervision. Supervise children during use to prevent accidents.</li>
+      <li>Small parts and vacuum bags may pose a choking hazard. Keep out of reach of children.</li>
+      <li>Do not use the machine in high humidity, high temperature, or other unsuitable environments. Never use in the presence of flammable or explosive gases.</li>
+      <li>Ensure the power supply voltage matches the rating on the machine nameplate.</li>
+      <li>Do not leave the machine unattended while it is operating.</li>
+      <li>After sealing, the seal area is very hot. Do not touch to avoid burns.</li>
+      <li>Disconnect the power supply after use.</li>
+      <li>When unplugging from the outlet, grasp the plug firmly. Do not pull on the power cord.</li>
+      <li>Do not immerse the main unit or power cord in water or any other liquid.</li>
+      <li>The power cord must be plugged directly into a properly grounded outlet that meets safety standards.</li>
+      <li>If the plug, power cord, or main unit is damaged, stop use immediately and contact the manufacturer or authorized service center. Do not attempt to repair yourself.</li>
+      <li>Do not let the power cord hang over the edge of the counter, where children could pull it or someone could trip.</li>
+    </ul>
+  </div>
+  <div class="caution-box">
+    <div class="box-title">CAUTION</div>
+    <ul class="box-list">
+      <li>Keep this manual in a safe place.</li>
+      <li>This machine does not require lubrication. Do not clean with organic solvents.</li>
+      <li>When not in use for extended periods, do not engage the latch to avoid deforming the seal gasket under pressure.</li>
+      <li>Do not dispose of this product with household waste. Recycle or dispose of according to your local regulations for electronic waste.</li>
+    </ul>
+  </div>
+  <div class="note-box">
+    <div class="box-title">NOTICE</div>
+    <ul class="box-list">
+      <li>This product is intended for household food preservation.</li>
+      <li>Read this manual in full before first use.</li>
+      <li>Retain your proof of purchase for warranty service.</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>3</span></div>
+</div>
+
+<!-- @CONTENT:safety:end -->
+
+<!-- ========== 第2章 使用提示 ========== -->
+<!-- @CONTENT:usage_tips:start — 产品使用提示，同品类可复用大部分 -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.02 — USAGE TIPS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">02</span>Product & Vacuum Bag Tips</h2>
+  <ul class="bullet-list">
+    <li>This machine is only compatible with vacuum bags that have air channel grooves.</li>
+    <li>For items with sharp points or edges, wrap corners with puncture-resistant sheets, paper towels, or other soft materials to prevent puncturing the vacuum bag.</li>
+    <li>Vacuum bags may be used for heating or microwave heating, but you must first cut a small vent in a corner of the bag.</li>
+    <li>Vacuum bags used for storage can be reused, but bags used for heating or microwave heating should be used only once. Bags that have stored seafood or oily foods are not recommended for reuse.</li>
+    <li>When placing the bag, the bag opening must lie flat across the heating element.</li>
+    <li>When filling bags, always leave at least 2 inch (5 cm) of space between the bag opening and the food.</li>
+    <li>When sealing liquids, sauces, or foods with liquid, avoid wetting the bag opening. Wipe the opening dry before sealing to ensure a proper seal.</li>
+    <li>For soft, high-moisture foods that need to retain their shape after packaging, consider freezing before vacuum sealing.</li>
+    <li>Do not place heavy objects on the lid, as this may damage the machine.</li>
+  </ul>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>4</span></div>
+</div>
+
+<!-- @CONTENT:usage_tips:end -->
+
+<!-- ========== 第3章 产品结构 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.03 — STRUCTURE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">03</span>Product Structure</h2>
+  <div class="fig-wrap">
+    <img src="./images_v23/image5.svg" alt="产品结构图">
+    <div class="fig-caption">Fig. 1 — Product Structure</div>
+  </div>
+  <table>
+    <thead><tr><th style="width:60px">No.</th><th>Name</th><th style="width:60px">No.</th><th>Name</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Latch Handle</td><td>8</td><td>Roll Bag Support Tube</td></tr>
+      <tr><td>2</td><td>Control Panel</td><td>9</td><td>Main Body</td></tr>
+      <tr><td>3</td><td>External Vacuum Port</td><td>10</td><td>Bag Cutter Bracket</td></tr>
+      <tr><td>4</td><td>Top Lid</td><td>11</td><td>Drip Tray (Vacuum Chamber Below)</td></tr>
+      <tr><td>5</td><td>Sealing Gasket Strip</td><td>12</td><td>Heat-resistant Tape & Heating Element</td></tr>
+      <tr><td>6</td><td>Sealing Ring</td><td>13</td><td>Bag Cutter</td></tr>
+      <tr><td>7</td><td>Roll Bag Compartment</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="note-box">
+    <div class="box-title">NOTE</div>
+    After operation, the heating element is very hot. Do not touch to avoid burns!
+  </div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>5</span></div>
+</div>
+
+<!-- ========== 第4章 产品功能 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.04 — FUNCTIONS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">04</span>Product Functions</h2>
+  <div class="fig-wrap">
+    <img src="./images_v23/image10.svg" alt="控制面板">
+    <div class="fig-caption">Fig. 2 — Control Panel</div>
+  </div>
+  <table>
+    <thead><tr><th style="width:45%">No. / Button</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td><span class="callout-no">1</span> <span class="btn-name">Vac&amp;Seal / Start</span>　Vacuum Seal / Start</td><td>Press this button to start the selected mode.</td></tr>
+      <tr><td><span class="callout-no">2</span> <span class="btn-name">Stop</span>　Stop</td><td>Press this button during any process to stop the operation.</td></tr>
+      <tr><td><span class="callout-no">3</span> <span class="btn-name">Vac Mode</span>　Vacuum Mode Selection</td><td><b>Normal</b> (default pressure) / <b>Gentle</b> (light pressure) / <b>Liquid</b> (liquid items)</td></tr>
+      <tr><td><span class="callout-no">4</span> <span class="btn-name">Pulse Vac</span>　Manual Vacuum</td><td>Press and hold for manual vacuum control; release to pause. Press Seal when desired level is reached.</td></tr>
+      <tr><td><span class="callout-no">5</span> <span class="btn-name">Seal</span>　Seal</td><td>Press this button to seal immediately.</td></tr>
+      <tr><td><span class="callout-no">6</span> <span class="btn-name">Accessories</span>　Accessories</td><td><b>Mason Jar</b> / <b>Canister</b> / <b>Marinate</b></td></tr>
+      <tr><td><span class="callout-no">7</span> <span class="btn-name">Extend Seal Time</span>　Extend Seal Time</td><td>Press before operation to extend sealing time.</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>6</span></div>
+</div>
+
+<!-- ========== 第5章 技术参数 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.05 — SPECIFICATIONS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">05</span>Specifications</h2>
+  <table>
+    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+    <tbody>
+      <tr><td>Voltage</td><td>220~240 Vac</td></tr>
+      <tr><td>Frequency</td><td>50 Hz</td></tr>
+      <tr><td>Power</td><td>190 W</td></tr>
+      <tr><td>Pump</td><td>Dual Pump</td></tr>
+      <tr><td>Vacuum Pressure</td><td>-958 mbar</td></tr>
+      <tr><td>Sealing Wire Width</td><td>1.8 mm × 2</td></tr>
+      <tr><td>Max Bag Width</td><td>315 mm</td></tr>
+      <tr><td>Dimensions (L×W×H)</td><td>380 × 205 × 155 mm</td></tr>
+      <tr><td>Weight</td><td>3.0 kg</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>7</span></div>
+</div>
+
+<!-- @CONTENT:operations:start — 操作步骤为最产品特定的部分，新产品需全面重写 -->
+<!-- ========== 第6章 操作指引 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Operation Guide</h2>
+
+  <div class="sub-title">6.1 How to Use the Bag Cutter</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Open the lid.</li>
+        <li><span class="step-num">2</span>Open the bag cutter holder.</li>
+        <li><span class="step-num">3</span>Pull the desired length of bag from the roll.</li>
+        <li><span class="step-num">4</span>Move the bag cutter to the far left or right, then press the holder down onto the bag.</li>
+        <li><span class="step-num">5</span>Press the bag cutter down and slide it across the bag for a clean cut.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image12.svg" alt="切袋刀操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.2 How to Use the Seal Function</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Making a bag from a roll and sealing:</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Create an open-ended bag using the bag cutter steps above.</li>
+    <li><span class="step-num">2</span>Place one open end of the bag flat into the vacuum chamber.</li>
+    <li><span class="step-num">3</span>Close the lid and press the handle down to lock.</li>
+    <li><span class="step-num">4</span>Press the <span class="btn-name">Seal</span> button and wait for the machine to complete.</li>
+  </ol>
+  <p style="font-size:13px;color:#555;margin:10px 0 8px"><b>Sealing a bag only:</b></p>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Place items in the bag and put the bag opening into the vacuum chamber.</li>
+        <li><span class="step-num">2</span>Close the lid and press the handle down to lock.</li>
+        <li><span class="step-num">3</span>Press the <span class="btn-name">Seal</span> button and wait for the machine to complete.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image14.svg" alt="密封操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.3 How to Extend Seal Time</div>
+  <div class="note-box">
+    To extend seal time, press the <span class="btn-name">Extend Seal Time</span> button before operation so its indicator lights up. The extended time setting remains in effect. To restore default seal time, press the button again before the next operation. When the machine enters sleep mode or is powered off and on again, seal time will revert to the default setting.
+  </div>
+  <div class="caution-box">
+    <div class="box-title">CAUTION</div>
+    When Extend Seal Time is enabled, smart seal adjustment is temporarily disabled. Allow more than 20 seconds between consecutive operations and open the lid for cooling.
+  </div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>8</span></div>
+</div>
+
+<!-- ========== 操作指引（续）========== -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — OPERATION (CONT.)</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Operation Guide (Cont.)</h2>
+
+  <div class="sub-title">6.4 How to Use Vacuum Seal</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Vacuum sealing solid items:</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Place the bag opening into the vacuum chamber.</li>
+    <li><span class="step-num">2</span>Close the lid and press the handle down to lock.</li>
+    <li><span class="step-num">3</span>Press the <span class="btn-name">Vac Mode</span> button to select <b>Normal</b> or <b>Gentle</b> mode.</li>
+    <li><span class="step-num">4</span>Press the <span class="btn-name">Vac&amp;Seal / Start</span> button to start.</li>
+    <li><span class="step-num">5</span>To stop, press the <span class="btn-name">Stop</span> button.</li>
+  </ol>
+  <div class="note-box">Before using Gentle mode for delicate items, test with other items first to ensure the compression level meets your needs and does not crush the contents.</div>
+
+  <p style="font-size:13px;color:#555;margin:12px 0 8px"><b>Vacuum sealing liquids:</b></p>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Keep the bag upright so the liquid level stays below the heating element. Leave about 7 inch (18 cm) of space between the liquid and the bag opening.</li>
+        <li><span class="step-num">2</span>Place the bag opening into the vacuum chamber.</li>
+        <li><span class="step-num">3</span>Close the lid and press the handle down to lock.</li>
+        <li><span class="step-num">4</span>Press the <span class="btn-name">Vac Mode</span> button to select <b>Liquid</b> mode.</li>
+        <li><span class="step-num">5</span>Press the <span class="btn-name">Vac&amp;Seal / Start</span> button to start.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image16.svg" alt="液体模式" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.5 How to Use Manual Vacuum</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Method 1 (Switch to Pulse Vac during auto vacuum):</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Hold the <span class="btn-name">Pulse Vac</span> button to vacuum.</li>
+    <li><span class="step-num">2</span>Release the button to pause.</li>
+    <li><span class="step-num">3</span>When the desired vacuum level is reached, press the <span class="btn-name">Seal</span> button to seal.</li>
+  </ol>
+  <p style="font-size:13px;color:#555;margin:10px 0 8px"><b>Method 2 (Direct Pulse Vac mode):</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Place the bag opening into the vacuum chamber.</li>
+    <li><span class="step-num">2</span>Close the lid and press the handle down to lock.</li>
+    <li><span class="step-num">3</span>Hold the <span class="btn-name">Pulse Vac</span> button to vacuum.</li>
+    <li><span class="step-num">4</span>Release the button to pause.</li>
+    <li><span class="step-num">5</span>When the desired vacuum level is reached, press the <span class="btn-name">Seal</span> button to seal.</li>
+  </ol>
+  <div class="note-box">During manual vacuum, holding the button runs the pump and releasing pauses it (pressure is maintained). If no action is taken within 10 seconds, the machine will automatically release pressure and exit manual vacuum mode.</div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>9</span></div>
+</div>
+
+<!-- ========== 操作指引（附件使用）========== -->
+<div class="page compact-accessories">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — ACCESSORIES</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Operation Guide (Accessories)</h2>
+
+  <div class="sub-title">6.6 Vacuum Hose Usage</div>
+  <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:12px">
+    <div style="flex:1">
+      <ul class="bullet-list">
+        <li>For Mason jar adapters and valve zipper bags, use the round nozzle in orientation 1.</li>
+        <li>For vacuum canisters and bottle stoppers, choose orientation 1 or 2 depending on the valve size.</li>
+        <li>The flat nozzle 3 on the vacuum hose connects to the external vacuum port 3 on the machine lid.</li>
+      </ul>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image18.svg" alt="真空软管" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.7 How to Vacuum Mason Jars</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Close the machine lid.</li>
+        <li><span class="step-num">2</span>Place the lid on the Mason jar mouth without screwing on the ring (if present).</li>
+        <li><span class="step-num">3</span>Attach the adapter to the Mason jar.</li>
+        <li><span class="step-num">4</span>Insert the vacuum hose flat nozzle into the external vacuum port on the machine lid.</li>
+        <li><span class="step-num">5</span>Press the handle down to lock the lid.</li>
+        <li><span class="step-num">6</span>Press the <span class="btn-name">Accessories</span> button and select <b>Mason Jar</b>.</li>
+        <li><span class="step-num">7</span>Cover the adapter vacuum port with the vacuum hose round nozzle and press gently with your hand.</li>
+        <li><span class="step-num">8</span>Press the <span class="btn-name">Vac&amp;Seal / Start</span> button to start.</li>
+        <li><span class="step-num">9</span>When done, remove the vacuum hose and adapter.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:center">
+      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.8 How to Vacuum Canisters</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Before use, confirm the canister is compatible with this machine's vacuum hose.</li>
+        <li><span class="step-num">2</span>Confirm the canister is in Vacuum mode.</li>
+        <li><span class="step-num">3</span>Insert the vacuum hose flat nozzle into the external vacuum port on the machine lid.</li>
+        <li><span class="step-num">4</span>Press the handle down to lock the lid.</li>
+        <li><span class="step-num">5</span>Press the <span class="btn-name">Accessories</span> button and select <b>Canister</b>.</li>
+        <li><span class="step-num">6</span>Cover the canister valve vacuum port with the vacuum hose round nozzle and press gently.</li>
+        <li><span class="step-num">7</span>Press the <span class="btn-name">Vac&amp;Seal / Start</span> button to start.</li>
+        <li><span class="step-num">8</span>When done, remove the vacuum hose.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image24.svg" alt="真空罐操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+    </div>
+  </div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>10</span></div>
+</div>
+
+<!-- ========== 操作指引（腌制+卷袋）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — MARINATE &amp; ROLL BAG</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Operation Guide (Cont.)</h2>
+
+  <div class="sub-title">6.9 How to Marinate</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>Cover food with marinade and place in the vacuum canister.</li>
+        <li><span class="step-num">2</span>Confirm the canister is in Vacuum mode.</li>
+        <li><span class="step-num">3</span>Insert the vacuum hose flat nozzle into the external vacuum port on the machine lid.</li>
+        <li><span class="step-num">4</span>Insert the vacuum hose round nozzle into the valve vacuum port.</li>
+        <li><span class="step-num">5</span>Press the handle down to lock the lid.</li>
+        <li><span class="step-num">6</span>Press the <span class="btn-name">Accessories</span> button and select <b>Canister</b>.</li>
+        <li><span class="step-num">7</span>Press the <span class="btn-name">Vac&amp;Seal / Start</span> button to start.</li>
+        <li><span class="step-num">8</span>When done, remove the vacuum hose.</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image26.svg" alt="腌制操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="rollbag-guide">
+    <div class="sub-title">6.10 Roll Bag Compartment Guide</div>
+    <ul class="bullet-list">
+      <li>This machine can hold two rolls at once (e.g., two rolls up to 20 ft / 6 m each).</li>
+      <li>When using a single roll, maximum length is 50 ft (15 m).</li>
+      <li>The roll compartment accepts rolls up to 12 inch (300 mm) wide. A dedicated slot is provided for rolls up to 8 inch (200 mm) wide.</li>
+    </ul>
+    <div class="rollbag-stack">
+      <div class="rollbag-figure">
+        <img src="./images_v23/image28.svg" alt="单卷袋放置">
+      </div>
+      <div class="rollbag-figure">
+        <img src="./images_v23/image30.svg" alt="双卷袋放置">
+      </div>
+    </div>
+  </div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>11</span></div>
+</div>
+
+<!-- @CONTENT:operations:end -->
+
+<!-- @CONTENT:troubleshooting:start — 故障排除表，新产品需根据产品特性重写 -->
+<!-- ========== 第7章 故障排除 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Troubleshooting</h2>
+
+  <table>
+    <thead><tr><th style="width:22%">Problem</th><th style="width:40%">Possible Cause</th><th style="width:38%">Solution</th></tr></thead>
+    <tbody>
+      <tr>
+        <td rowspan="3"><b>Will not power on</b></td>
+        <td>Power cord not properly plugged in</td>
+        <td>Ensure the power cord is properly inserted.</td>
+      </tr>
+      <tr>
+        <td>Power cord damaged or frayed</td>
+        <td>Unplug and inspect the power cord. If damaged, have it replaced by a qualified technician.</td>
+      </tr>
+      <tr>
+        <td>Control board or panel cable connector loose</td>
+        <td>Contact a qualified technician for repair.</td>
+      </tr>
+      <tr>
+        <td rowspan="6"><b>Poor vacuum / air remains</b></td>
+        <td>Bag opening not fully inside the seal gasket</td>
+        <td>Ensure the entire bag opening is inside the lower vacuum chamber seal gasket.</td>
+      </tr>
+      <tr>
+        <td>Using non-grooved vacuum bags</td>
+        <td>Use vacuum bags with air channel grooves.</td>
+      </tr>
+      <tr>
+        <td>Seal gasket damaged, flipped, or incorrectly installed</td>
+        <td>Check the seal gasket and install correctly.</td>
+      </tr>
+      <tr>
+        <td>Bag punctured or has pinholes</td>
+        <td>Replace with a new vacuum bag.</td>
+      </tr>
+      <tr>
+        <td>Debris on bag opening causing incomplete seal</td>
+        <td>Clean the bag opening and try again.</td>
+      </tr>
+      <tr>
+        <td>Seal time too long, causing overheating</td>
+        <td>Open the lid and let the machine cool before using again.</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><b>Will not seal or poor seal</b></td>
+        <td>Bag opening not correctly placed on heating element</td>
+        <td>Reposition the bag opening so it lies flat across the heating element.</td>
+      </tr>
+      <tr>
+        <td>Moisture, particles, or debris on seal area</td>
+        <td>Clean the seal area and try again.</td>
+      </tr>
+      <tr>
+        <td>Seal bar not installed</td>
+        <td>Install the seal bar.</td>
+      </tr>
+      <tr>
+        <td>Default seal time insufficient</td>
+        <td>Press <span class="btn-name">Extend Seal Time</span> and try again.</td>
+      </tr>
+      <tr>
+        <td rowspan="3"><b>Bag leaks after vacuum seal</b></td>
+        <td>High-temperature tape damaged or detached</td>
+        <td>Replace the high-temperature tape promptly.</td>
+      </tr>
+      <tr>
+        <td>Abnormal heating causing bag melt or insufficient seal</td>
+        <td>See solutions for poor vacuum and will not seal.</td>
+      </tr>
+      <tr>
+        <td>Sharp items punctured the bag</td>
+        <td>Wrap sharp edges with paper towels or puncture-resistant sheets and use a new bag.</td>
+      </tr>
+      </tbody>
+  </table>
+
+  <div class="note-box">
+    <div class="box-title">NOTE</div>
+    Some fruits and vegetables release gas if not properly blanched before packaging, or when hot. This can cause the vacuum bag to appear loose. This is normal and not a leak.
+  </div>
+  <div class="note-box">If the above solutions do not resolve the issue, contact customer service. Do not disassemble the machine yourself.</div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>12</span></div>
+</div>
+
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING ADDENDUM</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Troubleshooting (Accessories & Alarms)</h2>
+
+  <table>
+    <thead><tr><th style="width:22%">Problem</th><th style="width:40%">Possible Cause</th><th style="width:38%">Solution</th></tr></thead>
+    <tbody>
+<tr>
+        <td rowspan="3"><b>Accessories mode will not vacuum</b></td>
+        <td>Vacuum hose flat nozzle not fully inserted into external port</td>
+        <td>Firmly twist and press the flat nozzle until fully inserted.</td>
+      </tr>
+      <tr>
+        <td>Lid handle not pressed down to lock</td>
+        <td>Press the handle down to lock the lid and try again.</td>
+      </tr>
+      <tr>
+        <td>Debris on seal gasket or vacuum chamber</td>
+        <td>Open the lid, remove debris, close, and try again.</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><b>Error alarm (continuous beep + fast flashing indicator)</b></td>
+        <td>Alarm when pressing Vac&amp;Seal/Start or Seal</td>
+        <td>Check that the lid is closed and the handle is pressed down to lock.</td>
+      </tr>
+      <tr>
+        <td>Continuous beeping during vacuum</td>
+        <td>Machine cannot reach target pressure. Check handle lock and bag for damage. Try a new bag.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>13</span></div>
+</div>
+
+<!-- ========== 故障排除（液体进入）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.07 — LIQUID RECOVERY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Troubleshooting (Cont.)</h2>
+
+  <div class="sub-title">Recovery procedure if liquid enters the machine</div>
+
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>If liquid enters the vacuum chamber:</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Turn off power immediately. Wait at least 5 minutes for the heating element to cool.</li>
+    <li><span class="step-num">2</span>Remove the liquid tray and wipe dry.</li>
+    <li><span class="step-num">3</span>Wipe the liquid from the vacuum chamber.</li>
+    <li><span class="step-num">4</span>Place kitchen paper or a tray under the machine and power on again.</li>
+    <li><span class="step-num">5</span>Close the lid, hold the <span class="btn-name">Pulse Vac</span> button for 20 seconds, then press <span class="btn-name">Stop</span> to release. Repeat 5 times to expel liquid from internal tubing.</li>
+    <li><span class="step-num">6</span>Open the lid, place kitchen paper or a tray under the machine, and let it air dry in a ventilated area for 48 hours. Do not tilt the machine during this time.</li>
+  </ol>
+
+  <p style="font-size:13px;color:#555;margin:16px 0 8px"><b>If liquid enters the heating element:</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Do not tilt the machine. Turn off power and wait 10 minutes for the heating element to cool and internal liquid to drain.</li>
+    <li><span class="step-num">2</span>Clean and wipe liquid from the drip tray, vacuum chamber, and bottom of the machine.</li>
+    <li><span class="step-num">3</span>Open the lid, place kitchen paper or a tray under the machine, and let it air dry in a ventilated area for 24 hours. Do not tilt the machine during this time.</li>
+    <li><span class="step-num">4</span>Place kitchen paper or a tray under the machine and power on again.</li>
+    <li><span class="step-num">5</span>Close the lid, hold the <span class="btn-name">Pulse Vac</span> button for 20 seconds, then press <span class="btn-name">Stop</span> to release. Repeat 5 times to expel liquid from internal tubing.</li>
+    <li><span class="step-num">6</span>Open the lid, place kitchen paper or a tray under the machine, and let it air dry in a ventilated area for 48 hours. Do not tilt the machine during this time.</li>
+  </ol>
+
+  <div class="caution-box">
+    <div class="box-title">CAUTION</div>
+    If not cleaned regularly, internal tubing may become clogged and affect vacuum performance. Contact customer service for tubing replacement.
+  </div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>14</span></div>
+</div>
+
+<!-- @CONTENT:troubleshooting:end -->
+
+<!-- @CONTENT:maintenance:start — 维护保养，同品类可复用大部分 -->
+<!-- ========== 第8章 维护保养 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.08 — MAINTENANCE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">08</span>Maintenance</h2>
+  <ul class="bullet-list">
+    <li>Ensure the work surface is flat, clean, and dry.</li>
+    <li>When not in use, do not engage the latch to avoid compressing the seal gasket and affecting performance.</li>
+    <li>Clean the seal gasket, seal bar, heating element, liquid tray, and vacuum chamber weekly.</li>
+    <li>The heating element and seal bar remain hot after use. Allow the machine to cool before maintenance.</li>
+    <li>Unplug the machine before cleaning.</li>
+    <li>Use a soft brush to clean the seal gasket, seal bar, heating element, liquid tray, vacuum chamber, and vacuum hose. Avoid stiff brushes to prevent damage.</li>
+    <li>After each day's use, remove and clean the liquid tray, wipe dry, and use a damp cloth or paper towel to remove debris and dust from the vacuum chamber.</li>
+    <li>After each use, check if the seal gasket is severely deformed or if the high-temperature tape is damaged or detached. Replace if needed.</li>
+    <li>The liquid tray and vacuum hose are not dishwasher safe.</li>
+  </ul>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>15</span></div>
+</div>
+
+<!-- @CONTENT:maintenance:end -->
+
+<!-- @CONTENT:vacuum_features:start — 真空包装科普，同品类真空封口机可完全复用 -->
+<!-- ========== 第9章 真空包装特性 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.09 — VACUUM PROPERTIES</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">09</span>Vacuum Packaging Properties</h2>
+  <p>Vacuum packaging extends food life by removing most of the air from a sealed container and preventing air from re-entering, thereby reducing oxidation. It helps preserve flavor and overall quality. It also helps inhibit the growth of aerobic microorganisms. Under certain conditions, the following may occur:</p>
+  <ul class="bullet-list" style="margin-top:8px">
+    <li><b>Mold</b> — Mold cannot grow in low-oxygen environments. Vacuum packaging inhibits mold growth.</li>
+    <li><b>Yeast</b> — Yeast needs water, sugar, and moderate temperature to grow. It can survive with or without air. Refrigeration slows yeast growth; freezing effectively inhibits it.</li>
+    <li><b>Bacteria</b> — Causes off odors, discoloration, or softening. Under the right conditions, Clostridium botulinum can grow without air and cannot be detected by smell or taste.</li>
+  </ul>
+  <p style="margin-top:10px">As with any storage method, it is important to check food for spoilage before eating. At -4°C or lower, microbial growth can be significantly reduced. For long-term storage, vacuum seal and keep frozen.</p>
+  <div class="note-box" style="margin-top:14px">
+    <div class="box-title">NOTICE</div>
+    Vacuum packaging does not replace refrigeration or freezing. Any perishable food that requires refrigeration must remain refrigerated or frozen after vacuum packaging.
+  </div>
+
+  <div class="sub-title">Storage Guide</div>
+  <ul class="bullet-list">
+    <li>Vegetables must be blanched before vacuum packaging. Boil in water, then immerse in cold water, and pat dry with a towel before vacuum sealing.</li>
+    <li>Cruciferous vegetables (broccoli, sprouts, cabbage, etc.) naturally release gas during storage. After cooking and vacuum sealing, store in the refrigerator.</li>
+    <li>Never vacuum store garlic or mushrooms. Vacuuming can produce harmful substances that may affect health if consumed.</li>
+  </ul>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>16</span></div>
+</div>
+
+<!-- ========== 真空包装特性（食物保鲜表）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.09 — FRESHNESS GUIDE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">09</span>Vacuum Packaging Properties (Cont.)</h2>
+
+  <div class="sub-title">Vacuum Freshness Duration Reference</div>
+  <table>
+    <thead><tr><th>Storage Method</th><th>Food Category</th><th>Regular Storage</th><th>Vacuum Packaged</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="4" style="font-weight:600">Frozen</td><td>Meat</td><td>6 months</td><td>15–20 months</td></tr>
+      <tr><td>Fish &amp; Seafood</td><td>6 months</td><td>10–12 months</td></tr>
+      <tr><td>Nuts &amp; Coffee Beans</td><td>6–9 months</td><td>18–24 months</td></tr>
+      <tr><td colspan="3" style="border:none;height:4px"></td></tr>
+      <tr><td rowspan="5" style="font-weight:600">Refrigerated</td><td>Meat</td><td>2–3 days</td><td>12–13 days</td></tr>
+      <tr><td>Fish &amp; Seafood</td><td>2–3 days</td><td>6–8 days</td></tr>
+      <tr><td>Cooked Meat</td><td>2–3 days</td><td>10–14 days</td></tr>
+      <tr><td>Eggs</td><td>2–3 days</td><td>30–50 days</td></tr>
+      <tr><td>Vegetables</td><td>2–3 days</td><td>7–10 days</td></tr>
+      <tr><td colspan="4" style="border:none;height:4px"></td></tr>
+      <tr><td rowspan="7" style="font-weight:600">Room Temperature</td><td>Bread</td><td>1–2 days</td><td>6–8 days</td></tr>
+      <tr><td>Boxed Crackers</td><td>4–6 months</td><td>12 months</td></tr>
+      <tr><td>Noodles</td><td>5–6 months</td><td>12 months</td></tr>
+      <tr><td>Rice</td><td>5–6 months</td><td>12 months</td></tr>
+      <tr><td>Flour</td><td>4–5 months</td><td>12 months</td></tr>
+      <tr><td>Dried Goods</td><td>3–4 months</td><td>12 months</td></tr>
+      <tr><td>Coffee / Tea / Powdered Milk</td><td>2–6 months</td><td>12 months</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>17</span></div>
+</div>
+
+<!-- @CONTENT:vacuum_features:end -->
+
+<!-- ========== 第10章 品牌与保修信息 ========== -->
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.10 — WARRANTY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">10</span>Brand & Warranty Information</h2>
+
+  <p>Thank you for purchasing Vesta Vacuum Sealer. If you have any questions, please contact us at:<br>support@vestaprecision.com | www.vestaprecision.com</p>
+
+  <div class="sub-title">Brand Information</div>
+  <table>
+    <tbody>
+      <tr><td style="width:30%">Brand</td><td><b>Precision Appliance Technology, Inc.</b></td></tr>
+      <tr><td>Address</td><td>3120 139th Ave SE Suite 500 Bellevue, WA 98005</td></tr>
+      <tr><td>Website</td><td>www.vestaprecision.com</td></tr>
+      <tr><td>Customer Support</td><td>support@vestaprecision.com</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-title">Authorized Manufacturer</div>
+  <table>
+    <tbody>
+      <tr><td style="width:30%">Manufacturer</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td>Address</td><td>No. 1, Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
+      <tr><td>Website</td><td>www.argiontechnology.com</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-title">Warranty Information</div>
+  <p>This product comes with a <b>2-year limited warranty</b>. Warranty replacement is available for 2 years from the original purchase date. To qualify for warranty replacement, you must:</p>
+  <ul class="bullet-list">
+    <li>Have purchased the product within the past 2 years.</li>
+    <li>Have the original order number or the email used at purchase.</li>
+    <li>If purchased through a dealer or retail partner, provide a copy of the original receipt.</li>
+  </ul>
+  <p style="margin-top:12px">Email us to apply for warranty service: <b>support@vestaprecision.com</b></p>
+
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_v23/image31.png" alt="Warranty Card" style="width:100%;max-height:8mm;object-fit:contain;"></div>
+  <div class="sub-title" style="margin-top:14px">Warranty Card</div>
+  <table>
+    <tbody>
+      <tr><td style="width:35%">Customer Name</td><td></td></tr>
+      <tr><td>Address</td><td></td></tr>
+      <tr><td>City / State / Postal Code</td><td></td></tr>
+      <tr><td>Phone Number</td><td></td></tr>
+      <tr><td>Email Address</td><td></td></tr>
+      <tr><td>Original Purchase Date</td><td></td></tr>
+      <tr><td>Product Model</td><td></td></tr>
+      <tr><td>Serial Number (if applicable)</td><td></td></tr>
+      <tr><td>Merchant Name</td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>18</span></div>
+</div>
+
+</body>
+</html>

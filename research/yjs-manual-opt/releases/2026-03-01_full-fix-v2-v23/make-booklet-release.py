@@ -35,7 +35,7 @@ def impose_booklet(src_pdf: Path, out_pdf: Path):
 
 
 def main():
-    root = Path(r'D:/work/private/yjsplan/research/yjs-manual-opt/releases/2026-03-01_full-fix-v2')
+    root = Path(__file__).resolve().parent
     jobs = [
         ('v23-cn-main-fixed.pdf', 'v23-cn-main-fixed-booklet-A4.pdf'),
         ('v23-en-main-fixed.pdf', 'v23-en-main-fixed-booklet-A4.pdf'),

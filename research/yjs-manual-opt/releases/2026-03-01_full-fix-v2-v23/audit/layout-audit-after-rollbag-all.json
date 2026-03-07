@@ -1,0 +1,141 @@
+{
+  "generatedAt": "2026-03-02T02:12:14.022Z",
+  "mediaMode": "print",
+  "scope": "all v23 release html variants after rollbag vertical layout update",
+  "notes": [
+    "Page 1 minor positive overflow can occur on cover due decorative layout and is tolerated.",
+    "Pass criteria: no expanded pages, no overflow pages excluding page 1, all images loaded."
+  ],
+  "manuals": [
+    {
+      "html": "v23-cn-main.html",
+      "key": "cn-main",
+      "screenshot": "cn-main_p11_after-rollbag.png",
+      "imageTotal": 15,
+      "imageFailed": [],
+      "requestFailures": [],
+      "pageCount": 18,
+      "baselinePageHeight": 1123,
+      "expandedPages": [],
+      "overflowPagesRaw": [
+        {
+          "page": 1,
+          "clientHeight": 1123,
+          "maxBottom": 1066,
+          "overflow": 4.69
+        }
+      ],
+      "overflowPages": [],
+      "page11": {
+        "page": 11,
+        "clientHeight": 1123,
+        "maxBottom": 1020,
+        "overflow": -50
+      }
+    },
+    {
+      "html": "v23-en-main.html",
+      "key": "en-main",
+      "screenshot": "en-main_p11_after-rollbag.png",
+      "imageTotal": 15,
+      "imageFailed": [],
+      "requestFailures": [],
+      "pageCount": 18,
+      "baselinePageHeight": 1123,
+      "expandedPages": [],
+      "overflowPagesRaw": [
+        {
+          "page": 1,
+          "clientHeight": 1123,
+          "maxBottom": 1066,
+          "overflow": 4.69
+        }
+      ],
+      "overflowPages": [],
+      "page11": {
+        "page": 11,
+        "clientHeight": 1123,
+        "maxBottom": 1000,
+        "overflow": -70
+      }
+    },
+    {
+      "html": "v23-mi-style.html",
+      "key": "mi-style",
+      "screenshot": "mi-style_p11_after-rollbag.png",
+      "imageTotal": 15,
+      "imageFailed": [],
+      "requestFailures": [],
+      "pageCount": 18,
+      "baselinePageHeight": 1121,
+      "expandedPages": [],
+      "overflowPagesRaw": [
+        {
+          "page": 1,
+          "clientHeight": 1121,
+          "maxBottom": 1064,
+          "overflow": 4.69
+        }
+      ],
+      "overflowPages": [],
+      "page11": {
+        "page": 11,
+        "clientHeight": 1121,
+        "maxBottom": 1031,
+        "overflow": -37
+      }
+    },
+    {
+      "html": "v23-lifestyle-style.html",
+      "key": "lifestyle-style",
+      "screenshot": "lifestyle-style_p11_after-rollbag.png",
+      "imageTotal": 15,
+      "imageFailed": [],
+      "requestFailures": [],
+      "pageCount": 18,
+      "baselinePageHeight": 1123,
+      "expandedPages": [],
+      "overflowPagesRaw": [
+        {
+          "page": 1,
+          "clientHeight": 1123,
+          "maxBottom": 1066,
+          "overflow": 4.69
+        }
+      ],
+      "overflowPages": [],
+      "page11": {
+        "page": 11,
+        "clientHeight": 1123,
+        "maxBottom": 990,
+        "overflow": -59.97
+      }
+    },
+    {
+      "html": "v23-swiss-style.html",
+      "key": "swiss-style",
+      "screenshot": "swiss-style_p11_after-rollbag.png",
+      "imageTotal": 15,
+      "imageFailed": [],
+      "requestFailures": [],
+      "pageCount": 18,
+      "baselinePageHeight": 1123,
+      "expandedPages": [],
+      "overflowPagesRaw": [
+        {
+          "page": 1,
+          "clientHeight": 1123,
+          "maxBottom": 1066,
+          "overflow": 4.69
+        }
+      ],
+      "overflowPages": [],
+      "page11": {
+        "page": 11,
+        "clientHeight": 1123,
+        "maxBottom": 1027,
+        "overflow": -43
+      }
+    }
+  ]
+}

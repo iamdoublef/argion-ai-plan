@@ -112,6 +112,30 @@ tr:last-child td { border-bottom: none; }
 .compact-warranty .fig-wrap { margin: 4px 0 2px !important; }
 .compact-warranty .fig-wrap img { max-height: 6mm !important; }
 
+.rollbag-guide .bullet-list { margin: 4px 0; }
+.rollbag-guide .bullet-list li { line-height: 1.45; padding-top: 1px; padding-bottom: 1px; }
+.rollbag-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4mm;
+  margin-top: 4px;
+  align-items: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure {
+  width: 100%;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure img {
+  width: 100%;
+  max-width: 102mm;
+  height: auto;
+  display: inline-block;
+}
+
 @media print {
   .compact-accessories .sub-title { margin: 10px 0 5px; }
   .compact-accessories .steps li { margin-bottom: 5px; }
@@ -122,6 +146,8 @@ tr:last-child td { border-bottom: none; }
   .compact-warranty { font-size: 13px; line-height: 1.5; }
   .compact-warranty table { margin: 6px 0; font-size: 11.5px; }
   .compact-warranty th, .compact-warranty td { padding-top: 4px; padding-bottom: 4px; }
+  .rollbag-stack { gap: 4mm; margin-top: 4px; }
+  .rollbag-figure img { max-width: 98mm; }
 }
 
 .page-footer { position: absolute; bottom: 8mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 8px; display: flex; justify-content: space-between; font-size: 11px; color: #BBB; font-style: italic; }
@@ -138,7 +164,7 @@ tr:last-child td { border-bottom: none; }
   </div>
   <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 0 16mm;">
     <div class="fig-wrap" style="text-align:left;margin:0 0 10mm;">
-      <img src="../../output/images_v23/image2.svg" alt="V23 真空封口机" style="width:100%;height:auto;max-height:85mm;max-width:100%;object-fit:contain;">
+      <img src="./images_v23/image2.svg" alt="V23 真空封口机" style="width:100%;height:auto;max-height:85mm;max-width:100%;object-fit:contain;">
     </div>
     <div class="cover-model">MODEL V23</div>
     <div class="cover-title">真空封口机</div>
@@ -172,7 +198,7 @@ tr:last-child td { border-bottom: none; }
   <h2 class="section-title"><span class="chapter-num">01</span>安全须知</h2>
   <div class="warning-box">
     <div class="box-title">警告 WARNING</div>
-        <div style="margin:6px 0 8px;"><img src="../../output/images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
+        <div style="margin:6px 0 8px;"><img src="./images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
 <ul class="box-list">
       <li>本机仅供家庭使用，请勿用于其他非设计用途。</li>
       <li>请勿让儿童玩耍本机或电源线。儿童、行动不便或认知受限人士应在成年人监督下使用。使用期间请留意儿童，避免意外发生。</li>
@@ -230,7 +256,7 @@ tr:last-child td { border-bottom: none; }
 <div class="page">
   <h2 class="section-title"><span class="chapter-num">03</span>产品结构</h2>
   <div class="fig-wrap">
-    <img src="../../output/images_v23/image5.svg" alt="产品结构图">
+    <img src="./images_v23/image5.svg" alt="产品结构图">
     <div class="fig-caption">图 1 — 产品结构</div>
   </div>
   <table>
@@ -256,7 +282,7 @@ tr:last-child td { border-bottom: none; }
 <div class="page">
   <h2 class="section-title"><span class="chapter-num">04</span>产品功能</h2>
   <div class="fig-wrap">
-    <img src="../../output/images_v23/image10.svg" alt="控制面板">
+    <img src="./images_v23/image10.svg" alt="控制面板">
     <div class="fig-caption">图 2 — 控制面板</div>
   </div>
   <table>
@@ -310,7 +336,7 @@ tr:last-child td { border-bottom: none; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image12.svg" alt="切袋刀操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+      <img src="./images_v23/image12.svg" alt="切袋刀操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
     </div>
   </div>
 
@@ -332,7 +358,7 @@ tr:last-child td { border-bottom: none; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image14.svg" alt="密封操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+      <img src="./images_v23/image14.svg" alt="密封操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
     </div>
   </div>
 
@@ -374,7 +400,7 @@ tr:last-child td { border-bottom: none; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image16.svg" alt="液体模式" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
+      <img src="./images_v23/image16.svg" alt="液体模式" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
     </div>
   </div>
 
@@ -411,7 +437,7 @@ tr:last-child td { border-bottom: none; }
       </ul>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image18.svg" alt="真空软管" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
+      <img src="./images_v23/image18.svg" alt="真空软管" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
     </div>
   </div>
 
@@ -431,8 +457,8 @@ tr:last-child td { border-bottom: none; }
       </ol>
     </div>
     <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:center">
-      <img src="../../output/images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
-      <img src="../../output/images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
     </div>
   </div>
 
@@ -451,7 +477,7 @@ tr:last-child td { border-bottom: none; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image24.svg" alt="真空罐操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+      <img src="./images_v23/image24.svg" alt="真空罐操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
     </div>
   </div>
   <div class="page-footer"><span>WEVAC V23 使用说明书</span><span>10</span></div>
@@ -476,22 +502,24 @@ tr:last-child td { border-bottom: none; }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="../../output/images_v23/image26.svg" alt="腌制操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+      <img src="./images_v23/image26.svg" alt="腌制操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
     </div>
   </div>
 
-  <div class="sub-title">6.10 卷袋仓操作指引</div>
-  <ul class="bullet-list">
-    <li>本机器可以同时放置两卷卷袋（例如：两卷小于等于 20 feet/6m 长的卷袋）。</li>
-    <li>若放置单卷袋，则最长可放置 50 feet（15m）长。</li>
-    <li>卷袋仓可容纳 12 inch（300mm）以下宽度的卷袋。底部为宽度在 8 inch（200mm）以下的卷袋设计了专用放置槽。</li>
-  </ul>
-  <div style="display:flex;gap:16px;margin-top:12px">
-    <div style="flex:1;text-align:center">
-      <img src="../../output/images_v23/image28.svg" alt="单卷袋放置" style="max-height:40mm;max-width:80%">
-    </div>
-    <div style="flex:1;text-align:center">
-      <img src="../../output/images_v23/image30.svg" alt="双卷袋放置" style="max-height:40mm;max-width:80%">
+  <div class="rollbag-guide">
+    <div class="sub-title">6.10 卷袋仓操作指引</div>
+    <ul class="bullet-list">
+      <li>本机器可以同时放置两卷卷袋（例如：两卷小于等于 20 feet/6m 长的卷袋）。</li>
+      <li>若放置单卷袋，则最长可放置 50 feet（15m）长。</li>
+      <li>卷袋仓可容纳 12 inch（300mm）以下宽度的卷袋。底部为宽度在 8 inch（200mm）以下的卷袋设计了专用放置槽。</li>
+    </ul>
+    <div class="rollbag-stack">
+      <div class="rollbag-figure">
+        <img src="./images_v23/image28.svg" alt="单卷袋放置">
+      </div>
+      <div class="rollbag-figure">
+        <img src="./images_v23/image30.svg" alt="双卷袋放置">
+      </div>
     </div>
   </div>
   <div class="page-footer"><span>WEVAC V23 使用说明书</span><span>11</span></div>
@@ -755,7 +783,7 @@ tr:last-child td { border-bottom: none; }
   </ul>
   <p style="margin-top:12px">向我们发送电子邮件申请保修服务：<b>support@wevactech.com</b></p>
 
-  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="../../output/images_v23/image31.png" alt="保修卡???" style="width:100%;max-height:8mm;object-fit:contain;"></div>
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_v23/image31.png" alt="保修卡???" style="width:100%;max-height:8mm;object-fit:contain;"></div>
   <div class="sub-title" style="margin-top:14px">保修卡</div>
   <table>
     <tbody>

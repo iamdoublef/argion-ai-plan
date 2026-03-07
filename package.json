@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "docx": "^9.6.0",
+    "playwright": "^1.58.2"
+  }
+}

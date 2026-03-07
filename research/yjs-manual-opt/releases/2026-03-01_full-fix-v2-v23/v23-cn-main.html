@@ -330,6 +330,30 @@ tr:nth-child(even) td { background: #FAFAFA; }
 .compact-warranty .fig-wrap { margin: 4px 0 2px !important; }
 .compact-warranty .fig-wrap img { max-height: 6mm !important; }
 
+.rollbag-guide .bullet-list { margin: 6px 0; }
+.rollbag-guide .bullet-list li { line-height: 1.55; padding-top: 2px; padding-bottom: 2px; }
+.rollbag-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8mm;
+  margin-top: 8px;
+  align-items: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure {
+  width: 100%;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure img {
+  width: 100%;
+  max-width: 114mm;
+  height: auto;
+  display: inline-block;
+}
+
 @media print {
   .compact-accessories .sub-title { margin: 10px 0 5px; }
   .compact-accessories .steps li { margin-bottom: 5px; }
@@ -340,6 +364,8 @@ tr:nth-child(even) td { background: #FAFAFA; }
   .compact-warranty { font-size: 13px; line-height: 1.5; }
   .compact-warranty table { margin: 6px 0; font-size: 11.5px; }
   .compact-warranty th, .compact-warranty td { padding-top: 4px; padding-bottom: 4px; }
+  .rollbag-stack { gap: 6mm; margin-top: 6px; }
+  .rollbag-figure img { max-width: 108mm; }
 }
 
 .page-footer {
@@ -718,18 +744,20 @@ tr:nth-child(even) td { background: #FAFAFA; }
     </div>
   </div>
 
-  <div class="sub-title">6.10 卷袋仓操作指引</div>
-  <ul class="bullet-list">
-    <li>本机器可以同时放置两卷卷袋（例如：两卷小于等于 20 feet/6m 长的卷袋）。</li>
-    <li>若放置单卷袋，则最长可放置 50 feet（15m）长。</li>
-    <li>卷袋仓可容纳 12 inch（300mm）以下宽度的卷袋。底部为宽度在 8 inch（200mm）以下的卷袋设计了专用放置槽。</li>
-  </ul>
-  <div style="display:flex;gap:16px;margin-top:12px">
-    <div style="flex:1;text-align:center">
-      <img src="../../output/images_v23/image28.svg" alt="单卷袋放置" style="max-height:40mm;max-width:80%">
-    </div>
-    <div style="flex:1;text-align:center">
-      <img src="../../output/images_v23/image30.svg" alt="双卷袋放置" style="max-height:40mm;max-width:80%">
+  <div class="rollbag-guide">
+    <div class="sub-title">6.10 卷袋仓操作指引</div>
+    <ul class="bullet-list">
+      <li>本机器可以同时放置两卷卷袋（例如：两卷小于等于 20 feet/6m 长的卷袋）。</li>
+      <li>若放置单卷袋，则最长可放置 50 feet（15m）长。</li>
+      <li>卷袋仓可容纳 12 inch（300mm）以下宽度的卷袋。底部为宽度在 8 inch（200mm）以下的卷袋设计了专用放置槽。</li>
+    </ul>
+    <div class="rollbag-stack">
+      <div class="rollbag-figure">
+        <img src="../../output/images_v23/image28.svg" alt="单卷袋放置">
+      </div>
+      <div class="rollbag-figure">
+        <img src="../../output/images_v23/image30.svg" alt="双卷袋放置">
+      </div>
     </div>
   </div>
   <div class="page-footer"><span>WEVAC V23 使用说明书</span><span class="page-num">11</span></div>

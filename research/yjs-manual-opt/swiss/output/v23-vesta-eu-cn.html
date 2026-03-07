@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V23 真空封口机 使用说明书 — Vesta</title>
+<style>
+:root {
+    --swiss-black: #000000;
+    --swiss-red: #E63946;
+    --swiss-gray-bg: #F2F2F7;
+    --swiss-gray-text: #8E8E93;
+    --page-margin: 12.7mm;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #2C2C2E; font-family: 'Helvetica Neue', 'Inter', Arial, sans-serif; color: var(--swiss-black); }
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: var(--page-margin);
+    background: #FFF;
+    margin: 10mm auto;
+    position: relative;
+    page-break-after: always;
+}
+
+/* 顶部装饰条 */
+.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+.header-brand { font-weight: 900; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; }
+.header-ref { font-family: 'Courier New', monospace; font-size: 10px; color: var(--swiss-gray-text); }
+
+/* 标题系统 */
+.section-title { font-size: 26px; font-weight: 900; text-transform: uppercase; margin: 0 0 16px; letter-spacing: -0.5px; border-left: 6px solid var(--swiss-black); padding-left: 12px; }
+.section-title .chapter-num { color: var(--swiss-red); margin-right: 8px; }
+.sub-title { font-size: 14px; font-weight: 700; border-bottom: 2px solid var(--swiss-black); padding-bottom: 4px; margin: 20px 0 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* 正文 */
+p { font-size: 13px; line-height: 1.65; margin-bottom: 10px; color: #222; }
+
+/* 步骤列表 */
+.steps { list-style: none; padding: 0; margin: 10px 0; }
+.steps li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; font-size: 13px; line-height: 1.6; }
+.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
+
+/* 普通列表 */
+.bullet-list { list-style: none; padding: 0; margin: 8px 0; }
+.bullet-list li { padding: 3px 0 3px 16px; position: relative; font-size: 13px; line-height: 1.65; }
+.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
+
+/* 警告框 */
+.warning-box { border: 2px solid var(--swiss-red); padding: 12px 16px; margin: 14px 0; }
+.warning-box .box-title { font-size: 11px; font-weight: 900; color: var(--swiss-red); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.caution-box { border: 2px solid #000; padding: 12px 16px; margin: 14px 0; }
+.caution-box .box-title { font-size: 11px; font-weight: 900; color: #000; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.note-box { background: var(--swiss-gray-bg); padding: 10px 14px; margin: 12px 0; border-left: 4px solid var(--swiss-gray-text); font-size: 12px; color: #444; }
+.note-box .box-title { font-weight: 900; color: #333; margin-bottom: 4px; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+.box-list { list-style: none; padding: 0; }
+.box-list li { padding: 2px 0 2px 14px; position: relative; font-size: 12px; line-height: 1.6; }
+.box-list li::before { content: "·"; position: absolute; left: 2px; color: var(--swiss-red); font-weight: 900; }
+
+/* 图片 */
+.fig-wrap { text-align: center; margin: 14px 0; }
+.fig-wrap img { max-width: 80%; max-height: 70mm; object-fit: contain; display: inline-block; }
+.fig-caption { font-size: 10px; color: var(--swiss-gray-text); margin-top: 4px; text-align: center; font-family: 'Courier New', monospace; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* 表格 */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+th { background: var(--swiss-black); color: #FFF; padding: 8px 10px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+td { border: 1px solid #CCC; padding: 7px 10px; color: #1A1A1A; vertical-align: top; }
+tr:nth-child(even) td { background: var(--swiss-gray-bg); }
+
+/* 按键名称 */
+.btn-name { display: inline-block; background: #FFF; border: 1.5px solid var(--swiss-black); padding: 1px 6px; font-size: 11px; font-family: 'Courier New', monospace; color: #000; font-weight: 700; white-space: nowrap; }
+
+/* 目录 */
+.toc-title { font-size: 28px; font-weight: 900; text-transform: uppercase; margin-bottom: 24px; letter-spacing: -1px; }
+.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 13px; }
+.toc-chapter { color: var(--swiss-red); font-weight: 900; margin-right: 8px; font-family: 'Courier New', monospace; }
+.toc-name { flex: 1; }
+.toc-page { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 12px; }
+
+/* 页脚 */
+.callout-no {
+  display: inline-block;
+  min-width: 16px;
+  font-weight: 700;
+}
+
+.compact-accessories .sub-title { margin: 12px 0 6px; }
+.compact-accessories .steps li { margin-bottom: 6px; line-height: 1.5; }
+.compact-accessories .bullet-list li { padding-top: 1px; padding-bottom: 1px; line-height: 1.5; }
+.compact-accessories .btn-name { font-size: 11px; padding: 0 4px; }
+
+.compact-ops .sub-title { margin: 11px 0 6px; }
+.compact-ops .steps li { margin-bottom: 5px; line-height: 1.5; }
+.compact-ops .note-box { margin: 8px 0; padding: 8px 12px; font-size: 12px; }
+
+.compact-troubleshoot table { font-size: 12px; margin: 8px 0; }
+.compact-troubleshoot th, .compact-troubleshoot td { padding-top: 5px; padding-bottom: 5px; }
+
+.compact-warranty .sub-title { margin: 12px 0 6px !important; font-size: 14px; }
+.compact-warranty p { margin-bottom: 8px; line-height: 1.55; }
+.compact-warranty .bullet-list li { padding-top: 1px; padding-bottom: 1px; line-height: 1.5; }
+.compact-warranty table { margin: 8px 0; font-size: 12px; }
+.compact-warranty th, .compact-warranty td { padding-top: 5px; padding-bottom: 5px; }
+.compact-warranty .fig-wrap { margin: 4px 0 2px !important; }
+.compact-warranty .fig-wrap img { max-height: 6mm !important; }
+
+.rollbag-guide .bullet-list { margin: 6px 0; }
+.rollbag-guide .bullet-list li { line-height: 1.55; padding-top: 2px; padding-bottom: 2px; }
+.rollbag-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8mm;
+  margin-top: 8px;
+  align-items: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure {
+  width: 100%;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.rollbag-figure img {
+  width: 100%;
+  max-width: 114mm;
+  height: auto;
+  display: inline-block;
+}
+
+@media print {
+  .compact-accessories .sub-title { margin: 10px 0 5px; }
+  .compact-accessories .steps li { margin-bottom: 5px; }
+  .compact-ops .sub-title { margin: 9px 0 5px; }
+  .compact-ops .steps li { margin-bottom: 4px; }
+  .compact-troubleshoot table { font-size: 11.5px; margin: 6px 0; }
+  .compact-troubleshoot th, .compact-troubleshoot td { padding-top: 4px; padding-bottom: 4px; }
+  .compact-warranty { font-size: 13px; line-height: 1.5; }
+  .compact-warranty table { margin: 6px 0; font-size: 11.5px; }
+  .compact-warranty th, .compact-warranty td { padding-top: 4px; padding-bottom: 4px; }
+  .rollbag-stack { gap: 6mm; margin-top: 6px; }
+  .rollbag-figure img { max-width: 108mm; }
+}
+
+.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+
+/* 封面 */
+.cover-brand { font-size: 13px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; }
+.cover-brand span { display: inline-block; width: 28px; height: 4px; background: var(--swiss-red); margin-right: 8px; vertical-align: middle; }
+.cover-model { font-size: 11px; font-weight: 900; letter-spacing: 4px; color: var(--swiss-red); text-transform: uppercase; margin-bottom: 6px; font-family: 'Courier New', monospace; }
+.cover-title { font-size: 52px; font-weight: 900; color: var(--swiss-black); line-height: 0.95; margin-bottom: 4px; text-transform: uppercase; letter-spacing: -2px; }
+.cover-subtitle { font-size: 16px; font-weight: 400; color: var(--swiss-gray-text); margin-bottom: 0; text-transform: uppercase; letter-spacing: 2px; }
+.cover-divider { width: 40px; height: 4px; background: var(--swiss-red); margin: 14px 0; }
+.cover-bottom { border-top: 2px solid var(--swiss-black); padding-top: 8px; font-size: 10px; color: var(--swiss-gray-text); line-height: 1.6; font-family: 'Courier New', monospace; }
+
+@media print { body { background: #FFF; } .page { margin: 0; }  }
+</style>
+</head>
+<body>
+
+<!-- ========== 封面页 ========== -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+  <div>
+    <div class="cover-brand"><span></span>Vesta</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
+    <div style="text-align:left;margin:0 0 12mm;">
+      <img src="./images_v23/image2.svg" alt="V23 真空封口机" style="width:100%;height:auto;max-height:85mm;max-width:100%;">
+    </div>
+    <div class="cover-model">MODEL V23</div>
+    <div class="cover-title">真空封口机</div>
+    <div class="cover-subtitle">使用说明书</div>
+    <div class="cover-divider"></div>
+  </div>
+  <div class="cover-bottom">
+    使用产品前请仔细阅读本说明书，并妥善保管。<br>
+    说明书中的产品、配件等插图均为示意图，仅供参考。由于产品的更新与升级，产品实物与示意图可能略有差异，请以实物为准。
+  </div>
+</div>
+
+<!-- ========== 目录页 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">V23 — USER MANUAL</div>
+  </div>
+  <div class="toc-title">目录</div>
+  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">安全须知</span></span><span class="toc-page">3</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">产品及真空袋使用提示</span></span><span class="toc-page">4</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">产品结构</span></span><span class="toc-page">5</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">产品功能</span></span><span class="toc-page">6</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">技术参数</span></span><span class="toc-page">7</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">操作指引</span></span><span class="toc-page">8</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">故障排除</span></span><span class="toc-page">12</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">维护保养</span></span><span class="toc-page">15</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">真空包装特性</span></span><span class="toc-page">16</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">品牌与保修信息</span></span><span class="toc-page">18</span></div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>2</span></div>
+</div>
+
+<!-- ========== 第1章 安全须知 ========== -->
+<!-- @CONTENT:safety:start — 以下内容为产品特定安全须知，新产品需重新编写 -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.01 — SAFETY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">01</span>安全须知</h2>
+  <div class="warning-box">
+    <div class="box-title">警告 WARNING</div>
+        <div style="margin:6px 0 8px;"><img src="./images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
+<ul class="box-list">
+      <li>本机仅供家庭使用，请勿用于其他非设计用途。</li>
+      <li>请勿让儿童玩耍本机或电源线。儿童、行动不便或认知受限人士应在成年人监督下使用。使用期间请留意儿童，避免意外发生。</li>
+      <li>小零件、真空袋可能造成窒息危险，请勿让儿童接触。</li>
+      <li>请勿在高湿高温等环境使用本机。严禁在有易燃易爆气体的环境中使用。</li>
+      <li>请确保电源电压与机器铭牌标示一致。</li>
+      <li>机器工作时请勿离开。</li>
+      <li>密封完成后，密封区域温度较高，请勿触摸，以免烫伤。</li>
+      <li>使用后请切断电源。</li>
+      <li>从电源插座上拔出插头时请手握插头拔出，请勿拉扯电源线。</li>
+      <li>请勿将主机或电源线浸入水中或其他液体中。</li>
+      <li>电源线需要直接插接符合安全规范的电源插座上。</li>
+      <li>如发现插头、电源线或主机损坏，请立即停止使用并联系制造商或授权维修点处理，请勿自行拆修。</li>
+      <li>电源线请勿悬挂于台面边缘，以免儿童拉扯或意外绊倒。</li>
+    </ul>
+  </div>
+  <div class="caution-box">
+    <div class="box-title">注意 CAUTION</div>
+    <ul class="box-list">
+      <li>请妥善保管本手册。</li>
+      <li>本机无需添加任何润滑剂，请勿使用有机溶剂清洁。</li>
+      <li>长时间不使用时，请勿扣上锁扣，以免密封圈受压变形。</li>
+      <li>请勿将本产品与生活垃圾一同丢弃，请根据您所在地区关于电子废弃物的法规进行回收或处置。</li>
+    </ul>
+  </div>
+  <div class="note-box">
+    <div class="box-title">提示 NOTICE</div>
+    <ul class="box-list">
+      <li>本产品适用于家庭食品保鲜用途。</li>
+      <li>首次使用前，请完整阅读本说明书。</li>
+      <li>请保留购买凭证，以便享受保修服务。</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>3</span></div>
+</div>
+
+<!-- @CONTENT:safety:end -->
+
+<!-- ========== 第2章 使用提示 ========== -->
+<!-- @CONTENT:usage_tips:start — 产品使用提示，同品类可复用大部分 -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.02 — USAGE TIPS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">02</span>产品及真空袋使用提示</h2>
+  <ul class="bullet-list">
+    <li>本机只适用于带有空气通道纹路的真空袋。</li>
+    <li>对于带有尖点或棱角的物品，需用防刺穿片、纸巾等柔软包材包裹棱角，以防刺破真空袋。</li>
+    <li>真空袋可用于加热或微波炉加热，但必须先在袋角剪开一个小口透气。</li>
+    <li>用于储存的真空袋可重复使用，但用于加热或微波加热时仅可使用一次。储存过海鲜或油腻食品的真空袋不建议重复使用。</li>
+    <li>放置袋子时，袋口必须平整地跨过发热器。</li>
+    <li>装袋时，请务必在袋口和食物之间预留至少 2 inch（5 cm）的空间。</li>
+    <li>装入液体、酱汁或带液体的食物时，请避免将真空袋袋口弄湿。建议装入后将袋口擦干，以免影响密封效果。</li>
+    <li>如果需要质地柔软、含水分多的食物在包装后保持形状，可选择冷冻后进行真空封装。</li>
+    <li>勿在面盖上放置重物，有可能损坏机器。</li>
+  </ul>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>4</span></div>
+</div>
+
+<!-- @CONTENT:usage_tips:end -->
+
+<!-- ========== 第3章 产品结构 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.03 — STRUCTURE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">03</span>产品结构</h2>
+  <div class="fig-wrap">
+    <img src="./images_v23/image5.svg" alt="产品结构图">
+    <div class="fig-caption">图 1 — 产品结构</div>
+  </div>
+  <table>
+    <thead><tr><th style="width:60px">编号</th><th>名称</th><th style="width:60px">编号</th><th>名称</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>锁扣把手</td><td>8</td><td>卷袋支撑管</td></tr>
+      <tr><td>2</td><td>控制面板</td><td>9</td><td>主体</td></tr>
+      <tr><td>3</td><td>外抽气孔</td><td>10</td><td>切袋刀支架</td></tr>
+      <tr><td>4</td><td>面盖</td><td>11</td><td>液体槽（下方为真空腔）</td></tr>
+      <tr><td>5</td><td>密封压条</td><td>12</td><td>高温胶布与发热器</td></tr>
+      <tr><td>6</td><td>密封圈</td><td>13</td><td>切袋刀</td></tr>
+      <tr><td>7</td><td>卷袋仓</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="note-box">
+    <div class="box-title">提示</div>
+    工作结束后，发热器温度很高，请不要触摸，以免烫伤！
+  </div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>5</span></div>
+</div>
+
+<!-- ========== 第4章 产品功能 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.04 — FUNCTIONS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">04</span>产品功能</h2>
+  <div class="fig-wrap">
+    <img src="./images_v23/image10.svg" alt="控制面板">
+    <div class="fig-caption">图 2 — 控制面板</div>
+  </div>
+  <table>
+    <thead><tr><th style="width:45%">No. / Button</th><th>功能说明</th></tr></thead>
+    <tbody>
+      <tr><td><span class="callout-no">1</span> <span class="btn-name">Vac&amp;Seal / Start</span>　抽气密封 / 开始</td><td>点击此按键，将执行所选模式进行工作。</td></tr>
+      <tr><td><span class="callout-no">2</span> <span class="btn-name">Stop</span>　停止</td><td>可以在任意工作进程中点击此按键来终止工作。</td></tr>
+      <tr><td><span class="callout-no">3</span> <span class="btn-name">Vac Mode</span>　真空模式选择</td><td><b>Normal</b>（默认压力）/ <b>Gentle</b>（轻柔压力）/ <b>Liquid</b>（液体状物品）</td></tr>
+      <tr><td><span class="callout-no">4</span> <span class="btn-name">Pulse Vac</span>　手动抽气</td><td>长按进行手动控制抽气，松开暂停，达到所需状态后点击 Seal 密封。</td></tr>
+      <tr><td><span class="callout-no">5</span> <span class="btn-name">Seal</span>　密封</td><td>点击此按键，机器立即执行密封工作。</td></tr>
+      <tr><td><span class="callout-no">6</span> <span class="btn-name">Accessories</span>　附件类</td><td><b>Mason Jar</b>（梅森罐）/ <b>Canister</b>（真空罐）/ <b>Marinate</b>（腌制）</td></tr>
+      <tr><td><span class="callout-no">7</span> <span class="btn-name">Extend Seal Time</span>　延长密封时间</td><td>在工作前点击，可延长密封时间。</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>6</span></div>
+</div>
+
+<!-- ========== 第5章 技术参数 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.05 — SPECIFICATIONS</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">05</span>技术参数</h2>
+  <table>
+    <thead><tr><th>参数</th><th>规格</th></tr></thead>
+    <tbody>
+      <tr><td>电压</td><td>220~240 Vac</td></tr>
+      <tr><td>频率</td><td>50 Hz</td></tr>
+      <tr><td>功率</td><td>190 W</td></tr>
+      <tr><td>泵</td><td>双泵</td></tr>
+      <tr><td>泵抽气压力</td><td>-958 mbar</td></tr>
+      <tr><td>发热丝宽度</td><td>1.8 mm × 2</td></tr>
+      <tr><td>最大密封袋宽</td><td>315 mm</td></tr>
+      <tr><td>尺寸（长×宽×高）</td><td>380 × 205 × 155 mm</td></tr>
+      <tr><td>重量</td><td>3.0 kg</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>7</span></div>
+</div>
+
+<!-- @CONTENT:operations:start — 操作步骤为最产品特定的部分，新产品需全面重写 -->
+<!-- ========== 第6章 操作指引 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>操作指引</h2>
+
+  <div class="sub-title">6.1 如何使用切袋刀</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>打开面盖。</li>
+        <li><span class="step-num">2</span>打开切袋刀架。</li>
+        <li><span class="step-num">3</span>从卷袋上拉扯出所需长度的袋子。</li>
+        <li><span class="step-num">4</span>将切袋刀移至最左或最右边，再使刀架下压着袋子。</li>
+        <li><span class="step-num">5</span>将切袋刀下压滑动划过袋子，以进行整齐的切割。</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image12.svg" alt="切袋刀操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.2 如何使用密封功能</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>从卷袋中制作袋子并密封：</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>按以上如何使用切袋刀制作出一个两端开口的袋子。</li>
+    <li><span class="step-num">2</span>将袋子的一端开口平整放入真空腔内。</li>
+    <li><span class="step-num">3</span>关闭面盖，并将把手向下压以锁紧面盖。</li>
+    <li><span class="step-num">4</span>点击 <span class="btn-name">Seal</span> 按键，并等待机器完成工作。</li>
+  </ol>
+  <p style="font-size:13px;color:#555;margin:10px 0 8px"><b>单独密封袋子：</b></p>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>将袋子放入需要封装的物品，并将袋口放入真空腔。</li>
+        <li><span class="step-num">2</span>关闭面盖，并将把手下压以锁紧面盖。</li>
+        <li><span class="step-num">3</span>点击 <span class="btn-name">Seal</span> 按键，并等待机器完成工作。</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image14.svg" alt="密封操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.3 如何延长密封时间</div>
+  <div class="note-box">
+    若需延长密封时间，需在操作前点击 <span class="btn-name">Extend Seal Time</span> 按键，使该按键指示灯点亮。延长时间设置将持续生效。若要恢复默认密封时间，请在下一次操作前再次点击该按键。当机器进入休眠或断电重新开机，密封时间将会恢复默认设置。
+  </div>
+  <div class="caution-box">
+    <div class="box-title">注意</div>
+    启用 Extend Seal Time 功能时，将暂时禁用智能密封调节功能，连续工作时每次工作间隔需大于 20s，并打开面盖以便机器散热。
+  </div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>8</span></div>
+</div>
+
+<!-- ========== 操作指引（续）========== -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — OPERATION (CONT.)</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>操作指引（续）</h2>
+
+  <div class="sub-title">6.4 如何使用真空密封功能</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>真空密封固体物品：</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>将袋口放入真空腔。</li>
+    <li><span class="step-num">2</span>关闭面盖，并下压把手以锁紧面盖。</li>
+    <li><span class="step-num">3</span>点击 <span class="btn-name">Vac Mode</span> 按键选择模式：<b>Normal</b> 或 <b>Gentle</b>。</li>
+    <li><span class="step-num">4</span>点击 <span class="btn-name">Vac&amp;Seal / Start</span> 按键启动工作。</li>
+    <li><span class="step-num">5</span>若需终止工作，请点击 <span class="btn-name">Stop</span> 按键。</li>
+  </ol>
+  <div class="note-box">在采用 Gentle 模式封装贵重物品前，建议先采用其它物品尝试真空后的压缩程度是否满足需求，以免压碎物品。</div>
+
+  <p style="font-size:13px;color:#555;margin:12px 0 8px"><b>真空密封液体：</b></p>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>保持袋子直立，确保液体液面始终低于发热器，液体与袋口之间建议留出 7 inch（18 cm）的空间。</li>
+        <li><span class="step-num">2</span>将袋口放入真空腔。</li>
+        <li><span class="step-num">3</span>关闭面盖，并下压把手以锁紧面盖。</li>
+        <li><span class="step-num">4</span>点击 <span class="btn-name">Vac Mode</span> 按键选择 <b>Liquid</b> 模式。</li>
+        <li><span class="step-num">5</span>点击 <span class="btn-name">Vac&amp;Seal / Start</span> 按键启动工作。</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image16.svg" alt="液体模式" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.5 如何使用手动真空</div>
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>方法一（在自动真空过程中切换至 Pulse Vac 模式）：</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>长按 <span class="btn-name">Pulse Vac</span> 按键进行真空抽气。</li>
+    <li><span class="step-num">2</span>松开按键则暂停抽气。</li>
+    <li><span class="step-num">3</span>达到所需真空状态后，点击 <span class="btn-name">Seal</span> 按键进行密封。</li>
+  </ol>
+  <p style="font-size:13px;color:#555;margin:10px 0 8px"><b>方法二（直接使用 Pulse Vac 模式）：</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>将袋口放入真空腔。</li>
+    <li><span class="step-num">2</span>关闭面盖，并下压把手以锁紧面盖。</li>
+    <li><span class="step-num">3</span>长按 <span class="btn-name">Pulse Vac</span> 按键进行真空抽气。</li>
+    <li><span class="step-num">4</span>松开按键则暂停抽气。</li>
+    <li><span class="step-num">5</span>达到所需真空状态后，点击 <span class="btn-name">Seal</span> 按键进行密封。</li>
+  </ol>
+  <div class="note-box">在手动真空过程中，长按按键抽气，松开暂停，此时会处于保压的状态。若 10 秒内不进行再次操作，机器将自动释放压力，并退出手动抽气模式。</div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>9</span></div>
+</div>
+
+<!-- ========== 操作指引（附件使用）========== -->
+<div class="page compact-accessories">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — ACCESSORIES</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>操作指引（附件使用）</h2>
+
+  <div class="sub-title">6.6 真空软管用法</div>
+  <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:12px">
+    <div style="flex:1">
+      <ul class="bullet-list">
+        <li>对梅森罐适配器和带阀门拉链袋抽真空时，圆形吸嘴采用方向1。</li>
+        <li>对真空罐和瓶塞抽真空时，根据抽气口大小选择方向1或2。</li>
+        <li>真空软管扁形吸嘴3用于连接机器面盖上的外抽气口3。</li>
+      </ul>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image18.svg" alt="真空软管" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.7 如何抽梅森罐</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>闭合机器面盖。</li>
+        <li><span class="step-num">2</span>将罐盖放到梅森罐罐口，不需拧上螺纹盖（如有）。</li>
+        <li><span class="step-num">3</span>将适配器安装到梅森罐上。</li>
+        <li><span class="step-num">4</span>将真空软管扁形吸嘴插入机器面盖上的外抽气孔。</li>
+        <li><span class="step-num">5</span>压下把手以锁紧面盖。</li>
+        <li><span class="step-num">6</span>点击 <span class="btn-name">Accessories</span> 按键，选择 <b>Mason Jar</b>。</li>
+        <li><span class="step-num">7</span>将真空软管圆形吸嘴覆盖适配器的抽气孔，并用手轻微按压住。</li>
+        <li><span class="step-num">8</span>点击 <span class="btn-name">Vac&amp;Seal / Start</span> 按键启动工作。</li>
+        <li><span class="step-num">9</span>工作结束，取下真空软管及适配器。</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:center">
+      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="sub-title">6.8 如何抽真空罐</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>操作前，请确认真空罐与本机真空软管兼容。</li>
+        <li><span class="step-num">2</span>确认真空罐处于可抽真空（Vacuum）的状态。</li>
+        <li><span class="step-num">3</span>将真空软管扁形吸嘴插入机器面盖上的外抽气孔。</li>
+        <li><span class="step-num">4</span>压下把手以锁紧面盖。</li>
+        <li><span class="step-num">5</span>点击 <span class="btn-name">Accessories</span> 按键，选择 <b>Canister</b>。</li>
+        <li><span class="step-num">6</span>将真空软管圆形吸嘴覆盖真空罐抽气阀的抽气孔，并用手轻微压住。</li>
+        <li><span class="step-num">7</span>点击 <span class="btn-name">Vac&amp;Seal / Start</span> 按键启动工作。</li>
+        <li><span class="step-num">8</span>工作结束，取下真空软管。</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image24.svg" alt="真空罐操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+    </div>
+  </div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>10</span></div>
+</div>
+
+<!-- ========== 操作指引（腌制+卷袋）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — MARINATE &amp; ROLL BAG</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>操作指引（续）</h2>
+
+  <div class="sub-title">6.9 如何腌制</div>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+    <div style="flex:1">
+      <ol class="steps">
+        <li><span class="step-num">1</span>将食物覆盖酱料，并放到真空罐中。</li>
+        <li><span class="step-num">2</span>确认真空罐处于可以抽真空（Vacuum）的状态。</li>
+        <li><span class="step-num">3</span>将真空软管扁形吸嘴插入机器面盖上的外抽气孔。</li>
+        <li><span class="step-num">4</span>将真空软管圆形吸嘴插入抽气阀的抽气孔。</li>
+        <li><span class="step-num">5</span>压下把手以锁紧面盖。</li>
+        <li><span class="step-num">6</span>点击 <span class="btn-name">Accessories</span> 按键，选择 <b>Canister</b>。</li>
+        <li><span class="step-num">7</span>点击 <span class="btn-name">Vac&amp;Seal / Start</span> 启动工作。</li>
+        <li><span class="step-num">8</span>工作结束，取下真空软管。</li>
+      </ol>
+    </div>
+    <div style="flex:0 0 auto">
+      <img src="./images_v23/image26.svg" alt="腌制操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+    </div>
+  </div>
+
+  <div class="rollbag-guide">
+    <div class="sub-title">6.10 卷袋仓操作指引</div>
+    <ul class="bullet-list">
+      <li>本机器可以同时放置两卷卷袋（例如：两卷小于等于 20 feet/6m 长的卷袋）。</li>
+      <li>若放置单卷袋，则最长可放置 50 feet（15m）长。</li>
+      <li>卷袋仓可容纳 12 inch（300mm）以下宽度的卷袋。底部为宽度在 8 inch（200mm）以下的卷袋设计了专用放置槽。</li>
+    </ul>
+    <div class="rollbag-stack">
+      <div class="rollbag-figure">
+        <img src="./images_v23/image28.svg" alt="单卷袋放置">
+      </div>
+      <div class="rollbag-figure">
+        <img src="./images_v23/image30.svg" alt="双卷袋放置">
+      </div>
+    </div>
+  </div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>11</span></div>
+</div>
+
+<!-- @CONTENT:operations:end -->
+
+<!-- @CONTENT:troubleshooting:start — 故障排除表，新产品需根据产品特性重写 -->
+<!-- ========== 第7章 故障排除 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>故障排除</h2>
+
+  <table>
+    <thead><tr><th style="width:22%">故障现象</th><th style="width:40%">可能原因</th><th style="width:38%">解决方案</th></tr></thead>
+    <tbody>
+      <tr>
+        <td rowspan="3"><b>不能开机</b></td>
+        <td>电源线未正确插入电源插座</td>
+        <td>确保电源线已正确插入。</td>
+      </tr>
+      <tr>
+        <td>电源线破裂或损坏</td>
+        <td>断电检查电源线，如有损坏请咨询专业人员更换。</td>
+      </tr>
+      <tr>
+        <td>控制板或面板排线端子松脱</td>
+        <td>请咨询专业人员进行维修。</td>
+      </tr>
+      <tr>
+        <td rowspan="6"><b>抽气不干净</b></td>
+        <td>袋子开口未全部在密封圈内</td>
+        <td>确保袋子的开口全部在下真空腔密封圈内。</td>
+      </tr>
+      <tr>
+        <td>使用了非纹路真空袋</td>
+        <td>确保使用带有纹路的真空袋。</td>
+      </tr>
+      <tr>
+        <td>密封圈破损、翻起或安装不正确</td>
+        <td>检查密封圈状态并正确安装。</td>
+      </tr>
+      <tr>
+        <td>袋子破损或有针孔</td>
+        <td>更换新的真空袋。</td>
+      </tr>
+      <tr>
+        <td>袋口有异物导致密封不完整</td>
+        <td>将袋口清洁干净后再试。</td>
+      </tr>
+      <tr>
+        <td>热封时间过长导致温度过高</td>
+        <td>打开面盖，静置冷却一段时间再使用。</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><b>不能密封或密封效果不理想</b></td>
+        <td>袋口没有正确放到发热器上</td>
+        <td>重新放置袋口，确保平整跨过发热器。</td>
+      </tr>
+      <tr>
+        <td>密封区域有水分、颗粒或碎片</td>
+        <td>清洁密封区域后重试。</td>
+      </tr>
+      <tr>
+        <td>密封压条未安装</td>
+        <td>安装密封压条。</td>
+      </tr>
+      <tr>
+        <td>默认密封时间不足</td>
+        <td>点击 <span class="btn-name">Extend Seal Time</span> 延长密封时间后重试。</td>
+      </tr>
+      <tr>
+        <td rowspan="3"><b>真空密封后袋子漏气</b></td>
+        <td>高温胶布破损或脱落</td>
+        <td>及时替换高温胶布。</td>
+      </tr>
+      <tr>
+        <td>发热温度异常导致袋子融化或密封不充分</td>
+        <td>参考抽气不干净和不能密封的解决方案。</td>
+      </tr>
+      <tr>
+        <td>锋利物品刺穿袋子</td>
+        <td>用纸巾或防刺穿片包裹锋利边缘，使用新袋重试。</td>
+      </tr>
+      </tbody>
+  </table>
+
+  <div class="note-box">
+    <div class="box-title">提示</div>
+    一些水果和蔬菜在包装前如果没有正确地焯熟，或者热的食物，会释放气体，导致真空袋没有收紧，此类情况属于正常表现，不属于漏气。
+  </div>
+  <div class="note-box">若以上故障排除方案均无法解决问题，请联系客服指引解决，请不要擅自拆卸机器。</div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>12</span></div>
+</div>
+
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING ADDENDUM</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>故障排除（附件与报警）</h2>
+
+  <table>
+    <thead><tr><th style="width:22%">故障现象</th><th style="width:40%">可能原因</th><th style="width:38%">解决方案</th></tr></thead>
+    <tbody>
+<tr>
+        <td rowspan="3"><b>Accessories 模式无法抽气</b></td>
+        <td>真空软管扁形吸嘴未完全插入外抽气孔</td>
+        <td>用力旋转下压扁形吸嘴，使其完全插入。</td>
+      </tr>
+      <tr>
+        <td>面盖把手未下压锁紧</td>
+        <td>下压把手以锁紧面盖后重试。</td>
+      </tr>
+      <tr>
+        <td>密封圈或真空腔上有异物</td>
+        <td>打开面盖清除异物，闭盖重试。</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><b>错误报警（蜂鸣声长鸣 + 指示灯快闪）</b></td>
+        <td>按下 Vac&amp;Seal/Start 或 Seal 后报警</td>
+        <td>检查面盖是否闭合，把手是否已下压锁紧。</td>
+      </tr>
+      <tr>
+        <td>真空工作过程中连续蜂鸣</td>
+        <td>机器无法达到目标压力，检查把手锁紧及袋子是否破损，更换新袋重试。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>13</span></div>
+</div>
+
+<!-- ========== 故障排除（液体进入）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.07 — LIQUID RECOVERY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>故障排除（续）</h2>
+
+  <div class="sub-title">如因特殊原因，导致液体进入机器内部的处理方案</div>
+
+  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>液体进入真空腔中：</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>立即关闭电源，等待至少 5 分钟，让机器发热器冷却。</li>
+    <li><span class="step-num">2</span>将液体槽取出，并清理擦干液体。</li>
+    <li><span class="step-num">3</span>将真空腔中的液体擦干。</li>
+    <li><span class="step-num">4</span>将机器底部铺垫厨房纸或托盘，重新通电。</li>
+    <li><span class="step-num">5</span>合上面盖，长按 <span class="btn-name">Pulse Vac</span> 按键抽气 20 秒，然后点击 <span class="btn-name">Stop</span> 排气，重复 5 次，让内部管道的液体排出。</li>
+    <li><span class="step-num">6</span>打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 48 小时，期间不要翻倒机器。</li>
+  </ol>
+
+  <p style="font-size:13px;color:#555;margin:16px 0 8px"><b>液体进入发热器：</b></p>
+  <ol class="steps">
+    <li><span class="step-num">1</span>请勿翻倒机器，关闭电源，等待 10 分钟，让发热器冷却及内部液体排出。</li>
+    <li><span class="step-num">2</span>清理和擦干机器接水盘、真空腔、底部的液体。</li>
+    <li><span class="step-num">3</span>打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 24 小时，期间不要翻倒机器。</li>
+    <li><span class="step-num">4</span>将机器底部铺垫厨房纸或托盘，重新通电。</li>
+    <li><span class="step-num">5</span>合上面盖，长按 <span class="btn-name">Pulse Vac</span> 按键抽气 20 秒，然后点击 <span class="btn-name">Stop</span> 排气，重复 5 次，让内部管道的液体排出。</li>
+    <li><span class="step-num">6</span>打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 48 小时，期间不要翻倒机器。</li>
+  </ol>
+
+  <div class="caution-box">
+    <div class="box-title">注意</div>
+    如果长期不清洁，内部管道可能会堵塞，影响抽气性能，此时请联系售后进行管道更换。
+  </div>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>14</span></div>
+</div>
+
+<!-- @CONTENT:troubleshooting:end -->
+
+<!-- @CONTENT:maintenance:start — 维护保养，同品类可复用大部分 -->
+<!-- ========== 第8章 维护保养 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.08 — MAINTENANCE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">08</span>维护保养</h2>
+  <ul class="bullet-list">
+    <li>确保使用机器的工作台平整、干净、干燥。</li>
+    <li>在不使用机器时请不要将机器锁扣锁上，以防密封圈被长时间挤压，影响功能。</li>
+    <li>需每周一次对机器的密封圈、密封压条、发热器、液体槽、真空腔进行清洁。</li>
+    <li>发热器和密封压条在工作后会残留高温，请待机器冷却后再进行保养。</li>
+    <li>清洁前拔下机器电源。</li>
+    <li>请采用软毛刷清洁密封圈、密封压条、发热器、液体槽、真空腔、真空软管。避免采用硬毛刷，以免损坏机器。</li>
+    <li>每天工作结束后，取出液体槽清洁擦干，并用湿毛巾或纸巾清理真空腔内残留的碎屑、灰尘。</li>
+    <li>每次工作结束后，检查密封圈是否已经变形严重，高温胶布是否已经破损/脱落，如有，则请及时替换。</li>
+    <li>液体槽和真空软管不支持高温清洁，如洗碗机清洁。</li>
+  </ul>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>15</span></div>
+</div>
+
+<!-- @CONTENT:maintenance:end -->
+
+<!-- @CONTENT:vacuum_features:start — 真空包装科普，同品类真空封口机可完全复用 -->
+<!-- ========== 第9章 真空包装特性 ========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.09 — VACUUM PROPERTIES</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">09</span>真空包装特性</h2>
+  <p>真空包装是通过去除密封容器中的大部分空气来延长食品的寿命，并防止空气回流到密封容器中，从而减少氧化。真空包装有助于保持风味和整体质量。它还有助于抑制好氧微生物的生长，在某些条件下可能的现象有：</p>
+  <ul class="bullet-list" style="margin-top:8px">
+    <li><b>霉菌</b> — 霉菌在低氧环境下无法繁殖，真空包装能够抑制霉菌的繁殖。</li>
+    <li><b>酵母菌</b> — 酵母需要水、糖和中等温度才能繁殖，可以在有空气或无空气的情况下生存。减缓酵母的生长需要冷藏，冷冻则可以有效抑制。</li>
+    <li><b>细菌</b> — 导致难闻的气味、变色或变柔软。在适当的条件下，肉毒梭菌可以在没有空气的情况下生长，且无法通过气味或味道检测到。</li>
+  </ul>
+  <p style="margin-top:10px">与任何其他储存方式一样，在食用前检查食品是否变质是很重要的。在 -4°C 或更低温度下，可以显著减少微生物的生长。对于长期储存，建议进行真空封装后保持冷冻。</p>
+  <div class="note-box" style="margin-top:14px">
+    <div class="box-title">NOTICE</div>
+    真空包装不能代替冷藏或冷冻。任何需要冷藏的易腐食品在真空包装后仍必须保持冷藏或冷冻。
+  </div>
+
+  <div class="sub-title">存储指南</div>
+  <ul class="bullet-list">
+    <li>蔬菜在真空包装前需要先焯水。将蔬菜放入沸水中煮熟，然后浸入冷水中，最后用毛巾吸干水分再进行真空包装。</li>
+    <li>十字花科蔬菜（花椰菜、芽菜、卷心菜等）在储存过程中会自然排放气体，煮熟、真空封装后建议存放在冰箱里。</li>
+    <li>切忌真空储存大蒜或蘑菇等真菌食品。抽真空后会产生有害物质，食用会影响健康。</li>
+  </ul>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>16</span></div>
+</div>
+
+<!-- ========== 真空包装特性（食物保鲜表）========== -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.09 — FRESHNESS GUIDE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">09</span>真空包装特性（续）</h2>
+
+  <div class="sub-title">食物真空保鲜期限参照</div>
+  <table>
+    <thead><tr><th>储存方式</th><th>食物类别</th><th>常规储存</th><th>真空包装</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="4" style="font-weight:600">冷冻储存</td><td>肉类</td><td>6 月</td><td>15–20 月</td></tr>
+      <tr><td>鱼类、海鲜</td><td>6 月</td><td>10–12 月</td></tr>
+      <tr><td>干果、咖啡豆</td><td>6–9 月</td><td>18–24 月</td></tr>
+      <tr><td colspan="3" style="border:none;height:4px"></td></tr>
+      <tr><td rowspan="5" style="font-weight:600">冷藏储存</td><td>肉类</td><td>2–3 天</td><td>12–13 天</td></tr>
+      <tr><td>鱼类、海鲜</td><td>2–3 天</td><td>6–8 天</td></tr>
+      <tr><td>熟肉类</td><td>2–3 天</td><td>10–14 天</td></tr>
+      <tr><td>蛋类</td><td>2–3 天</td><td>30–50 天</td></tr>
+      <tr><td>蔬菜</td><td>2–3 天</td><td>7–10 天</td></tr>
+      <tr><td colspan="4" style="border:none;height:4px"></td></tr>
+      <tr><td rowspan="7" style="font-weight:600">常温储存</td><td>面包</td><td>1–2 天</td><td>6–8 天</td></tr>
+      <tr><td>盒装饼干</td><td>4–6 月</td><td>12 月</td></tr>
+      <tr><td>面条</td><td>5–6 月</td><td>12 月</td></tr>
+      <tr><td>大米</td><td>5–6 月</td><td>12 月</td></tr>
+      <tr><td>面粉</td><td>4–5 月</td><td>12 月</td></tr>
+      <tr><td>干货</td><td>3–4 月</td><td>12 月</td></tr>
+      <tr><td>咖啡 / 茶叶 / 奶粉</td><td>2–6 月</td><td>12 月</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>17</span></div>
+</div>
+
+<!-- @CONTENT:vacuum_features:end -->
+
+<!-- ========== 第10章 品牌与保修信息 ========== -->
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.10 — WARRANTY</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">10</span>品牌与保修信息</h2>
+
+  <p>感谢您购买 Vesta 真空封口机。如有任何问题，请通过以下方式联系我们：<br>support@vestaprecision.com | www.vestaprecision.com</p>
+
+  <div class="sub-title">品牌商信息</div>
+  <table>
+    <tbody>
+      <tr><td style="width:30%">品牌商</td><td><b>Precision Appliance Technology, Inc.</b></td></tr>
+      <tr><td>地址</td><td>3120 139th Ave SE Suite 500 Bellevue, WA 98005</td></tr>
+      <tr><td>网址</td><td>www.vestaprecision.com</td></tr>
+      <tr><td>客服邮箱</td><td>support@vestaprecision.com</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-title">授权制造商</div>
+  <table>
+    <tbody>
+      <tr><td style="width:30%">制造商</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td>地址</td><td>广东省广州市番禺区南村镇启业路1号</td></tr>
+      <tr><td>网址</td><td>www.argiontechnology.com</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-title">保修信息</div>
+  <p>本产品提供 <b>2 年有限保修</b>。自原始购买日期起 2 年内可享受保修更换服务。要获得保修更换资格，您必须：</p>
+  <ul class="bullet-list">
+    <li>在过去 2 年内购买过产品。</li>
+    <li>有原始订单号或购买时使用的电子邮件。</li>
+    <li>如通过经销商或零售合作伙伴购买，须提供原始收据的副本。</li>
+  </ul>
+  <p style="margin-top:12px">向我们发送电子邮件申请保修服务：<b>support@vestaprecision.com</b></p>
+
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_v23/image31.png" alt="保修卡???" style="width:100%;max-height:8mm;object-fit:contain;"></div>
+  <div class="sub-title" style="margin-top:14px">保修卡</div>
+  <table>
+    <tbody>
+      <tr><td style="width:35%">客户名称</td><td></td></tr>
+      <tr><td>地址</td><td></td></tr>
+      <tr><td>城市 / 州 / 邮政编码</td><td></td></tr>
+      <tr><td>电话号码</td><td></td></tr>
+      <tr><td>电子邮件地址</td><td></td></tr>
+      <tr><td>原始购买日期</td><td></td></tr>
+      <tr><td>产品型号</td><td></td></tr>
+      <tr><td>序列号（如适用）</td><td></td></tr>
+      <tr><td>商户名称</td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>18</span></div>
+</div>
+
+</body>
+</html>
