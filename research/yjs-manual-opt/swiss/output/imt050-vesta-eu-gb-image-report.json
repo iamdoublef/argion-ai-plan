@@ -1,0 +1,30 @@
+{
+  "pageCount": 12,
+  "imageReport": {
+    "total": 3,
+    "failed": 0,
+    "zeroWidth": 0,
+    "details": [
+      {
+        "src": "image1.png",
+        "complete": true,
+        "naturalWidth": 572,
+        "renderWidth": 248.984375
+      },
+      {
+        "src": "image5.png",
+        "complete": true,
+        "naturalWidth": 580,
+        "renderWidth": 331.015625
+      },
+      {
+        "src": "image7.png",
+        "complete": true,
+        "naturalWidth": 572,
+        "renderWidth": 188.296875
+      }
+    ]
+  },
+  "failedRequests": [],
+  "pass": true
+}

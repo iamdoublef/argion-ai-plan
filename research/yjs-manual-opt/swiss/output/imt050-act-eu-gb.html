@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMT050 Ice Maker User Manual — ACT</title>
+<style>
+@page { size: 148mm 210mm; margin: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --swiss-red: #E63946;
+  --swiss-black: #000000;
+  --swiss-gray-text: #8E8E93;
+  --swiss-gray-bg: #F2F2F7;
+  --page-margin: 12mm;
+  --page-width: 148mm;
+  --page-height: 210mm;
+}
+html { font-size: 14px; }
+body { font-family: "Helvetica Neue", 'Inter', Arial, sans-serif; color: var(--swiss-black); line-height: 1.65; -webkit-font-smoothing: antialiased; background: #FFF; }
+.page { width: var(--page-width); height: var(--page-height); padding: var(--page-margin); position: relative; page-break-after: always; overflow: hidden; }
+.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+.header-brand { font-weight: 900; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--swiss-gray-text); }
+.header-ref { font-family: 'Courier New', monospace; font-size: 9px; color: var(--swiss-gray-text); letter-spacing: 1px; }
+.section-title { font-size: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0 0 14px; border-left: 5px solid var(--swiss-black); padding-left: 10px; }
+.sub-title { font-size: 13px; font-weight: 700; border-bottom: 2px solid var(--swiss-black); padding-bottom: 3px; margin: 16px 0 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+.step-row { display: flex; gap: 10px; margin-bottom: 10px; }
+.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
+.step-text { flex: 1; font-size: 12.5px; line-height: 1.6; }
+.bullet-list { list-style: none; padding: 0; margin: 8px 0; }
+.bullet-list li { padding: 2px 0 2px 16px; position: relative; font-size: 12.5px; line-height: 1.6; }
+.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
+.warning-box { border: 2px solid var(--swiss-red); padding: 10px 14px; margin: 12px 0; }
+.warning-box .box-title { font-size: 11px; font-weight: 900; color: var(--swiss-red); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+.caution-box { border: 2px solid #000; padding: 10px 14px; margin: 12px 0; }
+.caution-box .box-title { font-size: 11px; font-weight: 900; color: #000; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+.note-box { background: var(--swiss-gray-bg); padding: 8px 12px; margin: 10px 0; border-left: 4px solid var(--swiss-gray-text); font-size: 11.5px; color: #444; }
+.note-box .box-title { font-weight: 900; color: #333; margin-bottom: 3px; text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; }
+.box-list { list-style: none; padding-left: 14px; }
+.box-list li { padding: 1px 0; position: relative; font-size: 11.5px; line-height: 1.55; }
+.box-list li::before { content: "·"; position: absolute; left: -10px; color: var(--swiss-red); font-weight: 900; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+th { background: var(--swiss-black); color: #FFF; padding: 6px 8px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+td { border: 1px solid #CCC; padding: 6px 8px; color: #1A1A1A; vertical-align: top; }
+tr:nth-child(even) td { background: var(--swiss-gray-bg); }
+.fig-wrap { text-align: center; margin: 12px 0 8px; }
+.fig-wrap img { max-width: 85%; max-height: 65mm; object-fit: contain; display: inline-block; }
+.fig-caption { font-size: 9px; color: var(--swiss-gray-text); margin-top: 3px; text-align: center; font-family: 'Courier New', monospace; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc-list { list-style: none; padding: 0; }
+.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 12px; }
+.toc-item span:first-child { font-weight: 700; }
+.toc-item span:last-child { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 11px; }
+
+.compact-ops .step-text { font-size: 12.5px; line-height: 1.5; }
+.compact-ops .sub-title { margin: 10px 0 6px !important; font-size: 13px; padding-bottom: 2px; }
+.compact-safety .section-title { margin-bottom: 6px; font-size: 18px; }
+.compact-safety .warning-box, .compact-safety .caution-box, .compact-safety .note-box { margin: 6px 0; padding: 6px 10px; }
+.compact-safety .box-title { margin-bottom: 3px; font-size: 10px; }
+.compact-safety .box-list li { font-size: 10.5px; line-height: 1.35; padding: 0.5px 0; }
+.compact-safety p { font-size: 10.5px; line-height: 1.35; margin-bottom: 4px; }
+.compact-ops .bullet-list li { margin-bottom: 2px; }
+.compact-table .section-title { margin-bottom: 10px; font-size: 16px; }
+.compact-table table { font-size: 11.5px; margin: 8px 0; }
+.compact-table th, .compact-table td { padding: 4px 8px; }
+.compact-ts .section-title { margin-bottom: 2px; font-size: 14px; }
+.compact-ts table { font-size: 9.5px; margin: 2px 0; line-height: 1.3; }
+.compact-ts th, .compact-ts td { padding: 2px 4px; vertical-align: top; }
+.compact-ts .caution-box { margin-top: 4px; font-size: 9.5px; padding: 4px 6px; line-height: 1.3; }
+.compact-warranty .section-title { margin-bottom: 4px; font-size: 14px; }
+.compact-warranty .sub-title { margin: 4px 0 1px !important; font-size: 11px; padding-bottom: 1px !important; }
+.compact-warranty p { margin-bottom: 2px; font-size: 10.5px; line-height: 1.3; }
+.compact-warranty .bullet-list { margin: 2px 0; }
+.compact-warranty .bullet-list li { padding-top: 0; padding-bottom: 0; line-height: 1.25; font-size: 10px; }
+.compact-warranty table { margin: 1px 0; font-size: 10px; }
+.compact-warranty th, .compact-warranty td { padding: 1.5px 6px; }
+.compact-warranty .header-strip { margin-bottom: 10px; }
+
+.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+
+@media print {
+  body { background: none; }
+  .page { page-break-after: always; page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ PAGE 1 — COVER ═══════════ -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+  <div>
+    <div class="cover-brand"><span></span>ACT</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
+    <img src="./images_imt050/image1.png" alt="IMT050 Ice Maker" style="max-width:100%;height:auto;max-height:85mm;">
+  </div>
+    <div class="cover-model">MODEL IMT050</div>
+    <div class="cover-title">Ice Maker</div>
+    <div style="font-size:11px;color:var(--swiss-gray-text);margin-top:4px;">User Manual</div>
+</div>
+
+<!-- ═══════════ PAGE 2 — TOC ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">IMT050 — USER MANUAL</div>
+  </div>
+  <div class="section-title">Contents</div>
+  <ul class="toc-list">
+    <li class="toc-item"><span>CH.01 — Safety</span><span>3–4</span></li>
+    <li class="toc-item"><span>CH.02 — Before Use</span><span>5</span></li>
+    <li class="toc-item"><span>CH.03 — Product Structure</span><span>6</span></li>
+    <li class="toc-item"><span>CH.04 — Control Panel</span><span>7</span></li>
+    <li class="toc-item"><span>CH.05 — Specifications</span><span>8</span></li>
+    <li class="toc-item"><span>CH.06 — Operation</span><span>9</span></li>
+    <li class="toc-item"><span>CH.07 — Cleaning &amp; Maintenance</span><span>10</span></li>
+    <li class="toc-item"><span>CH.08 — Troubleshooting</span><span>11</span></li>
+    <li class="toc-item"><span>CH.09 — Brand & Warranty</span><span>12</span></li>
+  </ul>
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>2</span></div>
+</div>
+
+<!-- ═══════════ PAGE 3 — CH.01 SAFETY (1/2) ═══════════ -->
+<!-- @CONTENT:safety:start — Full safety instructions from Word source -->
+<div class="page compact-safety">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.01 — SAFETY</div>
+  </div>
+  <div class="section-title">Safety Instructions</div>
+  <p>For your safety, please read all instructions in this manual before using this electrical appliance and always follow these safety precautions:</p>
+
+  <div class="warning-box">
+    <div class="box-title">WARNING</div>
+    <ul class="box-list">
+      <li>This product is for household use only. Do not use for any unintended purpose.</li>
+      <li>Do not allow children to play with this product or its power cord. Children and persons with limited mobility or cognitive ability should use it under adult supervision.</li>
+      <li>Small parts may pose a choking hazard. Keep away from children.</li>
+      <li>Do not use this product in high-humidity or high-temperature environments. Never use in the presence of flammable or explosive gases.</li>
+      <li>Ensure the power supply voltage matches the rating on the product nameplate.</li>
+      <li>Disconnect the power after use.</li>
+      <li>When unplugging, grip the plug itself — do not pull the power cord.</li>
+      <li>Do not immerse the unit or power cord in water or any other liquid.</li>
+      <li>The power cord must be plugged directly into a properly rated electrical outlet.</li>
+      <li>If the plug, power cord, or unit is damaged, stop using it immediately and contact the manufacturer or an authorized service center. Do not attempt self-repair.</li>
+      <li>Do not let the power cord hang over the edge of a counter — children may pull it, causing tipping or injury.</li>
+      <li>Never touch the product's electrical components with wet hands or bare feet.</li>
+      <li>The power supply connected to this product must have a residual-current device (RCD/GFCI).</li>
+      <li>The outlet must comply with local regulations. Safety regulations require mandatory grounding of this product.</li>
+      <li>Before cleaning, maintenance, or replacing parts, always disconnect the power supply.</li>
+      <li>Never insert screwdrivers or other objects into the ventilation openings.</li>
+      <li>Only authorized technicians may disassemble, inspect, or repair this product.</li>
+      <li>In case of fire, do not use water — use a CO₂ fire extinguisher.</li>
+      <li>Do not use mechanical means or any method other than those recommended by the manufacturer to accelerate defrosting.</li>
+      <li>Do not damage the refrigerant circuit.</li>
+      <li>Warning: Flammable materials — risk of fire.</li>
+      <li>Refrigerant waste must be disposed of at an authorized waste processing center. Keep away from open flames.</li>
+      <li>Do not store aerosol cans or other explosive substances containing flammable propellants inside this product.</li>
+      <li>Keep all ventilation openings clear. Keep the product away from heat sources or steam-generating appliances.</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>3</span></div>
+</div>
+
+<!-- ═══════════ PAGE 4 — CH.01 SAFETY (2/2) ═══════════ -->
+<div class="page compact-safety">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.01 — SAFETY</div>
+  </div>
+
+  <div class="caution-box">
+    <div class="box-title">CAUTION</div>
+    <ul class="box-list">
+      <li>Keep the product upright during transport. Tilting may cause damage.</li>
+      <li>After transport, let the product stand for 4 hours to allow the refrigerant to stabilize before powering on.</li>
+      <li>Wear gloves when servicing the motor or internal refrigeration system.</li>
+      <li>Do not block the ventilation openings to ensure proper operation.</li>
+      <li>Do not place non-food items inside the product chamber.</li>
+      <li>This product is for indoor use only.</li>
+      <li>This product is designed to make ice from drinking water. Do not use it for any other purpose.</li>
+    </ul>
+  </div>
+
+  <div class="note-box">
+    <div class="box-title">NOTICE</div>
+    <ul class="box-list">
+      <li>Product noise level is below 50 dB(A).</li>
+      <li>This product's climate class is SN, suitable for ambient temperatures of 10°C–32°C / 50°F–89.6°F.</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>4</span></div>
+</div>
+<!-- @CONTENT:safety:end -->
+
+<!-- ═══════════ PAGE 5 — CH.02 BEFORE USE ═══════════ -->
+<!-- @CONTENT:before_use:start -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.02 — BEFORE USE</div>
+  </div>
+  <div class="section-title">Before Use</div>
+
+  <div class="sub-title">Placement Requirements</div>
+  <ul class="bullet-list">
+    <li>Place the product on a sturdy, flat, dry countertop.</li>
+    <li>Ensure at least 120 mm (4.7") ventilation clearance on all sides.</li>
+    <li>Keep away from heat sources (ovens, stovetops, etc.) and direct sunlight.</li>
+  </ul>
+
+  <div class="sub-title">Water Quality</div>
+  <ul class="bullet-list">
+    <li>Use drinking water for ice making. The purer the water, the clearer the ice.</li>
+    <li>For optimal clarity, use water with low mineral content (TDS &lt; 200 mg/L).</li>
+    <li>Suitable sources: purified water, RO-filtered water, deeply filtered water, low-TDS mineral water.</li>
+    <li><strong>Do NOT</strong> use colored, flavored, carbonated, or gas-saturated beverages (tea, juice, coffee, milk, soda, etc.) — these may contaminate or damage the product.</li>
+  </ul>
+
+  <div class="sub-title">First Use</div>
+  <ul class="bullet-list">
+    <li>Remove all packaging materials after unboxing.</li>
+    <li>Wipe the interior with a damp cloth, then dry thoroughly.</li>
+    <li>Run the cleaning cycle once before first use (see CH.07).</li>
+    <li>The first 5 ice-making cycles are a cool-down phase — ice size will gradually increase as water temperature drops. This is normal.</li>
+  </ul>
+
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>5</span></div>
+</div>
+<!-- @CONTENT:before_use:end -->
+
+<!-- ═══════════ PAGE 6 — CH.03 STRUCTURE ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.03 — STRUCTURE</div>
+  </div>
+  <div class="section-title">Product Structure</div>
+  <div class="fig-wrap">
+    <img src="./images_imt050/image5.png" alt="Product Structure" style="max-height:90mm;">
+  </div>
+  <table>
+    <thead><tr><th style="width:15%;">No.</th><th>Name</th><th style="width:15%;">No.</th><th>Name</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Lid</td><td>5</td><td>Water Tank Handle</td></tr>
+      <tr><td>2</td><td>Ice Basket</td><td>6</td><td>Control Panel</td></tr>
+      <tr><td>3</td><td>Ice Mold</td><td>7</td><td>Drain Plug</td></tr>
+      <tr><td>4</td><td>Water Tank</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>6</span></div>
+</div>
+
+<!-- ═══════════ PAGE 7 — CH.04 FUNCTIONS ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.04 — CONTROL PANEL</div>
+  </div>
+  <div class="section-title">Control Panel</div>
+  <div class="fig-wrap">
+    <img src="./images_imt050/image7.png" alt="Control Panel" style="max-height:50mm;">
+  </div>
+  <table>
+    <thead><tr><th style="width:25%;">No. / Button</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td><span class="callout-no">1</span> <span class="btn-name">Power</span>　Power</td><td>Press to turn on; long-press to turn off.</td></tr>
+      <tr><td><span class="callout-no">2</span> <span class="btn-name">Make Ice</span>　Make Ice</td><td>Cycle through ice sizes (S / M / L); unit starts automatically.</td></tr>
+      <tr><td><span class="callout-no">3</span> <span class="btn-name">Clean</span>　Clean</td><td>Start the automatic cleaning cycle.</td></tr>
+      <tr><td><span class="callout-no">4</span> <span class="btn-name">ICE FULL</span>　ICE FULL</td><td>Indicator (green) — ice basket full; unit pauses.</td></tr>
+      <tr><td><span class="callout-no">5</span> <span class="btn-name">ADD WATER</span>　ADD WATER</td><td>Indicator (red) — water tank low; unit pauses; refill immediately.</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>7</span></div>
+</div>
+
+<!-- ═══════════ PAGE 8 — CH.05 SPECIFICATIONS ═══════════ -->
+<div class="page compact-table">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.05 — SPECIFICATIONS</div>
+  </div>
+  <div class="section-title">Specifications</div>
+  <table>
+    <thead><tr><th style="width:40%;">Parameter</th><th>Specification</th></tr></thead>
+    <tbody>
+      <tr><td>Voltage</td><td>220~240 Vac</td></tr>
+      <tr><td>Frequency</td><td>50 Hz</td></tr>
+      <tr><td>Ice-Making Power</td><td>110 W</td></tr>
+      <tr><td>Defrost Power</td><td>130 W</td></tr>
+      <tr><td>Dimensions (W×D×H)</td><td>235 × 305 × 321 mm</td></tr>
+      <tr><td>Net Weight</td><td>7 kg / 15.4 lb</td></tr>
+      <tr><td>Ice Capacity (24h)</td><td>6.9~7.4 kg</td></tr>
+      <tr><td>Drainage</td><td>Manual Drain</td></tr>
+      <tr><td>Ice Size S</td><td>Φ19 × 24 mm</td></tr>
+      <tr><td>Ice Size M</td><td>Φ21 × 25 mm</td></tr>
+      <tr><td>Ice Size L</td><td>Φ22 × 27 mm</td></tr>
+      <tr><td>Ventilation Clearance</td><td>≥ 120 mm / 4.7"</td></tr>
+      <tr><td>Refrigerant</td><td>R600a</td></tr>
+      <tr><td>Water Tank Capacity</td><td>MAX 1.0 L / MIN 0.75 L</td></tr>
+      <tr><td>Ice Cycle</td><td>S: 9pcs/8min, M: 9pcs/10min, L: 9pcs/11.5min</td></tr>
+      <tr><td>Operating Environment</td><td>5~32℃, ≤85% RH</td></tr>
+      <tr><td>Noise Level</td><td>≤ 50 dB(A)</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>8</span></div>
+</div>
+
+<!-- ═══════════ PAGE 9 — CH.06 OPERATION ═══════════ -->
+<!-- @CONTENT:operations:start -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
+  </div>
+  <div class="section-title">Operation Guide</div>
+
+  <div class="sub-title">Making Ice</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">Remove the water tank, fill with drinking water up to the water line, and place it back inside the unit.</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">Plug in the power cord. Press the <b>Power</b> button — the indicator lights up white and the unit turns on.</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">Press the <b>Make Ice</b> button to select an ice size (S / M / L). The unit starts making ice automatically.</div></div>
+  <div class="step-row"><div class="step-num">4</div><div class="step-text">Wait for the ice to form. Bullet ice will drop into the ice basket automatically.</div></div>
+  <div class="step-row"><div class="step-num">5</div><div class="step-text">Open the lid, remove the ice basket, and collect the ice. Replace the basket and the unit resumes automatically.</div></div>
+
+  <div class="note-box" style="margin-top:12px;">
+    <div class="box-title">NOTICE</div>
+    <ul class="box-list">
+      <li>Press <b>Make Ice</b> during operation to switch ice sizes.</li>
+      <li>Long-press <b>Power</b> to stop ice-making and turn off the unit.</li>
+      <li>When the basket is full, the <b>ICE FULL</b> indicator lights green and the unit pauses. Remove ice or wait for it to melt — the unit resumes automatically.</li>
+      <li>When the tank is low, the <b>ADD WATER</b> indicator lights red. Refill promptly.</li>
+      <li>You cannot make multiple sizes simultaneously, but you can switch sizes mid-cycle.</li>
+      <li>Occasional opacity during continuous ice-making is normal due to water quality, temperature, and ambient conditions.</li>
+    </ul>
+  </div>
+
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>9</span></div>
+</div>
+<!-- @CONTENT:operations:end -->
+
+<!-- ═══════════ PAGE 10 — CH.07 CLEANING ═══════════ -->
+<!-- @CONTENT:cleaning:start -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.07 — CLEANING &amp; MAINTENANCE</div>
+  </div>
+  <div class="section-title">Cleaning &amp; Maintenance</div>
+
+  <div class="sub-title">Auto-Clean (Ice Mold &amp; Tray)</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">Fill the water tank to the water line.</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">With the unit powered on, press the <b>Clean</b> button. The indicator lights white and the unit cleans automatically.</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">When cleaning is complete, the unit stops automatically and the indicator turns off.</div></div>
+
+  <div class="sub-title">Draining</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">Unplug the power cord and place the unit near a sink.</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">Remove the drain plug from the bottom of the unit and let all water drain out.</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">Once drained, replace the drain plug securely.</div></div>
+
+  <div class="sub-title">Daily Maintenance</div>
+  <ul class="bullet-list">
+    <li>Regularly rinse the interior with clean water — we recommend <b>cleaning before each daily use</b>.</li>
+    <li>Wipe the exterior with a soft, damp cloth. Do not use abrasive or corrosive cleaners.</li>
+    <li>Follow the auto-clean steps to clean the ice mold and tray.</li>
+  </ul>
+
+  <div class="sub-title">Long-Term Storage</div>
+  <ul class="bullet-list">
+    <li>Run a cleaning cycle.</li>
+    <li>Drain all water from the unit.</li>
+    <li>Wipe the interior dry and leave the lid open for natural air-drying.</li>
+    <li>Unplug the power cord and store in a dry, ventilated area.</li>
+  </ul>
+
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>10</span></div>
+</div>
+<!-- @CONTENT:cleaning:end -->
+
+<!-- ═══════════ PAGE 11 — CH.08 TROUBLESHOOTING ═══════════ -->
+<!-- @CONTENT:troubleshooting:start -->
+<div class="page compact-ts">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.08 — TROUBLESHOOTING</div>
+  </div>
+  <div class="section-title">Troubleshooting</div>
+
+  <table>
+    <thead><tr><th style="width:22%;">Problem</th><th style="width:33%;">Possible Cause</th><th>Solution</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Unit won't turn on</td>
+        <td>Power not connected or outlet has no power</td>
+        <td>Check the power connection and ensure the outlet is working.</td>
+      </tr>
+      <tr>
+        <td>Won't drain</td>
+        <td>Drain plug not removed or drain hole blocked</td>
+        <td>Check that the drain plug at the bottom is removed; check for blockages.</td>
+      </tr>
+      <tr>
+        <td>Not making ice</td>
+        <td>Water tank low (ADD WATER indicator red)</td>
+        <td>Fill the water tank to the water line.</td>
+      </tr>
+      <tr>
+        <td>Not making ice</td>
+        <td>Mold only frosts, no ice forming (pump issue)</td>
+        <td>Fill water to the line, let stand for 30 minutes, then restart. Check through the window if water is being pumped to the tray.</td>
+      </tr>
+      <tr>
+        <td>Stops mid-cycle</td>
+        <td>Ice basket full (ICE FULL indicator green)</td>
+        <td>Remove ice or wait for it to melt. The unit will resume automatically.</td>
+      </tr>
+      <tr>
+        <td>Stops mid-cycle</td>
+        <td>Water tank low (ADD WATER indicator red)</td>
+        <td>Refill the water tank promptly. The unit will resume automatically.</td>
+      </tr>
+      <tr>
+        <td>First 5 batches are small</td>
+        <td>Water temperature is still high (cool-down phase)</td>
+        <td>This is normal. Ice size will increase as water temperature drops.</td>
+      </tr>
+      <tr>
+        <td>Poor ice quality</td>
+        <td>Insufficient ventilation or high ambient temperature</td>
+        <td>Ensure ≥120 mm clearance on all sides; move the unit to a cool, ventilated area.</td>
+      </tr>
+      <tr>
+        <td>Ice is not clear</td>
+        <td>High mineral content in water or temperature effects</td>
+        <td>Use purified water with TDS &lt; 200 mg/L. Occasional opacity is normal during continuous use.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="caution-box" style="margin-top:14px;">
+    <div class="box-title">DISCLAIMER</div>
+    <p>The manufacturer, distributors, and brand owners shall not be held liable for any damage or quality issues resulting from operations not in accordance with this manual.</p>
+  </div>
+
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>11</span></div>
+</div>
+<!-- @CONTENT:troubleshooting:end -->
+
+<!-- ═══════════ PAGE 12 — CH.09 WARRANTY ═══════════ -->
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.09 — WARRANTY</div>
+  </div>
+  <div class="section-title">Brand & Warranty Information</div>
+
+  <p>Thank you for purchasing the ACT Ice Maker. If you have any questions, please contact us at:<br>support@thespacetec.com | www.thespacetec.com</p>
+
+  <div class="sub-title">Brand Information</div>
+  <table>
+      <tr><td style="width:30%">Brand</td><td><b>ADVANCED CUISINE TECHNOLOGY PTE. LTD.</b></td></tr>
+      <tr><td>Address</td><td>60 Paya Lebar Road, #11-19 Paya Lebar Square, Singapore 409051</td></tr>
+      <tr><td>Website</td><td>www.thespacetec.com</td></tr>
+      <tr><td>Customer Support</td><td>support@thespacetec.com</td></tr>
+  </table>
+
+  <div class="sub-title">Authorized Manufacturer</div>
+  <table>
+      <tr><td style="width:30%">Manufacturer</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td>Address</td><td>No. 1 Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
+      <tr><td>Website</td><td>www.argiontechnology.com</td></tr>
+  </table>
+
+  <div class="sub-title">Warranty Information</div>
+  <p>This product comes with a <b>2-year limited warranty</b>. Warranty replacement service is available within 2 year(s) from the original date of purchase. To be eligible for warranty replacement, you must:</p>
+  <ul class="bullet-list">
+    <li>Have purchased the product within the past 2 year(s).</li>
+    <li>Have the original order number or the email address used at the time of purchase.</li>
+    <li>If purchased through a dealer or retail partner, provide a copy of the original receipt.</li>
+  </ul>
+  <p style="margin-top:8px">Send us an email to request warranty service: <b>support@thespacetec.com</b></p>
+
+  <div class="sub-title" style="margin-top:10px;">Warranty Card</div>
+  <table>
+    <tr><td style="width:35%;">Customer Name</td><td></td></tr>
+    <tr><td>Address</td><td></td></tr>
+    <tr><td>City / State / ZIP</td><td></td></tr>
+    <tr><td>Phone Number</td><td></td></tr>
+    <tr><td>Email Address</td><td></td></tr>
+    <tr><td>Original Purchase Date</td><td></td></tr>
+    <tr><td>Product Model</td><td></td></tr>
+    <tr><td>Serial Number (if applicable)</td><td></td></tr>
+    <tr><td>Retailer Name</td><td></td></tr>
+  </table>
+
+  <div class="page-footer"><span>ACT IMT050 User Manual</span><span>12</span></div>
+</div>
+
+</body>
+</html>

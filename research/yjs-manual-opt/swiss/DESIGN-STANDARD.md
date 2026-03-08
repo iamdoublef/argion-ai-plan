@@ -1,0 +1,579 @@
+# Swiss Template Design Standard (A5 Booklet)
+
+**版本**：v1.1  
+**日期**：2026-03-08  
+**基准来源**：V23 模版 CSS + `data/d5-manual-standard.md` v2.0  
+**适用范围**：所有 Swiss A5 booklet 产品说明书模版（`swiss/template/*-master-*.html`）
+
+> 本文件是 Swiss A5 模版**唯一设计基准**。模版创建、审计、修正均以此为标准。
+> 与 d5 冲突时，以本文件为准（本文件已考虑 A5 适配）。
+
+### 变更记录
+
+| 版本 | 日期 | 变更内容 |
+|------|------|---------|
+| v1.0 | 2026-03-08 | 初稿创建，从V23模版提取设计规范 |
+| v1.1 | 2026-03-08 | IMT050全部4语言模板已对齐V23；新增compact-ops sub-title规范；确认三级警告系统box-title规则 |
+
+---
+
+## 一、页面布局
+
+| 项目 | 规范值 | 说明 |
+|------|--------|------|
+| 页面尺寸 | A5 (148×210 mm) | `@page { size: 148mm 210mm; margin: 0; }` |
+| 页边距 | 12mm | `--page-margin: 12mm` |
+| 页面容器 | 固定宽高 | `.page { width: 148mm; height: 210mm; }` |
+| 页面溢出 | `overflow: hidden` | 内容必须在设计时确保不溢出（见§十一） |
+| 分页 | `page-break-after: always` | 每个 `.page` 独立成页 |
+| 背景 | `#FFF` | 打印友好，无灰色背景 |
+
+> **注意**：d5 §8.4 禁止 `height + overflow: hidden`（针对 A4 `min-height` 布局）。
+> Swiss A5 因需要精确的 booklet 拼版，**必须使用固定 height**。
+> 但 overflow:hidden 只是安全网，设计时**必须确保内容不溢出**，由审计脚本检测。
+
+---
+
+## 二、色彩系统
+
+从 V23 模版继承，所有产品统一。
+
+| 用途 | 变量 | 色值 | 说明 |
+|------|------|------|------|
+| 主黑 | `--swiss-black` | `#000000` | V23 用 #000000 |
+| 强调红 | `--swiss-red` | `#E63946` | V23 品牌红 |
+| 灰底 | `--swiss-gray-bg` | `#F2F2F7` | V23 灰底 |
+| 灰字 | `--swiss-gray-text` | `#8E8E93` | 页眉/页脚文字 |
+| 正文 | — | `var(--swiss-black)` | 同主黑 |
+
+**禁止**：
+- ❌ 使用 `#E30613` 或其他非标准红色
+- ❌ 使用 `#1A1A1A` 替代 `#000000`（正文可接受，但变量必须定义为 #000000）
+- ❌ 使用 `#F5F5F5` 替代 `#F2F2F7`
+
+---
+
+## 三、字体系统
+
+### 字体栈
+
+```css
+body { font-family: 'Helvetica Neue', 'Inter', Arial, sans-serif; }
+```
+
+- CN 模版可追加 CJK 字体：`'PingFang SC', 'Microsoft YaHei'`（放在 Arial 之后）
+- 等宽场景（header-ref, page-footer）：`'Courier New', monospace`
+
+### 字号对照表（V23 A4 → Swiss A5 适配）
+
+| 用途 | V23 (A4) | Swiss (A5) | 缩放比 |
+|------|----------|------------|--------|
+| body line-height | 1.65 | 1.65 | — |
+| 一级标题 `.section-title` | 26px | 20px | 0.77 |
+| 二级标题 `.sub-title` | 14px | 13px | 0.93 |
+| 正文 `p` | 13px | 12.5px | 0.96 |
+| 步骤文字 `.step-text` | 13px | 12.5px | 0.96 |
+| 列表项 `.bullet-list li` | 13px | 12.5px | 0.96 |
+| 表格正文 `td` | 12px | 12px | 1.00 |
+| 表格表头 `th` | 11px | 11px | 1.00 |
+| 警告框 | 12px | 12px | 1.00 |
+| 页眉品牌 `.header-brand` | 13px | 11px | 0.85 |
+| 页眉章节 `.header-ref` | 10px | 9px | 0.90 |
+| 页脚 `.page-footer` | — | 10px | — |
+| 目录项 `.toc-item` | 13px | 12px | 0.92 |
+
+### 长文本语言补偿（DE/IT）
+
+德语和意大利语文本比中文/英文长 20-30%，需全局补偿：
+
+| 属性 | CN/EN 标准值 | DE/IT 补偿值 |
+|------|-------------|-------------|
+| body line-height | 1.65 | 1.55 |
+| .step-text font-size | 12.5px | 12px |
+| .step-text line-height | 1.6 | 1.5 |
+| .bullet-list li font-size | 12.5px | 12px |
+| .bullet-list li margin-bottom | 6px | 4px |
+
+---
+
+## 四、页面头部 `.header-strip`
+
+```css
+.header-strip {
+  border-top: 5px solid var(--swiss-black);
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.header-brand {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 11px;       /* A5 适配，V23 为 13px */
+  text-transform: uppercase;
+  color: var(--swiss-gray-text);
+}
+.header-ref {
+  font-family: 'Courier New', monospace;  /* 必须 monospace */
+  font-size: 9px;
+  color: var(--swiss-gray-text);
+  letter-spacing: 1px;
+}
+```
+
+---
+
+## 五、标题系统
+
+### 一级标题 `.section-title`
+
+**必须保持 V23 设计语言：左侧竖线**
+
+```css
+.section-title {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin: 0 0 14px;
+  border-left: 5px solid var(--swiss-black);  /* V23 核心特征 */
+  padding-left: 10px;
+}
+.section-title .chapter-num {
+  color: var(--swiss-red);
+  margin-right: 6px;
+}
+```
+
+**禁止**：
+- ❌ 使用 `border-bottom` 替代 `border-left`
+- ❌ 省略 `.chapter-num` 的红色编号
+
+### 二级标题 `.sub-title`
+
+**必须保持 V23 设计语言：底部黑线 + uppercase**
+
+```css
+.sub-title {
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--swiss-black);
+  padding-bottom: 3px;
+  margin: 16px 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+```
+
+**禁止**：
+- ❌ 省略 `border-bottom`
+- ❌ 省略 `text-transform: uppercase`
+
+---
+
+## 六、表格系统
+
+### 标准表格
+
+**必须保持 V23 设计语言：黑底白字表头 + 交替行色**
+
+```css
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 12px;
+}
+th {
+  background: var(--swiss-black);
+  color: #FFF;
+  padding: 6px 8px;
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+td {
+  border: 1px solid #CCC;
+  padding: 6px 8px;
+  color: #1A1A1A;
+  vertical-align: top;
+}
+tr:nth-child(even) td {
+  background: var(--swiss-gray-bg);
+}
+```
+
+**禁止**：
+- ❌ 灰底表头（`background: #F5F5F5` 等）
+- ❌ 省略交替行色
+- ❌ 使用 `border: 1px solid #DDD`（应为 `#CCC`）
+
+---
+
+## 七、警示体系（三级，从 d5 继承）
+
+**必须使用 d5 三级体系，不得缩减**
+
+### CSS 类名和样式
+
+```css
+/* WARNING — 人身伤害风险 */
+.warning-box {
+  border: 2px solid var(--swiss-red);
+  padding: 10px 14px;
+  margin: 12px 0;
+}
+.warning-box .box-title {
+  font-size: 11px;
+  font-weight: 900;
+  color: var(--swiss-red);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CAUTION — 产品损坏风险 */
+.caution-box {
+  border: 2px solid #000;
+  padding: 10px 14px;
+  margin: 12px 0;
+}
+.caution-box .box-title {
+  font-size: 11px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* NOTICE — 使用提示 */
+.note-box {
+  background: var(--swiss-gray-bg);
+  padding: 8px 12px;
+  margin: 10px 0;
+  border-left: 4px solid var(--swiss-gray-text);
+  font-size: 11.5px;
+  color: #444;
+}
+.note-box .box-title {
+  font-weight: 900;
+  color: #333;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* 列表 */
+.box-list {
+  list-style: none;
+  padding-left: 14px;
+}
+.box-list li {
+  padding: 1px 0;
+  position: relative;
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+.box-list li::before {
+  content: "·";
+  position: absolute;
+  left: -10px;
+  color: var(--swiss-red);
+  font-weight: 900;
+}
+```
+
+**禁止**：
+- ❌ 使用 `.warn-box` / `.info-box` 等非标准类名
+- ❌ 只用两级（warn + info），必须实现三级
+- ❌ 使用 emoji（⚠/⚡/📝）替代文字标题
+
+### HTML 模版
+
+```html
+<div class="warning-box">
+  <div class="box-title">WARNING</div>
+  <ul class="box-list"><li>内容</li></ul>
+</div>
+<!-- CN 版标题用: 警告 WARNING / 注意 CAUTION / 提示 NOTICE -->
+```
+
+---
+
+## 八、步骤列表
+
+### HTML 语义结构
+
+```html
+<ol class="steps">
+  <li><span class="step-num">1</span>打开面盖。</li>
+  <li><span class="step-num">2</span>...</li>
+</ol>
+```
+
+### CSS
+
+```css
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+.steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.step-num {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  background: var(--swiss-black);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  margin-top: 1px;
+}
+```
+
+**也接受** `div.step-row` + `div.step-text` 结构（视觉等价），但 `<ol class="steps">` 是首选。
+
+---
+
+## 九、普通列表 `.bullet-list`
+
+```css
+.bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+.bullet-list li {
+  padding: 2px 0 2px 16px;
+  position: relative;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.bullet-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--swiss-red);
+  font-weight: 900;
+  font-size: 11px;
+}
+```
+
+---
+
+## 十、图片规范
+
+```css
+.fig-wrap {
+  text-align: center;
+  margin: 12px 0 8px;
+}
+.fig-wrap img {
+  max-width: 85%;
+  max-height: 65mm;
+  object-fit: contain;
+  display: inline-block;
+}
+.fig-caption {
+  font-size: 9px;
+  color: var(--swiss-gray-text);
+  margin-top: 3px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+```
+
+**与 V23 差异**：max-width 从 80% 放宽到 85%（A5 页面更窄），max-height 从 70mm 缩到 65mm。
+
+---
+
+## 十一、Compact 类系统（溢出管理）
+
+A5 页面空间有限，长文本语言（DE/IT）和大表格可能溢出。用 compact 类管理：
+
+| 类名 | 用途 | 应用页面 |
+|------|------|---------|
+| `.compact-ops` | 操作步骤、清洁等步骤密集页 | 操作、清洁 |
+| `.compact-table` | 中等表格页（规格、零件） | 规格 |
+| `.compact-ts` | 故障排除表（EN/DE/IT） | 故障排除 |
+| `.compact-warranty` | 保修信息页 | 保修 |
+
+### 规则
+
+1. CN 模版优先不用 compact（中文短，空间够）
+2. 如果 CN 也溢出，用 `.compact-table`
+3. DE/IT 必须使用语言补偿（§三）
+4. 每个 compact 类的具体参数记录在模版内 CSS，不在本标准中规定具体数值
+5. **审计脚本必须检测 overflow**，compact 类的目标是让所有页面 content ≤ page height
+6. `.compact-ops .sub-title` 必须缩小 `padding-bottom` 以补偿 V23 sub-title 新增的 `border-bottom`，否则易溢出
+
+---
+
+## 十二、页脚 `.page-footer`
+
+```css
+.page-footer {
+  position: absolute;
+  bottom: 6mm;
+  left: var(--page-margin);
+  right: var(--page-margin);
+  border-top: 1px solid #EEE;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--swiss-gray-text);
+  font-family: 'Courier New', monospace;
+}
+```
+
+格式：`<品牌> <型号> <文档类型> | <页码>`
+
+---
+
+## 十三、内容结构（从 d5 §二 继承，A5 适配）
+
+### 标准页面序列
+
+| 页码 | 内容 | 说明 |
+|------|------|------|
+| 1 | 封面 | 产品图 + 品牌 + 型号 |
+| 2 | 目录 | TOC |
+| 3 | 安全须知 | WARNING + CAUTION + NOTICE（三级体系） |
+| 4+ | 使用前准备 | 开箱、安装 |
+| ... | 产品结构 | 结构图 + 零件表 |
+| ... | 控制面板 | 按键功能 |
+| ... | 产品参数 | 规格表（按市场分版） |
+| ... | 操作指引 | 步骤 + 配图 |
+| ... | 清洁保养 | 清洁方法 + 存储 |
+| ... | 故障排除 | 问题-原因-解决 三列表 |
+| 末页 | 保修信息 | 品牌+制造商+保修条款+保修卡 |
+
+A5 因页面小，总页数一般 11-14 页。奇数页需在 booklet 拼版时补空白页。
+
+---
+
+## 十四、已知陷阱与经验教训
+
+### 从 d5 继承
+
+| # | 陷阱 | 对策 |
+|---|------|------|
+| 1 | Word docx 中 SVG+PNG 重复 | MD5 检测，SVG 优先 |
+| 2 | 非标准警示框 | 归入三级体系 |
+| 3 | EN版遗漏制造商表格 | 所有版本必须有 |
+| 4 | overflow:hidden 截断内容 | 审计脚本检测实际 content height |
+| 5 | 颜色不一致 | 严格使用 CSS 变量 |
+
+### 本轮新增（IMT050 验证）
+
+| # | 陷阱 | 后果 | 对策 |
+|---|------|------|------|
+| 6 | config.json 字段名不匹配 build 脚本 | 输出 `undefined` | 新产品必须用 `name`/`address` 字段名 |
+| 7 | 制造商地址不完整 | 法规要求完整地址 | 核对 V23 config，复用已验证的地址 |
+| 8 | 保修年限从 Word 提取错误 | 误标 1 年实为 2 年 | 交叉核对 Word 原文 |
+| 9 | 品牌法律名称不一致 | 法律风险 | 统一从 V23 config 继承品牌数据 |
+| 10 | ACT 品牌邮箱/地址 TODO 占位 | 输出含 TODO | 建新产品前先确认所有品牌数据完整 |
+| 11 | 规格参数遗漏 | 信息不完整 | 与 Word 原文逐行对照，不得遗漏 |
+| 12 | 封面图 `width:100%` 拉伸 | 图片变形 | 始终用 `max-width` 不用 `width` |
+| 13 | export-pdf.js 写死 A4 | PDF 尺寸错 | 用 `preferCSSPageSize: true` |
+| 14 | make-booklet.py 写死 A4 | booklet 尺寸错 | 动态检测源 PDF 页面尺寸 |
+| 15 | DE/IT 文本溢出 A5 | 内容被截断 | 语言补偿 CSS + compact 类 |
+| 16 | 模版 CSS 偏离 V23 设计语言 | 视觉不统一 | **严格按本标准创建** |
+
+---
+
+## 十五、审计检查清单
+
+新产品模版创建后、交付前，必须通过以下检查：
+
+### A. 设计一致性（对照本标准）
+- [ ] CSS 变量色值与 §二 一致
+- [ ] `.section-title` 使用左侧竖线（非底部线）
+- [ ] `.sub-title` 有 `border-bottom` + `text-transform: uppercase`
+- [ ] 表格表头黑底白字 + 交替行色
+- [ ] 警示体系使用三级（warning-box/caution-box/note-box）
+- [ ] 图片有 `max-width` + `max-height` + `object-fit: contain`
+- [ ] 页眉 `.header-ref` 使用 monospace 字体
+
+### B. 数据完整性
+- [ ] 所有 `{{}}` 占位符在 build 后已替换（0 个残留）
+- [ ] 无 `undefined` / `TODO` / `null` 出现
+- [ ] 品牌名/地址/邮箱与 config.json 一致
+- [ ] 规格参数与 Word 原文逐行对照无遗漏
+- [ ] 保修年限与 Word 原文一致
+
+### C. 页面溢出（Playwright 审计脚本）
+- [ ] 所有页面 content height ≤ page height
+- [ ] 所有 4 语言版本均通过
+- [ ] DE/IT 已应用语言补偿
+
+### D. 图片
+- [ ] 所有 `<img>` 的 src 指向真实文件
+- [ ] natural aspect ratio ≈ render aspect ratio（差异 < 2%）
+- [ ] 无拉伸、无裁切
+
+### E. 多语言一致性
+- [ ] 4 语言版本章节数量和顺序一致
+- [ ] 数值/数量/按键名在所有版本中一致
+- [ ] 品牌信息 + 制造商信息在所有版本中存在
+
+### F. 产出完整性
+- [ ] 21 个 HTML 无警告
+- [ ] 21 个 PDF 导出成功（A5 尺寸）
+- [ ] 21 个 booklet 生成成功（landscape A4）
+
+---
+
+## 十六、审计工具
+
+- `swiss/tools/_audit-visual.js` — Playwright 可视化审计（截图 + 图片比例 + overflow 检测）
+- 运行：`node tools/_audit-visual.js output/<file>.html`
+- 预期输出：`ALL CHECKS PASSED`
+
+---
+
+## 附录：CONFIG.JSON 字段规范
+
+品牌对象必须包含以下字段（build 脚本 `buildBrandInfoRows()` 使用）：
+
+```json
+{
+  "display_name": "品牌显示名",
+  "name": "法律全称",
+  "address": "完整注册地址",
+  "website": "www.example.com",
+  "support_email": "support@example.com"
+}
+```
+
+制造商对象必须包含：
+
+```json
+{
+  "name_cn": "中文公司名",
+  "name_en": "English Company Name",
+  "address_cn": "完整中文地址",
+  "address_en": "Full English address",
+  "website": "www.example.com"
+}
+```
+
+**禁止**使用 `legal_name` / `address_cn` / `address_en` 替代 `name` / `address`（品牌对象）。

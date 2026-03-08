@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{product.model}} {{product.name_de}} Bedienungsanleitung — {{brand.display_name}}</title>
+<style>
+@page { size: 148mm 210mm; margin: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --swiss-red: #E63946;
+  --swiss-black: #000000;
+  --swiss-gray-text: #8E8E93;
+  --swiss-gray-bg: #F2F2F7;
+  --page-margin: 12mm;
+  --page-width: 148mm;
+  --page-height: 210mm;
+}
+html { font-size: 14px; }
+body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--swiss-black); line-height: 1.55; -webkit-font-smoothing: antialiased; background: #FFF; }
+.page { width: var(--page-width); height: var(--page-height); padding: var(--page-margin); position: relative; page-break-after: always; overflow: hidden; }
+.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+.header-brand { font-size: 11px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--swiss-gray-text); }
+.header-ref { font-size: 9px; color: var(--swiss-gray-text); letter-spacing: 1px; font-family: 'Courier New', monospace; }
+.section-title { font-size: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; padding-left: 10px; border-left: 5px solid var(--swiss-black); }
+.sub-title { font-size: 13px; font-weight: 700; margin: 18px 0 10px; border-bottom: 2px solid var(--swiss-black); padding-bottom: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
+.step-row { display: flex; gap: 10px; margin-bottom: 10px; }
+.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
+.step-text { flex: 1; font-size: 12px; line-height: 1.5; }
+.bullet-list { list-style: none; padding: 0; }
+.bullet-list li { position: relative; padding: 2px 0 2px 16px; margin-bottom: 4px; font-size: 12px; line-height: 1.5; }
+.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
+.warning-box { background: #FFF3F3; border-left: 4px solid var(--swiss-red); padding: 10px 12px; margin: 12px 0; font-size: 12px; }
+.caution-box { background: #FFF8E1; border-left: 4px solid #F5A623; padding: 10px 12px; margin: 12px 0; font-size: 12px; }
+.note-box { background: var(--swiss-gray-bg); border-left: 4px solid var(--swiss-black); padding: 10px 12px; margin: 12px 0; font-size: 12px; }
+.box-title { font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.warning-box .box-title { color: var(--swiss-red); }
+.caution-box .box-title { color: #F5A623; }
+.note-box .box-title { color: var(--swiss-black); }
+.box-list { list-style: none; padding: 0; margin: 0; }
+.box-list li { position: relative; padding: 2px 0 2px 16px; font-size: 12px; line-height: 1.45; }
+.box-list li::before { content: "—"; position: absolute; left: 0; font-weight: 900; font-size: 11px; }
+.warning-box .box-list li::before { color: var(--swiss-red); }
+.caution-box .box-list li::before { color: #F5A623; }
+.note-box .box-list li::before { color: var(--swiss-black); }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+th { background: var(--swiss-black); color: #FFF; text-transform: uppercase; text-align: left; padding: 7px 10px; font-weight: 700; border: 1px solid #333; }
+td { padding: 7px 10px; border: 1px solid #CCC; vertical-align: top; }
+tr:nth-child(even) td { background: var(--swiss-gray-bg); }
+.fig-wrap { text-align: center; margin: 12px 0 8px; }
+.fig-wrap img { max-width: 85%; max-height: 65mm; height: auto; object-fit: contain; }
+.fig-caption { text-align: center; font-size: 10px; color: var(--swiss-gray-text); margin-top: 4px; }
+.toc-list { list-style: none; padding: 0; }
+.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 12px; }
+.toc-item span:first-child { font-weight: 700; }
+.toc-item span:last-child { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 11px; }
+
+.compact-ops .step-text { font-size: 12px; line-height: 1.45; }
+.compact-ops .sub-title { margin: 6px 0 4px !important; font-size: 12px; padding-bottom: 2px; }
+.compact-ops .section-title { margin-bottom: 6px; font-size: 15px; }
+.compact-ops .bullet-list li { margin-bottom: 2px; font-size: 12px; line-height: 1.4; }
+.compact-safety .section-title { margin-bottom: 6px; font-size: 18px; }
+.compact-safety .warning-box, .compact-safety .caution-box, .compact-safety .note-box { margin: 6px 0; padding: 6px 10px; }
+.compact-safety .box-title { margin-bottom: 3px; font-size: 10px; }
+.compact-safety .box-list li { font-size: 10px; line-height: 1.3; padding: 0.5px 0; }
+.compact-safety p { font-size: 10px; line-height: 1.3; margin-bottom: 4px; }
+.compact-table .section-title { margin-bottom: 10px; font-size: 16px; }
+.compact-table table { font-size: 11.5px; margin: 8px 0; }
+.compact-table th, .compact-table td { padding: 4px 8px; }
+.compact-ts .section-title { margin-bottom: 2px; font-size: 14px; }
+.compact-ts table { font-size: 9px; margin: 2px 0; line-height: 1.25; }
+.compact-ts th, .compact-ts td { padding: 2px 3px; vertical-align: top; word-break: break-word; }
+.compact-ts .caution-box { margin-top: 3px; font-size: 9px; padding: 3px 5px; line-height: 1.25; }
+.compact-warranty .section-title { margin-bottom: 3px; font-size: 13px; }
+.compact-warranty .sub-title { margin: 3px 0 1px !important; font-size: 10.5px; padding-bottom: 0px !important; }
+.compact-warranty p { margin-bottom: 1px; font-size: 10px; line-height: 1.25; }
+.compact-warranty .bullet-list { margin: 1px 0; }
+.compact-warranty .bullet-list li { padding-top: 0; padding-bottom: 0; line-height: 1.2; font-size: 9.5px; }
+.compact-warranty table { margin: 1px 0; font-size: 9.5px; }
+.compact-warranty th, .compact-warranty td { padding: 1px 5px; }
+.compact-warranty .header-strip { margin-bottom: 8px; }
+
+.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+
+@media print {
+  body { background: none; }
+  .page { page-break-after: always; page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ SEITE 1 — COVER ═══════════ -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+  <div>
+    <div class="cover-brand"><span></span>{{brand.display_name}}</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
+    <img src="./{{images_dir}}/image1.png" alt="{{product.model}} {{product.name_de}}" style="max-width:100%;height:auto;max-height:85mm;">
+  </div>
+    <div class="cover-model">MODELL {{product.model}}</div>
+    <div class="cover-title">{{product.name_de}}</div>
+    <div style="font-size:11px;color:var(--swiss-gray-text);margin-top:4px;">Bedienungsanleitung</div>
+</div>
+
+<!-- ═══════════ SEITE 2 — INHALTSVERZEICHNIS ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">{{product.model}} — BEDIENUNGSANLEITUNG</div>
+  </div>
+  <div class="section-title">Inhaltsverzeichnis</div>
+  <ul class="toc-list">
+    <li class="toc-item"><span>KAP.01 — Sicherheitshinweise</span><span>3–4</span></li>
+    <li class="toc-item"><span>KAP.02 — Vor der Inbetriebnahme</span><span>5</span></li>
+    <li class="toc-item"><span>KAP.03 — Produktaufbau</span><span>6</span></li>
+    <li class="toc-item"><span>KAP.04 — Bedienfeld</span><span>7</span></li>
+    <li class="toc-item"><span>KAP.05 — Technische Daten</span><span>8</span></li>
+    <li class="toc-item"><span>KAP.06 — Bedienung</span><span>9</span></li>
+    <li class="toc-item"><span>KAP.07 — Reinigung &amp; Pflege</span><span>10</span></li>
+    <li class="toc-item"><span>KAP.08 — Fehlerbehebung</span><span>11</span></li>
+    <li class="toc-item"><span>KAP.09 — Marke & Garantie</span><span>12</span></li>
+  </ul>
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>2</span></div>
+</div>
+
+<!-- ═══════════ SEITE 3 — KAP.01 SICHERHEIT (1/2) ═══════════ -->
+<!-- @CONTENT:safety:start — Vollständige Sicherheitshinweise aus Word-Quelldatei -->
+<div class="page compact-safety">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.01 — SICHERHEIT</div>
+  </div>
+  <div class="section-title">Sicherheitshinweise</div>
+  <p>Zu Ihrer Sicherheit lesen Sie bitte vor der Verwendung dieses Elektrogeräts alle Anweisungen in dieser Anleitung und beachten Sie stets die folgenden Sicherheitsvorkehrungen:</p>
+
+  <div class="warning-box">
+    <div class="box-title">WARNUNG</div>
+    <ul class="box-list">
+      <li>Dieses Gerät ist ausschließlich für den Hausgebrauch bestimmt. Nicht für andere Zwecke verwenden.</li>
+      <li>Kinder dürfen nicht mit dem Gerät oder dem Netzkabel spielen. Kinder, Personen mit eingeschränkter Mobilität oder kognitiven Einschränkungen dürfen das Gerät nur unter Aufsicht Erwachsener verwenden.</li>
+      <li>Kleinteile können Erstickungsgefahr darstellen. Von Kindern fernhalten.</li>
+      <li>Das Gerät nicht in Umgebungen mit hoher Feuchtigkeit oder Temperatur verwenden. Niemals in der Nähe von entzündlichen oder explosiven Gasen betreiben.</li>
+      <li>Stellen Sie sicher, dass die Netzspannung mit dem Typenschild des Geräts übereinstimmt.</li>
+      <li>Nach Gebrauch den Strom abschalten.</li>
+      <li>Beim Herausziehen den Stecker selbst greifen — nicht am Netzkabel ziehen.</li>
+      <li>Das Gerät oder das Netzkabel nicht in Wasser oder andere Flüssigkeiten tauchen.</li>
+      <li>Das Netzkabel muss direkt in eine ordnungsgemäße Steckdose eingesteckt werden.</li>
+      <li>Bei Beschädigung von Stecker, Netzkabel oder Gerät sofort die Benutzung einstellen und den Hersteller oder eine autorisierte Servicestelle kontaktieren. Nicht selbst reparieren.</li>
+      <li>Das Netzkabel nicht über die Tischkante hängen lassen — Kinder könnten daran ziehen.</li>
+      <li>Niemals mit nassen Händen oder barfuß die elektrischen Teile des Geräts berühren.</li>
+      <li>Die Stromversorgung muss über einen Fehlerstromschutzschalter (FI/RCD) verfügen.</li>
+      <li>Die Steckdose muss den örtlichen Vorschriften entsprechen. Eine Erdung des Geräts ist vorgeschrieben.</li>
+      <li>Vor Reinigung, Wartung oder Teilewechsel immer den Netzstecker ziehen.</li>
+      <li>Niemals Schraubendreher oder andere Gegenstände in die Lüftungsöffnungen einführen.</li>
+      <li>Nur autorisierte Techniker dürfen das Gerät öffnen, prüfen oder reparieren.</li>
+      <li>Im Brandfall kein Wasser verwenden — einen CO₂-Feuerlöscher benutzen.</li>
+      <li>Zum Abtauen keine mechanischen Mittel oder andere als vom Hersteller empfohlene Methoden verwenden.</li>
+      <li>Den Kältemittelkreislauf nicht beschädigen.</li>
+      <li>Warnung: Brennbare Materialien — Brandgefahr.</li>
+      <li>Kältemittelabfälle nur in zugelassenen Entsorgungszentren entsorgen. Von offenen Flammen fernhalten.</li>
+      <li>Keine Aerosolbehälter oder explosive Stoffe mit brennbaren Treibmitteln im Gerät lagern.</li>
+      <li>Alle Lüftungsöffnungen freihalten. Das Gerät von Wärmequellen oder Dampferzeugern fernhalten.</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>3</span></div>
+</div>
+
+<!-- ═══════════ SEITE 4 — KAP.01 SICHERHEIT (2/2) ═══════════ -->
+<div class="page compact-safety">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.01 — SICHERHEIT</div>
+  </div>
+
+  <div class="caution-box">
+    <div class="box-title">VORSICHT</div>
+    <ul class="box-list">
+      <li>Das Gerät beim Transport aufrecht halten. Kippen kann zu Beschädigungen führen.</li>
+      <li>Nach dem Transport 4 Stunden stehen lassen, damit sich das Kältemittel stabilisiert, bevor Sie das Gerät einschalten.</li>
+      <li>Bei Wartungsarbeiten am Motor oder Kältesystem Handschuhe tragen.</li>
+      <li>Die Lüftungsöffnungen nicht blockieren, um einen einwandfreien Betrieb zu gewährleisten.</li>
+      <li>Keine Nicht-Lebensmittel in die Gerätekammer legen.</li>
+      <li>Dieses Gerät ist nur für den Innenbereich bestimmt.</li>
+      <li>Dieses Gerät ist zum Herstellen von Eis aus Trinkwasser vorgesehen. Nicht für andere Zwecke verwenden.</li>
+    </ul>
+  </div>
+
+  <div class="note-box">
+    <div class="box-title">HINWEIS</div>
+    <ul class="box-list">
+      <li>Der Geräuschpegel liegt unter 50 dB(A).</li>
+      <li>Die Klimaklasse dieses Geräts ist SN, geeignet für Umgebungstemperaturen von 10°C–32°C / 50°F–89,6°F.</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>4</span></div>
+</div>
+<!-- @CONTENT:safety:end -->
+
+<!-- ═══════════ SEITE 5 — KAP.02 VOR DER INBETRIEBNAHME ═══════════ -->
+<!-- @CONTENT:before_use:start -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.02 — VOR DER INBETRIEBNAHME</div>
+  </div>
+  <div class="section-title">Vor der Inbetriebnahme</div>
+
+  <div class="sub-title">Aufstellanforderungen</div>
+  <ul class="bullet-list">
+    <li>Das Gerät auf eine stabile, ebene und trockene Arbeitsfläche stellen.</li>
+    <li>Mindestens 120 mm (4,7") Belüftungsabstand auf allen Seiten einhalten.</li>
+    <li>Von Wärmequellen (Öfen, Herdplatten usw.) und direkter Sonneneinstrahlung fernhalten.</li>
+  </ul>
+
+  <div class="sub-title">Wasserqualität</div>
+  <ul class="bullet-list">
+    <li>Verwenden Sie Trinkwasser für die Eisherstellung. Je reiner das Wasser, desto klarer das Eis.</li>
+    <li>Für optimale Klarheit Wasser mit niedrigem Mineralgehalt verwenden (TDS &lt; 200 mg/L).</li>
+    <li>Geeignete Quellen: gereinigtes Wasser, RO-gefiltertes Wasser, tief gefiltertes Wasser, mineralstoffarmes Mineralwasser.</li>
+    <li><strong>NICHT</strong> verwenden: gefärbte, aromatisierte, kohlensäurehaltige oder gasgesättigte Getränke (Tee, Saft, Kaffee, Milch, Limonade usw.) — diese können das Gerät verunreinigen oder beschädigen.</li>
+  </ul>
+
+  <div class="sub-title">Erste Benutzung</div>
+  <ul class="bullet-list">
+    <li>Nach dem Auspacken alle Verpackungsmaterialien entfernen.</li>
+    <li>Das Innere mit einem feuchten Tuch abwischen, dann gründlich trocknen.</li>
+    <li>Vor dem ersten Gebrauch einmal den Reinigungszyklus durchführen (siehe KAP.07).</li>
+    <li>Die ersten 5 Eisbereitungszyklen sind eine Abkühlphase — die Eisgröße nimmt mit sinkender Wassertemperatur allmählich zu. Das ist normal.</li>
+  </ul>
+
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>5</span></div>
+</div>
+<!-- @CONTENT:before_use:end -->
+
+<!-- ═══════════ SEITE 6 — KAP.03 AUFBAU ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.03 — PRODUKTAUFBAU</div>
+  </div>
+  <div class="section-title">Produktaufbau</div>
+  <div class="fig-wrap">
+    <img src="./{{images_dir}}/image5.png" alt="Produktaufbau" style="max-height:90mm;">
+  </div>
+  <table>
+    <thead><tr><th style="width:15%;">Nr.</th><th>Bezeichnung</th><th style="width:15%;">Nr.</th><th>Bezeichnung</th></tr></thead>
+    <tbody>
+{{#PARTS_TABLE_ROWS}}
+    </tbody>
+  </table>
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>6</span></div>
+</div>
+
+<!-- ═══════════ SEITE 7 — KAP.04 BEDIENFELD ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.04 — BEDIENFELD</div>
+  </div>
+  <div class="section-title">Bedienfeld</div>
+  <div class="fig-wrap">
+    <img src="./{{images_dir}}/image7.png" alt="Bedienfeld" style="max-height:50mm;">
+  </div>
+  <table>
+    <thead><tr><th style="width:25%;">Nr. / Taste</th><th>Beschreibung</th></tr></thead>
+    <tbody>
+{{#BUTTONS_TABLE_ROWS}}
+    </tbody>
+  </table>
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>7</span></div>
+</div>
+
+<!-- ═══════════ SEITE 8 — KAP.05 TECHNISCHE DATEN ═══════════ -->
+<div class="page compact-table">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.05 — TECHNISCHE DATEN</div>
+  </div>
+  <div class="section-title">Technische Daten</div>
+  <table>
+    <thead><tr><th style="width:40%;">Parameter</th><th>Spezifikation</th></tr></thead>
+    <tbody>
+{{#SPECS_TABLE_ROWS}}
+    </tbody>
+  </table>
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>8</span></div>
+</div>
+
+<!-- ═══════════ SEITE 9 — KAP.06 BEDIENUNG ═══════════ -->
+<!-- @CONTENT:operations:start -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.06 — BEDIENUNG</div>
+  </div>
+  <div class="section-title">Bedienungsanleitung</div>
+
+  <div class="sub-title">Eis herstellen</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">Den Wassertank herausnehmen, mit Trinkwasser bis zur Markierung füllen und wieder einsetzen.</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">Das Netzkabel einstecken. Die <b>Power</b>-Taste drücken — die Anzeige leuchtet weiß und das Gerät schaltet sich ein.</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">Die <b>Eis herstellen</b>-Taste drücken, um eine Eisgröße (S / M / L) auszuwählen. Das Gerät beginnt automatisch mit der Eisherstellung.</div></div>
+  <div class="step-row"><div class="step-num">4</div><div class="step-text">Warten, bis das Eis gebildet ist. Bullet-Eis fällt automatisch in den Eiskorb.</div></div>
+  <div class="step-row"><div class="step-num">5</div><div class="step-text">Deckel öffnen, Eiskorb herausnehmen und Eis entnehmen. Korb wieder einsetzen — das Gerät setzt automatisch fort.</div></div>
+
+  <div class="note-box" style="margin-top:12px;">
+    <div class="box-title">HINWEIS</div>
+    <ul class="box-list">
+      <li>Drücken Sie während des Betriebs <b>Eis herstellen</b>, um die Eisgröße zu wechseln.</li>
+      <li>Halten Sie <b>Power</b> gedrückt, um die Eisherstellung zu stoppen und das Gerät auszuschalten.</li>
+      <li>Wenn der Korb voll ist, leuchtet die <b>EIS VOLL</b>-Anzeige grün und das Gerät pausiert. Eis entnehmen oder schmelzen lassen — das Gerät setzt automatisch fort.</li>
+      <li>Wenn der Tank leer ist, leuchtet die <b>WASSER NACHFÜLLEN</b>-Anzeige rot. Umgehend nachfüllen.</li>
+      <li>Mehrere Größen gleichzeitig herstellen ist nicht möglich, aber die Größe kann während des Zyklus gewechselt werden.</li>
+      <li>Gelegentliche Trübung bei kontinuierlicher Eisherstellung ist normal und hängt von Wasserqualität, Temperatur und Umgebungsbedingungen ab.</li>
+    </ul>
+  </div>
+
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>9</span></div>
+</div>
+<!-- @CONTENT:operations:end -->
+
+<!-- ═══════════ SEITE 10 — KAP.07 REINIGUNG ═══════════ -->
+<!-- @CONTENT:cleaning:start -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.07 — REINIGUNG &amp; PFLEGE</div>
+  </div>
+  <div class="section-title">Reinigung &amp; Pflege</div>
+
+  <div class="sub-title">Automatische Reinigung (Eisform &amp; Auffangschale)</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">Den Wassertank bis zur Markierung füllen.</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">Bei eingeschaltetem Gerät die <b>Reinigen</b>-Taste drücken. Die Anzeige leuchtet weiß und das Gerät reinigt automatisch.</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">Nach Abschluss der Reinigung stoppt das Gerät automatisch und die Anzeige erlischt.</div></div>
+
+  <div class="sub-title">Wasserablauf</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">Netzstecker ziehen und das Gerät in die Nähe eines Spülbeckens stellen.</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">Den Ablassstopfen an der Unterseite entfernen und das gesamte Wasser ablaufen lassen.</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">Nach dem Ablassen den Stopfen wieder fest einsetzen.</div></div>
+
+  <div class="sub-title">Tägliche Pflege</div>
+  <ul class="bullet-list">
+    <li>Das Innere regelmäßig mit klarem Wasser ausspülen — wir empfehlen eine <b>Reinigung vor jedem täglichen Gebrauch</b>.</li>
+    <li>Das Äußere mit einem weichen, feuchten Tuch abwischen. Keine scheuernden oder ätzenden Reinigungsmittel verwenden.</li>
+    <li>Befolgen Sie die automatische Reinigung, um Eisform und Auffangschale zu reinigen.</li>
+  </ul>
+
+  <div class="sub-title">Langzeitlagerung</div>
+  <ul class="bullet-list">
+    <li>Einen Reinigungszyklus durchführen.</li>
+    <li>Das gesamte Wasser aus dem Gerät ablassen.</li>
+    <li>Das Innere trockenwischen und den Deckel zur natürlichen Trocknung geöffnet lassen.</li>
+    <li>Den Netzstecker ziehen und an einem trockenen, gut belüfteten Ort aufbewahren.</li>
+  </ul>
+
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>10</span></div>
+</div>
+<!-- @CONTENT:cleaning:end -->
+
+<!-- ═══════════ SEITE 11 — KAP.08 FEHLERBEHEBUNG ═══════════ -->
+<!-- @CONTENT:troubleshooting:start -->
+<div class="page compact-ts">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.08 — FEHLERBEHEBUNG</div>
+  </div>
+  <div class="section-title">Fehlerbehebung</div>
+
+  <table>
+    <thead><tr><th style="width:22%;">Problem</th><th style="width:33%;">Mögliche Ursache</th><th>Lösung</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Gerät schaltet sich nicht ein</td>
+        <td>Strom nicht angeschlossen oder Steckdose ohne Strom</td>
+        <td>Stromverbindung prüfen und sicherstellen, dass die Steckdose funktioniert.</td>
+      </tr>
+      <tr>
+        <td>Wasser läuft nicht ab</td>
+        <td>Ablassstopfen nicht entfernt oder Ablauföffnung verstopft</td>
+        <td>Prüfen, ob der Ablassstopfen an der Unterseite entfernt ist; auf Verstopfungen prüfen.</td>
+      </tr>
+      <tr>
+        <td>Kein Eis</td>
+        <td>Wassertank leer (WASSER NACHFÜLLEN-Anzeige rot)</td>
+        <td>Wassertank bis zur Markierung füllen.</td>
+      </tr>
+      <tr>
+        <td>Kein Eis</td>
+        <td>Form vereist nur, kein Eis (Pumpenproblem)</td>
+        <td>Wasser bis zur Markierung füllen, 30 Minuten stehen lassen, dann neu starten. Durch das Fenster prüfen, ob Wasser zur Schale gepumpt wird.</td>
+      </tr>
+      <tr>
+        <td>Stoppt mitten im Zyklus</td>
+        <td>Eiskorb voll (EIS VOLL-Anzeige grün)</td>
+        <td>Eis entnehmen oder schmelzen lassen. Das Gerät setzt automatisch fort.</td>
+      </tr>
+      <tr>
+        <td>Stoppt mitten im Zyklus</td>
+        <td>Wassertank leer (WASSER NACHFÜLLEN-Anzeige rot)</td>
+        <td>Wassertank umgehend nachfüllen. Das Gerät setzt automatisch fort.</td>
+      </tr>
+      <tr>
+        <td>Erste 5 Chargen sind klein</td>
+        <td>Wassertemperatur ist noch hoch (Abkühlphase)</td>
+        <td>Das ist normal. Die Eisgröße nimmt mit sinkender Wassertemperatur zu.</td>
+      </tr>
+      <tr>
+        <td>Schlechte Eisqualität</td>
+        <td>Unzureichende Belüftung oder hohe Umgebungstemperatur</td>
+        <td>Mindestens 120 mm Abstand auf allen Seiten einhalten; das Gerät an einen kühlen, gut belüfteten Ort stellen.</td>
+      </tr>
+      <tr>
+        <td>Eis ist nicht klar</td>
+        <td>Hoher Mineralgehalt im Wasser oder Temperatureffekte</td>
+        <td>Gereinigtes Wasser mit TDS &lt; 200 mg/L verwenden. Gelegentliche Trübung bei kontinuierlichem Betrieb ist normal.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="caution-box" style="margin-top:14px;">
+    <div class="box-title">HAFTUNGSAUSSCHLUSS</div>
+    <p>Der Hersteller, Vertriebspartner und Markeninhaber übernehmen keine Haftung für Schäden oder Qualitätsprobleme, die durch eine nicht anleitungskonforme Bedienung verursacht werden.</p>
+  </div>
+
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>11</span></div>
+</div>
+<!-- @CONTENT:troubleshooting:end -->
+
+<!-- ═══════════ SEITE 12 — KAP.09 GARANTIE ═══════════ -->
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">KAP.09 — GARANTIE</div>
+  </div>
+  <div class="section-title">Marken- und Garantieinformationen</div>
+
+  <p>Vielen Dank für den Kauf des {{brand.display_name}} {{product.name_de}}. Bei Fragen kontaktieren Sie uns unter:<br>{{brand.support_email}} | {{brand.website}}</p>
+
+  <div class="sub-title">Markeninformation</div>
+  <table>
+{{#BRAND_INFO_ROWS}}
+  </table>
+
+  <div class="sub-title">Autorisierter Hersteller</div>
+  <table>
+{{#MANUFACTURER_INFO_ROWS}}
+  </table>
+
+  <div class="sub-title">Garantieinformationen</div>
+  <p>Für dieses Produkt gilt eine <b>{{warranty.years}}-jährige beschränkte Garantie</b>. Ein Garantieaustausch ist innerhalb von {{warranty.years}} Jahr(en) ab dem ursprünglichen Kaufdatum möglich. Voraussetzungen:</p>
+  <ul class="bullet-list">
+    <li>Der Kauf liegt nicht länger als {{warranty.years}} Jahr(e) zurück.</li>
+    <li>Die ursprüngliche Bestellnummer oder die beim Kauf verwendete E-Mail-Adresse liegt vor.</li>
+    <li>Bei Kauf über einen Händler oder Einzelhandelspartner muss eine Kopie des Originalbelegs vorgelegt werden.</li>
+  </ul>
+  <p style="margin-top:8px">Senden Sie uns eine E-Mail, um den Garantieservice zu beantragen: <b>{{brand.support_email}}</b></p>
+
+  <div class="sub-title" style="margin-top:10px;">Garantiekarte</div>
+  <table>
+    <tr><td style="width:35%;">Kundenname</td><td></td></tr>
+    <tr><td>Adresse</td><td></td></tr>
+    <tr><td>Stadt / Bundesland / PLZ</td><td></td></tr>
+    <tr><td>Telefonnummer</td><td></td></tr>
+    <tr><td>E-Mail-Adresse</td><td></td></tr>
+    <tr><td>Ursprüngliches Kaufdatum</td><td></td></tr>
+    <tr><td>Produktmodell</td><td></td></tr>
+    <tr><td>Seriennummer (falls zutreffend)</td><td></td></tr>
+    <tr><td>Händlername</td><td></td></tr>
+  </table>
+
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>12</span></div>
+</div>
+
+</body>
+</html>

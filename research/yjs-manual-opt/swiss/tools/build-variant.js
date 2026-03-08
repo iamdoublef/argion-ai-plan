@@ -165,8 +165,9 @@ function buildVariant(regionCode, brandOverride) {
   console.log(`Building: ${model} | region=${regionCode} | brand=${activeBrand} (${brand.display_name}) | market=${activeMarket} | lang=${lang}`);
 
   // Load template
-  const templateLang = region.template_lang;
-  const templatePath = path.resolve(__dirname, '..', 'template', `v23-master-${templateLang}.html`);
+  const templateLang = region.template_lang || langSuffix(region.lang);
+  const templatePrefix = config.product.template_prefix || 'v23';
+  const templatePath = path.resolve(__dirname, '..', 'template', `${templatePrefix}-master-${templateLang}.html`);
   if (!fs.existsSync(templatePath)) {
     console.error(`Template not found: ${templatePath}`);
     process.exit(1);

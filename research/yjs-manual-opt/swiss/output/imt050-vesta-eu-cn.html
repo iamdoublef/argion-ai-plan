@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMT050 制冰机 使用说明书 — Vesta</title>
+<style>
+@page { size: 148mm 210mm; margin: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --swiss-red: #E63946;
+  --swiss-black: #000000;
+  --swiss-gray-text: #8E8E93;
+  --swiss-gray-bg: #F2F2F7;
+  --page-margin: 12mm;
+  --page-width: 148mm;
+  --page-height: 210mm;
+}
+html { font-size: 14px; }
+body { font-family: "Helvetica Neue", 'Inter', Arial, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--swiss-black); line-height: 1.65; -webkit-font-smoothing: antialiased; background: #FFF; }
+.page { width: var(--page-width); height: var(--page-height); padding: var(--page-margin); position: relative; page-break-after: always; overflow: hidden; }
+.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+.header-brand { font-weight: 900; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--swiss-gray-text); }
+.header-ref { font-family: 'Courier New', monospace; font-size: 9px; color: var(--swiss-gray-text); letter-spacing: 1px; }
+.section-title { font-size: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; margin: 0 0 14px; border-left: 5px solid var(--swiss-black); padding-left: 10px; }
+.sub-title { font-size: 13px; font-weight: 700; border-bottom: 2px solid var(--swiss-black); padding-bottom: 3px; margin: 16px 0 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+.step-row { display: flex; gap: 10px; margin-bottom: 10px; }
+.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
+.step-text { flex: 1; font-size: 12.5px; line-height: 1.6; }
+.bullet-list { list-style: none; padding: 0; margin: 8px 0; }
+.bullet-list li { padding: 2px 0 2px 16px; position: relative; font-size: 12.5px; line-height: 1.6; }
+.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
+.warning-box { border: 2px solid var(--swiss-red); padding: 10px 14px; margin: 12px 0; }
+.warning-box .box-title { font-size: 11px; font-weight: 900; color: var(--swiss-red); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+.caution-box { border: 2px solid #000; padding: 10px 14px; margin: 12px 0; }
+.caution-box .box-title { font-size: 11px; font-weight: 900; color: #000; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+.note-box { background: var(--swiss-gray-bg); padding: 8px 12px; margin: 10px 0; border-left: 4px solid var(--swiss-gray-text); font-size: 11.5px; color: #444; }
+.note-box .box-title { font-weight: 900; color: #333; margin-bottom: 3px; text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; }
+.box-list { list-style: none; padding-left: 14px; }
+.box-list li { padding: 1px 0; position: relative; font-size: 11.5px; line-height: 1.55; }
+.box-list li::before { content: "·"; position: absolute; left: -10px; color: var(--swiss-red); font-weight: 900; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+th { background: var(--swiss-black); color: #FFF; padding: 6px 8px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+td { border: 1px solid #CCC; padding: 6px 8px; color: #1A1A1A; vertical-align: top; }
+tr:nth-child(even) td { background: var(--swiss-gray-bg); }
+.fig-wrap { text-align: center; margin: 12px 0 8px; }
+.fig-wrap img { max-width: 85%; max-height: 65mm; object-fit: contain; display: inline-block; }
+.fig-caption { font-size: 9px; color: var(--swiss-gray-text); margin-top: 3px; text-align: center; font-family: 'Courier New', monospace; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc-list { list-style: none; padding: 0; }
+.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 12px; }
+.toc-item span:first-child { font-weight: 700; }
+.toc-item span:last-child { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 11px; }
+
+.compact-ops .step-text { font-size: 12.5px; line-height: 1.55; }
+.compact-ops .sub-title { margin: 12px 0 8px !important; font-size: 14px; }
+.compact-safety .section-title { margin-bottom: 6px; font-size: 18px; }
+.compact-safety .warning-box, .compact-safety .caution-box, .compact-safety .note-box { margin: 6px 0; padding: 6px 10px; }
+.compact-safety .box-title { margin-bottom: 3px; font-size: 10px; }
+.compact-safety .box-list li { font-size: 10.5px; line-height: 1.35; padding: 0.5px 0; }
+.compact-safety p { font-size: 10.5px; line-height: 1.35; margin-bottom: 4px; }
+.compact-table .section-title { margin-bottom: 10px; font-size: 16px; }
+.compact-table table { font-size: 11.5px; margin: 8px 0; }
+.compact-table th, .compact-table td { padding: 4px 8px; }
+.compact-ts .section-title { margin-bottom: 2px; font-size: 14px; }
+.compact-ts table { font-size: 9.5px; margin: 2px 0; line-height: 1.3; }
+.compact-ts th, .compact-ts td { padding: 2px 4px; vertical-align: top; }
+.compact-ts .caution-box { margin-top: 4px; font-size: 9.5px; padding: 4px 6px; line-height: 1.3; }
+.compact-warranty .section-title { margin-bottom: 4px; font-size: 14px; }
+.compact-warranty .sub-title { margin: 4px 0 1px !important; font-size: 11px; padding-bottom: 1px !important; }
+.compact-warranty p { margin-bottom: 2px; font-size: 10.5px; line-height: 1.3; }
+.compact-warranty .bullet-list { margin: 2px 0; }
+.compact-warranty .bullet-list li { padding-top: 0; padding-bottom: 0; line-height: 1.25; font-size: 10px; }
+.compact-warranty table { margin: 1px 0; font-size: 10px; }
+.compact-warranty th, .compact-warranty td { padding: 1.5px 6px; }
+.compact-warranty .header-strip { margin-bottom: 10px; }
+
+.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+
+@media print {
+  body { background: none; }
+  .page { page-break-after: always; page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ PAGE 1 — COVER ═══════════ -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+  <div>
+    <div class="cover-brand"><span></span>Vesta</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
+    <img src="./images_imt050/image1.png" alt="IMT050 制冰机" style="max-width:100%;height:auto;max-height:85mm;">
+  </div>
+    <div class="cover-model">MODEL IMT050</div>
+    <div class="cover-title">制冰机</div>
+    <div style="font-size:11px;color:var(--swiss-gray-text);margin-top:4px;">使用说明书</div>
+</div>
+
+<!-- ═══════════ PAGE 2 — TOC ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">IMT050 — 使用说明书</div>
+  </div>
+  <div class="section-title">目录</div>
+  <ul class="toc-list">
+    <li class="toc-item"><span>CH.01 — 安全须知</span><span>3–4</span></li>
+    <li class="toc-item"><span>CH.02 — 使用前准备</span><span>5</span></li>
+    <li class="toc-item"><span>CH.03 — 产品结构</span><span>6</span></li>
+    <li class="toc-item"><span>CH.04 — 控制面板</span><span>7</span></li>
+    <li class="toc-item"><span>CH.05 — 产品参数</span><span>8</span></li>
+    <li class="toc-item"><span>CH.06 — 操作指引</span><span>9</span></li>
+    <li class="toc-item"><span>CH.07 — 清洁保养</span><span>10</span></li>
+    <li class="toc-item"><span>CH.08 — 故障排除</span><span>11</span></li>
+    <li class="toc-item"><span>CH.09 — 品牌与保修信息</span><span>12</span></li>
+  </ul>
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>2</span></div>
+</div>
+
+<!-- ═══════════ PAGE 3 — CH.01 SAFETY (1/2) ═══════════ -->
+<!-- @CONTENT:safety:start — 制冰机专用安全须知（完整版，来自Word源文件） -->
+<div class="page compact-safety">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.01 — SAFETY</div>
+  </div>
+  <div class="section-title">安全须知</div>
+  <p>为了您的安全，在使用本电器产品前，请阅读本手册中的所有说明，并始终遵守以下安全预防措施：</p>
+
+  <div class="warning-box">
+    <div class="box-title">警告 WARNING</div>
+    <ul class="box-list">
+      <li>本机仅供家庭使用，请勿用于其他非设计用途。</li>
+      <li>请勿让儿童玩耍本机或电源线。儿童、行动不便或认知受限人士应在成年人监督下使用。</li>
+      <li>小零件可能造成窒息危险，请勿让儿童接触。</li>
+      <li>请勿在高湿高温等环境使用本机，严禁在有易燃易爆气体的环境中使用。</li>
+      <li>请确保电源电压与机器铭牌标示一致。</li>
+      <li>使用后请切断电源。</li>
+      <li>从电源插座上拔出插头时请手握插头拔出，请勿拉扯电源线。</li>
+      <li>请勿将主机或电源线浸入水中或其他液体中。</li>
+      <li>电源线需要直接插接符合安全规范的电源插座上。</li>
+      <li>如发现插头、电源线或主机损坏，请立即停止使用并联系制造商或授权维修点处理，请勿自行拆修。</li>
+      <li>电源线请勿悬挂于台面边缘，以免儿童拉扯或意外绊倒。</li>
+      <li>禁止在手脚潮湿或未穿鞋的情况下触摸产品电源部件。</li>
+      <li>产品所连接的电源需有漏电保护装置。</li>
+      <li>插座必须满足当地法规要求，安全法规要求强制进行产品接地。</li>
+      <li>清洁、维护或更换部件时，必须切断电源。</li>
+      <li>切勿将螺丝刀或其它物体插入散热孔中。</li>
+      <li>只有授权技术人员才能进行拆机检查和维修。</li>
+      <li>发生火灾时，切勿浇水，请使用二氧化碳灭火器。</li>
+      <li>除制造商推荐的方法外，不能使用机械手段或其他方法加速除霜。</li>
+      <li>不要损坏制冷剂回路。</li>
+      <li>警告：易燃材料，存在发生火灾的风险。</li>
+      <li>制冷剂废料需在授权废物处理中心处理，不能靠近火源。</li>
+      <li>请勿在本产品中储存含有易燃推进剂的气溶胶罐等爆炸性物质。</li>
+      <li>保持所有通风口顺畅，保持产品远离热源或蒸汽装置。</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>3</span></div>
+</div>
+
+<!-- ═══════════ PAGE 4 — CH.01 SAFETY (2/2) ═══════════ -->
+<div class="page compact-safety">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.01 — SAFETY</div>
+  </div>
+
+  <div class="caution-box">
+    <div class="box-title">注意 CAUTION</div>
+    <ul class="box-list">
+      <li>移动或运输产品时保持产品直立，否则可能导致产品损坏。</li>
+      <li>运输后需静置4小时，待冷媒稳定后再通电。</li>
+      <li>对电机和制冷系统进行维护时要戴手套。</li>
+      <li>切勿阻塞散热孔，以确保产品的良好运转。</li>
+      <li>请勿将非食品类物品放置于腔体中。</li>
+      <li>本产品仅限室内使用。</li>
+      <li>本产品设计为将饮用水制作成冰，请不要将本产品用于设计外用途。</li>
+    </ul>
+  </div>
+
+  <div class="note-box">
+    <div class="box-title">提示 NOTICE</div>
+    <ul class="box-list">
+      <li>产品噪音等级低于50 dB(A)。</li>
+      <li>本产品的气候类型为SN，适合在10℃~32℃ / 50℉~89.6℉ 的环境温度中使用。</li>
+    </ul>
+  </div>
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>4</span></div>
+</div>
+<!-- @CONTENT:safety:end -->
+
+<!-- ═══════════ PAGE 5 — CH.02 BEFORE USE ═══════════ -->
+<!-- @CONTENT:before_use:start — 使用前准备，制冰机特有 -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.02 — BEFORE USE</div>
+  </div>
+  <div class="section-title">使用前准备</div>
+
+  <div class="sub-title">放置要求</div>
+  <ul class="bullet-list">
+    <li>将产品放置在坚固、平坦、干燥的台面上。</li>
+    <li>确保产品四周留有至少 120mm（4.7"）的通风间距。</li>
+    <li>远离热源（烤箱、灶台等），避免阳光直射。</li>
+  </ul>
+
+  <div class="sub-title">水质要求</div>
+  <ul class="bullet-list">
+    <li>使用饮用水即可制冰，饮用水越纯净则冰越透明。</li>
+    <li>若想达到理想透明度，请使用矿物质含量较低的饮用水（TDS &lt; 200mg/L）。</li>
+    <li>适用水源：纯净饮用水、RO反渗透处理自来水、深度过滤自来水、低TDS矿泉水。</li>
+    <li><strong>禁止</strong>使用有色、有味、有气泡或含过饱和气体的饮品（茶、果汁、咖啡、牛奶、汽水等），这些会污染甚至损坏产品。</li>
+  </ul>
+
+  <div class="sub-title">首次使用</div>
+  <ul class="bullet-list">
+    <li>开箱后取出所有包装材料。</li>
+    <li>用湿布擦拭产品内部，然后用干布擦干。</li>
+    <li>首次使用前，请先运行一次清洁程序（参见 CH.07 清洁保养）。</li>
+    <li>首次制冰前5次为水降温阶段，冰形会随水温下降逐渐增大，属正常现象。</li>
+  </ul>
+
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>5</span></div>
+</div>
+<!-- @CONTENT:before_use:end -->
+
+<!-- ═══════════ PAGE 6 — CH.03 STRUCTURE ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.03 — STRUCTURE</div>
+  </div>
+  <div class="section-title">产品结构</div>
+  <div class="fig-wrap">
+    <img src="./images_imt050/image5.png" alt="产品结构" style="max-height:90mm;">
+  </div>
+  <table>
+    <thead><tr><th style="width:15%;">编号</th><th>名称</th><th style="width:15%;">编号</th><th>名称</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>腔盖</td><td>5</td><td>水箱提手</td></tr>
+      <tr><td>2</td><td>冰篮</td><td>6</td><td>控制面板</td></tr>
+      <tr><td>3</td><td>制冰模具</td><td>7</td><td>排水孔</td></tr>
+      <tr><td>4</td><td>水箱</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>6</span></div>
+</div>
+
+<!-- ═══════════ PAGE 7 — CH.04 FUNCTIONS ═══════════ -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.04 — CONTROL PANEL</div>
+  </div>
+  <div class="section-title">控制面板</div>
+  <div class="fig-wrap">
+    <img src="./images_imt050/image7.png" alt="控制面板" style="max-height:50mm;">
+  </div>
+  <table>
+    <thead><tr><th style="width:25%;">No. / 按键</th><th>功能说明</th></tr></thead>
+    <tbody>
+      <tr><td><span class="callout-no">1</span> <span class="btn-name">Power</span>　电源</td><td>点击开机，长按关机。</td></tr>
+      <tr><td><span class="callout-no">2</span> <span class="btn-name">Make Ice</span>　制冰</td><td>切换制冰尺寸（S / M / L），选择后产品自动制冰。</td></tr>
+      <tr><td><span class="callout-no">3</span> <span class="btn-name">Clean</span>　清洁</td><td>启动自动清洁程序（清洁制冰兜和制冰模）。</td></tr>
+      <tr><td><span class="callout-no">4</span> <span class="btn-name">ICE FULL</span>　冰满</td><td>指示灯（绿灯）— 冰篮已满，产品暂停制冰。</td></tr>
+      <tr><td><span class="callout-no">5</span> <span class="btn-name">ADD WATER</span>　加水</td><td>指示灯（红灯）— 水箱缺水，产品暂停制冰，请及时补水。</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>7</span></div>
+</div>
+
+<!-- ═══════════ PAGE 8 — CH.05 SPECIFICATIONS ═══════════ -->
+<div class="page compact-table">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.05 — SPECIFICATIONS</div>
+  </div>
+  <div class="section-title">产品参数</div>
+  <table>
+    <thead><tr><th style="width:40%;">参数</th><th>规格</th></tr></thead>
+    <tbody>
+      <tr><td>电压</td><td>220~240 Vac</td></tr>
+      <tr><td>频率</td><td>50 Hz</td></tr>
+      <tr><td>制冰功率</td><td>110 W</td></tr>
+      <tr><td>脱冰功率</td><td>130 W</td></tr>
+      <tr><td>尺寸（宽×深×高）</td><td>235 × 305 × 321 mm</td></tr>
+      <tr><td>净重</td><td>7 kg / 15.4 lb</td></tr>
+      <tr><td>24h制冰量</td><td>6.9~7.4 kg</td></tr>
+      <tr><td>排水方式</td><td>手动排水</td></tr>
+      <tr><td>冰块 S</td><td>Φ19 × 24 mm</td></tr>
+      <tr><td>冰块 M</td><td>Φ21 × 25 mm</td></tr>
+      <tr><td>冰块 L</td><td>Φ22 × 27 mm</td></tr>
+      <tr><td>通风间距</td><td>≥ 120 mm / 4.7"</td></tr>
+      <tr><td>冷媒</td><td>R600a</td></tr>
+      <tr><td>水箱容量</td><td>MAX 1.0 L / MIN 0.75 L</td></tr>
+      <tr><td>制冰周期</td><td>S: 9pcs/8min, M: 9pcs/10min, L: 9pcs/11.5min</td></tr>
+      <tr><td>工作环境</td><td>5~32℃, ≤85% RH</td></tr>
+      <tr><td>噪音</td><td>≤ 50 dB(A)</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>8</span></div>
+</div>
+
+<!-- ═══════════ PAGE 9 — CH.06 OPERATION ═══════════ -->
+<!-- @CONTENT:operations:start — 制冰机操作步骤 -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
+  </div>
+  <div class="section-title">操作指引</div>
+
+  <div class="sub-title">制冰操作</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">将水箱取出，加入饮用水至水位线，然后放回产品内。</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">连接电源，点击 <b>Power</b> 按键，按键显示白灯，产品开机。</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">点击 <b>Make Ice</b> 按键选择制冰尺寸（S / M / L），选择后产品自动开始制冰。</div></div>
+  <div class="step-row"><div class="step-num">4</div><div class="step-text">等待制冰完成。子弹冰会自动脱落至冰篮中。</div></div>
+  <div class="step-row"><div class="step-num">5</div><div class="step-text">打开腔盖，取出冰篮，获取冰块。将冰篮放回后，产品自动继续制冰。</div></div>
+
+  <div class="note-box" style="margin-top:12px;">
+    <div class="box-title">NOTICE</div>
+    <ul class="box-list">
+      <li>制冰中途可点击 <b>Make Ice</b> 按键切换制冰尺寸。</li>
+      <li>制冰中途可长按 <b>Power</b> 按键终止制冰并关机。</li>
+      <li>冰篮装满后，<b>ICE FULL</b> 指示灯亮绿灯，产品自动暂停。取走冰块或冰融解后自动恢复制冰。</li>
+      <li>水箱缺水时，<b>ADD WATER</b> 指示灯亮红灯，请及时给水箱补充水。</li>
+      <li>三种尺寸不能同时制作，但可在制冰途中切换。</li>
+      <li>连续制冰过程中，受水质、水温、环境温度影响，偶尔出现不透明情况属正常现象。</li>
+    </ul>
+  </div>
+
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>9</span></div>
+</div>
+<!-- @CONTENT:operations:end -->
+
+<!-- ═══════════ PAGE 10 — CH.07 CLEANING ═══════════ -->
+<!-- @CONTENT:cleaning:start — 制冰机清洁保养 -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.07 — CLEANING</div>
+  </div>
+  <div class="section-title">清洁保养</div>
+
+  <div class="sub-title">自动清洁（制冰模具和制冰兜）</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">给水箱加水至水位线。</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">开机状态下，点击 <b>Clean</b> 按键，按键灯亮白灯，产品自动清洁制冰兜和制冰模。</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">清洁完成后，产品自动停止，按键灯熄灭。</div></div>
+
+  <div class="sub-title">排水操作</div>
+  <div class="step-row"><div class="step-num">1</div><div class="step-text">断开电源，将产品放置到水槽旁。</div></div>
+  <div class="step-row"><div class="step-num">2</div><div class="step-text">将产品底部的排水孔塞松脱，让内腔的水排干。</div></div>
+  <div class="step-row"><div class="step-num">3</div><div class="step-text">排水完成后，将排水孔塞回原位。</div></div>
+
+  <div class="sub-title">日常保养</div>
+  <ul class="bullet-list">
+    <li>定期用干净的水清洗产品内部，建议<b>每天使用前清洗一次</b>。</li>
+    <li>用柔软湿布擦拭产品外壳，请勿使用腐蚀性清洁剂。</li>
+    <li>请遵循自动清洁步骤清洗制冰模具和制冰兜。</li>
+  </ul>
+
+  <div class="sub-title">长期存放</div>
+  <ul class="bullet-list">
+    <li>运行一次清洁程序。</li>
+    <li>排干产品内所有水分。</li>
+    <li>用干布擦干内部，开盖自然风干。</li>
+    <li>拔掉电源，放置在干燥、通风处保存。</li>
+  </ul>
+
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>10</span></div>
+</div>
+<!-- @CONTENT:cleaning:end -->
+
+<!-- ═══════════ PAGE 11 — CH.08 TROUBLESHOOTING ═══════════ -->
+<!-- @CONTENT:troubleshooting:start — 制冰机故障排除 -->
+<div class="page compact-ts">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.08 — TROUBLESHOOTING</div>
+  </div>
+  <div class="section-title">故障排除</div>
+
+  <table>
+    <thead><tr><th style="width:22%;">故障现象</th><th style="width:33%;">可能原因</th><th>解决方案</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>不能开机</td>
+        <td>电源未连接或插座无电</td>
+        <td>检查电源连接及插座是否正常。</td>
+      </tr>
+      <tr>
+        <td>不能排水</td>
+        <td>排水胶塞未松开或排水口堵塞</td>
+        <td>检查产品底部排水胶塞是否已松开；检查排水口是否堵塞。</td>
+      </tr>
+      <tr>
+        <td>不能制冰</td>
+        <td>水箱缺水（ADD WATER亮红灯）</td>
+        <td>给水箱加水至水位线。</td>
+      </tr>
+      <tr>
+        <td>不能制冰</td>
+        <td>制冰模具只结霜无法结冰（管道无法抽水）</td>
+        <td>加水至水位线，静置半小时后重新启动。观察制冰兜是否有注水，有则表示抽水泵已复位。</td>
+      </tr>
+      <tr>
+        <td>制冰中途停止</td>
+        <td>冰篮已满（ICE FULL亮绿灯）</td>
+        <td>取走冰块或等待冰融解，产品会自动恢复制冰。</td>
+      </tr>
+      <tr>
+        <td>制冰中途停止</td>
+        <td>水箱缺水（ADD WATER亮红灯）</td>
+        <td>及时给水箱补充水，产品会自动恢复制冰。</td>
+      </tr>
+      <tr>
+        <td>前5次冰块偏小</td>
+        <td>水温较高，处于降温阶段</td>
+        <td>属正常现象，冰形会随水温下降逐渐增大，达到标准尺寸。</td>
+      </tr>
+      <tr>
+        <td>制冰效果不理想</td>
+        <td>通风间距不足或环境温度过高</td>
+        <td>确保四周≥120mm间距；将产品移至阴凉通风处。</td>
+      </tr>
+      <tr>
+        <td>冰块不透明</td>
+        <td>水质矿物质含量高或水温/环温影响</td>
+        <td>使用TDS&lt;200mg/L的纯净水；连续制冰偶尔不透明属正常现象。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="caution-box" style="margin-top:14px;">
+    <div class="box-title">免责声明 DISCLAIMER</div>
+    <p style="font-size:11.5px;line-height:1.5;margin:0;">如果用户不按照本手册操作产品，并对产品造成任何损坏或质量问题，工厂、经销商及品牌商将不承担任何责任。</p>
+  </div>
+
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>11</span></div>
+</div>
+<!-- @CONTENT:troubleshooting:end -->
+
+<!-- ═══════════ PAGE 12 — CH.09 WARRANTY ═══════════ -->
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.09 — WARRANTY</div>
+  </div>
+  <div class="section-title">品牌与保修信息</div>
+
+  <p>感谢您购买 Vesta 制冰机。如有任何问题，请通过以下方式联系我们：<br>support@vestaprecision.com | www.vestaprecision.com</p>
+
+  <div class="sub-title">品牌商信息</div>
+  <table>
+      <tr><td style="width:30%">品牌商</td><td><b>Precision Appliance Technology, Inc.</b></td></tr>
+      <tr><td>地址</td><td>3120 139th Ave SE Suite 500, Bellevue, WA 98005, USA</td></tr>
+      <tr><td>网址</td><td>www.vestaprecision.com</td></tr>
+      <tr><td>客服邮箱</td><td>support@vestaprecision.com</td></tr>
+  </table>
+
+  <div class="sub-title">授权制造商</div>
+  <table>
+      <tr><td style="width:30%">制造商</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td>地址</td><td>广东省广州市番禺区南村镇启业路1号</td></tr>
+      <tr><td>网址</td><td>www.argiontechnology.com</td></tr>
+  </table>
+
+  <div class="sub-title">保修信息</div>
+  <p>本产品提供 <b>2 年有限保修</b>。自原始购买日期起 2 年内可享受保修更换服务。要获得保修更换资格，您必须：</p>
+  <ul class="bullet-list">
+    <li>在过去 2 年内购买过产品。</li>
+    <li>有原始订单号或购买时使用的电子邮件。</li>
+    <li>如通过经销商或零售合作伙伴购买，须提供原始收据的副本。</li>
+  </ul>
+  <p style="margin-top:8px">向我们发送电子邮件申请保修服务：<b>support@vestaprecision.com</b></p>
+
+  <div class="sub-title" style="margin-top:10px;">保修卡</div>
+  <table>
+    <tr><td style="width:35%;">客户名称</td><td></td></tr>
+    <tr><td>地址</td><td></td></tr>
+    <tr><td>城市 / 州 / 邮政编码</td><td></td></tr>
+    <tr><td>电话号码</td><td></td></tr>
+    <tr><td>电子邮件地址</td><td></td></tr>
+    <tr><td>原始购买日期</td><td></td></tr>
+    <tr><td>产品型号</td><td></td></tr>
+    <tr><td>序列号（如适用）</td><td></td></tr>
+    <tr><td>商户名称</td><td></td></tr>
+  </table>
+
+  <div class="page-footer"><span>Vesta IMT050 使用说明书</span><span>12</span></div>
+</div>
+
+</body>
+</html>

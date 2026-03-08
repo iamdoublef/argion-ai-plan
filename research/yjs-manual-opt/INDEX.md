@@ -86,6 +86,16 @@ commit: 0914fd3
 第二轮审计评级B（3 ERROR + 9 WARNING）。修复：EN版补制造商表格、非标准警示框归入NOTICE、overflow/表头色/边框色。重构三文件关系：d5 v2.0整合CSS设计系统+HTML模板库+已知陷阱+检查清单，writer 472→78行、auditor 335→137行，均改为引用d5。
 - ptr: `git:0914fd3:research/yjs-manual-opt/data/d5-manual-standard.md`
 - ptr: `git:0914fd3:.claude/agents/manual-writer.md`
+
+### 2026-03-08 IMT050内容审计 + 保修页全面对齐V23 + 审计agent创建
+commit: uncommitted
+系统对比Word源文件/V23模板/IMT050模板，发现12项差异（2 ERROR + 8 WARNING + 2 INFO）。最严重：保修卡3字段→恢复为9字段（与V23/Word一致）；保修条件/邮箱段落/小标题全部按V23结构补齐；章节标题统一（"保修条款"→"品牌与保修信息"等4语言同步）；TOC同步更新。compact-warranty CSS重新调参（DE/IT更激进）。创建swiss-content-auditor agent。21/21 HTML + 21/21 PDF + 21/21 booklet ALL PASS，4语言×11页 零溢出。
+- ptr: `file:research/yjs-manual-opt/swiss/audits/imt050-v23-alignment-audit.md`
+- ptr: `file:research/yjs-manual-opt/swiss/template/imt050-master-cn.html`
+- ptr: `file:research/yjs-manual-opt/swiss/template/imt050-master-en.html`
+- ptr: `file:research/yjs-manual-opt/swiss/template/imt050-master-de.html`
+- ptr: `file:research/yjs-manual-opt/swiss/template/imt050-master-it.html`
+- ptr: `file:.claude/agents/swiss-content-auditor.md`
 - ptr: `git:0914fd3:.claude/agents/manual-auditor.md`
 - ptr: `git:0914fd3:research/yjs-manual-opt/data/audit-report.md`
 

@@ -1,0 +1,302 @@
+{
+  "product": {
+    "model": "IMT050",
+    "type": "ice_maker",
+    "name_cn": "制冰机",
+    "name_en": "Ice Maker",
+    "name_de": "Eiswürfelbereiter",
+    "name_it": "Macchina per il ghiaccio",
+    "active_brand": "wevac",
+    "active_market": "eu",
+    "template_prefix": "imt050"
+  },
+  "images_dir": "images_imt050",
+  "specs": {
+    "us": {
+      "rows": [
+        { "label": "电压", "label_en": "Voltage", "label_de": "Spannung", "label_it": "Tensione", "value": "110~120 Vac" },
+        { "label": "频率", "label_en": "Frequency", "label_de": "Frequenz", "label_it": "Frequenza", "value": "60 Hz" },
+        { "label": "制冰功率", "label_en": "Ice-Making Power", "label_de": "Eisherstellungsleistung", "label_it": "Potenza produzione ghiaccio", "value": "110 W" },
+        { "label": "脱冰功率", "label_en": "Defrost Power", "label_de": "Abtauleistung", "label_it": "Potenza sbrinamento", "value": "170 W" },
+        { "label": "尺寸（宽×深×高）", "label_en": "Dimensions (W×D×H)", "label_de": "Abmessungen (B×T×H)", "label_it": "Dimensioni (L×P×A)", "value": "235 × 305 × 321 mm" },
+        { "label": "净重", "label_en": "Net Weight", "label_de": "Nettogewicht", "label_it": "Peso netto", "value": "7 kg / 15.4 lb" },
+        { "label": "24h制冰量", "label_en": "Ice Capacity (24h)", "label_de": "Eiskapazität (24h)", "label_it": "Capacità ghiaccio (24h)", "value": "6.9~7.4 kg" },
+        { "label": "排水方式", "label_en": "Drainage", "label_de": "Entwässerung", "label_it": "Scarico", "value_en": "Manual Drain", "value_de": "Manuelle Entwässerung", "value_it": "Scarico manuale", "value": "手动排水" },
+        { "label": "冰块 S", "label_en": "Ice Size S", "label_de": "Eisgröße S", "label_it": "Ghiaccio S", "value": "Φ19 × 24 mm" },
+        { "label": "冰块 M", "label_en": "Ice Size M", "label_de": "Eisgröße M", "label_it": "Ghiaccio M", "value": "Φ21 × 25 mm" },
+        { "label": "冰块 L", "label_en": "Ice Size L", "label_de": "Eisgröße L", "label_it": "Ghiaccio L", "value": "Φ22 × 27 mm" },
+        { "label": "通风间距", "label_en": "Ventilation Clearance", "label_de": "Belüftungsabstand", "label_it": "Distanza ventilazione", "value": "≥ 120 mm / 4.7\"" },
+        { "label": "冷媒", "label_en": "Refrigerant", "label_de": "Kältemittel", "label_it": "Refrigerante", "value": "R600a" },
+        { "label": "水箱容量", "label_en": "Water Tank Capacity", "label_de": "Wassertankkapazität", "label_it": "Capacità serbatoio", "value": "MAX 1.0 L / MIN 0.75 L" },
+        { "label": "制冰周期", "label_en": "Ice Cycle", "label_de": "Eiszyklus", "label_it": "Ciclo ghiaccio", "value": "S: 9pcs/8min, M: 9pcs/10min, L: 9pcs/11.5min" },
+        { "label": "工作环境", "label_en": "Operating Environment", "label_de": "Betriebsumgebung", "label_it": "Ambiente operativo", "value": "5~32℃, ≤85% RH" },
+        { "label": "噪音", "label_en": "Noise Level", "label_de": "Geräuschpegel", "label_it": "Livello rumore", "value": "≤ 50 dB(A)" }
+      ]
+    },
+    "eu": {
+      "rows": [
+        { "label": "电压", "label_en": "Voltage", "label_de": "Spannung", "label_it": "Tensione", "value": "220~240 Vac" },
+        { "label": "频率", "label_en": "Frequency", "label_de": "Frequenz", "label_it": "Frequenza", "value": "50 Hz" },
+        { "label": "制冰功率", "label_en": "Ice-Making Power", "label_de": "Eisherstellungsleistung", "label_it": "Potenza produzione ghiaccio", "value": "110 W" },
+        { "label": "脱冰功率", "label_en": "Defrost Power", "label_de": "Abtauleistung", "label_it": "Potenza sbrinamento", "value": "130 W" },
+        { "label": "尺寸（宽×深×高）", "label_en": "Dimensions (W×D×H)", "label_de": "Abmessungen (B×T×H)", "label_it": "Dimensioni (L×P×A)", "value": "235 × 305 × 321 mm" },
+        { "label": "净重", "label_en": "Net Weight", "label_de": "Nettogewicht", "label_it": "Peso netto", "value": "7 kg / 15.4 lb" },
+        { "label": "24h制冰量", "label_en": "Ice Capacity (24h)", "label_de": "Eiskapazität (24h)", "label_it": "Capacità ghiaccio (24h)", "value": "6.9~7.4 kg" },
+        { "label": "排水方式", "label_en": "Drainage", "label_de": "Entwässerung", "label_it": "Scarico", "value_en": "Manual Drain", "value_de": "Manuelle Entwässerung", "value_it": "Scarico manuale", "value": "手动排水" },
+        { "label": "冰块 S", "label_en": "Ice Size S", "label_de": "Eisgröße S", "label_it": "Ghiaccio S", "value": "Φ19 × 24 mm" },
+        { "label": "冰块 M", "label_en": "Ice Size M", "label_de": "Eisgröße M", "label_it": "Ghiaccio M", "value": "Φ21 × 25 mm" },
+        { "label": "冰块 L", "label_en": "Ice Size L", "label_de": "Eisgröße L", "label_it": "Ghiaccio L", "value": "Φ22 × 27 mm" },
+        { "label": "通风间距", "label_en": "Ventilation Clearance", "label_de": "Belüftungsabstand", "label_it": "Distanza ventilazione", "value": "≥ 120 mm / 4.7\"" },
+        { "label": "冷媒", "label_en": "Refrigerant", "label_de": "Kältemittel", "label_it": "Refrigerante", "value": "R600a" },
+        { "label": "水箱容量", "label_en": "Water Tank Capacity", "label_de": "Wassertankkapazität", "label_it": "Capacità serbatoio", "value": "MAX 1.0 L / MIN 0.75 L" },
+        { "label": "制冰周期", "label_en": "Ice Cycle", "label_de": "Eiszyklus", "label_it": "Ciclo ghiaccio", "value": "S: 9pcs/8min, M: 9pcs/10min, L: 9pcs/11.5min" },
+        { "label": "工作环境", "label_en": "Operating Environment", "label_de": "Betriebsumgebung", "label_it": "Ambiente operativo", "value": "5~32℃, ≤85% RH" },
+        { "label": "噪音", "label_en": "Noise Level", "label_de": "Geräuschpegel", "label_it": "Livello rumore", "value": "≤ 50 dB(A)" }
+      ]
+    }
+  },
+  "parts": [
+    {
+      "id": 1,
+      "name_cn": "腔盖",
+      "name_en": "Lid",
+      "name_de": "Deckel",
+      "name_it": "Coperchio"
+    },
+    {
+      "id": 2,
+      "name_cn": "冰篮",
+      "name_en": "Ice Basket",
+      "name_de": "Eisbehälter",
+      "name_it": "Cestello del ghiaccio"
+    },
+    {
+      "id": 3,
+      "name_cn": "制冰模具",
+      "name_en": "Ice Mold",
+      "name_de": "Eiswürfelform",
+      "name_it": "Stampo per il ghiaccio"
+    },
+    {
+      "id": 4,
+      "name_cn": "水箱",
+      "name_en": "Water Tank",
+      "name_de": "Wassertank",
+      "name_it": "Serbatoio dell'acqua"
+    },
+    {
+      "id": 5,
+      "name_cn": "水箱提手",
+      "name_en": "Water Tank Handle",
+      "name_de": "Wassertankgriff",
+      "name_it": "Maniglia del serbatoio"
+    },
+    {
+      "id": 6,
+      "name_cn": "控制面板",
+      "name_en": "Control Panel",
+      "name_de": "Bedienfeld",
+      "name_it": "Pannello di controllo"
+    },
+    {
+      "id": 7,
+      "name_cn": "排水孔",
+      "name_en": "Drain Plug",
+      "name_de": "Ablassstopfen",
+      "name_it": "Tappo di scarico"
+    }
+  ],
+  "buttons": [
+    {
+      "id": 1,
+      "key": "Power",
+      "name_cn": "电源",
+      "name_en": "Power",
+      "name_de": "Ein/Aus",
+      "name_it": "Accensione",
+      "desc_cn": "点击开机，长按关机。",
+      "desc_en": "Press to turn on; long-press to turn off.",
+      "desc_de": "Drücken zum Einschalten; lang drücken zum Ausschalten.",
+      "desc_it": "Premere per accendere; tenere premuto per spegnere."
+    },
+    {
+      "id": 2,
+      "key": "Make Ice",
+      "name_cn": "制冰",
+      "name_en": "Make Ice",
+      "name_de": "Eis machen",
+      "name_it": "Fai ghiaccio",
+      "desc_cn": "切换制冰尺寸（S / M / L），选择后产品自动制冰。",
+      "desc_en": "Cycle through ice sizes (S / M / L); unit starts automatically.",
+      "desc_de": "Eisgröße wechseln (S / M / L); Gerät startet automatisch.",
+      "desc_it": "Seleziona la dimensione (S / M / L); la macchina si avvia automaticamente."
+    },
+    {
+      "id": 3,
+      "key": "Clean",
+      "name_cn": "清洁",
+      "name_en": "Clean",
+      "name_de": "Reinigen",
+      "name_it": "Pulizia",
+      "desc_cn": "启动自动清洁程序（清洁制冰兜和制冰模）。",
+      "desc_en": "Start the automatic cleaning cycle.",
+      "desc_de": "Automatischen Reinigungszyklus starten.",
+      "desc_it": "Avviare il ciclo di pulizia automatica."
+    },
+    {
+      "id": 4,
+      "key": "ICE FULL",
+      "name_cn": "冰满",
+      "name_en": "ICE FULL",
+      "name_de": "EIS VOLL",
+      "name_it": "GHIACCIO PIENO",
+      "desc_cn": "指示灯（绿灯）— 冰篮已满，产品暂停制冰。",
+      "desc_en": "Indicator (green) — ice basket full; unit pauses.",
+      "desc_de": "Anzeige (grün) — Eisbehälter voll; Gerät pausiert.",
+      "desc_it": "Spia (verde) — cestello pieno; la macchina si mette in pausa."
+    },
+    {
+      "id": 5,
+      "key": "ADD WATER",
+      "name_cn": "加水",
+      "name_en": "ADD WATER",
+      "name_de": "WASSER NACHFÜLLEN",
+      "name_it": "AGGIUNGERE ACQUA",
+      "desc_cn": "指示灯（红灯）— 水箱缺水，产品暂停制冰，请及时补水。",
+      "desc_en": "Indicator (red) — water tank low; unit pauses; refill immediately.",
+      "desc_de": "Anzeige (rot) — Wassertank leer; Gerät pausiert; sofort nachfüllen.",
+      "desc_it": "Spia (rosso) — serbatoio scarso; la macchina si mette in pausa; rifornire subito."
+    }
+  ],
+  "brands": {
+    "wevac": {
+      "display_name": "WEVAC",
+      "display_name_cn": "威富可",
+      "name": "WEVAC TECHNOLOGY CO., LIMITED",
+      "address": "FLAT/RM 404A BEVERLEY COMMERCIAL CENTRE, 87-105 CHATHAM ROAD SOUTH, TSIM SHA TSUI, KOWLOON, HONG KONG",
+      "address_cn": "香港九龙尖沙咀漆咸道南87-105号百利商业中心404A室",
+      "website": "www.wevactech.com",
+      "support_email": "support@wevactech.com"
+    },
+    "vesta": {
+      "display_name": "Vesta",
+      "display_name_cn": "维思特",
+      "name": "Precision Appliance Technology, Inc.",
+      "address": "3120 139th Ave SE Suite 500, Bellevue, WA 98005, USA",
+      "address_cn": "美国华盛顿州贝尔维尤市139th Ave SE 3120号500套房 邮编98005",
+      "website": "www.vestaprecision.com",
+      "support_email": "support@vestaprecision.com"
+    },
+    "act": {
+      "display_name": "ACT",
+      "display_name_cn": "ACT",
+      "name": "ADVANCED CUISINE TECHNOLOGY PTE. LTD.",
+      "address": "60 Paya Lebar Road, #11-19 Paya Lebar Square, Singapore 409051",
+      "address_cn": "新加坡巴耶利峇路60号巴耶利峇广场#11-19, 邮编409051",
+      "website": "www.thespacetec.com",
+      "support_email": "support@thespacetec.com"
+    }
+  },
+  "manufacturer": {
+    "name_cn": "广州亚俊氏真空科技股份有限公司",
+    "name_en": "Guangzhou Argion Electric Appliance Co., Ltd.",
+    "address_cn": "广东省广州市番禺区南村镇启业路1号",
+    "address_en": "No. 1 Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China",
+    "website": "www.argiontechnology.com"
+  },
+  "regions": {
+    "cn":  { "lang": "zh-CN", "market": "eu", "template_lang": "cn", "label": "Mainland China" },
+    "hk":  { "lang": "zh-HK", "market": "eu", "template_lang": "cn", "convert": "traditional", "label": "Hong Kong" },
+    "tw":  { "lang": "zh-TW", "market": "us", "template_lang": "cn", "convert": "traditional", "label": "Taiwan" },
+    "gb":  { "lang": "en",    "market": "eu", "template_lang": "en", "label": "UK / EU English" },
+    "za":  { "lang": "en",    "market": "eu", "template_lang": "en", "label": "South Africa" },
+    "de":  { "lang": "de",    "market": "eu", "template_lang": "de", "label": "Germany" },
+    "it":  { "lang": "it",    "market": "eu", "template_lang": "it", "label": "Italy" }
+  },
+  "warranty": {
+    "years": 2
+  },
+  "ui_labels": {
+    "cn": {
+      "brand_info_title":    "品牌商信息",
+      "manufacturer_title":  "授权制造商",
+      "brand_label":         "品牌商",
+      "address_label":       "地址",
+      "website_label":       "网址",
+      "email_label":         "客服邮箱",
+      "manufacturer_label":  "制造商",
+      "specs_col1":          "参数",
+      "specs_col2":          "规格",
+      "parts_col_no":        "编号",
+      "parts_col_name":      "名称",
+      "buttons_col1":        "No. / 按键",
+      "buttons_col2":        "功能说明",
+      "trouble_col1":        "故障现象",
+      "trouble_col2":        "可能原因",
+      "trouble_col3":        "解决方案",
+      "warranty_card_title": "保修卡"
+    },
+    "en": {
+      "brand_info_title":    "Brand Information",
+      "manufacturer_title":  "Authorized Manufacturer",
+      "brand_label":         "Brand",
+      "address_label":       "Address",
+      "website_label":       "Website",
+      "email_label":         "Customer Support",
+      "manufacturer_label":  "Manufacturer",
+      "specs_col1":          "Parameter",
+      "specs_col2":          "Specification",
+      "parts_col_no":        "No.",
+      "parts_col_name":      "Name",
+      "buttons_col1":        "No. / Button",
+      "buttons_col2":        "Description",
+      "trouble_col1":        "Problem",
+      "trouble_col2":        "Possible Cause",
+      "trouble_col3":        "Solution",
+      "warranty_card_title": "Warranty Card"
+    },
+    "de": {
+      "brand_info_title":    "Markeninformationen",
+      "manufacturer_title":  "Autorisierter Hersteller",
+      "brand_label":         "Marke",
+      "address_label":       "Adresse",
+      "website_label":       "Webseite",
+      "email_label":         "Kundendienst",
+      "manufacturer_label":  "Hersteller",
+      "specs_col1":          "Parameter",
+      "specs_col2":          "Spezifikation",
+      "parts_col_no":        "Nr.",
+      "parts_col_name":      "Bezeichnung",
+      "buttons_col1":        "Nr. / Taste",
+      "buttons_col2":        "Beschreibung",
+      "trouble_col1":        "Problem",
+      "trouble_col2":        "Mögliche Ursache",
+      "trouble_col3":        "Lösung",
+      "warranty_card_title": "Garantiekarte"
+    },
+    "it": {
+      "brand_info_title":    "Informazioni sul marchio",
+      "manufacturer_title":  "Produttore autorizzato",
+      "brand_label":         "Marchio",
+      "address_label":       "Indirizzo",
+      "website_label":       "Sito web",
+      "email_label":         "Assistenza clienti",
+      "manufacturer_label":  "Produttore",
+      "specs_col1":          "Parametro",
+      "specs_col2":          "Specifica",
+      "parts_col_no":        "N.",
+      "parts_col_name":      "Nome",
+      "buttons_col1":        "N. / Pulsante",
+      "buttons_col2":        "Descrizione",
+      "trouble_col1":        "Problema",
+      "trouble_col2":        "Possibile causa",
+      "trouble_col3":        "Soluzione",
+      "warranty_card_title": "Certificato di garanzia"
+    }
+  },
+  "_notes": {
+    "template_required": "IMT050 是制冰机，与 V23 真空封口机为不同产品类型。需新建 template/imt050-master-*.html（不能直接复用 v23-master-*.html 中的内容区段）。参见 SOP-new-product.md Step 3b 产品类型差异处理。",
+    "images_status": "原始图片在 source/images_imt050_raw/（17张PNG）。需按图片标准化规范（SOP Step 5）重命名后复制到 swiss/products/imt050/images/",
+    "notes": "IMT050 配置已完成，所有品牌数据已核实"
+  }
+}
