@@ -1,0 +1,172 @@
+.callout-no {
+  display: inline-block;
+  min-width: 14px;
+  font-weight: 700;
+}
+
+.compact-structure .fig-wrap {
+  margin: 7px 0;
+}
+
+.compact-structure .fig-wrap img {
+  max-height: 46mm;
+}
+
+.compact-structure table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-structure th,
+.compact-structure td {
+  padding: 4px 5px;
+}
+
+.compact-functions .fig-wrap {
+  margin: 6px 0;
+}
+
+.compact-functions .fig-wrap img {
+  max-height: 20mm;
+}
+
+.compact-functions table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-functions th,
+.compact-functions td {
+  padding: 4px 5px;
+  line-height: 1.4;
+}
+
+.compact-functions th:first-child,
+.compact-functions td:first-child {
+  width: 38% !important;
+}
+
+.compact-accessories .sub-title {
+  margin: 9px 0 5px;
+  font-size: 10px;
+}
+
+.compact-accessories .steps li {
+  margin-bottom: 5px;
+}
+
+.compact-accessories .bullet-list li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.compact-accessories .btn-name {
+  font-size: 8px;
+  padding: 0 4px;
+}
+
+.compact-ops .sub-title {
+  margin: 7px 0 4px;
+  font-size: 10px;
+}
+
+.compact-ops p {
+  margin-bottom: 5px;
+}
+
+.compact-ops .steps {
+  margin: 6px 0;
+}
+
+.compact-ops .steps li {
+  margin-bottom: 4px;
+  line-height: 1.42;
+}
+
+.compact-ops .note-box {
+  margin: 6px 0 0;
+  padding: 6px 8px;
+  font-size: 8.6px;
+  line-height: 1.4;
+}
+
+.compact-troubleshoot table {
+  font-size: 8.9px;
+  margin: 6px 0;
+}
+
+.compact-troubleshoot th,
+.compact-troubleshoot td {
+  padding: 4px 5px;
+  line-height: 1.45;
+}
+
+.compact-warranty .sub-title {
+  margin: 10px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-warranty p {
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.compact-warranty .bullet-list li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.compact-warranty table {
+  margin: 6px 0;
+  font-size: 8.9px;
+}
+
+.compact-warranty th,
+.compact-warranty td {
+  padding: 4px 5px;
+}
+
+.compact-warranty .fig-wrap {
+  margin: 4px 0 2px !important;
+}
+
+.compact-warranty .fig-wrap img {
+  max-height: 4mm !important;
+}
+
+.rollbag-guide .bullet-list {
+  margin: 5px 0;
+}
+
+.rollbag-guide .bullet-list li {
+  line-height: 1.45;
+}
+
+.rollbag-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 5mm;
+  margin-top: 5px;
+  align-items: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.rollbag-figure {
+  width: 100%;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.rollbag-figure img {
+  width: 100%;
+  max-width: 78mm;
+  height: auto;
+  display: inline-block;
+}
+
+@media print {
+  .rollbag-stack { gap: 4mm; }
+  .rollbag-figure img { max-width: 74mm; }
+}

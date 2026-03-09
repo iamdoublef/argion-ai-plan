@@ -1,106 +1,660 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IMT050 Eiswürfelbereiter Bedienungsanleitung — Vesta</title>
+<title>IMT050 Eiswürfelbereiter Bedienungsanleitung - Vesta</title>
 <style>
+/* SHARED SWISS DE MASTER */
+/* SHARED SWISS BASE MASTER */
 @page { size: 148mm 210mm; margin: 0; }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --swiss-red: #E63946;
   --swiss-black: #000000;
-  --swiss-gray-text: #8E8E93;
+  --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
-  --page-margin: 12mm;
+  --swiss-gray-text: #8E8E93;
   --page-width: 148mm;
   --page-height: 210mm;
+  --page-margin: 10mm;
 }
-html { font-size: 14px; }
-body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--swiss-black); line-height: 1.55; -webkit-font-smoothing: antialiased; background: #FFF; }
-.page { width: var(--page-width); height: var(--page-height); padding: var(--page-margin); position: relative; page-break-after: always; overflow: hidden; }
-.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
-.header-brand { font-size: 11px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--swiss-gray-text); }
-.header-ref { font-size: 9px; color: var(--swiss-gray-text); letter-spacing: 1px; font-family: 'Courier New', monospace; }
-.section-title { font-size: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; padding-left: 10px; border-left: 5px solid var(--swiss-black); }
-.sub-title { font-size: 13px; font-weight: 700; margin: 18px 0 10px; border-bottom: 2px solid var(--swiss-black); padding-bottom: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
-.step-row { display: flex; gap: 10px; margin-bottom: 10px; }
-.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
-.step-text { flex: 1; font-size: 12px; line-height: 1.5; }
-.bullet-list { list-style: none; padding: 0; }
-.bullet-list li { position: relative; padding: 2px 0 2px 16px; margin-bottom: 4px; font-size: 12px; line-height: 1.5; }
-.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
-.warning-box { background: #FFF3F3; border-left: 4px solid var(--swiss-red); padding: 10px 12px; margin: 12px 0; font-size: 12px; }
-.caution-box { background: #FFF8E1; border-left: 4px solid #F5A623; padding: 10px 12px; margin: 12px 0; font-size: 12px; }
-.note-box { background: var(--swiss-gray-bg); border-left: 4px solid var(--swiss-black); padding: 10px 12px; margin: 12px 0; font-size: 12px; }
-.box-title { font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
-.warning-box .box-title { color: var(--swiss-red); }
-.caution-box .box-title { color: #F5A623; }
-.note-box .box-title { color: var(--swiss-black); }
-.box-list { list-style: none; padding: 0; margin: 0; }
-.box-list li { position: relative; padding: 2px 0 2px 16px; font-size: 12px; line-height: 1.45; }
-.box-list li::before { content: "—"; position: absolute; left: 0; font-weight: 900; font-size: 11px; }
-.warning-box .box-list li::before { color: var(--swiss-red); }
-.caution-box .box-list li::before { color: #F5A623; }
-.note-box .box-list li::before { color: var(--swiss-black); }
-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
-th { background: var(--swiss-black); color: #FFF; text-transform: uppercase; text-align: left; padding: 7px 10px; font-weight: 700; border: 1px solid #333; }
-td { padding: 7px 10px; border: 1px solid #CCC; vertical-align: top; }
-tr:nth-child(even) td { background: var(--swiss-gray-bg); }
-.fig-wrap { text-align: center; margin: 12px 0 8px; }
-.fig-wrap img { max-width: 85%; max-height: 65mm; height: auto; object-fit: contain; }
-.fig-caption { text-align: center; font-size: 10px; color: var(--swiss-gray-text); margin-top: 4px; }
-.toc-list { list-style: none; padding: 0; }
-.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 12px; }
-.toc-item span:first-child { font-weight: 700; }
-.toc-item span:last-child { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 11px; }
 
-.compact-ops .step-text { font-size: 12px; line-height: 1.45; }
-.compact-ops .sub-title { margin: 6px 0 4px !important; font-size: 12px; padding-bottom: 2px; }
-.compact-ops .section-title { margin-bottom: 6px; font-size: 15px; }
-.compact-ops .bullet-list li { margin-bottom: 2px; font-size: 12px; line-height: 1.4; }
-.compact-safety .section-title { margin-bottom: 6px; font-size: 18px; }
-.compact-safety .warning-box, .compact-safety .caution-box, .compact-safety .note-box { margin: 6px 0; padding: 6px 10px; }
-.compact-safety .box-title { margin-bottom: 3px; font-size: 10px; }
-.compact-safety .box-list li { font-size: 10px; line-height: 1.3; padding: 0.5px 0; }
-.compact-safety p { font-size: 10px; line-height: 1.3; margin-bottom: 4px; }
-.compact-table .section-title { margin-bottom: 10px; font-size: 16px; }
-.compact-table table { font-size: 11.5px; margin: 8px 0; }
-.compact-table th, .compact-table td { padding: 4px 8px; }
-.compact-ts .section-title { margin-bottom: 2px; font-size: 14px; }
-.compact-ts table { font-size: 9px; margin: 2px 0; line-height: 1.25; }
-.compact-ts th, .compact-ts td { padding: 2px 3px; vertical-align: top; word-break: break-word; }
-.compact-ts .caution-box { margin-top: 3px; font-size: 9px; padding: 3px 5px; line-height: 1.25; }
-.compact-warranty .section-title { margin-bottom: 3px; font-size: 13px; }
-.compact-warranty .sub-title { margin: 3px 0 1px !important; font-size: 10.5px; padding-bottom: 0px !important; }
-.compact-warranty p { margin-bottom: 1px; font-size: 10px; line-height: 1.25; }
-.compact-warranty .bullet-list { margin: 1px 0; }
-.compact-warranty .bullet-list li { padding-top: 0; padding-bottom: 0; line-height: 1.2; font-size: 9.5px; }
-.compact-warranty table { margin: 1px 0; font-size: 9.5px; }
-.compact-warranty th, .compact-warranty td { padding: 1px 5px; }
-.compact-warranty .header-strip { margin-bottom: 8px; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 12px; }
+body {
+  background: #2C2C2E;
+  font-family: "Helvetica Neue", "Inter", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--swiss-black);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
 
-.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  width: var(--page-width);
+  height: var(--page-height);
+  min-height: var(--page-height);
+  padding: var(--page-margin);
+  background: #FFF;
+  margin: 6mm auto;
+  position: relative;
+  overflow: hidden;
+  page-break-after: always;
+}
+
+.header-strip {
+  border-top: 4px solid var(--swiss-black);
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.header-brand {
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.header-ref {
+  font-family: "Courier New", monospace;
+  font-size: 7.5px;
+  color: var(--swiss-gray-text);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  line-height: 1.08;
+  letter-spacing: -0.3px;
+  border-left: 4px solid var(--swiss-black);
+  padding-left: 8px;
+}
+
+.section-title .chapter-num {
+  color: var(--swiss-red);
+  margin-right: 6px;
+}
+
+.sub-title {
+  font-size: 10px;
+  font-weight: 700;
+  border-bottom: 1.5px solid var(--swiss-black);
+  padding-bottom: 3px;
+  margin: 12px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+p {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  color: #222;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.steps li {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  margin-bottom: 6px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.step-num {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  background: var(--swiss-black);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0;
+}
+
+.bullet-list li {
+  padding: 2px 0 2px 12px;
+  position: relative;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.bullet-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  color: var(--swiss-red);
+  font-weight: 900;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.warning-box,
+.caution-box,
+.note-box,
+table,
+.fig-wrap {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.warning-box {
+  border: 2px solid var(--swiss-red);
+  padding: 8px 10px;
+  margin: 10px 0;
+}
+
+.warning-box .box-title {
+  font-size: 8.5px;
+  font-weight: 900;
+  color: var(--swiss-red);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.caution-box {
+  border: 2px solid #000;
+  padding: 8px 10px;
+  margin: 10px 0;
+}
+
+.caution-box .box-title {
+  font-size: 8.5px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.warning-box img,
+.caution-box img,
+.note-box img {
+  display: block;
+  width: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+.note-box {
+  background: var(--swiss-gray-bg);
+  padding: 8px 10px;
+  margin: 10px 0;
+  border-left: 3px solid var(--swiss-gray-text);
+  font-size: 9px;
+  color: #444;
+}
+
+.note-box .box-title {
+  font-weight: 900;
+  color: #333;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-size: 8.5px;
+  letter-spacing: 0.35px;
+}
+
+.box-list {
+  list-style: none;
+  padding: 0;
+}
+
+.box-list li {
+  padding: 1px 0 1px 12px;
+  position: relative;
+  font-size: 9.4px;
+  line-height: 1.45;
+}
+
+.box-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.32em;
+  color: var(--swiss-red);
+  font-weight: 900;
+  font-size: 7px;
+  line-height: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 9px;
+  table-layout: fixed;
+}
+
+th {
+  background: var(--swiss-black);
+  color: #FFF;
+  padding: 5px 6px;
+  text-align: left;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+td {
+  border: 1px solid #CCC;
+  padding: 5px 6px;
+  color: #1A1A1A;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+tr:nth-child(even) td {
+  background: var(--swiss-gray-bg);
+}
+
+.fig-wrap {
+  text-align: center;
+  margin: 8px 0;
+}
+
+.fig-wrap img {
+  width: auto;
+  max-width: 100%;
+  max-height: 54mm;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.fig-caption {
+  font-size: 7.5px;
+  color: var(--swiss-gray-text);
+  margin-top: 3px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.btn-name {
+  display: inline-block;
+  background: #FFF;
+  border: 1px solid var(--swiss-black);
+  padding: 1px 4px;
+  font-size: 8.4px;
+  line-height: 1.2;
+  font-family: "Courier New", monospace;
+  color: #000;
+  font-weight: 700;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.toc-title {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  letter-spacing: -0.6px;
+}
+
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid #EEE;
+  font-size: 10px;
+}
+
+.toc-item > span:first-child {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+}
+
+.toc-chapter {
+  color: var(--swiss-red);
+  font-weight: 900;
+  margin-right: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+}
+
+.toc-name {
+  flex: 1;
+  font-weight: 700;
+  min-width: 0;
+}
+
+.toc-page {
+  color: var(--swiss-gray-text);
+  font-family: "Courier New", monospace;
+  font-size: 8.5px;
+  flex-shrink: 0;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 4mm;
+  left: var(--page-margin);
+  right: var(--page-margin);
+  border-top: 1px solid #EEE;
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 7px;
+  color: var(--swiss-gray-text);
+  font-family: "Courier New", monospace;
+}
+
+.cover-brand {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.cover-brand span {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background: var(--swiss-red);
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.cover-model {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 2.2px;
+  color: var(--swiss-red);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-family: "Courier New", monospace;
+}
+
+.cover-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--swiss-black);
+  line-height: 1;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.cover-subtitle {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--swiss-gray-text);
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.cover-divider {
+  width: 28px;
+  height: 3px;
+  background: var(--swiss-red);
+  margin: 10px 0;
+}
+
+.cover-bottom {
+  border-top: 2px solid var(--swiss-black);
+  padding-top: 6px;
+  font-size: 7.2px;
+  color: var(--swiss-gray-text);
+  line-height: 1.45;
+  font-family: "Courier New", monospace;
+}
 
 @media print {
-  body { background: none; }
-  .page { page-break-after: always; page-break-inside: avoid; }
+  body { background: #FFF; }
+  .page { margin: 0; }
 }
+
+
+.compact-structure .fig-wrap {
+  margin: 7px 0;
+}
+
+.compact-structure .fig-wrap img {
+  max-height: 54mm;
+}
+
+.compact-structure table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-structure th,
+.compact-structure td {
+  padding: 4px 5px;
+}
+
+.compact-functions .fig-wrap {
+  margin: 6px 0;
+}
+
+.compact-functions .fig-wrap img {
+  max-height: 24mm;
+}
+
+.compact-functions table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-functions th,
+.compact-functions td {
+  padding: 4px 5px;
+  line-height: 1.4;
+}
+
+.compact-functions th:first-child,
+.compact-functions td:first-child {
+  width: 34% !important;
+}
+
+.compact-ops .sub-title {
+  margin: 10px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-ops .steps li {
+  margin-bottom: 6px;
+}
+
+.compact-ops .note-box {
+  margin-top: 10px;
+  padding: 8px 10px;
+}
+
+.compact-safety .section-title {
+  margin-bottom: 9px;
+}
+
+.compact-safety .warning-box,
+.compact-safety .caution-box,
+.compact-safety .note-box {
+  margin: 8px 0;
+  padding: 8px 10px;
+}
+
+.compact-safety .box-title {
+  margin-bottom: 5px;
+}
+
+.compact-safety .box-list li {
+  font-size: 9.3px;
+  line-height: 1.45;
+}
+
+.compact-safety p {
+  font-size: 9.7px;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.compact-table .section-title {
+  margin-bottom: 8px;
+}
+
+.compact-table table {
+  font-size: 8.9px;
+  margin: 6px 0;
+}
+
+.compact-table th,
+.compact-table td {
+  padding: 4px 5px;
+}
+
+.compact-ts .section-title {
+  margin-bottom: 7px;
+}
+
+.compact-ts .fig-wrap {
+  margin: 8px 0;
+}
+
+.compact-ts .fig-wrap img {
+  max-height: 44mm;
+}
+
+.compact-ts table {
+  font-size: 8.7px;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.compact-ts th,
+.compact-ts td {
+  padding: 4px 5px;
+  vertical-align: top;
+}
+
+.compact-ts .caution-box {
+  margin-top: 8px;
+  font-size: 8.9px;
+  padding: 8px 10px;
+  line-height: 1.4;
+}
+
+.compact-install .section-title {
+  margin-bottom: 7px;
+  line-height: 1.2;
+}
+
+.compact-install .sub-title {
+  margin: 8px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-install .bullet-list li {
+  margin-bottom: 1px;
+  font-size: 9.6px;
+  line-height: 1.45;
+}
+
+.compact-install .note-box {
+  margin-top: 8px !important;
+  padding: 8px 10px;
+  font-size: 8.9px;
+  line-height: 1.4;
+}
+
+.compact-install .note-box .box-title {
+  margin-bottom: 3px;
+  font-size: 8px;
+}
+
+.compact-warranty .sub-title {
+  margin: 10px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-warranty p {
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.compact-warranty .bullet-list li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.compact-warranty table {
+  margin: 6px 0;
+  font-size: 8.9px;
+}
+
+.compact-warranty th,
+.compact-warranty td {
+  padding: 4px 5px;
+}
+
+.compact-warranty .fig-wrap {
+  margin: 4px 0 2px !important;
+}
+
+.compact-warranty .fig-wrap img {
+  max-height: 4mm !important;
+}
+
 </style>
 </head>
 <body>
 
 <!-- ═══════════ SEITE 1 — COVER ═══════════ -->
-<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:15mm 10mm 10mm;">
   <div>
     <div class="cover-brand"><span></span>Vesta</div>
   </div>
-  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
-    <img src="./images_imt050/image1.png" alt="IMT050 Eiswürfelbereiter" style="max-width:100%;height:auto;max-height:85mm;">
-  </div>
-    <div class="cover-model">MODELL IMT050</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 8mm;">
+    <div style="text-align:left;margin:0 0 8mm;">
+      <img src="./images_imt050/image1.png" alt="IMT050 Eiswürfelbereiter" style="width:auto;height:auto;max-height:48mm;max-width:68%;">
+    </div>
+    <div class="cover-model">MODEL IMT050</div>
     <div class="cover-title">Eiswürfelbereiter</div>
-    <div style="font-size:11px;color:var(--swiss-gray-text);margin-top:4px;">Bedienungsanleitung</div>
+    <div class="cover-subtitle">Bedienungsanleitung</div>
+    <div class="cover-divider"></div>
+  </div>
+  <div class="cover-bottom" style="position:absolute;left:14mm;right:14mm;bottom:15mm;">
+  Bitte lesen Sie diese Bedienungsanleitung vor dem Gebrauch sorgfaeltig durch und bewahren Sie sie fuer spaetere Referenz auf.<br>
+  Alle Abbildungen von Produkten und Zubehoer in dieser Anleitung dienen nur als Referenz. Aufgrund von Produktaktualisierungen und -upgrades koennen die tatsaechlichen Produkte leicht von den Abbildungen abweichen.
+</div>
+
 </div>
 
 <!-- ═══════════ SEITE 2 — INHALTSVERZEICHNIS ═══════════ -->
@@ -109,18 +663,17 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <div class="header-brand">Vesta</div>
     <div class="header-ref">IMT050 — BEDIENUNGSANLEITUNG</div>
   </div>
-  <div class="section-title">Inhaltsverzeichnis</div>
-  <ul class="toc-list">
-    <li class="toc-item"><span>KAP.01 — Sicherheitshinweise</span><span>3–4</span></li>
-    <li class="toc-item"><span>KAP.02 — Vor der Inbetriebnahme</span><span>5</span></li>
-    <li class="toc-item"><span>KAP.03 — Produktaufbau</span><span>6</span></li>
-    <li class="toc-item"><span>KAP.04 — Bedienfeld</span><span>7</span></li>
-    <li class="toc-item"><span>KAP.05 — Technische Daten</span><span>8</span></li>
-    <li class="toc-item"><span>KAP.06 — Bedienung</span><span>9</span></li>
-    <li class="toc-item"><span>KAP.07 — Reinigung &amp; Pflege</span><span>10</span></li>
-    <li class="toc-item"><span>KAP.08 — Fehlerbehebung</span><span>11</span></li>
-    <li class="toc-item"><span>KAP.09 — Marke & Garantie</span><span>12</span></li>
-  </ul>
+  <div class="toc-title">Inhalt</div>
+  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Sicherheitshinweise</span></span><span class="toc-page">3</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Produkt- und Nutzungshinweise</span></span><span class="toc-page">5</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Produktaufbau</span></span><span class="toc-page">6</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Produktfunktionen</span></span><span class="toc-page">7</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Technische Daten</span></span><span class="toc-page">8</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Bedienungsanleitung</span></span><span class="toc-page">9</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Fehlerbehebung</span></span><span class="toc-page">10</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Wartung</span></span><span class="toc-page">11</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Installation, Transport, Lagerung &amp; Entsorgung</span></span><span class="toc-page">12</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Marken- &amp; Garantieinformationen</span></span><span class="toc-page">13</span></div>
   <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>2</span></div>
 </div>
 
@@ -131,11 +684,12 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <div class="header-brand">Vesta</div>
     <div class="header-ref">KAP.01 — SICHERHEIT</div>
   </div>
-  <div class="section-title">Sicherheitshinweise</div>
+  <h2 class="section-title"><span class="chapter-num">01</span>Sicherheitshinweise</h2>
   <p>Zu Ihrer Sicherheit lesen Sie bitte vor der Verwendung dieses Elektrogeräts alle Anweisungen in dieser Anleitung und beachten Sie stets die folgenden Sicherheitsvorkehrungen:</p>
 
   <div class="warning-box">
     <div class="box-title">WARNUNG</div>
+    <div style="margin:6px 0 8px;"><img src="./images_imt050/image3.png" alt="Warning Icon" style="width:22px;height:auto;max-height:22px;object-fit:contain;"></div>
     <ul class="box-list">
       <li>Dieses Gerät ist ausschließlich für den Hausgebrauch bestimmt. Nicht für andere Zwecke verwenden.</li>
       <li>Kinder dürfen nicht mit dem Gerät oder dem Netzkabel spielen. Kinder, Personen mit eingeschränkter Mobilität oder kognitiven Einschränkungen dürfen das Gerät nur unter Aufsicht Erwachsener verwenden.</li>
@@ -172,6 +726,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <div class="header-brand">Vesta</div>
     <div class="header-ref">KAP.01 — SICHERHEIT</div>
   </div>
+  <h2 class="section-title"><span class="chapter-num">01</span>Sicherheitshinweise (Forts.)</h2>
 
   <div class="caution-box">
     <div class="box-title">VORSICHT</div>
@@ -197,20 +752,22 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
 </div>
 <!-- @CONTENT:safety:end -->
 
-<!-- ═══════════ SEITE 5 — KAP.02 VOR DER INBETRIEBNAHME ═══════════ -->
-<!-- @CONTENT:before_use:start -->
+<!-- ═══════════ SEITE 5 — KAP.02 PRODUKTHINWEISE ═══════════ -->
+<!-- @CONTENT:usage_tips:start -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">KAP.02 — VOR DER INBETRIEBNAHME</div>
+    <div class="header-ref">KAP.02 — PRODUKTHINWEISE</div>
   </div>
-  <div class="section-title">Vor der Inbetriebnahme</div>
+  <h2 class="section-title"><span class="chapter-num">02</span>Produkthinweise</h2>
 
-  <div class="sub-title">Aufstellanforderungen</div>
+  <div class="sub-title">Aufstellung &amp; erste Nutzung</div>
   <ul class="bullet-list">
     <li>Das Gerät auf eine stabile, ebene und trockene Arbeitsfläche stellen.</li>
     <li>Mindestens 120 mm (4,7") Belüftungsabstand auf allen Seiten einhalten.</li>
     <li>Von Wärmequellen (Öfen, Herdplatten usw.) und direkter Sonneneinstrahlung fernhalten.</li>
+    <li>Vor dem ersten Gebrauch einmal den Reinigungszyklus durchführen (siehe KAP.08).</li>
+    <li>Die ersten 5 Eisbereitungszyklen sind Teil der Abkühlphase. Kleinere Eisstücke in dieser Phase sind normal.</li>
   </ul>
 
   <div class="sub-title">Wasserqualität</div>
@@ -221,17 +778,17 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <li><strong>NICHT</strong> verwenden: gefärbte, aromatisierte, kohlensäurehaltige oder gasgesättigte Getränke (Tee, Saft, Kaffee, Milch, Limonade usw.) — diese können das Gerät verunreinigen oder beschädigen.</li>
   </ul>
 
-  <div class="sub-title">Erste Benutzung</div>
+  <div class="sub-title">Nutzungshinweise</div>
   <ul class="bullet-list">
-    <li>Nach dem Auspacken alle Verpackungsmaterialien entfernen.</li>
-    <li>Das Innere mit einem feuchten Tuch abwischen, dann gründlich trocknen.</li>
-    <li>Vor dem ersten Gebrauch einmal den Reinigungszyklus durchführen (siehe KAP.07).</li>
-    <li>Die ersten 5 Eisbereitungszyklen sind eine Abkühlphase — die Eisgröße nimmt mit sinkender Wassertemperatur allmählich zu. Das ist normal.</li>
+    <li>Nach dem Auspacken alle Verpackungsmaterialien entfernen, das Innere mit einem feuchten Tuch auswischen und gründlich trocknen.</li>
+    <li>Wenn der Eiskorb voll ist, pausiert das Gerät automatisch und gibt einen Hinweis aus.</li>
+    <li>Es kann immer nur eine Eisgröße gleichzeitig produziert werden, ein Wechsel während des Betriebs ist jedoch möglich.</li>
+    <li>Gelegentlich trübes Eis im Dauerbetrieb ist normal und hängt von Wasserqualität, Wassertemperatur und Umgebungstemperatur ab.</li>
   </ul>
 
   <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>5</span></div>
 </div>
-<!-- @CONTENT:before_use:end -->
+<!-- @CONTENT:usage_tips:end -->
 
 <!-- ═══════════ SEITE 6 — KAP.03 AUFBAU ═══════════ -->
 <div class="page">
@@ -239,9 +796,9 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <div class="header-brand">Vesta</div>
     <div class="header-ref">KAP.03 — PRODUKTAUFBAU</div>
   </div>
-  <div class="section-title">Produktaufbau</div>
+  <h2 class="section-title"><span class="chapter-num">03</span>Produktaufbau</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image5.png" alt="Produktaufbau" style="max-height:90mm;">
+    <img src="./images_imt050/image5.png" alt="Produktaufbau" style="max-height:56mm;">
   </div>
   <table>
     <thead><tr><th style="width:15%;">Nr.</th><th>Bezeichnung</th><th style="width:15%;">Nr.</th><th>Bezeichnung</th></tr></thead>
@@ -259,11 +816,12 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">KAP.04 — BEDIENFELD</div>
+    <div class="header-ref">KAP.04 — FUNKTIONEN</div>
   </div>
-  <div class="section-title">Bedienfeld</div>
+  <h2 class="section-title"><span class="chapter-num">04</span>Produktfunktionen</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image7.png" alt="Bedienfeld" style="max-height:50mm;">
+    <img src="./images_imt050/image7.png" alt="Bedienfeld" style="max-height:24mm;">
+    <div class="fig-caption">ABB. 2 — BEDIENFELD</div>
   </div>
   <table>
     <thead><tr><th style="width:25%;">Nr. / Taste</th><th>Beschreibung</th></tr></thead>
@@ -284,7 +842,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <div class="header-brand">Vesta</div>
     <div class="header-ref">KAP.05 — TECHNISCHE DATEN</div>
   </div>
-  <div class="section-title">Technische Daten</div>
+  <h2 class="section-title"><span class="chapter-num">05</span>Technische Daten</h2>
   <table>
     <thead><tr><th style="width:40%;">Parameter</th><th>Spezifikation</th></tr></thead>
     <tbody>
@@ -317,16 +875,16 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <div class="header-brand">Vesta</div>
     <div class="header-ref">KAP.06 — BEDIENUNG</div>
   </div>
-  <div class="section-title">Bedienungsanleitung</div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung</h2>
 
-  <div class="sub-title">Eis herstellen</div>
-  <div class="step-row"><div class="step-num">1</div><div class="step-text">Den Wassertank herausnehmen, mit Trinkwasser bis zur Markierung füllen und wieder einsetzen.</div></div>
-  <div class="step-row"><div class="step-num">2</div><div class="step-text">Das Netzkabel einstecken. Die <b>Power</b>-Taste drücken — die Anzeige leuchtet weiß und das Gerät schaltet sich ein.</div></div>
-  <div class="step-row"><div class="step-num">3</div><div class="step-text">Die <b>Eis herstellen</b>-Taste drücken, um eine Eisgröße (S / M / L) auszuwählen. Das Gerät beginnt automatisch mit der Eisherstellung.</div></div>
-  <div class="step-row"><div class="step-num">4</div><div class="step-text">Warten, bis das Eis gebildet ist. Bullet-Eis fällt automatisch in den Eiskorb.</div></div>
-  <div class="step-row"><div class="step-num">5</div><div class="step-text">Deckel öffnen, Eiskorb herausnehmen und Eis entnehmen. Korb wieder einsetzen — das Gerät setzt automatisch fort.</div></div>
-
-  <div class="note-box" style="margin-top:12px;">
+    <div class="sub-title">Eis herstellen</div>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Den Wassertank herausnehmen, mit Trinkwasser bis zur Markierung fuellen und wieder einsetzen.</li>
+    <li><span class="step-num">2</span>Das Netzkabel einstecken. Die <b>Power</b>-Taste druecken - die Anzeige leuchtet weiss und das Geraet schaltet sich ein.</li>
+    <li><span class="step-num">3</span>Die <b>Eis herstellen</b>-Taste druecken, um eine Eisgroesse (S / M / L) auszuwaehlen. Das Geraet beginnt automatisch mit der Eisherstellung.</li>
+    <li><span class="step-num">4</span>Warten, bis das Eis gebildet ist. Bullet-Eis faellt automatisch in den Eiskorb.</li>
+    <li><span class="step-num">5</span>Deckel oeffnen, Eiskorb herausnehmen und Eis entnehmen. Korb wieder einsetzen - das Geraet setzt automatisch fort.</li>
+  </ol><div class="note-box" style="margin-top:12px;">
     <div class="box-title">HINWEIS</div>
     <ul class="box-list">
       <li>Drücken Sie während des Betriebs <b>Eis herstellen</b>, um die Eisgröße zu wechseln.</li>
@@ -342,52 +900,14 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
 </div>
 <!-- @CONTENT:operations:end -->
 
-<!-- ═══════════ SEITE 10 — KAP.07 REINIGUNG ═══════════ -->
-<!-- @CONTENT:cleaning:start -->
-<div class="page compact-ops">
-  <div class="header-strip">
-    <div class="header-brand">Vesta</div>
-    <div class="header-ref">KAP.07 — REINIGUNG &amp; PFLEGE</div>
-  </div>
-  <div class="section-title">Reinigung &amp; Pflege</div>
-
-  <div class="sub-title">Automatische Reinigung (Eisform &amp; Auffangschale)</div>
-  <div class="step-row"><div class="step-num">1</div><div class="step-text">Den Wassertank bis zur Markierung füllen.</div></div>
-  <div class="step-row"><div class="step-num">2</div><div class="step-text">Bei eingeschaltetem Gerät die <b>Reinigen</b>-Taste drücken. Die Anzeige leuchtet weiß und das Gerät reinigt automatisch.</div></div>
-  <div class="step-row"><div class="step-num">3</div><div class="step-text">Nach Abschluss der Reinigung stoppt das Gerät automatisch und die Anzeige erlischt.</div></div>
-
-  <div class="sub-title">Wasserablauf</div>
-  <div class="step-row"><div class="step-num">1</div><div class="step-text">Netzstecker ziehen und das Gerät in die Nähe eines Spülbeckens stellen.</div></div>
-  <div class="step-row"><div class="step-num">2</div><div class="step-text">Den Ablassstopfen an der Unterseite entfernen und das gesamte Wasser ablaufen lassen.</div></div>
-  <div class="step-row"><div class="step-num">3</div><div class="step-text">Nach dem Ablassen den Stopfen wieder fest einsetzen.</div></div>
-
-  <div class="sub-title">Tägliche Pflege</div>
-  <ul class="bullet-list">
-    <li>Das Innere regelmäßig mit klarem Wasser ausspülen — wir empfehlen eine <b>Reinigung vor jedem täglichen Gebrauch</b>.</li>
-    <li>Das Äußere mit einem weichen, feuchten Tuch abwischen. Keine scheuernden oder ätzenden Reinigungsmittel verwenden.</li>
-    <li>Befolgen Sie die automatische Reinigung, um Eisform und Auffangschale zu reinigen.</li>
-  </ul>
-
-  <div class="sub-title">Langzeitlagerung</div>
-  <ul class="bullet-list">
-    <li>Einen Reinigungszyklus durchführen.</li>
-    <li>Das gesamte Wasser aus dem Gerät ablassen.</li>
-    <li>Das Innere trockenwischen und den Deckel zur natürlichen Trocknung geöffnet lassen.</li>
-    <li>Den Netzstecker ziehen und an einem trockenen, gut belüfteten Ort aufbewahren.</li>
-  </ul>
-
-  <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>10</span></div>
-</div>
-<!-- @CONTENT:cleaning:end -->
-
-<!-- ═══════════ SEITE 11 — KAP.08 FEHLERBEHEBUNG ═══════════ -->
+<!-- ═══════════ SEITE 10 — KAP.07 FEHLERBEHEBUNG ═══════════ -->
 <!-- @CONTENT:troubleshooting:start -->
 <div class="page compact-ts">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">KAP.08 — FEHLERBEHEBUNG</div>
+    <div class="header-ref">KAP.07 — FEHLERBEHEBUNG</div>
   </div>
-  <div class="section-title">Fehlerbehebung</div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung</h2>
 
   <table>
     <thead><tr><th style="width:22%;">Problem</th><th style="width:33%;">Mögliche Ursache</th><th>Lösung</th></tr></thead>
@@ -445,17 +965,89 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <p>Der Hersteller, Vertriebspartner und Markeninhaber übernehmen keine Haftung für Schäden oder Qualitätsprobleme, die durch eine nicht anleitungskonforme Bedienung verursacht werden.</p>
   </div>
 
-  <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>11</span></div>
+  <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>10</span></div>
 </div>
 <!-- @CONTENT:troubleshooting:end -->
 
-<!-- ═══════════ SEITE 12 — KAP.09 GARANTIE ═══════════ -->
+<!-- ═══════════ SEITE 11 — KAP.08 WARTUNG ═══════════ -->
+<!-- @CONTENT:maintenance:start -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">KAP.08 — WARTUNG</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">08</span>Wartung</h2>
+
+    <div class="sub-title">Automatische Reinigung (Eisform &amp; Auffangschale)</div>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Den Wassertank bis zur Markierung fuellen.</li>
+    <li><span class="step-num">2</span>Bei eingeschaltetem Geraet die <b>Reinigen</b>-Taste druecken. Die Anzeige leuchtet weiss und das Geraet reinigt automatisch.</li>
+    <li><span class="step-num">3</span>Nach Abschluss der Reinigung stoppt das Geraet automatisch und die Anzeige erlischt.</li>
+  </ol>  <div class="sub-title">Wasserablauf</div>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Netzstecker ziehen und das Geraet in die Naehe eines Spuelbeckens stellen.</li>
+    <li><span class="step-num">2</span>Den Ablassstopfen an der Unterseite entfernen und das gesamte Wasser ablaufen lassen.</li>
+    <li><span class="step-num">3</span>Nach dem Ablassen den Stopfen wieder fest einsetzen.</li>
+  </ol><div class="sub-title">Tägliche Pflege</div>
+  <ul class="bullet-list">
+    <li>Das Innere regelmäßig mit klarem Wasser ausspülen — wir empfehlen eine <b>Reinigung vor jedem täglichen Gebrauch</b>.</li>
+    <li>Das Äußere mit einem weichen, feuchten Tuch abwischen. Keine scheuernden oder ätzenden Reinigungsmittel verwenden.</li>
+    <li>Befolgen Sie die automatische Reinigung, um Eisform und Auffangschale zu reinigen.</li>
+    <li>Vor Wartungsarbeiten immer den Netzstecker ziehen und das Gerät abkühlen lassen.</li>
+  </ul>
+
+  <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>11</span></div>
+</div>
+<!-- @CONTENT:maintenance:end -->
+
+<!-- ═══════════ SEITE 12 — KAP.09 INSTALLATION / LAGERUNG / ENTSORGUNG ═══════════ -->
+<!-- @CONTENT:install_transport_storage_disposal:start -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">KAP.09 — INSTALLATION / LAGERUNG / ENTSORGUNG</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">09</span>Installation, Transport, Lagerung &amp; Entsorgung</h2>
+
+  <div class="sub-title">Verpackung &amp; Transport</div>
+  <ul class="bullet-list">
+    <li>Das Gerät während des Transports im Gleichgewicht halten. Der Neigungswinkel darf 45° nicht überschreiten.</li>
+    <li>Das Gerät beim Tragen und Transport immer aufrecht halten, um Kompressor und Kältesystem zu schützen.</li>
+    <li>Nach dem Transport das Gerät vor dem Einschalten 4 Stunden aufrecht stehen lassen.</li>
+  </ul>
+
+  <div class="sub-title">Installation</div>
+  <ul class="bullet-list">
+    <li>Das Produkt auf einer ebenen, stabilen und trockenen Fläche installieren. Nicht in geneigter Lage betreiben.</li>
+    <li>Das Gerät beim Positionieren nicht ziehen oder ruckartig bewegen, um Kippen oder Bauteilschäden zu vermeiden.</li>
+    <li>Mindestens 120 mm (4,7") Abstand zu Wänden und Gegenständen einhalten, damit Belüftung und Wartung möglich bleiben.</li>
+    <li>Von Wärmequellen, Dampf und direkter Sonneneinstrahlung fernhalten.</li>
+  </ul>
+
+  <div class="sub-title">Lagerung &amp; Entsorgung</div>
+  <ul class="bullet-list">
+    <li>Vor längerer Lagerung das Wasser aus Tank und Innenraum vollständig ablassen, danach das Gerät reinigen und trocknen.</li>
+    <li>Das Gerät trocken und gut belüftet lagern und vor Feuchtigkeit oder schweren Lasten schützen.</li>
+    <li>Dieses Produkt enthält elektronische Bauteile und das Kältemittel R600a und darf nicht mit dem Hausmüll entsorgt werden.</li>
+    <li>Am Ende der Nutzungsdauer eine autorisierte Recyclingstelle oder den Händler kontaktieren und die lokalen Vorschriften einhalten.</li>
+  </ul>
+
+  <div class="note-box" style="margin-top:14px;">
+    <div class="box-title">WEEE / R600a</div>
+    Den Kältemittelkreislauf nicht beschädigen. Die Entsorgung muss über einen qualifizierten Recycling- oder Entsorgungsdienst erfolgen, um Umwelt- und Sicherheitsrisiken zu vermeiden.
+  </div>
+
+  <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>12</span></div>
+</div>
+<!-- @CONTENT:install_transport_storage_disposal:end -->
+
+<!-- ═══════════ SEITE 13 — KAP.10 GARANTIE ═══════════ -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">KAP.09 — GARANTIE</div>
+    <div class="header-ref">KAP.10 — GARANTIE</div>
   </div>
-  <div class="section-title">Marken- und Garantieinformationen</div>
+  <h2 class="section-title"><span class="chapter-num">10</span>Marken- und Garantieinformationen</h2>
 
   <p>Vielen Dank für den Kauf des Vesta Eiswürfelbereiter. Bei Fragen kontaktieren Sie uns unter:<br>support@vestaprecision.com | www.vestaprecision.com</p>
 
@@ -481,23 +1073,35 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <li>Die ursprüngliche Bestellnummer oder die beim Kauf verwendete E-Mail-Adresse liegt vor.</li>
     <li>Bei Kauf über einen Händler oder Einzelhandelspartner muss eine Kopie des Originalbelegs vorgelegt werden.</li>
   </ul>
-  <p style="margin-top:8px">Senden Sie uns eine E-Mail, um den Garantieservice zu beantragen: <b>support@vestaprecision.com</b></p>
+  <p style="margin-top:12px">Senden Sie uns eine E-Mail, um den Garantieservice zu beantragen: <b>support@vestaprecision.com</b></p>
 
-  <div class="sub-title" style="margin-top:10px;">Garantiekarte</div>
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_imt050/image31.png" alt="Garantiekarten-Trenner"></div>
+  <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>13</span></div>
+</div>
+
+<!-- SEITE 14 - KAP.10 GARANTIEKARTE -->
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">KAP.10 - GARANTIE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">10</span>Marken- und Garantieinformationen (Forts.)</h2>
+  <div class="sub-title" style="margin-top:14px;">Garantiekarte</div>
   <table>
     <tr><td style="width:35%;">Kundenname</td><td></td></tr>
     <tr><td>Adresse</td><td></td></tr>
     <tr><td>Stadt / Bundesland / PLZ</td><td></td></tr>
     <tr><td>Telefonnummer</td><td></td></tr>
     <tr><td>E-Mail-Adresse</td><td></td></tr>
-    <tr><td>Ursprüngliches Kaufdatum</td><td></td></tr>
+    <tr><td>Urspr?ngliches Kaufdatum</td><td></td></tr>
     <tr><td>Produktmodell</td><td></td></tr>
     <tr><td>Seriennummer (falls zutreffend)</td><td></td></tr>
-    <tr><td>Händlername</td><td></td></tr>
+    <tr><td>H?ndlername</td><td></td></tr>
   </table>
 
-  <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>12</span></div>
+  <div class="page-footer"><span>Vesta IMT050 Bedienungsanleitung</span><span>14</span></div>
 </div>
 
 </body>
 </html>
+

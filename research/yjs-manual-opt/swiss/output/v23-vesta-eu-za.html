@@ -1,185 +1,724 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>V23 Vacuum Sealer User Manual — Vesta</title>
 <style>
+/* SHARED SWISS EN MASTER */
+/* SHARED SWISS BASE MASTER */
+@page { size: 148mm 210mm; margin: 0; }
 :root {
-    --swiss-black: #000000;
-    --swiss-red: #E63946;
-    --swiss-gray-bg: #F2F2F7;
-    --swiss-gray-text: #8E8E93;
-    --page-margin: 12.7mm;
+  --swiss-black: #000000;
+  --swiss-red: #E63946;
+  --swiss-gray-bg: #F2F2F7;
+  --swiss-gray-text: #8E8E93;
+  --page-width: 148mm;
+  --page-height: 210mm;
+  --page-margin: 10mm;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #2C2C2E; font-family: 'Helvetica Neue', 'Inter', Arial, sans-serif; color: var(--swiss-black); }
-
-.page {
-    width: 210mm;
-    min-height: 297mm;
-    padding: var(--page-margin);
-    background: #FFF;
-    margin: 10mm auto;
-    position: relative;
-    page-break-after: always;
+html { font-size: 12px; }
+body {
+  background: #2C2C2E;
+  font-family: "Helvetica Neue", "Inter", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--swiss-black);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* 顶部装饰条 */
-.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
-.header-brand { font-weight: 900; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; }
-.header-ref { font-family: 'Courier New', monospace; font-size: 10px; color: var(--swiss-gray-text); }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-/* 标题系统 */
-.section-title { font-size: 26px; font-weight: 900; text-transform: uppercase; margin: 0 0 16px; letter-spacing: -0.5px; border-left: 6px solid var(--swiss-black); padding-left: 12px; }
-.section-title .chapter-num { color: var(--swiss-red); margin-right: 8px; }
-.sub-title { font-size: 14px; font-weight: 700; border-bottom: 2px solid var(--swiss-black); padding-bottom: 4px; margin: 20px 0 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.page {
+  width: var(--page-width);
+  height: var(--page-height);
+  min-height: var(--page-height);
+  padding: var(--page-margin);
+  background: #FFF;
+  margin: 6mm auto;
+  position: relative;
+  overflow: hidden;
+  page-break-after: always;
+}
 
-/* 正文 */
-p { font-size: 13px; line-height: 1.65; margin-bottom: 10px; color: #222; }
+.header-strip {
+  border-top: 4px solid var(--swiss-black);
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 12px;
+}
 
-/* 步骤列表 */
-.steps { list-style: none; padding: 0; margin: 10px 0; }
-.steps li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; font-size: 13px; line-height: 1.6; }
-.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
+.header-brand {
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  font-size: 9px;
+  text-transform: uppercase;
+}
 
-/* 普通列表 */
-.bullet-list { list-style: none; padding: 0; margin: 8px 0; }
-.bullet-list li { padding: 3px 0 3px 16px; position: relative; font-size: 13px; line-height: 1.65; }
-.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
+.header-ref {
+  font-family: "Courier New", monospace;
+  font-size: 7.5px;
+  color: var(--swiss-gray-text);
+}
 
-/* 警告框 */
-.warning-box { border: 2px solid var(--swiss-red); padding: 12px 16px; margin: 14px 0; }
-.warning-box .box-title { font-size: 11px; font-weight: 900; color: var(--swiss-red); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
-.caution-box { border: 2px solid #000; padding: 12px 16px; margin: 14px 0; }
-.caution-box .box-title { font-size: 11px; font-weight: 900; color: #000; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
-.note-box { background: var(--swiss-gray-bg); padding: 10px 14px; margin: 12px 0; border-left: 4px solid var(--swiss-gray-text); font-size: 12px; color: #444; }
-.note-box .box-title { font-weight: 900; color: #333; margin-bottom: 4px; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
-.box-list { list-style: none; padding: 0; }
-.box-list li { padding: 2px 0 2px 14px; position: relative; font-size: 12px; line-height: 1.6; }
-.box-list li::before { content: "·"; position: absolute; left: 2px; color: var(--swiss-red); font-weight: 900; }
+.section-title {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  line-height: 1.08;
+  letter-spacing: -0.3px;
+  border-left: 4px solid var(--swiss-black);
+  padding-left: 8px;
+}
 
-/* 图片 */
-.fig-wrap { text-align: center; margin: 14px 0; }
-.fig-wrap img { max-width: 80%; max-height: 70mm; object-fit: contain; display: inline-block; }
-.fig-caption { font-size: 10px; color: var(--swiss-gray-text); margin-top: 4px; text-align: center; font-family: 'Courier New', monospace; text-transform: uppercase; letter-spacing: 0.5px; }
+.section-title .chapter-num {
+  color: var(--swiss-red);
+  margin-right: 6px;
+}
 
-/* 表格 */
-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
-th { background: var(--swiss-black); color: #FFF; padding: 8px 10px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
-td { border: 1px solid #CCC; padding: 7px 10px; color: #1A1A1A; vertical-align: top; }
-tr:nth-child(even) td { background: var(--swiss-gray-bg); }
+.sub-title {
+  font-size: 10px;
+  font-weight: 700;
+  border-bottom: 1.5px solid var(--swiss-black);
+  padding-bottom: 3px;
+  margin: 12px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
 
-/* 按键名称 */
-.btn-name { display: inline-block; background: #FFF; border: 1.5px solid var(--swiss-black); padding: 1px 6px; font-size: 11px; font-family: 'Courier New', monospace; color: #000; font-weight: 700; white-space: nowrap; }
+p {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  color: #222;
+}
 
-/* 目录 */
-.toc-title { font-size: 28px; font-weight: 900; text-transform: uppercase; margin-bottom: 24px; letter-spacing: -1px; }
-.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 13px; }
-.toc-chapter { color: var(--swiss-red); font-weight: 900; margin-right: 8px; font-family: 'Courier New', monospace; }
-.toc-name { flex: 1; }
-.toc-page { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 12px; }
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
 
-/* 页脚 */
+.steps li {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  margin-bottom: 6px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.step-num {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  background: var(--swiss-black);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0;
+}
+
+.bullet-list li {
+  padding: 2px 0 2px 12px;
+  position: relative;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.bullet-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  color: var(--swiss-red);
+  font-weight: 900;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.warning-box,
+.caution-box,
+.note-box,
+table,
+.fig-wrap {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.warning-box {
+  border: 2px solid var(--swiss-red);
+  padding: 8px 10px;
+  margin: 10px 0;
+}
+
+.warning-box .box-title {
+  font-size: 8.5px;
+  font-weight: 900;
+  color: var(--swiss-red);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.caution-box {
+  border: 2px solid #000;
+  padding: 8px 10px;
+  margin: 10px 0;
+}
+
+.caution-box .box-title {
+  font-size: 8.5px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.warning-box img,
+.caution-box img,
+.note-box img {
+  display: block;
+  width: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+.note-box {
+  background: var(--swiss-gray-bg);
+  padding: 8px 10px;
+  margin: 10px 0;
+  border-left: 3px solid var(--swiss-gray-text);
+  font-size: 9px;
+  color: #444;
+}
+
+.note-box .box-title {
+  font-weight: 900;
+  color: #333;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-size: 8.5px;
+  letter-spacing: 0.35px;
+}
+
+.box-list {
+  list-style: none;
+  padding: 0;
+}
+
+.box-list li {
+  padding: 1px 0 1px 12px;
+  position: relative;
+  font-size: 9.4px;
+  line-height: 1.45;
+}
+
+.box-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.32em;
+  color: var(--swiss-red);
+  font-weight: 900;
+  font-size: 7px;
+  line-height: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 9px;
+  table-layout: fixed;
+}
+
+th {
+  background: var(--swiss-black);
+  color: #FFF;
+  padding: 5px 6px;
+  text-align: left;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+td {
+  border: 1px solid #CCC;
+  padding: 5px 6px;
+  color: #1A1A1A;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+tr:nth-child(even) td {
+  background: var(--swiss-gray-bg);
+}
+
+.fig-wrap {
+  text-align: center;
+  margin: 8px 0;
+}
+
+.fig-wrap img {
+  width: auto;
+  max-width: 100%;
+  max-height: 54mm;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.fig-caption {
+  font-size: 7.5px;
+  color: var(--swiss-gray-text);
+  margin-top: 3px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.btn-name {
+  display: inline-block;
+  background: #FFF;
+  border: 1px solid var(--swiss-black);
+  padding: 1px 4px;
+  font-size: 8.4px;
+  line-height: 1.2;
+  font-family: "Courier New", monospace;
+  color: #000;
+  font-weight: 700;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.toc-title {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  letter-spacing: -0.6px;
+}
+
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid #EEE;
+  font-size: 10px;
+}
+
+.toc-item > span:first-child {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+}
+
+.toc-chapter {
+  color: var(--swiss-red);
+  font-weight: 900;
+  margin-right: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+}
+
+.toc-name {
+  flex: 1;
+  font-weight: 700;
+  min-width: 0;
+}
+
+.toc-page {
+  color: var(--swiss-gray-text);
+  font-family: "Courier New", monospace;
+  font-size: 8.5px;
+  flex-shrink: 0;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 4mm;
+  left: var(--page-margin);
+  right: var(--page-margin);
+  border-top: 1px solid #EEE;
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 7px;
+  color: var(--swiss-gray-text);
+  font-family: "Courier New", monospace;
+}
+
+.cover-brand {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.cover-brand span {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background: var(--swiss-red);
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.cover-model {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 2.2px;
+  color: var(--swiss-red);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-family: "Courier New", monospace;
+}
+
+.cover-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--swiss-black);
+  line-height: 1;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.cover-subtitle {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--swiss-gray-text);
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.cover-divider {
+  width: 28px;
+  height: 3px;
+  background: var(--swiss-red);
+  margin: 10px 0;
+}
+
+.cover-bottom {
+  border-top: 2px solid var(--swiss-black);
+  padding-top: 6px;
+  font-size: 7.2px;
+  color: var(--swiss-gray-text);
+  line-height: 1.45;
+  font-family: "Courier New", monospace;
+}
+
+@media print {
+  body { background: #FFF; }
+  .page { margin: 0; }
+}
+
+
 .callout-no {
   display: inline-block;
-  min-width: 16px;
+  min-width: 14px;
   font-weight: 700;
 }
 
-.compact-accessories .sub-title { margin: 12px 0 6px; }
-.compact-accessories .steps li { margin-bottom: 6px; line-height: 1.5; }
-.compact-accessories .bullet-list li { padding-top: 1px; padding-bottom: 1px; line-height: 1.5; }
-.compact-accessories .btn-name { font-size: 11px; padding: 0 4px; }
+.compact-structure .fig-wrap {
+  margin: 7px 0;
+}
 
-.compact-ops .sub-title { margin: 11px 0 6px; }
-.compact-ops .steps li { margin-bottom: 5px; line-height: 1.5; }
-.compact-ops .note-box { margin: 8px 0; padding: 8px 12px; font-size: 12px; }
+.compact-structure .fig-wrap img {
+  max-height: 46mm;
+}
 
-.compact-troubleshoot table { font-size: 12px; margin: 8px 0; }
-.compact-troubleshoot th, .compact-troubleshoot td { padding-top: 5px; padding-bottom: 5px; }
+.compact-structure table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
 
-.compact-warranty .sub-title { margin: 12px 0 6px !important; font-size: 14px; }
-.compact-warranty p { margin-bottom: 8px; line-height: 1.55; }
-.compact-warranty .bullet-list li { padding-top: 1px; padding-bottom: 1px; line-height: 1.5; }
-.compact-warranty table { margin: 8px 0; font-size: 12px; }
-.compact-warranty th, .compact-warranty td { padding-top: 5px; padding-bottom: 5px; }
-.compact-warranty .fig-wrap { margin: 4px 0 2px !important; }
-.compact-warranty .fig-wrap img { max-height: 6mm !important; }
+.compact-structure th,
+.compact-structure td {
+  padding: 4px 5px;
+}
 
-.rollbag-guide .bullet-list { margin: 6px 0; }
-.rollbag-guide .bullet-list li { line-height: 1.55; padding-top: 2px; padding-bottom: 2px; }
+.compact-functions .fig-wrap {
+  margin: 6px 0;
+}
+
+.compact-functions .fig-wrap img {
+  max-height: 20mm;
+}
+
+.compact-functions table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-functions th,
+.compact-functions td {
+  padding: 4px 5px;
+  line-height: 1.4;
+}
+
+.compact-functions th:first-child,
+.compact-functions td:first-child {
+  width: 38% !important;
+}
+
+.compact-accessories .sub-title {
+  margin: 9px 0 5px;
+  font-size: 10px;
+}
+
+.compact-accessories .steps li {
+  margin-bottom: 5px;
+}
+
+.compact-accessories .bullet-list li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.compact-accessories .btn-name {
+  font-size: 8px;
+  padding: 0 4px;
+}
+
+.compact-ops .sub-title {
+  margin: 7px 0 4px;
+  font-size: 10px;
+}
+
+.compact-ops p {
+  margin-bottom: 5px;
+}
+
+.compact-ops .steps {
+  margin: 6px 0;
+}
+
+.compact-ops .steps li {
+  margin-bottom: 4px;
+  line-height: 1.42;
+}
+
+.compact-ops .note-box {
+  margin: 6px 0 0;
+  padding: 6px 8px;
+  font-size: 8.6px;
+  line-height: 1.4;
+}
+
+.compact-troubleshoot table {
+  font-size: 8.9px;
+  margin: 6px 0;
+}
+
+.compact-troubleshoot th,
+.compact-troubleshoot td {
+  padding: 4px 5px;
+  line-height: 1.45;
+}
+
+.compact-warranty .sub-title {
+  margin: 10px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-warranty p {
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.compact-warranty .bullet-list li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.compact-warranty table {
+  margin: 6px 0;
+  font-size: 8.9px;
+}
+
+.compact-warranty th,
+.compact-warranty td {
+  padding: 4px 5px;
+}
+
+.compact-warranty .fig-wrap {
+  margin: 4px 0 2px !important;
+}
+
+.compact-warranty .fig-wrap img {
+  max-height: 4mm !important;
+}
+
+.rollbag-guide .bullet-list {
+  margin: 5px 0;
+}
+
+.rollbag-guide .bullet-list li {
+  line-height: 1.45;
+}
+
 .rollbag-stack {
   display: flex;
   flex-direction: column;
-  gap: 8mm;
-  margin-top: 8px;
+  gap: 5mm;
+  margin-top: 5px;
   align-items: center;
   break-inside: avoid;
   page-break-inside: avoid;
 }
+
 .rollbag-figure {
   width: 100%;
   text-align: center;
   break-inside: avoid;
   page-break-inside: avoid;
 }
+
 .rollbag-figure img {
   width: 100%;
-  max-width: 114mm;
+  max-width: 78mm;
   height: auto;
   display: inline-block;
 }
 
 @media print {
-  .compact-accessories .sub-title { margin: 10px 0 5px; }
-  .compact-accessories .steps li { margin-bottom: 5px; }
-  .compact-ops .sub-title { margin: 9px 0 5px; }
-  .compact-ops .steps li { margin-bottom: 4px; }
-  .compact-troubleshoot table { font-size: 11.5px; margin: 6px 0; }
-  .compact-troubleshoot th, .compact-troubleshoot td { padding-top: 4px; padding-bottom: 4px; }
-  .compact-warranty { font-size: 13px; line-height: 1.5; }
-  .compact-warranty table { margin: 6px 0; font-size: 11.5px; }
-  .compact-warranty th, .compact-warranty td { padding-top: 4px; padding-bottom: 4px; }
-  .rollbag-stack { gap: 6mm; margin-top: 6px; }
-  .rollbag-figure img { max-width: 108mm; }
+  .rollbag-stack { gap: 4mm; }
+  .rollbag-figure img { max-width: 74mm; }
 }
 
-.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+.compact-ops .sub-title,
+.compact-accessories .sub-title {
+  margin: 6px 0 4px;
+  font-size: 9.4px;
+}
 
-/* 封面 */
-.cover-brand { font-size: 13px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; }
-.cover-brand span { display: inline-block; width: 28px; height: 4px; background: var(--swiss-red); margin-right: 8px; vertical-align: middle; }
-.cover-model { font-size: 11px; font-weight: 900; letter-spacing: 4px; color: var(--swiss-red); text-transform: uppercase; margin-bottom: 6px; font-family: 'Courier New', monospace; }
-.cover-title { font-size: 52px; font-weight: 900; color: var(--swiss-black); line-height: 0.95; margin-bottom: 4px; text-transform: uppercase; letter-spacing: -2px; }
-.cover-subtitle { font-size: 16px; font-weight: 400; color: var(--swiss-gray-text); margin-bottom: 0; text-transform: uppercase; letter-spacing: 2px; }
-.cover-divider { width: 40px; height: 4px; background: var(--swiss-red); margin: 14px 0; }
-.cover-bottom { border-top: 2px solid var(--swiss-black); padding-top: 8px; font-size: 10px; color: var(--swiss-gray-text); line-height: 1.6; font-family: 'Courier New', monospace; }
+.compact-ops p,
+.compact-accessories p {
+  margin-bottom: 5px;
+}
 
-@media print { body { background: #FFF; } .page { margin: 0; }  }
+.compact-ops .steps,
+.compact-accessories .steps {
+  margin: 5px 0;
+}
+
+.compact-ops .steps li,
+.compact-accessories .steps li {
+  padding-left: 26px;
+  margin-bottom: 3px;
+  font-size: 9.2px;
+  line-height: 1.36;
+}
+
+.compact-ops .step-num,
+.compact-accessories .step-num {
+  width: 17px;
+  height: 17px;
+  font-size: 8.4px;
+}
+
+.compact-ops .btn-name,
+.compact-accessories .btn-name {
+  font-size: 7.7px;
+  padding: 0 3px;
+}
+
+.compact-ops .note-box,
+.compact-accessories .note-box,
+.compact-troubleshoot .note-box {
+  margin-top: 5px;
+  padding: 5px 7px;
+  font-size: 8.3px;
+  line-height: 1.34;
+}
+
+.compact-ops [style*="display:flex"][style*="gap:16px"],
+.compact-accessories [style*="display:flex"][style*="gap:16px"] {
+  gap: 10px !important;
+}
+
+.compact-accessories .bullet-list li,
+.rollbag-guide .bullet-list li {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 9.1px;
+  line-height: 1.34;
+}
+
+.rollbag-stack {
+  gap: 3mm;
+  margin-top: 3px;
+}
+
+.rollbag-figure img {
+  max-width: 68mm;
+}
+
+.compact-troubleshoot table {
+  margin: 4px 0;
+  font-size: 8.1px;
+}
+
+.compact-troubleshoot th,
+.compact-troubleshoot td {
+  padding: 3px 4px;
+  line-height: 1.28;
+}
+
 </style>
 </head>
 <body>
 
 <!-- ========== 封面页 ========== -->
-<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:15mm 10mm 10mm;">
   <div>
     <div class="cover-brand"><span></span>Vesta</div>
   </div>
-  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
-    <div style="text-align:left;margin:0 0 12mm;">
-      <img src="./images_v23/image2.svg" alt="V23 Vacuum Sealer" style="width:100%;height:auto;max-height:85mm;max-width:100%;">
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 10mm;">
+    <div style="text-align:left;margin:0 0 8mm;">
+      <img src="./images_v23/image2.svg" alt="V23 Vacuum Sealer" style="width:100%;height:auto;max-height:54mm;max-width:100%;">
     </div>
     <div class="cover-model">MODEL V23</div>
     <div class="cover-title">Vacuum Sealer</div>
     <div class="cover-subtitle">User Manual</div>
     <div class="cover-divider"></div>
   </div>
-  <div class="cover-bottom">
-    Please read this manual carefully before use and keep it for future reference.<br>
-    All illustrations of products and accessories in this manual are for reference only. Due to product updates and upgrades, actual products may differ slightly from illustrations.
-  </div>
+  <div class="cover-bottom" style="position:absolute;left:14mm;right:14mm;bottom:15mm;">
+  Please read this manual carefully before use and keep it for future reference.<br>
+  All illustrations of products and accessories in this manual are for reference only. Due to product updates and upgrades, actual products may differ slightly from illustrations.
+</div>
+
 </div>
 
 <!-- ========== 目录页 ========== -->
@@ -196,9 +735,9 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
   <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Specifications</span></span><span class="toc-page">7</span></div>
   <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Operation Guide</span></span><span class="toc-page">8</span></div>
   <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Troubleshooting</span></span><span class="toc-page">12</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Maintenance</span></span><span class="toc-page">15</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vacuum Packaging Properties</span></span><span class="toc-page">16</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Brand & Warranty Information</span></span><span class="toc-page">18</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Maintenance</span></span><span class="toc-page">16</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vacuum Packaging Properties</span></span><span class="toc-page">17</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Brand & Warranty Information</span></span><span class="toc-page">19</span></div>
   <div class="page-footer"><span>Vesta V23 User Manual</span><span>2</span></div>
 </div>
 
@@ -276,14 +815,14 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
 <!-- @CONTENT:usage_tips:end -->
 
 <!-- ========== 第3章 产品结构 ========== -->
-<div class="page">
+<div class="page compact-structure">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.03 — STRUCTURE</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">03</span>Product Structure</h2>
   <div class="fig-wrap">
-    <img src="./images_v23/image5.svg" alt="产品结构图">
+    <img src="./images_v23/image5.svg" style="max-height:46mm;" alt="产品结构图">
     <div class="fig-caption">Fig. 1 — Product Structure</div>
   </div>
   <table>
@@ -306,14 +845,14 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
 </div>
 
 <!-- ========== 第4章 产品功能 ========== -->
-<div class="page">
+<div class="page compact-functions">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.04 — FUNCTIONS</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">04</span>Product Functions</h2>
   <div class="fig-wrap">
-    <img src="./images_v23/image10.svg" alt="控制面板">
+    <img src="./images_v23/image10.svg" style="max-height:20mm;" alt="控制面板">
     <div class="fig-caption">Fig. 2 — Control Panel</div>
   </div>
   <table>
@@ -357,7 +896,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
 
 <!-- @CONTENT:operations:start — 操作步骤为最产品特定的部分，新产品需全面重写 -->
 <!-- ========== 第6章 操作指引 ========== -->
-<div class="page">
+<div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.06 — OPERATION</div>
@@ -376,7 +915,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="./images_v23/image12.svg" alt="切袋刀操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+      <img src="./images_v23/image12.svg" alt="切袋刀操作" style="width:34mm;height:auto;object-fit:contain;">
     </div>
   </div>
 
@@ -398,7 +937,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="./images_v23/image14.svg" alt="密封操作" style="width:45mm;height:auto;max-height:40mm;max-width:45mm">
+      <img src="./images_v23/image14.svg" alt="密封操作" style="width:34mm;height:auto;object-fit:contain;">
     </div>
   </div>
 
@@ -444,7 +983,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="./images_v23/image16.svg" alt="液体模式" style="width:45mm;height:auto;max-height:45mm;max-width:45mm">
+      <img src="./images_v23/image16.svg" alt="液体模式" style="width:30mm;height:auto;object-fit:contain;">
     </div>
   </div>
 
@@ -485,7 +1024,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       </ul>
     </div>
     <div style="flex:0 0 auto">
-      <img src="./images_v23/image18.svg" alt="真空软管" style="width:40mm;height:auto;max-height:35mm;max-width:40mm">
+      <img src="./images_v23/image18.svg" alt="真空软管" style="width:30mm;height:auto;object-fit:contain;">
     </div>
   </div>
 
@@ -505,8 +1044,8 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       </ol>
     </div>
     <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:center">
-      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
-      <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:40mm;height:auto;max-height:30mm;max-width:40mm">
+      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:28mm;height:auto;object-fit:contain;">
+      <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:28mm;height:auto;object-fit:contain;">
     </div>
   </div>
 
@@ -525,7 +1064,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="./images_v23/image24.svg" alt="真空罐操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+      <img src="./images_v23/image24.svg" alt="真空罐操作" style="width:30mm;height:auto;object-fit:contain;">
     </div>
   </div>
   <div class="page-footer"><span>Vesta V23 User Manual</span><span>10</span></div>
@@ -554,7 +1093,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       </ol>
     </div>
     <div style="flex:0 0 auto">
-      <img src="./images_v23/image26.svg" alt="腌制操作" style="width:40mm;height:auto;max-height:45mm;max-width:40mm">
+      <img src="./images_v23/image26.svg" alt="腌制操作" style="width:30mm;height:auto;object-fit:contain;">
     </div>
   </div>
 
@@ -646,6 +1185,21 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
         <td>Default seal time insufficient</td>
         <td>Press <span class="btn-name">Extend Seal Time</span> and try again.</td>
       </tr>
+      </tbody>
+  </table>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>12</span></div>
+</div>
+
+<div class="page compact-troubleshoot">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING CONT.</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Troubleshooting (Cont.)</h2>
+
+  <table>
+    <thead><tr><th style="width:22%">Problem</th><th style="width:40%">Possible Cause</th><th style="width:38%">Solution</th></tr></thead>
+    <tbody>
       <tr>
         <td rowspan="3"><b>Bag leaks after vacuum seal</b></td>
         <td>High-temperature tape damaged or detached</td>
@@ -667,7 +1221,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     Some fruits and vegetables release gas if not properly blanched before packaging, or when hot. This can cause the vacuum bag to appear loose. This is normal and not a leak.
   </div>
   <div class="note-box">If the above solutions do not resolve the issue, contact customer service. Do not disassemble the machine yourself.</div>
-  <div class="page-footer"><span>Vesta V23 User Manual</span><span>12</span></div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>14</span></div>
 </div>
 
 <div class="page">
@@ -742,7 +1296,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <div class="box-title">CAUTION</div>
     If not cleaned regularly, internal tubing may become clogged and affect vacuum performance. Contact customer service for tubing replacement.
   </div>
-  <div class="page-footer"><span>Vesta V23 User Manual</span><span>14</span></div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>15</span></div>
 </div>
 
 <!-- @CONTENT:troubleshooting:end -->
@@ -766,7 +1320,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <li>After each use, check if the seal gasket is severely deformed or if the high-temperature tape is damaged or detached. Replace if needed.</li>
     <li>The liquid tray and vacuum hose are not dishwasher safe.</li>
   </ul>
-  <div class="page-footer"><span>Vesta V23 User Manual</span><span>15</span></div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>17</span></div>
 </div>
 
 <!-- @CONTENT:maintenance:end -->
@@ -831,7 +1385,7 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       <tr><td>Coffee / Tea / Powdered Milk</td><td>2–6 months</td><td>12 months</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 User Manual</span><span>17</span></div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>18</span></div>
 </div>
 
 <!-- @CONTENT:vacuum_features:end -->
@@ -874,8 +1428,16 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
   </ul>
   <p style="margin-top:12px">Email us to apply for warranty service: <b>support@vestaprecision.com</b></p>
 
-  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_v23/image31.png" alt="Warranty Card" style="width:100%;max-height:8mm;object-fit:contain;"></div>
-  <div class="sub-title" style="margin-top:14px">Warranty Card</div>
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_v23/image31.png" alt="Warranty Card" style="width:auto;max-width:100%;max-height:4mm;object-fit:contain;"></div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>19</span></div>
+</div>
+
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">Vesta</div>
+    <div class="header-ref">CH.10 — WARRANTY</div>
+  </div>
+<div class="sub-title" style="margin-top:14px">Warranty Card</div>
   <table>
     <tbody>
       <tr><td style="width:35%">Customer Name</td><td></td></tr>
@@ -889,8 +1451,14 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
       <tr><td>Merchant Name</td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 User Manual</span><span>18</span></div>
+  <div class="page-footer"><span>Vesta V23 User Manual</span><span>20</span></div>
 </div>
 
 </body>
 </html>
+
+
+
+
+
+

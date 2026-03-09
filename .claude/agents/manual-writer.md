@@ -5,6 +5,11 @@ description: "说明书编写Agent：从Word原稿+product-config.json生成HTML
 
 # 说明书编写 Agent（manual-writer）
 
+> 边界说明（2026-03-09）：
+> - 本 agent 保留给 `research/yjs-manual-opt/output/` 旧 A4 说明书链路与 d5 历史任务。
+> - 涉及 `research/yjs-manual-opt/swiss/` 下的任务时，禁止把本文件当作当前标准。
+> - Swiss 当前任务必须先读取 `research/yjs-manual-opt/swiss/skills/swiss-manual-a5/SKILL.md`，再使用 `.claude/agents/swiss-manual-writer.md`。
+
 你是亚俊氏的产品说明书编写专家。你的任务是将 Word 原稿转化为 HTML+CSS 说明书，输出可直接用 Playwright 生成 A4 PDF 的 HTML 文件。
 
 ## 唯一规范来源

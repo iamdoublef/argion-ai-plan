@@ -1,0 +1,187 @@
+.compact-structure .fig-wrap {
+  margin: 7px 0;
+}
+
+.compact-structure .fig-wrap img {
+  max-height: 54mm;
+}
+
+.compact-structure table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-structure th,
+.compact-structure td {
+  padding: 4px 5px;
+}
+
+.compact-functions .fig-wrap {
+  margin: 6px 0;
+}
+
+.compact-functions .fig-wrap img {
+  max-height: 24mm;
+}
+
+.compact-functions table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-functions th,
+.compact-functions td {
+  padding: 4px 5px;
+  line-height: 1.4;
+}
+
+.compact-functions th:first-child,
+.compact-functions td:first-child {
+  width: 34% !important;
+}
+
+.compact-ops .sub-title {
+  margin: 10px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-ops .steps li {
+  margin-bottom: 6px;
+}
+
+.compact-ops .note-box {
+  margin-top: 10px;
+  padding: 8px 10px;
+}
+
+.compact-safety .section-title {
+  margin-bottom: 9px;
+}
+
+.compact-safety .warning-box,
+.compact-safety .caution-box,
+.compact-safety .note-box {
+  margin: 8px 0;
+  padding: 8px 10px;
+}
+
+.compact-safety .box-title {
+  margin-bottom: 5px;
+}
+
+.compact-safety .box-list li {
+  font-size: 9.3px;
+  line-height: 1.45;
+}
+
+.compact-safety p {
+  font-size: 9.7px;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.compact-table .section-title {
+  margin-bottom: 8px;
+}
+
+.compact-table table {
+  font-size: 8.9px;
+  margin: 6px 0;
+}
+
+.compact-table th,
+.compact-table td {
+  padding: 4px 5px;
+}
+
+.compact-ts .section-title {
+  margin-bottom: 7px;
+}
+
+.compact-ts .fig-wrap {
+  margin: 8px 0;
+}
+
+.compact-ts .fig-wrap img {
+  max-height: 44mm;
+}
+
+.compact-ts table {
+  font-size: 8.7px;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.compact-ts th,
+.compact-ts td {
+  padding: 4px 5px;
+  vertical-align: top;
+}
+
+.compact-ts .caution-box {
+  margin-top: 8px;
+  font-size: 8.9px;
+  padding: 8px 10px;
+  line-height: 1.4;
+}
+
+.compact-install .section-title {
+  margin-bottom: 7px;
+  line-height: 1.2;
+}
+
+.compact-install .sub-title {
+  margin: 8px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-install .bullet-list li {
+  margin-bottom: 1px;
+  font-size: 9.6px;
+  line-height: 1.45;
+}
+
+.compact-install .note-box {
+  margin-top: 8px !important;
+  padding: 8px 10px;
+  font-size: 8.9px;
+  line-height: 1.4;
+}
+
+.compact-install .note-box .box-title {
+  margin-bottom: 3px;
+  font-size: 8px;
+}
+
+.compact-warranty .sub-title {
+  margin: 10px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-warranty p {
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.compact-warranty .bullet-list li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.compact-warranty table {
+  margin: 6px 0;
+  font-size: 8.9px;
+}
+
+.compact-warranty th,
+.compact-warranty td {
+  padding: 4px 5px;
+}
+
+.compact-warranty .fig-wrap {
+  margin: 4px 0 2px !important;
+}
+
+.compact-warranty .fig-wrap img {
+  max-height: 4mm !important;
+}

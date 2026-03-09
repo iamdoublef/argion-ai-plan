@@ -35,9 +35,21 @@ research/yjs-manual-opt/
     images_v23/                     ← SVG 矢量图（HTML 引用，13张）
   experiments/                      ← 实验/POC（归档）
     2026-02-26_top-tier-styles/     ← 三种高端风格探索（lifestyle/mi-2.0/swiss）
+  swiss/                            ← Swiss A5 共享母版体系
+    DESIGN-STANDARD.md             ← Swiss A5 唯一版式基准
+    SOP-new-product.md             ← Swiss 新产品冷启动 SOP
+    skills/swiss-manual-a5/SKILL.md ← Swiss 项目级 skill 规范
 ```
 
 ## 阶段索引
+
+### 2026-03-09 Swiss A5 项目级 skill + agent 规范固化
+commit: uncommitted
+将 Swiss 当前标准正式从“对话约定”沉淀为项目级 skill + agent 路由体系：新增 `swiss-manual-a5` skill 文档；根 `AGENTS.md` 增加 Swiss 触发语义与强制路由；新增 `swiss-manual-writer`；升级 `swiss-content-auditor` 为“内容 + A5版式 + 真实PDF渲染”审计；旧 `manual-writer/manual-auditor` 明确标注仅保留旧 A4 历史链路。
+- ptr: `file:research/yjs-manual-opt/swiss/skills/swiss-manual-a5/SKILL.md`
+- ptr: `file:.claude/agents/swiss-manual-writer.md`
+- ptr: `file:.claude/agents/swiss-content-auditor.md`
+- ptr: `file:AGENTS.md`
 
 ### 2026-02-25 阶段0完成：目录初始化 + 需求画像确认
 commit: 8c8da28

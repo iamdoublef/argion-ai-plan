@@ -1,7 +1,7 @@
 {
-  "pageCount": 12,
+  "pageCount": 14,
   "imageReport": {
-    "total": 3,
+    "total": 5,
     "failed": 0,
     "zeroWidth": 0,
     "details": [
@@ -9,7 +9,13 @@
         "src": "image1.png",
         "complete": true,
         "naturalWidth": 572,
-        "renderWidth": 248.984375
+        "renderWidth": 151.828125
+      },
+      {
+        "src": "image3.png",
+        "complete": true,
+        "naturalWidth": 48,
+        "renderWidth": 22
       },
       {
         "src": "image5.png",
@@ -22,6 +28,12 @@
         "complete": true,
         "naturalWidth": 572,
         "renderWidth": 188.296875
+      },
+      {
+        "src": "image31.png",
+        "complete": true,
+        "naturalWidth": 664,
+        "renderWidth": 558.125
       }
     ]
   },

@@ -133,6 +133,28 @@ function pickField(obj, base, suffix) {
   return obj[key] !== undefined ? obj[key] : (obj[base] || '');
 }
 
+function resolveTemplateIncludes(entryPath, templateRoot, stack = []) {
+  const normalizedEntry = path.resolve(entryPath);
+  const normalizedRoot = path.resolve(templateRoot);
+  const includePattern = /\{\{>\s*([^}\s]+)\s*\}\}/g;
+
+  if (!normalizedEntry.startsWith(normalizedRoot)) {
+    throw new Error(`Template include escapes template root: ${normalizedEntry}`);
+  }
+  if (stack.includes(normalizedEntry)) {
+    throw new Error(`Template include cycle detected: ${[...stack, normalizedEntry].join(' -> ')}`);
+  }
+  if (!fs.existsSync(normalizedEntry)) {
+    throw new Error(`Template include not found: ${normalizedEntry}`);
+  }
+
+  const source = fs.readFileSync(normalizedEntry, 'utf8');
+  return source.replace(includePattern, (_, includeRef) => {
+    const includePath = path.resolve(normalizedRoot, includeRef);
+    return resolveTemplateIncludes(includePath, normalizedRoot, [...stack, normalizedEntry]);
+  });
+}
+
 // ---------------------------------------------------------------------------
 // Build a single variant
 // ---------------------------------------------------------------------------
@@ -172,7 +194,7 @@ function buildVariant(regionCode, brandOverride) {
     console.error(`Template not found: ${templatePath}`);
     process.exit(1);
   }
-  let html = fs.readFileSync(templatePath, 'utf8');
+  let html = resolveTemplateIncludes(templatePath, path.resolve(__dirname, '..', 'template'));
 
   // Update <html lang="...">
   html = html.replace(/<html lang="[^"]*">/, `<html lang="${lang}">`);
@@ -289,12 +311,11 @@ function buildVariant(regionCode, brandOverride) {
   fs.mkdirSync(outputDir, { recursive: true });
   const imgSrc = path.join(productDir, 'images');
   const imgDst = path.join(outputDir, config.images_dir);
-  if (fs.existsSync(imgSrc) && !fs.existsSync(path.join(imgDst, '.copied'))) {
+  if (fs.existsSync(imgSrc)) {
     fs.mkdirSync(imgDst, { recursive: true });
     for (const f of fs.readdirSync(imgSrc)) {
       fs.copyFileSync(path.join(imgSrc, f), path.join(imgDst, f));
     }
-    fs.writeFileSync(path.join(imgDst, '.copied'), '', 'utf8');
     console.log(`  Copied ${fs.readdirSync(imgSrc).length} images → ${imgDst}`);
   }
 
@@ -313,29 +334,42 @@ function buildVariant(regionCode, brandOverride) {
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
-if (buildAll) {
-  const allRegions = Object.keys(config.regions);
-  const allBrands  = Object.keys(config.brands);
-  const results = [];
+function main() {
+  if (buildAll) {
+    const allRegions = Object.keys(config.regions);
+    const allBrands  = Object.keys(config.brands);
+    const results = [];
 
-  for (const r of allRegions) {
-    for (const b of allBrands) {
-      results.push(buildVariant(r, b));
+    for (const r of allRegions) {
+      for (const b of allBrands) {
+        results.push(buildVariant(r, b));
+      }
     }
+
+    console.log('\n========== BUILD MATRIX SUMMARY ==========');
+    console.log(`Total: ${results.length} variants`);
+    const ok = results.filter(r => r.status === 'OK').length;
+    const warn = results.filter(r => r.status === 'WARNING').length;
+    console.log(`OK: ${ok} | WARNING: ${warn}`);
+    console.log('');
+    results.forEach(r => {
+      console.log(`  [${r.status}] ${r.outName} (${r.sizeKB} KB)`);
+    });
+
+    if (warn > 0) process.exit(1);
+  } else {
+    const result = buildVariant(regionKey, brandKey);
+    if (result.status !== 'OK') process.exit(1);
   }
-
-  console.log('\n========== BUILD MATRIX SUMMARY ==========');
-  console.log(`Total: ${results.length} variants`);
-  const ok = results.filter(r => r.status === 'OK').length;
-  const warn = results.filter(r => r.status === 'WARNING').length;
-  console.log(`OK: ${ok} | WARNING: ${warn}`);
-  console.log('');
-  results.forEach(r => {
-    console.log(`  [${r.status}] ${r.outName} (${r.sizeKB} KB)`);
-  });
-
-  if (warn > 0) process.exit(1);
-} else {
-  const result = buildVariant(regionKey, brandKey);
-  if (result.status !== 'OK') process.exit(1);
 }
+
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  buildVariant,
+  langSuffix,
+  pickField,
+  resolveTemplateIncludes,
+};

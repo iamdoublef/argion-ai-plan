@@ -1,163 +1,717 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IMT050 Macchina per il ghiaccio Manuale d'uso — ACT</title>
+<title>IMT050 Macchina per il ghiaccio Manuale d'uso - ACT</title>
 <style>
+/* SHARED SWISS IT MASTER */
+/* SHARED SWISS BASE MASTER */
 @page { size: 148mm 210mm; margin: 0; }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --swiss-red: #E63946;
   --swiss-black: #000000;
-  --swiss-gray-text: #8E8E93;
+  --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
-  --page-margin: 12mm;
+  --swiss-gray-text: #8E8E93;
   --page-width: 148mm;
   --page-height: 210mm;
+  --page-margin: 10mm;
 }
-html { font-size: 14px; }
-body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--swiss-black); line-height: 1.55; -webkit-font-smoothing: antialiased; background: #FFF; }
-.page { width: var(--page-width); height: var(--page-height); padding: var(--page-margin); position: relative; page-break-after: always; overflow: hidden; }
-.header-strip { border-top: 5px solid var(--swiss-black); padding-top: 10px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
-.header-brand { font-size: 11px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--swiss-gray-text); }
-.header-ref { font-size: 9px; color: var(--swiss-gray-text); letter-spacing: 1px; font-family: 'Courier New', monospace; }
-.section-title { font-size: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; padding-left: 10px; border-left: 5px solid var(--swiss-black); }
-.sub-title { font-size: 13px; font-weight: 700; margin: 18px 0 10px; border-bottom: 2px solid var(--swiss-black); padding-bottom: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
-.step-row { display: flex; gap: 10px; margin-bottom: 10px; }
-.step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--swiss-black); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; margin-top: 1px; }
-.step-text { flex: 1; font-size: 12px; line-height: 1.5; }
-.bullet-list { list-style: none; padding: 0; }
-.bullet-list li { position: relative; padding: 2px 0 2px 16px; margin-bottom: 4px; font-size: 12px; line-height: 1.5; }
-.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--swiss-red); font-weight: 900; font-size: 11px; }
-.warning-box { background: #FFF3F3; border-left: 4px solid var(--swiss-red); padding: 10px 12px; margin: 12px 0; font-size: 12px; }
-.caution-box { background: #FFF8E1; border-left: 4px solid #F5A623; padding: 10px 12px; margin: 12px 0; font-size: 12px; }
-.note-box { background: var(--swiss-gray-bg); border-left: 4px solid var(--swiss-black); padding: 10px 12px; margin: 12px 0; font-size: 12px; }
-.box-title { font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
-.warning-box .box-title { color: var(--swiss-red); }
-.caution-box .box-title { color: #F5A623; }
-.note-box .box-title { color: var(--swiss-black); }
-.box-list { list-style: none; padding: 0; margin: 0; }
-.box-list li { position: relative; padding: 2px 0 2px 16px; font-size: 12px; line-height: 1.45; }
-.box-list li::before { content: "—"; position: absolute; left: 0; font-weight: 900; font-size: 11px; }
-.warning-box .box-list li::before { color: var(--swiss-red); }
-.caution-box .box-list li::before { color: #F5A623; }
-.note-box .box-list li::before { color: var(--swiss-black); }
-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
-th { background: var(--swiss-black); color: #FFF; text-transform: uppercase; text-align: left; padding: 7px 10px; font-weight: 700; border: 1px solid #333; }
-td { padding: 7px 10px; border: 1px solid #CCC; vertical-align: top; }
-tr:nth-child(even) td { background: var(--swiss-gray-bg); }
-.fig-wrap { text-align: center; margin: 12px 0 8px; }
-.fig-wrap img { max-width: 85%; max-height: 65mm; height: auto; object-fit: contain; }
-.fig-caption { text-align: center; font-size: 10px; color: var(--swiss-gray-text); margin-top: 4px; }
-.toc-list { list-style: none; padding: 0; }
-.toc-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #EEE; font-size: 12px; }
-.toc-item span:first-child { font-weight: 700; }
-.toc-item span:last-child { color: var(--swiss-gray-text); font-family: 'Courier New', monospace; font-size: 11px; }
 
-.compact-ops .step-text { font-size: 12px; line-height: 1.45; }
-.compact-ops .sub-title { margin: 6px 0 4px !important; font-size: 12px; padding-bottom: 2px; }
-.compact-ops .section-title { margin-bottom: 6px; font-size: 15px; }
-.compact-ops .bullet-list li { margin-bottom: 2px; font-size: 12px; line-height: 1.4; }
-.compact-safety .section-title { margin-bottom: 6px; font-size: 18px; }
-.compact-safety .warning-box, .compact-safety .caution-box, .compact-safety .note-box { margin: 6px 0; padding: 6px 10px; }
-.compact-safety .box-title { margin-bottom: 3px; font-size: 10px; }
-.compact-safety .box-list li { font-size: 10px; line-height: 1.3; padding: 0.5px 0; }
-.compact-safety p { font-size: 10px; line-height: 1.3; margin-bottom: 4px; }
-.compact-table .section-title { margin-bottom: 10px; font-size: 16px; }
-.compact-table table { font-size: 11.5px; margin: 8px 0; }
-.compact-table th, .compact-table td { padding: 4px 8px; }
-.compact-ts .section-title { margin-bottom: 2px; font-size: 14px; }
-.compact-ts table { font-size: 9px; margin: 2px 0; line-height: 1.25; }
-.compact-ts th, .compact-ts td { padding: 2px 3px; vertical-align: top; word-break: break-word; }
-.compact-ts .caution-box { margin-top: 3px; font-size: 9px; padding: 3px 5px; line-height: 1.25; }
-.compact-warranty .section-title { margin-bottom: 3px; font-size: 13px; }
-.compact-warranty .sub-title { margin: 3px 0 1px !important; font-size: 10.5px; padding-bottom: 0px !important; }
-.compact-warranty p { margin-bottom: 1px; font-size: 10px; line-height: 1.25; }
-.compact-warranty .bullet-list { margin: 1px 0; }
-.compact-warranty .bullet-list li { padding-top: 0; padding-bottom: 0; line-height: 1.2; font-size: 9.5px; }
-.compact-warranty table { margin: 1px 0; font-size: 9.5px; }
-.compact-warranty th, .compact-warranty td { padding: 1px 5px; }
-.compact-warranty .header-strip { margin-bottom: 8px; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 12px; }
+body {
+  background: #2C2C2E;
+  font-family: "Helvetica Neue", "Inter", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--swiss-black);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
 
-.page-footer { position: absolute; bottom: 6mm; left: var(--page-margin); right: var(--page-margin); border-top: 1px solid #EEE; padding-top: 6px; display: flex; justify-content: space-between; font-size: 10px; color: var(--swiss-gray-text); font-family: 'Courier New', monospace; }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  width: var(--page-width);
+  height: var(--page-height);
+  min-height: var(--page-height);
+  padding: var(--page-margin);
+  background: #FFF;
+  margin: 6mm auto;
+  position: relative;
+  overflow: hidden;
+  page-break-after: always;
+}
+
+.header-strip {
+  border-top: 4px solid var(--swiss-black);
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.header-brand {
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.header-ref {
+  font-family: "Courier New", monospace;
+  font-size: 7.5px;
+  color: var(--swiss-gray-text);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  line-height: 1.08;
+  letter-spacing: -0.3px;
+  border-left: 4px solid var(--swiss-black);
+  padding-left: 8px;
+}
+
+.section-title .chapter-num {
+  color: var(--swiss-red);
+  margin-right: 6px;
+}
+
+.sub-title {
+  font-size: 10px;
+  font-weight: 700;
+  border-bottom: 1.5px solid var(--swiss-black);
+  padding-bottom: 3px;
+  margin: 12px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+p {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  color: #222;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.steps li {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  margin-bottom: 6px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.step-num {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  background: var(--swiss-black);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0;
+}
+
+.bullet-list li {
+  padding: 2px 0 2px 12px;
+  position: relative;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.bullet-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  color: var(--swiss-red);
+  font-weight: 900;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.warning-box,
+.caution-box,
+.note-box,
+table,
+.fig-wrap {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.warning-box {
+  border: 2px solid var(--swiss-red);
+  padding: 8px 10px;
+  margin: 10px 0;
+}
+
+.warning-box .box-title {
+  font-size: 8.5px;
+  font-weight: 900;
+  color: var(--swiss-red);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.caution-box {
+  border: 2px solid #000;
+  padding: 8px 10px;
+  margin: 10px 0;
+}
+
+.caution-box .box-title {
+  font-size: 8.5px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.warning-box img,
+.caution-box img,
+.note-box img {
+  display: block;
+  width: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+.note-box {
+  background: var(--swiss-gray-bg);
+  padding: 8px 10px;
+  margin: 10px 0;
+  border-left: 3px solid var(--swiss-gray-text);
+  font-size: 9px;
+  color: #444;
+}
+
+.note-box .box-title {
+  font-weight: 900;
+  color: #333;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-size: 8.5px;
+  letter-spacing: 0.35px;
+}
+
+.box-list {
+  list-style: none;
+  padding: 0;
+}
+
+.box-list li {
+  padding: 1px 0 1px 12px;
+  position: relative;
+  font-size: 9.4px;
+  line-height: 1.45;
+}
+
+.box-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.32em;
+  color: var(--swiss-red);
+  font-weight: 900;
+  font-size: 7px;
+  line-height: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 9px;
+  table-layout: fixed;
+}
+
+th {
+  background: var(--swiss-black);
+  color: #FFF;
+  padding: 5px 6px;
+  text-align: left;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+td {
+  border: 1px solid #CCC;
+  padding: 5px 6px;
+  color: #1A1A1A;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+tr:nth-child(even) td {
+  background: var(--swiss-gray-bg);
+}
+
+.fig-wrap {
+  text-align: center;
+  margin: 8px 0;
+}
+
+.fig-wrap img {
+  width: auto;
+  max-width: 100%;
+  max-height: 54mm;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.fig-caption {
+  font-size: 7.5px;
+  color: var(--swiss-gray-text);
+  margin-top: 3px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.btn-name {
+  display: inline-block;
+  background: #FFF;
+  border: 1px solid var(--swiss-black);
+  padding: 1px 4px;
+  font-size: 8.4px;
+  line-height: 1.2;
+  font-family: "Courier New", monospace;
+  color: #000;
+  font-weight: 700;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.toc-title {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  letter-spacing: -0.6px;
+}
+
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid #EEE;
+  font-size: 10px;
+}
+
+.toc-item > span:first-child {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+}
+
+.toc-chapter {
+  color: var(--swiss-red);
+  font-weight: 900;
+  margin-right: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+}
+
+.toc-name {
+  flex: 1;
+  font-weight: 700;
+  min-width: 0;
+}
+
+.toc-page {
+  color: var(--swiss-gray-text);
+  font-family: "Courier New", monospace;
+  font-size: 8.5px;
+  flex-shrink: 0;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 4mm;
+  left: var(--page-margin);
+  right: var(--page-margin);
+  border-top: 1px solid #EEE;
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 7px;
+  color: var(--swiss-gray-text);
+  font-family: "Courier New", monospace;
+}
+
+.cover-brand {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.cover-brand span {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background: var(--swiss-red);
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.cover-model {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 2.2px;
+  color: var(--swiss-red);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-family: "Courier New", monospace;
+}
+
+.cover-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--swiss-black);
+  line-height: 1;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.cover-subtitle {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--swiss-gray-text);
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.cover-divider {
+  width: 28px;
+  height: 3px;
+  background: var(--swiss-red);
+  margin: 10px 0;
+}
+
+.cover-bottom {
+  border-top: 2px solid var(--swiss-black);
+  padding-top: 6px;
+  font-size: 7.2px;
+  color: var(--swiss-gray-text);
+  line-height: 1.45;
+  font-family: "Courier New", monospace;
+}
 
 @media print {
-  body { background: none; }
-  .page { page-break-after: always; page-break-inside: avoid; }
+  body { background: #FFF; }
+  .page { margin: 0; }
 }
+
+
+.compact-structure .fig-wrap {
+  margin: 7px 0;
+}
+
+.compact-structure .fig-wrap img {
+  max-height: 54mm;
+}
+
+.compact-structure table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-structure th,
+.compact-structure td {
+  padding: 4px 5px;
+}
+
+.compact-functions .fig-wrap {
+  margin: 6px 0;
+}
+
+.compact-functions .fig-wrap img {
+  max-height: 24mm;
+}
+
+.compact-functions table {
+  font-size: 8.8px;
+  margin: 6px 0;
+}
+
+.compact-functions th,
+.compact-functions td {
+  padding: 4px 5px;
+  line-height: 1.4;
+}
+
+.compact-functions th:first-child,
+.compact-functions td:first-child {
+  width: 34% !important;
+}
+
+.compact-ops .sub-title {
+  margin: 10px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-ops .steps li {
+  margin-bottom: 6px;
+}
+
+.compact-ops .note-box {
+  margin-top: 10px;
+  padding: 8px 10px;
+}
+
+.compact-safety .section-title {
+  margin-bottom: 9px;
+}
+
+.compact-safety .warning-box,
+.compact-safety .caution-box,
+.compact-safety .note-box {
+  margin: 8px 0;
+  padding: 8px 10px;
+}
+
+.compact-safety .box-title {
+  margin-bottom: 5px;
+}
+
+.compact-safety .box-list li {
+  font-size: 9.3px;
+  line-height: 1.45;
+}
+
+.compact-safety p {
+  font-size: 9.7px;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.compact-table .section-title {
+  margin-bottom: 8px;
+}
+
+.compact-table table {
+  font-size: 8.9px;
+  margin: 6px 0;
+}
+
+.compact-table th,
+.compact-table td {
+  padding: 4px 5px;
+}
+
+.compact-ts .section-title {
+  margin-bottom: 7px;
+}
+
+.compact-ts .fig-wrap {
+  margin: 8px 0;
+}
+
+.compact-ts .fig-wrap img {
+  max-height: 44mm;
+}
+
+.compact-ts table {
+  font-size: 8.7px;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.compact-ts th,
+.compact-ts td {
+  padding: 4px 5px;
+  vertical-align: top;
+}
+
+.compact-ts .caution-box {
+  margin-top: 8px;
+  font-size: 8.9px;
+  padding: 8px 10px;
+  line-height: 1.4;
+}
+
+.compact-install .section-title {
+  margin-bottom: 7px;
+  line-height: 1.2;
+}
+
+.compact-install .sub-title {
+  margin: 8px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-install .bullet-list li {
+  margin-bottom: 1px;
+  font-size: 9.6px;
+  line-height: 1.45;
+}
+
+.compact-install .note-box {
+  margin-top: 8px !important;
+  padding: 8px 10px;
+  font-size: 8.9px;
+  line-height: 1.4;
+}
+
+.compact-install .note-box .box-title {
+  margin-bottom: 3px;
+  font-size: 8px;
+}
+
+.compact-warranty .sub-title {
+  margin: 10px 0 5px !important;
+  font-size: 10px;
+}
+
+.compact-warranty p {
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.compact-warranty .bullet-list li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.compact-warranty table {
+  margin: 6px 0;
+  font-size: 8.9px;
+}
+
+.compact-warranty th,
+.compact-warranty td {
+  padding: 4px 5px;
+}
+
+.compact-warranty .fig-wrap {
+  margin: 4px 0 2px !important;
+}
+
+.compact-warranty .fig-wrap img {
+  max-height: 4mm !important;
+}
+
 </style>
 </head>
 <body>
 
-<!-- ═══════════ PAGINA 1 — COPERTINA ═══════════ -->
-<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:20mm 14mm 15mm;">
+<!-- Page 1 - Cover -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:15mm 10mm 10mm;">
   <div>
     <div class="cover-brand"><span></span>ACT</div>
   </div>
-  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20mm;">
-    <img src="./images_imt050/image1.png" alt="IMT050 Macchina per il ghiaccio" style="max-width:100%;height:auto;max-height:85mm;">
-  </div>
-    <div class="cover-model">MODELLO IMT050</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 8mm;">
+    <div style="text-align:left;margin:0 0 8mm;">
+      <img src="./images_imt050/image1.png" alt="IMT050 Macchina per il ghiaccio" style="width:auto;height:auto;max-height:48mm;max-width:68%;">
+    </div>
+    <div class="cover-model">MODEL IMT050</div>
     <div class="cover-title">Macchina per il ghiaccio</div>
-    <div style="font-size:11px;color:var(--swiss-gray-text);margin-top:4px;">Manuale d'uso</div>
+    <div class="cover-subtitle">Manuale d'uso</div>
+    <div class="cover-divider"></div>
+  </div>
+  <div class="cover-bottom" style="position:absolute;left:14mm;right:14mm;bottom:15mm;">
+  Leggere attentamente questo manuale prima dell'uso e conservarlo per riferimento futuro.<br>
+  Tutte le illustrazioni di prodotti e accessori in questo manuale sono solo a scopo di riferimento. A causa di aggiornamenti e miglioramenti del prodotto, il prodotto reale potrebbe differire leggermente dalle illustrazioni.
 </div>
 
-<!-- ═══════════ PAGINA 2 — INDICE ═══════════ -->
+</div>
+
+<!-- Page 2 - TOC -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">IMT050 — MANUALE D'USO</div>
+    <div class="header-ref">IMT050 - MANUALE D'USO</div>
   </div>
-  <div class="section-title">Indice</div>
-  <ul class="toc-list">
-    <li class="toc-item"><span>CAP.01 — Sicurezza</span><span>3–4</span></li>
-    <li class="toc-item"><span>CAP.02 — Prima dell'uso</span><span>5</span></li>
-    <li class="toc-item"><span>CAP.03 — Struttura del prodotto</span><span>6</span></li>
-    <li class="toc-item"><span>CAP.04 — Pannello di controllo</span><span>7</span></li>
-    <li class="toc-item"><span>CAP.05 — Specifiche tecniche</span><span>8</span></li>
-    <li class="toc-item"><span>CAP.06 — Funzionamento</span><span>9</span></li>
-    <li class="toc-item"><span>CAP.07 — Pulizia e manutenzione</span><span>10</span></li>
-    <li class="toc-item"><span>CAP.08 — Risoluzione dei problemi</span><span>11</span></li>
-    <li class="toc-item"><span>CAP.09 — Marchio e garanzia</span><span>12</span></li>
-  </ul>
+  <div class="toc-title">Indice</div>
+  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Istruzioni di sicurezza</span></span><span class="toc-page">3</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Suggerimenti per l'uso del prodotto</span></span><span class="toc-page">5</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Struttura del prodotto</span></span><span class="toc-page">6</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Funzioni del prodotto</span></span><span class="toc-page">7</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Specifiche</span></span><span class="toc-page">8</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Guida al funzionamento</span></span><span class="toc-page">9</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Risoluzione dei problemi</span></span><span class="toc-page">10</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Manutenzione</span></span><span class="toc-page">11</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Installazione, Trasporto, Stoccaggio e Smaltimento</span></span><span class="toc-page">12</span></div>
+  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Informazioni su marchio e garanzia</span></span><span class="toc-page">13</span></div>
   <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>2</span></div>
 </div>
 
-<!-- ═══════════ PAGINA 3 — CAP.01 SICUREZZA (1/2) ═══════════ -->
-<!-- @CONTENT:safety:start — Istruzioni di sicurezza complete dal documento Word -->
+<!-- Page 3 - Safety 1 -->
+<!-- @CONTENT:safety:start -->
 <div class="page compact-safety">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.01 — SICUREZZA</div>
+    <div class="header-ref">CAP.01 - SICUREZZA</div>
   </div>
-  <div class="section-title">Istruzioni di sicurezza</div>
+  <h2 class="section-title"><span class="chapter-num">01</span>Istruzioni di sicurezza</h2>
   <p>Per la vostra sicurezza, leggere tutte le istruzioni contenute in questo manuale prima di utilizzare questo apparecchio elettrico e rispettare sempre le seguenti precauzioni:</p>
 
   <div class="warning-box">
     <div class="box-title">AVVERTENZA</div>
+    <div style="margin:6px 0 8px;"><img src="./images_imt050/image3.png" alt="Warning Icon" style="width:22px;height:auto;max-height:22px;object-fit:contain;"></div>
     <ul class="box-list">
-      <li>Questo apparecchio è destinato esclusivamente all'uso domestico. Non utilizzare per scopi diversi da quelli previsti.</li>
-      <li>Non permettere ai bambini di giocare con l'apparecchio o il cavo di alimentazione. Bambini, persone con mobilità ridotta o limitazioni cognitive devono utilizzarlo sotto la supervisione di un adulto.</li>
+      <li>Questo apparecchio &egrave; destinato esclusivamente all'uso domestico. Non utilizzare per scopi diversi da quelli previsti.</li>
+      <li>Non permettere ai bambini di giocare con l'apparecchio o il cavo di alimentazione. Bambini, persone con mobilit&agrave; ridotta o limitazioni cognitive devono utilizzarlo sotto la supervisione di un adulto.</li>
       <li>Le parti piccole possono rappresentare un rischio di soffocamento. Tenere lontano dai bambini.</li>
-      <li>Non utilizzare l'apparecchio in ambienti con elevata umidità o temperatura. Non utilizzare mai in presenza di gas infiammabili o esplosivi.</li>
+      <li>Non utilizzare l'apparecchio in ambienti con elevata umidit&agrave; o temperatura. Non utilizzare mai in presenza di gas infiammabili o esplosivi.</li>
       <li>Verificare che la tensione di alimentazione corrisponda a quella indicata sulla targhetta dell'apparecchio.</li>
       <li>Dopo l'uso, scollegare l'alimentazione.</li>
-      <li>Quando si scollega, afferrare la spina stessa — non tirare il cavo di alimentazione.</li>
+      <li>Quando si scollega, afferrare la spina stessa; non tirare il cavo di alimentazione.</li>
       <li>Non immergere l'apparecchio o il cavo di alimentazione in acqua o altri liquidi.</li>
       <li>Il cavo di alimentazione deve essere collegato direttamente a una presa elettrica conforme.</li>
       <li>In caso di danni alla spina, al cavo o all'apparecchio, cessare immediatamente l'uso e contattare il produttore o un centro assistenza autorizzato. Non riparare da soli.</li>
-      <li>Non lasciare il cavo di alimentazione pendere dal bordo del piano — i bambini potrebbero tirarlo.</li>
+      <li>Non lasciare il cavo di alimentazione pendere dal bordo del piano; i bambini potrebbero tirarlo.</li>
       <li>Non toccare mai le parti elettriche dell'apparecchio con le mani bagnate o a piedi nudi.</li>
       <li>L'alimentazione deve essere dotata di un interruttore differenziale (RCD/salvavita).</li>
       <li>La presa deve essere conforme alle normative locali. Le norme di sicurezza richiedono la messa a terra obbligatoria del prodotto.</li>
       <li>Prima della pulizia, manutenzione o sostituzione delle parti, scollegare sempre l'alimentazione.</li>
       <li>Non inserire mai cacciaviti o altri oggetti nelle aperture di ventilazione.</li>
       <li>Solo tecnici autorizzati possono smontare, ispezionare o riparare questo prodotto.</li>
-      <li>In caso di incendio, non utilizzare acqua — utilizzare un estintore a CO₂.</li>
+      <li>In caso di incendio, non utilizzare acqua; utilizzare un estintore a CO2.</li>
       <li>Non utilizzare mezzi meccanici o metodi diversi da quelli raccomandati dal produttore per accelerare lo sbrinamento.</li>
       <li>Non danneggiare il circuito del refrigerante.</li>
-      <li>Avvertenza: materiali infiammabili — rischio di incendio.</li>
+      <li>Avvertenza: materiali infiammabili; rischio di incendio.</li>
       <li>I rifiuti di refrigerante devono essere smaltiti presso un centro autorizzato. Tenere lontano da fiamme libere.</li>
       <li>Non conservare bombolette aerosol o sostanze esplosive con propellenti infiammabili all'interno del prodotto.</li>
       <li>Mantenere libere tutte le aperture di ventilazione. Tenere il prodotto lontano da fonti di calore o generatori di vapore.</li>
@@ -166,82 +720,85 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
   <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>3</span></div>
 </div>
 
-<!-- ═══════════ PAGINA 4 — CAP.01 SICUREZZA (2/2) ═══════════ -->
+<!-- Page 4 - Safety 2 -->
 <div class="page compact-safety">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.01 — SICUREZZA</div>
+    <div class="header-ref">CAP.01 - SICUREZZA</div>
   </div>
+  <h2 class="section-title"><span class="chapter-num">01</span>Istruzioni di sicurezza (seguito)</h2>
 
   <div class="caution-box">
     <div class="box-title">ATTENZIONE</div>
     <ul class="box-list">
-      <li>Mantenere il prodotto in posizione verticale durante il trasporto. L'inclinazione può causare danni.</li>
-      <li>Dopo il trasporto, lasciare riposare l'apparecchio per 4 ore affinché il refrigerante si stabilizzi prima dell'accensione.</li>
+      <li>Mantenere il prodotto in posizione verticale durante il trasporto. L'inclinazione pu&ograve; causare danni.</li>
+      <li>Dopo il trasporto, lasciare riposare l'apparecchio per 4 ore affinch&eacute; il refrigerante si stabilizzi prima dell'accensione.</li>
       <li>Indossare guanti durante la manutenzione del motore o del sistema di refrigerazione.</li>
       <li>Non ostruire le aperture di ventilazione per garantire il corretto funzionamento.</li>
       <li>Non collocare oggetti non alimentari nella camera del prodotto.</li>
-      <li>Questo prodotto è destinato esclusivamente all'uso interno.</li>
-      <li>Questo prodotto è progettato per produrre ghiaccio dall'acqua potabile. Non utilizzare per altri scopi.</li>
+      <li>Questo prodotto &egrave; destinato esclusivamente all'uso interno.</li>
+      <li>Questo prodotto &egrave; progettato per produrre ghiaccio dall'acqua potabile. Non utilizzare per altri scopi.</li>
     </ul>
   </div>
 
   <div class="note-box">
     <div class="box-title">NOTA</div>
     <ul class="box-list">
-      <li>Il livello di rumore del prodotto è inferiore a 50 dB(A).</li>
-      <li>La classe climatica di questo prodotto è SN, adatta per temperature ambiente di 10°C–32°C / 50°F–89,6°F.</li>
+      <li>Il livello di rumore del prodotto &egrave; inferiore a 50 dB(A).</li>
+      <li>La classe climatica di questo prodotto &egrave; SN, adatta per temperature ambiente di 10&deg;C-32&deg;C / 50&deg;F-89.6&deg;F.</li>
     </ul>
   </div>
   <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>4</span></div>
 </div>
 <!-- @CONTENT:safety:end -->
 
-<!-- ═══════════ PAGINA 5 — CAP.02 PRIMA DELL'USO ═══════════ -->
-<!-- @CONTENT:before_use:start -->
+<!-- Page 5 - Usage Tips -->
+<!-- @CONTENT:usage_tips:start -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.02 — PRIMA DELL'USO</div>
+    <div class="header-ref">CAP.02 - SUGGERIMENTI D'USO</div>
   </div>
-  <div class="section-title">Prima dell'uso</div>
+  <h2 class="section-title"><span class="chapter-num">02</span>Suggerimenti per l'uso del prodotto</h2>
 
-  <div class="sub-title">Requisiti di posizionamento</div>
+  <div class="sub-title">Posizionamento e primo utilizzo</div>
   <ul class="bullet-list">
     <li>Posizionare il prodotto su un piano di lavoro robusto, piano e asciutto.</li>
-    <li>Assicurare almeno 120 mm (4,7") di spazio di ventilazione su tutti i lati.</li>
+    <li>Assicurare almeno 120 mm (4,7&quot;) di spazio di ventilazione su tutti i lati.</li>
     <li>Tenere lontano da fonti di calore (forni, piani cottura, ecc.) e dalla luce solare diretta.</li>
+    <li>Eseguire un ciclo di pulizia prima del primo utilizzo (vedere CAP.08).</li>
+    <li>I primi 5 cicli di produzione fanno parte della fase di raffreddamento. Cubetti inizialmente pi&ugrave; piccoli sono normali.</li>
   </ul>
 
-  <div class="sub-title">Qualità dell'acqua</div>
+  <div class="sub-title">Qualit&agrave; dell'acqua</div>
   <ul class="bullet-list">
-    <li>Utilizzare acqua potabile per la produzione di ghiaccio. Più pura è l'acqua, più trasparente sarà il ghiaccio.</li>
+    <li>Utilizzare acqua potabile per la produzione di ghiaccio. Pi&ugrave; pura &egrave; l'acqua, pi&ugrave; trasparente sar&agrave; il ghiaccio.</li>
     <li>Per una trasparenza ottimale, utilizzare acqua con basso contenuto di minerali (TDS &lt; 200 mg/L).</li>
     <li>Fonti adatte: acqua purificata, acqua filtrata a osmosi inversa, acqua profondamente filtrata, acqua minerale a basso TDS.</li>
-    <li><strong>NON</strong> utilizzare: bevande colorate, aromatizzate, gassate o sature di gas (tè, succo, caffè, latte, bibite, ecc.) — possono contaminare o danneggiare il prodotto.</li>
+    <li><strong>NON</strong> utilizzare: bevande colorate, aromatizzate, gassate o sature di gas (t&egrave;, succo, caff&egrave;, latte, bibite, ecc.); possono contaminare o danneggiare il prodotto.</li>
   </ul>
 
-  <div class="sub-title">Primo utilizzo</div>
+  <div class="sub-title">Indicazioni d'uso</div>
   <ul class="bullet-list">
-    <li>Rimuovere tutti i materiali di imballaggio dopo l'apertura della confezione.</li>
-    <li>Pulire l'interno con un panno umido, quindi asciugare accuratamente.</li>
-    <li>Eseguire un ciclo di pulizia prima del primo utilizzo (vedere CAP.07).</li>
-    <li>I primi 5 cicli di produzione sono una fase di raffreddamento — le dimensioni del ghiaccio aumenteranno gradualmente con il diminuire della temperatura dell'acqua. Questo è normale.</li>
+    <li>Rimuovere tutti i materiali di imballaggio, pulire l'interno con un panno umido e asciugare accuratamente.</li>
+    <li>Quando il cestello del ghiaccio &egrave; pieno, l'unit&agrave; si mette automaticamente in pausa e segnala la condizione.</li>
+    <li>Non &egrave; possibile produrre pi&ugrave; dimensioni contemporaneamente, ma &egrave; possibile cambiare dimensione durante il funzionamento.</li>
+    <li>Una leggera opacit&agrave; del ghiaccio durante l'uso continuo &egrave; normale e dipende da acqua, temperatura e ambiente.</li>
   </ul>
 
   <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>5</span></div>
 </div>
-<!-- @CONTENT:before_use:end -->
+<!-- @CONTENT:usage_tips:end -->
 
-<!-- ═══════════ PAGINA 6 — CAP.03 STRUTTURA ═══════════ -->
+<!-- Page 6 - Structure -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.03 — STRUTTURA</div>
+    <div class="header-ref">CAP.03 - STRUTTURA</div>
   </div>
-  <div class="section-title">Struttura del prodotto</div>
+  <h2 class="section-title"><span class="chapter-num">03</span>Struttura del prodotto</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image5.png" alt="Struttura del prodotto" style="max-height:90mm;">
+    <img src="./images_imt050/image5.png" alt="Struttura del prodotto" style="max-height:56mm;">
   </div>
   <table>
     <thead><tr><th style="width:15%;">N.</th><th>Nome</th><th style="width:15%;">N.</th><th>Nome</th></tr></thead>
@@ -255,15 +812,16 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
   <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>6</span></div>
 </div>
 
-<!-- ═══════════ PAGINA 7 — CAP.04 PANNELLO DI CONTROLLO ═══════════ -->
+<!-- Page 7 - Features -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.04 — PANNELLO DI CONTROLLO</div>
+    <div class="header-ref">CAP.04 - FUNZIONI</div>
   </div>
-  <div class="section-title">Pannello di controllo</div>
+  <h2 class="section-title"><span class="chapter-num">04</span>Funzioni del prodotto</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image7.png" alt="Pannello di controllo" style="max-height:50mm;">
+    <img src="./images_imt050/image7.png" alt="Pannello di controllo" style="max-height:24mm;">
+    <div class="fig-caption">FIG. 2 - PANNELLO DI CONTROLLO</div>
   </div>
   <table>
     <thead><tr><th style="width:25%;">N. / Pulsante</th><th>Descrizione</th></tr></thead>
@@ -278,13 +836,13 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
   <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>7</span></div>
 </div>
 
-<!-- ═══════════ PAGINA 8 — CAP.05 SPECIFICHE TECNICHE ═══════════ -->
+<!-- Page 8 - Specifications -->
 <div class="page compact-table">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.05 — SPECIFICHE TECNICHE</div>
+    <div class="header-ref">CAP.05 - SPECIFICHE TECNICHE</div>
   </div>
-  <div class="section-title">Specifiche tecniche</div>
+  <h2 class="section-title"><span class="chapter-num">05</span>Specifiche tecniche</h2>
   <table>
     <thead><tr><th style="width:40%;">Parametro</th><th>Specifica</th></tr></thead>
     <tbody>
@@ -310,31 +868,33 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
   <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>8</span></div>
 </div>
 
-<!-- ═══════════ PAGINA 9 — CAP.06 FUNZIONAMENTO ═══════════ -->
+<!-- Page 9 - Operation -->
 <!-- @CONTENT:operations:start -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.06 — FUNZIONAMENTO</div>
+    <div class="header-ref">CAP.06 - FUNZIONAMENTO</div>
   </div>
-  <div class="section-title">Guida al funzionamento</div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Guida al funzionamento</h2>
 
   <div class="sub-title">Produzione del ghiaccio</div>
-  <div class="step-row"><div class="step-num">1</div><div class="step-text">Rimuovere il serbatoio dell'acqua, riempire con acqua potabile fino alla linea dell'acqua e riposizionarlo nell'unità.</div></div>
-  <div class="step-row"><div class="step-num">2</div><div class="step-text">Collegare il cavo di alimentazione. Premere il pulsante <b>Power</b> — l'indicatore si illumina in bianco e l'unità si accende.</div></div>
-  <div class="step-row"><div class="step-num">3</div><div class="step-text">Premere il pulsante <b>Produzione ghiaccio</b> per selezionare la dimensione (S / M / L). L'unità inizia a produrre ghiaccio automaticamente.</div></div>
-  <div class="step-row"><div class="step-num">4</div><div class="step-text">Attendere la formazione del ghiaccio. I cubetti a proiettile cadranno automaticamente nel cestello del ghiaccio.</div></div>
-  <div class="step-row"><div class="step-num">5</div><div class="step-text">Aprire il coperchio, rimuovere il cestello del ghiaccio e raccogliere il ghiaccio. Riposizionare il cestello e l'unità riprende automaticamente.</div></div>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Rimuovere il serbatoio dell'acqua, riempire con acqua potabile fino alla linea dell'acqua e riposizionarlo nell'unit&agrave;.</li>
+    <li><span class="step-num">2</span>Collegare il cavo di alimentazione. Premere il pulsante <b>Power</b>; l'indicatore si illumina in bianco e l'unit&agrave; si accende.</li>
+    <li><span class="step-num">3</span>Premere il pulsante <b>Produzione ghiaccio</b> per selezionare la dimensione (S / M / L). L'unit&agrave; inizia a produrre ghiaccio automaticamente.</li>
+    <li><span class="step-num">4</span>Attendere la formazione del ghiaccio. I cubetti a proiettile cadranno automaticamente nel cestello del ghiaccio.</li>
+    <li><span class="step-num">5</span>Aprire il coperchio, rimuovere il cestello del ghiaccio e raccogliere il ghiaccio. Riposizionare il cestello e l'unit&agrave; riprende automaticamente.</li>
+  </ol>
 
   <div class="note-box" style="margin-top:12px;">
     <div class="box-title">AVVISO</div>
     <ul class="box-list">
       <li>Premere <b>Produzione ghiaccio</b> durante il funzionamento per cambiare la dimensione del ghiaccio.</li>
-      <li>Tenere premuto <b>Power</b> per interrompere la produzione e spegnere l'unità.</li>
-      <li>Quando il cestello è pieno, l'indicatore <b>GHIACCIO PIENO</b> si illumina in verde e l'unità si mette in pausa. Rimuovere il ghiaccio o attendere che si sciolga — l'unità riprende automaticamente.</li>
-      <li>Quando il serbatoio è basso, l'indicatore <b>AGGIUNGERE ACQUA</b> si illumina in rosso. Riempire tempestivamente.</li>
-      <li>Non è possibile produrre più dimensioni contemporaneamente, ma è possibile cambiare dimensione durante il ciclo.</li>
-      <li>Un'opacità occasionale durante la produzione continua è normale, dovuta alla qualità dell'acqua, temperatura e condizioni ambientali.</li>
+      <li>Tenere premuto <b>Power</b> per interrompere la produzione e spegnere l'unit&agrave;.</li>
+      <li>Quando il cestello &egrave; pieno, l'indicatore <b>GHIACCIO PIENO</b> si illumina in verde e l'unit&agrave; si mette in pausa. Rimuovere il ghiaccio o attendere che si sciolga; l'unit&agrave; riprende automaticamente.</li>
+      <li>Quando il serbatoio &egrave; basso, l'indicatore <b>AGGIUNGERE ACQUA</b> si illumina in rosso. Riempire tempestivamente.</li>
+      <li>Non &egrave; possibile produrre pi&ugrave; dimensioni contemporaneamente, ma &egrave; possibile cambiare dimensione durante il ciclo.</li>
+      <li>Un'opacit&agrave; occasionale durante la produzione continua &egrave; normale, dovuta alla qualit&agrave; dell'acqua, alla temperatura e alle condizioni ambientali.</li>
     </ul>
   </div>
 
@@ -342,58 +902,20 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
 </div>
 <!-- @CONTENT:operations:end -->
 
-<!-- ═══════════ PAGINA 10 — CAP.07 PULIZIA ═══════════ -->
-<!-- @CONTENT:cleaning:start -->
-<div class="page compact-ops">
-  <div class="header-strip">
-    <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.07 — PULIZIA E MANUTENZIONE</div>
-  </div>
-  <div class="section-title">Pulizia e manutenzione</div>
-
-  <div class="sub-title">Pulizia automatica (Stampo ghiaccio e vaschetta)</div>
-  <div class="step-row"><div class="step-num">1</div><div class="step-text">Riempire il serbatoio dell'acqua fino alla linea dell'acqua.</div></div>
-  <div class="step-row"><div class="step-num">2</div><div class="step-text">Con l'unità accesa, premere il pulsante <b>Pulizia</b>. L'indicatore si illumina in bianco e l'unità si pulisce automaticamente.</div></div>
-  <div class="step-row"><div class="step-num">3</div><div class="step-text">Al termine della pulizia, l'unità si ferma automaticamente e l'indicatore si spegne.</div></div>
-
-  <div class="sub-title">Scarico dell'acqua</div>
-  <div class="step-row"><div class="step-num">1</div><div class="step-text">Scollegare il cavo di alimentazione e posizionare l'unità vicino a un lavandino.</div></div>
-  <div class="step-row"><div class="step-num">2</div><div class="step-text">Rimuovere il tappo di scarico dal fondo dell'unità e far defluire tutta l'acqua.</div></div>
-  <div class="step-row"><div class="step-num">3</div><div class="step-text">Una volta scaricata, riposizionare saldamente il tappo di scarico.</div></div>
-
-  <div class="sub-title">Manutenzione quotidiana</div>
-  <ul class="bullet-list">
-    <li>Sciacquare regolarmente l'interno con acqua pulita — si consiglia una <b>pulizia prima di ogni utilizzo quotidiano</b>.</li>
-    <li>Pulire l'esterno con un panno morbido e umido. Non utilizzare detergenti abrasivi o corrosivi.</li>
-    <li>Seguire i passaggi di pulizia automatica per pulire lo stampo del ghiaccio e la vaschetta.</li>
-  </ul>
-
-  <div class="sub-title">Conservazione a lungo termine</div>
-  <ul class="bullet-list">
-    <li>Eseguire un ciclo di pulizia.</li>
-    <li>Scaricare tutta l'acqua dall'unità.</li>
-    <li>Asciugare l'interno e lasciare il coperchio aperto per l'asciugatura naturale.</li>
-    <li>Scollegare il cavo di alimentazione e conservare in un luogo asciutto e ventilato.</li>
-  </ul>
-
-  <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>10</span></div>
-</div>
-<!-- @CONTENT:cleaning:end -->
-
-<!-- ═══════════ PAGINA 11 — CAP.08 RISOLUZIONE DEI PROBLEMI ═══════════ -->
+<!-- Page 10 - Troubleshooting -->
 <!-- @CONTENT:troubleshooting:start -->
 <div class="page compact-ts">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.08 — RISOLUZIONE DEI PROBLEMI</div>
+    <div class="header-ref">CAP.07 - RISOLUZIONE DEI PROBLEMI</div>
   </div>
-  <div class="section-title">Risoluzione dei problemi</div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi</h2>
 
   <table>
     <thead><tr><th style="width:22%;">Problema</th><th style="width:33%;">Possibile causa</th><th>Soluzione</th></tr></thead>
     <tbody>
       <tr>
-        <td>L'unità non si accende</td>
+        <td>L'unit&agrave; non si accende</td>
         <td>Alimentazione non collegata o presa senza corrente</td>
         <td>Verificare il collegamento elettrico e assicurarsi che la presa funzioni.</td>
       </tr>
@@ -413,49 +935,125 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
         <td>Riempire l'acqua fino alla linea, lasciare riposare per 30 minuti, quindi riavviare. Controllare attraverso la finestra se l'acqua viene pompata nella vaschetta.</td>
       </tr>
       <tr>
-        <td>Si ferma a metà ciclo</td>
+        <td>Si ferma a met&agrave; ciclo</td>
         <td>Cestello ghiaccio pieno (indicatore GHIACCIO PIENO verde)</td>
-        <td>Rimuovere il ghiaccio o attendere che si sciolga. L'unità riprende automaticamente.</td>
+        <td>Rimuovere il ghiaccio o attendere che si sciolga. L'unit&agrave; riprende automaticamente.</td>
       </tr>
       <tr>
-        <td>Si ferma a metà ciclo</td>
+        <td>Si ferma a met&agrave; ciclo</td>
         <td>Serbatoio acqua basso (indicatore AGGIUNGERE ACQUA rosso)</td>
-        <td>Riempire tempestivamente il serbatoio. L'unità riprende automaticamente.</td>
+        <td>Riempire tempestivamente il serbatoio. L'unit&agrave; riprende automaticamente.</td>
       </tr>
       <tr>
         <td>Prime 5 porzioni piccole</td>
         <td>Temperatura dell'acqua ancora alta (fase di raffreddamento)</td>
-        <td>È normale. Le dimensioni del ghiaccio aumenteranno con il diminuire della temperatura dell'acqua.</td>
+        <td>&Egrave; normale. Le dimensioni del ghiaccio aumenteranno con il diminuire della temperatura dell'acqua.</td>
       </tr>
       <tr>
-        <td>Qualità del ghiaccio scarsa</td>
+        <td>Qualit&agrave; del ghiaccio scarsa</td>
         <td>Ventilazione insufficiente o temperatura ambientale elevata</td>
-        <td>Assicurare ≥120 mm di spazio su tutti i lati; spostare l'unità in un'area fresca e ventilata.</td>
+        <td>Assicurare almeno 120 mm di spazio su tutti i lati; spostare l'unit&agrave; in un'area fresca e ventilata.</td>
       </tr>
       <tr>
         <td>Ghiaccio non trasparente</td>
         <td>Alto contenuto di minerali nell'acqua o effetti di temperatura</td>
-        <td>Utilizzare acqua purificata con TDS &lt; 200 mg/L. Un'opacità occasionale durante l'uso continuo è normale.</td>
+        <td>Utilizzare acqua purificata con TDS &lt; 200 mg/L. Un'opacit&agrave; occasionale durante l'uso continuo &egrave; normale.</td>
       </tr>
     </tbody>
   </table>
 
   <div class="caution-box" style="margin-top:14px;">
-    <div class="box-title">ESCLUSIONE DI RESPONSABILITÀ</div>
-    <p>Il produttore, i distributori e i proprietari del marchio non sono responsabili per danni o problemi di qualità derivanti da un utilizzo non conforme a questo manuale.</p>
+    <div class="box-title">ESCLUSIONE DI RESPONSABILIT&Agrave;</div>
+    <p>Il produttore, i distributori e i proprietari del marchio non sono responsabili per danni o problemi di qualit&agrave; derivanti da un utilizzo non conforme a questo manuale.</p>
   </div>
 
-  <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>11</span></div>
+  <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>10</span></div>
 </div>
 <!-- @CONTENT:troubleshooting:end -->
 
-<!-- ═══════════ PAGINA 12 — CAP.09 GARANZIA ═══════════ -->
+<!-- Page 11 - Maintenance -->
+<!-- @CONTENT:maintenance:start -->
+<div class="page compact-ops">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CAP.08 - MANUTENZIONE</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">08</span>Manutenzione</h2>
+
+  <div class="sub-title">Pulizia automatica (Stampo ghiaccio e vaschetta)</div>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Riempire il serbatoio dell'acqua fino alla linea dell'acqua.</li>
+    <li><span class="step-num">2</span>Con l'unit&agrave; accesa, premere il pulsante <b>Pulizia</b>. L'indicatore si illumina in bianco e l'unit&agrave; si pulisce automaticamente.</li>
+    <li><span class="step-num">3</span>Al termine della pulizia, l'unit&agrave; si ferma automaticamente e l'indicatore si spegne.</li>
+  </ol>
+
+  <div class="sub-title">Scarico dell'acqua</div>
+  <ol class="steps">
+    <li><span class="step-num">1</span>Scollegare il cavo di alimentazione e posizionare l'unit&agrave; vicino a un lavandino.</li>
+    <li><span class="step-num">2</span>Rimuovere il tappo di scarico dal fondo dell'unit&agrave; e far defluire tutta l'acqua.</li>
+    <li><span class="step-num">3</span>Una volta scaricata, riposizionare saldamente il tappo di scarico.</li>
+  </ol>
+
+  <div class="sub-title">Manutenzione quotidiana</div>
+  <ul class="bullet-list">
+    <li>Sciacquare regolarmente l'interno con acqua pulita; si consiglia una <b>pulizia prima di ogni utilizzo quotidiano</b>.</li>
+    <li>Pulire l'esterno con un panno morbido e umido. Non utilizzare detergenti abrasivi o corrosivi.</li>
+    <li>Seguire i passaggi di pulizia automatica per pulire lo stampo del ghiaccio e la vaschetta.</li>
+    <li>Scollegare sempre l'alimentazione prima della manutenzione e lasciare raffreddare il prodotto.</li>
+  </ul>
+
+  <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>11</span></div>
+</div>
+<!-- @CONTENT:maintenance:end -->
+
+<!-- Page 12 - Installation / Transport / Storage / Disposal -->
+<!-- @CONTENT:install_transport_storage_disposal:start -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CAP.09 - INSTALLAZIONE / STOCCAGGIO / SMALTIMENTO</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">09</span>Installazione, trasporto, stoccaggio e smaltimento</h2>
+
+  <div class="sub-title">Imballaggio e trasporto</div>
+  <ul class="bullet-list">
+    <li>Mantenere il prodotto bilanciato durante il trasporto per evitare ribaltamenti. L'angolo di inclinazione non deve superare 45&deg;.</li>
+    <li>Tenere sempre l'unit&agrave; in posizione verticale durante movimentazione e trasporto per proteggere compressore e circuito refrigerante.</li>
+    <li>Dopo il trasporto, lasciare riposare l'unit&agrave; in posizione verticale per 4 ore prima dell'accensione.</li>
+  </ul>
+
+  <div class="sub-title">Installazione</div>
+  <ul class="bullet-list">
+    <li>Installare il prodotto su una superficie piana, stabile e asciutta. Non utilizzarlo inclinato.</li>
+    <li>Non trascinare o forzare il prodotto durante il posizionamento per evitare ribaltamenti o danni ai componenti.</li>
+    <li>Mantenere almeno 120 mm (4,7&quot;) di distanza da pareti e altri oggetti per ventilazione e accesso alla manutenzione.</li>
+    <li>Tenere il prodotto lontano da fonti di calore, vapore e luce solare diretta.</li>
+  </ul>
+
+  <div class="sub-title">Stoccaggio e smaltimento</div>
+  <ul class="bullet-list">
+    <li>Prima di un lungo periodo di stoccaggio, scaricare completamente l'acqua dal serbatoio e dalla cavit&agrave; interna, quindi pulire e asciugare accuratamente.</li>
+    <li>Conservare l'unit&agrave; in un ambiente asciutto e ventilato, evitando carichi pesanti o esposizione all'umidit&agrave;.</li>
+    <li>Questo prodotto contiene componenti elettronici e refrigerante R600a e non deve essere smaltito con i rifiuti domestici.</li>
+    <li>A fine vita, contattare un centro di riciclaggio autorizzato o il rivenditore e seguire le normative locali sullo smaltimento.</li>
+  </ul>
+
+  <div class="note-box" style="margin-top:14px;">
+    <div class="box-title">WEEE / R600a</div>
+    Non danneggiare il circuito del refrigerante. Il trattamento a fine vita deve essere gestito da un servizio qualificato di riciclaggio o smaltimento per evitare rischi ambientali o di sicurezza.
+  </div>
+
+  <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>12</span></div>
+</div>
+<!-- @CONTENT:install_transport_storage_disposal:end -->
+
+<!-- Page 13 - Warranty -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CAP.09 — GARANZIA</div>
+    <div class="header-ref">CAP.10 - GARANZIA</div>
   </div>
-  <div class="section-title">Informazioni su marchio e garanzia</div>
+  <h2 class="section-title"><span class="chapter-num">10</span>Informazioni su marchio e garanzia</h2>
 
   <p>Grazie per aver acquistato il ACT Macchina per il ghiaccio. Per qualsiasi domanda, contattateci a:<br>support@thespacetec.com | www.thespacetec.com</p>
 
@@ -475,19 +1073,30 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
   </table>
 
   <div class="sub-title">Informazioni sulla garanzia</div>
-  <p>Questo prodotto è coperto da una <b>garanzia limitata di 2 anno/i</b>. Il servizio di sostituzione in garanzia è disponibile entro 2 anno/i dalla data di acquisto originale. Per essere idonei alla sostituzione in garanzia, è necessario:</p>
+  <p>Questo prodotto &egrave; coperto da una <b>garanzia limitata di 2 anno/i</b>. Il servizio di sostituzione in garanzia &egrave; disponibile entro 2 anno/i dalla data di acquisto originale. Per essere idonei alla sostituzione in garanzia, &egrave; necessario:</p>
   <ul class="bullet-list">
     <li>Aver acquistato il prodotto negli ultimi 2 anno/i.</li>
     <li>Disporre del numero d'ordine originale o dell'indirizzo email utilizzato al momento dell'acquisto.</li>
     <li>In caso di acquisto tramite un rivenditore o partner commerciale, fornire una copia della ricevuta originale.</li>
   </ul>
-  <p style="margin-top:8px">Inviateci un'email per richiedere il servizio di garanzia: <b>support@thespacetec.com</b></p>
+  <p style="margin-top:12px">Inviateci un'email per richiedere il servizio di garanzia: <b>support@thespacetec.com</b></p>
 
-  <div class="sub-title" style="margin-top:10px;">Scheda di garanzia</div>
+  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_imt050/image31.png" alt="Separatore scheda di garanzia"></div>
+  <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>13</span></div>
+</div>
+
+<!-- PAGE 14 - WARRANTY CARD -->
+<div class="page compact-warranty">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CAP.10 - GARANZIA</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">10</span>Informazioni su marchio e garanzia (Cont.)</h2>
+  <div class="sub-title" style="margin-top:14px;">Scheda di garanzia</div>
   <table>
     <tr><td style="width:35%;">Nome del cliente</td><td></td></tr>
     <tr><td>Indirizzo</td><td></td></tr>
-    <tr><td>Città / Provincia / CAP</td><td></td></tr>
+    <tr><td>Citt? / Provincia / CAP</td><td></td></tr>
     <tr><td>Numero di telefono</td><td></td></tr>
     <tr><td>Indirizzo email</td><td></td></tr>
     <tr><td>Data di acquisto originale</td><td></td></tr>
@@ -496,8 +1105,9 @@ tr:nth-child(even) td { background: var(--swiss-gray-bg); }
     <tr><td>Nome del rivenditore</td><td></td></tr>
   </table>
 
-  <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>12</span></div>
+  <div class="page-footer"><span>ACT IMT050 Manuale d'uso</span><span>14</span></div>
 </div>
 
 </body>
 </html>
+
