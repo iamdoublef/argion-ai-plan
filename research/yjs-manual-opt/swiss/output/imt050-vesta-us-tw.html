@@ -116,6 +116,76 @@ p {
   line-height: 1.5;
 }
 
+.step-flow {
+  margin: 8px 0;
+}
+
+.split-panel {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 8px 0;
+}
+
+.split-panel-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.split-panel-figures {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  max-width: 38%;
+}
+
+.split-panel-figures img {
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.step-flow-step {
+  margin-bottom: 6px;
+}
+
+.step-flow-row {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  min-height: 18px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.step-text {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.figure-row {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.step-figures {
+  margin: 4px 0 8px 28px !important;
+  width: calc(100% - 28px);
+}
+
+.qa-item + .qa-item {
+  margin-top: 8px;
+}
+
+.contact-cut-line {
+  margin: 6px auto 0;
+  max-width: 68%;
+  border-top: 2px dotted #333;
+}
+
 .step-num {
   position: absolute;
   left: 0;
@@ -664,21 +734,20 @@ tr:nth-child(even) td {
     <div class="header-ref">IMT050 — 使用說明書</div>
   </div>
   <div class="toc-title">目錄</div>
-  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">安全須知</span></span><span class="toc-page">3</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">產品及使用提示</span></span><span class="toc-page">5</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">產品結構</span></span><span class="toc-page">6</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">產品功能</span></span><span class="toc-page">7</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">技術參數</span></span><span class="toc-page">8</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">操作指引</span></span><span class="toc-page">9</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">故障排除</span></span><span class="toc-page">11</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">維護保養</span></span><span class="toc-page">12</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">安裝運輸、存儲与拆除</span></span><span class="toc-page">13</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">品牌与保修信息</span></span><span class="toc-page">14</span></div>
+    <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">安全須知</span></span><span class="toc-page">3</span></div>
+<div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">產品及使用提示</span></span><span class="toc-page">5</span></div>
+<div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">產品結構</span></span><span class="toc-page">6</span></div>
+<div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">產品功能</span></span><span class="toc-page">7</span></div>
+<div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">技術參數</span></span><span class="toc-page">8</span></div>
+<div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">操作指引</span></span><span class="toc-page">9</span></div>
+<div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">故障排除</span></span><span class="toc-page">11</span></div>
+<div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">維護保養</span></span><span class="toc-page">12</span></div>
+<div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">安裝運輸、存儲与拆除</span></span><span class="toc-page">13</span></div>
+<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">品牌与保修信息</span></span><span class="toc-page">14</span></div>
+
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>2</span></div>
 </div>
 
-<!-- ═══════════ PAGE 3 — CH.01 SAFETY (1/2) ═══════════ -->
-<!-- @CONTENT:safety:start — 製冰機專用安全須知（完整版，来自Word源文件） -->
 <div class="page compact-safety">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
@@ -686,111 +755,100 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>安全須知</h2>
   <p>為了您的安全，在使用本電器產品前，請閱讀本手册中的所有說明，並始終遵守以下安全預防措施：</p>
-
-  <div class="warning-box">
-    <div class="box-title">警告 WARNING</div>
-    <div style="margin:6px 0 8px;"><img src="./images_imt050/image3.png" alt="Warning Icon" style="width:22px;height:auto;max-height:22px;object-fit:contain;"></div>
-    <ul class="box-list">
-      <li>本機僅供家庭使用，請勿用於其他非設計用途。</li>
-      <li>請勿讓兒童玩耍本機或電源線。兒童、行動不便或認知受限人士應在成年人監督下使用。</li>
-      <li>小零件可能造成窒息危險，請勿讓兒童接觸。</li>
-      <li>請勿在高濕高溫等環境使用本機，嚴禁在有易燃易爆氣體的環境中使用。</li>
-      <li>請確保電源電壓与機器銘牌標示一致。</li>
-      <li>使用後請切斷電源。</li>
-      <li>從電源插座上拔出插头時請手握插头拔出，請勿拉扯電源線。</li>
-      <li>請勿將主機或電源線浸入水中或其他液體中。</li>
-      <li>電源線需要直接插接符合安全規範的電源插座上。</li>
-      <li>如發现插头、電源線或主機損壞，請立即停止使用並聯繫製造商或授權維修點處理，請勿自行拆修。</li>
-      <li>電源線請勿懸掛於臺麵邊缘，以免兒童拉扯或意外絆倒。</li>
-      <li>禁止在手脚潮濕或未穿鞋的情况下觸摸產品電源部件。</li>
-      <li>產品所連接的電源需有漏電保護裝置。</li>
-      <li>插座必須滿足當地法規要求，安全法規要求强製進行產品接地。</li>
-      <li>清潔、維護或更換部件時，必須切斷電源。</li>
-      <li>切勿將螺絲刀或其它物體插入散熱孔中。</li>
-      <li>只有授權技術人员才能進行拆機檢查和維修。</li>
-      <li>發生火灾時，切勿浇水，請使用二氧化碳灭火器。</li>
-      <li>除製造商推荐的方法外，不能使用機械手段或其他方法加速除霜。</li>
-      <li>不要損壞製冷劑回路。</li>
-      <li>警告：易燃材料，存在發生火灾的風險。</li>
-      <li>製冷劑废料需在授權废物處理中心處理，不能靠近火源。</li>
-      <li>請勿在本產品中儲存含有易燃推進劑的氣溶膠罐等爆炸性物質。</li>
-      <li>保持所有通風口顺畅，保持產品远離熱源或蒸汽裝置。</li>
-    </ul>
-  </div>
+<div class="warning-box">
+        <div class="box-title">警告 WARNING</div>
+        <div style="margin:6px 0 8px;"><img src="./images_imt050/image3.png" alt="Warning icon" style="max-height:22px;width:22px;object-fit:contain"></div>
+        <ul class="box-list">
+            <li>本機僅供家庭使用，請勿用於其他非設計用途。</li>
+<li>請勿讓兒童玩耍本機或電源線。兒童、行動不便或認知受限人士應在成年人監督下使用。</li>
+<li>小零件可能造成窒息危險，請勿讓兒童接觸。</li>
+<li>請勿在高濕高溫等環境使用本機，嚴禁在有易燃易爆氣體的環境中使用。</li>
+<li>請確保電源電壓与機器銘牌標示一致。</li>
+<li>使用後請切斷電源。</li>
+<li>從電源插座上拔出插头時請手握插头拔出，請勿拉扯電源線。</li>
+<li>請勿將主機或電源線浸入水中或其他液體中。</li>
+<li>電源線需要直接插接符合安全規範的電源插座上。</li>
+<li>如發现插头、電源線或主機損壞，請立即停止使用並聯繫製造商或授權維修點處理，請勿自行拆修。</li>
+<li>電源線請勿懸掛於臺麵邊缘，以免兒童拉扯或意外絆倒。</li>
+<li>禁止在手脚潮濕或未穿鞋的情况下觸摸產品電源部件。</li>
+<li>產品所連接的電源需有漏電保護裝置。</li>
+<li>插座必須滿足當地法規要求，安全法規要求强製進行產品接地。</li>
+<li>清潔、維護或更換部件時，必須切斷電源。</li>
+<li>切勿將螺絲刀或其它物體插入散熱孔中。</li>
+<li>只有授權技術人员才能進行拆機檢查和維修。</li>
+<li>發生火灾時，切勿浇水，請使用二氧化碳灭火器。</li>
+<li>除製造商推荐的方法外，不能使用機械手段或其他方法加速除霜。</li>
+<li>不要損壞製冷劑回路。</li>
+<li>警告：易燃材料，存在發生火灾的風險。</li>
+<li>製冷劑废料需在授權废物處理中心處理，不能靠近火源。</li>
+<li>請勿在本產品中儲存含有易燃推進劑的氣溶膠罐等爆炸性物質。</li>
+<li>保持所有通風口顺畅，保持產品远離熱源或蒸汽裝置。</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>3</span></div>
 </div>
 
-<!-- ═══════════ PAGE 4 — CH.01 SAFETY (2/2) ═══════════ -->
 <div class="page compact-safety">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.01 — SAFETY</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>安全須知（續）</h2>
-
   <div class="caution-box">
-    <div class="box-title">注意 CAUTION</div>
-    <ul class="box-list">
-      <li>移動或運輸產品時保持產品直立，否則可能導致產品損壞。</li>
-      <li>運輸後需静置4小時，待冷媒稳定後再通電。</li>
-      <li>對電機和製冷繫统進行維護時要戴手套。</li>
-      <li>切勿阻塞散熱孔，以確保產品的良好運轉。</li>
-      <li>請勿將非食品類物品放置於腔體中。</li>
-      <li>本產品僅限室內使用。</li>
-      <li>本產品設計為將饮用水製作成冰，請不要將本產品用於設計外用途。</li>
-    </ul>
-  </div>
-
-  <div class="note-box">
-    <div class="box-title">提示 NOTICE</div>
-    <ul class="box-list">
-      <li>產品噪音等級低於50 dB(A)。</li>
-      <li>本產品的氣候類型為SN，適合在10℃~32℃ / 50℉~89.6℉ 的環境溫度中使用。</li>
-    </ul>
-  </div>
+        <div class="box-title">注意 CAUTION</div>
+        
+        <ul class="box-list">
+            <li>移動或運輸產品時保持產品直立，否則可能導致產品損壞。</li>
+<li>運輸後需静置4小時，待冷媒稳定後再通電。</li>
+<li>對電機和製冷繫统進行維護時要戴手套。</li>
+<li>切勿阻塞散熱孔，以確保產品的良好運轉。</li>
+<li>請勿將非食品類物品放置於腔體中。</li>
+<li>本產品僅限室內使用。</li>
+<li>本產品設計為將饮用水製作成冰，請不要將本產品用於設計外用途。</li>
+          </ul>
+      </div>
+<div class="note-box">
+        <div class="box-title">提示 NOTICE</div>
+        
+        <ul class="box-list">
+            <li>產品噪音等級低於50 dB(A)。</li>
+<li>本產品的氣候類型為SN，適合在10℃~32℃ / 50℉~89.6℉ 的環境溫度中使用。</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>4</span></div>
 </div>
-<!-- @CONTENT:safety:end -->
 
-<!-- ═══════════ PAGE 5 — CH.02 USAGE TIPS ═══════════ -->
-<!-- @CONTENT:usage_tips:start — 製冰機產品及使用提示 -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.02 — USAGE TIPS</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">02</span>產品及使用提示</h2>
-
   <div class="sub-title">放置与首次使用</div>
-  <ul class="bullet-list">
-    <li>將產品放置在坚固、平坦、乾燥的臺麵上。</li>
-    <li>確保產品四周留有至少 120mm（4.7"）的通風間距。</li>
-    <li>远離熱源（烤箱、灶臺等），避免阳光直射。</li>
-    <li>首次使用前，請先運行一次清潔程序（參见 CH.08 維護保養）。</li>
-    <li>首次製冰前 5 次属於水降溫阶段，冰形会随水溫下降逐渐增大，属正常现象。</li>
-  </ul>
-
-  <div class="sub-title">用水要求</div>
-  <ul class="bullet-list">
-    <li>使用饮用水即可製冰，饮用水越纯净則冰越透明。</li>
-    <li>若想達到理想透明度，請使用矿物質含量较低的饮用水（TDS &lt; 200mg/L）。</li>
-    <li>適用水源：纯净饮用水、RO反渗透處理自来水、深度過滤自来水、低TDS矿泉水。</li>
-    <li><strong>禁止</strong>使用有色、有味、有氣泡或含過饱和氣體的饮品（茶、果汁、咖啡、牛奶、汽水等），这些会污染甚至損壞產品。</li>
-  </ul>
-
-  <div class="sub-title">使用提示</div>
-  <ul class="bullet-list">
-    <li>開箱後取出全部包裝材料，並用濕布擦拭產品內部後再擦乾。</li>
-    <li>子弹冰篮裝滿後，產品会自動暫停製冰並發出提示音。</li>
-    <li>三种尺寸不能同時製作，但可在製冰途中切換另一种尺寸。</li>
-    <li>連續製冰過程中，受水質、水溫和環境溫度影響，偶尔出现冰块不透明属正常现象。</li>
-  </ul>
-
+<ul class="bullet-list">
+        <li>將產品放置在坚固、平坦、乾燥的臺麵上。</li>
+<li>確保產品四周留有至少 120mm（4.7&quot;）的通風間距。</li>
+<li>远離熱源（烤箱、灶臺等），避免阳光直射。</li>
+<li>首次使用前，請先運行一次清潔程序（參见 CH.08 維護保養）。</li>
+<li>首次製冰前 5 次属於水降溫阶段，冰形会随水溫下降逐渐增大，属正常现象。</li>
+      </ul>
+<div class="sub-title">用水要求</div>
+<ul class="bullet-list">
+        <li>使用饮用水即可製冰，饮用水越纯净則冰越透明。</li>
+<li>若想達到理想透明度，請使用矿物質含量较低的饮用水（TDS &lt; 200mg/L）。</li>
+<li>適用水源：纯净饮用水、RO反渗透處理自来水、深度過滤自来水、低TDS矿泉水。</li>
+<li><b>禁止</b>使用有色、有味、有氣泡或含過饱和氣體的饮品（茶、果汁、咖啡、牛奶、汽水等），这些会污染甚至損壞產品。</li>
+      </ul>
+<div class="sub-title">使用提示</div>
+<ul class="bullet-list">
+        <li>開箱後取出全部包裝材料，並用濕布擦拭產品內部後再擦乾。</li>
+<li>子弹冰篮裝滿後，產品会自動暫停製冰並發出提示音。</li>
+<li>三种尺寸不能同時製作，但可在製冰途中切換另一种尺寸。</li>
+<li>連續製冰過程中，受水質、水溫和環境溫度影響，偶尔出现冰块不透明属正常现象。</li>
+      </ul>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>5</span></div>
 </div>
-<!-- @CONTENT:usage_tips:end -->
 
-<!-- ═══════════ PAGE 6 — CH.03 STRUCTURE ═══════════ -->
 <div class="page compact-structure">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
@@ -798,9 +856,10 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">03</span>產品結構</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image5.png" alt="產品結構" style="max-height:56mm;">
+    <img src="./images_imt050/image5.png" alt="Product structure diagram" style="max-height:56mm;object-fit:contain">
+    
   </div>
-  <table>
+<table>
     <thead><tr><th style="width:15%;">編號</th><th>名稱</th><th style="width:15%;">編號</th><th>名稱</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>腔蓋</td><td>5</td><td>水箱提手</td></tr>
@@ -812,7 +871,6 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>6</span></div>
 </div>
 
-<!-- ═══════════ PAGE 7 — CH.04 FUNCTIONS ═══════════ -->
 <div class="page compact-functions">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
@@ -820,15 +878,15 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">04</span>產品功能</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image7.png" alt="控製麵板" style="max-height:24mm;">
-    <div class="fig-caption">圖 2 — 控製麵板</div>
+    <img src="./images_imt050/image7.png" alt="Structure legend" style="max-height:24mm;object-fit:contain">
+    
   </div>
-  <div class="fig-wrap" style="margin:4px 0 6px;">
-    <img src="./images_imt050/image9.png" alt="控製麵板按鍵標注" style="max-height:20mm;">
-    <div class="fig-caption">圖 3 — 按鍵標注</div>
+<div class="fig-wrap">
+    <img src="./images_imt050/image9.png" alt="Control panel diagram" style="max-height:20mm;object-fit:contain">
+    
   </div>
-  <table>
-    <thead><tr><th style="width:25%;">No. / 按鍵</th><th>功能說明</th></tr></thead>
+<table>
+    <thead><tr><th style="width:45%;">No. / 按鍵</th><th>功能說明</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Power</span>　電源</td><td>點擊開機，長按關機。</td></tr>
       <tr><td><span class="callout-no">2</span> <span class="btn-name">Make Ice</span>　製冰</td><td>切換製冰尺寸（S / M / L），選擇後產品自動製冰。</td></tr>
@@ -840,7 +898,6 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>7</span></div>
 </div>
 
-<!-- ═══════════ PAGE 8 — CH.05 SPECIFICATIONS ═══════════ -->
 <div class="page compact-table">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
@@ -848,7 +905,7 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">05</span>技術參數</h2>
   <table>
-    <thead><tr><th style="width:40%;">參數</th><th>規格</th></tr></thead>
+    <thead><tr><th>參數</th><th>規格</th></tr></thead>
     <tbody>
       <tr><td>電壓</td><td>110~120 Vac</td></tr>
       <tr><td>频率</td><td>60 Hz</td></tr>
@@ -872,37 +929,51 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>8</span></div>
 </div>
 
-<!-- ═══════════ PAGE 9 — CH.06 OPERATION ═══════════ -->
-<!-- @CONTENT:operations:start — 製冰機操作步驟 -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>操作指引</h2>
-
-  <div class="sub-title">製冰操作</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>將水箱取出，加入饮用水至水位線，然後放回產品內。</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image14.png" alt="向水箱注水" style="max-height:28mm;max-width:30%;object-fit:contain;">
-    <img src="./images_imt050/image16.png" alt="水位刻度" style="max-height:28mm;max-width:30%;object-fit:contain;">
-    <img src="./images_imt050/image18.png" alt="將水箱放回產品內" style="max-height:28mm;max-width:30%;object-fit:contain;">
+  <div class="sub-title">工作前准备</div>
+<ul class="bullet-list">
+        <li>務必將產品放置在平整稳固的平麵，且產品背部和右侧散熱孔處不能放置任何东西，以免阻擋散熱。產品与墙或物品之間距離必須 ≥ 120 mm（4.7 in），以確保通風良好。</li>
+<li>若第一次使用產品，或距離上一次很長時間没有使用產品，請先運行一次清潔程序。請參閱 CH.08 維護保養中的清潔說明。</li>
+      </ul>
+<div class="sub-title">產品開機</div>
+<ul class="bullet-list">
+        <li>给產品接通電源，產品發出“滴”一聲，所有按鍵點亮後再熄灭，表示已經接通電源。</li>
+<li>然後點擊 <b>Power</b> 按鍵，按鍵显示白燈，產品已處於開機狀態。</li>
+      </ul>
+<div class="sub-title">如何製作子弹冰</div>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">打開腔蓋，並取出子弹冰篮和水箱。</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">给子弹冰水箱中注滿水，注水至水位刻度處。</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image14.png" alt="Fill water tank" style="max-height:24mm;max-width:35%;object-fit:contain">
+<img src="./images_imt050/image16.png" alt="Water level mark" style="max-height:24mm;max-width:35%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="2">
-    <li><span class="step-num">2</span>將冰篮放入腔體，蓋上腔蓋。</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image20.png" alt="放入冰篮" style="max-height:32mm;max-width:35%;object-fit:contain;">
-    <img src="./images_imt050/image22.png" alt="關閉腔蓋" style="max-height:32mm;max-width:35%;object-fit:contain;">
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">然後將水箱放入子弹冰內腔，請用手按壓下水箱，確保已經裝到位。水箱鬆動可能導致產品無法工作。</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image18.png" alt="Seat tank inside chamber" style="max-height:24mm;max-width:35%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="3">
-    <li><span class="step-num">3</span>連接電源，點擊 <b>Power</b> 按鍵，按鍵显示白燈，產品開機。</li>
-  </ol>
-
+    </div>
+  </div>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>9</span></div>
 </div>
 
@@ -912,250 +983,248 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>操作指引（續）</h2>
-
-  <ol class="steps" start="4">
-    <li><span class="step-num">4</span>點擊 <b>Make Ice</b> 按鍵選擇製冰尺寸（S / M / L），選擇後產品自動開始製冰。</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image24.png" alt="選擇製冰尺寸" style="max-height:28mm;max-width:35%;object-fit:contain;">
-    <img src="./images_imt050/image26.png" alt="製冰尺寸指示燈" style="max-height:28mm;max-width:55%;object-fit:contain;">
+  <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">然後放入子弹冰篮，並關閉腔蓋。</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image20.png" alt="Return ice basket" style="max-height:28mm;max-width:30%;object-fit:contain">
+<img src="./images_imt050/image22.png" alt="Close lid" style="max-height:28mm;max-width:30%;object-fit:contain">
+<img src="./images_imt050/image24.png" alt="Unit closed" style="max-height:28mm;max-width:30%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="5">
-    <li><span class="step-num">5</span>等待製冰完成。子弹冰会自動脫落至冰篮中。</li>
-    <li><span class="step-num">6</span>打開腔蓋，取出冰篮，獲取冰块。將冰篮放回後，產品自動继續製冰。</li>
-  </ol>
-
-  <div style="display:flex;gap:4mm;align-items:center;justify-content:center;margin:8px 0 4px;font-size:9px;">
-    <span>ICE FULL →</span>
-    <img src="./images_imt050/image28.png" alt="ICE FULL" style="height:14px;vertical-align:middle;">
-    <span style="margin-left:6mm;">ADD WATER →</span>
-    <img src="./images_imt050/image30.png" alt="ADD WATER" style="height:14px;vertical-align:middle;">
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">點擊 <b>Make Ice</b> 按鍵，切換點亮按鍵上方的 S / M / L 指示燈，選擇需要製作的子弹冰尺寸。</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image26.png" alt="Select ice size" style="max-height:28mm;max-width:55%;object-fit:contain">
   </div>
-
-  <div class="note-box" style="margin-top:12px;">
-    <div class="box-title">NOTICE</div>
-    <ul class="box-list">
-      <li>製冰中途可點擊 <b>Make Ice</b> 按鍵切換製冰尺寸。</li>
-      <li>製冰中途可長按 <b>Power</b> 按鍵終止製冰並關機。</li>
-      <li>冰篮裝滿後，<b>ICE FULL</b> 指示燈亮绿燈，產品自動暫停。取走冰块或冰融解後自動恢復製冰。</li>
-      <li>水箱缺水時，<b>ADD WATER</b> 指示燈亮红燈，請及時给水箱补充水。</li>
-      <li>三种尺寸不能同時製作，但可在製冰途中切換。</li>
-      <li>連續製冰過程中，受水質、水溫、環境溫度影響，偶尔出现不透明情况属正常现象。</li>
-    </ul>
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">6</span>
+        <div class="step-text">選擇完尺寸後，產品自動開始製作子弹冰。</div>
+      </div>
+      
+    </div>
   </div>
-
+<div class="figure-row status-indicator-row" style="display:flex;gap:4mm;justify-content:center;align-items:center;margin:8px 0 4px;font-size:9px">
+    <span>ICE FULL →</span><img src="./images_imt050/image28.png" alt="Ice full indicator" style="height:14px;object-fit:contain;display:inline-block;vertical-align:middle">
+<span>ADD WATER →</span><img src="./images_imt050/image30.png" alt="Add water indicator" style="height:14px;object-fit:contain;display:inline-block;vertical-align:middle">
+  </div>
+<div class="note-box">
+        <div class="box-title">提示 NOTICE</div>
+        
+        <ul class="box-list">
+            <li>製冰中途可點擊 <b>Make Ice</b> 按鍵切換製冰尺寸。</li>
+<li>製冰中途可點擊 <b>Power</b> 按鍵終止，子弹冰製冰按鍵燈熄灭，產品停止子弹冰製冰。</li>
+<li>當產品檢测到子弹冰冰篮裝滿後，<b>ICE FULL</b> 警示燈點亮為绿燈，產品停止製冰。待冰融解，或取走後，產品会自動恢復製冰。</li>
+<li>請留意，製冰期間若 <b>ADD WATER</b> 警示燈點亮红燈，產品会停止製冰，請及時给水箱补充水。</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>10</span></div>
 </div>
-<!-- @CONTENT:operations:end -->
 
-<!-- ═══════════ PAGE 11 — CH.07 TROUBLESHOOTING ═══════════ -->
-<!-- @CONTENT:troubleshooting:start — 製冰機故障排除 -->
 <div class="page compact-ts">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>故障排除</h2>
-
   <table>
     <thead><tr><th style="width:22%;">故障现象</th><th style="width:33%;">可能原因</th><th>解決方案</th></tr></thead>
     <tbody>
-      <tr>
-        <td>不能開機</td>
-        <td>電源未連接或插座無電</td>
-        <td>檢查電源連接及插座是否正常。</td>
-      </tr>
-      <tr>
-        <td>不能排水</td>
-        <td>排水膠塞未鬆開或排水口堵塞</td>
-        <td>檢查產品底部排水膠塞是否已鬆開；檢查排水口是否堵塞。</td>
-      </tr>
-      <tr>
-        <td>不能製冰</td>
-        <td>水箱缺水（ADD WATER亮红燈）</td>
-        <td>给水箱加水至水位線。</td>
-      </tr>
-      <tr>
-        <td>不能製冰</td>
-        <td>製冰模具只結霜無法結冰（管道無法抽水）</td>
-        <td>加水至水位線，静置半小時後重新啟動。观察製冰兜是否有注水，有則表示抽水泵已復位。</td>
-      </tr>
-      <tr>
-        <td>製冰中途停止</td>
-        <td>冰篮已滿（ICE FULL亮绿燈）</td>
-        <td>取走冰块或等待冰融解，產品会自動恢復製冰。</td>
-      </tr>
-      <tr>
-        <td>製冰中途停止</td>
-        <td>水箱缺水（ADD WATER亮红燈）</td>
-        <td>及時给水箱补充水，產品会自動恢復製冰。</td>
-      </tr>
-      <tr>
-        <td>前5次冰块偏小</td>
-        <td>水溫较高，處於降溫阶段</td>
-        <td>属正常现象，冰形会随水溫下降逐渐增大，達到標准尺寸。</td>
-      </tr>
-      <tr>
-        <td>製冰效果不理想</td>
-        <td>通風間距不足或環境溫度過高</td>
-        <td>確保四周≥120mm間距；將產品移至阴涼通風處。</td>
-      </tr>
-      <tr>
-        <td>冰块不透明</td>
-        <td>水質矿物質含量高或水溫/環溫影響</td>
-        <td>使用TDS&lt;200mg/L的纯净水；連續製冰偶尔不透明属正常现象。</td>
-      </tr>
+<tr><td>不能開機</td><td>電源未連接或插座無電</td><td>檢查電源連接及插座是否正常。</td></tr>
+<tr><td>不能排水</td><td>排水膠塞未鬆開或排水口堵塞</td><td>檢查產品底部排水膠塞是否已鬆開；檢查排水口是否堵塞。</td></tr>
+<tr><td>不能製冰</td><td>水箱缺水（ADD WATER亮红燈）</td><td>给水箱加水至水位線。</td></tr>
+<tr><td>不能製冰</td><td>製冰模具只結霜無法結冰（管道無法抽水）</td><td>加水至水位線，静置半小時後重新啟動。观察製冰兜是否有注水，有則表示抽水泵已復位。</td></tr>
+<tr><td>製冰中途停止</td><td>冰篮已滿（ICE FULL亮绿燈）</td><td>取走冰块或等待冰融解，產品会自動恢復製冰。</td></tr>
+<tr><td>製冰中途停止</td><td>水箱缺水（ADD WATER亮红燈）</td><td>及時给水箱补充水，產品会自動恢復製冰。</td></tr>
+<tr><td>前5次冰块偏小</td><td>水溫较高，處於降溫阶段</td><td>属正常现象，冰形会随水溫下降逐渐增大，達到標准尺寸。</td></tr>
+<tr><td>製冰效果不理想</td><td>通風間距不足或環境溫度過高</td><td>確保四周≥120mm間距；將產品移至阴涼通風處。</td></tr>
+<tr><td>冰块不透明</td><td>水質矿物質含量高或水溫/環溫影響</td><td>使用TDS&lt;200mg/L的纯净水；連續製冰偶尔不透明属正常现象。</td></tr>
     </tbody>
   </table>
-
-  <div class="caution-box" style="margin-top:14px;">
-    <div class="box-title">免责聲明 DISCLAIMER</div>
-    <p style="font-size:11.5px;line-height:1.5;margin:0;">如果用戶不按照本手册操作產品，並對產品造成任何損壞或質量問題，工廠、經銷商及品牌商將不承担任何责任。</p>
-  </div>
-
+<div class="caution-box">
+        <div class="box-title">免责聲明 DISCLAIMER</div>
+        
+        如果用戶不按照本手册操作產品，並對產品造成任何損壞或質量問題，工廠、經銷商及品牌商將不承担任何责任。
+      </div>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>11</span></div>
 </div>
-<!-- @CONTENT:troubleshooting:end -->
 
-<!-- ═══════════ PAGE 12 — CH.08 MAINTENANCE ═══════════ -->
-<!-- @CONTENT:maintenance:start — 製冰機維護保養 -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.08 — MAINTENANCE</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">08</span>維護保養</h2>
-
   <div class="sub-title">自動清潔（製冰模具和製冰兜）</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>给水箱加水至水位線。</li>
-    <li><span class="step-num">2</span>開機狀態下，點擊 <b>Clean</b> 按鍵，按鍵燈亮白燈，產品自動清潔製冰兜和製冰模。</li>
-    <li><span class="step-num">3</span>清潔完成後，產品自動停止，按鍵燈熄灭。</li>
-  </ol>
-
-  <div class="sub-title">排水操作</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>斷開電源，將產品放置到水槽旁。</li>
-    <li><span class="step-num">2</span>將產品底部的排水孔塞鬆脫，讓內腔的水排乾。</li>
-    <li><span class="step-num">3</span>排水完成後，將排水孔塞回原位。</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:6px 0 8px;">
-    <img src="./images_imt050/image10.png" alt="排水孔位置" style="max-height:26mm;max-width:48%;object-fit:contain;">
-    <img src="./images_imt050/image12.png" alt="內腔底部接水口" style="max-height:26mm;max-width:28%;object-fit:contain;">
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">给水箱加水至水位線。</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">開機狀態下，點擊 <b>Clean</b> 按鍵，按鍵燈亮白燈，產品自動清潔製冰兜和製冰模。</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">清潔完成後，產品自動停止，按鍵燈熄灭。</div>
+      </div>
+      
+    </div>
   </div>
-
-  <div class="sub-title">日常保養</div>
-  <ul class="bullet-list">
-    <li>定期用乾净的水清洗產品內部，建議<b>每天使用前清洗一次</b>。</li>
-    <li>用柔軟濕布擦拭產品外壳，請勿使用腐蚀性清潔劑。</li>
-    <li>請遵循自動清潔步驟清洗製冰模具和製冰兜。</li>
-    <li>清潔保養前請拔掉電源，待產品冷却後再進行處理。</li>
-  </ul>
-
+<div class="sub-title">排水操作</div>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">斷開電源，將產品放置到水槽旁。</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">將產品底部的排水孔塞鬆脫，讓內腔的水排乾。</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">排水完成後，將排水孔塞回原位。</div>
+      </div>
+      
+    </div>
+  </div>
+<div class="figure-row" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image10.png" alt="Drain plug" style="max-height:26mm;max-width:48%;object-fit:contain">
+<img src="./images_imt050/image12.png" alt="Drain container" style="max-height:26mm;max-width:28%;object-fit:contain">
+  </div>
+<div class="sub-title">日常保養</div>
+<ul class="bullet-list">
+        <li>定期用乾净的水清洗產品內部，建議<b>每天使用前清洗一次</b>。</li>
+<li>用柔軟濕布擦拭產品外壳，請勿使用腐蚀性清潔劑。</li>
+<li>請遵循自動清潔步驟清洗製冰模具和製冰兜。</li>
+<li>清潔保養前請拔掉電源，待產品冷却後再進行處理。</li>
+      </ul>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>12</span></div>
 </div>
-<!-- @CONTENT:maintenance:end -->
 
-<!-- ═══════════ PAGE 13 — CH.09 INSTALLATION / STORAGE / DISPOSAL ═══════════ -->
-<!-- @CONTENT:install_transport_storage_disposal:start — 源稿章節恢復 -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.09 — INSTALLATION / STORAGE / DISPOSAL</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">09</span>安裝運輸、存儲与拆除</h2>
-
   <div class="sub-title">包裝運輸</div>
-  <ul class="bullet-list">
-    <li>運輸過程中請保持平衡，防止倾翻；產品倾斜角不得大於 45°。</li>
-    <li>移動或運輸產品時應保持直立狀態，避免損壞壓缩機和製冷繫统。</li>
-    <li>運輸後需静置 4 小時，待冷媒稳定後再通電。</li>
-  </ul>
-
-  <div class="sub-title">安裝</div>
-  <ul class="bullet-list">
-    <li>請將產品安裝在平整、稳固、乾燥的臺麵上，不得倾斜放置。</li>
-    <li>搬運時不要推拉產品，以避免倾覆或損壞部件。</li>
-    <li>產品四周与墙或物品之間需保持至少 120mm（4.7"）的間距，以確保通風和可維護性。</li>
-    <li>請远離熱源、蒸汽和阳光直射環境。</li>
-  </ul>
-
-  <div class="sub-title">存儲与拆除</div>
-  <ul class="bullet-list">
-    <li>長期存放前，請排空水箱和內腔中的水，並完成清潔与擦乾。</li>
-    <li>請將產品置於乾燥、通風環境中保存，避免重壓和潮濕。</li>
-    <li>本產品含電子元件和 R600a 製冷劑，不得与生活垃圾一同丟棄。</li>
-    <li>拆除或報废時，請聯繫授權回收機構或零售商，按當地法規進行環保處置。</li>
-  </ul>
-
-  <div class="note-box" style="margin-top:14px;">
-    <div class="box-title">WEEE / R600a</div>
-    請勿損壞製冷劑回路。若需要報废處理，請交由具备資質的废棄物處理機構回收，以避免對環境和人身安全造成風險。
-  </div>
-
+<ul class="bullet-list">
+        <li>運輸過程中請保持平衡，防止倾翻；產品倾斜角不得大於 45°。</li>
+<li>移動或運輸產品時應保持直立狀態，避免損壞壓缩機和製冷繫统。</li>
+<li>運輸後需静置 4 小時，待冷媒稳定後再通電。</li>
+      </ul>
+<div class="sub-title">安裝</div>
+<ul class="bullet-list">
+        <li>請將產品安裝在平整、稳固、乾燥的臺麵上，不得倾斜放置。</li>
+<li>搬運時不要推拉產品，以避免倾覆或損壞部件。</li>
+<li>產品四周与墙或物品之間需保持至少 120mm（4.7&quot;）的間距，以確保通風和可維護性。</li>
+<li>請远離熱源、蒸汽和阳光直射環境。</li>
+      </ul>
+<div class="sub-title">存儲与拆除</div>
+<ul class="bullet-list">
+        <li>長期存放前，請排空水箱和內腔中的水，並完成清潔与擦乾。</li>
+<li>請將產品置於乾燥、通風環境中保存，避免重壓和潮濕。</li>
+<li>本產品含電子元件和 R600a 製冷劑，不得与生活垃圾一同丟棄。</li>
+<li>拆除或報废時，請聯繫授權回收機構或零售商，按當地法規進行環保處置。</li>
+      </ul>
+<div class="note-box">
+        <div class="box-title">WEEE / R600a</div>
+        
+        請勿損壞製冷劑回路。若需要報废處理，請交由具备資質的废棄物處理機構回收，以避免對環境和人身安全造成風險。
+      </div>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>13</span></div>
 </div>
-<!-- @CONTENT:install_transport_storage_disposal:end -->
 
-<!-- ═══════════ PAGE 14 — CH.10 WARRANTY ═══════════ -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.10 — WARRANTY</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">10</span>品牌与保修信息</h2>
-
   <p>感谢您購買 Vesta 製冰機。如有任何問題，請通過以下方式聯繫我们：<br>support@vestaprecision.com | www.vestaprecision.com</p>
-
-  <div class="sub-title">品牌商信息</div>
-  <table>
+<div class="sub-title">品牌商信息</div>
+<table>
+    <thead><tr><th style="width:30%;">项目</th><th>信息</th></tr></thead>
+    <tbody>
       <tr><td style="width:30%">品牌商</td><td><b>Precision Appliance Technology, Inc.</b></td></tr>
       <tr><td>地址</td><td>3120 139th Ave SE Suite 500, Bellevue, WA 98005, USA</td></tr>
       <tr><td>網址</td><td>www.vestaprecision.com</td></tr>
       <tr><td>客服郵箱</td><td>support@vestaprecision.com</td></tr>
+    </tbody>
   </table>
-
-  <div class="sub-title">授權製造商</div>
-  <table>
+<div class="sub-title">授權製造商</div>
+<table>
+    <thead><tr><th style="width:30%;">项目</th><th>信息</th></tr></thead>
+    <tbody>
       <tr><td style="width:30%">製造商</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
       <tr><td>地址</td><td>广东省广州市番禺區南村镇啟業路1號</td></tr>
       <tr><td>網址</td><td>www.argiontechnology.com</td></tr>
+    </tbody>
   </table>
-
-  <div class="sub-title">保修信息</div>
-  <p>本產品提供 <b>2 年有限保修</b>。自原始購買日期起 2 年內可享受保修更換服務。要獲得保修更換資格，您必須：</p>
-  <ul class="bullet-list">
-    <li>在過去 2 年內購買過產品。</li>
-    <li>有原始订單號或購買時使用的電子郵件。</li>
-    <li>如通過經銷商或零售合作夥伴購買，須提供原始收據的副本。</li>
-  </ul>
-  <p style="margin-top:12px">向我们發送電子郵件申請保修服務：<b>support@vestaprecision.com</b></p>
-
-  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_imt050/image31.png" alt="保修卡分隔圖"></div>
+<div class="sub-title">保修信息</div>
+<p>本產品提供 <b>2 年有限保修</b>。自原始購買日期起 2 年內可享受保修更換服務。要獲得保修更換資格，您必須：</p>
+<ul class="bullet-list">
+        <li>在過去 2 年內購買過產品。</li>
+<li>有原始订單號或購買時使用的電子郵件。</li>
+<li>如通過經銷商或零售合作夥伴購買，須提供原始收據的副本。</li>
+      </ul>
+<p>向我们發送電子郵件申請保修服務：<b>support@vestaprecision.com</b></p>
+<div class="fig-wrap">
+    <img src="./images_imt050/image31.png" alt="Warranty separator" style="object-fit:contain">
+    
+  </div>
+<div class="sub-title">保修卡</div>
+<table class="warranty-card">
+    <tbody>
+      <tr><td>客戶名稱</td><td></td></tr>
+<tr><td>地址</td><td></td></tr>
+<tr><td>城市 / 州 / 郵政編码</td><td></td></tr>
+<tr><td>電话號码</td><td></td></tr>
+    </tbody>
+  </table>
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>14</span></div>
 </div>
 
-<!-- PAGE 15 - CH.10 WARRANTY CARD -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">CH.10 - WARRANTY</div>
+    <div class="header-ref">CH.10 — WARRANTY</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">10</span>品牌与保修信息（續）</h2>
-  <div class="sub-title" style="margin-top:14px;">保修卡</div>
-  <table>
-    <tr><td style="width:35%;">客戶名稱</td><td></td></tr>
-    <tr><td>地址</td><td></td></tr>
-    <tr><td>城市 / 州 / 郵政編码</td><td></td></tr>
-    <tr><td>電话號码</td><td></td></tr>
-    <tr><td>電子郵件地址</td><td></td></tr>
-    <tr><td>原始購買日期</td><td></td></tr>
-    <tr><td>產品型號</td><td></td></tr>
-    <tr><td>序列號（如適用）</td><td></td></tr>
-    <tr><td>商戶名稱</td><td></td></tr>
+  <div class="sub-title">保修卡</div>
+<table class="warranty-card">
+    <tbody>
+      <tr><td>電子郵件地址</td><td></td></tr>
+<tr><td>原始購買日期</td><td></td></tr>
+<tr><td>產品型號</td><td></td></tr>
+<tr><td>序列號（如適用）</td><td></td></tr>
+<tr><td>商戶名稱</td><td></td></tr>
+    </tbody>
   </table>
-
   <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>15</span></div>
 </div>
 

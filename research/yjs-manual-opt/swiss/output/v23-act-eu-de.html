@@ -116,6 +116,76 @@ p {
   line-height: 1.5;
 }
 
+.step-flow {
+  margin: 8px 0;
+}
+
+.split-panel {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 8px 0;
+}
+
+.split-panel-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.split-panel-figures {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  max-width: 38%;
+}
+
+.split-panel-figures img {
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.step-flow-step {
+  margin-bottom: 6px;
+}
+
+.step-flow-row {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  min-height: 18px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.step-text {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.figure-row {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.step-figures {
+  margin: 4px 0 8px 28px !important;
+  width: calc(100% - 28px);
+}
+
+.qa-item + .qa-item {
+  margin-top: 8px;
+}
+
+.contact-cut-line {
+  margin: 6px auto 0;
+  max-width: 68%;
+  border-top: 2px dotted #333;
+}
+
 .step-num {
   position: absolute;
   left: 0;
@@ -707,7 +777,7 @@ tr:nth-child(even) td {
   </div>
   <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 10mm;">
     <div style="text-align:left;margin:0 0 8mm;">
-      <img src="./images_v23/image2.svg" alt="V23 Vakuumiergerät" style="width:auto;height:auto;max-height:54mm;max-width:85%;">
+      <img src="./images_v23/cover-image.png" alt="V23 Vakuumiergerät" style="width:auto;height:auto;max-height:54mm;max-width:85%;">
     </div>
     <div class="cover-model">MODEL V23</div>
     <div class="cover-title">Vakuumiergerät</div>
@@ -728,21 +798,20 @@ tr:nth-child(even) td {
     <div class="header-ref">V23 — USER MANUAL</div>
   </div>
   <div class="toc-title">Inhaltsverzeichnis</div>
-  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Sicherheitshinweise</span></span><span class="toc-page">3</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Produkt- &amp; Vakuumbeutel-Tipps</span></span><span class="toc-page">4</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Produktaufbau</span></span><span class="toc-page">5</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Produktfunktionen</span></span><span class="toc-page">6</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Technische Daten</span></span><span class="toc-page">7</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Bedienungsanleitung</span></span><span class="toc-page">8</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Fehlerbehebung</span></span><span class="toc-page">12</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Wartung &amp; Pflege</span></span><span class="toc-page">16</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vakuumverpackungs-Eigenschaften</span></span><span class="toc-page">17</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Marken- &amp; Garantieinformationen</span></span><span class="toc-page">19</span></div>
+    <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Sicherheitshinweise</span></span><span class="toc-page">3</span></div>
+<div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Produkt- & Vakuumbeutel-Tipps</span></span><span class="toc-page">4</span></div>
+<div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Produktaufbau</span></span><span class="toc-page">5</span></div>
+<div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Produktfunktionen</span></span><span class="toc-page">6</span></div>
+<div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Technische Daten</span></span><span class="toc-page">7</span></div>
+<div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Bedienungsanleitung</span></span><span class="toc-page">8</span></div>
+<div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Fehlerbehebung</span></span><span class="toc-page">16</span></div>
+<div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Wartung & Pflege</span></span><span class="toc-page">20</span></div>
+<div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vakuumverpackungs-Eigenschaften</span></span><span class="toc-page">21</span></div>
+<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Marken- & Garantieinformationen</span></span><span class="toc-page">23</span></div>
+
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>2</span></div>
 </div>
 
-<!-- ========== 第1章 安全须知 ========== -->
-<!-- @CONTENT:safety:start — 以下内容为产品特定安全须知，新产品需重新编写 -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -750,71 +819,66 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>Sicherheitshinweise</h2>
   <div class="warning-box">
-    <div class="box-title">WARNUNG</div>
-        <div style="margin:6px 0 8px;"><img src="./images_v23/image3.png" alt="Warning Icon" style="width:22px;height:22px;object-fit:contain;"></div>
-<ul class="box-list">
-      <li>Dieses Gerät ist nur für den Haushaltsgebrauch bestimmt. Verwenden Sie es nicht für andere als die vorgesehenen Zwecke.</li>
-      <li>Lassen Sie Kinder nicht mit dem Gerät oder dem Netzkabel spielen. Kinder, Personen mit eingeschränkter Mobilität oder eingeschränkten kognitiven Fähigkeiten sollten das Gerät nur unter Aufsicht eines Erwachsenen benutzen. Halten Sie Kinder während der Benutzung fern.</li>
-      <li>Kleinteile und Vakuumbeutel können eine Erstickungsgefahr darstellen. Von Kindern fernhalten.</li>
-      <li>Verwenden Sie das Gerät nicht in feuchter oder heißer Umgebung. Der Betrieb in explosionsgefährdeten oder brennbaren Atmosphären ist strengstens untersagt.</li>
-      <li>Stellen Sie sicher, dass die Netzspannung mit der auf dem Typenschild angegebenen Spannung übereinstimmt.</li>
-      <li>Verlassen Sie das Gerät nicht während des Betriebs.</li>
-      <li>Nach dem Versiegeln ist der Versiegelungsbereich sehr heiß. Berühren Sie ihn nicht, um Verbrennungen zu vermeiden.</li>
-      <li>Trennen Sie das Gerät nach der Verwendung vom Stromnetz.</li>
-      <li>Ziehen Sie den Stecker beim Herausziehen aus der Steckdose am Stecker, nicht am Kabel.</li>
-      <li>Tauchen Sie das Gerät oder das Netzkabel nicht in Wasser oder andere Flüssigkeiten.</li>
-      <li>Das Netzkabel muss direkt in eine den Sicherheitsnormen entsprechende Steckdose gesteckt werden.</li>
-      <li>Bei Beschädigung von Stecker, Netzkabel oder Gerät stellen Sie die Verwendung sofort ein und wenden Sie sich an den Hersteller oder eine autorisierte Werkstatt. Reparieren Sie das Gerät nicht selbst.</li>
-      <li>Legen Sie das Netzkabel nicht über die Tischkante, damit Kinder es nicht ziehen oder jemand darüber stolpern kann.</li>
-    </ul>
-  </div>
-  <div class="caution-box">
-    <div class="box-title">VORSICHT</div>
-    <ul class="box-list">
-      <li>Bewahren Sie diese Anleitung sorgfältig auf.</li>
-      <li>Das Gerät benötigt kein Schmiermittel. Verwenden Sie keine organischen Lösungsmittel zur Reinigung.</li>
-      <li>Bei längerer Nichtbenutzung schließen Sie die Verriegelung nicht, um eine Verformung der Dichtung zu vermeiden.</li>
-      <li>Entsorgen Sie dieses Produkt nicht mit dem Hausmüll. Entsorgen oder recyceln Sie es gemäß den Vorschriften für Elektro- und Elektronikaltgeräte in Ihrer Region.</li>
-    </ul>
-  </div>
-  <div class="note-box">
-    <div class="box-title">HINWEIS</div>
-    <ul class="box-list">
-      <li>Dieses Produkt ist für die Lebensmittelkonservierung im Haushalt geeignet.</li>
-      <li>Lesen Sie vor der ersten Verwendung diese Anleitung vollständig durch.</li>
-      <li>Bewahren Sie den Kaufbeleg auf, um Garantieansprüche geltend machen zu können.</li>
-    </ul>
-  </div>
+        <div class="box-title">WARNUNG</div>
+        <div style="margin:6px 0 8px;"><img src="./images_v23/image3.png" alt="Warning icon" style="max-height:22px;width:22px;object-fit:contain"></div>
+        <ul class="box-list">
+            <li>Dieses Gerät ist nur für den Haushaltsgebrauch bestimmt. Verwenden Sie es nicht für andere als die vorgesehenen Zwecke.</li>
+<li>Lassen Sie Kinder nicht mit dem Gerät oder dem Netzkabel spielen. Kinder, Personen mit eingeschränkter Mobilität oder eingeschränkten kognitiven Fähigkeiten sollten das Gerät nur unter Aufsicht eines Erwachsenen benutzen. Halten Sie Kinder während der Benutzung fern.</li>
+<li>Kleinteile und Vakuumbeutel können eine Erstickungsgefahr darstellen. Von Kindern fernhalten.</li>
+<li>Verwenden Sie das Gerät nicht in feuchter oder heißer Umgebung. Der Betrieb in explosionsgefährdeten oder brennbaren Atmosphären ist strengstens untersagt.</li>
+<li>Stellen Sie sicher, dass die Netzspannung mit der auf dem Typenschild angegebenen Spannung übereinstimmt.</li>
+<li>Verlassen Sie das Gerät nicht während des Betriebs.</li>
+<li>Nach dem Versiegeln ist der Versiegelungsbereich sehr heiß. Berühren Sie ihn nicht, um Verbrennungen zu vermeiden.</li>
+<li>Trennen Sie das Gerät nach der Verwendung vom Stromnetz.</li>
+<li>Ziehen Sie den Stecker beim Herausziehen aus der Steckdose am Stecker, nicht am Kabel.</li>
+<li>Tauchen Sie das Gerät oder das Netzkabel nicht in Wasser oder andere Flüssigkeiten.</li>
+<li>Das Netzkabel muss direkt in eine den Sicherheitsnormen entsprechende Steckdose gesteckt werden.</li>
+<li>Bei Beschädigung von Stecker, Netzkabel oder Gerät stellen Sie die Verwendung sofort ein und wenden Sie sich an den Hersteller oder eine autorisierte Werkstatt. Reparieren Sie das Gerät nicht selbst.</li>
+<li>Legen Sie das Netzkabel nicht über die Tischkante, damit Kinder es nicht ziehen oder jemand darüber stolpern kann.</li>
+          </ul>
+      </div>
+<div class="caution-box">
+        <div class="box-title">VORSICHT</div>
+        
+        <ul class="box-list">
+            <li>Bewahren Sie diese Anleitung sorgfältig auf.</li>
+<li>Das Gerät benötigt kein Schmiermittel. Verwenden Sie keine organischen Lösungsmittel zur Reinigung.</li>
+<li>Bei längerer Nichtbenutzung schließen Sie die Verriegelung nicht, um eine Verformung der Dichtung zu vermeiden.</li>
+<li>Entsorgen Sie dieses Produkt nicht mit dem Hausmüll. Entsorgen oder recyceln Sie es gemäß den Vorschriften für Elektro- und Elektronikaltgeräte in Ihrer Region.</li>
+          </ul>
+      </div>
+<div class="note-box">
+        <div class="box-title">HINWEIS</div>
+        
+        <ul class="box-list">
+            <li>Dieses Produkt ist für die Lebensmittelkonservierung im Haushalt geeignet.</li>
+<li>Lesen Sie vor der ersten Verwendung diese Anleitung vollständig durch.</li>
+<li>Bewahren Sie den Kaufbeleg auf, um Garantieansprüche geltend machen zu können.</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>3</span></div>
 </div>
 
-<!-- @CONTENT:safety:end -->
-
-<!-- ========== 第2章 使用提示 ========== -->
-<!-- @CONTENT:usage_tips:start — 产品使用提示，同品类可复用大部分 -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">CH.02 — USAGE TIPS</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">02</span>Produkt- &amp; Vakuumbeutel-Tipps</h2>
+  <h2 class="section-title"><span class="chapter-num">02</span>Produkt- & Vakuumbeutel-Tipps</h2>
   <ul class="bullet-list">
-    <li>Dieses Gerät ist nur für Vakuumbeutel mit Luftkanal-Struktur geeignet.</li>
-    <li>Bei Gegenständen mit spitzen Ecken oder Kanten verwenden Sie Prickelschutzfolie, Küchenpapier oder andere weiche Materialien, um die Kanten zu umwickeln und ein Durchstechen des Beutels zu vermeiden.</li>
-    <li>Vakuumbeutel können zum Erhitzen oder in der Mikrowelle verwendet werden, müssen aber zuvor an einer Ecke mit einer kleinen Öffnung versehen werden, um Dampf abzulassen.</li>
-    <li>Vakuumbeutel zur Aufbewahrung können wiederverwendet werden; für Erhitzen oder Mikrowellenerhitzung sind sie jedoch nur einmal verwendbar. Beutel, die für Meeresfrüchte oder fettige Lebensmittel verwendet wurden, sollten nicht wiederverwendet werden.</li>
-    <li>Beim Einlegen des Beutels muss die Beutelöffnung flach über dem Heizelement liegen.</li>
-    <li>Lassen Sie beim Befüllen mindestens 2 inch (5 cm) Abstand zwischen Beutelöffnung und Lebensmitteln.</li>
-    <li>Bei Flüssigkeiten, Saucen oder Lebensmitteln mit Flüssigkeit vermeiden Sie, die Beutelöffnung nass zu machen. Trocknen Sie die Öffnung nach dem Befüllen ab, um die Versiegelungswirkung nicht zu beeinträchtigen.</li>
-    <li>Für weiche, feuchtigkeitsreiche Lebensmittel, die nach dem Verpacken ihre Form behalten sollen, können Sie diese vor der Vakuumverpackung einfrieren.</li>
-    <li>Legen Sie keine schweren Gegenstände auf die Klappe, da dies das Gerät beschädigen kann.</li>
-  </ul>
+        <li>Dieses Gerät ist nur für Vakuumbeutel mit Luftkanal-Struktur geeignet.</li>
+<li>Bei Gegenständen mit spitzen Ecken oder Kanten verwenden Sie Prickelschutzfolie, Küchenpapier oder andere weiche Materialien, um die Kanten zu umwickeln und ein Durchstechen des Beutels zu vermeiden.</li>
+<li>Vakuumbeutel können zum Erhitzen oder in der Mikrowelle verwendet werden, müssen aber zuvor an einer Ecke mit einer kleinen Öffnung versehen werden, um Dampf abzulassen.</li>
+<li>Vakuumbeutel zur Aufbewahrung können wiederverwendet werden; für Erhitzen oder Mikrowellenerhitzung sind sie jedoch nur einmal verwendbar. Beutel, die für Meeresfrüchte oder fettige Lebensmittel verwendet wurden, sollten nicht wiederverwendet werden.</li>
+<li>Beim Einlegen des Beutels muss die Beutelöffnung flach über dem Heizelement liegen.</li>
+<li>Lassen Sie beim Befüllen mindestens 2 inch (5 cm) Abstand zwischen Beutelöffnung und Lebensmitteln.</li>
+<li>Bei Flüssigkeiten, Saucen oder Lebensmitteln mit Flüssigkeit vermeiden Sie, die Beutelöffnung nass zu machen. Trocknen Sie die Öffnung nach dem Befüllen ab, um die Versiegelungswirkung nicht zu beeinträchtigen.</li>
+<li>Für weiche, feuchtigkeitsreiche Lebensmittel, die nach dem Verpacken ihre Form behalten sollen, können Sie diese vor der Vakuumverpackung einfrieren.</li>
+<li>Legen Sie keine schweren Gegenstände auf die Klappe, da dies das Gerät beschädigen kann.</li>
+      </ul>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>4</span></div>
 </div>
 
-<!-- @CONTENT:usage_tips:end -->
-
-<!-- ========== 第3章 产品结构 ========== -->
 <div class="page compact-structure">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -822,11 +886,11 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">03</span>Produktaufbau</h2>
   <div class="fig-wrap">
-    <img src="./images_v23/image5.svg" style="max-height:46mm;" alt="Produktaufbau">
-    <div class="fig-caption">Abb. 1 — Produktaufbau</div>
+    <img src="./images_v23/image5.svg" alt="Product structure diagram" style="max-height:46mm;object-fit:contain">
+    
   </div>
-  <table>
-    <thead><tr><th style="width:60px">Nr.</th><th>Bezeichnung</th><th style="width:60px">Nr.</th><th>Bezeichnung</th></tr></thead>
+<table>
+    <thead><tr><th style="width:15%;">Nr.</th><th>Teil</th><th style="width:15%;">Nr.</th><th>Teil</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Verschlussgriff</td><td>8</td><td>Rollenbeutel-Stützrohr</td></tr>
       <tr><td>2</td><td>Bedienfeld</td><td>9</td><td>Hauptgehäuse</td></tr>
@@ -837,14 +901,14 @@ tr:nth-child(even) td {
       <tr><td>7</td><td>Rollenbeutel-Fach</td><td></td><td></td></tr>
     </tbody>
   </table>
-  <div class="note-box">
-    <div class="box-title">HINWEIS</div>
-    Nach dem Betrieb ist das Heizelement sehr heiß. Bitte nicht berühren, um Verbrennungen zu vermeiden!
-  </div>
+<div class="note-box">
+        <div class="box-title">HINWEIS</div>
+        
+        Nach dem Betrieb ist das Heizelement sehr heiß. Bitte nicht berühren, um Verbrennungen zu vermeiden!
+      </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>5</span></div>
 </div>
 
-<!-- ========== 第4章 产品功能 ========== -->
 <div class="page compact-functions">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -852,11 +916,11 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">04</span>Produktfunktionen</h2>
   <div class="fig-wrap">
-    <img src="./images_v23/image10.svg" style="max-height:20mm;" alt="Bedienfeld">
-    <div class="fig-caption">Abb. 2 — Bedienfeld</div>
+    <img src="./images_v23/image10.svg" alt="Control panel diagram" style="max-height:20mm;object-fit:contain">
+    
   </div>
-  <table>
-    <thead><tr><th style="width:45%">No. / Button</th><th>Funktionsbeschreibung</th></tr></thead>
+<table>
+    <thead><tr><th style="width:45%;">Nr. / Taste</th><th>Beschreibung</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Vac&amp;Seal / Start</span>　Vakuumversiegelung / Start</td><td>Drücken Sie diese Taste, um den ausgewählten Modus zu starten.</td></tr>
       <tr><td><span class="callout-no">2</span> <span class="btn-name">Stop</span>　Stopp</td><td>Drücken Sie diese Taste während eines beliebigen Vorgangs, um den Betrieb zu stoppen.</td></tr>
@@ -870,7 +934,6 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>6</span></div>
 </div>
 
-<!-- ========== 第5章 技术参数 ========== -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -894,439 +957,781 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>7</span></div>
 </div>
 
-<!-- @CONTENT:operations:start — 操作步骤为最产品特定的部分，新产品需全面重写 -->
-<!-- ========== 第6章 操作指引 ========== -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung</h2>
-
   <div class="sub-title">6.1 Verwendung des Beutelschneiders</div>
-  <div style="display:flex;gap:16px;align-items:flex-start">
-    <div style="flex:1">
-      <ol class="steps">
-        <li><span class="step-num">1</span>Öffnen Sie die Klappe.</li>
-        <li><span class="step-num">2</span>Öffnen Sie den Beutelschneider-Halter.</li>
-        <li><span class="step-num">3</span>Ziehen Sie die gewünschte Beutellänge von der Rolle ab.</li>
-        <li><span class="step-num">4</span>Bewegen Sie den Beutelschneider ganz nach links oder rechts und drücken Sie den Halter auf den Beutel.</li>
-        <li><span class="step-num">5</span>Drücken Sie den Beutelschneider nach unten und ziehen Sie ihn über den Beutel für einen sauberen Schnitt.</li>
-      </ol>
+<div class="split-panel" style="gap:16px;align-items:flex-start">
+    <div class="split-panel-body">
+      <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Öffnen Sie die Klappe.</div>
+      </div>
+      
     </div>
-    <div style="flex:0 0 auto">
-      <img src="./images_v23/image12.svg" alt="Beutelschneider-Bedienung" style="width:34mm;height:auto;object-fit:contain;">
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Öffnen Sie den Beutelschneider-Halter.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Ziehen Sie die gewünschte Beutellänge von der Rolle ab.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Bewegen Sie den Beutelschneider ganz nach links oder rechts und drücken Sie den Halter auf den Beutel.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Drücken Sie den Beutelschneider nach unten und ziehen Sie ihn über den Beutel für einen sauberen Schnitt.</div>
+      </div>
+      
     </div>
   </div>
-
-  <div class="sub-title">6.2 Verwendung der Siegelfunktion</div>
-  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Beutel von der Rolle herstellen und versiegeln:</b></p>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Stellen Sie wie oben beschrieben einen Beutel mit zwei offenen Enden her.</li>
-    <li><span class="step-num">2</span>Legen Sie ein offenes Ende des Beutels flach in die Vakuumkammer.</li>
-    <li><span class="step-num">3</span>Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</li>
-    <li><span class="step-num">4</span>Drücken Sie die <span class="btn-name">Seal</span>-Taste und warten Sie, bis das Gerät fertig ist.</li>
-  </ol>
-  <p style="font-size:13px;color:#555;margin:10px 0 8px"><b>Beutel nur versiegeln:</b></p>
-  <div style="display:flex;gap:16px;align-items:flex-start">
-    <div style="flex:1">
-      <ol class="steps">
-        <li><span class="step-num">1</span>Legen Sie die zu verpackenden Gegenstände in den Beutel und die Beutelöffnung in die Vakuumkammer.</li>
-        <li><span class="step-num">2</span>Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</li>
-        <li><span class="step-num">3</span>Drücken Sie die <span class="btn-name">Seal</span>-Taste und warten Sie, bis das Gerät fertig ist.</li>
-      </ol>
     </div>
-    <div style="flex:0 0 auto">
-      <img src="./images_v23/image14.svg" alt="Versiegelung" style="width:34mm;height:auto;object-fit:contain;">
+    <div class="split-panel-figures">
+      <img src="./images_v23/image12.svg" alt="切袋刀操作" style="width:34mm;height:auto;object-fit:contain;display:block">
     </div>
   </div>
-
-  <div class="sub-title">6.3 Verlängerung der Siegelzeit</div>
-  <div class="note-box">
-    Um die Siegelzeit zu verlängern, drücken Sie vor dem Betrieb die <span class="btn-name">Extend Seal Time</span>-Taste, bis die Anzeige leuchtet. Die verlängerte Einstellung bleibt aktiv. Um zur Standard-Siegelzeit zurückzukehren, drücken Sie die Taste vor dem nächsten Betrieb erneut. Bei Ruhezustand oder nach Neustart wird die Siegelzeit auf die Standardeinstellung zurückgesetzt.
+<div class="sub-title">6.2 Verwendung der Siegelfunktion</div>
+<p><b>Beutel von der Rolle herstellen und versiegeln:</b></p>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Stellen Sie wie oben beschrieben einen Beutel mit zwei offenen Enden her.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Legen Sie ein offenes Ende des Beutels flach in die Vakuumkammer.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Seal</span>-Taste und warten Sie, bis das Gerät fertig ist.</div>
+      </div>
+      
+    </div>
   </div>
-  <div class="caution-box">
-    <div class="box-title">VORSICHT</div>
-    Bei aktivierter Extend Seal Time-Funktion wird die intelligente Siegelregelung vorübergehend deaktiviert. Bei Dauerbetrieb muss zwischen den Arbeitsgängen ein Abstand von mehr als 20 s eingehalten werden; öffnen Sie die Klappe zur Kühlung des Geräts.
+<p><b>Beutel nur versiegeln:</b></p>
+<div class="split-panel" style="gap:16px;align-items:flex-start">
+    <div class="split-panel-body">
+      <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Legen Sie die zu verpackenden Gegenstände in den Beutel und die Beutelöffnung in die Vakuumkammer.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Seal</span>-Taste und warten Sie, bis das Gerät fertig ist.</div>
+      </div>
+      
+    </div>
+  </div>
+    </div>
+    <div class="split-panel-figures">
+      <img src="./images_v23/image14.svg" alt="密封操作" style="width:34mm;height:auto;object-fit:contain;display:block">
+    </div>
   </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>8</span></div>
 </div>
 
-<!-- ========== 操作指引（续）========== -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CH.06 — OPERATION (CONT.)</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Forts.)</h2>
-
-  <div class="sub-title">6.4 Verwendung der Vakuumversiegelung</div>
-  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Feste Gegenstände vakuumversiegeln:</b></p>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Legen Sie die Beutelöffnung in die Vakuumkammer.</li>
-    <li><span class="step-num">2</span>Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</li>
-    <li><span class="step-num">3</span>Drücken Sie die <span class="btn-name">Vac Mode</span>-Taste und wählen Sie den Modus: <b>Normal</b> oder <b>Gentle</b>.</li>
-    <li><span class="step-num">4</span>Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</li>
-    <li><span class="step-num">5</span>Zum Beenden drücken Sie die <span class="btn-name">Stop</span>-Taste.</li>
-  </ol>
-  <div class="note-box">Vor dem Verpacken wertvoller Gegenstände im Gentle-Modus empfehlen wir, zunächst mit anderen Gegenständen zu testen, ob der Vakuumdruck Ihren Anforderungen entspricht, um Beschädigungen zu vermeiden.</div>
-
-  <p style="font-size:13px;color:#555;margin:12px 0 8px"><b>Flüssigkeiten vakuumversiegeln:</b></p>
-  <div style="display:flex;gap:16px;align-items:flex-start">
-    <div style="flex:1">
-      <ol class="steps">
-        <li><span class="step-num">1</span>Halten Sie den Beutel aufrecht und stellen Sie sicher, dass die Flüssigkeitsoberfläche stets unter dem Heizelement bleibt. Lassen Sie zwischen Flüssigkeit und Beutelöffnung etwa 7 inch (18 cm) Abstand.</li>
-        <li><span class="step-num">2</span>Legen Sie die Beutelöffnung in die Vakuumkammer.</li>
-        <li><span class="step-num">3</span>Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</li>
-        <li><span class="step-num">4</span>Drücken Sie die <span class="btn-name">Vac Mode</span>-Taste und wählen Sie den <b>Liquid</b>-Modus.</li>
-        <li><span class="step-num">5</span>Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</li>
-      </ol>
-    </div>
-    <div style="flex:0 0 auto">
-      <img src="./images_v23/image16.svg" alt="Flüssigkeitsmodus" style="width:30mm;height:auto;object-fit:contain;">
-    </div>
-  </div>
-
-  <div class="sub-title">6.5 Manuelles Vakuumieren</div>
-  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Methode 1 (Während des automatischen Vakuumierens zu Pulse Vac wechseln):</b></p>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Halten Sie die <span class="btn-name">Pulse Vac</span>-Taste gedrückt zum Evakuieren.</li>
-    <li><span class="step-num">2</span>Lassen Sie die Taste los, um das Evakuieren zu pausieren.</li>
-    <li><span class="step-num">3</span>Nach Erreichen des gewünschten Vakuums drücken Sie die <span class="btn-name">Seal</span>-Taste zum Versiegeln.</li>
-  </ol>
-  <p style="font-size:13px;color:#555;margin:10px 0 8px"><b>Methode 2 (Pulse Vac direkt verwenden):</b></p>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Legen Sie die Beutelöffnung in die Vakuumkammer.</li>
-    <li><span class="step-num">2</span>Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</li>
-    <li><span class="step-num">3</span>Halten Sie die <span class="btn-name">Pulse Vac</span>-Taste gedrückt zum Evakuieren.</li>
-    <li><span class="step-num">4</span>Lassen Sie die Taste los, um das Evakuieren zu pausieren.</li>
-    <li><span class="step-num">5</span>Nach Erreichen des gewünschten Vakuums drücken Sie die <span class="btn-name">Seal</span>-Taste zum Versiegeln.</li>
-  </ol>
-  <div class="note-box">Beim manuellen Vakuumieren: Gedrückt halten zum Evakuieren, loslassen zum Pausieren – das Gerät hält den Druck. Wenn Sie innerhalb von 10 Sekunden keine weitere Aktion durchführen, gibt das Gerät den Druck automatisch ab und beendet den manuellen Evakuierungsmodus.</div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung</h2>
+  <div class="sub-title">6.3 Verlängerung der Siegelzeit</div>
+<div class="note-box">
+        
+        
+        Um die Siegelzeit zu verlängern, drücken Sie vor dem Betrieb die <span class="btn-name">Extend Seal Time</span>-Taste, bis die Anzeige leuchtet. Die verlängerte Einstellung bleibt aktiv. Um zur Standard-Siegelzeit zurückzukehren, drücken Sie die Taste vor dem nächsten Betrieb erneut. Bei Ruhezustand oder nach Neustart wird die Siegelzeit auf die Standardeinstellung zurückgesetzt.
+      </div>
+<div class="caution-box">
+        <div class="box-title">VORSICHT</div>
+        
+        Bei aktivierter Extend Seal Time-Funktion wird die intelligente Siegelregelung vorübergehend deaktiviert. Bei Dauerbetrieb muss zwischen den Arbeitsgängen ein Abstand von mehr als 20 s eingehalten werden; öffnen Sie die Klappe zur Kühlung des Geräts.
+      </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>9</span></div>
 </div>
 
-<!-- ========== 操作指引（附件使用）========== -->
-<div class="page compact-accessories">
+<div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CH.06 — ACCESSORIES</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Zubehör)</h2>
-
-  <div class="sub-title">6.6 Verwendung des Vakuumschlauchs</div>
-  <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:12px">
-    <div style="flex:1">
-      <ul class="bullet-list">
-        <li>Bei Einmachglas-Adapter und Reißverschlussbeuteln mit Ventil: Runde Düse in Richtung 1 verwenden.</li>
-        <li>Bei Vakuumbehältern und Stopfen: Je nach Größe der Ansaugöffnung Richtung 1 oder 2 wählen.</li>
-        <li>Die flache Vakuumschlauch-Düse 3 dient zur Verbindung mit dem äußeren Ansaugstutzen 3 an der Klappe.</li>
-      </ul>
+  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Forts.)</h2>
+  <div class="sub-title">6.4 Verwendung der Vakuumversiegelung</div>
+<p><b>Feste Gegenstände vakuumversiegeln:</b></p>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Legen Sie die Beutelöffnung in die Vakuumkammer.</div>
+      </div>
+      
     </div>
-    <div style="flex:0 0 auto">
-      <img src="./images_v23/image18.svg" alt="Vakuumschlauch" style="width:30mm;height:auto;object-fit:contain;">
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Vac Mode</span>-Taste und wählen Sie den Modus: <b>Normal</b> oder <b>Gentle</b>.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Zum Beenden drücken Sie die <span class="btn-name">Stop</span>-Taste.</div>
+      </div>
+      
     </div>
   </div>
-
-  <div class="sub-title">6.7 Einmachgläser vakuumieren</div>
-  <div style="display:flex;gap:16px;align-items:flex-start">
-    <div style="flex:1">
-      <ol class="steps">
-        <li><span class="step-num">1</span>Schließen Sie die Geräteklappe.</li>
-        <li><span class="step-num">2</span>Legen Sie den Deckel auf den Einmachglasrand, ohne das Schraubgewinde (falls vorhanden) anzuziehen.</li>
-        <li><span class="step-num">3</span>Setzen Sie den Adapter auf das Einmachglas.</li>
-        <li><span class="step-num">4</span>Stecken Sie die flache Vakuumschlauch-Düse in den äußeren Ansaugstutzen an der Klappe.</li>
-        <li><span class="step-num">5</span>Drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</li>
-        <li><span class="step-num">6</span>Drücken Sie die <span class="btn-name">Accessories</span>-Taste und wählen Sie <b>Mason Jar</b>.</li>
-        <li><span class="step-num">7</span>Decken Sie die Ansaugöffnung des Adapters mit der runden Vakuumschlauch-Düse ab und drücken Sie sie leicht mit der Hand an.</li>
-        <li><span class="step-num">8</span>Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</li>
-        <li><span class="step-num">9</span>Nach Abschluss Vakuumschlauch und Adapter entfernen.</li>
-      </ol>
+<div class="note-box">
+        
+        
+        Vor dem Verpacken wertvoller Gegenstände im Gentle-Modus empfehlen wir, zunächst mit anderen Gegenständen zu testen, ob der Vakuumdruck Ihren Anforderungen entspricht, um Beschädigungen zu vermeiden.
+      </div>
+<p><b>Flüssigkeiten vakuumversiegeln:</b></p>
+<div class="split-panel" style="gap:16px;align-items:flex-start">
+    <div class="split-panel-body">
+      <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Halten Sie den Beutel aufrecht und stellen Sie sicher, dass die Flüssigkeitsoberfläche stets unter dem Heizelement bleibt. Lassen Sie zwischen Flüssigkeit und Beutelöffnung etwa 7 inch (18 cm) Abstand.</div>
+      </div>
+      
     </div>
-    <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:center">
-      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:28mm;height:auto;object-fit:contain;">
-      <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:28mm;height:auto;object-fit:contain;">
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Legen Sie die Beutelöffnung in die Vakuumkammer.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Vac Mode</span>-Taste und wählen Sie den <b>Liquid</b>-Modus.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</div>
+      </div>
+      
     </div>
   </div>
-
-  <div class="sub-title">6.8 Vakuumbehälter vakuumieren</div>
-  <div style="display:flex;gap:16px;align-items:flex-start">
-    <div style="flex:1">
-      <ol class="steps">
-        <li><span class="step-num">1</span>Stellen Sie vor dem Betrieb sicher, dass der Vakuumbehälter mit dem Vakuumschlauch dieses Geräts kompatibel ist.</li>
-        <li><span class="step-num">2</span>Stellen Sie sicher, dass der Vakuumbehälter auf Vakuum (Vacuum) eingestellt ist.</li>
-        <li><span class="step-num">3</span>Stecken Sie die flache Vakuumschlauch-Düse in den äußeren Ansaugstutzen an der Klappe.</li>
-        <li><span class="step-num">4</span>Drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</li>
-        <li><span class="step-num">5</span>Drücken Sie die <span class="btn-name">Accessories</span>-Taste und wählen Sie <b>Canister</b>.</li>
-        <li><span class="step-num">6</span>Decken Sie die Ansaugöffnung des Vakuumbehälter-Ventils mit der runden Vakuumschlauch-Düse ab und drücken Sie sie leicht mit der Hand an.</li>
-        <li><span class="step-num">7</span>Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</li>
-        <li><span class="step-num">8</span>Nach Abschluss den Vakuumschlauch entfernen.</li>
-      </ol>
     </div>
-    <div style="flex:0 0 auto">
-      <img src="./images_v23/image24.svg" alt="Vakuumbehälter-Bedienung" style="width:30mm;height:auto;object-fit:contain;">
+    <div class="split-panel-figures">
+      <img src="./images_v23/image16.svg" alt="液体模式" style="width:30mm;height:auto;object-fit:contain;display:block">
     </div>
   </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>10</span></div>
 </div>
 
-<!-- ========== 操作指引（腌制+卷袋）========== -->
-<div class="page">
+<div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CH.06 — MARINATE &amp; ROLL BAG</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Forts.)</h2>
-
-  <div class="sub-title">6.9 Marinieren</div>
-  <div style="display:flex;gap:16px;align-items:flex-start">
-    <div style="flex:1">
-      <ol class="steps">
-        <li><span class="step-num">1</span>Bedecken Sie die Lebensmittel mit der Marinade und legen Sie sie in den Vakuumbehälter.</li>
-        <li><span class="step-num">2</span>Stellen Sie sicher, dass der Vakuumbehälter auf Vakuum (Vacuum) eingestellt ist.</li>
-        <li><span class="step-num">3</span>Stecken Sie die flache Vakuumschlauch-Düse in den äußeren Ansaugstutzen an der Klappe.</li>
-        <li><span class="step-num">4</span>Stecken Sie die runde Vakuumschlauch-Düse in die Ansaugöffnung des Ventils.</li>
-        <li><span class="step-num">5</span>Drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</li>
-        <li><span class="step-num">6</span>Drücken Sie die <span class="btn-name">Accessories</span>-Taste und wählen Sie <b>Canister</b>.</li>
-        <li><span class="step-num">7</span>Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</li>
-        <li><span class="step-num">8</span>Nach Abschluss den Vakuumschlauch entfernen.</li>
-      </ol>
+  <div class="sub-title">6.5 Manuelles Vakuumieren</div>
+<p><b>Methode 1 (Während des automatischen Vakuumierens zu Pulse Vac wechseln):</b></p>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Halten Sie die <span class="btn-name">Pulse Vac</span>-Taste gedrückt zum Evakuieren.</div>
+      </div>
+      
     </div>
-    <div style="flex:0 0 auto">
-      <img src="./images_v23/image26.svg" alt="Marinieren" style="width:30mm;height:auto;object-fit:contain;">
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Lassen Sie die Taste los, um das Evakuieren zu pausieren.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Nach Erreichen des gewünschten Vakuums drücken Sie die <span class="btn-name">Seal</span>-Taste zum Versiegeln.</div>
+      </div>
+      
     </div>
   </div>
-
-  <div class="rollbag-guide">
-    <div class="sub-title">6.10 Rollenbeutel-Fach Anleitung</div>
-    <ul class="bullet-list">
-      <li>Dieses Gerät kann gleichzeitig zwei Rollenbeutel aufnehmen (z. B. zwei Rollen mit maximal 20 feet/6 m Länge).</li>
-      <li>Bei einer einzelnen Rolle können bis zu 50 feet (15 m) Länge verwendet werden.</li>
-      <li>Das Rollenbeutel-Fach nimmt Rollenbeutel bis 12 inch (300 mm) Breite auf. Unten ist eine spezielle Aufnahme für Rollenbeutel bis 8 inch (200 mm) Breite vorgesehen.</li>
-    </ul>
-    <div class="rollbag-stack">
-      <div class="rollbag-figure">
-        <img src="./images_v23/image28.svg" alt="Einzelrolle">
+<p><b>Methode 2 (Pulse Vac direkt verwenden):</b></p>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Legen Sie die Beutelöffnung in die Vakuumkammer.</div>
       </div>
-      <div class="rollbag-figure">
-        <img src="./images_v23/image30.svg" alt="Doppelrolle">
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Schließen Sie die Klappe und drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</div>
       </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Halten Sie die <span class="btn-name">Pulse Vac</span>-Taste gedrückt zum Evakuieren.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Lassen Sie die Taste los, um das Evakuieren zu pausieren.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Nach Erreichen des gewünschten Vakuums drücken Sie die <span class="btn-name">Seal</span>-Taste zum Versiegeln.</div>
+      </div>
+      
     </div>
   </div>
+<div class="note-box">
+        
+        
+        Beim manuellen Vakuumieren: Gedrückt halten zum Evakuieren, loslassen zum Pausieren – das Gerät hält den Druck. Wenn Sie innerhalb von 10 Sekunden keine weitere Aktion durchführen, gibt das Gerät den Druck automatisch ab und beendet den manuellen Evakuierungsmodus.
+      </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>11</span></div>
 </div>
 
-<!-- @CONTENT:operations:end -->
-
-<!-- @CONTENT:troubleshooting:start — 故障排除表，新产品需根据产品特性重写 -->
-<!-- ========== 第7章 故障排除 ========== -->
-<div class="page">
+<div class="page compact-accessories">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung</h2>
-
-  <table>
-    <thead><tr><th style="width:22%">Fehlersymptom</th><th style="width:40%">Mögliche Ursache</th><th style="width:38%">Lösung</th></tr></thead>
-    <tbody>
-      <tr>
-        <td rowspan="3"><b>Gerät lässt sich nicht einschalten</b></td>
-        <td>Netzkabel nicht korrekt in die Steckdose gesteckt</td>
-        <td>Stellen Sie sicher, dass das Netzkabel korrekt eingesteckt ist.</td>
-      </tr>
-      <tr>
-        <td>Netzkabel beschädigt oder defekt</td>
-        <td>Netz trennen und Netzkabel prüfen; bei Beschädigung von Fachpersonal ersetzen lassen.</td>
-      </tr>
-      <tr>
-        <td>Stecker oder Kabelverbindung der Steuerplatine gelockert</td>
-        <td>Wenden Sie sich an Fachpersonal für die Reparatur.</td>
-      </tr>
-      <tr>
-        <td rowspan="6"><b>Unzureichendes Vakuum</b></td>
-        <td>Beutelöffnung nicht vollständig innerhalb der Dichtung</td>
-        <td>Stellen Sie sicher, dass die gesamte Beutelöffnung innerhalb der Dichtung der unteren Vakuumkammer liegt.</td>
-      </tr>
-      <tr>
-        <td>Vakuumbeutel ohne Struktur verwendet</td>
-        <td>Verwenden Sie nur Vakuumbeutel mit Luftkanal-Struktur.</td>
-      </tr>
-      <tr>
-        <td>Dichtung beschädigt, hochgeklappt oder falsch montiert</td>
-        <td>Dichtungszustand prüfen und korrekt montieren.</td>
-      </tr>
-      <tr>
-        <td>Beutel beschädigt oder mit Löchern</td>
-        <td>Neuen Vakuumbeutel verwenden.</td>
-      </tr>
-      <tr>
-        <td>Fremdkörper an der Beutelöffnung beeinträchtigen die Versiegelung</td>
-        <td>Beutelöffnung reinigen und erneut versuchen.</td>
-      </tr>
-      <tr>
-        <td>Zu lange Heißsiegelzeit führt zu Überhitzung</td>
-        <td>Klappe öffnen, Gerät abkühlen lassen und erneut verwenden.</td>
-      </tr>
-      <tr>
-        <td rowspan="4"><b>Versiegelung nicht möglich oder mangelhaft</b></td>
-        <td>Beutelöffnung nicht korrekt auf dem Heizelement platziert</td>
-        <td>Beutelöffnung neu platzieren und flach über dem Heizelement ausrichten.</td>
-      </tr>
-      <tr>
-        <td>Feuchtigkeit, Partikel oder Rückstände im Versiegelungsbereich</td>
-        <td>Versiegelungsbereich reinigen und erneut versuchen.</td>
-      </tr>
-      <tr>
-        <td>Versiegelungsleiste nicht montiert</td>
-        <td>Versiegelungsleiste montieren.</td>
-      </tr>
-      <tr>
-        <td>Standard-Siegelzeit zu kurz</td>
-        <td><span class="btn-name">Extend Seal Time</span> drücken, um die Siegelzeit zu verlängern, und erneut versuchen.</td>
-      </tr>
-      </tbody>
-  </table>
+  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Zubehör)</h2>
+  <div class="sub-title">6.6 Verwendung des Vakuumschlauchs</div>
+<div class="split-panel" style="gap:16px;align-items:flex-start">
+    <div class="split-panel-body">
+      <ul class="bullet-list">
+        <li>Bei Einmachglas-Adapter und Reißverschlussbeuteln mit Ventil: Runde Düse in Richtung 1 verwenden.</li>
+<li>Bei Vakuumbehältern und Stopfen: Je nach Größe der Ansaugöffnung Richtung 1 oder 2 wählen.</li>
+<li>Die flache Vakuumschlauch-Düse 3 dient zur Verbindung mit dem äußeren Ansaugstutzen 3 an der Klappe.</li>
+      </ul>
+    </div>
+    <div class="split-panel-figures">
+      <img src="./images_v23/image18.svg" alt="真空软管" style="width:30mm;height:auto;object-fit:contain;display:block">
+    </div>
+  </div>
+<div class="sub-title">6.7 Einmachgläser vakuumieren</div>
+<div class="split-panel" style="gap:16px;align-items:flex-start">
+    <div class="split-panel-body">
+      <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Schließen Sie die Geräteklappe.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Legen Sie den Deckel auf den Einmachglasrand, ohne das Schraubgewinde (falls vorhanden) anzuziehen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Setzen Sie den Adapter auf das Einmachglas.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Stecken Sie die flache Vakuumschlauch-Düse in den äußeren Ansaugstutzen an der Klappe.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">6</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Accessories</span>-Taste und wählen Sie <b>Mason Jar</b>.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">7</span>
+        <div class="step-text">Decken Sie die Ansaugöffnung des Adapters mit der runden Vakuumschlauch-Düse ab und drücken Sie sie leicht mit der Hand an.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">8</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">9</span>
+        <div class="step-text">Nach Abschluss Vakuumschlauch und Adapter entfernen.</div>
+      </div>
+      
+    </div>
+  </div>
+    </div>
+    <div class="split-panel-figures">
+      <img src="./images_v23/image20.svg" alt="Mason Jar Connection" style="width:28mm;height:auto;object-fit:contain;display:block">
+<img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:28mm;height:auto;object-fit:contain;display:block">
+    </div>
+  </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>12</span></div>
 </div>
 
-<div class="page compact-troubleshoot">
+<div class="page compact-accessories">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CH.07 — TROUBLESHOOTING CONT.</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Forts.)</h2>
-
-  <table>
-    <thead><tr><th style="width:22%">Fehlersymptom</th><th style="width:40%">Mögliche Ursache</th><th style="width:38%">Lösung</th></tr></thead>
-    <tbody>
-      <tr>
-        <td rowspan="3"><b>Beutel verliert nach Vakuumversiegelung Luft</b></td>
-        <td>Hitzebeständiges Klebeband beschädigt oder abgelöst</td>
-        <td>Hitzebeständiges Klebeband zeitnah ersetzen.</td>
-      </tr>
-      <tr>
-        <td>Abnorme Heiztemperatur führt zu Schmelzen oder unzureichender Versiegelung</td>
-        <td>Siehe Lösungen bei „Unzureichendes Vakuum“ und „Versiegelung nicht möglich“.</td>
-      </tr>
-      <tr>
-        <td>Scharfe Gegenstände haben den Beutel durchstochen</td>
-        <td>Scharfe Kanten mit Küchenpapier oder Prickelschutzfolie umwickeln und neuen Beutel verwenden.</td>
-      </tr>
-      </tbody>
-  </table>
-
-  <div class="note-box">
-    <div class="box-title">HINWEIS</div>
-    Wenn Obst und Gemüse vor dem Verpacken nicht richtig blanchiert wurden oder heiße Lebensmittel verpackt werden, können Gase freigesetzt werden, sodass sich der Vakuumbeutel nicht zusammenzieht. Dies ist ein normales Verhalten und kein Luftverlust.
+  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Zubehör)</h2>
+  <div class="sub-title">6.8 Vakuumbehälter vakuumieren</div>
+<div class="split-panel" style="gap:16px;align-items:flex-start">
+    <div class="split-panel-body">
+      <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Stellen Sie vor dem Betrieb sicher, dass der Vakuumbehälter mit dem Vakuumschlauch dieses Geräts kompatibel ist.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Stellen Sie sicher, dass der Vakuumbehälter auf Vakuum (Vacuum) eingestellt ist.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Stecken Sie die flache Vakuumschlauch-Düse in den äußeren Ansaugstutzen an der Klappe.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Accessories</span>-Taste und wählen Sie <b>Canister</b>.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">6</span>
+        <div class="step-text">Decken Sie die Ansaugöffnung des Vakuumbehälter-Ventils mit der runden Vakuumschlauch-Düse ab und drücken Sie sie leicht mit der Hand an.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">7</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">8</span>
+        <div class="step-text">Nach Abschluss den Vakuumschlauch entfernen.</div>
+      </div>
+      
+    </div>
   </div>
-  <div class="note-box">Wenn die oben genannten Lösungen das Problem nicht beheben, wenden Sie sich an den Kundenservice. Öffnen Sie das Gerät nicht eigenständig.</div>
+    </div>
+    <div class="split-panel-figures">
+      <img src="./images_v23/image24.svg" alt="真空罐操作" style="width:30mm;height:auto;object-fit:contain;display:block">
+    </div>
+  </div>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>13</span></div>
+</div>
+
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Forts.)</h2>
+  <div class="sub-title">6.9 Marinieren</div>
+<div class="split-panel" style="gap:16px;align-items:flex-start">
+    <div class="split-panel-body">
+      <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Bedecken Sie die Lebensmittel mit der Marinade und legen Sie sie in den Vakuumbehälter.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Stellen Sie sicher, dass der Vakuumbehälter auf Vakuum (Vacuum) eingestellt ist.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Stecken Sie die flache Vakuumschlauch-Düse in den äußeren Ansaugstutzen an der Klappe.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Stecken Sie die runde Vakuumschlauch-Düse in die Ansaugöffnung des Ventils.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Drücken Sie den Griff nach unten, um die Klappe zu verriegeln.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">6</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Accessories</span>-Taste und wählen Sie <b>Canister</b>.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">7</span>
+        <div class="step-text">Drücken Sie die <span class="btn-name">Vac&amp;Seal / Start</span>-Taste zum Starten.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">8</span>
+        <div class="step-text">Nach Abschluss den Vakuumschlauch entfernen.</div>
+      </div>
+      
+    </div>
+  </div>
+    </div>
+    <div class="split-panel-figures">
+      <img src="./images_v23/image26.svg" alt="腌制操作" style="width:30mm;height:auto;object-fit:contain;display:block">
+    </div>
+  </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>14</span></div>
 </div>
 
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CH.07 — TROUBLESHOOTING ADDENDUM</div>
+    <div class="header-ref">CH.06 — OPERATION</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Zubehör &amp; Alarm)</h2>
-
-  <table>
-    <thead><tr><th style="width:22%">Fehlersymptom</th><th style="width:40%">Mögliche Ursache</th><th style="width:38%">Lösung</th></tr></thead>
-    <tbody>
-<tr>
-        <td rowspan="3"><b>Accessories-Modus evakuiert nicht</b></td>
-        <td>Flache Vakuumschlauch-Düse nicht vollständig in den äußeren Ansaugstutzen eingesteckt</td>
-        <td>Flache Düse mit Druck drehen und vollständig einschieben.</td>
-      </tr>
-      <tr>
-        <td>Klappengriff nicht nach unten gedrückt/verriegelt</td>
-        <td>Griff nach unten drücken, um die Klappe zu verriegeln, und erneut versuchen.</td>
-      </tr>
-      <tr>
-        <td>Fremdkörper auf Dichtung oder in Vakuumkammer</td>
-        <td>Klappe öffnen, Fremdkörper entfernen, schließen und erneut versuchen.</td>
-      </tr>
-      <tr>
-        <td rowspan="2"><b>Fehleralarm (langer Piepton + schnelles Blinken)</b></td>
-        <td>Alarm beim Drücken von Vac&amp;Seal/Start oder Seal</td>
-        <td>Prüfen Sie, ob die Klappe geschlossen und der Griff verriegelt ist.</td>
-      </tr>
-      <tr>
-        <td>Dauerpiepen während des Vakuumvorgangs</td>
-        <td>Gerät erreicht Zielvakuum nicht; Griffverriegelung und Beutelzustand prüfen, neuen Beutel verwenden.</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>13</span></div>
-</div>
-
-<!-- ========== 故障排除（液体进入）========== -->
-<div class="page">
-  <div class="header-strip">
-    <div class="header-brand">ACT</div>
-    <div class="header-ref">CH.07 — LIQUID RECOVERY</div>
-  </div>
-  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Forts.)</h2>
-
-  <div class="sub-title">Behandlungsanleitung bei Flüssigkeitseintritt ins Gerät (z. B. durch besondere Umstände)</div>
-
-  <p style="font-size:13px;color:#555;margin-bottom:8px"><b>Flüssigkeit in der Vakuumkammer:</b></p>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Strom sofort trennen und mindestens 5 Minuten warten, bis das Heizelement abgekühlt ist.</li>
-    <li><span class="step-num">2</span>Flüssigkeitsauffangschale entnehmen und Flüssigkeit entfernen und abtrocknen.</li>
-    <li><span class="step-num">3</span>Flüssigkeit in der Vakuumkammer abtrocknen.</li>
-    <li><span class="step-num">4</span>Küchenpapier oder Tablett unter das Gerät legen und wieder einschalten.</li>
-    <li><span class="step-num">5</span>Klappe schließen, <span class="btn-name">Pulse Vac</span>-Taste 20 Sekunden gedrückt halten zum Evakuieren, dann <span class="btn-name">Stop</span> drücken zum Entlüften. 5-mal wiederholen, um Flüssigkeit aus den inneren Leitungen zu entfernen.</li>
-    <li><span class="step-num">6</span>Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 48 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</li>
-  </ol>
-
-  <p style="font-size:13px;color:#555;margin:16px 0 8px"><b>Flüssigkeit am Heizelement:</b></p>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Gerät nicht kippen. Strom trennen, 10 Minuten warten, bis Heizelement abgekühlt und innere Flüssigkeit abgeflossen ist.</li>
-    <li><span class="step-num">2</span>Flüssigkeit in Auffangschale, Vakuumkammer und am Boden entfernen und abtrocknen.</li>
-    <li><span class="step-num">3</span>Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 24 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</li>
-    <li><span class="step-num">4</span>Küchenpapier oder Tablett unter das Gerät legen und wieder einschalten.</li>
-    <li><span class="step-num">5</span>Klappe schließen, <span class="btn-name">Pulse Vac</span>-Taste 20 Sekunden gedrückt halten zum Evakuieren, dann <span class="btn-name">Stop</span> drücken zum Entlüften. 5-mal wiederholen, um Flüssigkeit aus den inneren Leitungen zu entfernen.</li>
-    <li><span class="step-num">6</span>Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 48 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</li>
-  </ol>
-
-  <div class="caution-box">
-    <div class="box-title">VORSICHT</div>
-    Bei längerer Nichtreinigung können die inneren Leitungen verstopfen und die Evakuierungsleistung beeinträchtigen. Wenden Sie sich in diesem Fall an den Kundendienst für einen Leitungsaustausch.
+  <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Forts.)</h2>
+  <div class="sub-title">6.10 Rollenbeutel-Fach Anleitung</div>
+<ul class="bullet-list">
+        <li>Dieses Gerät kann gleichzeitig zwei Rollenbeutel aufnehmen (z. B. zwei Rollen mit maximal 20 feet/6 m Länge).</li>
+<li>Bei einer einzelnen Rolle können bis zu 50 feet (15 m) Länge verwendet werden.</li>
+<li>Das Rollenbeutel-Fach nimmt Rollenbeutel bis 12 inch (300 mm) Breite auf. Unten ist eine spezielle Aufnahme für Rollenbeutel bis 8 inch (200 mm) Breite vorgesehen.</li>
+      </ul>
+<div class="figure-row" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_v23/image28.svg" alt="单卷袋放置" style="object-fit:contain">
+<img src="./images_v23/image30.svg" alt="双卷袋放置" style="object-fit:contain">
   </div>
   <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>15</span></div>
 </div>
 
-<!-- @CONTENT:troubleshooting:end -->
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung</h2>
+  <table>
+    <thead><tr><th style="width:22%;">Fehlersymptom</th><th style="width:40%;">Mögliche Ursache</th><th style="width:38%;">Lösung</th></tr></thead>
+    <tbody>
+<tr><td rowspan="3"><b>Gerät lässt sich nicht einschalten</b></td><td>Netzkabel nicht korrekt in die Steckdose gesteckt</td><td>Stellen Sie sicher, dass das Netzkabel korrekt eingesteckt ist.</td></tr>
+<tr><td>Netzkabel beschädigt oder defekt</td><td>Netz trennen und Netzkabel prüfen; bei Beschädigung von Fachpersonal ersetzen lassen.</td></tr>
+<tr><td>Stecker oder Kabelverbindung der Steuerplatine gelockert</td><td>Wenden Sie sich an Fachpersonal für die Reparatur.</td></tr>
+<tr><td rowspan="6"><b>Unzureichendes Vakuum</b></td><td>Beutelöffnung nicht vollständig innerhalb der Dichtung</td><td>Stellen Sie sicher, dass die gesamte Beutelöffnung innerhalb der Dichtung der unteren Vakuumkammer liegt.</td></tr>
+<tr><td>Vakuumbeutel ohne Struktur verwendet</td><td>Verwenden Sie nur Vakuumbeutel mit Luftkanal-Struktur.</td></tr>
+<tr><td>Dichtung beschädigt, hochgeklappt oder falsch montiert</td><td>Dichtungszustand prüfen und korrekt montieren.</td></tr>
+<tr><td>Beutel beschädigt oder mit Löchern</td><td>Neuen Vakuumbeutel verwenden.</td></tr>
+<tr><td>Fremdkörper an der Beutelöffnung beeinträchtigen die Versiegelung</td><td>Beutelöffnung reinigen und erneut versuchen.</td></tr>
+<tr><td>Zu lange Heißsiegelzeit führt zu Überhitzung</td><td>Klappe öffnen, Gerät abkühlen lassen und erneut verwenden.</td></tr>
+<tr><td rowspan="4"><b>Versiegelung nicht möglich oder mangelhaft</b></td><td>Beutelöffnung nicht korrekt auf dem Heizelement platziert</td><td>Beutelöffnung neu platzieren und flach über dem Heizelement ausrichten.</td></tr>
+<tr><td>Feuchtigkeit, Partikel oder Rückstände im Versiegelungsbereich</td><td>Versiegelungsbereich reinigen und erneut versuchen.</td></tr>
+<tr><td>Versiegelungsleiste nicht montiert</td><td>Versiegelungsleiste montieren.</td></tr>
+<tr><td>Standard-Siegelzeit zu kurz</td><td><span class="btn-name">Extend Seal Time</span> drücken, um die Siegelzeit zu verlängern, und erneut versuchen.</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>16</span></div>
+</div>
 
-<!-- @CONTENT:maintenance:start — 维护保养，同品类可复用大部分 -->
-<!-- ========== 第8章 维护保养 ========== -->
+<div class="page compact-troubleshoot">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Forts.)</h2>
+  <table>
+    <thead><tr><th style="width:22%;">Fehlersymptom</th><th style="width:40%;">Mögliche Ursache</th><th style="width:38%;">Lösung</th></tr></thead>
+    <tbody>
+<tr><td rowspan="3"><b>Beutel verliert nach Vakuumversiegelung Luft</b></td><td>Hitzebeständiges Klebeband beschädigt oder abgelöst</td><td>Hitzebeständiges Klebeband zeitnah ersetzen.</td></tr>
+<tr><td>Abnorme Heiztemperatur führt zu Schmelzen oder unzureichender Versiegelung</td><td>Siehe Lösungen bei „Unzureichendes Vakuum“ und „Versiegelung nicht möglich“.</td></tr>
+<tr><td>Scharfe Gegenstände haben den Beutel durchstochen</td><td>Scharfe Kanten mit Küchenpapier oder Prickelschutzfolie umwickeln und neuen Beutel verwenden.</td></tr>
+    </tbody>
+  </table>
+<div class="note-box">
+        <div class="box-title">HINWEIS</div>
+        
+        Wenn Obst und Gemüse vor dem Verpacken nicht richtig blanchiert wurden oder heiße Lebensmittel verpackt werden, können Gase freigesetzt werden, sodass sich der Vakuumbeutel nicht zusammenzieht. Dies ist ein normales Verhalten und kein Luftverlust.
+      </div>
+<div class="note-box">
+        
+        
+        Wenn die oben genannten Lösungen das Problem nicht beheben, wenden Sie sich an den Kundenservice. Öffnen Sie das Gerät nicht eigenständig.
+      </div>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>17</span></div>
+</div>
+
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Zubehör & Alarm)</h2>
+  <table>
+    <thead><tr><th style="width:22%;">Fehlersymptom</th><th style="width:40%;">Mögliche Ursache</th><th style="width:38%;">Lösung</th></tr></thead>
+    <tbody>
+<tr><td rowspan="3"><b>Accessories-Modus evakuiert nicht</b></td><td>Flache Vakuumschlauch-Düse nicht vollständig in den äußeren Ansaugstutzen eingesteckt</td><td>Flache Düse mit Druck drehen und vollständig einschieben.</td></tr>
+<tr><td>Klappengriff nicht nach unten gedrückt/verriegelt</td><td>Griff nach unten drücken, um die Klappe zu verriegeln, und erneut versuchen.</td></tr>
+<tr><td>Fremdkörper auf Dichtung oder in Vakuumkammer</td><td>Klappe öffnen, Fremdkörper entfernen, schließen und erneut versuchen.</td></tr>
+<tr><td rowspan="2"><b>Fehleralarm (langer Piepton + schnelles Blinken)</b></td><td>Alarm beim Drücken von Vac&amp;Seal/Start oder Seal</td><td>Prüfen Sie, ob die Klappe geschlossen und der Griff verriegelt ist.</td></tr>
+<tr><td>Dauerpiepen während des Vakuumvorgangs</td><td>Gerät erreicht Zielvakuum nicht; Griffverriegelung und Beutelzustand prüfen, neuen Beutel verwenden.</td></tr>
+    </tbody>
+  </table>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>18</span></div>
+</div>
+
+<div class="page">
+  <div class="header-strip">
+    <div class="header-brand">ACT</div>
+    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
+  </div>
+  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Forts.)</h2>
+  <div class="sub-title">Behandlungsanleitung bei Flüssigkeitseintritt ins Gerät (z. B. durch besondere Umstände)</div>
+<p><b>Flüssigkeit in der Vakuumkammer:</b></p>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Strom sofort trennen und mindestens 5 Minuten warten, bis das Heizelement abgekühlt ist.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Flüssigkeitsauffangschale entnehmen und Flüssigkeit entfernen und abtrocknen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Flüssigkeit in der Vakuumkammer abtrocknen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Küchenpapier oder Tablett unter das Gerät legen und wieder einschalten.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Klappe schließen, <span class="btn-name">Pulse Vac</span>-Taste 20 Sekunden gedrückt halten zum Evakuieren, dann <span class="btn-name">Stop</span> drücken zum Entlüften. 5-mal wiederholen, um Flüssigkeit aus den inneren Leitungen zu entfernen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">6</span>
+        <div class="step-text">Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 48 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</div>
+      </div>
+      
+    </div>
+  </div>
+<p><b>Flüssigkeit am Heizelement:</b></p>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Gerät nicht kippen. Strom trennen, 10 Minuten warten, bis Heizelement abgekühlt und innere Flüssigkeit abgeflossen ist.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Flüssigkeit in Auffangschale, Vakuumkammer und am Boden entfernen und abtrocknen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 24 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Küchenpapier oder Tablett unter das Gerät legen und wieder einschalten.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Klappe schließen, <span class="btn-name">Pulse Vac</span>-Taste 20 Sekunden gedrückt halten zum Evakuieren, dann <span class="btn-name">Stop</span> drücken zum Entlüften. 5-mal wiederholen, um Flüssigkeit aus den inneren Leitungen zu entfernen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">6</span>
+        <div class="step-text">Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 48 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</div>
+      </div>
+      
+    </div>
+  </div>
+<div class="caution-box">
+        <div class="box-title">VORSICHT</div>
+        
+        Bei längerer Nichtreinigung können die inneren Leitungen verstopfen und die Evakuierungsleistung beeinträchtigen. Wenden Sie sich in diesem Fall an den Kundendienst für einen Leitungsaustausch.
+      </div>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>19</span></div>
+</div>
+
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">CH.08 — MAINTENANCE</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">08</span>Wartung &amp; Pflege</h2>
+  <h2 class="section-title"><span class="chapter-num">08</span>Wartung & Pflege</h2>
   <ul class="bullet-list">
-    <li>Stellen Sie sicher, dass die Arbeitsfläche eben, sauber und trocken ist.</li>
-    <li>Schließen Sie die Verriegelung bei Nichtbenutzung nicht, um eine dauerhafte Belastung der Dichtung und Funktionsbeeinträchtigung zu vermeiden.</li>
-    <li>Reinigen Sie wöchentlich Dichtung, Versiegelungsleiste, Heizelement, Flüssigkeitsauffangschale und Vakuumkammer.</li>
-    <li>Heizelement und Versiegelungsleiste sind nach dem Betrieb heiß. Warten Sie auf Abkühlung vor der Wartung.</li>
-    <li>Trennen Sie vor der Reinigung das Gerät vom Stromnetz.</li>
-    <li>Reinigen Sie Dichtung, Versiegelungsleiste, Heizelement, Flüssigkeitsauffangschale, Vakuumkammer und Vakuumschlauch mit einer weichen Bürste. Vermeiden Sie harte Bürsten, um Beschädigungen zu vermeiden.</li>
-    <li>Nach jedem Arbeitstag die Flüssigkeitsauffangschale entnehmen, reinigen und abtrocknen sowie Vakuumkammer mit feuchtem Tuch oder Küchenpapier von Rückständen und Staub befreien.</li>
-    <li>Nach jedem Betrieb prüfen, ob die Dichtung stark verformt oder das hitzebeständige Klebeband beschädigt/abgelöst ist; gegebenenfalls zeitnah ersetzen.</li>
-    <li>Flüssigkeitsauffangschale und Vakuumschlauch sind nicht für Heißreinigung (z. B. Spülmaschine) geeignet.</li>
-  </ul>
-  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>16</span></div>
+        <li>Stellen Sie sicher, dass die Arbeitsfläche eben, sauber und trocken ist.</li>
+<li>Schließen Sie die Verriegelung bei Nichtbenutzung nicht, um eine dauerhafte Belastung der Dichtung und Funktionsbeeinträchtigung zu vermeiden.</li>
+<li>Reinigen Sie wöchentlich Dichtung, Versiegelungsleiste, Heizelement, Flüssigkeitsauffangschale und Vakuumkammer.</li>
+<li>Heizelement und Versiegelungsleiste sind nach dem Betrieb heiß. Warten Sie auf Abkühlung vor der Wartung.</li>
+<li>Trennen Sie vor der Reinigung das Gerät vom Stromnetz.</li>
+<li>Reinigen Sie Dichtung, Versiegelungsleiste, Heizelement, Flüssigkeitsauffangschale, Vakuumkammer und Vakuumschlauch mit einer weichen Bürste. Vermeiden Sie harte Bürsten, um Beschädigungen zu vermeiden.</li>
+<li>Nach jedem Arbeitstag die Flüssigkeitsauffangschale entnehmen, reinigen und abtrocknen sowie Vakuumkammer mit feuchtem Tuch oder Küchenpapier von Rückständen und Staub befreien.</li>
+<li>Nach jedem Betrieb prüfen, ob die Dichtung stark verformt oder das hitzebeständige Klebeband beschädigt/abgelöst ist; gegebenenfalls zeitnah ersetzen.</li>
+<li>Flüssigkeitsauffangschale und Vakuumschlauch sind nicht für Heißreinigung (z. B. Spülmaschine) geeignet.</li>
+      </ul>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>20</span></div>
 </div>
 
-<!-- @CONTENT:maintenance:end -->
-
-<!-- @CONTENT:vacuum_features:start — 真空包装科普，同品类真空封口机可完全复用 -->
-<!-- ========== 第9章 真空包装特性 ========== -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -1334,74 +1739,68 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">09</span>Vakuumverpackungs-Eigenschaften</h2>
   <p>Die Vakuumverpackung verlängert die Haltbarkeit von Lebensmitteln, indem der größte Teil der Luft aus dem verschlossenen Behälter entfernt wird und der Wiedereintritt von Luft verhindert wird, wodurch die Oxidation reduziert wird. Die Vakuumverpackung hilft, Aroma und Gesamtqualität zu erhalten. Sie hemmt auch das Wachstum aerober Mikroorganismen. Unter bestimmten Bedingungen können folgende Phänomene auftreten:</p>
-  <ul class="bullet-list" style="margin-top:8px">
-    <li><b>Schimmel</b> — Schimmel kann sich in sauerstoffarmer Umgebung nicht vermehren; die Vakuumverpackung hemmt das Schimmelwachstum.</li>
-    <li><b>Hefe</b> — Hefe benötigt Wasser, Zucker und moderate Temperaturen zur Vermehrung und kann mit oder ohne Luft überleben. Zur Verlangsamung des Hefewachstums ist Kühlung erforderlich; Einfrieren hemmt wirksam.</li>
-    <li><b>Bakterien</b> — Verursachen unangenehme Gerüche, Verfärbungen oder Erweichung. Unter geeigneten Bedingungen kann Clostridium botulinum auch ohne Luft wachsen und ist weder durch Geruch noch Geschmack erkennbar.</li>
-  </ul>
-  <p style="margin-top:10px">Wie bei jeder anderen Lagerungsmethode ist es wichtig, vor dem Verzehr zu prüfen, ob die Lebensmittel verdorben sind. Bei -4°C oder darunter wird das mikrobielle Wachstum deutlich reduziert. Für die Langzeitlagerung wird empfohlen, nach der Vakuumverpackung einzufrieren.</p>
-  <div class="note-box" style="margin-top:14px">
-    <div class="box-title">HINWEIS</div>
-    Die Vakuumverpackung ersetzt nicht Kühlung oder Einfrieren. Alle verderblichen Lebensmittel, die gekühlt werden müssen, müssen auch nach der Vakuumverpackung gekühlt oder eingefroren bleiben.
-  </div>
-
-  <div class="sub-title">Lagerungshinweise</div>
-  <ul class="bullet-list">
-    <li>Gemüse muss vor der Vakuumverpackung blanchiert werden. Gemüse in kochendes Wasser geben, in kaltes Wasser tauchen und mit einem Tuch trocknen, bevor es vakuumverpackt wird.</li>
-    <li>Kreuzblütler (Blumenkohl, Sprossen, Kohl usw.) geben während der Lagerung natürlicherweise Gase ab; nach dem Kochen und Vakuumversiegeln sollten sie im Kühlschrank aufbewahrt werden.</li>
-    <li>Lagern Sie Knoblauch oder Pilze und andere Pilzlebensmittel niemals unter Vakuum. Nach dem Evakuieren können schädliche Stoffe entstehen, die die Gesundheit beeinträchtigen können.</li>
-  </ul>
-  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>17</span></div>
+<ul class="bullet-list">
+        <li><b>Schimmel</b> — Schimmel kann sich in sauerstoffarmer Umgebung nicht vermehren; die Vakuumverpackung hemmt das Schimmelwachstum.</li>
+<li><b>Hefe</b> — Hefe benötigt Wasser, Zucker und moderate Temperaturen zur Vermehrung und kann mit oder ohne Luft überleben. Zur Verlangsamung des Hefewachstums ist Kühlung erforderlich; Einfrieren hemmt wirksam.</li>
+<li><b>Bakterien</b> — Verursachen unangenehme Gerüche, Verfärbungen oder Erweichung. Unter geeigneten Bedingungen kann Clostridium botulinum auch ohne Luft wachsen und ist weder durch Geruch noch Geschmack erkennbar.</li>
+      </ul>
+<p>Wie bei jeder anderen Lagerungsmethode ist es wichtig, vor dem Verzehr zu prüfen, ob die Lebensmittel verdorben sind. Bei -4°C oder darunter wird das mikrobielle Wachstum deutlich reduziert. Für die Langzeitlagerung wird empfohlen, nach der Vakuumverpackung einzufrieren.</p>
+<div class="note-box">
+        <div class="box-title">HINWEIS</div>
+        
+        Die Vakuumverpackung ersetzt nicht Kühlung oder Einfrieren. Alle verderblichen Lebensmittel, die gekühlt werden müssen, müssen auch nach der Vakuumverpackung gekühlt oder eingefroren bleiben.
+      </div>
+<div class="sub-title">Lagerungshinweise</div>
+<ul class="bullet-list">
+        <li>Gemüse muss vor der Vakuumverpackung blanchiert werden. Gemüse in kochendes Wasser geben, in kaltes Wasser tauchen und mit einem Tuch trocknen, bevor es vakuumverpackt wird.</li>
+<li>Kreuzblütler (Blumenkohl, Sprossen, Kohl usw.) geben während der Lagerung natürlicherweise Gase ab; nach dem Kochen und Vakuumversiegeln sollten sie im Kühlschrank aufbewahrt werden.</li>
+<li>Lagern Sie Knoblauch oder Pilze und andere Pilzlebensmittel niemals unter Vakuum. Nach dem Evakuieren können schädliche Stoffe entstehen, die die Gesundheit beeinträchtigen können.</li>
+      </ul>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>21</span></div>
 </div>
 
-<!-- ========== 真空包装特性（食物保鲜表）========== -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">CH.09 — FRESHNESS GUIDE</div>
+    <div class="header-ref">CH.09 — VACUUM PROPERTIES</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">09</span>Vakuumverpackungs-Eigenschaften (Forts.)</h2>
-
   <div class="sub-title">Referenz zur Haltbarkeit vakuumverpackter Lebensmittel</div>
-  <table>
+<table>
     <thead><tr><th>Lagerungsart</th><th>Lebensmittelkategorie</th><th>Konventionelle Lagerung</th><th>Vakuumverpackung</th></tr></thead>
     <tbody>
-      <tr><td rowspan="4" style="font-weight:600">Tiefkühllagerung</td><td>Fleisch</td><td>6 Mon.</td><td>15–20 Mon.</td></tr>
-      <tr><td>Fisch, Meeresfrüchte</td><td>6 Mon.</td><td>10–12 Mon.</td></tr>
-      <tr><td>Trockenfrüchte, Kaffeebohnen</td><td>6–9 Mon.</td><td>18–24 Mon.</td></tr>
-      <tr><td colspan="3" style="border:none;height:4px"></td></tr>
-      <tr><td rowspan="5" style="font-weight:600">Kühllagerung</td><td>Fleisch</td><td>2–3 Tage</td><td>12–13 Tage</td></tr>
-      <tr><td>Fisch, Meeresfrüchte</td><td>2–3 Tage</td><td>6–8 Tage</td></tr>
-      <tr><td>Gekochtes Fleisch</td><td>2–3 Tage</td><td>10–14 Tage</td></tr>
-      <tr><td>Eier</td><td>2–3 Tage</td><td>30–50 Tage</td></tr>
-      <tr><td>Gemüse</td><td>2–3 Tage</td><td>7–10 Tage</td></tr>
-      <tr><td colspan="4" style="border:none;height:4px"></td></tr>
-      <tr><td rowspan="7" style="font-weight:600">Raumtemperatur</td><td>Brot</td><td>1–2 Tage</td><td>6–8 Tage</td></tr>
-      <tr><td>Kekse (verpackt)</td><td>4–6 Mon.</td><td>12 Mon.</td></tr>
-      <tr><td>Nudeln</td><td>5–6 Mon.</td><td>12 Mon.</td></tr>
-      <tr><td>Reis</td><td>5–6 Mon.</td><td>12 Mon.</td></tr>
-      <tr><td>Mehl</td><td>4–5 Mon.</td><td>12 Mon.</td></tr>
-      <tr><td>Trockenware</td><td>3–4 Mon.</td><td>12 Mon.</td></tr>
-      <tr><td>Kaffee / Tee / Milchpulver</td><td>2–6 Mon.</td><td>12 Mon.</td></tr>
+<tr><td rowspan="4">Tiefkühllagerung</td><td>Fleisch</td><td>6 Mon.</td><td>15–20 Mon.</td></tr>
+<tr><td>Fisch, Meeresfrüchte</td><td>6 Mon.</td><td>10–12 Mon.</td></tr>
+<tr><td>Trockenfrüchte, Kaffeebohnen</td><td>6–9 Mon.</td><td>18–24 Mon.</td></tr>
+<tr><td colspan="3"></td></tr>
+<tr><td rowspan="5">Kühllagerung</td><td>Fleisch</td><td>2–3 Tage</td><td>12–13 Tage</td></tr>
+<tr><td>Fisch, Meeresfrüchte</td><td>2–3 Tage</td><td>6–8 Tage</td></tr>
+<tr><td>Gekochtes Fleisch</td><td>2–3 Tage</td><td>10–14 Tage</td></tr>
+<tr><td>Eier</td><td>2–3 Tage</td><td>30–50 Tage</td></tr>
+<tr><td>Gemüse</td><td>2–3 Tage</td><td>7–10 Tage</td></tr>
+<tr><td colspan="4"></td></tr>
+<tr><td rowspan="7">Raumtemperatur</td><td>Brot</td><td>1–2 Tage</td><td>6–8 Tage</td></tr>
+<tr><td>Kekse (verpackt)</td><td>4–6 Mon.</td><td>12 Mon.</td></tr>
+<tr><td>Nudeln</td><td>5–6 Mon.</td><td>12 Mon.</td></tr>
+<tr><td>Reis</td><td>5–6 Mon.</td><td>12 Mon.</td></tr>
+<tr><td>Mehl</td><td>4–5 Mon.</td><td>12 Mon.</td></tr>
+<tr><td>Trockenware</td><td>3–4 Mon.</td><td>12 Mon.</td></tr>
+<tr><td>Kaffee / Tee / Milchpulver</td><td>2–6 Mon.</td><td>12 Mon.</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>18</span></div>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>22</span></div>
 </div>
 
-<!-- @CONTENT:vacuum_features:end -->
-
-<!-- ========== 第10章 品牌与保修信息 ========== -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">CH.10 — WARRANTY</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">10</span>Marken- &amp; Garantieinformationen</h2>
-
+  <h2 class="section-title"><span class="chapter-num">10</span>Marken- & Garantieinformationen</h2>
   <p>Vielen Dank für den Kauf von ACT Vakuumiergerät. Bei Fragen erreichen Sie uns unter:<br>support@thespacetec.com | www.thespacetec.com</p>
-
-  <div class="sub-title">Markeninhaber-Informationen</div>
-  <table>
+<div class="sub-title">Markeninhaber-Informationen</div>
+<table>
+    <thead><tr><th style="width:30%;">Feld</th><th>Information</th></tr></thead>
     <tbody>
       <tr><td style="width:30%">Marke</td><td><b>ADVANCED CUISINE TECHNOLOGY PTE. LTD.</b></td></tr>
       <tr><td>Adresse</td><td>60 Paya Lebar Road, #11-19 Paya Lebar Square, Singapore 409051</td></tr>
@@ -1409,27 +1808,28 @@ tr:nth-child(even) td {
       <tr><td>Kundendienst</td><td>support@thespacetec.com</td></tr>
     </tbody>
   </table>
-
-  <div class="sub-title">Autorisierter Hersteller</div>
-  <table>
+<div class="sub-title">Autorisierter Hersteller</div>
+<table>
+    <thead><tr><th style="width:30%;">Feld</th><th>Information</th></tr></thead>
     <tbody>
       <tr><td style="width:30%">Hersteller</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
       <tr><td>Adresse</td><td>No. 1, Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
       <tr><td>Webseite</td><td>www.argiontechnology.com</td></tr>
     </tbody>
   </table>
-
-  <div class="sub-title">Garantieinformationen</div>
-  <p>Dieses Produkt bietet eine <b>2-jährige eingeschränkte Garantie</b>. Innerhalb von 2 Jahren ab dem ursprünglichen Kaufdatum können Sie einen Garantieaustausch in Anspruch nehmen. Für die Garantieberechtigung müssen Sie:</p>
-  <ul class="bullet-list">
-    <li>Das Produkt innerhalb der letzten 2 Jahre gekauft haben.</li>
-    <li>Die ursprüngliche Bestellnummer oder die beim Kauf verwendete E-Mail-Adresse vorlegen können.</li>
-    <li>Bei Kauf über Händler oder Einzelhandelspartner eine Kopie der Originalrechnung vorlegen.</li>
-  </ul>
-  <p style="margin-top:12px">Senden Sie uns eine E-Mail für den Garantieservice: <b>support@thespacetec.com</b></p>
-
-  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_v23/image31.png" alt="Garantiekarte" style="width:auto;max-width:100%;max-height:4mm;object-fit:contain;"></div>
-  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>19</span></div>
+<div class="sub-title">Garantieinformationen</div>
+<p>Dieses Produkt bietet eine <b>2-jährige eingeschränkte Garantie</b>. Innerhalb von 2 Jahren ab dem ursprünglichen Kaufdatum können Sie einen Garantieaustausch in Anspruch nehmen. Für die Garantieberechtigung müssen Sie:</p>
+<ul class="bullet-list">
+        <li>Das Produkt innerhalb der letzten 2 Jahre gekauft haben.</li>
+<li>Die ursprüngliche Bestellnummer oder die beim Kauf verwendete E-Mail-Adresse vorlegen können.</li>
+<li>Bei Kauf über Händler oder Einzelhandelspartner eine Kopie der Originalrechnung vorlegen.</li>
+      </ul>
+<p>Senden Sie uns eine E-Mail für den Garantieservice: <b>support@thespacetec.com</b></p>
+<div class="fig-wrap">
+    <img src="./images_v23/image31.png" alt="Warranty separator" style="max-height:4mm;max-width:100%;object-fit:contain">
+    
+  </div>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>23</span></div>
 </div>
 
 <div class="page compact-warranty">
@@ -1437,21 +1837,22 @@ tr:nth-child(even) td {
     <div class="header-brand">ACT</div>
     <div class="header-ref">CH.10 — WARRANTY</div>
   </div>
-<div class="sub-title" style="margin-top:14px">Garantiekarte</div>
-  <table>
+  
+  <div class="sub-title">Garantiekarte</div>
+<table class="warranty-card">
     <tbody>
-      <tr><td style="width:35%">Kundenname</td><td></td></tr>
-      <tr><td>Adresse</td><td></td></tr>
-      <tr><td>Stadt / Bundesland / PLZ</td><td></td></tr>
-      <tr><td>Telefonnummer</td><td></td></tr>
-      <tr><td>E-Mail-Adresse</td><td></td></tr>
-      <tr><td>Originales Kaufdatum</td><td></td></tr>
-      <tr><td>Produktmodell</td><td></td></tr>
-      <tr><td>Seriennummer (falls zutreffend)</td><td></td></tr>
-      <tr><td>Händlername</td><td></td></tr>
+      <tr><td>Kundenname</td><td></td></tr>
+<tr><td>Adresse</td><td></td></tr>
+<tr><td>Stadt / Bundesland / PLZ</td><td></td></tr>
+<tr><td>Telefonnummer</td><td></td></tr>
+<tr><td>E-Mail-Adresse</td><td></td></tr>
+<tr><td>Originales Kaufdatum</td><td></td></tr>
+<tr><td>Produktmodell</td><td></td></tr>
+<tr><td>Seriennummer (falls zutreffend)</td><td></td></tr>
+<tr><td>Händlername</td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>20</span></div>
+  <div class="page-footer"><span>ACT V23 Bedienungsanleitung</span><span>24</span></div>
 </div>
 
 </body>

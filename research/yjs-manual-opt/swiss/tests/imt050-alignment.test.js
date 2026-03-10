@@ -46,7 +46,7 @@ test('EN output mirrors the same chapter skeleton', () => {
 
   assert.match(html, /<span class="toc-chapter">02<\/span><span class="toc-name">Product Usage Tips<\/span>/);
   assert.match(html, /<h2 class="section-title"><span class="chapter-num">04<\/span>Product Features<\/h2>/);
-  assert.match(html, /<span class="toc-chapter">09<\/span><span class="toc-name">Installation, Transport, Storage &amp; Disposal<\/span>/);
-  assert.match(html, /<h2 class="section-title"><span class="chapter-num">10<\/span>Brand &amp; Warranty Information<\/h2>/);
+  assert.match(html, /<span class="toc-chapter">09<\/span><span class="toc-name">Installation, Transport, Storage & Disposal<\/span>/);
+  assert.match(html, /<h2 class="section-title"><span class="chapter-num">10<\/span>Brand & Warranty Information<\/h2>/);
   assert.match(html, /src="\.\/images_imt050\/image31\.png"/);
 });

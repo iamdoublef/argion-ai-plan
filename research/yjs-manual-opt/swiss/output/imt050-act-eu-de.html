@@ -116,6 +116,76 @@ p {
   line-height: 1.5;
 }
 
+.step-flow {
+  margin: 8px 0;
+}
+
+.split-panel {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 8px 0;
+}
+
+.split-panel-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.split-panel-figures {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  max-width: 38%;
+}
+
+.split-panel-figures img {
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.step-flow-step {
+  margin-bottom: 6px;
+}
+
+.step-flow-row {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  min-height: 18px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.step-text {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.figure-row {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.step-figures {
+  margin: 4px 0 8px 28px !important;
+  width: calc(100% - 28px);
+}
+
+.qa-item + .qa-item {
+  margin-top: 8px;
+}
+
+.contact-cut-line {
+  margin: 6px auto 0;
+  max-width: 68%;
+  border-top: 2px dotted #333;
+}
+
 .step-num {
   position: absolute;
   left: 0;
@@ -664,21 +734,20 @@ tr:nth-child(even) td {
     <div class="header-ref">IMT050 — BEDIENUNGSANLEITUNG</div>
   </div>
   <div class="toc-title">Inhalt</div>
-  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Sicherheitshinweise</span></span><span class="toc-page">3</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Produkt- und Nutzungshinweise</span></span><span class="toc-page">5</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Produktaufbau</span></span><span class="toc-page">6</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Produktfunktionen</span></span><span class="toc-page">7</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Technische Daten</span></span><span class="toc-page">8</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Bedienungsanleitung</span></span><span class="toc-page">9</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Fehlerbehebung</span></span><span class="toc-page">11</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Wartung</span></span><span class="toc-page">12</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Installation, Transport, Lagerung &amp; Entsorgung</span></span><span class="toc-page">13</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Marken- &amp; Garantieinformationen</span></span><span class="toc-page">14</span></div>
+    <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Sicherheitshinweise</span></span><span class="toc-page">3</span></div>
+<div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Produkthinweise</span></span><span class="toc-page">5</span></div>
+<div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Produktaufbau</span></span><span class="toc-page">6</span></div>
+<div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Produktfunktionen</span></span><span class="toc-page">7</span></div>
+<div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Technische Daten</span></span><span class="toc-page">8</span></div>
+<div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Bedienungsanleitung</span></span><span class="toc-page">9</span></div>
+<div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Fehlerbehebung</span></span><span class="toc-page">11</span></div>
+<div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Wartung</span></span><span class="toc-page">12</span></div>
+<div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Installation, Transport, Lagerung & Entsorgung</span></span><span class="toc-page">13</span></div>
+<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Marken- und Garantieinformationen</span></span><span class="toc-page">14</span></div>
+
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>2</span></div>
 </div>
 
-<!-- ═══════════ SEITE 3 — KAP.01 SICHERHEIT (1/2) ═══════════ -->
-<!-- @CONTENT:safety:start — Vollständige Sicherheitshinweise aus Word-Quelldatei -->
 <div class="page compact-safety">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -686,111 +755,100 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>Sicherheitshinweise</h2>
   <p>Zu Ihrer Sicherheit lesen Sie bitte vor der Verwendung dieses Elektrogeräts alle Anweisungen in dieser Anleitung und beachten Sie stets die folgenden Sicherheitsvorkehrungen:</p>
-
-  <div class="warning-box">
-    <div class="box-title">WARNUNG</div>
-    <div style="margin:6px 0 8px;"><img src="./images_imt050/image3.png" alt="Warning Icon" style="width:22px;height:auto;max-height:22px;object-fit:contain;"></div>
-    <ul class="box-list">
-      <li>Dieses Gerät ist ausschließlich für den Hausgebrauch bestimmt. Nicht für andere Zwecke verwenden.</li>
-      <li>Kinder dürfen nicht mit dem Gerät oder dem Netzkabel spielen. Kinder, Personen mit eingeschränkter Mobilität oder kognitiven Einschränkungen dürfen das Gerät nur unter Aufsicht Erwachsener verwenden.</li>
-      <li>Kleinteile können Erstickungsgefahr darstellen. Von Kindern fernhalten.</li>
-      <li>Das Gerät nicht in Umgebungen mit hoher Feuchtigkeit oder Temperatur verwenden. Niemals in der Nähe von entzündlichen oder explosiven Gasen betreiben.</li>
-      <li>Stellen Sie sicher, dass die Netzspannung mit dem Typenschild des Geräts übereinstimmt.</li>
-      <li>Nach Gebrauch den Strom abschalten.</li>
-      <li>Beim Herausziehen den Stecker selbst greifen — nicht am Netzkabel ziehen.</li>
-      <li>Das Gerät oder das Netzkabel nicht in Wasser oder andere Flüssigkeiten tauchen.</li>
-      <li>Das Netzkabel muss direkt in eine ordnungsgemäße Steckdose eingesteckt werden.</li>
-      <li>Bei Beschädigung von Stecker, Netzkabel oder Gerät sofort die Benutzung einstellen und den Hersteller oder eine autorisierte Servicestelle kontaktieren. Nicht selbst reparieren.</li>
-      <li>Das Netzkabel nicht über die Tischkante hängen lassen — Kinder könnten daran ziehen.</li>
-      <li>Niemals mit nassen Händen oder barfuß die elektrischen Teile des Geräts berühren.</li>
-      <li>Die Stromversorgung muss über einen Fehlerstromschutzschalter (FI/RCD) verfügen.</li>
-      <li>Die Steckdose muss den örtlichen Vorschriften entsprechen. Eine Erdung des Geräts ist vorgeschrieben.</li>
-      <li>Vor Reinigung, Wartung oder Teilewechsel immer den Netzstecker ziehen.</li>
-      <li>Niemals Schraubendreher oder andere Gegenstände in die Lüftungsöffnungen einführen.</li>
-      <li>Nur autorisierte Techniker dürfen das Gerät öffnen, prüfen oder reparieren.</li>
-      <li>Im Brandfall kein Wasser verwenden — einen CO₂-Feuerlöscher benutzen.</li>
-      <li>Zum Abtauen keine mechanischen Mittel oder andere als vom Hersteller empfohlene Methoden verwenden.</li>
-      <li>Den Kältemittelkreislauf nicht beschädigen.</li>
-      <li>Warnung: Brennbare Materialien — Brandgefahr.</li>
-      <li>Kältemittelabfälle nur in zugelassenen Entsorgungszentren entsorgen. Von offenen Flammen fernhalten.</li>
-      <li>Keine Aerosolbehälter oder explosive Stoffe mit brennbaren Treibmitteln im Gerät lagern.</li>
-      <li>Alle Lüftungsöffnungen freihalten. Das Gerät von Wärmequellen oder Dampferzeugern fernhalten.</li>
-    </ul>
-  </div>
+<div class="warning-box">
+        <div class="box-title">WARNUNG</div>
+        <div style="margin:6px 0 8px;"><img src="./images_imt050/image3.png" alt="Warning icon" style="max-height:22px;width:22px;object-fit:contain"></div>
+        <ul class="box-list">
+            <li>Dieses Gerät ist ausschließlich für den Hausgebrauch bestimmt. Nicht für andere Zwecke verwenden.</li>
+<li>Kinder dürfen nicht mit dem Gerät oder dem Netzkabel spielen. Kinder, Personen mit eingeschränkter Mobilität oder kognitiven Einschränkungen dürfen das Gerät nur unter Aufsicht Erwachsener verwenden.</li>
+<li>Kleinteile können Erstickungsgefahr darstellen. Von Kindern fernhalten.</li>
+<li>Das Gerät nicht in Umgebungen mit hoher Feuchtigkeit oder Temperatur verwenden. Niemals in der Nähe von entzündlichen oder explosiven Gasen betreiben.</li>
+<li>Stellen Sie sicher, dass die Netzspannung mit dem Typenschild des Geräts übereinstimmt.</li>
+<li>Nach Gebrauch den Strom abschalten.</li>
+<li>Beim Herausziehen den Stecker selbst greifen — nicht am Netzkabel ziehen.</li>
+<li>Das Gerät oder das Netzkabel nicht in Wasser oder andere Flüssigkeiten tauchen.</li>
+<li>Das Netzkabel muss direkt in eine ordnungsgemäße Steckdose eingesteckt werden.</li>
+<li>Bei Beschädigung von Stecker, Netzkabel oder Gerät sofort die Benutzung einstellen und den Hersteller oder eine autorisierte Servicestelle kontaktieren. Nicht selbst reparieren.</li>
+<li>Das Netzkabel nicht über die Tischkante hängen lassen — Kinder könnten daran ziehen.</li>
+<li>Niemals mit nassen Händen oder barfuß die elektrischen Teile des Geräts berühren.</li>
+<li>Die Stromversorgung muss über einen Fehlerstromschutzschalter (FI/RCD) verfügen.</li>
+<li>Die Steckdose muss den örtlichen Vorschriften entsprechen. Eine Erdung des Geräts ist vorgeschrieben.</li>
+<li>Vor Reinigung, Wartung oder Teilewechsel immer den Netzstecker ziehen.</li>
+<li>Niemals Schraubendreher oder andere Gegenstände in die Lüftungsöffnungen einführen.</li>
+<li>Nur autorisierte Techniker dürfen das Gerät öffnen, prüfen oder reparieren.</li>
+<li>Im Brandfall kein Wasser verwenden — einen CO₂-Feuerlöscher benutzen.</li>
+<li>Zum Abtauen keine mechanischen Mittel oder andere als vom Hersteller empfohlene Methoden verwenden.</li>
+<li>Den Kältemittelkreislauf nicht beschädigen.</li>
+<li>Warnung: Brennbare Materialien — Brandgefahr.</li>
+<li>Kältemittelabfälle nur in zugelassenen Entsorgungszentren entsorgen. Von offenen Flammen fernhalten.</li>
+<li>Keine Aerosolbehälter oder explosive Stoffe mit brennbaren Treibmitteln im Gerät lagern.</li>
+<li>Alle Lüftungsöffnungen freihalten. Das Gerät von Wärmequellen oder Dampferzeugern fernhalten.</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>3</span></div>
 </div>
 
-<!-- ═══════════ SEITE 4 — KAP.01 SICHERHEIT (2/2) ═══════════ -->
 <div class="page compact-safety">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">KAP.01 — SICHERHEIT</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>Sicherheitshinweise (Forts.)</h2>
-
   <div class="caution-box">
-    <div class="box-title">VORSICHT</div>
-    <ul class="box-list">
-      <li>Das Gerät beim Transport aufrecht halten. Kippen kann zu Beschädigungen führen.</li>
-      <li>Nach dem Transport 4 Stunden stehen lassen, damit sich das Kältemittel stabilisiert, bevor Sie das Gerät einschalten.</li>
-      <li>Bei Wartungsarbeiten am Motor oder Kältesystem Handschuhe tragen.</li>
-      <li>Die Lüftungsöffnungen nicht blockieren, um einen einwandfreien Betrieb zu gewährleisten.</li>
-      <li>Keine Nicht-Lebensmittel in die Gerätekammer legen.</li>
-      <li>Dieses Gerät ist nur für den Innenbereich bestimmt.</li>
-      <li>Dieses Gerät ist zum Herstellen von Eis aus Trinkwasser vorgesehen. Nicht für andere Zwecke verwenden.</li>
-    </ul>
-  </div>
-
-  <div class="note-box">
-    <div class="box-title">HINWEIS</div>
-    <ul class="box-list">
-      <li>Der Geräuschpegel liegt unter 50 dB(A).</li>
-      <li>Die Klimaklasse dieses Geräts ist SN, geeignet für Umgebungstemperaturen von 10°C–32°C / 50°F–89,6°F.</li>
-    </ul>
-  </div>
+        <div class="box-title">VORSICHT</div>
+        
+        <ul class="box-list">
+            <li>Das Gerät beim Transport aufrecht halten. Kippen kann zu Beschädigungen führen.</li>
+<li>Nach dem Transport 4 Stunden stehen lassen, damit sich das Kältemittel stabilisiert, bevor Sie das Gerät einschalten.</li>
+<li>Bei Wartungsarbeiten am Motor oder Kältesystem Handschuhe tragen.</li>
+<li>Die Lüftungsöffnungen nicht blockieren, um einen einwandfreien Betrieb zu gewährleisten.</li>
+<li>Keine Nicht-Lebensmittel in die Gerätekammer legen.</li>
+<li>Dieses Gerät ist nur für den Innenbereich bestimmt.</li>
+<li>Dieses Gerät ist zum Herstellen von Eis aus Trinkwasser vorgesehen. Nicht für andere Zwecke verwenden.</li>
+          </ul>
+      </div>
+<div class="note-box">
+        <div class="box-title">HINWEIS</div>
+        
+        <ul class="box-list">
+            <li>Der Geräuschpegel liegt unter 50 dB(A).</li>
+<li>Die Klimaklasse dieses Geräts ist SN, geeignet für Umgebungstemperaturen von 10°C–32°C / 50°F–89,6°F.</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>4</span></div>
 </div>
-<!-- @CONTENT:safety:end -->
 
-<!-- ═══════════ SEITE 5 — KAP.02 PRODUKTHINWEISE ═══════════ -->
-<!-- @CONTENT:usage_tips:start -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">KAP.02 — PRODUKTHINWEISE</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">02</span>Produkthinweise</h2>
-
   <div class="sub-title">Aufstellung &amp; erste Nutzung</div>
-  <ul class="bullet-list">
-    <li>Das Gerät auf eine stabile, ebene und trockene Arbeitsfläche stellen.</li>
-    <li>Mindestens 120 mm (4,7") Belüftungsabstand auf allen Seiten einhalten.</li>
-    <li>Von Wärmequellen (Öfen, Herdplatten usw.) und direkter Sonneneinstrahlung fernhalten.</li>
-    <li>Vor dem ersten Gebrauch einmal den Reinigungszyklus durchführen (siehe KAP.08).</li>
-    <li>Die ersten 5 Eisbereitungszyklen sind Teil der Abkühlphase. Kleinere Eisstücke in dieser Phase sind normal.</li>
-  </ul>
-
-  <div class="sub-title">Wasserqualität</div>
-  <ul class="bullet-list">
-    <li>Verwenden Sie Trinkwasser für die Eisherstellung. Je reiner das Wasser, desto klarer das Eis.</li>
-    <li>Für optimale Klarheit Wasser mit niedrigem Mineralgehalt verwenden (TDS &lt; 200 mg/L).</li>
-    <li>Geeignete Quellen: gereinigtes Wasser, RO-gefiltertes Wasser, tief gefiltertes Wasser, mineralstoffarmes Mineralwasser.</li>
-    <li><strong>NICHT</strong> verwenden: gefärbte, aromatisierte, kohlensäurehaltige oder gasgesättigte Getränke (Tee, Saft, Kaffee, Milch, Limonade usw.) — diese können das Gerät verunreinigen oder beschädigen.</li>
-  </ul>
-
-  <div class="sub-title">Nutzungshinweise</div>
-  <ul class="bullet-list">
-    <li>Nach dem Auspacken alle Verpackungsmaterialien entfernen, das Innere mit einem feuchten Tuch auswischen und gründlich trocknen.</li>
-    <li>Wenn der Eiskorb voll ist, pausiert das Gerät automatisch und gibt einen Hinweis aus.</li>
-    <li>Es kann immer nur eine Eisgröße gleichzeitig produziert werden, ein Wechsel während des Betriebs ist jedoch möglich.</li>
-    <li>Gelegentlich trübes Eis im Dauerbetrieb ist normal und hängt von Wasserqualität, Wassertemperatur und Umgebungstemperatur ab.</li>
-  </ul>
-
+<ul class="bullet-list">
+        <li>Das Gerät auf eine stabile, ebene und trockene Arbeitsfläche stellen.</li>
+<li>Mindestens 120 mm (4,7&quot;) Belüftungsabstand auf allen Seiten einhalten.</li>
+<li>Von Wärmequellen (Öfen, Herdplatten usw.) und direkter Sonneneinstrahlung fernhalten.</li>
+<li>Vor dem ersten Gebrauch einmal den Reinigungszyklus durchführen (siehe KAP.08).</li>
+<li>Die ersten 5 Eisbereitungszyklen sind Teil der Abkühlphase. Kleinere Eisstücke in dieser Phase sind normal.</li>
+      </ul>
+<div class="sub-title">Wasserqualität</div>
+<ul class="bullet-list">
+        <li>Verwenden Sie Trinkwasser für die Eisherstellung. Je reiner das Wasser, desto klarer das Eis.</li>
+<li>Für optimale Klarheit Wasser mit niedrigem Mineralgehalt verwenden (TDS &lt; 200 mg/L).</li>
+<li>Geeignete Quellen: gereinigtes Wasser, RO-gefiltertes Wasser, tief gefiltertes Wasser, mineralstoffarmes Mineralwasser.</li>
+<li><b>NICHT</b> verwenden: gefärbte, aromatisierte, kohlensäurehaltige oder gasgesättigte Getränke (Tee, Saft, Kaffee, Milch, Limonade usw.) — diese können das Gerät verunreinigen oder beschädigen.</li>
+      </ul>
+<div class="sub-title">Nutzungshinweise</div>
+<ul class="bullet-list">
+        <li>Nach dem Auspacken alle Verpackungsmaterialien entfernen, das Innere mit einem feuchten Tuch auswischen und gründlich trocknen.</li>
+<li>Wenn der Eiskorb voll ist, pausiert das Gerät automatisch und gibt einen Hinweis aus.</li>
+<li>Es kann immer nur eine Eisgröße gleichzeitig produziert werden, ein Wechsel während des Betriebs ist jedoch möglich.</li>
+<li>Gelegentlich trübes Eis im Dauerbetrieb ist normal und hängt von Wasserqualität, Wassertemperatur und Umgebungstemperatur ab.</li>
+      </ul>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>5</span></div>
 </div>
-<!-- @CONTENT:usage_tips:end -->
 
-<!-- ═══════════ SEITE 6 — KAP.03 AUFBAU ═══════════ -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -798,10 +856,11 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">03</span>Produktaufbau</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image5.png" alt="Produktaufbau" style="max-height:56mm;">
+    <img src="./images_imt050/image5.png" alt="Product structure diagram" style="max-height:56mm;object-fit:contain">
+    
   </div>
-  <table>
-    <thead><tr><th style="width:15%;">Nr.</th><th>Bezeichnung</th><th style="width:15%;">Nr.</th><th>Bezeichnung</th></tr></thead>
+<table>
+    <thead><tr><th style="width:15%;">Nr.</th><th>Teil</th><th style="width:15%;">Nr.</th><th>Teil</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Deckel</td><td>5</td><td>Wassertankgriff</td></tr>
       <tr><td>2</td><td>Eisbehälter</td><td>6</td><td>Bedienfeld</td></tr>
@@ -812,7 +871,6 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>6</span></div>
 </div>
 
-<!-- ═══════════ SEITE 7 — KAP.04 BEDIENFELD ═══════════ -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -820,15 +878,15 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">04</span>Produktfunktionen</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image7.png" alt="Bedienfeld" style="max-height:24mm;">
-    <div class="fig-caption">ABB. 2 — BEDIENFELD</div>
+    <img src="./images_imt050/image7.png" alt="Structure legend" style="max-height:24mm;object-fit:contain">
+    
   </div>
-  <div class="fig-wrap" style="margin:4px 0 6px;">
-    <img src="./images_imt050/image9.png" alt="Bedienfeld-Tastenbeschriftung" style="max-height:20mm;">
-    <div class="fig-caption">ABB. 3 — TASTENBESCHRIFTUNG</div>
+<div class="fig-wrap">
+    <img src="./images_imt050/image9.png" alt="Control panel diagram" style="max-height:20mm;object-fit:contain">
+    
   </div>
-  <table>
-    <thead><tr><th style="width:25%;">Nr. / Taste</th><th>Beschreibung</th></tr></thead>
+<table>
+    <thead><tr><th style="width:45%;">Nr. / Taste</th><th>Beschreibung</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Power</span>　Ein/Aus</td><td>Drücken zum Einschalten; lang drücken zum Ausschalten.</td></tr>
       <tr><td><span class="callout-no">2</span> <span class="btn-name">Make Ice</span>　Eis machen</td><td>Eisgröße wechseln (S / M / L); Gerät startet automatisch.</td></tr>
@@ -840,7 +898,6 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>7</span></div>
 </div>
 
-<!-- ═══════════ SEITE 8 — KAP.05 TECHNISCHE DATEN ═══════════ -->
 <div class="page compact-table">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
@@ -848,7 +905,7 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">05</span>Technische Daten</h2>
   <table>
-    <thead><tr><th style="width:40%;">Parameter</th><th>Spezifikation</th></tr></thead>
+    <thead><tr><th>Parameter</th><th>Spezifikation</th></tr></thead>
     <tbody>
       <tr><td>Spannung</td><td>220~240 Vac</td></tr>
       <tr><td>Frequenz</td><td>50 Hz</td></tr>
@@ -872,37 +929,51 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>8</span></div>
 </div>
 
-<!-- ═══════════ SEITE 9 — KAP.06 BEDIENUNG ═══════════ -->
-<!-- @CONTENT:operations:start -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung</h2>
-
-  <div class="sub-title">Eis herstellen</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Den Wassertank herausnehmen, mit Trinkwasser bis zur Markierung fuellen und wieder einsetzen.</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image14.png" alt="Wasser einfüllen" style="max-height:28mm;max-width:30%;object-fit:contain;">
-    <img src="./images_imt050/image16.png" alt="Wasserstandslinie" style="max-height:28mm;max-width:30%;object-fit:contain;">
-    <img src="./images_imt050/image18.png" alt="Tank zurücksetzen" style="max-height:28mm;max-width:30%;object-fit:contain;">
+  <div class="sub-title">Vorbereitung vor dem Betrieb</div>
+<ul class="bullet-list">
+        <li>Stellen Sie das Gerät auf eine stabile, ebene Fläche. Halten Sie die Rückseite und die rechten Lüftungsöffnungen frei. Der Abstand zu Wänden oder Gegenständen muss mindestens 120 mm betragen, damit die Belüftung gewährleistet ist.</li>
+<li>Vor der ersten Verwendung oder nach längerer Nichtbenutzung führen Sie bitte zuerst einen Reinigungszyklus durch. Siehe CH.08 Wartung und Pflege.</li>
+      </ul>
+<div class="sub-title">Gerät einschalten</div>
+<ul class="bullet-list">
+        <li>Schließen Sie die Stromversorgung an. Das Gerät gibt einen Signalton aus, alle Tasten leuchten kurz auf und erlöschen wieder. Damit ist die Stromversorgung aktiv.</li>
+<li>Drücken Sie die <b>Power</b>-Taste. Die Anzeige leuchtet weiß und das Gerät ist eingeschaltet.</li>
+      </ul>
+<div class="sub-title">Bullet-Eis herstellen</div>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Öffnen Sie den Deckel und nehmen Sie den Eiskorb und den Wassertank heraus.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Füllen Sie den Bullet-Eis-Wassertank mit Trinkwasser bis zur Wasserstandslinie.</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image14.png" alt="Fill water tank" style="max-height:24mm;max-width:35%;object-fit:contain">
+<img src="./images_imt050/image16.png" alt="Water level mark" style="max-height:24mm;max-width:35%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="2">
-    <li><span class="step-num">2</span>Setzen Sie den Eiskorb in das Gerät ein und schließen Sie den Deckel.</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image20.png" alt="Eiskorb einsetzen" style="max-height:32mm;max-width:35%;object-fit:contain;">
-    <img src="./images_imt050/image22.png" alt="Deckel schließen" style="max-height:32mm;max-width:35%;object-fit:contain;">
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Setzen Sie den Wassertank wieder in den Innenraum ein. Drücken Sie den Tank von Hand nach unten, damit er sicher sitzt. Ein lockerer Tank kann den Betrieb verhindern.</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image18.png" alt="Seat tank inside chamber" style="max-height:24mm;max-width:35%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="3">
-    <li><span class="step-num">3</span>Das Netzkabel einstecken. Die <b>Power</b>-Taste druecken - die Anzeige leuchtet weiss und das Geraet schaltet sich ein.</li>
-  </ol>
-
+    </div>
+  </div>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>9</span></div>
 </div>
 
@@ -912,246 +983,248 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>Bedienungsanleitung (Forts.)</h2>
-
-  <ol class="steps" start="4">
-    <li><span class="step-num">4</span>Die <b>Eis herstellen</b>-Taste druecken, um eine Eisgroesse (S / M / L) auszuwaehlen. Das Geraet beginnt automatisch mit der Eisherstellung.</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image24.png" alt="Eisgröße wählen" style="max-height:28mm;max-width:35%;object-fit:contain;">
-    <img src="./images_imt050/image26.png" alt="Eisgröße-LED-Anzeige" style="max-height:28mm;max-width:55%;object-fit:contain;">
+  <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Setzen Sie den Eiskorb wieder ein und schließen Sie den Deckel.</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image20.png" alt="Return ice basket" style="max-height:28mm;max-width:30%;object-fit:contain">
+<img src="./images_imt050/image22.png" alt="Close lid" style="max-height:28mm;max-width:30%;object-fit:contain">
+<img src="./images_imt050/image24.png" alt="Unit closed" style="max-height:28mm;max-width:30%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="5">
-    <li><span class="step-num">5</span>Warten, bis das Eis gebildet ist. Bullet-Eis faellt automatisch in den Eiskorb.</li>
-    <li><span class="step-num">6</span>Deckel oeffnen, Eiskorb herausnehmen und Eis entnehmen. Korb wieder einsetzen - das Geraet setzt automatisch fort.</li>
-  </ol>
-
-  <div style="display:flex;gap:4mm;align-items:center;justify-content:center;margin:8px 0 4px;font-size:9px;">
-    <span>ICE FULL →</span>
-    <img src="./images_imt050/image28.png" alt="ICE FULL" style="height:14px;vertical-align:middle;">
-    <span style="margin-left:6mm;">ADD WATER →</span>
-    <img src="./images_imt050/image30.png" alt="ADD WATER" style="height:14px;vertical-align:middle;">
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Drücken Sie die Taste <b>Make Ice</b>. Schalten Sie die Anzeige S / M / L oberhalb der Taste um, um die gewünschte Bullet-Eis-Größe zu wählen.</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image26.png" alt="Select ice size" style="max-height:28mm;max-width:55%;object-fit:contain">
   </div>
-
-  <div class="note-box" style="margin-top:12px;">
-    <div class="box-title">HINWEIS</div>
-    <ul class="box-list">
-      <li>Drücken Sie während des Betriebs <b>Eis herstellen</b>, um die Eisgröße zu wechseln.</li>
-      <li>Halten Sie <b>Power</b> gedrückt, um die Eisherstellung zu stoppen und das Gerät auszuschalten.</li>
-      <li>Wenn der Korb voll ist, leuchtet die <b>EIS VOLL</b>-Anzeige grün und das Gerät pausiert. Eis entnehmen oder schmelzen lassen — das Gerät setzt automatisch fort.</li>
-      <li>Wenn der Tank leer ist, leuchtet die <b>WASSER NACHFÜLLEN</b>-Anzeige rot. Umgehend nachfüllen.</li>
-      <li>Mehrere Größen gleichzeitig herstellen ist nicht möglich, aber die Größe kann während des Zyklus gewechselt werden.</li>
-      <li>Gelegentliche Trübung bei kontinuierlicher Eisherstellung ist normal und hängt von Wasserqualität, Temperatur und Umgebungsbedingungen ab.</li>
-    </ul>
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">6</span>
+        <div class="step-text">Nach der Größenauswahl beginnt das Gerät automatisch mit der Herstellung von Bullet-Eis.</div>
+      </div>
+      
+    </div>
   </div>
-
+<div class="figure-row status-indicator-row" style="display:flex;gap:4mm;justify-content:center;align-items:center;margin:8px 0 4px;font-size:9px">
+    <span>ICE FULL →</span><img src="./images_imt050/image28.png" alt="Ice full indicator" style="height:14px;object-fit:contain;display:inline-block;vertical-align:middle">
+<span>ADD WATER →</span><img src="./images_imt050/image30.png" alt="Add water indicator" style="height:14px;object-fit:contain;display:inline-block;vertical-align:middle">
+  </div>
+<div class="note-box">
+        <div class="box-title">HINWEIS</div>
+        
+        <ul class="box-list">
+            <li>Während des Betriebs können Sie mit <b>Make Ice</b> die Eisgröße wechseln.</li>
+<li>Während des Betriebs können Sie mit <b>Power</b> den Bullet-Eis-Zyklus beenden. Die Anzeige erlischt und das Gerät stoppt die Eisherstellung.</li>
+<li>Wenn der Korb voll ist, leuchtet die Anzeige <b>ICE FULL</b> grün und das Gerät stoppt. Nachdem das Eis geschmolzen oder entnommen wurde, setzt das Gerät den Betrieb automatisch fort.</li>
+<li>Leuchtet während der Eisherstellung die Anzeige <b>ADD WATER</b> rot, stoppt das Gerät. Füllen Sie den Wassertank rechtzeitig nach.</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>10</span></div>
 </div>
-<!-- @CONTENT:operations:end -->
 
-<!-- ═══════════ SEITE 10 — KAP.07 FEHLERBEHEBUNG ═══════════ -->
-<!-- @CONTENT:troubleshooting:start -->
 <div class="page compact-ts">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">KAP.07 — FEHLERBEHEBUNG</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung</h2>
-
   <table>
     <thead><tr><th style="width:22%;">Problem</th><th style="width:33%;">Mögliche Ursache</th><th>Lösung</th></tr></thead>
     <tbody>
-      <tr>
-        <td>Gerät schaltet sich nicht ein</td>
-        <td>Strom nicht angeschlossen oder Steckdose ohne Strom</td>
-        <td>Stromverbindung prüfen und sicherstellen, dass die Steckdose funktioniert.</td>
-      </tr>
-      <tr>
-        <td>Wasser läuft nicht ab</td>
-        <td>Ablassstopfen nicht entfernt oder Ablauföffnung verstopft</td>
-        <td>Prüfen, ob der Ablassstopfen an der Unterseite entfernt ist; auf Verstopfungen prüfen.</td>
-      </tr>
-      <tr>
-        <td>Kein Eis</td>
-        <td>Wassertank leer (WASSER NACHFÜLLEN-Anzeige rot)</td>
-        <td>Wassertank bis zur Markierung füllen.</td>
-      </tr>
-      <tr>
-        <td>Kein Eis</td>
-        <td>Form vereist nur, kein Eis (Pumpenproblem)</td>
-        <td>Wasser bis zur Markierung füllen, 30 Minuten stehen lassen, dann neu starten. Durch das Fenster prüfen, ob Wasser zur Schale gepumpt wird.</td>
-      </tr>
-      <tr>
-        <td>Stoppt mitten im Zyklus</td>
-        <td>Eiskorb voll (EIS VOLL-Anzeige grün)</td>
-        <td>Eis entnehmen oder schmelzen lassen. Das Gerät setzt automatisch fort.</td>
-      </tr>
-      <tr>
-        <td>Stoppt mitten im Zyklus</td>
-        <td>Wassertank leer (WASSER NACHFÜLLEN-Anzeige rot)</td>
-        <td>Wassertank umgehend nachfüllen. Das Gerät setzt automatisch fort.</td>
-      </tr>
-      <tr>
-        <td>Erste 5 Chargen sind klein</td>
-        <td>Wassertemperatur ist noch hoch (Abkühlphase)</td>
-        <td>Das ist normal. Die Eisgröße nimmt mit sinkender Wassertemperatur zu.</td>
-      </tr>
-      <tr>
-        <td>Schlechte Eisqualität</td>
-        <td>Unzureichende Belüftung oder hohe Umgebungstemperatur</td>
-        <td>Mindestens 120 mm Abstand auf allen Seiten einhalten; das Gerät an einen kühlen, gut belüfteten Ort stellen.</td>
-      </tr>
-      <tr>
-        <td>Eis ist nicht klar</td>
-        <td>Hoher Mineralgehalt im Wasser oder Temperatureffekte</td>
-        <td>Gereinigtes Wasser mit TDS &lt; 200 mg/L verwenden. Gelegentliche Trübung bei kontinuierlichem Betrieb ist normal.</td>
-      </tr>
+<tr><td>Gerät schaltet sich nicht ein</td><td>Strom nicht angeschlossen oder Steckdose ohne Strom</td><td>Stromverbindung prüfen und sicherstellen, dass die Steckdose funktioniert.</td></tr>
+<tr><td>Wasser läuft nicht ab</td><td>Ablassstopfen nicht entfernt oder Ablauföffnung verstopft</td><td>Prüfen, ob der Ablassstopfen an der Unterseite entfernt ist; auf Verstopfungen prüfen.</td></tr>
+<tr><td>Kein Eis</td><td>Wassertank leer (WASSER NACHFÜLLEN-Anzeige rot)</td><td>Wassertank bis zur Markierung füllen.</td></tr>
+<tr><td>Kein Eis</td><td>Form vereist nur, kein Eis (Pumpenproblem)</td><td>Wasser bis zur Markierung füllen, 30 Minuten stehen lassen, dann neu starten. Durch das Fenster prüfen, ob Wasser zur Schale gepumpt wird.</td></tr>
+<tr><td>Stoppt mitten im Zyklus</td><td>Eiskorb voll (EIS VOLL-Anzeige grün)</td><td>Eis entnehmen oder schmelzen lassen. Das Gerät setzt automatisch fort.</td></tr>
+<tr><td>Stoppt mitten im Zyklus</td><td>Wassertank leer (WASSER NACHFÜLLEN-Anzeige rot)</td><td>Wassertank umgehend nachfüllen. Das Gerät setzt automatisch fort.</td></tr>
+<tr><td>Erste 5 Chargen sind klein</td><td>Wassertemperatur ist noch hoch (Abkühlphase)</td><td>Das ist normal. Die Eisgröße nimmt mit sinkender Wassertemperatur zu.</td></tr>
+<tr><td>Schlechte Eisqualität</td><td>Unzureichende Belüftung oder hohe Umgebungstemperatur</td><td>Mindestens 120 mm Abstand auf allen Seiten einhalten; das Gerät an einen kühlen, gut belüfteten Ort stellen.</td></tr>
+<tr><td>Eis ist nicht klar</td><td>Hoher Mineralgehalt im Wasser oder Temperatureffekte</td><td>Gereinigtes Wasser mit TDS &lt; 200 mg/L verwenden. Gelegentliche Trübung bei kontinuierlichem Betrieb ist normal.</td></tr>
     </tbody>
   </table>
-
-  <div class="caution-box" style="margin-top:14px;">
-    <div class="box-title">HAFTUNGSAUSSCHLUSS</div>
-    <p>Der Hersteller, Vertriebspartner und Markeninhaber übernehmen keine Haftung für Schäden oder Qualitätsprobleme, die durch eine nicht anleitungskonforme Bedienung verursacht werden.</p>
-  </div>
-
+<div class="caution-box">
+        <div class="box-title">HAFTUNGSAUSSCHLUSS</div>
+        
+        Der Hersteller, Vertriebspartner und Markeninhaber übernehmen keine Haftung für Schäden oder Qualitätsprobleme, die durch eine nicht anleitungskonforme Bedienung verursacht werden.
+      </div>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>11</span></div>
 </div>
-<!-- @CONTENT:troubleshooting:end -->
 
-<!-- ═══════════ SEITE 11 — KAP.08 WARTUNG ═══════════ -->
-<!-- @CONTENT:maintenance:start -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">KAP.08 — WARTUNG</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">08</span>Wartung</h2>
-
-    <div class="sub-title">Automatische Reinigung (Eisform &amp; Auffangschale)</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Den Wassertank bis zur Markierung fuellen.</li>
-    <li><span class="step-num">2</span>Bei eingeschaltetem Geraet die <b>Reinigen</b>-Taste druecken. Die Anzeige leuchtet weiss und das Geraet reinigt automatisch.</li>
-    <li><span class="step-num">3</span>Nach Abschluss der Reinigung stoppt das Geraet automatisch und die Anzeige erlischt.</li>
-  </ol>  <div class="sub-title">Wasserablauf</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Netzstecker ziehen und das Geraet in die Naehe eines Spuelbeckens stellen.</li>
-    <li><span class="step-num">2</span>Den Ablassstopfen an der Unterseite entfernen und das gesamte Wasser ablaufen lassen.</li>
-    <li><span class="step-num">3</span>Nach dem Ablassen den Stopfen wieder fest einsetzen.</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:6px 0 8px;">
-    <img src="./images_imt050/image10.png" alt="Position der Ablassöffnung" style="max-height:26mm;max-width:48%;object-fit:contain;">
-    <img src="./images_imt050/image12.png" alt="Interne Ablassposition" style="max-height:26mm;max-width:28%;object-fit:contain;">
-  </div><div class="sub-title">Tägliche Pflege</div>
-  <ul class="bullet-list">
-    <li>Das Innere regelmäßig mit klarem Wasser ausspülen — wir empfehlen eine <b>Reinigung vor jedem täglichen Gebrauch</b>.</li>
-    <li>Das Äußere mit einem weichen, feuchten Tuch abwischen. Keine scheuernden oder ätzenden Reinigungsmittel verwenden.</li>
-    <li>Befolgen Sie die automatische Reinigung, um Eisform und Auffangschale zu reinigen.</li>
-    <li>Vor Wartungsarbeiten immer den Netzstecker ziehen und das Gerät abkühlen lassen.</li>
-  </ul>
-
+  <div class="sub-title">Automatische Reinigung (Eisform &amp; Auffangschale)</div>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Den Wassertank bis zur Markierung fuellen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Bei eingeschaltetem Geraet die <b>Reinigen</b>-Taste druecken. Die Anzeige leuchtet weiss und das Geraet reinigt automatisch.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Nach Abschluss der Reinigung stoppt das Geraet automatisch und die Anzeige erlischt.</div>
+      </div>
+      
+    </div>
+  </div>
+<div class="sub-title">Wasserablauf</div>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Netzstecker ziehen und das Geraet in die Naehe eines Spuelbeckens stellen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Den Ablassstopfen an der Unterseite entfernen und das gesamte Wasser ablaufen lassen.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Nach dem Ablassen den Stopfen wieder fest einsetzen.</div>
+      </div>
+      
+    </div>
+  </div>
+<div class="figure-row" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image10.png" alt="Drain plug" style="max-height:26mm;max-width:48%;object-fit:contain">
+<img src="./images_imt050/image12.png" alt="Drain container" style="max-height:26mm;max-width:28%;object-fit:contain">
+  </div>
+<div class="sub-title">Tägliche Pflege</div>
+<ul class="bullet-list">
+        <li>Das Innere regelmäßig mit klarem Wasser ausspülen — wir empfehlen eine <b>Reinigung vor jedem täglichen Gebrauch</b>.</li>
+<li>Das Äußere mit einem weichen, feuchten Tuch abwischen. Keine scheuernden oder ätzenden Reinigungsmittel verwenden.</li>
+<li>Befolgen Sie die automatische Reinigung, um Eisform und Auffangschale zu reinigen.</li>
+<li>Vor Wartungsarbeiten immer den Netzstecker ziehen und das Gerät abkühlen lassen.</li>
+      </ul>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>12</span></div>
 </div>
-<!-- @CONTENT:maintenance:end -->
 
-<!-- ═══════════ SEITE 12 — KAP.09 INSTALLATION / LAGERUNG / ENTSORGUNG ═══════════ -->
-<!-- @CONTENT:install_transport_storage_disposal:start -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">KAP.09 — INSTALLATION / LAGERUNG / ENTSORGUNG</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">09</span>Installation, Transport, Lagerung &amp; Entsorgung</h2>
-
+  <h2 class="section-title"><span class="chapter-num">09</span>Installation, Transport, Lagerung & Entsorgung</h2>
   <div class="sub-title">Verpackung &amp; Transport</div>
-  <ul class="bullet-list">
-    <li>Das Gerät während des Transports im Gleichgewicht halten. Der Neigungswinkel darf 45° nicht überschreiten.</li>
-    <li>Das Gerät beim Tragen und Transport immer aufrecht halten, um Kompressor und Kältesystem zu schützen.</li>
-    <li>Nach dem Transport das Gerät vor dem Einschalten 4 Stunden aufrecht stehen lassen.</li>
-  </ul>
-
-  <div class="sub-title">Installation</div>
-  <ul class="bullet-list">
-    <li>Das Produkt auf einer ebenen, stabilen und trockenen Fläche installieren. Nicht in geneigter Lage betreiben.</li>
-    <li>Das Gerät beim Positionieren nicht ziehen oder ruckartig bewegen, um Kippen oder Bauteilschäden zu vermeiden.</li>
-    <li>Mindestens 120 mm (4,7") Abstand zu Wänden und Gegenständen einhalten, damit Belüftung und Wartung möglich bleiben.</li>
-    <li>Von Wärmequellen, Dampf und direkter Sonneneinstrahlung fernhalten.</li>
-  </ul>
-
-  <div class="sub-title">Lagerung &amp; Entsorgung</div>
-  <ul class="bullet-list">
-    <li>Vor längerer Lagerung das Wasser aus Tank und Innenraum vollständig ablassen, danach das Gerät reinigen und trocknen.</li>
-    <li>Das Gerät trocken und gut belüftet lagern und vor Feuchtigkeit oder schweren Lasten schützen.</li>
-    <li>Dieses Produkt enthält elektronische Bauteile und das Kältemittel R600a und darf nicht mit dem Hausmüll entsorgt werden.</li>
-    <li>Am Ende der Nutzungsdauer eine autorisierte Recyclingstelle oder den Händler kontaktieren und die lokalen Vorschriften einhalten.</li>
-  </ul>
-
-  <div class="note-box" style="margin-top:14px;">
-    <div class="box-title">WEEE / R600a</div>
-    Den Kältemittelkreislauf nicht beschädigen. Die Entsorgung muss über einen qualifizierten Recycling- oder Entsorgungsdienst erfolgen, um Umwelt- und Sicherheitsrisiken zu vermeiden.
-  </div>
-
+<ul class="bullet-list">
+        <li>Das Gerät während des Transports im Gleichgewicht halten. Der Neigungswinkel darf 45° nicht überschreiten.</li>
+<li>Das Gerät beim Tragen und Transport immer aufrecht halten, um Kompressor und Kältesystem zu schützen.</li>
+<li>Nach dem Transport das Gerät vor dem Einschalten 4 Stunden aufrecht stehen lassen.</li>
+      </ul>
+<div class="sub-title">Installation</div>
+<ul class="bullet-list">
+        <li>Das Produkt auf einer ebenen, stabilen und trockenen Fläche installieren. Nicht in geneigter Lage betreiben.</li>
+<li>Das Gerät beim Positionieren nicht ziehen oder ruckartig bewegen, um Kippen oder Bauteilschäden zu vermeiden.</li>
+<li>Mindestens 120 mm (4,7&quot;) Abstand zu Wänden und Gegenständen einhalten, damit Belüftung und Wartung möglich bleiben.</li>
+<li>Von Wärmequellen, Dampf und direkter Sonneneinstrahlung fernhalten.</li>
+      </ul>
+<div class="sub-title">Lagerung &amp; Entsorgung</div>
+<ul class="bullet-list">
+        <li>Vor längerer Lagerung das Wasser aus Tank und Innenraum vollständig ablassen, danach das Gerät reinigen und trocknen.</li>
+<li>Das Gerät trocken und gut belüftet lagern und vor Feuchtigkeit oder schweren Lasten schützen.</li>
+<li>Dieses Produkt enthält elektronische Bauteile und das Kältemittel R600a und darf nicht mit dem Hausmüll entsorgt werden.</li>
+<li>Am Ende der Nutzungsdauer eine autorisierte Recyclingstelle oder den Händler kontaktieren und die lokalen Vorschriften einhalten.</li>
+      </ul>
+<div class="note-box">
+        <div class="box-title">WEEE / R600a</div>
+        
+        Den Kältemittelkreislauf nicht beschädigen. Die Entsorgung muss über einen qualifizierten Recycling- oder Entsorgungsdienst erfolgen, um Umwelt- und Sicherheitsrisiken zu vermeiden.
+      </div>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>13</span></div>
 </div>
-<!-- @CONTENT:install_transport_storage_disposal:end -->
 
-<!-- ═══════════ SEITE 13 — KAP.10 GARANTIE ═══════════ -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
     <div class="header-ref">KAP.10 — GARANTIE</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">10</span>Marken- und Garantieinformationen</h2>
-
   <p>Vielen Dank für den Kauf des ACT Eiswürfelbereiter. Bei Fragen kontaktieren Sie uns unter:<br>support@thespacetec.com | www.thespacetec.com</p>
-
-  <div class="sub-title">Markeninformation</div>
-  <table>
+<div class="sub-title">Markeninformation</div>
+<table>
+    <thead><tr><th style="width:30%;">Feld</th><th>Information</th></tr></thead>
+    <tbody>
       <tr><td style="width:30%">Marke</td><td><b>ADVANCED CUISINE TECHNOLOGY PTE. LTD.</b></td></tr>
       <tr><td>Adresse</td><td>60 Paya Lebar Road, #11-19 Paya Lebar Square, Singapore 409051</td></tr>
       <tr><td>Webseite</td><td>www.thespacetec.com</td></tr>
       <tr><td>Kundendienst</td><td>support@thespacetec.com</td></tr>
+    </tbody>
   </table>
-
-  <div class="sub-title">Autorisierter Hersteller</div>
-  <table>
+<div class="sub-title">Autorisierter Hersteller</div>
+<table>
+    <thead><tr><th style="width:30%;">Feld</th><th>Information</th></tr></thead>
+    <tbody>
       <tr><td style="width:30%">Hersteller</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
       <tr><td>Adresse</td><td>No. 1 Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
       <tr><td>Webseite</td><td>www.argiontechnology.com</td></tr>
+    </tbody>
   </table>
-
-  <div class="sub-title">Garantieinformationen</div>
-  <p>Für dieses Produkt gilt eine <b>2-jährige beschränkte Garantie</b>. Ein Garantieaustausch ist innerhalb von 2 Jahr(en) ab dem ursprünglichen Kaufdatum möglich. Voraussetzungen:</p>
-  <ul class="bullet-list">
-    <li>Der Kauf liegt nicht länger als 2 Jahr(e) zurück.</li>
-    <li>Die ursprüngliche Bestellnummer oder die beim Kauf verwendete E-Mail-Adresse liegt vor.</li>
-    <li>Bei Kauf über einen Händler oder Einzelhandelspartner muss eine Kopie des Originalbelegs vorgelegt werden.</li>
-  </ul>
-  <p style="margin-top:12px">Senden Sie uns eine E-Mail, um den Garantieservice zu beantragen: <b>support@thespacetec.com</b></p>
-
-  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_imt050/image31.png" alt="Garantiekarten-Trenner"></div>
+<div class="sub-title">Garantieinformationen</div>
+<p>Für dieses Produkt gilt eine <b>2-jährige beschränkte Garantie</b>. Ein Garantieaustausch ist innerhalb von 2 Jahr(en) ab dem ursprünglichen Kaufdatum möglich. Voraussetzungen:</p>
+<ul class="bullet-list">
+        <li>Der Kauf liegt nicht länger als 2 Jahr(e) zurück.</li>
+<li>Die ursprüngliche Bestellnummer oder die beim Kauf verwendete E-Mail-Adresse liegt vor.</li>
+<li>Bei Kauf über einen Händler oder Einzelhandelspartner muss eine Kopie des Originalbelegs vorgelegt werden.</li>
+      </ul>
+<p>Senden Sie uns eine E-Mail, um den Garantieservice zu beantragen: <b>support@thespacetec.com</b></p>
+<div class="fig-wrap">
+    <img src="./images_imt050/image31.png" alt="Warranty separator" style="object-fit:contain">
+    
+  </div>
+<div class="sub-title">Garantiekarte</div>
+<table class="warranty-card">
+    <tbody>
+      <tr><td>Kundenname</td><td></td></tr>
+<tr><td>Adresse</td><td></td></tr>
+<tr><td>Stadt / Bundesland / PLZ</td><td></td></tr>
+<tr><td>Telefonnummer</td><td></td></tr>
+    </tbody>
+  </table>
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>14</span></div>
 </div>
 
-<!-- SEITE 14 - KAP.10 GARANTIEKARTE -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">ACT</div>
-    <div class="header-ref">KAP.10 - GARANTIE</div>
+    <div class="header-ref">KAP.10 — GARANTIE</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">10</span>Marken- und Garantieinformationen (Forts.)</h2>
-  <div class="sub-title" style="margin-top:14px;">Garantiekarte</div>
-  <table>
-    <tr><td style="width:35%;">Kundenname</td><td></td></tr>
-    <tr><td>Adresse</td><td></td></tr>
-    <tr><td>Stadt / Bundesland / PLZ</td><td></td></tr>
-    <tr><td>Telefonnummer</td><td></td></tr>
-    <tr><td>E-Mail-Adresse</td><td></td></tr>
-    <tr><td>Urspr?ngliches Kaufdatum</td><td></td></tr>
-    <tr><td>Produktmodell</td><td></td></tr>
-    <tr><td>Seriennummer (falls zutreffend)</td><td></td></tr>
-    <tr><td>H?ndlername</td><td></td></tr>
+  <div class="sub-title">Garantiekarte</div>
+<table class="warranty-card">
+    <tbody>
+      <tr><td>E-Mail-Adresse</td><td></td></tr>
+<tr><td>Urspr?ngliches Kaufdatum</td><td></td></tr>
+<tr><td>Produktmodell</td><td></td></tr>
+<tr><td>Seriennummer (falls zutreffend)</td><td></td></tr>
+<tr><td>H?ndlername</td><td></td></tr>
+    </tbody>
   </table>
-
   <div class="page-footer"><span>ACT IMT050 Bedienungsanleitung</span><span>15</span></div>
 </div>
 

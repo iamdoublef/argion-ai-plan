@@ -43,6 +43,11 @@ research/yjs-manual-opt/
 
 ## 阶段索引
 
+### 2026-03-10 Swiss 内容系统架构重构方案 v1.0
+commit: uncommitted
+基于实际代码分析（V23 output 1370行 HTML、content.cn.json CONTENT_BODY ~1300行硬编码 HTML），诊断出数据驱动比例仅~10%。设计 13 种 block type 的 JSON schema、章节级文件拆分（ch01~ch10）、自动 TOC/页码/分页引擎、5 阶段迁移路线图。保留现有 CSS 和 PDF 链路不变。
+- ptr: `file:research/yjs-manual-opt/swiss/ARCHITECTURE-PLAN.md`
+
 ### 2026-03-09 Swiss A5 项目级 skill + agent 规范固化
 commit: uncommitted
 将 Swiss 当前标准正式从“对话约定”沉淀为项目级 skill + agent 路由体系：新增 `swiss-manual-a5` skill 文档；根 `AGENTS.md` 增加 Swiss 触发语义与强制路由；新增 `swiss-manual-writer`；升级 `swiss-content-auditor` 为“内容 + A5版式 + 真实PDF渲染”审计；旧 `manual-writer/manual-auditor` 明确标注仅保留旧 A4 历史链路。

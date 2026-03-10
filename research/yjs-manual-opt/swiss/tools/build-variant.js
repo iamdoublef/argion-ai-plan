@@ -23,20 +23,23 @@ function getArg(name, fallback) {
 }
 const buildAll = args.includes('--all');
 
-const productDir = getArg('product', path.resolve(__dirname, '..', 'products', 'v23'));
+const productDir = path.resolve(getArg('product', path.resolve(__dirname, '..', 'products', 'v23')));
 const regionKey  = getArg('region', 'cn');
 const brandKey   = getArg('brand', null);
 const outputDir  = path.resolve(__dirname, '..', 'output');
 
 // ---------------------------------------------------------------------------
-// Load config
+// Load product data
 // ---------------------------------------------------------------------------
-const configPath = path.join(productDir, 'config.json');
-if (!fs.existsSync(configPath)) {
-  console.error(`Config not found: ${configPath}`);
-  process.exit(1);
+function loadProductConfig(dir) {
+  const configPath = path.join(dir, 'product.json');
+  if (!fs.existsSync(configPath)) {
+    throw new Error(`Product data not found: ${configPath}`);
+  }
+  return JSON.parse(fs.readFileSync(configPath, 'utf8'));
 }
-const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+
+const config = loadProductConfig(productDir);
 
 // ---------------------------------------------------------------------------
 // Simplified → Traditional Chinese mapping (covers all characters in the manual)
@@ -133,6 +136,10 @@ function pickField(obj, base, suffix) {
   return obj[key] !== undefined ? obj[key] : (obj[base] || '');
 }
 
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function resolveTemplateIncludes(entryPath, templateRoot, stack = []) {
   const normalizedEntry = path.resolve(entryPath);
   const normalizedRoot = path.resolve(templateRoot);
@@ -153,6 +160,708 @@ function resolveTemplateIncludes(entryPath, templateRoot, stack = []) {
     const includePath = path.resolve(normalizedRoot, includeRef);
     return resolveTemplateIncludes(includePath, normalizedRoot, [...stack, normalizedEntry]);
   });
+}
+
+function readJson(filePath) {
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function replaceTemplateSlots(html, blocks) {
+  let rendered = html;
+
+  for (const [key, value] of Object.entries(blocks)) {
+    if (typeof value !== 'string') {
+      throw new Error(`Template slot "${key}" must be a string`);
+    }
+
+    const pattern = new RegExp(`{{#${escapeRegExp(key)}}}`, 'g');
+    rendered = rendered.replace(pattern, value);
+  }
+
+  return rendered;
+}
+
+function stripTags(value = '') {
+  return value.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function escapeHtml(value = '') {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function escapeAttribute(value = '') {
+  return escapeHtml(value).replace(/`/g, '&#96;');
+}
+
+const RAW_HTML_PATTERN = /<\/?[a-z][^>]*>/i;
+
+function validateTextTokenValue(value, label = 'text field') {
+  const normalized = String(value ?? '');
+  if (RAW_HTML_PATTERN.test(normalized)) {
+    throw new Error(`Raw HTML is not allowed in ${label}: ${normalized}`);
+  }
+}
+
+function renderTextTokens(value = '') {
+  validateTextTokenValue(value, 'text token field');
+  const normalized = String(value).replace(/\r\n/g, '\n');
+  const escaped = escapeHtml(normalized);
+  return escaped
+    .replace(/\[btn:([^\]]+)\]/g, '<span class="btn-name">$1</span>')
+    .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
+    .replace(/\n/g, '<br>');
+}
+
+function loadImagesManifest(productDir) {
+  const imagesPath = path.join(productDir, 'images.json');
+  if (!fs.existsSync(imagesPath)) {
+    return {};
+  }
+
+  const manifest = readJson(imagesPath);
+  if (!manifest || typeof manifest !== 'object' || Array.isArray(manifest)) {
+    throw new Error(`Invalid images manifest: ${imagesPath}`);
+  }
+  return manifest;
+}
+
+function normalizeChapterEntry(entry, chapter) {
+  return {
+    chapter_id: entry.chapter_id,
+    chapter_no: entry.chapter_no,
+    title: chapter.title || entry.title,
+    toc_title: chapter.toc_title || entry.toc_title || chapter.title || entry.title,
+    header_ref: chapter.header_ref || entry.header_ref,
+    enabled: entry.enabled !== false,
+    file: entry.file,
+    pages: chapter.pages || [],
+  };
+}
+
+function validateManifestEntry(entry, contentRoot) {
+  const requiredFields = ['chapter_id', 'chapter_no', 'title', 'toc_title', 'header_ref', 'file'];
+  for (const field of requiredFields) {
+    if (!entry[field]) {
+      throw new Error(`Manifest entry missing "${field}" in ${path.join(contentRoot, 'manifest.json')}`);
+    }
+  }
+}
+
+function validateManifest(manifest, contentRoot) {
+  let expectedChapterNo = 1;
+  for (const entry of manifest.chapters) {
+    validateManifestEntry(entry, contentRoot);
+    const actualChapterNo = Number(entry.chapter_no);
+    if (!Number.isInteger(actualChapterNo) || actualChapterNo !== expectedChapterNo) {
+      throw new Error(`Manifest chapter numbering must be continuous in ${path.join(contentRoot, 'manifest.json')}: expected ${String(expectedChapterNo).padStart(2, '0')} got ${entry.chapter_no}`);
+    }
+    expectedChapterNo += 1;
+  }
+}
+
+function loadContentDocument(productDir, templateLang) {
+  const contentRoot = path.join(productDir, 'content', templateLang);
+  const manifestPath = path.join(contentRoot, 'manifest.json');
+
+  if (!fs.existsSync(manifestPath)) {
+    throw new Error(`Structured content manifest not found: ${manifestPath}`);
+  }
+
+  const manifest = readJson(manifestPath);
+  if (!manifest || !Array.isArray(manifest.chapters)) {
+    throw new Error(`Invalid manifest file: ${manifestPath}`);
+  }
+
+  validateManifest(manifest, contentRoot);
+
+  const chapters = manifest.chapters.map((entry) => {
+    const chapterPath = path.join(contentRoot, 'chapters', entry.file);
+    if (!fs.existsSync(chapterPath)) {
+      throw new Error(`Chapter file not found: ${chapterPath}`);
+    }
+
+    const chapter = readJson(chapterPath);
+    if (chapter.chapter_id && chapter.chapter_id !== entry.chapter_id) {
+      throw new Error(`Chapter id mismatch: manifest=${entry.chapter_id} chapter=${chapter.chapter_id}`);
+    }
+    if (!Array.isArray(chapter.pages)) {
+      throw new Error(`Chapter pages must be an array: ${chapterPath}`);
+    }
+
+    return normalizeChapterEntry(entry, chapter);
+  });
+
+  return {
+    kind: 'structured',
+    manifest,
+    chapters,
+  };
+}
+
+function styleAttr(styleMap = {}) {
+  const entries = Object.entries(styleMap).filter(([, value]) => value !== undefined && value !== null && value !== '');
+  if (!entries.length) {
+    return '';
+  }
+  const css = entries.map(([key, value]) => `${key}:${value}`).join(';');
+  return ` style="${escapeAttribute(css)}"`;
+}
+
+function resolveFigure(figureRef, context) {
+  if (typeof figureRef === 'string') {
+    const figure = context.images[figureRef];
+    if (!figure) {
+      throw new Error(`Missing image id: ${figureRef}`);
+    }
+    return {
+      id: figureRef,
+      ...figure,
+    };
+  }
+
+  if (figureRef && typeof figureRef === 'object') {
+    if (figureRef.figure) {
+      return {
+        ...resolveFigure(figureRef.figure, context),
+        ...figureRef,
+      };
+    }
+    if (figureRef.file) {
+      return figureRef;
+    }
+  }
+
+  throw new Error(`Invalid figure reference: ${JSON.stringify(figureRef)}`);
+}
+
+function renderFigureImage(figureRef, context, defaults = {}) {
+  const figure = resolveFigure(figureRef, context);
+  const style = {
+    'max-height': figure.max_height || defaults.max_height || defaults['max-height'],
+    'max-width': figure.max_width || defaults.max_width || defaults['max-width'],
+    width: figure.width || defaults.width,
+    height: figure.height || defaults.height,
+    'object-fit': figure.object_fit || defaults.object_fit || defaults['object-fit'] || 'contain',
+    display: figure.display || defaults.display,
+    'vertical-align': figure.vertical_align || defaults.vertical_align || defaults['vertical-align'],
+  };
+
+  return `<img src="./${context.config.images_dir}/${figure.file}" alt="${escapeAttribute(figure.alt || '')}"${styleAttr(style)}>`;
+}
+
+function renderBlockListItems(items = []) {
+  return items.map((item) => `<li>${renderTextTokens(item)}</li>`).join('\n');
+}
+
+function renderTableRef(block, context) {
+  const tableLabels = {
+    cn: {
+      specs: ['参数', '规格'],
+      parts: ['编号', '名称', '编号', '名称'],
+      buttons: ['No. / 按键', '功能说明'],
+      brand: ['项目', '信息'],
+      brand_info: ['项目', '信息'],
+      manufacturer: ['项目', '信息'],
+      manufacturer_info: ['项目', '信息'],
+    },
+    en: {
+      specs: ['Parameter', 'Specification'],
+      parts: ['No.', 'Part', 'No.', 'Part'],
+      buttons: ['No. / Button', 'Description'],
+      brand: ['Field', 'Information'],
+      brand_info: ['Field', 'Information'],
+      manufacturer: ['Field', 'Information'],
+      manufacturer_info: ['Field', 'Information'],
+    },
+    de: {
+      specs: ['Parameter', 'Spezifikation'],
+      parts: ['Nr.', 'Teil', 'Nr.', 'Teil'],
+      buttons: ['Nr. / Taste', 'Beschreibung'],
+      brand: ['Feld', 'Information'],
+      brand_info: ['Feld', 'Information'],
+      manufacturer: ['Feld', 'Information'],
+      manufacturer_info: ['Feld', 'Information'],
+    },
+    it: {
+      specs: ['Parametro', 'Specifica'],
+      parts: ['N.', 'Parte', 'N.', 'Parte'],
+      buttons: ['N. / Pulsante', 'Descrizione'],
+      brand: ['Campo', 'Informazione'],
+      brand_info: ['Campo', 'Informazione'],
+      manufacturer: ['Campo', 'Informazione'],
+      manufacturer_info: ['Campo', 'Informazione'],
+    },
+  };
+
+  const labels = tableLabels[context.suffix] || tableLabels.en;
+  const headers = block.headers || labels[block.table];
+
+  if (Array.isArray(block.rows)) {
+    const renderCell = (cell, isHeader = false) => {
+      const normalized = typeof cell === 'string' ? { text: cell } : cell;
+      const attrs = [];
+      if (normalized.width) attrs.push(` style="width:${escapeAttribute(normalized.width)};"`);
+      if (normalized.rowspan) attrs.push(` rowspan="${escapeAttribute(normalized.rowspan)}"`);
+      if (normalized.colspan) attrs.push(` colspan="${escapeAttribute(normalized.colspan)}"`);
+      const tag = isHeader ? 'th' : 'td';
+      return `<${tag}${attrs.join('')}>${renderTextTokens(normalized.text || '')}</${tag}>`;
+    };
+
+    const headerHtml = headers
+      ? `<thead><tr>${headers.map((header) => renderCell(header, true)).join('')}</tr></thead>`
+      : '';
+    const rowsHtml = block.rows
+      .map((row) => `<tr>${row.map((cell) => renderCell(cell)).join('')}</tr>`)
+      .join('\n');
+
+    return `<table>
+    ${headerHtml}
+    <tbody>
+${rowsHtml}
+    </tbody>
+  </table>`;
+  }
+
+  switch (block.table) {
+    case 'specs':
+      return `<table>
+    <thead><tr><th>${headers[0]}</th><th>${headers[1]}</th></tr></thead>
+    <tbody>
+${context.builders.buildSpecsRows(context.specs)}
+    </tbody>
+  </table>`;
+    case 'parts':
+      return `<table>
+    <thead><tr><th style="width:15%;">${headers[0]}</th><th>${headers[1]}</th><th style="width:15%;">${headers[2]}</th><th>${headers[3]}</th></tr></thead>
+    <tbody>
+${context.builders.buildPartsRows(context.config.parts)}
+    </tbody>
+  </table>`;
+    case 'buttons':
+      return `<table>
+    <thead><tr><th style="width:45%;">${headers[0]}</th><th>${headers[1]}</th></tr></thead>
+    <tbody>
+${context.builders.buildButtonsRows(context.config.buttons)}
+    </tbody>
+  </table>`;
+    case 'brand_info':
+      return `<table>
+    <thead><tr><th style="width:30%;">${headers[0]}</th><th>${headers[1]}</th></tr></thead>
+    <tbody>
+${context.builders.buildBrandInfoRows(context.brand)}
+    </tbody>
+  </table>`;
+    case 'manufacturer_info':
+      return `<table>
+    <thead><tr><th style="width:30%;">${headers[0]}</th><th>${headers[1]}</th></tr></thead>
+    <tbody>
+${context.builders.buildManufacturerRows(context.mfr)}
+    </tbody>
+  </table>`;
+    default:
+      throw new Error(`Unknown table ref: ${block.table}`);
+  }
+}
+
+function renderFigure(block, context) {
+  const image = renderFigureImage(block.figure, context, {
+    'max-height': block.max_height,
+    'max-width': block.max_width,
+  });
+  const caption = block.caption ? `<div class="fig-caption">${renderTextTokens(block.caption)}</div>` : '';
+  const className = block.className ? ` ${block.className}` : '';
+
+  return `<div class="fig-wrap${className}">
+    ${image}
+    ${caption}
+  </div>`;
+}
+
+function renderSplitPanel(block, context) {
+  const className = block.className ? ` ${block.className}` : '';
+  const style = {
+    gap: block.gap || '16px',
+    'align-items': block.align || 'flex-start',
+    'margin-bottom': block.margin_bottom,
+    margin: block.margin,
+  };
+
+  const bodyBlocks = (block.body_blocks || []).map((childBlock) => renderBlock(childBlock, context)).join('\n');
+  const figures = (block.figures || []).map((figureRef) => {
+    const figure = typeof figureRef === 'string' ? { figure: figureRef } : figureRef;
+    return renderFigureImage(figure, context, {
+      width: figure.width || block.figure_width,
+      'max-height': figure.max_height || block.max_height,
+      'max-width': figure.max_width || block.max_width,
+      display: 'block',
+    });
+  }).join('\n');
+
+  return `<div class="split-panel${className}"${styleAttr(style)}>
+    <div class="split-panel-body">
+      ${bodyBlocks}
+    </div>
+    <div class="split-panel-figures">
+      ${figures}
+    </div>
+  </div>`;
+}
+
+function renderFigureRow(block, context) {
+  const className = block.className ? ` ${block.className}` : '';
+  const style = {
+    display: 'flex',
+    gap: block.gap || '3mm',
+    'justify-content': block.justify || 'center',
+    'align-items': block.align || 'flex-start',
+    margin: block.margin || '4px 0 6px',
+    'font-size': block.font_size,
+  };
+
+  const items = (block.items || []).map((item) => {
+    const labelBefore = item.label_before ? `<span>${renderTextTokens(item.label_before)}</span>` : '';
+    const labelAfter = item.label_after ? `<span>${renderTextTokens(item.label_after)}</span>` : '';
+    return `${labelBefore}${renderFigureImage(item.figure || item, context, {
+      'max-height': item.max_height || block.max_height,
+      'max-width': item.max_width || block.max_width,
+      height: item.height,
+      width: item.width,
+      display: item.display || 'inline-block',
+      'vertical-align': item.vertical_align || 'middle',
+    })}${labelAfter}`;
+  });
+
+  const figures = (block.figures || []).map((figureRef) => {
+    const figure = typeof figureRef === 'string' ? { figure: figureRef } : figureRef;
+    return renderFigureImage(figure, context, {
+      'max-height': figure.max_height || block.max_height,
+      'max-width': figure.max_width || block.max_width,
+    });
+  });
+
+  return `<div class="figure-row${className}"${styleAttr(style)}>
+    ${[...figures, ...items].join('\n')}
+  </div>`;
+}
+
+function renderStepFlow(block, context) {
+  const startAt = Number(block.start_at || 1);
+  const className = block.className ? ` ${block.className}` : '';
+  const steps = (block.steps || []).map((step, index) => {
+    const stepNo = startAt + index;
+    const figures = step.figures && step.figures.length
+      ? renderFigureRow({
+          figures: step.figures,
+          items: step.items,
+          gap: step.gap || block.gap,
+          justify: step.justify || block.justify,
+          align: step.align || block.align,
+          margin: step.margin || block.figure_margin,
+          className: 'step-figures',
+          max_height: step.max_height || block.max_height,
+          max_width: step.max_width || block.max_width,
+          font_size: step.font_size || block.font_size,
+        }, context)
+      : '';
+
+    return `<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">${stepNo}</span>
+        <div class="step-text">${renderTextTokens(step.text)}</div>
+      </div>
+      ${figures}
+    </div>`;
+  }).join('\n');
+
+  return `<div class="step-flow${className}">
+    ${steps}
+  </div>`;
+}
+
+function renderQaList(block) {
+  return `<div class="qa-list">
+    ${(block.items || []).map((item) => `<div class="qa-item">
+      <div class="sub-title">${renderTextTokens(item.question)}</div>
+      <ul class="bullet-list">
+        ${renderBlockListItems(item.answers || [])}
+      </ul>
+    </div>`).join('\n')}
+  </div>`;
+}
+
+function renderContactBlock(block) {
+  const email = block.email ? `<b>${renderTextTokens(block.email)}</b>` : '';
+  const text = renderTextTokens(block.text || '');
+  const cutLine = block.cut_line ? `<div class="contact-cut-line">${renderTextTokens(block.cut_line)}</div>` : '';
+  return `<div class="contact-block">
+    <p>${text}${email}</p>
+    ${cutLine}
+  </div>`;
+}
+
+function renderWarrantyCard(block, context) {
+  const fields = block.fields || [];
+  return `<table class="warranty-card">
+    <tbody>
+      ${fields.map((field) => `<tr><td>${renderTextTokens(field)}</td><td></td></tr>`).join('\n')}
+    </tbody>
+  </table>`;
+}
+
+function renderBlock(block, context) {
+  switch (block.type) {
+    case 'paragraph':
+      return `<p>${renderTextTokens(block.text)}</p>`;
+    case 'bullet_list':
+      return `<ul class="bullet-list">
+        ${renderBlockListItems(block.items)}
+      </ul>`;
+    case 'warning_box':
+    case 'caution_box':
+    case 'notice_box': {
+      const classNameMap = {
+        warning_box: 'warning-box',
+        caution_box: 'caution-box',
+        notice_box: 'note-box',
+      };
+      const className = classNameMap[block.type];
+      const icon = block.icon
+        ? `<div style="margin:6px 0 8px;">${renderFigureImage(block.icon, context, { width: '22px', 'max-height': '22px' })}</div>`
+        : '';
+      const body = block.items
+        ? `<ul class="box-list">
+            ${renderBlockListItems(block.items)}
+          </ul>`
+        : renderTextTokens(block.text || '');
+      const title = block.title
+        ? `<div class="box-title">${renderTextTokens(block.title)}</div>`
+        : '';
+      return `<div class="${className}">
+        ${title}
+        ${icon}
+        ${body}
+      </div>`;
+    }
+    case 'sub_title':
+      return `<div class="sub-title">${renderTextTokens(block.text)}</div>`;
+    case 'figure':
+      return renderFigure(block, context);
+    case 'figure_row':
+      return renderFigureRow(block, context);
+    case 'step_flow':
+      return renderStepFlow(block, context);
+    case 'split_panel':
+      return renderSplitPanel(block, context);
+    case 'table_ref':
+      return renderTableRef(block, context);
+    case 'qa_list':
+      return renderQaList(block, context);
+    case 'contact_block':
+      return renderContactBlock(block, context);
+    case 'warranty_card':
+      return renderWarrantyCard(block, context);
+    default:
+      throw new Error(`Unknown block type: ${block.type}`);
+  }
+}
+
+function collectBlockFigureIds(block) {
+  const ids = [];
+  if (!block || typeof block !== 'object') {
+    return ids;
+  }
+
+  if ((block.type === 'warning_box' || block.type === 'caution_box' || block.type === 'notice_box') && block.icon) {
+    if (typeof block.icon === 'string') ids.push(block.icon);
+    else if (block.icon && typeof block.icon.figure === 'string') ids.push(block.icon.figure);
+  }
+  if (block.type === 'figure' && typeof block.figure === 'string') {
+    ids.push(block.figure);
+  }
+  if (block.type === 'figure_row') {
+    for (const figure of block.figures || []) {
+      if (typeof figure === 'string') ids.push(figure);
+      else if (figure && typeof figure === 'object' && typeof figure.figure === 'string') ids.push(figure.figure);
+    }
+    for (const item of block.items || []) {
+      if (item && typeof item.figure === 'string') ids.push(item.figure);
+    }
+  }
+  if (block.type === 'step_flow') {
+    for (const step of block.steps || []) {
+      for (const figure of step.figures || []) {
+        if (typeof figure === 'string') ids.push(figure);
+        else if (figure && typeof figure === 'object' && typeof figure.figure === 'string') ids.push(figure.figure);
+      }
+      for (const item of step.items || []) {
+        if (item && typeof item.figure === 'string') ids.push(item.figure);
+      }
+    }
+  }
+  if (block.type === 'split_panel') {
+    for (const figure of block.figures || []) {
+      if (typeof figure === 'string') ids.push(figure);
+      else if (figure && typeof figure === 'object' && typeof figure.figure === 'string') ids.push(figure.figure);
+    }
+  }
+
+  return ids;
+}
+
+function collectProceduralImageUsage(chapters, imagesManifest) {
+  const seen = new Map();
+
+  function visitBlock(block, chapterId, pageKey, blockIndex) {
+    if (!block || typeof block !== 'object') return;
+
+    if (block.type === 'step_flow') {
+      (block.steps || []).forEach((step, stepIndex) => {
+        const usageRef = `${chapterId}.${pageKey}.${step.id || `step${stepIndex + 1}`}`;
+        for (const figureRef of step.figures || []) {
+          const imageId = typeof figureRef === 'string' ? figureRef : figureRef.figure;
+          const meta = imagesManifest[imageId];
+          if (!meta) throw new Error(`Missing image id: ${imageId}`);
+          if (meta.kind === 'procedural') {
+            if (seen.has(imageId)) {
+              throw new Error(`Procedural image reused across steps: ${imageId}`);
+            }
+            seen.set(imageId, usageRef);
+          }
+        }
+      });
+    }
+
+    if (block.type === 'split_panel') {
+      (block.figures || []).forEach((figureRef, figureIndex) => {
+        const imageId = typeof figureRef === 'string' ? figureRef : figureRef.figure;
+        const meta = imagesManifest[imageId];
+        if (!meta) throw new Error(`Missing image id: ${imageId}`);
+        if (meta.kind === 'procedural') {
+          const usageRef = `${chapterId}.${pageKey}.${block.id || `block${blockIndex + 1}`}.figure${figureIndex + 1}`;
+          if (seen.has(imageId)) {
+            throw new Error(`Procedural image reused across blocks: ${imageId}`);
+          }
+          seen.set(imageId, usageRef);
+        }
+      });
+      (block.body_blocks || []).forEach((childBlock, childIndex) => {
+        visitBlock(childBlock, chapterId, pageKey, `${blockIndex}-split-${childIndex}`);
+      });
+    }
+
+    if (block.type !== 'step_flow' && block.type !== 'split_panel') {
+      for (const imageId of collectBlockFigureIds(block)) {
+        const meta = imagesManifest[imageId];
+        if (!meta) {
+          throw new Error(`Missing image id: ${imageId}`);
+        }
+        if (meta.kind === 'procedural') {
+          const usageRef = `${chapterId}.${pageKey}.${block.id || `block${blockIndex + 1}`}`;
+          if (seen.has(imageId)) {
+            throw new Error(`Procedural image reused across steps: ${imageId}`);
+          }
+          seen.set(imageId, usageRef);
+        }
+      }
+    }
+  }
+
+  for (const chapter of chapters) {
+    for (let pageIndex = 0; pageIndex < (chapter.pages || []).length; pageIndex += 1) {
+      const page = chapter.pages[pageIndex];
+      const pageKey = page.page_id || `page${pageIndex + 1}`;
+      (page.blocks || []).forEach((block, blockIndex) => {
+        visitBlock(block, chapter.chapter_id, pageKey, blockIndex);
+      });
+    }
+  }
+
+  return seen;
+}
+
+function validateProceduralImageUsage(chapters, imagesManifest) {
+  const seen = collectProceduralImageUsage(chapters, imagesManifest);
+
+  for (const [imageId, meta] of Object.entries(imagesManifest)) {
+    if (meta.kind !== 'procedural') continue;
+    if (!meta.usage_ref) {
+      throw new Error(`Procedural image missing usage_ref: ${imageId}`);
+    }
+    const actualUsageRef = seen.get(imageId);
+    if (!actualUsageRef) {
+      throw new Error(`Procedural image not used in content: ${imageId}`);
+    }
+    if (meta.usage_ref !== actualUsageRef) {
+      throw new Error(`Procedural image usage_ref mismatch: ${imageId} expected ${meta.usage_ref} actual ${actualUsageRef}`);
+    }
+  }
+}
+
+function docTypeLabel(suffix) {
+  const labels = {
+    cn: '使用说明书',
+    en: 'User Manual',
+    de: 'Bedienungsanleitung',
+    it: "Manuale d'uso",
+  };
+  return labels[suffix] || labels.en;
+}
+
+function renderStructuredDocument(documentSchema, context) {
+  const chapters = documentSchema.chapters.filter((chapter) => chapter.enabled !== false);
+  validateProceduralImageUsage(chapters, context.images);
+
+  let pageNo = 3;
+  const tocEntries = [];
+  const pages = [];
+
+  for (const chapter of chapters) {
+    tocEntries.push({
+      chapter_no: chapter.chapter_no,
+      toc_title: chapter.toc_title || chapter.title,
+      page_no: pageNo,
+    });
+
+    for (const page of chapter.pages) {
+      const pageClass = page.page_class ? ` ${page.page_class}` : '';
+      const headerRef = page.header_ref || chapter.header_ref;
+      const sectionTitle = page.hide_section_title
+        ? ''
+        : `<h2 class="section-title"><span class="chapter-num">${chapter.chapter_no}</span>${page.section_title || chapter.title}</h2>`;
+      const blocks = (page.blocks || []).map((block) => renderBlock(block, context)).join('\n');
+
+      pages.push(`<div class="page${pageClass}">
+  <div class="header-strip">
+    <div class="header-brand">{{brand.display_name}}</div>
+    <div class="header-ref">${headerRef}</div>
+  </div>
+  ${sectionTitle}
+  ${blocks}
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} ${docTypeLabel(context.suffix)}</span><span>${pageNo}</span></div>
+</div>`);
+      pageNo += 1;
+    }
+  }
+
+  const tocHtml = tocEntries.map((entry) => `<div class="toc-item"><span><span class="toc-chapter">${entry.chapter_no}</span><span class="toc-name">${entry.toc_title}</span></span><span class="toc-page">${entry.page_no}</span></div>`).join('\n');
+
+  return {
+    tocHtml,
+    documentHtml: pages.join('\n\n'),
+  };
+}
+
+function renderDocument(documentSchema, context) {
+  if (documentSchema.kind !== 'structured') {
+    throw new Error(`Unsupported document schema kind: ${documentSchema.kind}`);
+  }
+
+  return renderStructuredDocument(documentSchema, context);
 }
 
 // ---------------------------------------------------------------------------
@@ -200,7 +909,6 @@ function buildVariant(regionCode, brandOverride) {
   html = html.replace(/<html lang="[^"]*">/, `<html lang="${lang}">`);
 
   // Simple variable replacements
-  const productName = pickField(config.product, 'name', suffix);
   const vars = {
     'brand.display_name':      brand.display_name,
     'brand.name':              brand.name,
@@ -212,6 +920,7 @@ function buildVariant(regionCode, brandOverride) {
     'product.name_en':         config.product.name_en,
     'product.name_de':         config.product.name_de,
     'product.name_it':         config.product.name_it,
+    'product.cover_image':     config.product.cover_image || '',
     'manufacturer.name_cn':    mfr.name_cn,
     'manufacturer.name_en':    mfr.name_en,
     'manufacturer.address_cn': mfr.address_cn,
@@ -279,6 +988,36 @@ function buildVariant(regionCode, brandOverride) {
       `      <tr><td>${labels.address_label}</td><td>${suffix === 'cn' ? mfrData.address_cn : mfrData.address_en}</td></tr>`,
       `      <tr><td>${labels.website_label}</td><td>${mfrData.website}</td></tr>`,
     ].join('\n');
+  }
+
+  const imagesManifest = loadImagesManifest(productDir);
+  const documentSchema = loadContentDocument(productDir, templateLang);
+  const renderedDocument = renderDocument(documentSchema, {
+    config,
+    brand,
+    specs,
+    mfr,
+    model,
+    suffix,
+    labels,
+    images: imagesManifest,
+    builders: {
+      buildSpecsRows,
+      buildPartsRows,
+      buildButtonsRows,
+      buildBrandInfoRows,
+      buildManufacturerRows,
+    },
+  });
+
+  html = replaceTemplateSlots(html, {
+    AUTO_TOC: renderedDocument.tocHtml,
+    DOCUMENT_BODY: renderedDocument.documentHtml,
+  });
+
+  for (const [key, value] of Object.entries(vars)) {
+    const pattern = new RegExp(`\{\{${key.replace(/\./g, '\\.')}\}\}`, 'g');
+    html = html.replace(pattern, value);
   }
 
   const blocks = {
@@ -371,5 +1110,11 @@ module.exports = {
   buildVariant,
   langSuffix,
   pickField,
+  loadProductConfig,
+  loadImagesManifest,
+  loadContentDocument,
+  renderDocument,
+  replaceTemplateSlots,
+  renderTextTokens,
   resolveTemplateIncludes,
 };

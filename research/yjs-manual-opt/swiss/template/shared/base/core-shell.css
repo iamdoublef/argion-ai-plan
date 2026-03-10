@@ -108,6 +108,76 @@ p {
   line-height: 1.5;
 }
 
+.step-flow {
+  margin: 8px 0;
+}
+
+.split-panel {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 8px 0;
+}
+
+.split-panel-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.split-panel-figures {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  max-width: 38%;
+}
+
+.split-panel-figures img {
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.step-flow-step {
+  margin-bottom: 6px;
+}
+
+.step-flow-row {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  min-height: 18px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.step-text {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.figure-row {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.step-figures {
+  margin: 4px 0 8px 28px !important;
+  width: calc(100% - 28px);
+}
+
+.qa-item + .qa-item {
+  margin-top: 8px;
+}
+
+.contact-cut-line {
+  margin: 6px auto 0;
+  max-width: 68%;
+  border-top: 2px dotted #333;
+}
+
 .step-num {
   position: absolute;
   left: 0;

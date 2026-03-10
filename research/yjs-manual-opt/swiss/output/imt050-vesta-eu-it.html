@@ -116,6 +116,76 @@ p {
   line-height: 1.5;
 }
 
+.step-flow {
+  margin: 8px 0;
+}
+
+.split-panel {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 8px 0;
+}
+
+.split-panel-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.split-panel-figures {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  max-width: 38%;
+}
+
+.split-panel-figures img {
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.step-flow-step {
+  margin-bottom: 6px;
+}
+
+.step-flow-row {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  min-height: 18px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.step-text {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.figure-row {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.step-figures {
+  margin: 4px 0 8px 28px !important;
+  width: calc(100% - 28px);
+}
+
+.qa-item + .qa-item {
+  margin-top: 8px;
+}
+
+.contact-cut-line {
+  margin: 6px auto 0;
+  max-width: 68%;
+  border-top: 2px dotted #333;
+}
+
 .step-num {
   position: absolute;
   left: 0;
@@ -664,21 +734,20 @@ tr:nth-child(even) td {
     <div class="header-ref">IMT050 - MANUALE D'USO</div>
   </div>
   <div class="toc-title">Indice</div>
-  <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Istruzioni di sicurezza</span></span><span class="toc-page">3</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Suggerimenti per l'uso del prodotto</span></span><span class="toc-page">5</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Struttura del prodotto</span></span><span class="toc-page">6</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Funzioni del prodotto</span></span><span class="toc-page">7</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Specifiche</span></span><span class="toc-page">8</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Guida al funzionamento</span></span><span class="toc-page">9</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Risoluzione dei problemi</span></span><span class="toc-page">11</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Manutenzione</span></span><span class="toc-page">12</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Installazione, Trasporto, Stoccaggio e Smaltimento</span></span><span class="toc-page">13</span></div>
-  <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Informazioni su marchio e garanzia</span></span><span class="toc-page">14</span></div>
+    <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Istruzioni di sicurezza</span></span><span class="toc-page">3</span></div>
+<div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">Suggerimenti per l'uso del prodotto</span></span><span class="toc-page">5</span></div>
+<div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">Struttura del prodotto</span></span><span class="toc-page">6</span></div>
+<div class="toc-item"><span><span class="toc-chapter">04</span><span class="toc-name">Funzioni del prodotto</span></span><span class="toc-page">7</span></div>
+<div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Specifiche tecniche</span></span><span class="toc-page">8</span></div>
+<div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Guida al funzionamento</span></span><span class="toc-page">9</span></div>
+<div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Risoluzione dei problemi</span></span><span class="toc-page">11</span></div>
+<div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Manutenzione</span></span><span class="toc-page">12</span></div>
+<div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Installazione, trasporto, stoccaggio e smaltimento</span></span><span class="toc-page">13</span></div>
+<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Informazioni su marchio e garanzia</span></span><span class="toc-page">14</span></div>
+
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>2</span></div>
 </div>
 
-<!-- Page 3 - Safety 1 -->
-<!-- @CONTENT:safety:start -->
 <div class="page compact-safety">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
@@ -686,111 +755,100 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>Istruzioni di sicurezza</h2>
   <p>Per la vostra sicurezza, leggere tutte le istruzioni contenute in questo manuale prima di utilizzare questo apparecchio elettrico e rispettare sempre le seguenti precauzioni:</p>
-
-  <div class="warning-box">
-    <div class="box-title">AVVERTENZA</div>
-    <div style="margin:6px 0 8px;"><img src="./images_imt050/image3.png" alt="Warning Icon" style="width:22px;height:auto;max-height:22px;object-fit:contain;"></div>
-    <ul class="box-list">
-      <li>Questo apparecchio &egrave; destinato esclusivamente all'uso domestico. Non utilizzare per scopi diversi da quelli previsti.</li>
-      <li>Non permettere ai bambini di giocare con l'apparecchio o il cavo di alimentazione. Bambini, persone con mobilit&agrave; ridotta o limitazioni cognitive devono utilizzarlo sotto la supervisione di un adulto.</li>
-      <li>Le parti piccole possono rappresentare un rischio di soffocamento. Tenere lontano dai bambini.</li>
-      <li>Non utilizzare l'apparecchio in ambienti con elevata umidit&agrave; o temperatura. Non utilizzare mai in presenza di gas infiammabili o esplosivi.</li>
-      <li>Verificare che la tensione di alimentazione corrisponda a quella indicata sulla targhetta dell'apparecchio.</li>
-      <li>Dopo l'uso, scollegare l'alimentazione.</li>
-      <li>Quando si scollega, afferrare la spina stessa; non tirare il cavo di alimentazione.</li>
-      <li>Non immergere l'apparecchio o il cavo di alimentazione in acqua o altri liquidi.</li>
-      <li>Il cavo di alimentazione deve essere collegato direttamente a una presa elettrica conforme.</li>
-      <li>In caso di danni alla spina, al cavo o all'apparecchio, cessare immediatamente l'uso e contattare il produttore o un centro assistenza autorizzato. Non riparare da soli.</li>
-      <li>Non lasciare il cavo di alimentazione pendere dal bordo del piano; i bambini potrebbero tirarlo.</li>
-      <li>Non toccare mai le parti elettriche dell'apparecchio con le mani bagnate o a piedi nudi.</li>
-      <li>L'alimentazione deve essere dotata di un interruttore differenziale (RCD/salvavita).</li>
-      <li>La presa deve essere conforme alle normative locali. Le norme di sicurezza richiedono la messa a terra obbligatoria del prodotto.</li>
-      <li>Prima della pulizia, manutenzione o sostituzione delle parti, scollegare sempre l'alimentazione.</li>
-      <li>Non inserire mai cacciaviti o altri oggetti nelle aperture di ventilazione.</li>
-      <li>Solo tecnici autorizzati possono smontare, ispezionare o riparare questo prodotto.</li>
-      <li>In caso di incendio, non utilizzare acqua; utilizzare un estintore a CO2.</li>
-      <li>Non utilizzare mezzi meccanici o metodi diversi da quelli raccomandati dal produttore per accelerare lo sbrinamento.</li>
-      <li>Non danneggiare il circuito del refrigerante.</li>
-      <li>Avvertenza: materiali infiammabili; rischio di incendio.</li>
-      <li>I rifiuti di refrigerante devono essere smaltiti presso un centro autorizzato. Tenere lontano da fiamme libere.</li>
-      <li>Non conservare bombolette aerosol o sostanze esplosive con propellenti infiammabili all'interno del prodotto.</li>
-      <li>Mantenere libere tutte le aperture di ventilazione. Tenere il prodotto lontano da fonti di calore o generatori di vapore.</li>
-    </ul>
-  </div>
+<div class="warning-box">
+        <div class="box-title">AVVERTENZA</div>
+        <div style="margin:6px 0 8px;"><img src="./images_imt050/image3.png" alt="Warning icon" style="max-height:22px;width:22px;object-fit:contain"></div>
+        <ul class="box-list">
+            <li>Questo apparecchio &amp;egrave; destinato esclusivamente all&#39;uso domestico. Non utilizzare per scopi diversi da quelli previsti.</li>
+<li>Non permettere ai bambini di giocare con l&#39;apparecchio o il cavo di alimentazione. Bambini, persone con mobilit&amp;agrave; ridotta o limitazioni cognitive devono utilizzarlo sotto la supervisione di un adulto.</li>
+<li>Le parti piccole possono rappresentare un rischio di soffocamento. Tenere lontano dai bambini.</li>
+<li>Non utilizzare l&#39;apparecchio in ambienti con elevata umidit&amp;agrave; o temperatura. Non utilizzare mai in presenza di gas infiammabili o esplosivi.</li>
+<li>Verificare che la tensione di alimentazione corrisponda a quella indicata sulla targhetta dell&#39;apparecchio.</li>
+<li>Dopo l&#39;uso, scollegare l&#39;alimentazione.</li>
+<li>Quando si scollega, afferrare la spina stessa; non tirare il cavo di alimentazione.</li>
+<li>Non immergere l&#39;apparecchio o il cavo di alimentazione in acqua o altri liquidi.</li>
+<li>Il cavo di alimentazione deve essere collegato direttamente a una presa elettrica conforme.</li>
+<li>In caso di danni alla spina, al cavo o all&#39;apparecchio, cessare immediatamente l&#39;uso e contattare il produttore o un centro assistenza autorizzato. Non riparare da soli.</li>
+<li>Non lasciare il cavo di alimentazione pendere dal bordo del piano; i bambini potrebbero tirarlo.</li>
+<li>Non toccare mai le parti elettriche dell&#39;apparecchio con le mani bagnate o a piedi nudi.</li>
+<li>L&#39;alimentazione deve essere dotata di un interruttore differenziale (RCD/salvavita).</li>
+<li>La presa deve essere conforme alle normative locali. Le norme di sicurezza richiedono la messa a terra obbligatoria del prodotto.</li>
+<li>Prima della pulizia, manutenzione o sostituzione delle parti, scollegare sempre l&#39;alimentazione.</li>
+<li>Non inserire mai cacciaviti o altri oggetti nelle aperture di ventilazione.</li>
+<li>Solo tecnici autorizzati possono smontare, ispezionare o riparare questo prodotto.</li>
+<li>In caso di incendio, non utilizzare acqua; utilizzare un estintore a CO2.</li>
+<li>Non utilizzare mezzi meccanici o metodi diversi da quelli raccomandati dal produttore per accelerare lo sbrinamento.</li>
+<li>Non danneggiare il circuito del refrigerante.</li>
+<li>Avvertenza: materiali infiammabili; rischio di incendio.</li>
+<li>I rifiuti di refrigerante devono essere smaltiti presso un centro autorizzato. Tenere lontano da fiamme libere.</li>
+<li>Non conservare bombolette aerosol o sostanze esplosive con propellenti infiammabili all&#39;interno del prodotto.</li>
+<li>Mantenere libere tutte le aperture di ventilazione. Tenere il prodotto lontano da fonti di calore o generatori di vapore.</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>3</span></div>
 </div>
 
-<!-- Page 4 - Safety 2 -->
 <div class="page compact-safety">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CAP.01 - SICUREZZA</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>Istruzioni di sicurezza (seguito)</h2>
-
   <div class="caution-box">
-    <div class="box-title">ATTENZIONE</div>
-    <ul class="box-list">
-      <li>Mantenere il prodotto in posizione verticale durante il trasporto. L'inclinazione pu&ograve; causare danni.</li>
-      <li>Dopo il trasporto, lasciare riposare l'apparecchio per 4 ore affinch&eacute; il refrigerante si stabilizzi prima dell'accensione.</li>
-      <li>Indossare guanti durante la manutenzione del motore o del sistema di refrigerazione.</li>
-      <li>Non ostruire le aperture di ventilazione per garantire il corretto funzionamento.</li>
-      <li>Non collocare oggetti non alimentari nella camera del prodotto.</li>
-      <li>Questo prodotto &egrave; destinato esclusivamente all'uso interno.</li>
-      <li>Questo prodotto &egrave; progettato per produrre ghiaccio dall'acqua potabile. Non utilizzare per altri scopi.</li>
-    </ul>
-  </div>
-
-  <div class="note-box">
-    <div class="box-title">NOTA</div>
-    <ul class="box-list">
-      <li>Il livello di rumore del prodotto &egrave; inferiore a 50 dB(A).</li>
-      <li>La classe climatica di questo prodotto &egrave; SN, adatta per temperature ambiente di 10&deg;C-32&deg;C / 50&deg;F-89.6&deg;F.</li>
-    </ul>
-  </div>
+        <div class="box-title">ATTENZIONE</div>
+        
+        <ul class="box-list">
+            <li>Mantenere il prodotto in posizione verticale durante il trasporto. L&#39;inclinazione pu&amp;ograve; causare danni.</li>
+<li>Dopo il trasporto, lasciare riposare l&#39;apparecchio per 4 ore affinch&amp;eacute; il refrigerante si stabilizzi prima dell&#39;accensione.</li>
+<li>Indossare guanti durante la manutenzione del motore o del sistema di refrigerazione.</li>
+<li>Non ostruire le aperture di ventilazione per garantire il corretto funzionamento.</li>
+<li>Non collocare oggetti non alimentari nella camera del prodotto.</li>
+<li>Questo prodotto &amp;egrave; destinato esclusivamente all&#39;uso interno.</li>
+<li>Questo prodotto &amp;egrave; progettato per produrre ghiaccio dall&#39;acqua potabile. Non utilizzare per altri scopi.</li>
+          </ul>
+      </div>
+<div class="note-box">
+        <div class="box-title">NOTA</div>
+        
+        <ul class="box-list">
+            <li>Il livello di rumore del prodotto &amp;egrave; inferiore a 50 dB(A).</li>
+<li>La classe climatica di questo prodotto &amp;egrave; SN, adatta per temperature ambiente di 10&amp;deg;C-32&amp;deg;C / 50&amp;deg;F-89.6&amp;deg;F.</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>4</span></div>
 </div>
-<!-- @CONTENT:safety:end -->
 
-<!-- Page 5 - Usage Tips -->
-<!-- @CONTENT:usage_tips:start -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CAP.02 - SUGGERIMENTI D'USO</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">02</span>Suggerimenti per l'uso del prodotto</h2>
-
   <div class="sub-title">Posizionamento e primo utilizzo</div>
-  <ul class="bullet-list">
-    <li>Posizionare il prodotto su un piano di lavoro robusto, piano e asciutto.</li>
-    <li>Assicurare almeno 120 mm (4,7&quot;) di spazio di ventilazione su tutti i lati.</li>
-    <li>Tenere lontano da fonti di calore (forni, piani cottura, ecc.) e dalla luce solare diretta.</li>
-    <li>Eseguire un ciclo di pulizia prima del primo utilizzo (vedere CAP.08).</li>
-    <li>I primi 5 cicli di produzione fanno parte della fase di raffreddamento. Cubetti inizialmente pi&ugrave; piccoli sono normali.</li>
-  </ul>
-
-  <div class="sub-title">Qualit&agrave; dell'acqua</div>
-  <ul class="bullet-list">
-    <li>Utilizzare acqua potabile per la produzione di ghiaccio. Pi&ugrave; pura &egrave; l'acqua, pi&ugrave; trasparente sar&agrave; il ghiaccio.</li>
-    <li>Per una trasparenza ottimale, utilizzare acqua con basso contenuto di minerali (TDS &lt; 200 mg/L).</li>
-    <li>Fonti adatte: acqua purificata, acqua filtrata a osmosi inversa, acqua profondamente filtrata, acqua minerale a basso TDS.</li>
-    <li><strong>NON</strong> utilizzare: bevande colorate, aromatizzate, gassate o sature di gas (t&egrave;, succo, caff&egrave;, latte, bibite, ecc.); possono contaminare o danneggiare il prodotto.</li>
-  </ul>
-
-  <div class="sub-title">Indicazioni d'uso</div>
-  <ul class="bullet-list">
-    <li>Rimuovere tutti i materiali di imballaggio, pulire l'interno con un panno umido e asciugare accuratamente.</li>
-    <li>Quando il cestello del ghiaccio &egrave; pieno, l'unit&agrave; si mette automaticamente in pausa e segnala la condizione.</li>
-    <li>Non &egrave; possibile produrre pi&ugrave; dimensioni contemporaneamente, ma &egrave; possibile cambiare dimensione durante il funzionamento.</li>
-    <li>Una leggera opacit&agrave; del ghiaccio durante l'uso continuo &egrave; normale e dipende da acqua, temperatura e ambiente.</li>
-  </ul>
-
+<ul class="bullet-list">
+        <li>Posizionare il prodotto su un piano di lavoro robusto, piano e asciutto.</li>
+<li>Assicurare almeno 120 mm (4,7&quot;) di spazio di ventilazione su tutti i lati.</li>
+<li>Tenere lontano da fonti di calore (forni, piani cottura, ecc.) e dalla luce solare diretta.</li>
+<li>Eseguire un ciclo di pulizia prima del primo utilizzo (vedere CAP.08).</li>
+<li>I primi 5 cicli di produzione fanno parte della fase di raffreddamento. Cubetti inizialmente più piccoli sono normali.</li>
+      </ul>
+<div class="sub-title">Qualità dell&#39;acqua</div>
+<ul class="bullet-list">
+        <li>Utilizzare acqua potabile per la produzione di ghiaccio. Più pura è l&#39;acqua, più trasparente sarà il ghiaccio.</li>
+<li>Per una trasparenza ottimale, utilizzare acqua con basso contenuto di minerali (TDS &lt; 200 mg/L).</li>
+<li>Fonti adatte: acqua purificata, acqua filtrata a osmosi inversa, acqua profondamente filtrata, acqua minerale a basso TDS.</li>
+<li><b>NON</b> utilizzare: bevande colorate, aromatizzate, gassate o sature di gas (tè, succo, caffè, latte, bibite, ecc.); possono contaminare o danneggiare il prodotto.</li>
+      </ul>
+<div class="sub-title">Indicazioni d&#39;uso</div>
+<ul class="bullet-list">
+        <li>Rimuovere tutti i materiali di imballaggio, pulire l&#39;interno con un panno umido e asciugare accuratamente.</li>
+<li>Quando il cestello del ghiaccio è pieno, l&#39;unità si mette automaticamente in pausa e segnala la condizione.</li>
+<li>Non è possibile produrre più dimensioni contemporaneamente, ma è possibile cambiare dimensione durante il funzionamento.</li>
+<li>Una leggera opacità del ghiaccio durante l&#39;uso continuo è normale e dipende da acqua, temperatura e ambiente.</li>
+      </ul>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>5</span></div>
 </div>
-<!-- @CONTENT:usage_tips:end -->
 
-<!-- Page 6 - Structure -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
@@ -798,10 +856,11 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">03</span>Struttura del prodotto</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image5.png" alt="Struttura del prodotto" style="max-height:56mm;">
+    <img src="./images_imt050/image5.png" alt="Product structure diagram" style="max-height:56mm;object-fit:contain">
+    
   </div>
-  <table>
-    <thead><tr><th style="width:15%;">N.</th><th>Nome</th><th style="width:15%;">N.</th><th>Nome</th></tr></thead>
+<table>
+    <thead><tr><th style="width:15%;">N.</th><th>Parte</th><th style="width:15%;">N.</th><th>Parte</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Coperchio</td><td>5</td><td>Maniglia del serbatoio</td></tr>
       <tr><td>2</td><td>Cestello del ghiaccio</td><td>6</td><td>Pannello di controllo</td></tr>
@@ -812,7 +871,6 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>6</span></div>
 </div>
 
-<!-- Page 7 - Features -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
@@ -820,15 +878,15 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">04</span>Funzioni del prodotto</h2>
   <div class="fig-wrap">
-    <img src="./images_imt050/image7.png" alt="Pannello di controllo" style="max-height:24mm;">
-    <div class="fig-caption">FIG. 2 - PANNELLO DI CONTROLLO</div>
+    <img src="./images_imt050/image7.png" alt="Structure legend" style="max-height:24mm;object-fit:contain">
+    
   </div>
-  <div class="fig-wrap" style="margin:4px 0 6px;">
-    <img src="./images_imt050/image9.png" alt="Etichette pulsanti pannello di controllo" style="max-height:20mm;">
-    <div class="fig-caption">FIG. 3 — ETICHETTE PULSANTI</div>
+<div class="fig-wrap">
+    <img src="./images_imt050/image9.png" alt="Control panel diagram" style="max-height:20mm;object-fit:contain">
+    
   </div>
-  <table>
-    <thead><tr><th style="width:25%;">N. / Pulsante</th><th>Descrizione</th></tr></thead>
+<table>
+    <thead><tr><th style="width:45%;">N. / Pulsante</th><th>Descrizione</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Power</span>　Accensione</td><td>Premere per accendere; tenere premuto per spegnere.</td></tr>
       <tr><td><span class="callout-no">2</span> <span class="btn-name">Make Ice</span>　Fai ghiaccio</td><td>Seleziona la dimensione (S / M / L); la macchina si avvia automaticamente.</td></tr>
@@ -840,7 +898,6 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>7</span></div>
 </div>
 
-<!-- Page 8 - Specifications -->
 <div class="page compact-table">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
@@ -848,7 +905,7 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">05</span>Specifiche tecniche</h2>
   <table>
-    <thead><tr><th style="width:40%;">Parametro</th><th>Specifica</th></tr></thead>
+    <thead><tr><th>Parametro</th><th>Specifica</th></tr></thead>
     <tbody>
       <tr><td>Tensione</td><td>220~240 Vac</td></tr>
       <tr><td>Frequenza</td><td>50 Hz</td></tr>
@@ -872,37 +929,51 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>8</span></div>
 </div>
 
-<!-- Page 9 - Operation -->
-<!-- @CONTENT:operations:start -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>Guida al funzionamento</h2>
-
-  <div class="sub-title">Produzione del ghiaccio</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Rimuovere il serbatoio dell'acqua, riempire con acqua potabile fino alla linea dell'acqua e riposizionarlo nell'unit&agrave;.</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image14.png" alt="Riempimento d'acqua" style="max-height:28mm;max-width:30%;object-fit:contain;">
-    <img src="./images_imt050/image16.png" alt="Livello dell'acqua" style="max-height:28mm;max-width:30%;object-fit:contain;">
-    <img src="./images_imt050/image18.png" alt="Riposizionamento serbatoio" style="max-height:28mm;max-width:30%;object-fit:contain;">
+  <div class="sub-title">Preparazione prima dell’uso</div>
+<ul class="bullet-list">
+        <li>Posizionare l’unità su una superficie stabile e piana. Lasciare libere la parte posteriore e le aperture di ventilazione sul lato destro. La distanza da pareti o altri oggetti deve essere di almeno 120 mm per garantire una ventilazione adeguata.</li>
+<li>Prima del primo utilizzo, o se l’unità non è stata usata per molto tempo, eseguire un ciclo di pulizia. Fare riferimento al CH.08 Manutenzione.</li>
+      </ul>
+<div class="sub-title">Accensione del prodotto</div>
+<ul class="bullet-list">
+        <li>Collegare l’alimentazione. L’unità emette un segnale acustico, tutti i pulsanti si illuminano e poi si spengono: questo indica che l’alimentazione è attiva.</li>
+<li>Premere il pulsante <b>Power</b>. L’indicatore si illumina di bianco e l’unità è accesa.</li>
+      </ul>
+<div class="sub-title">Produzione del ghiaccio bullet</div>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Aprire il coperchio e rimuovere il cestello del ghiaccio e il serbatoio dell’acqua.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Riempire il serbatoio dell’acqua per il ghiaccio bullet con acqua potabile fino alla linea del livello.</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image14.png" alt="Fill water tank" style="max-height:24mm;max-width:35%;object-fit:contain">
+<img src="./images_imt050/image16.png" alt="Water level mark" style="max-height:24mm;max-width:35%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="2">
-    <li><span class="step-num">2</span>Posizionare il cestello del ghiaccio nell'unità e chiudere il coperchio.</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image20.png" alt="Posizionamento cestello" style="max-height:32mm;max-width:35%;object-fit:contain;">
-    <img src="./images_imt050/image22.png" alt="Chiusura coperchio" style="max-height:32mm;max-width:35%;object-fit:contain;">
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Riposizionare il serbatoio nella camera interna. Premere il serbatoio verso il basso con la mano per assicurarsi che sia correttamente in sede. Un serbatoio non ben posizionato può impedire il funzionamento dell’unità.</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image18.png" alt="Seat tank inside chamber" style="max-height:24mm;max-width:35%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="3">
-    <li><span class="step-num">3</span>Collegare il cavo di alimentazione. Premere il pulsante <b>Power</b>; l'indicatore si illumina in bianco e l'unit&agrave; si accende.</li>
-  </ol>
-
+    </div>
+  </div>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>9</span></div>
 </div>
 
@@ -912,250 +983,248 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>Guida al funzionamento (seguito)</h2>
-
-  <ol class="steps" start="4">
-    <li><span class="step-num">4</span>Premere il pulsante <b>Produzione ghiaccio</b> per selezionare la dimensione (S / M / L). L'unit&agrave; inizia a produrre ghiaccio automaticamente.</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px;">
-    <img src="./images_imt050/image24.png" alt="Selezione dimensione ghiaccio" style="max-height:28mm;max-width:35%;object-fit:contain;">
-    <img src="./images_imt050/image26.png" alt="Indicatori LED dimensione" style="max-height:28mm;max-width:55%;object-fit:contain;">
+  <div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">4</span>
+        <div class="step-text">Riposizionare il cestello del ghiaccio e chiudere il coperchio.</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image20.png" alt="Return ice basket" style="max-height:28mm;max-width:30%;object-fit:contain">
+<img src="./images_imt050/image22.png" alt="Close lid" style="max-height:28mm;max-width:30%;object-fit:contain">
+<img src="./images_imt050/image24.png" alt="Unit closed" style="max-height:28mm;max-width:30%;object-fit:contain">
   </div>
-
-  <ol class="steps" start="5">
-    <li><span class="step-num">5</span>Attendere la formazione del ghiaccio. I cubetti a proiettile cadranno automaticamente nel cestello del ghiaccio.</li>
-    <li><span class="step-num">6</span>Aprire il coperchio, rimuovere il cestello del ghiaccio e raccogliere il ghiaccio. Riposizionare il cestello e l'unit&agrave; riprende automaticamente.</li>
-  </ol>
-
-  <div style="display:flex;gap:4mm;align-items:center;justify-content:center;margin:8px 0 4px;font-size:9px;">
-    <span>ICE FULL →</span>
-    <img src="./images_imt050/image28.png" alt="ICE FULL" style="height:14px;vertical-align:middle;">
-    <span style="margin-left:6mm;">ADD WATER →</span>
-    <img src="./images_imt050/image30.png" alt="ADD WATER" style="height:14px;vertical-align:middle;">
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">5</span>
+        <div class="step-text">Premere il pulsante <b>Make Ice</b>. Selezionare l’indicatore S / M / L sopra il pulsante per scegliere la dimensione desiderata del ghiaccio bullet.</div>
+      </div>
+      <div class="figure-row step-figures" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image26.png" alt="Select ice size" style="max-height:28mm;max-width:55%;object-fit:contain">
   </div>
-
-  <div class="note-box" style="margin-top:12px;">
-    <div class="box-title">AVVISO</div>
-    <ul class="box-list">
-      <li>Premere <b>Produzione ghiaccio</b> durante il funzionamento per cambiare la dimensione del ghiaccio.</li>
-      <li>Tenere premuto <b>Power</b> per interrompere la produzione e spegnere l'unit&agrave;.</li>
-      <li>Quando il cestello &egrave; pieno, l'indicatore <b>GHIACCIO PIENO</b> si illumina in verde e l'unit&agrave; si mette in pausa. Rimuovere il ghiaccio o attendere che si sciolga; l'unit&agrave; riprende automaticamente.</li>
-      <li>Quando il serbatoio &egrave; basso, l'indicatore <b>AGGIUNGERE ACQUA</b> si illumina in rosso. Riempire tempestivamente.</li>
-      <li>Non &egrave; possibile produrre pi&ugrave; dimensioni contemporaneamente, ma &egrave; possibile cambiare dimensione durante il ciclo.</li>
-      <li>Un'opacit&agrave; occasionale durante la produzione continua &egrave; normale, dovuta alla qualit&agrave; dell'acqua, alla temperatura e alle condizioni ambientali.</li>
-    </ul>
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">6</span>
+        <div class="step-text">Dopo la selezione della dimensione, l’unità avvia automaticamente la produzione del ghiaccio bullet.</div>
+      </div>
+      
+    </div>
   </div>
-
+<div class="figure-row status-indicator-row" style="display:flex;gap:4mm;justify-content:center;align-items:center;margin:8px 0 4px;font-size:9px">
+    <span>ICE FULL →</span><img src="./images_imt050/image28.png" alt="Ice full indicator" style="height:14px;object-fit:contain;display:inline-block;vertical-align:middle">
+<span>ADD WATER →</span><img src="./images_imt050/image30.png" alt="Add water indicator" style="height:14px;object-fit:contain;display:inline-block;vertical-align:middle">
+  </div>
+<div class="note-box">
+        <div class="box-title">AVVISO</div>
+        
+        <ul class="box-list">
+            <li>Durante la produzione del ghiaccio è possibile premere <b>Make Ice</b> per cambiare la dimensione.</li>
+<li>Durante la produzione del ghiaccio è possibile premere <b>Power</b> per interrompere il ciclo del ghiaccio bullet. L’indicatore si spegne e l’unità interrompe la produzione.</li>
+<li>Quando il cestello è pieno, l’indicatore <b>ICE FULL</b> si illumina in verde e l’unità si arresta. Dopo che il ghiaccio si è sciolto o è stato rimosso, l’unità riprende automaticamente.</li>
+<li>Se durante la produzione del ghiaccio l’indicatore <b>ADD WATER</b> si illumina in rosso, l’unità si arresta. Riempire tempestivamente il serbatoio dell’acqua.</li>
+          </ul>
+      </div>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>10</span></div>
 </div>
-<!-- @CONTENT:operations:end -->
 
-<!-- Page 10 - Troubleshooting -->
-<!-- @CONTENT:troubleshooting:start -->
 <div class="page compact-ts">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CAP.07 - RISOLUZIONE DEI PROBLEMI</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi</h2>
-
   <table>
     <thead><tr><th style="width:22%;">Problema</th><th style="width:33%;">Possibile causa</th><th>Soluzione</th></tr></thead>
     <tbody>
-      <tr>
-        <td>L'unit&agrave; non si accende</td>
-        <td>Alimentazione non collegata o presa senza corrente</td>
-        <td>Verificare il collegamento elettrico e assicurarsi che la presa funzioni.</td>
-      </tr>
-      <tr>
-        <td>Non scarica l'acqua</td>
-        <td>Tappo di scarico non rimosso o foro di scarico bloccato</td>
-        <td>Verificare che il tappo di scarico sul fondo sia rimosso; controllare eventuali ostruzioni.</td>
-      </tr>
-      <tr>
-        <td>Non produce ghiaccio</td>
-        <td>Serbatoio acqua basso (indicatore AGGIUNGERE ACQUA rosso)</td>
-        <td>Riempire il serbatoio dell'acqua fino alla linea dell'acqua.</td>
-      </tr>
-      <tr>
-        <td>Non produce ghiaccio</td>
-        <td>Lo stampo si gela solo, nessun ghiaccio (problema pompa)</td>
-        <td>Riempire l'acqua fino alla linea, lasciare riposare per 30 minuti, quindi riavviare. Controllare attraverso la finestra se l'acqua viene pompata nella vaschetta.</td>
-      </tr>
-      <tr>
-        <td>Si ferma a met&agrave; ciclo</td>
-        <td>Cestello ghiaccio pieno (indicatore GHIACCIO PIENO verde)</td>
-        <td>Rimuovere il ghiaccio o attendere che si sciolga. L'unit&agrave; riprende automaticamente.</td>
-      </tr>
-      <tr>
-        <td>Si ferma a met&agrave; ciclo</td>
-        <td>Serbatoio acqua basso (indicatore AGGIUNGERE ACQUA rosso)</td>
-        <td>Riempire tempestivamente il serbatoio. L'unit&agrave; riprende automaticamente.</td>
-      </tr>
-      <tr>
-        <td>Prime 5 porzioni piccole</td>
-        <td>Temperatura dell'acqua ancora alta (fase di raffreddamento)</td>
-        <td>&Egrave; normale. Le dimensioni del ghiaccio aumenteranno con il diminuire della temperatura dell'acqua.</td>
-      </tr>
-      <tr>
-        <td>Qualit&agrave; del ghiaccio scarsa</td>
-        <td>Ventilazione insufficiente o temperatura ambientale elevata</td>
-        <td>Assicurare almeno 120 mm di spazio su tutti i lati; spostare l'unit&agrave; in un'area fresca e ventilata.</td>
-      </tr>
-      <tr>
-        <td>Ghiaccio non trasparente</td>
-        <td>Alto contenuto di minerali nell'acqua o effetti di temperatura</td>
-        <td>Utilizzare acqua purificata con TDS &lt; 200 mg/L. Un'opacit&agrave; occasionale durante l'uso continuo &egrave; normale.</td>
-      </tr>
+<tr><td>L&#39;unità non si accende</td><td>Alimentazione non collegata o presa senza corrente</td><td>Verificare il collegamento elettrico e assicurarsi che la presa funzioni.</td></tr>
+<tr><td>Non scarica l&#39;acqua</td><td>Tappo di scarico non rimosso o foro di scarico bloccato</td><td>Verificare che il tappo di scarico sul fondo sia rimosso; controllare eventuali ostruzioni.</td></tr>
+<tr><td>Non produce ghiaccio</td><td>Serbatoio acqua basso (indicatore AGGIUNGERE ACQUA rosso)</td><td>Riempire il serbatoio dell&#39;acqua fino alla linea dell&#39;acqua.</td></tr>
+<tr><td>Non produce ghiaccio</td><td>Lo stampo si gela solo, nessun ghiaccio (problema pompa)</td><td>Riempire l&#39;acqua fino alla linea, lasciare riposare per 30 minuti, quindi riavviare. Controllare attraverso la finestra se l&#39;acqua viene pompata nella vaschetta.</td></tr>
+<tr><td>Si ferma a metà ciclo</td><td>Cestello ghiaccio pieno (indicatore GHIACCIO PIENO verde)</td><td>Rimuovere il ghiaccio o attendere che si sciolga. L&#39;unità riprende automaticamente.</td></tr>
+<tr><td>Si ferma a metà ciclo</td><td>Serbatoio acqua basso (indicatore AGGIUNGERE ACQUA rosso)</td><td>Riempire tempestivamente il serbatoio. L&#39;unità riprende automaticamente.</td></tr>
+<tr><td>Prime 5 porzioni piccole</td><td>Temperatura dell&#39;acqua ancora alta (fase di raffreddamento)</td><td>È normale. Le dimensioni del ghiaccio aumenteranno con il diminuire della temperatura dell&#39;acqua.</td></tr>
+<tr><td>Qualità del ghiaccio scarsa</td><td>Ventilazione insufficiente o temperatura ambientale elevata</td><td>Assicurare almeno 120 mm di spazio su tutti i lati; spostare l&#39;unità in un&#39;area fresca e ventilata.</td></tr>
+<tr><td>Ghiaccio non trasparente</td><td>Alto contenuto di minerali nell&#39;acqua o effetti di temperatura</td><td>Utilizzare acqua purificata con TDS &lt; 200 mg/L. Un&#39;opacità occasionale durante l&#39;uso continuo è normale.</td></tr>
     </tbody>
   </table>
-
-  <div class="caution-box" style="margin-top:14px;">
-    <div class="box-title">ESCLUSIONE DI RESPONSABILIT&Agrave;</div>
-    <p>Il produttore, i distributori e i proprietari del marchio non sono responsabili per danni o problemi di qualit&agrave; derivanti da un utilizzo non conforme a questo manuale.</p>
-  </div>
-
+<div class="caution-box">
+        <div class="box-title">ESCLUSIONE DI RESPONSABILITÀ</div>
+        
+        Il produttore, i distributori e i proprietari del marchio non sono responsabili per danni o problemi di qualità derivanti da un utilizzo non conforme a questo manuale.
+      </div>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>11</span></div>
 </div>
-<!-- @CONTENT:troubleshooting:end -->
 
-<!-- Page 11 - Maintenance -->
-<!-- @CONTENT:maintenance:start -->
 <div class="page compact-ops">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CAP.08 - MANUTENZIONE</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">08</span>Manutenzione</h2>
-
   <div class="sub-title">Pulizia automatica (Stampo ghiaccio e vaschetta)</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Riempire il serbatoio dell'acqua fino alla linea dell'acqua.</li>
-    <li><span class="step-num">2</span>Con l'unit&agrave; accesa, premere il pulsante <b>Pulizia</b>. L'indicatore si illumina in bianco e l'unit&agrave; si pulisce automaticamente.</li>
-    <li><span class="step-num">3</span>Al termine della pulizia, l'unit&agrave; si ferma automaticamente e l'indicatore si spegne.</li>
-  </ol>
-
-  <div class="sub-title">Scarico dell'acqua</div>
-  <ol class="steps">
-    <li><span class="step-num">1</span>Scollegare il cavo di alimentazione e posizionare l'unit&agrave; vicino a un lavandino.</li>
-    <li><span class="step-num">2</span>Rimuovere il tappo di scarico dal fondo dell'unit&agrave; e far defluire tutta l'acqua.</li>
-    <li><span class="step-num">3</span>Una volta scaricata, riposizionare saldamente il tappo di scarico.</li>
-  </ol>
-  <div style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:6px 0 8px;">
-    <img src="./images_imt050/image10.png" alt="Posizione foro di scarico" style="max-height:26mm;max-width:48%;object-fit:contain;">
-    <img src="./images_imt050/image12.png" alt="Posizione scarico interno" style="max-height:26mm;max-width:28%;object-fit:contain;">
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Riempire il serbatoio dell&#39;acqua fino alla linea dell&#39;acqua.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Con l&#39;unità accesa, premere il pulsante <b>Pulizia</b>. L&#39;indicatore si illumina in bianco e l&#39;unità si pulisce automaticamente.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Al termine della pulizia, l&#39;unità si ferma automaticamente e l&#39;indicatore si spegne.</div>
+      </div>
+      
+    </div>
   </div>
-
-  <div class="sub-title">Manutenzione quotidiana</div>
-  <ul class="bullet-list">
-    <li>Sciacquare regolarmente l'interno con acqua pulita; si consiglia una <b>pulizia prima di ogni utilizzo quotidiano</b>.</li>
-    <li>Pulire l'esterno con un panno morbido e umido. Non utilizzare detergenti abrasivi o corrosivi.</li>
-    <li>Seguire i passaggi di pulizia automatica per pulire lo stampo del ghiaccio e la vaschetta.</li>
-    <li>Scollegare sempre l'alimentazione prima della manutenzione e lasciare raffreddare il prodotto.</li>
-  </ul>
-
+<div class="sub-title">Scarico dell&#39;acqua</div>
+<div class="step-flow">
+    <div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">1</span>
+        <div class="step-text">Scollegare il cavo di alimentazione e posizionare l&#39;unità vicino a un lavandino.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">2</span>
+        <div class="step-text">Rimuovere il tappo di scarico dal fondo dell&#39;unità e far defluire tutta l&#39;acqua.</div>
+      </div>
+      
+    </div>
+<div class="step-flow-step">
+      <div class="step-flow-row">
+        <span class="step-num">3</span>
+        <div class="step-text">Una volta scaricata, riposizionare saldamente il tappo di scarico.</div>
+      </div>
+      
+    </div>
+  </div>
+<div class="figure-row" style="display:flex;gap:3mm;justify-content:center;align-items:flex-start;margin:4px 0 6px">
+    <img src="./images_imt050/image10.png" alt="Drain plug" style="max-height:26mm;max-width:48%;object-fit:contain">
+<img src="./images_imt050/image12.png" alt="Drain container" style="max-height:26mm;max-width:28%;object-fit:contain">
+  </div>
+<div class="sub-title">Manutenzione quotidiana</div>
+<ul class="bullet-list">
+        <li>Sciacquare regolarmente l&#39;interno con acqua pulita; si consiglia una <b>pulizia prima di ogni utilizzo quotidiano</b>.</li>
+<li>Pulire l&#39;esterno con un panno morbido e umido. Non utilizzare detergenti abrasivi o corrosivi.</li>
+<li>Seguire i passaggi di pulizia automatica per pulire lo stampo del ghiaccio e la vaschetta.</li>
+<li>Scollegare sempre l&#39;alimentazione prima della manutenzione e lasciare raffreddare il prodotto.</li>
+      </ul>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>12</span></div>
 </div>
-<!-- @CONTENT:maintenance:end -->
 
-<!-- Page 12 - Installation / Transport / Storage / Disposal -->
-<!-- @CONTENT:install_transport_storage_disposal:start -->
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CAP.09 - INSTALLAZIONE / STOCCAGGIO / SMALTIMENTO</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">09</span>Installazione, trasporto, stoccaggio e smaltimento</h2>
-
   <div class="sub-title">Imballaggio e trasporto</div>
-  <ul class="bullet-list">
-    <li>Mantenere il prodotto bilanciato durante il trasporto per evitare ribaltamenti. L'angolo di inclinazione non deve superare 45&deg;.</li>
-    <li>Tenere sempre l'unit&agrave; in posizione verticale durante movimentazione e trasporto per proteggere compressore e circuito refrigerante.</li>
-    <li>Dopo il trasporto, lasciare riposare l'unit&agrave; in posizione verticale per 4 ore prima dell'accensione.</li>
-  </ul>
-
-  <div class="sub-title">Installazione</div>
-  <ul class="bullet-list">
-    <li>Installare il prodotto su una superficie piana, stabile e asciutta. Non utilizzarlo inclinato.</li>
-    <li>Non trascinare o forzare il prodotto durante il posizionamento per evitare ribaltamenti o danni ai componenti.</li>
-    <li>Mantenere almeno 120 mm (4,7&quot;) di distanza da pareti e altri oggetti per ventilazione e accesso alla manutenzione.</li>
-    <li>Tenere il prodotto lontano da fonti di calore, vapore e luce solare diretta.</li>
-  </ul>
-
-  <div class="sub-title">Stoccaggio e smaltimento</div>
-  <ul class="bullet-list">
-    <li>Prima di un lungo periodo di stoccaggio, scaricare completamente l'acqua dal serbatoio e dalla cavit&agrave; interna, quindi pulire e asciugare accuratamente.</li>
-    <li>Conservare l'unit&agrave; in un ambiente asciutto e ventilato, evitando carichi pesanti o esposizione all'umidit&agrave;.</li>
-    <li>Questo prodotto contiene componenti elettronici e refrigerante R600a e non deve essere smaltito con i rifiuti domestici.</li>
-    <li>A fine vita, contattare un centro di riciclaggio autorizzato o il rivenditore e seguire le normative locali sullo smaltimento.</li>
-  </ul>
-
-  <div class="note-box" style="margin-top:14px;">
-    <div class="box-title">WEEE / R600a</div>
-    Non danneggiare il circuito del refrigerante. Il trattamento a fine vita deve essere gestito da un servizio qualificato di riciclaggio o smaltimento per evitare rischi ambientali o di sicurezza.
-  </div>
-
+<ul class="bullet-list">
+        <li>Mantenere il prodotto bilanciato durante il trasporto per evitare ribaltamenti. L&#39;angolo di inclinazione non deve superare 45°.</li>
+<li>Tenere sempre l&#39;unità in posizione verticale durante movimentazione e trasporto per proteggere compressore e circuito refrigerante.</li>
+<li>Dopo il trasporto, lasciare riposare l&#39;unità in posizione verticale per 4 ore prima dell&#39;accensione.</li>
+      </ul>
+<div class="sub-title">Installazione</div>
+<ul class="bullet-list">
+        <li>Installare il prodotto su una superficie piana, stabile e asciutta. Non utilizzarlo inclinato.</li>
+<li>Non trascinare o forzare il prodotto durante il posizionamento per evitare ribaltamenti o danni ai componenti.</li>
+<li>Mantenere almeno 120 mm (4,7&quot;) di distanza da pareti e altri oggetti per ventilazione e accesso alla manutenzione.</li>
+<li>Tenere il prodotto lontano da fonti di calore, vapore e luce solare diretta.</li>
+      </ul>
+<div class="sub-title">Stoccaggio e smaltimento</div>
+<ul class="bullet-list">
+        <li>Prima di un lungo periodo di stoccaggio, scaricare completamente l&#39;acqua dal serbatoio e dalla cavità interna, quindi pulire e asciugare accuratamente.</li>
+<li>Conservare l&#39;unità in un ambiente asciutto e ventilato, evitando carichi pesanti o esposizione all&#39;umidità.</li>
+<li>Questo prodotto contiene componenti elettronici e refrigerante R600a e non deve essere smaltito con i rifiuti domestici.</li>
+<li>A fine vita, contattare un centro di riciclaggio autorizzato o il rivenditore e seguire le normative locali sullo smaltimento.</li>
+      </ul>
+<div class="note-box">
+        <div class="box-title">WEEE / R600a</div>
+        
+        Non danneggiare il circuito del refrigerante. Il trattamento a fine vita deve essere gestito da un servizio qualificato di riciclaggio o smaltimento per evitare rischi ambientali o di sicurezza.
+      </div>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>13</span></div>
 </div>
-<!-- @CONTENT:install_transport_storage_disposal:end -->
 
-<!-- Page 13 - Warranty -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">CAP.10 - GARANZIA</div>
+    <div class="header-ref">CAP.10 — GARANZIA</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">10</span>Informazioni su marchio e garanzia</h2>
-
   <p>Grazie per aver acquistato il Vesta Macchina per il ghiaccio. Per qualsiasi domanda, contattateci a:<br>support@vestaprecision.com | www.vestaprecision.com</p>
-
-  <div class="sub-title">Informazioni sul marchio</div>
-  <table>
+<div class="sub-title">Informazioni sul marchio</div>
+<table>
+    <thead><tr><th style="width:30%;">Campo</th><th>Informazione</th></tr></thead>
+    <tbody>
       <tr><td style="width:30%">Marchio</td><td><b>Precision Appliance Technology, Inc.</b></td></tr>
       <tr><td>Indirizzo</td><td>3120 139th Ave SE Suite 500, Bellevue, WA 98005, USA</td></tr>
       <tr><td>Sito web</td><td>www.vestaprecision.com</td></tr>
       <tr><td>Assistenza clienti</td><td>support@vestaprecision.com</td></tr>
+    </tbody>
   </table>
-
-  <div class="sub-title">Produttore autorizzato</div>
-  <table>
+<div class="sub-title">Produttore autorizzato</div>
+<table>
+    <thead><tr><th style="width:30%;">Campo</th><th>Informazione</th></tr></thead>
+    <tbody>
       <tr><td style="width:30%">Produttore</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
       <tr><td>Indirizzo</td><td>No. 1 Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
       <tr><td>Sito web</td><td>www.argiontechnology.com</td></tr>
+    </tbody>
   </table>
-
-  <div class="sub-title">Informazioni sulla garanzia</div>
-  <p>Questo prodotto &egrave; coperto da una <b>garanzia limitata di 2 anno/i</b>. Il servizio di sostituzione in garanzia &egrave; disponibile entro 2 anno/i dalla data di acquisto originale. Per essere idonei alla sostituzione in garanzia, &egrave; necessario:</p>
-  <ul class="bullet-list">
-    <li>Aver acquistato il prodotto negli ultimi 2 anno/i.</li>
-    <li>Disporre del numero d'ordine originale o dell'indirizzo email utilizzato al momento dell'acquisto.</li>
-    <li>In caso di acquisto tramite un rivenditore o partner commerciale, fornire una copia della ricevuta originale.</li>
-  </ul>
-  <p style="margin-top:12px">Inviateci un'email per richiedere il servizio di garanzia: <b>support@vestaprecision.com</b></p>
-
-  <div class="fig-wrap" style="margin:8px 0 4px;"><img src="./images_imt050/image31.png" alt="Separatore scheda di garanzia"></div>
+<div class="sub-title">Informazioni sulla garanzia</div>
+<p>Questo prodotto è coperto da una <b>garanzia limitata di 2 anno/i</b>. Il servizio di sostituzione in garanzia è disponibile entro 2 anno/i dalla data di acquisto originale. Per essere idonei alla sostituzione in garanzia, è necessario:</p>
+<ul class="bullet-list">
+        <li>Aver acquistato il prodotto negli ultimi 2 anno/i.</li>
+<li>Disporre del numero d&#39;ordine originale o dell&#39;indirizzo email utilizzato al momento dell&#39;acquisto.</li>
+<li>In caso di acquisto tramite un rivenditore o partner commerciale, fornire una copia della ricevuta originale.</li>
+      </ul>
+<p>Inviateci un&#39;email per richiedere il servizio di garanzia: <b>support@vestaprecision.com</b></p>
+<div class="fig-wrap">
+    <img src="./images_imt050/image31.png" alt="Warranty separator" style="object-fit:contain">
+    
+  </div>
+<div class="sub-title">Scheda di garanzia</div>
+<table class="warranty-card">
+    <tbody>
+      <tr><td>Nome del cliente</td><td></td></tr>
+<tr><td>Indirizzo</td><td></td></tr>
+<tr><td>Città / Provincia / CAP</td><td></td></tr>
+<tr><td>Numero di telefono</td><td></td></tr>
+    </tbody>
+  </table>
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>14</span></div>
 </div>
 
-<!-- PAGE 15 - WARRANTY CARD -->
 <div class="page compact-warranty">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">CAP.10 - GARANZIA</div>
+    <div class="header-ref">CAP.10 — GARANZIA</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">10</span>Informazioni su marchio e garanzia (Cont.)</h2>
-  <div class="sub-title" style="margin-top:14px;">Scheda di garanzia</div>
-  <table>
-    <tr><td style="width:35%;">Nome del cliente</td><td></td></tr>
-    <tr><td>Indirizzo</td><td></td></tr>
-    <tr><td>Citt? / Provincia / CAP</td><td></td></tr>
-    <tr><td>Numero di telefono</td><td></td></tr>
-    <tr><td>Indirizzo email</td><td></td></tr>
-    <tr><td>Data di acquisto originale</td><td></td></tr>
-    <tr><td>Modello del prodotto</td><td></td></tr>
-    <tr><td>Numero di serie (se applicabile)</td><td></td></tr>
-    <tr><td>Nome del rivenditore</td><td></td></tr>
+  <div class="sub-title">Scheda di garanzia</div>
+<table class="warranty-card">
+    <tbody>
+      <tr><td>Indirizzo email</td><td></td></tr>
+<tr><td>Data di acquisto originale</td><td></td></tr>
+<tr><td>Modello del prodotto</td><td></td></tr>
+<tr><td>Numero di serie (se applicabile)</td><td></td></tr>
+<tr><td>Nome del rivenditore</td><td></td></tr>
+    </tbody>
   </table>
-
   <div class="page-footer"><span>Vesta IMT050 Manuale d'uso</span><span>15</span></div>
 </div>
 
