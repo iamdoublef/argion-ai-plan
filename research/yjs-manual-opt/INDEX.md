@@ -41,6 +41,17 @@ commit: 4c587f0
 中文 Word 支线从“PDF 影子稿”改成 A5 可编辑母版支线，固定单一 Word 母版骨架 + 品牌主题包，后续新产品默认在这套骨架上微调内容和图片。
 - ptr: `git:4c587f0:research/yjs-manual-opt/swiss/WORD-BASE-TEMPLATE-CN.md`
 - ptr: `git:4c587f0:research/yjs-manual-opt/swiss/template/shared/docx/base-template-cn.docx`
+
+### 2025-07-08 QA 生产线工具链 TDD 落地（6 项 Work Item）
+commit: a496c44
+TDD 方式完成 QA 全链路：DESIGN-STANDARD §十七 内容结构约束（10条规则）+ QA-RULES.md 审计流程；4 个自动化工具（audit-visual / build-all / compile --check-lang / sync-json-to-workbook）；Writer/Auditor agent 指令更新。31 个测试全绿。
+- ptr: `git:a496c44:research/yjs-manual-opt/swiss/DESIGN-STANDARD.md`
+- ptr: `git:a496c44:research/yjs-manual-opt/swiss/QA-RULES.md`
+- ptr: `git:a496c44:research/yjs-manual-opt/swiss/tools/audit-visual.js`
+- ptr: `git:a496c44:research/yjs-manual-opt/swiss/tools/build-all.js`
+- ptr: `git:a496c44:research/yjs-manual-opt/swiss/tools/compile-translation-workbook.js`
+- ptr: `git:a496c44:research/yjs-manual-opt/swiss/tools/sync-json-to-workbook.js`
+- ptr: `git:a496c44:research/yjs-manual-opt/swiss/tests/`
 - ptr: `git:4c587f0:research/yjs-manual-opt/swiss/tools/export-docx.js`
 - ptr: `git:4c587f0:research/yjs-manual-opt/swiss/template/shared/base/brand-themes.json`
 
