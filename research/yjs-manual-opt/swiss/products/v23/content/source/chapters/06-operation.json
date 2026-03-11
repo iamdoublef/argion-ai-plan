@@ -1,0 +1,645 @@
+{
+  "chapter_id": "06-operation",
+  "chapter_no": "06",
+  "title": "鎿嶄綔鎸囧紩",
+  "toc_title": "鎿嶄綔鎸囧紩",
+  "header_ref": "CH.06 鈥?OPERATION",
+  "pages": [
+    {
+      "page_class": "compact-ops",
+      "section_title": "鎿嶄綔鎸囧紩",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "6.1 濡備綍浣跨敤鍒囪鍒€",
+          "text_id": "content.chapter.06-operation.page.page1.block.1.text"
+        },
+        {
+          "type": "split_panel",
+          "body_blocks": [
+            {
+              "type": "step_flow",
+              "steps": [
+                {
+                  "id": "step1",
+                  "text": "鎵撳紑闈㈢洊銆?",
+                  "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step1.text"
+                },
+                {
+                  "id": "step2",
+                  "text": "鎵撳紑鍒囪鍒€鏋躲€?",
+                  "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step2.text"
+                },
+                {
+                  "id": "step3",
+                  "text": "浠庡嵎琚嬩笂鎷夋壇鍑烘墍闇€闀垮害鐨勮瀛愩€?",
+                  "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step3.text"
+                },
+                {
+                  "id": "step4",
+                  "text": "灏嗗垏琚嬪垁绉昏嚦鏈€宸︽垨鏈€鍙宠竟锛屽啀浣垮垁鏋朵笅鍘嬬潃琚嬪瓙銆?",
+                  "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step4.text"
+                },
+                {
+                  "id": "step5",
+                  "text": "灏嗗垏琚嬪垁涓嬪帇婊戝姩鍒掕繃琚嬪瓙锛屼互杩涜鏁撮綈鐨勫垏鍓层€?",
+                  "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step5.text"
+                }
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "figure": "06-operation.page01.image01",
+              "width": "34mm",
+              "height": "auto"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "6.2 濡備綍浣跨敤瀵嗗皝鍔熻兘",
+          "text_id": "content.chapter.06-operation.page.page1.block.3.text"
+        },
+        {
+          "type": "paragraph",
+          "text": "**浠庡嵎琚嬩腑鍒朵綔琚嬪瓙骞跺瘑灏侊細**",
+          "text_id": "content.chapter.06-operation.page.page1.block.4.text"
+        },
+        {
+          "type": "step_flow",
+          "steps": [
+            {
+              "id": "step1",
+              "text": "鎸変互涓婂浣曚娇鐢ㄥ垏琚嬪垁鍒朵綔鍑轰竴涓袱绔紑鍙ｇ殑琚嬪瓙銆?",
+              "text_id": "content.chapter.06-operation.page.page1.block.5.step.step1.text"
+            },
+            {
+              "id": "step2",
+              "text": "灏嗚瀛愮殑涓€绔紑鍙ｅ钩鏁存斁鍏ョ湡绌鸿厰鍐呫€?",
+              "text_id": "content.chapter.06-operation.page.page1.block.5.step.step2.text"
+            },
+            {
+              "id": "step3",
+              "text": "鍏抽棴闈㈢洊锛屽苟灏嗘妸鎵嬪悜涓嬪帇浠ラ攣绱ч潰鐩栥€?",
+              "text_id": "content.chapter.06-operation.page.page1.block.5.step.step3.text"
+            },
+            {
+              "id": "step4",
+              "text": "鐐瑰嚮 [btn:Seal] 鎸夐敭锛屽苟绛夊緟鏈哄櫒瀹屾垚宸ヤ綔銆?",
+              "text_id": "content.chapter.06-operation.page.page1.block.5.step.step4.text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**鍗曠嫭瀵嗗皝琚嬪瓙锛?*",
+          "text_id": "content.chapter.06-operation.page.page1.block.6.text"
+        },
+        {
+          "type": "split_panel",
+          "body_blocks": [
+            {
+              "type": "step_flow",
+              "steps": [
+                {
+                  "id": "step1",
+                  "text": "灏嗚瀛愭斁鍏ラ渶瑕佸皝瑁呯殑鐗╁搧锛屽苟灏嗚鍙ｆ斁鍏ョ湡绌鸿厰銆?",
+                  "text_id": "content.chapter.06-operation.page.page1.block.7.body.1.step.step1.text"
+                },
+                {
+                  "id": "step2",
+                  "text": "鍏抽棴闈㈢洊锛屽苟灏嗘妸鎵嬩笅鍘嬩互閿佺揣闈㈢洊銆?",
+                  "text_id": "content.chapter.06-operation.page.page1.block.7.body.1.step.step2.text"
+                },
+                {
+                  "id": "step3",
+                  "text": "鐐瑰嚮 [btn:Seal] 鎸夐敭锛屽苟绛夊緟鏈哄櫒瀹屾垚宸ヤ綔銆?",
+                  "text_id": "content.chapter.06-operation.page.page1.block.7.body.1.step.step3.text"
+                }
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "figure": "06-operation.page01.image02",
+              "width": "34mm",
+              "height": "auto"
+            }
+          ]
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.06-operation.page.page1.section_title"
+    },
+    {
+      "page_class": "compact-ops",
+      "section_title": "鎿嶄綔鎸囧紩",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "6.3 濡備綍寤堕暱瀵嗗皝鏃堕棿",
+          "text_id": "content.chapter.06-operation.page.page2.block.1.text"
+        },
+        {
+          "type": "notice_box",
+          "text": "鑻ラ渶寤堕暱瀵嗗皝鏃堕棿锛岄渶鍦ㄦ搷浣滃墠鐐瑰嚮 [btn:Extend Seal Time] 鎸夐敭锛屼娇璇ユ寜閿寚绀虹伅鐐逛寒銆傚欢闀挎椂闂磋缃皢鎸佺画鐢熸晥銆傝嫢瑕佹仮澶嶉粯璁ゅ瘑灏佹椂闂达紝璇峰湪涓嬩竴娆℃搷浣滃墠鍐嶆鐐瑰嚮璇ユ寜閿€傚綋鏈哄櫒杩涘叆浼戠湢鎴栨柇鐢甸噸鏂板紑鏈猴紝瀵嗗皝鏃堕棿灏嗕細鎭㈠榛樿璁剧疆銆?",
+          "text_id": "content.chapter.06-operation.page.page2.block.2.text"
+        },
+        {
+          "type": "caution_box",
+          "title": "娉ㄦ剰",
+          "text": "鍚敤 Extend Seal Time 鍔熻兘鏃讹紝灏嗘殏鏃剁鐢ㄦ櫤鑳藉瘑灏佽皟鑺傚姛鑳斤紝杩炵画宸ヤ綔鏃舵瘡娆″伐浣滈棿闅旈渶澶т簬 20s锛屽苟鎵撳紑闈㈢洊浠ヤ究鏈哄櫒鏁ｇ儹銆?",
+          "text_id": "content.chapter.06-operation.page.page2.block.3.text",
+          "title_id": "content.chapter.06-operation.page.page2.block.3.title"
+        }
+      ],
+      "page_id": "page2",
+      "section_title_id": "content.chapter.06-operation.page.page2.section_title"
+    },
+    {
+      "page_class": "compact-ops",
+      "section_title": "鎿嶄綔鎸囧紩锛堢画锛?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "6.4 濡備綍浣跨敤鐪熺┖瀵嗗皝鍔熻兘",
+          "text_id": "content.chapter.06-operation.page.page3.block.1.text"
+        },
+        {
+          "type": "paragraph",
+          "text": "**鐪熺┖瀵嗗皝鍥轰綋鐗╁搧锛?*",
+          "text_id": "content.chapter.06-operation.page.page3.block.2.text"
+        },
+        {
+          "type": "step_flow",
+          "steps": [
+            {
+              "id": "step1",
+              "text": "灏嗚鍙ｆ斁鍏ョ湡绌鸿厰銆?",
+              "text_id": "content.chapter.06-operation.page.page3.block.3.step.step1.text"
+            },
+            {
+              "id": "step2",
+              "text": "鍏抽棴闈㈢洊锛屽苟涓嬪帇鎶婃墜浠ラ攣绱ч潰鐩栥€?",
+              "text_id": "content.chapter.06-operation.page.page3.block.3.step.step2.text"
+            },
+            {
+              "id": "step3",
+              "text": "鐐瑰嚮 [btn:Vac Mode] 鎸夐敭閫夋嫨妯″紡锛?*Normal** 鎴?**Gentle**銆?",
+              "text_id": "content.chapter.06-operation.page.page3.block.3.step.step3.text"
+            },
+            {
+              "id": "step4",
+              "text": "鐐瑰嚮 [btn:Vac&Seal / Start] 鎸夐敭鍚姩宸ヤ綔銆?",
+              "text_id": "content.chapter.06-operation.page.page3.block.3.step.step4.text"
+            },
+            {
+              "id": "step5",
+              "text": "鑻ラ渶缁堟宸ヤ綔锛岃鐐瑰嚮 [btn:Stop] 鎸夐敭銆?",
+              "text_id": "content.chapter.06-operation.page.page3.block.3.step.step5.text"
+            }
+          ]
+        },
+        {
+          "type": "notice_box",
+          "text": "鍦ㄩ噰鐢?Gentle 妯″紡灏佽璐甸噸鐗╁搧鍓嶏紝寤鸿鍏堥噰鐢ㄥ叾瀹冪墿鍝佸皾璇曠湡绌哄悗鐨勫帇缂╃▼搴︽槸鍚︽弧瓒抽渶姹傦紝浠ュ厤鍘嬬鐗╁搧銆?",
+          "text_id": "content.chapter.06-operation.page.page3.block.4.text"
+        },
+        {
+          "type": "paragraph",
+          "text": "**鐪熺┖瀵嗗皝娑蹭綋锛?*",
+          "text_id": "content.chapter.06-operation.page.page3.block.5.text"
+        },
+        {
+          "type": "split_panel",
+          "body_blocks": [
+            {
+              "type": "step_flow",
+              "steps": [
+                {
+                  "id": "step1",
+                  "text": "淇濇寔琚嬪瓙鐩寸珛锛岀‘淇濇恫浣撴恫闈㈠缁堜綆浜庡彂鐑櫒锛屾恫浣撲笌琚嬪彛涔嬮棿寤鸿鐣欏嚭 7 inch锛?8 cm锛夌殑绌洪棿銆?",
+                  "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step1.text"
+                },
+                {
+                  "id": "step2",
+                  "text": "灏嗚鍙ｆ斁鍏ョ湡绌鸿厰銆?",
+                  "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step2.text"
+                },
+                {
+                  "id": "step3",
+                  "text": "鍏抽棴闈㈢洊锛屽苟涓嬪帇鎶婃墜浠ラ攣绱ч潰鐩栥€?",
+                  "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step3.text"
+                },
+                {
+                  "id": "step4",
+                  "text": "鐐瑰嚮 [btn:Vac Mode] 鎸夐敭閫夋嫨 **Liquid** 妯″紡銆?",
+                  "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step4.text"
+                },
+                {
+                  "id": "step5",
+                  "text": "鐐瑰嚮 [btn:Vac&Seal / Start] 鎸夐敭鍚姩宸ヤ綔銆?",
+                  "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step5.text"
+                }
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "figure": "06-operation.page02.image03",
+              "width": "30mm",
+              "height": "auto"
+            }
+          ]
+        }
+      ],
+      "page_id": "page3",
+      "section_title_id": "content.chapter.06-operation.page.page3.section_title"
+    },
+    {
+      "page_class": "compact-ops",
+      "section_title": "鎿嶄綔鎸囧紩锛堢画锛?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "6.5 濡備綍浣跨敤鎵嬪姩鐪熺┖",
+          "text_id": "content.chapter.06-operation.page.page4.block.1.text"
+        },
+        {
+          "type": "paragraph",
+          "text": "**鏂规硶涓€锛堝湪鑷姩鐪熺┖杩囩▼涓垏鎹㈣嚦 Pulse Vac 妯″紡锛夛細**",
+          "text_id": "content.chapter.06-operation.page.page4.block.2.text"
+        },
+        {
+          "type": "step_flow",
+          "steps": [
+            {
+              "id": "step1",
+              "text": "闀挎寜 [btn:Pulse Vac] 鎸夐敭杩涜鐪熺┖鎶芥皵銆?",
+              "text_id": "content.chapter.06-operation.page.page4.block.3.step.step1.text"
+            },
+            {
+              "id": "step2",
+              "text": "鏉惧紑鎸夐敭鍒欐殏鍋滄娊姘斻€?",
+              "text_id": "content.chapter.06-operation.page.page4.block.3.step.step2.text"
+            },
+            {
+              "id": "step3",
+              "text": "杈惧埌鎵€闇€鐪熺┖鐘舵€佸悗锛岀偣鍑?[btn:Seal] 鎸夐敭杩涜瀵嗗皝銆?",
+              "text_id": "content.chapter.06-operation.page.page4.block.3.step.step3.text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**鏂规硶浜岋紙鐩存帴浣跨敤 Pulse Vac 妯″紡锛夛細**",
+          "text_id": "content.chapter.06-operation.page.page4.block.4.text"
+        },
+        {
+          "type": "step_flow",
+          "steps": [
+            {
+              "id": "step1",
+              "text": "灏嗚鍙ｆ斁鍏ョ湡绌鸿厰銆?",
+              "text_id": "content.chapter.06-operation.page.page4.block.5.step.step1.text"
+            },
+            {
+              "id": "step2",
+              "text": "鍏抽棴闈㈢洊锛屽苟涓嬪帇鎶婃墜浠ラ攣绱ч潰鐩栥€?",
+              "text_id": "content.chapter.06-operation.page.page4.block.5.step.step2.text"
+            },
+            {
+              "id": "step3",
+              "text": "闀挎寜 [btn:Pulse Vac] 鎸夐敭杩涜鐪熺┖鎶芥皵銆?",
+              "text_id": "content.chapter.06-operation.page.page4.block.5.step.step3.text"
+            },
+            {
+              "id": "step4",
+              "text": "鏉惧紑鎸夐敭鍒欐殏鍋滄娊姘斻€?",
+              "text_id": "content.chapter.06-operation.page.page4.block.5.step.step4.text"
+            },
+            {
+              "id": "step5",
+              "text": "杈惧埌鎵€闇€鐪熺┖鐘舵€佸悗锛岀偣鍑?[btn:Seal] 鎸夐敭杩涜瀵嗗皝銆?",
+              "text_id": "content.chapter.06-operation.page.page4.block.5.step.step5.text"
+            }
+          ]
+        },
+        {
+          "type": "notice_box",
+          "text": "鍦ㄦ墜鍔ㄧ湡绌鸿繃绋嬩腑锛岄暱鎸夋寜閿娊姘旓紝鏉惧紑鏆傚仠锛屾鏃朵細澶勪簬淇濆帇鐨勭姸鎬併€傝嫢 10 绉掑唴涓嶈繘琛屽啀娆℃搷浣滐紝鏈哄櫒灏嗚嚜鍔ㄩ噴鏀惧帇鍔涳紝骞堕€€鍑烘墜鍔ㄦ娊姘旀ā寮忋€?",
+          "text_id": "content.chapter.06-operation.page.page4.block.6.text"
+        }
+      ],
+      "page_id": "page4",
+      "section_title_id": "content.chapter.06-operation.page.page4.section_title"
+    },
+    {
+      "page_class": "compact-accessories",
+      "section_title": "鎿嶄綔鎸囧紩锛堥檮浠朵娇鐢級",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "6.6 鐪熺┖杞鐢ㄦ硶",
+          "text_id": "content.chapter.06-operation.page.page5.block.1.text"
+        },
+        {
+          "type": "split_panel",
+          "body_blocks": [
+            {
+              "type": "bullet_list",
+              "items": [
+                {
+                  "text": "瀵规妫綈閫傞厤鍣ㄥ拰甯﹂榾闂ㄦ媺閾捐鎶界湡绌烘椂锛屽渾褰㈠惛鍢撮噰鐢ㄦ柟鍚?銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.1"
+                },
+                {
+                  "text": "瀵圭湡绌虹綈鍜岀摱濉炴娊鐪熺┖鏃讹紝鏍规嵁鎶芥皵鍙ｅぇ灏忛€夋嫨鏂瑰悜1鎴?銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.2"
+                },
+                {
+                  "text": "鐪熺┖杞鎵佸舰鍚稿槾3鐢ㄤ簬杩炴帴鏈哄櫒闈㈢洊涓婄殑澶栨娊姘斿彛3銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.3"
+                }
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "figure": "06-operation.page03.image04",
+              "width": "30mm",
+              "height": "auto"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "6.7 濡備綍鎶芥妫綈",
+          "text_id": "content.chapter.06-operation.page.page5.block.3.text"
+        },
+        {
+          "type": "split_panel",
+          "body_blocks": [
+            {
+              "type": "step_flow",
+              "steps": [
+                {
+                  "id": "step1",
+                  "text": "闂悎鏈哄櫒闈㈢洊銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step1.text"
+                },
+                {
+                  "id": "step2",
+                  "text": "灏嗙綈鐩栨斁鍒版妫綈缃愬彛锛屼笉闇€鎷т笂铻虹汗鐩栵紙濡傛湁锛夈€?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step2.text"
+                },
+                {
+                  "id": "step3",
+                  "text": "灏嗛€傞厤鍣ㄥ畨瑁呭埌姊呮．缃愪笂銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step3.text"
+                },
+                {
+                  "id": "step4",
+                  "text": "灏嗙湡绌鸿蒋绠℃墎褰㈠惛鍢存彃鍏ユ満鍣ㄩ潰鐩栦笂鐨勫鎶芥皵瀛斻€?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step4.text"
+                },
+                {
+                  "id": "step5",
+                  "text": "鍘嬩笅鎶婃墜浠ラ攣绱ч潰鐩栥€?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step5.text"
+                },
+                {
+                  "id": "step6",
+                  "text": "鐐瑰嚮 [btn:Accessories] 鎸夐敭锛岄€夋嫨 **Mason Jar**銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step6.text"
+                },
+                {
+                  "id": "step7",
+                  "text": "灏嗙湡绌鸿蒋绠″渾褰㈠惛鍢磋鐩栭€傞厤鍣ㄧ殑鎶芥皵瀛旓紝骞剁敤鎵嬭交寰寜鍘嬩綇銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step7.text"
+                },
+                {
+                  "id": "step8",
+                  "text": "鐐瑰嚮 [btn:Vac&Seal / Start] 鎸夐敭鍚姩宸ヤ綔銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step8.text"
+                },
+                {
+                  "id": "step9",
+                  "text": "宸ヤ綔缁撴潫锛屽彇涓嬬湡绌鸿蒋绠″強閫傞厤鍣ㄣ€?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step9.text"
+                }
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "figure": "06-operation.page03.image05",
+              "width": "28mm",
+              "height": "auto"
+            },
+            {
+              "figure": "06-operation.page03.image06",
+              "width": "28mm",
+              "height": "auto"
+            }
+          ]
+        }
+      ],
+      "page_id": "page5",
+      "section_title_id": "content.chapter.06-operation.page.page5.section_title"
+    },
+    {
+      "page_class": "compact-accessories",
+      "section_title": "鎿嶄綔鎸囧紩锛堥檮浠朵娇鐢級",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "6.8 濡備綍鎶界湡绌虹綈",
+          "text_id": "content.chapter.06-operation.page.page6.block.1.text"
+        },
+        {
+          "type": "split_panel",
+          "body_blocks": [
+            {
+              "type": "step_flow",
+              "steps": [
+                {
+                  "id": "step1",
+                  "text": "鎿嶄綔鍓嶏紝璇风‘璁ょ湡绌虹綈涓庢湰鏈虹湡绌鸿蒋绠″吋瀹广€?",
+                  "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step1.text"
+                },
+                {
+                  "id": "step2",
+                  "text": "纭鐪熺┖缃愬浜庡彲鎶界湡绌猴紙Vacuum锛夌殑鐘舵€併€?",
+                  "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step2.text"
+                },
+                {
+                  "id": "step3",
+                  "text": "灏嗙湡绌鸿蒋绠℃墎褰㈠惛鍢存彃鍏ユ満鍣ㄩ潰鐩栦笂鐨勫鎶芥皵瀛斻€?",
+                  "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step3.text"
+                },
+                {
+                  "id": "step4",
+                  "text": "鍘嬩笅鎶婃墜浠ラ攣绱ч潰鐩栥€?",
+                  "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step4.text"
+                },
+                {
+                  "id": "step5",
+                  "text": "鐐瑰嚮 [btn:Accessories] 鎸夐敭锛岄€夋嫨 **Canister**銆?",
+                  "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step5.text"
+                },
+                {
+                  "id": "step6",
+                  "text": "灏嗙湡绌鸿蒋绠″渾褰㈠惛鍢磋鐩栫湡绌虹綈鎶芥皵闃€鐨勬娊姘斿瓟锛屽苟鐢ㄦ墜杞诲井鍘嬩綇銆?",
+                  "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step6.text"
+                },
+                {
+                  "id": "step7",
+                  "text": "鐐瑰嚮 [btn:Vac&Seal / Start] 鎸夐敭鍚姩宸ヤ綔銆?",
+                  "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step7.text"
+                },
+                {
+                  "id": "step8",
+                  "text": "宸ヤ綔缁撴潫锛屽彇涓嬬湡绌鸿蒋绠°€?",
+                  "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step8.text"
+                }
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "figure": "06-operation.page03.image07",
+              "width": "30mm",
+              "height": "auto"
+            }
+          ]
+        }
+      ],
+      "page_id": "page6",
+      "section_title_id": "content.chapter.06-operation.page.page6.section_title"
+    },
+    {
+      "page_class": "",
+      "section_title": "鎿嶄綔鎸囧紩锛堢画锛?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "6.9 濡備綍鑵屽埗",
+          "text_id": "content.chapter.06-operation.page.page7.block.1.text"
+        },
+        {
+          "type": "split_panel",
+          "body_blocks": [
+            {
+              "type": "step_flow",
+              "steps": [
+                {
+                  "id": "step1",
+                  "text": "灏嗛鐗╄鐩栭叡鏂欙紝骞舵斁鍒扮湡绌虹綈涓€?",
+                  "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step1.text"
+                },
+                {
+                  "id": "step2",
+                  "text": "纭鐪熺┖缃愬浜庡彲浠ユ娊鐪熺┖锛圴acuum锛夌殑鐘舵€併€?",
+                  "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step2.text"
+                },
+                {
+                  "id": "step3",
+                  "text": "灏嗙湡绌鸿蒋绠℃墎褰㈠惛鍢存彃鍏ユ満鍣ㄩ潰鐩栦笂鐨勫鎶芥皵瀛斻€?",
+                  "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step3.text"
+                },
+                {
+                  "id": "step4",
+                  "text": "灏嗙湡绌鸿蒋绠″渾褰㈠惛鍢存彃鍏ユ娊姘旈榾鐨勬娊姘斿瓟銆?",
+                  "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step4.text"
+                },
+                {
+                  "id": "step5",
+                  "text": "鍘嬩笅鎶婃墜浠ラ攣绱ч潰鐩栥€?",
+                  "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step5.text"
+                },
+                {
+                  "id": "step6",
+                  "text": "鐐瑰嚮 [btn:Accessories] 鎸夐敭锛岄€夋嫨 **Canister**銆?",
+                  "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step6.text"
+                },
+                {
+                  "id": "step7",
+                  "text": "鐐瑰嚮 [btn:Vac&Seal / Start] 鍚姩宸ヤ綔銆?",
+                  "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step7.text"
+                },
+                {
+                  "id": "step8",
+                  "text": "宸ヤ綔缁撴潫锛屽彇涓嬬湡绌鸿蒋绠°€?",
+                  "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step8.text"
+                }
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "figure": "06-operation.page04.image08",
+              "width": "30mm",
+              "height": "auto"
+            }
+          ]
+        }
+      ],
+      "page_id": "page7",
+      "section_title_id": "content.chapter.06-operation.page.page7.section_title"
+    },
+    {
+      "page_class": "",
+      "section_title": "鎿嶄綔鎸囧紩锛堢画锛?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "6.10 鍗疯浠撴搷浣滄寚寮?",
+          "text_id": "content.chapter.06-operation.page.page8.block.1.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "鏈満鍣ㄥ彲浠ュ悓鏃舵斁缃袱鍗峰嵎琚嬶紙渚嬪锛氫袱鍗峰皬浜庣瓑浜?20 feet/6m 闀跨殑鍗疯锛夈€?",
+              "text_id": "content.chapter.06-operation.page.page8.block.2.item.1"
+            },
+            {
+              "text": "鑻ユ斁缃崟鍗疯锛屽垯鏈€闀垮彲鏀剧疆 50 feet锛?5m锛夐暱銆?",
+              "text_id": "content.chapter.06-operation.page.page8.block.2.item.2"
+            },
+            {
+              "text": "鍗疯浠撳彲瀹圭撼 12 inch锛?00mm锛変互涓嬪搴︾殑鍗疯銆傚簳閮ㄤ负瀹藉害鍦?8 inch锛?00mm锛変互涓嬬殑鍗疯璁捐浜嗕笓鐢ㄦ斁缃Ы銆?",
+              "text_id": "content.chapter.06-operation.page.page8.block.2.item.3"
+            }
+          ]
+        },
+        {
+          "type": "figure_row",
+          "figures": [
+            {
+              "figure": "06-operation.page04.image09"
+            },
+            {
+              "figure": "06-operation.page04.image10"
+            }
+          ]
+        }
+      ],
+      "page_id": "page8",
+      "section_title_id": "content.chapter.06-operation.page.page8.section_title"
+    }
+  ],
+  "title_id": "content.chapter.06-operation.title",
+  "toc_title_id": "content.chapter.06-operation.toc_title",
+  "header_ref_id": "content.chapter.06-operation.header_ref"
+}

@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "docx": "^9.6.0",
-    "playwright": "^1.58.2"
+    "playwright": "^1.58.2",
+    "xlsx": "^0.18.5"
   }
 }

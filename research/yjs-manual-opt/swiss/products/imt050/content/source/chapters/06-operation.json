@@ -1,0 +1,185 @@
+{
+  "chapter_id": "06-operation",
+  "chapter_no": "06",
+  "title": "鎿嶄綔鎸囧紩",
+  "toc_title": "鎿嶄綔鎸囧紩",
+  "header_ref": "CH.06 鈥?OPERATION",
+  "pages": [
+    {
+      "page_class": "compact-ops",
+      "section_title": "鎿嶄綔鎸囧紩",
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "宸ヤ綔鍓嶅噯澶?",
+          "text_id": "content.chapter.06-operation.page.page1.block.1.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "鍔″繀灏嗕骇鍝佹斁缃湪骞虫暣绋冲浐鐨勫钩闈紝涓斾骇鍝佽儗閮ㄥ拰鍙充晶鏁ｇ儹瀛斿涓嶈兘鏀剧疆浠讳綍涓滆タ锛屼互鍏嶉樆鎸℃暎鐑€備骇鍝佷笌澧欐垨鐗╁搧涔嬮棿璺濈蹇呴』 鈮?120 mm锛?.7 in锛夛紝浠ョ‘淇濋€氶鑹ソ銆?",
+              "text_id": "content.chapter.06-operation.page.page1.block.2.item.1"
+            },
+            {
+              "text": "鑻ョ涓€娆′娇鐢ㄤ骇鍝侊紝鎴栬窛绂讳笂涓€娆″緢闀挎椂闂存病鏈変娇鐢ㄤ骇鍝侊紝璇峰厛杩愯涓€娆℃竻娲佺▼搴忋€傝鍙傞槄 CH.08 缁存姢淇濆吇涓殑娓呮磥璇存槑銆?",
+              "text_id": "content.chapter.06-operation.page.page1.block.2.item.2"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "浜у搧寮€鏈?",
+          "text_id": "content.chapter.06-operation.page.page1.block.3.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "缁欎骇鍝佹帴閫氱數婧愶紝浜у搧鍙戝嚭鈥滄淮鈥濅竴澹帮紝鎵€鏈夋寜閿偣浜悗鍐嶇唲鐏紝琛ㄧず宸茬粡鎺ラ€氱數婧愩€?",
+              "text_id": "content.chapter.06-operation.page.page1.block.4.item.1"
+            },
+            {
+              "text": "鐒跺悗鐐瑰嚮 **Power** 鎸夐敭锛屾寜閿樉绀虹櫧鐏紝浜у搧宸插浜庡紑鏈虹姸鎬併€?",
+              "text_id": "content.chapter.06-operation.page.page1.block.4.item.2"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "濡備綍鍒朵綔瀛愬脊鍐?",
+          "text_id": "content.chapter.06-operation.page.page1.block.5.text"
+        },
+        {
+          "type": "step_flow",
+          "start_at": 1,
+          "figure_margin": "4px 0 6px",
+          "max_height": "24mm",
+          "max_width": "35%",
+          "steps": [
+            {
+              "id": "open_lid",
+              "text": "鎵撳紑鑵旂洊锛屽苟鍙栧嚭瀛愬脊鍐扮鍜屾按绠便€?",
+              "text_id": "content.chapter.06-operation.page.page1.block.6.step.open_lid.text"
+            },
+            {
+              "id": "fill_tank",
+              "text": "缁欏瓙寮瑰啺姘寸涓敞婊℃按锛屾敞姘磋嚦姘翠綅鍒诲害澶勩€?",
+              "figures": [
+                "operation.make_ice.fill_tank",
+                "operation.make_ice.max_mark"
+              ],
+              "text_id": "content.chapter.06-operation.page.page1.block.6.step.fill_tank.text"
+            },
+            {
+              "id": "seat_tank",
+              "text": "鐒跺悗灏嗘按绠辨斁鍏ュ瓙寮瑰啺鍐呰厰锛岃鐢ㄦ墜鎸夊帇涓嬫按绠憋紝纭繚宸茬粡瑁呭埌浣嶃€傛按绠辨澗鍔ㄥ彲鑳藉鑷翠骇鍝佹棤娉曞伐浣溿€?",
+              "figures": [
+                "operation.make_ice.seat_tank"
+              ],
+              "text_id": "content.chapter.06-operation.page.page1.block.6.step.seat_tank.text"
+            }
+          ]
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.06-operation.page.page1.section_title"
+    },
+    {
+      "page_class": "compact-ops",
+      "section_title": "鎿嶄綔鎸囧紩锛堢画锛?",
+      "blocks": [
+        {
+          "type": "step_flow",
+          "start_at": 4,
+          "figure_margin": "4px 0 6px",
+          "max_height": "24mm",
+          "max_width": "35%",
+          "steps": [
+            {
+              "id": "return_basket",
+              "text": "鐒跺悗鏀惧叆瀛愬脊鍐扮锛屽苟鍏抽棴鑵旂洊銆?",
+              "figures": [
+                "operation.make_ice.return_basket",
+                "operation.make_ice.close_lid",
+                "operation.make_ice.closed_unit"
+              ],
+              "gap": "3mm",
+              "max_height": "28mm",
+              "max_width": "30%",
+              "text_id": "content.chapter.06-operation.page.page2.block.1.step.return_basket.text"
+            },
+            {
+              "id": "select_size",
+              "text": "鐐瑰嚮 **Make Ice** 鎸夐敭锛屽垏鎹㈢偣浜寜閿笂鏂圭殑 S / M / L 鎸囩ず鐏紝閫夋嫨闇€瑕佸埗浣滅殑瀛愬脊鍐板昂瀵搞€?",
+              "figures": [
+                "operation.make_ice.select_size"
+              ],
+              "max_height": "28mm",
+              "max_width": "55%",
+              "text_id": "content.chapter.06-operation.page.page2.block.1.step.select_size.text"
+            },
+            {
+              "id": "start_cycle",
+              "text": "閫夋嫨瀹屽昂瀵稿悗锛屼骇鍝佽嚜鍔ㄥ紑濮嬪埗浣滃瓙寮瑰啺銆?",
+              "text_id": "content.chapter.06-operation.page.page2.block.1.step.start_cycle.text"
+            }
+          ]
+        },
+        {
+          "type": "figure_row",
+          "className": "status-indicator-row",
+          "gap": "4mm",
+          "align": "center",
+          "justify": "center",
+          "margin": "8px 0 4px",
+          "font_size": "9px",
+          "items": [
+            {
+              "label_before": "ICE FULL 鈫?",
+              "figure": "operation.make_ice.ice_full_status",
+              "height": "14px",
+              "text_id": "content.chapter.06-operation.page.page2.block.2.item.1",
+              "label_before_id": "content.chapter.06-operation.page.page2.block.2.item.1.label_before"
+            },
+            {
+              "label_before": "ADD WATER 鈫?",
+              "figure": "operation.make_ice.add_water_status",
+              "height": "14px",
+              "text_id": "content.chapter.06-operation.page.page2.block.2.item.2",
+              "label_before_id": "content.chapter.06-operation.page.page2.block.2.item.2.label_before"
+            }
+          ]
+        },
+        {
+          "type": "notice_box",
+          "title": "鎻愮ず NOTICE",
+          "items": [
+            {
+              "text": "鍒跺啺涓€斿彲鐐瑰嚮 **Make Ice** 鎸夐敭鍒囨崲鍒跺啺灏哄銆?",
+              "text_id": "content.chapter.06-operation.page.page2.block.3.item.1"
+            },
+            {
+              "text": "鍒跺啺涓€斿彲鐐瑰嚮 **Power** 鎸夐敭缁堟锛屽瓙寮瑰啺鍒跺啺鎸夐敭鐏唲鐏紝浜у搧鍋滄瀛愬脊鍐板埗鍐般€?",
+              "text_id": "content.chapter.06-operation.page.page2.block.3.item.2"
+            },
+            {
+              "text": "褰撲骇鍝佹娴嬪埌瀛愬脊鍐板啺绡婊″悗锛?*ICE FULL** 璀︾ず鐏偣浜负缁跨伅锛屼骇鍝佸仠姝㈠埗鍐般€傚緟鍐拌瀺瑙ｏ紝鎴栧彇璧板悗锛屼骇鍝佷細鑷姩鎭㈠鍒跺啺銆?",
+              "text_id": "content.chapter.06-operation.page.page2.block.3.item.3"
+            },
+            {
+              "text": "璇风暀鎰忥紝鍒跺啺鏈熼棿鑻?**ADD WATER** 璀︾ず鐏偣浜孩鐏紝浜у搧浼氬仠姝㈠埗鍐帮紝璇峰強鏃剁粰姘寸琛ュ厖姘淬€?",
+              "text_id": "content.chapter.06-operation.page.page2.block.3.item.4"
+            }
+          ],
+          "title_id": "content.chapter.06-operation.page.page2.block.3.title"
+        }
+      ],
+      "page_id": "page2",
+      "section_title_id": "content.chapter.06-operation.page.page2.section_title"
+    }
+  ],
+  "title_id": "content.chapter.06-operation.title",
+  "toc_title_id": "content.chapter.06-operation.toc_title",
+  "header_ref_id": "content.chapter.06-operation.header_ref"
+}

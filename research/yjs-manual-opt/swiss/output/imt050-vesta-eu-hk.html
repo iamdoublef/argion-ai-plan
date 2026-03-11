@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IMT050 製冰機 使用說明書 — Vesta</title>
+<title>IMT050 製冰機 說明書 — 維思特</title>
 <style>
 /* SHARED SWISS CN MASTER */
 /* SHARED SWISS BASE MASTER */
@@ -13,6 +13,11 @@
   --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
   --swiss-gray-text: #8E8E93;
+  --brand-accent: var(--swiss-red);
+  --brand-cover-divider: var(--swiss-red);
+  --brand-cover-model: var(--swiss-red);
+  --brand-cover-line: var(--swiss-red);
+  --brand-footer-border: var(--swiss-black);
   --page-width: 148mm;
   --page-height: 210mm;
   --page-margin: 10mm;
@@ -456,7 +461,7 @@ tr:nth-child(even) td {
   display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-line);
   margin-right: 6px;
   vertical-align: middle;
 }
@@ -465,7 +470,7 @@ tr:nth-child(even) td {
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 2.2px;
-  color: var(--swiss-red);
+  color: var(--brand-cover-model);
   text-transform: uppercase;
   margin-bottom: 4px;
   font-family: "Courier New", monospace;
@@ -495,12 +500,12 @@ tr:nth-child(even) td {
 .cover-divider {
   width: 28px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-divider);
   margin: 10px 0;
 }
 
 .cover-bottom {
-  border-top: 2px solid var(--swiss-black);
+  border-top: 2px solid var(--brand-footer-border);
   padding-top: 6px;
   font-size: 7.2px;
   color: var(--swiss-gray-text);
@@ -702,6 +707,14 @@ tr:nth-child(even) td {
   max-height: 4mm !important;
 }
 
+:root {
+  --swiss-red: #2E75B6;
+  --brand-accent: #2E75B6;
+  --brand-cover-divider: #2E75B6;
+  --brand-cover-model: #2E75B6;
+  --brand-cover-line: #2E75B6;
+  --brand-footer-border: #1F4E79;
+}
 </style>
 </head>
 <body>
@@ -709,7 +722,7 @@ tr:nth-child(even) td {
 <!-- ═══════════ PAGE 1 — COVER ═══════════ -->
 <div class="page" style="display:flex;flex-direction:column;justify-content:space-between;padding:15mm 10mm 10mm;">
   <div>
-    <div class="cover-brand"><span></span>Vesta</div>
+    <div class="cover-brand"><span></span>維思特</div>
   </div>
   <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 8mm;">
     <div style="text-align:left;margin:0 0 8mm;">
@@ -717,12 +730,12 @@ tr:nth-child(even) td {
     </div>
     <div class="cover-model">MODEL IMT050</div>
     <div class="cover-title">製冰機</div>
-    <div class="cover-subtitle">使用說明書</div>
+    <div class="cover-subtitle">說明書</div>
     <div class="cover-divider"></div>
   </div>
   <div class="cover-bottom" style="position:absolute;left:14mm;right:14mm;bottom:15mm;">
-  使用產品前請仔細閱讀本說明書，並妥善保管。<br>
-  說明書中的產品、配件等插圖均為示意圖，僅供參考。由於產品的更新与升級，產品實物与示意圖可能略有差異，請以實物為准。
+  使用产品前请仔细阅读本说明书，并妥善保管。<br>
+  说明书中的产品、配件等插图均为示意图，仅供参考。由于产品的更新与升级，产品实物与示意图可能略有差异，请以实物为准。
 </div>
 
 </div>
@@ -730,10 +743,10 @@ tr:nth-child(even) td {
 <!-- ═══════════ PAGE 2 — TOC ═══════════ -->
 <div class="page">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
-    <div class="header-ref">IMT050 — 使用說明書</div>
+    <div class="header-brand">維思特</div>
+    <div class="header-ref">IMT050 — 說明書</div>
   </div>
-  <div class="toc-title">目錄</div>
+  <div class="toc-title">目录</div>
     <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">安全須知</span></span><span class="toc-page">3</span></div>
 <div class="toc-item"><span><span class="toc-chapter">02</span><span class="toc-name">產品及使用提示</span></span><span class="toc-page">5</span></div>
 <div class="toc-item"><span><span class="toc-chapter">03</span><span class="toc-name">產品結構</span></span><span class="toc-page">6</span></div>
@@ -743,14 +756,14 @@ tr:nth-child(even) td {
 <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">故障排除</span></span><span class="toc-page">11</span></div>
 <div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">維護保養</span></span><span class="toc-page">12</span></div>
 <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">安裝運輸、存儲与拆除</span></span><span class="toc-page">13</span></div>
-<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">品牌与保修信息</span></span><span class="toc-page">14</span></div>
+<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">品牌与保養／維修信息</span></span><span class="toc-page">14</span></div>
 
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>2</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>2</span></div>
 </div>
 
 <div class="page compact-safety">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.01 — SAFETY</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>安全須知</h2>
@@ -785,12 +798,12 @@ tr:nth-child(even) td {
 <li>保持所有通風口顺畅，保持產品远離熱源或蒸汽裝置。</li>
           </ul>
       </div>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>3</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>3</span></div>
 </div>
 
 <div class="page compact-safety">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.01 — SAFETY</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">01</span>安全須知（續）</h2>
@@ -815,12 +828,12 @@ tr:nth-child(even) td {
 <li>本產品的氣候類型為SN，適合在10℃~32℃ / 50℉~89.6℉ 的環境溫度中使用。</li>
           </ul>
       </div>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>4</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>4</span></div>
 </div>
 
 <div class="page">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.02 — USAGE TIPS</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">02</span>產品及使用提示</h2>
@@ -846,12 +859,12 @@ tr:nth-child(even) td {
 <li>三种尺寸不能同時製作，但可在製冰途中切換另一种尺寸。</li>
 <li>連續製冰過程中，受水質、水溫和環境溫度影響，偶尔出现冰块不透明属正常现象。</li>
       </ul>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>5</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>5</span></div>
 </div>
 
 <div class="page compact-structure">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.03 — STRUCTURE</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">03</span>產品結構</h2>
@@ -860,7 +873,7 @@ tr:nth-child(even) td {
     
   </div>
 <table>
-    <thead><tr><th style="width:15%;">編號</th><th>名稱</th><th style="width:15%;">編號</th><th>名稱</th></tr></thead>
+    <thead><tr><th style="width:15%;">编号</th><th>名称</th><th style="width:15%;">编号</th><th>名称</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>腔蓋</td><td>5</td><td>水箱提手</td></tr>
       <tr><td>2</td><td>冰篮</td><td>6</td><td>控製麵板</td></tr>
@@ -868,12 +881,12 @@ tr:nth-child(even) td {
       <tr><td>4</td><td>水箱</td><td></td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>6</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>6</span></div>
 </div>
 
 <div class="page compact-functions">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.04 — FEATURES</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">04</span>產品功能</h2>
@@ -886,7 +899,7 @@ tr:nth-child(even) td {
     
   </div>
 <table>
-    <thead><tr><th style="width:45%;">No. / 按鍵</th><th>功能說明</th></tr></thead>
+    <thead><tr><th style="width:45%;">No. / 按键</th><th>功能说明</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Power</span>　電源</td><td>點擊開機，長按關機。</td></tr>
       <tr><td><span class="callout-no">2</span> <span class="btn-name">Make Ice</span>　製冰</td><td>切換製冰尺寸（S / M / L），選擇後產品自動製冰。</td></tr>
@@ -895,17 +908,17 @@ tr:nth-child(even) td {
       <tr><td><span class="callout-no">5</span> <span class="btn-name">ADD WATER</span>　加水</td><td>指示燈（红燈）— 水箱缺水，產品暫停製冰，請及時补水。</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>7</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>7</span></div>
 </div>
 
 <div class="page compact-table">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.05 — SPECIFICATIONS</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">05</span>技術參數</h2>
   <table>
-    <thead><tr><th>參數</th><th>規格</th></tr></thead>
+    <thead><tr><th>参数</th><th>规格</th></tr></thead>
     <tbody>
       <tr><td>電壓</td><td>220~240 Vac</td></tr>
       <tr><td>频率</td><td>50 Hz</td></tr>
@@ -926,12 +939,12 @@ tr:nth-child(even) td {
       <tr><td>噪音</td><td>≤ 50 dB(A)</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>8</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>8</span></div>
 </div>
 
 <div class="page compact-ops">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>操作指引</h2>
@@ -974,12 +987,12 @@ tr:nth-child(even) td {
   </div>
     </div>
   </div>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>9</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>9</span></div>
 </div>
 
 <div class="page compact-ops">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.06 — OPERATION</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">06</span>操作指引（續）</h2>
@@ -1026,12 +1039,12 @@ tr:nth-child(even) td {
 <li>請留意，製冰期間若 <b>ADD WATER</b> 警示燈點亮红燈，產品会停止製冰，請及時给水箱补充水。</li>
           </ul>
       </div>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>10</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>10</span></div>
 </div>
 
 <div class="page compact-ts">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>故障排除</h2>
@@ -1054,12 +1067,12 @@ tr:nth-child(even) td {
         
         如果用戶不按照本手册操作產品，並對產品造成任何損壞或質量問題，工廠、經銷商及品牌商將不承担任何责任。
       </div>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>11</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>11</span></div>
 </div>
 
 <div class="page compact-ops">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.08 — MAINTENANCE</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">08</span>維護保養</h2>
@@ -1122,12 +1135,12 @@ tr:nth-child(even) td {
 <li>請遵循自動清潔步驟清洗製冰模具和製冰兜。</li>
 <li>清潔保養前請拔掉電源，待產品冷却後再進行處理。</li>
       </ul>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>12</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>12</span></div>
 </div>
 
 <div class="page">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.09 — INSTALLATION / STORAGE / DISPOSAL</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">09</span>安裝運輸、存儲与拆除</h2>
@@ -1156,22 +1169,22 @@ tr:nth-child(even) td {
         
         請勿損壞製冷劑回路。若需要報废處理，請交由具备資質的废棄物處理機構回收，以避免對環境和人身安全造成風險。
       </div>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>13</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>13</span></div>
 </div>
 
 <div class="page compact-warranty">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.10 — WARRANTY</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">10</span>品牌与保修信息</h2>
-  <p>感谢您購買 Vesta 製冰機。如有任何問題，請通過以下方式聯繫我们：<br>support@vestaprecision.com | www.vestaprecision.com</p>
+  <h2 class="section-title"><span class="chapter-num">10</span>品牌与保養／維修信息</h2>
+  <p>感谢您購買 維思特 製冰機。如有任何問題，請通過以下方式聯繫我们：<br>support@vestaprecision.com | www.vestaprecision.com</p>
 <div class="sub-title">品牌商信息</div>
 <table>
     <thead><tr><th style="width:30%;">项目</th><th>信息</th></tr></thead>
     <tbody>
       <tr><td style="width:30%">品牌商</td><td><b>Precision Appliance Technology, Inc.</b></td></tr>
-      <tr><td>地址</td><td>3120 139th Ave SE Suite 500, Bellevue, WA 98005, USA</td></tr>
+      <tr><td>地址</td><td>美国华盛顿州贝尔維尤市139th Ave SE 3120號500套房 郵編98005</td></tr>
       <tr><td>網址</td><td>www.vestaprecision.com</td></tr>
       <tr><td>客服郵箱</td><td>support@vestaprecision.com</td></tr>
     </tbody>
@@ -1185,19 +1198,19 @@ tr:nth-child(even) td {
       <tr><td>網址</td><td>www.argiontechnology.com</td></tr>
     </tbody>
   </table>
-<div class="sub-title">保修信息</div>
-<p>本產品提供 <b>2 年有限保修</b>。自原始購買日期起 2 年內可享受保修更換服務。要獲得保修更換資格，您必須：</p>
+<div class="sub-title">保養／維修信息</div>
+<p>本產品提供 <b>2 年有限保養／維修</b>。自原始購買日期起 2 年內可享受保養／維修更換服務。要獲得保養／維修更換資格，您必須：</p>
 <ul class="bullet-list">
         <li>在過去 2 年內購買過產品。</li>
 <li>有原始订單號或購買時使用的電子郵件。</li>
 <li>如通過經銷商或零售合作夥伴購買，須提供原始收據的副本。</li>
       </ul>
-<p>向我们發送電子郵件申請保修服務：<b>support@vestaprecision.com</b></p>
+<p>向我们發送電子郵件申請保養／維修服務：<b>support@vestaprecision.com</b></p>
 <div class="fig-wrap">
     <img src="./images_imt050/image31.png" alt="Warranty separator" style="object-fit:contain">
     
   </div>
-<div class="sub-title">保修卡</div>
+<div class="sub-title">保養／維修卡</div>
 <table class="warranty-card">
     <tbody>
       <tr><td>客戶名稱</td><td></td></tr>
@@ -1206,16 +1219,16 @@ tr:nth-child(even) td {
 <tr><td>電话號码</td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>14</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>14</span></div>
 </div>
 
 <div class="page compact-warranty">
   <div class="header-strip">
-    <div class="header-brand">Vesta</div>
+    <div class="header-brand">維思特</div>
     <div class="header-ref">CH.10 — WARRANTY</div>
   </div>
-  <h2 class="section-title"><span class="chapter-num">10</span>品牌与保修信息（續）</h2>
-  <div class="sub-title">保修卡</div>
+  <h2 class="section-title"><span class="chapter-num">10</span>品牌与保養／維修信息（續）</h2>
+  <div class="sub-title">保養／維修卡</div>
 <table class="warranty-card">
     <tbody>
       <tr><td>電子郵件地址</td><td></td></tr>
@@ -1225,7 +1238,7 @@ tr:nth-child(even) td {
 <tr><td>商戶名稱</td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta IMT050 使用說明書</span><span>15</span></div>
+  <div class="page-footer"><span>維思特 IMT050 說明書</span><span>15</span></div>
 </div>
 
 </body>

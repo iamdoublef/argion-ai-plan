@@ -1,0 +1,2859 @@
+[
+  {
+    "text_id": "content.chapter.01-safety.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[0].header_ref",
+    "source_text": "CH.01 — SAFETY"
+  },
+  {
+    "text_id": "content.chapter.01-safety.header_ref",
+    "scope": "content",
+    "context": "content.chapter.01-safety.header_ref",
+    "source_text": "CH.01 — SAFETY"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.1",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[0].text",
+    "source_text": "本机仅供家庭使用，请勿用于其他非设计用途。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.10",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[9].text",
+    "source_text": "请勿将主机或电源线浸入水中或其他液体中。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.11",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[10].text",
+    "source_text": "电源线需要直接插接符合安全规范的电源插座上。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.12",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[11].text",
+    "source_text": "如发现插头、电源线或主机损坏，请立即停止使用并联系制造商或授权维修点处理，请勿自行拆修。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.13",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[12].text",
+    "source_text": "电源线请勿悬挂于台面边缘，以免儿童拉扯或意外绊倒。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.2",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[1].text",
+    "source_text": "请勿让儿童玩耍本机或电源线。儿童、行动不便或认知受限人士应在成年人监督下使用。使用期间请留意儿童，避免意外发生。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.3",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[2].text",
+    "source_text": "小零件、真空袋可能造成窒息危险，请勿让儿童接触。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.4",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[3].text",
+    "source_text": "请勿在高湿高温等环境使用本机。严禁在有易燃易爆气体的环境中使用。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.5",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[4].text",
+    "source_text": "请确保电源电压与机器铭牌标示一致。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.6",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[5].text",
+    "source_text": "机器工作时请勿离开。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.7",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[6].text",
+    "source_text": "密封完成后，密封区域温度较高，请勿触摸，以免烫伤。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.8",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[7].text",
+    "source_text": "使用后请切断电源。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.item.9",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].items[8].text",
+    "source_text": "从电源插座上拔出插头时请手握插头拔出，请勿拉扯电源线。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].title",
+    "source_text": "警告 WARNING"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.1",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[0].text",
+    "source_text": "请妥善保管本手册。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.2",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[1].text",
+    "source_text": "本机无需添加任何润滑剂，请勿使用有机溶剂清洁。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.3",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[2].text",
+    "source_text": "长时间不使用时，请勿扣上锁扣，以免密封圈受压变形。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.4",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[3].text",
+    "source_text": "请勿将本产品与生活垃圾一同丢弃，请根据您所在地区关于电子废弃物的法规进行回收或处置。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].title",
+    "source_text": "注意 CAUTION"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.3.item.1",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[2].items[0].text",
+    "source_text": "本产品适用于家庭食品保鲜用途。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.3.item.2",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[2].items[1].text",
+    "source_text": "首次使用前，请完整阅读本说明书。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.3.item.3",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[2].items[2].text",
+    "source_text": "请保留购买凭证，以便享受保修服务。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.3.title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[2].title",
+    "source_text": "提示 NOTICE"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].section_title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.01-safety.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[0].title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.01-safety.title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.01-safety.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[0].toc_title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.01-safety.toc_title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.toc_title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[1].header_ref",
+    "source_text": "CH.02 — USAGE TIPS"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.header_ref",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.header_ref",
+    "source_text": "CH.02 — USAGE TIPS"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.1",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[0].text",
+    "source_text": "本机只适用于带有空气通道纹路的真空袋。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.2",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[1].text",
+    "source_text": "对于带有尖点或棱角的物品，需用防刺穿片、纸巾等柔软包材包裹棱角，以防刺破真空袋。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.3",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[2].text",
+    "source_text": "真空袋可用于加热或微波炉加热，但必须先在袋角剪开一个小口透气。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.4",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[3].text",
+    "source_text": "用于储存的真空袋可重复使用，但用于加热或微波加热时仅可使用一次。储存过海鲜或油腻食品的真空袋不建议重复使用。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.5",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[4].text",
+    "source_text": "放置袋子时，袋口必须平整地跨过发热器。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.6",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[5].text",
+    "source_text": "装袋时，请务必在袋口和食物之间预留至少 2 inch（5 cm）的空间。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.7",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[6].text",
+    "source_text": "装入液体、酱汁或带液体的食物时，请避免将真空袋袋口弄湿。建议装入后将袋口擦干，以免影响密封效果。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.8",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[7].text",
+    "source_text": "如果需要质地柔软、含水分多的食物在包装后保持形状，可选择冷冻后进行真空封装。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.item.9",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].items[8].text",
+    "source_text": "勿在面盖上放置重物，有可能损坏机器。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].section_title",
+    "source_text": "产品及真空袋使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[1].title",
+    "source_text": "产品及真空袋使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.title",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.title",
+    "source_text": "产品及真空袋使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[1].toc_title",
+    "source_text": "产品及真空袋使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.toc_title",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.toc_title",
+    "source_text": "产品及真空袋使用提示"
+  },
+  {
+    "text_id": "content.chapter.03-structure.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[2].header_ref",
+    "source_text": "CH.03 — STRUCTURE"
+  },
+  {
+    "text_id": "content.chapter.03-structure.header_ref",
+    "scope": "content",
+    "context": "content.chapter.03-structure.header_ref",
+    "source_text": "CH.03 — STRUCTURE"
+  },
+  {
+    "text_id": "content.chapter.03-structure.page.page1.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.03-structure.pages[0].blocks[2].text",
+    "source_text": "工作结束后，发热器温度很高，请不要触摸，以免烫伤！"
+  },
+  {
+    "text_id": "content.chapter.03-structure.page.page1.block.3.title",
+    "scope": "content",
+    "context": "content.chapter.03-structure.pages[0].blocks[2].title",
+    "source_text": "提示"
+  },
+  {
+    "text_id": "content.chapter.03-structure.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.03-structure.pages[0].section_title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.03-structure.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[2].title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.03-structure.title",
+    "scope": "content",
+    "context": "content.chapter.03-structure.title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.03-structure.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[2].toc_title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.03-structure.toc_title",
+    "scope": "content",
+    "context": "content.chapter.03-structure.toc_title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.04-functions.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[3].header_ref",
+    "source_text": "CH.04 — FUNCTIONS"
+  },
+  {
+    "text_id": "content.chapter.04-functions.header_ref",
+    "scope": "content",
+    "context": "content.chapter.04-functions.header_ref",
+    "source_text": "CH.04 — FUNCTIONS"
+  },
+  {
+    "text_id": "content.chapter.04-functions.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.04-functions.pages[0].section_title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.04-functions.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[3].title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.04-functions.title",
+    "scope": "content",
+    "context": "content.chapter.04-functions.title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.04-functions.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[3].toc_title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.04-functions.toc_title",
+    "scope": "content",
+    "context": "content.chapter.04-functions.toc_title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[4].header_ref",
+    "source_text": "CH.05 — SPECIFICATIONS"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.header_ref",
+    "scope": "content",
+    "context": "content.chapter.05-specifications.header_ref",
+    "source_text": "CH.05 — SPECIFICATIONS"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.05-specifications.pages[0].section_title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[4].title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.title",
+    "scope": "content",
+    "context": "content.chapter.05-specifications.title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[4].toc_title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.toc_title",
+    "scope": "content",
+    "context": "content.chapter.05-specifications.toc_title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.06-operation.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[5].header_ref",
+    "source_text": "CH.06 — OPERATION"
+  },
+  {
+    "text_id": "content.chapter.06-operation.header_ref",
+    "scope": "content",
+    "context": "content.chapter.06-operation.header_ref",
+    "source_text": "CH.06 — OPERATION"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[0].text",
+    "source_text": "6.1 如何使用切袋刀"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[1].body_blocks[0].steps[0].text",
+    "source_text": "打开面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[1].body_blocks[0].steps[1].text",
+    "source_text": "打开切袋刀架。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[1].body_blocks[0].steps[2].text",
+    "source_text": "从卷袋上拉扯出所需长度的袋子。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[1].body_blocks[0].steps[3].text",
+    "source_text": "将切袋刀移至最左或最右边，再使刀架下压着袋子。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.2.body.1.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[1].body_blocks[0].steps[4].text",
+    "source_text": "将切袋刀下压滑动划过袋子，以进行整齐的切割。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[2].text",
+    "source_text": "6.2 如何使用密封功能"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[3].text",
+    "source_text": "**从卷袋中制作袋子并密封：**"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.5.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[4].steps[0].text",
+    "source_text": "按以上如何使用切袋刀制作出一个两端开口的袋子。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.5.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[4].steps[1].text",
+    "source_text": "将袋子的一端开口平整放入真空腔内。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.5.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[4].steps[2].text",
+    "source_text": "关闭面盖，并将把手向下压以锁紧面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.5.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[4].steps[3].text",
+    "source_text": "点击 [btn:Seal] 按键，并等待机器完成工作。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.6.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[5].text",
+    "source_text": "**单独密封袋子：**"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.7.body.1.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[6].body_blocks[0].steps[0].text",
+    "source_text": "将袋子放入需要封装的物品，并将袋口放入真空腔。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.7.body.1.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[6].body_blocks[0].steps[1].text",
+    "source_text": "关闭面盖，并将把手下压以锁紧面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.7.body.1.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[6].body_blocks[0].steps[2].text",
+    "source_text": "点击 [btn:Seal] 按键，并等待机器完成工作。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].section_title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[0].text",
+    "source_text": "6.3 如何延长密封时间"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[1].text",
+    "source_text": "若需延长密封时间，需在操作前点击 [btn:Extend Seal Time] 按键，使该按键指示灯点亮。延长时间设置将持续生效。若要恢复默认密封时间，请在下一次操作前再次点击该按键。当机器进入休眠或断电重新开机，密封时间将会恢复默认设置。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[2].text",
+    "source_text": "启用 Extend Seal Time 功能时，将暂时禁用智能密封调节功能，连续工作时每次工作间隔需大于 20s，并打开面盖以便机器散热。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.3.title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[2].title",
+    "source_text": "注意"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].section_title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[0].text",
+    "source_text": "6.4 如何使用真空密封功能"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[1].text",
+    "source_text": "**真空密封固体物品：**"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.3.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[2].steps[0].text",
+    "source_text": "将袋口放入真空腔。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.3.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[2].steps[1].text",
+    "source_text": "关闭面盖，并下压把手以锁紧面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.3.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[2].steps[2].text",
+    "source_text": "点击 [btn:Vac Mode] 按键选择模式：**Normal** 或 **Gentle**。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.3.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[2].steps[3].text",
+    "source_text": "点击 [btn:Vac&Seal / Start] 按键启动工作。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.3.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[2].steps[4].text",
+    "source_text": "若需终止工作，请点击 [btn:Stop] 按键。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[3].text",
+    "source_text": "在采用 Gentle 模式封装贵重物品前，建议先采用其它物品尝试真空后的压缩程度是否满足需求，以免压碎物品。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[4].text",
+    "source_text": "**真空密封液体：**"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[5].body_blocks[0].steps[0].text",
+    "source_text": "保持袋子直立，确保液体液面始终低于发热器，液体与袋口之间建议留出 7 inch（18 cm）的空间。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[5].body_blocks[0].steps[1].text",
+    "source_text": "将袋口放入真空腔。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[5].body_blocks[0].steps[2].text",
+    "source_text": "关闭面盖，并下压把手以锁紧面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[5].body_blocks[0].steps[3].text",
+    "source_text": "点击 [btn:Vac Mode] 按键选择 **Liquid** 模式。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.block.6.body.1.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].blocks[5].body_blocks[0].steps[4].text",
+    "source_text": "点击 [btn:Vac&Seal / Start] 按键启动工作。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page3.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[2].section_title",
+    "source_text": "操作指引（续）"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[0].text",
+    "source_text": "6.5 如何使用手动真空"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[1].text",
+    "source_text": "**方法一（在自动真空过程中切换至 Pulse Vac 模式）：**"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.3.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[2].steps[0].text",
+    "source_text": "长按 [btn:Pulse Vac] 按键进行真空抽气。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.3.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[2].steps[1].text",
+    "source_text": "松开按键则暂停抽气。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.3.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[2].steps[2].text",
+    "source_text": "达到所需真空状态后，点击 [btn:Seal] 按键进行密封。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[3].text",
+    "source_text": "**方法二（直接使用 Pulse Vac 模式）：**"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.5.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[4].steps[0].text",
+    "source_text": "将袋口放入真空腔。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.5.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[4].steps[1].text",
+    "source_text": "关闭面盖，并下压把手以锁紧面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.5.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[4].steps[2].text",
+    "source_text": "长按 [btn:Pulse Vac] 按键进行真空抽气。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.5.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[4].steps[3].text",
+    "source_text": "松开按键则暂停抽气。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.5.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[4].steps[4].text",
+    "source_text": "达到所需真空状态后，点击 [btn:Seal] 按键进行密封。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.block.6.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].blocks[5].text",
+    "source_text": "在手动真空过程中，长按按键抽气，松开暂停，此时会处于保压的状态。若 10 秒内不进行再次操作，机器将自动释放压力，并退出手动抽气模式。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page4.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[3].section_title",
+    "source_text": "操作指引（续）"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[0].text",
+    "source_text": "6.6 真空软管用法"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.1",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[1].body_blocks[0].items[0].text",
+    "source_text": "对梅森罐适配器和带阀门拉链袋抽真空时，圆形吸嘴采用方向1。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.2",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[1].body_blocks[0].items[1].text",
+    "source_text": "对真空罐和瓶塞抽真空时，根据抽气口大小选择方向1或2。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.3",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[1].body_blocks[0].items[2].text",
+    "source_text": "真空软管扁形吸嘴3用于连接机器面盖上的外抽气口3。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[2].text",
+    "source_text": "6.7 如何抽梅森罐"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[0].text",
+    "source_text": "闭合机器面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[1].text",
+    "source_text": "将罐盖放到梅森罐罐口，不需拧上螺纹盖（如有）。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[2].text",
+    "source_text": "将适配器安装到梅森罐上。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[3].text",
+    "source_text": "将真空软管扁形吸嘴插入机器面盖上的外抽气孔。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[4].text",
+    "source_text": "压下把手以锁紧面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step6.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[5].text",
+    "source_text": "点击 [btn:Accessories] 按键，选择 **Mason Jar**。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step7.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[6].text",
+    "source_text": "将真空软管圆形吸嘴覆盖适配器的抽气孔，并用手轻微按压住。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step8.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[7].text",
+    "source_text": "点击 [btn:Vac&Seal / Start] 按键启动工作。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.block.4.body.1.step.step9.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].blocks[3].body_blocks[0].steps[8].text",
+    "source_text": "工作结束，取下真空软管及适配器。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page5.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[4].section_title",
+    "source_text": "操作指引（附件使用）"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[0].text",
+    "source_text": "6.8 如何抽真空罐"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[1].body_blocks[0].steps[0].text",
+    "source_text": "操作前，请确认真空罐与本机真空软管兼容。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[1].body_blocks[0].steps[1].text",
+    "source_text": "确认真空罐处于可抽真空（Vacuum）的状态。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[1].body_blocks[0].steps[2].text",
+    "source_text": "将真空软管扁形吸嘴插入机器面盖上的外抽气孔。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[1].body_blocks[0].steps[3].text",
+    "source_text": "压下把手以锁紧面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[1].body_blocks[0].steps[4].text",
+    "source_text": "点击 [btn:Accessories] 按键，选择 **Canister**。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step6.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[1].body_blocks[0].steps[5].text",
+    "source_text": "将真空软管圆形吸嘴覆盖真空罐抽气阀的抽气孔，并用手轻微压住。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step7.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[1].body_blocks[0].steps[6].text",
+    "source_text": "点击 [btn:Vac&Seal / Start] 按键启动工作。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.block.2.body.1.step.step8.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].blocks[1].body_blocks[0].steps[7].text",
+    "source_text": "工作结束，取下真空软管。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page6.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[5].section_title",
+    "source_text": "操作指引（附件使用）"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[0].text",
+    "source_text": "6.9 如何腌制"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[1].body_blocks[0].steps[0].text",
+    "source_text": "将食物覆盖酱料，并放到真空罐中。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[1].body_blocks[0].steps[1].text",
+    "source_text": "确认真空罐处于可以抽真空（Vacuum）的状态。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[1].body_blocks[0].steps[2].text",
+    "source_text": "将真空软管扁形吸嘴插入机器面盖上的外抽气孔。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[1].body_blocks[0].steps[3].text",
+    "source_text": "将真空软管圆形吸嘴插入抽气阀的抽气孔。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[1].body_blocks[0].steps[4].text",
+    "source_text": "压下把手以锁紧面盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step6.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[1].body_blocks[0].steps[5].text",
+    "source_text": "点击 [btn:Accessories] 按键，选择 **Canister**。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step7.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[1].body_blocks[0].steps[6].text",
+    "source_text": "点击 [btn:Vac&Seal / Start] 启动工作。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.block.2.body.1.step.step8.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].blocks[1].body_blocks[0].steps[7].text",
+    "source_text": "工作结束，取下真空软管。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page7.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[6].section_title",
+    "source_text": "操作指引（续）"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page8.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[7].blocks[0].text",
+    "source_text": "6.10 卷袋仓操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page8.block.2.item.1",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[7].blocks[1].items[0].text",
+    "source_text": "本机器可以同时放置两卷卷袋（例如：两卷小于等于 20 feet/6m 长的卷袋）。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page8.block.2.item.2",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[7].blocks[1].items[1].text",
+    "source_text": "若放置单卷袋，则最长可放置 50 feet（15m）长。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page8.block.2.item.3",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[7].blocks[1].items[2].text",
+    "source_text": "卷袋仓可容纳 12 inch（300mm）以下宽度的卷袋。底部为宽度在 8 inch（200mm）以下的卷袋设计了专用放置槽。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page8.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[7].section_title",
+    "source_text": "操作指引（续）"
+  },
+  {
+    "text_id": "content.chapter.06-operation.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[5].title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[5].toc_title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.toc_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.toc_title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[6].header_ref",
+    "source_text": "CH.07 — TROUBLESHOOTING"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.header_ref",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.header_ref",
+    "source_text": "CH.07 — TROUBLESHOOTING"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].headers[0].text",
+    "source_text": "故障现象"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].headers[1].text",
+    "source_text": "可能原因"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].headers[2].text",
+    "source_text": "解决方案"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[0][0].text",
+    "source_text": "**不能开机**"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[0][1].text",
+    "source_text": "电源线未正确插入电源插座"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[0][2].text",
+    "source_text": "确保电源线已正确插入。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.10.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[9][0].text",
+    "source_text": "**不能密封或密封效果不理想**"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.10.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[9][1].text",
+    "source_text": "袋口没有正确放到发热器上"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.10.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[9][2].text",
+    "source_text": "重新放置袋口，确保平整跨过发热器。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.11.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[10][0].text",
+    "source_text": "密封区域有水分、颗粒或碎片"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.11.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[10][1].text",
+    "source_text": "清洁密封区域后重试。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.12.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[11][0].text",
+    "source_text": "密封压条未安装"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.12.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[11][1].text",
+    "source_text": "安装密封压条。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.13.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[12][0].text",
+    "source_text": "默认密封时间不足"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.13.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[12][1].text",
+    "source_text": "点击 [btn:Extend Seal Time] 延长密封时间后重试。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.14.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[13][0].text",
+    "source_text": "**真空密封后袋子漏气**"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.14.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[13][1].text",
+    "source_text": "高温胶布破损或脱落"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.14.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[13][2].text",
+    "source_text": "及时替换高温胶布。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.15.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[14][0].text",
+    "source_text": "发热温度异常导致袋子融化或密封不充分"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.15.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[14][1].text",
+    "source_text": "参考抽气不干净和不能密封的解决方案。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.16.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[15][0].text",
+    "source_text": "锋利物品刺穿袋子"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.16.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[15][1].text",
+    "source_text": "用纸巾或防刺穿片包裹锋利边缘，使用新袋重试。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.2.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[1][0].text",
+    "source_text": "电源线破裂或损坏"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.2.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[1][1].text",
+    "source_text": "断电检查电源线，如有损坏请咨询专业人员更换。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.3.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[2][0].text",
+    "source_text": "控制板或面板排线端子松脱"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.3.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[2][1].text",
+    "source_text": "请咨询专业人员进行维修。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[3][0].text",
+    "source_text": "**抽气不干净**"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[3][1].text",
+    "source_text": "袋子开口未全部在密封圈内"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[3][2].text",
+    "source_text": "确保袋子的开口全部在下真空腔密封圈内。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.5.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[4][0].text",
+    "source_text": "使用了非纹路真空袋"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.5.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[4][1].text",
+    "source_text": "确保使用带有纹路的真空袋。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.6.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[5][0].text",
+    "source_text": "密封圈破损、翻起或安装不正确"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.6.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[5][1].text",
+    "source_text": "检查密封圈状态并正确安装。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.7.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[6][0].text",
+    "source_text": "袋子破损或有针孔"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.7.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[6][1].text",
+    "source_text": "更换新的真空袋。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.8.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[7][0].text",
+    "source_text": "袋口有异物导致密封不完整"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.8.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[7][1].text",
+    "source_text": "将袋口清洁干净后再试。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.9.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[8][0].text",
+    "source_text": "热封时间过长导致温度过高"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.9.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[8][1].text",
+    "source_text": "打开面盖，静置冷却一段时间再使用。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.2.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[1].text",
+    "source_text": "一些水果和蔬菜在包装前如果没有正确地焯熟，或者热的食物，会释放气体，导致真空袋没有收紧，此类情况属于正常表现，不属于漏气。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.2.title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[1].title",
+    "source_text": "提示"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[2].text",
+    "source_text": "若以上故障排除方案均无法解决问题，请联系客服指引解决，请不要擅自拆卸机器。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].section_title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.header.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].headers[0].text",
+    "source_text": "故障现象"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.header.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].headers[1].text",
+    "source_text": "可能原因"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.header.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].headers[2].text",
+    "source_text": "解决方案"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.1.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[0][0].text",
+    "source_text": "**Accessories 模式无法抽气**"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.1.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[0][1].text",
+    "source_text": "真空软管扁形吸嘴未完全插入外抽气孔"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.1.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[0][2].text",
+    "source_text": "用力旋转下压扁形吸嘴，使其完全插入。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.2.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[1][0].text",
+    "source_text": "面盖把手未下压锁紧"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.2.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[1][1].text",
+    "source_text": "下压把手以锁紧面盖后重试。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.3.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[2][0].text",
+    "source_text": "密封圈或真空腔上有异物"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.3.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[2][1].text",
+    "source_text": "打开面盖清除异物，闭盖重试。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.4.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[3][0].text",
+    "source_text": "**错误报警（蜂鸣声长鸣 + 指示灯快闪）**"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.4.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[3][1].text",
+    "source_text": "按下 Vac&Seal/Start 或 Seal 后报警"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.4.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[3][2].text",
+    "source_text": "检查面盖是否闭合，把手是否已下压锁紧。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.5.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[4][0].text",
+    "source_text": "真空工作过程中连续蜂鸣"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.5.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].blocks[0].rows[4][1].text",
+    "source_text": "机器无法达到目标压力，检查把手锁紧及袋子是否破损，更换新袋重试。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page2.section_title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[1].section_title",
+    "source_text": "故障排除（附件与报警）"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[0].text",
+    "source_text": "如因特殊原因，导致液体进入机器内部的处理方案"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.2.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[1].text",
+    "source_text": "**液体进入真空腔中：**"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[2].steps[0].text",
+    "source_text": "立即关闭电源，等待至少 5 分钟，让机器发热器冷却。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[2].steps[1].text",
+    "source_text": "将液体槽取出，并清理擦干液体。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[2].steps[2].text",
+    "source_text": "将真空腔中的液体擦干。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[2].steps[3].text",
+    "source_text": "将机器底部铺垫厨房纸或托盘，重新通电。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[2].steps[4].text",
+    "source_text": "合上面盖，长按 [btn:Pulse Vac] 按键抽气 20 秒，然后点击 [btn:Stop] 排气，重复 5 次，让内部管道的液体排出。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step6.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[2].steps[5].text",
+    "source_text": "打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 48 小时，期间不要翻倒机器。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.4.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[3].text",
+    "source_text": "**液体进入发热器：**"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[4].steps[0].text",
+    "source_text": "请勿翻倒机器，关闭电源，等待 10 分钟，让发热器冷却及内部液体排出。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[4].steps[1].text",
+    "source_text": "清理和擦干机器接水盘、真空腔、底部的液体。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[4].steps[2].text",
+    "source_text": "打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 24 小时，期间不要翻倒机器。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step4.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[4].steps[3].text",
+    "source_text": "将机器底部铺垫厨房纸或托盘，重新通电。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step5.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[4].steps[4].text",
+    "source_text": "合上面盖，长按 [btn:Pulse Vac] 按键抽气 20 秒，然后点击 [btn:Stop] 排气，重复 5 次，让内部管道的液体排出。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step6.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[4].steps[5].text",
+    "source_text": "打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 48 小时，期间不要翻倒机器。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.6.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[5].text",
+    "source_text": "如果长期不清洁，内部管道可能会堵塞，影响抽气性能，此时请联系售后进行管道更换。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.block.6.title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].blocks[5].title",
+    "source_text": "注意"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page3.section_title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[2].section_title",
+    "source_text": "故障排除（续）"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[6].title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[6].toc_title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.toc_title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.toc_title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[7].header_ref",
+    "source_text": "CH.08 — MAINTENANCE"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.header_ref",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.header_ref",
+    "source_text": "CH.08 — MAINTENANCE"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.1",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[0].text",
+    "source_text": "确保使用机器的工作台平整、干净、干燥。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.2",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[1].text",
+    "source_text": "在不使用机器时请不要将机器锁扣锁上，以防密封圈被长时间挤压，影响功能。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.3",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[2].text",
+    "source_text": "需每周一次对机器的密封圈、密封压条、发热器、液体槽、真空腔进行清洁。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.4",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[3].text",
+    "source_text": "发热器和密封压条在工作后会残留高温，请待机器冷却后再进行保养。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.5",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[4].text",
+    "source_text": "清洁前拔下机器电源。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.6",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[5].text",
+    "source_text": "请采用软毛刷清洁密封圈、密封压条、发热器、液体槽、真空腔、真空软管。避免采用硬毛刷，以免损坏机器。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.7",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[6].text",
+    "source_text": "每天工作结束后，取出液体槽清洁擦干，并用湿毛巾或纸巾清理真空腔内残留的碎屑、灰尘。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.8",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[7].text",
+    "source_text": "每次工作结束后，检查密封圈是否已经变形严重，高温胶布是否已经破损/脱落，如有，则请及时替换。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.9",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].items[8].text",
+    "source_text": "液体槽和真空软管不支持高温清洁，如洗碗机清洁。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].section_title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[7].title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.title",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[7].toc_title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.toc_title",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.toc_title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[8].header_ref",
+    "source_text": "CH.09 — VACUUM PROPERTIES"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.header_ref",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.header_ref",
+    "source_text": "CH.09 — VACUUM PROPERTIES"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[0].text",
+    "source_text": "真空包装是通过去除密封容器中的大部分空气来延长食品的寿命，并防止空气回流到密封容器中，从而减少氧化。真空包装有助于保持风味和整体质量。它还有助于抑制好氧微生物的生长，在某些条件下可能的现象有："
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.2.item.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[1].items[0].text",
+    "source_text": "**霉菌** — 霉菌在低氧环境下无法繁殖，真空包装能够抑制霉菌的繁殖。"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.2.item.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[1].items[1].text",
+    "source_text": "**酵母菌** — 酵母需要水、糖和中等温度才能繁殖，可以在有空气或无空气的情况下生存。减缓酵母的生长需要冷藏，冷冻则可以有效抑制。"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.2.item.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[1].items[2].text",
+    "source_text": "**细菌** — 导致难闻的气味、变色或变柔软。在适当的条件下，肉毒梭菌可以在没有空气的情况下生长，且无法通过气味或味道检测到。"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[2].text",
+    "source_text": "与任何其他储存方式一样，在食用前检查食品是否变质是很重要的。在 -4°C 或更低温度下，可以显著减少微生物的生长。对于长期储存，建议进行真空封装后保持冷冻。"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.4.text",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[3].text",
+    "source_text": "真空包装不能代替冷藏或冷冻。任何需要冷藏的易腐食品在真空包装后仍必须保持冷藏或冷冻。"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.4.title",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[3].title",
+    "source_text": "NOTICE"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.5.text",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[4].text",
+    "source_text": "存储指南"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.6.item.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[5].items[0].text",
+    "source_text": "蔬菜在真空包装前需要先焯水。将蔬菜放入沸水中煮熟，然后浸入冷水中，最后用毛巾吸干水分再进行真空包装。"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.6.item.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[5].items[1].text",
+    "source_text": "十字花科蔬菜（花椰菜、芽菜、卷心菜等）在储存过程中会自然排放气体，煮熟、真空封装后建议存放在冰箱里。"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.block.6.item.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].blocks[5].items[2].text",
+    "source_text": "切忌真空储存大蒜或蘑菇等真菌食品。抽真空后会产生有害物质，食用会影响健康。"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[0].section_title",
+    "source_text": "真空包装特性"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[0].text",
+    "source_text": "食物真空保鲜期限参照"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.header.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].headers[0].text",
+    "source_text": "储存方式"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.header.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].headers[1].text",
+    "source_text": "食物类别"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.header.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].headers[2].text",
+    "source_text": "常规储存"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.header.4",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].headers[3].text",
+    "source_text": "真空包装"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[0][0].text",
+    "source_text": "冷冻储存"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[0][1].text",
+    "source_text": "肉类"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[0][2].text",
+    "source_text": "6 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.4",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[0][3].text",
+    "source_text": "15–20 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.10.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[9][0].text",
+    "source_text": ""
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.11.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[10][0].text",
+    "source_text": "常温储存"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.11.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[10][1].text",
+    "source_text": "面包"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.11.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[10][2].text",
+    "source_text": "1–2 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.11.cell.4",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[10][3].text",
+    "source_text": "6–8 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.12.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[11][0].text",
+    "source_text": "盒装饼干"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.12.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[11][1].text",
+    "source_text": "4–6 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.12.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[11][2].text",
+    "source_text": "12 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.13.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[12][0].text",
+    "source_text": "面条"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.13.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[12][1].text",
+    "source_text": "5–6 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.13.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[12][2].text",
+    "source_text": "12 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.14.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[13][0].text",
+    "source_text": "大米"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.14.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[13][1].text",
+    "source_text": "5–6 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.14.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[13][2].text",
+    "source_text": "12 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.15.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[14][0].text",
+    "source_text": "面粉"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.15.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[14][1].text",
+    "source_text": "4–5 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.15.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[14][2].text",
+    "source_text": "12 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.16.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[15][0].text",
+    "source_text": "干货"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.16.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[15][1].text",
+    "source_text": "3–4 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.16.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[15][2].text",
+    "source_text": "12 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.17.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[16][0].text",
+    "source_text": "咖啡 / 茶叶 / 奶粉"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.17.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[16][1].text",
+    "source_text": "2–6 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.17.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[16][2].text",
+    "source_text": "12 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.2.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[1][0].text",
+    "source_text": "鱼类、海鲜"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.2.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[1][1].text",
+    "source_text": "6 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.2.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[1][2].text",
+    "source_text": "10–12 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.3.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[2][0].text",
+    "source_text": "干果、咖啡豆"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.3.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[2][1].text",
+    "source_text": "6–9 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.3.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[2][2].text",
+    "source_text": "18–24 月"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.4.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[3][0].text",
+    "source_text": ""
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.5.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[4][0].text",
+    "source_text": "冷藏储存"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.5.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[4][1].text",
+    "source_text": "肉类"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.5.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[4][2].text",
+    "source_text": "2–3 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.5.cell.4",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[4][3].text",
+    "source_text": "12–13 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.6.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[5][0].text",
+    "source_text": "鱼类、海鲜"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.6.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[5][1].text",
+    "source_text": "2–3 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.6.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[5][2].text",
+    "source_text": "6–8 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.7.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[6][0].text",
+    "source_text": "熟肉类"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.7.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[6][1].text",
+    "source_text": "2–3 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.7.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[6][2].text",
+    "source_text": "10–14 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.8.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[7][0].text",
+    "source_text": "蛋类"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.8.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[7][1].text",
+    "source_text": "2–3 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.8.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[7][2].text",
+    "source_text": "30–50 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.9.cell.1",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[8][0].text",
+    "source_text": "蔬菜"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.9.cell.2",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[8][1].text",
+    "source_text": "2–3 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.9.cell.3",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].blocks[1].rows[8][2].text",
+    "source_text": "7–10 天"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.page.page2.section_title",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.pages[1].section_title",
+    "source_text": "真空包装特性（续）"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[8].title",
+    "source_text": "真空包装特性"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.title",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.title",
+    "source_text": "真空包装特性"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[8].toc_title",
+    "source_text": "真空包装特性"
+  },
+  {
+    "text_id": "content.chapter.09-vacuum-properties.toc_title",
+    "scope": "content",
+    "context": "content.chapter.09-vacuum-properties.toc_title",
+    "source_text": "真空包装特性"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[9].header_ref",
+    "source_text": "CH.10 — WARRANTY"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.header_ref",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.header_ref",
+    "source_text": "CH.10 — WARRANTY"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[0].text",
+    "source_text": "感谢您购买 {{brand.display_name}} {{localized.product_name}}。如有任何问题，请通过以下方式联系我们：\n{{brand.support_email}} | {{brand.website}}"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.2.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[1].text",
+    "source_text": "品牌商信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.4.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[3].text",
+    "source_text": "授权制造商"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.6.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[5].text",
+    "source_text": "保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.7.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[6].text",
+    "source_text": "本产品提供 **{{warranty.years}} 年有限保修**。自原始购买日期起 {{warranty.years}} 年内可享受保修更换服务。要获得保修更换资格，您必须："
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.8.item.1",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[7].items[0].text",
+    "source_text": "在过去 {{warranty.years}} 年内购买过产品。"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.8.item.2",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[7].items[1].text",
+    "source_text": "有原始订单号或购买时使用的电子邮件。"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.8.item.3",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[7].items[2].text",
+    "source_text": "如通过经销商或零售合作伙伴购买，须提供原始收据的副本。"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.9.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[8].text",
+    "source_text": "向我们发送电子邮件申请保修服务：**{{brand.support_email}}**"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].section_title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[0].text",
+    "source_text": "保修卡"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.1",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[0].text",
+    "source_text": "客户名称"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.2",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[1].text",
+    "source_text": "地址"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.3",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[2].text",
+    "source_text": "城市 / 州 / 邮政编码"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.4",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[3].text",
+    "source_text": "电话号码"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.5",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[4].text",
+    "source_text": "电子邮件地址"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.6",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[5].text",
+    "source_text": "原始购买日期"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.7",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[6].text",
+    "source_text": "产品型号"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.8",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[7].text",
+    "source_text": "序列号（如适用）"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.9",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[8].text",
+    "source_text": "商户名称"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.section_title",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].section_title",
+    "source_text": ""
+  },
+  {
+    "text_id": "content.chapter.10-warranty.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[9].title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.title",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[9].toc_title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.toc_title",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.toc_title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "product.brands.act.address",
+    "scope": "product",
+    "context": "brands.act.address",
+    "source_text": "60 Paya Lebar Road, #11-19 Paya Lebar Square, Singapore 409051"
+  },
+  {
+    "text_id": "product.brands.act.display_name",
+    "scope": "product",
+    "context": "brands.act.display_name",
+    "source_text": "ACT"
+  },
+  {
+    "text_id": "product.brands.act.name",
+    "scope": "product",
+    "context": "brands.act.name",
+    "source_text": "ADVANCED CUISINE TECHNOLOGY PTE. LTD."
+  },
+  {
+    "text_id": "product.brands.vesta.address",
+    "scope": "product",
+    "context": "brands.vesta.address",
+    "source_text": "3120 139th Ave SE Suite 500 Bellevue, WA 98005"
+  },
+  {
+    "text_id": "product.brands.vesta.display_name",
+    "scope": "product",
+    "context": "brands.vesta.display_name",
+    "source_text": "Vesta"
+  },
+  {
+    "text_id": "product.brands.vesta.name",
+    "scope": "product",
+    "context": "brands.vesta.name",
+    "source_text": "Precision Appliance Technology, Inc."
+  },
+  {
+    "text_id": "product.brands.wevac.address",
+    "scope": "product",
+    "context": "brands.wevac.address",
+    "source_text": "FLAT/RM 404A BEVERLEY COMMERCIAL CENTRE 87-105 CHATHAM ROAD SOUTH TSIM SHA TSUI KL HONG KONG"
+  },
+  {
+    "text_id": "product.brands.wevac.display_name",
+    "scope": "product",
+    "context": "brands.wevac.display_name",
+    "source_text": "WEVAC"
+  },
+  {
+    "text_id": "product.brands.wevac.name",
+    "scope": "product",
+    "context": "brands.wevac.name",
+    "source_text": "WEVAC TECHNOLOGY CO., LIMITED"
+  },
+  {
+    "text_id": "product.buttons.1.desc",
+    "scope": "product",
+    "context": "buttons.1.desc",
+    "source_text": "点击此按键，将执行所选模式进行工作。"
+  },
+  {
+    "text_id": "product.buttons.1.name",
+    "scope": "product",
+    "context": "buttons.1.name",
+    "source_text": "抽气密封 / 开始"
+  },
+  {
+    "text_id": "product.buttons.2.desc",
+    "scope": "product",
+    "context": "buttons.2.desc",
+    "source_text": "可以在任意工作进程中点击此按键来终止工作。"
+  },
+  {
+    "text_id": "product.buttons.2.name",
+    "scope": "product",
+    "context": "buttons.2.name",
+    "source_text": "停止"
+  },
+  {
+    "text_id": "product.buttons.3.desc",
+    "scope": "product",
+    "context": "buttons.3.desc",
+    "source_text": "<b>Normal</b>（默认压力）/ <b>Gentle</b>（轻柔压力）/ <b>Liquid</b>（液体状物品）"
+  },
+  {
+    "text_id": "product.buttons.3.name",
+    "scope": "product",
+    "context": "buttons.3.name",
+    "source_text": "真空模式选择"
+  },
+  {
+    "text_id": "product.buttons.4.desc",
+    "scope": "product",
+    "context": "buttons.4.desc",
+    "source_text": "长按进行手动控制抽气，松开暂停，达到所需状态后点击 Seal 密封。"
+  },
+  {
+    "text_id": "product.buttons.4.name",
+    "scope": "product",
+    "context": "buttons.4.name",
+    "source_text": "手动抽气"
+  },
+  {
+    "text_id": "product.buttons.5.desc",
+    "scope": "product",
+    "context": "buttons.5.desc",
+    "source_text": "点击此按键，机器立即执行密封工作。"
+  },
+  {
+    "text_id": "product.buttons.5.name",
+    "scope": "product",
+    "context": "buttons.5.name",
+    "source_text": "密封"
+  },
+  {
+    "text_id": "product.buttons.6.desc",
+    "scope": "product",
+    "context": "buttons.6.desc",
+    "source_text": "<b>Mason Jar</b>（梅森罐）/ <b>Canister</b>（真空罐）/ <b>Marinate</b>（腌制）"
+  },
+  {
+    "text_id": "product.buttons.6.name",
+    "scope": "product",
+    "context": "buttons.6.name",
+    "source_text": "附件类"
+  },
+  {
+    "text_id": "product.buttons.7.desc",
+    "scope": "product",
+    "context": "buttons.7.desc",
+    "source_text": "在工作前点击，可延长密封时间。"
+  },
+  {
+    "text_id": "product.buttons.7.name",
+    "scope": "product",
+    "context": "buttons.7.name",
+    "source_text": "延长密封时间"
+  },
+  {
+    "text_id": "product.manufacturer.address",
+    "scope": "product",
+    "context": "manufacturer.address",
+    "source_text": "广东省广州市番禺区南村镇启业路1号"
+  },
+  {
+    "text_id": "product.manufacturer.name",
+    "scope": "product",
+    "context": "manufacturer.name",
+    "source_text": "广州亚俊氏真空科技股份有限公司"
+  },
+  {
+    "text_id": "product.parts.1.name",
+    "scope": "product",
+    "context": "parts.1.name",
+    "source_text": "锁扣把手"
+  },
+  {
+    "text_id": "product.parts.10.name",
+    "scope": "product",
+    "context": "parts.10.name",
+    "source_text": "切袋刀支架"
+  },
+  {
+    "text_id": "product.parts.11.name",
+    "scope": "product",
+    "context": "parts.11.name",
+    "source_text": "液体槽（下方为真空腔）"
+  },
+  {
+    "text_id": "product.parts.12.name",
+    "scope": "product",
+    "context": "parts.12.name",
+    "source_text": "高温胶布与发热器"
+  },
+  {
+    "text_id": "product.parts.13.name",
+    "scope": "product",
+    "context": "parts.13.name",
+    "source_text": "切袋刀"
+  },
+  {
+    "text_id": "product.parts.2.name",
+    "scope": "product",
+    "context": "parts.2.name",
+    "source_text": "控制面板"
+  },
+  {
+    "text_id": "product.parts.3.name",
+    "scope": "product",
+    "context": "parts.3.name",
+    "source_text": "外抽气孔"
+  },
+  {
+    "text_id": "product.parts.4.name",
+    "scope": "product",
+    "context": "parts.4.name",
+    "source_text": "面盖"
+  },
+  {
+    "text_id": "product.parts.5.name",
+    "scope": "product",
+    "context": "parts.5.name",
+    "source_text": "密封压条"
+  },
+  {
+    "text_id": "product.parts.6.name",
+    "scope": "product",
+    "context": "parts.6.name",
+    "source_text": "密封圈"
+  },
+  {
+    "text_id": "product.parts.7.name",
+    "scope": "product",
+    "context": "parts.7.name",
+    "source_text": "卷袋仓"
+  },
+  {
+    "text_id": "product.parts.8.name",
+    "scope": "product",
+    "context": "parts.8.name",
+    "source_text": "卷袋支撑管"
+  },
+  {
+    "text_id": "product.parts.9.name",
+    "scope": "product",
+    "context": "parts.9.name",
+    "source_text": "主体"
+  },
+  {
+    "text_id": "product.product.name",
+    "scope": "product",
+    "context": "product.name",
+    "source_text": "真空封口机"
+  },
+  {
+    "text_id": "product.specs.eu.rows.0.label",
+    "scope": "product",
+    "context": "specs.eu.rows.0.label",
+    "source_text": "电压"
+  },
+  {
+    "text_id": "product.specs.eu.rows.0.value",
+    "scope": "product",
+    "context": "specs.eu.rows.0.value",
+    "source_text": "220~240 Vac"
+  },
+  {
+    "text_id": "product.specs.eu.rows.1.label",
+    "scope": "product",
+    "context": "specs.eu.rows.1.label",
+    "source_text": "频率"
+  },
+  {
+    "text_id": "product.specs.eu.rows.1.value",
+    "scope": "product",
+    "context": "specs.eu.rows.1.value",
+    "source_text": "50 Hz"
+  },
+  {
+    "text_id": "product.specs.eu.rows.2.label",
+    "scope": "product",
+    "context": "specs.eu.rows.2.label",
+    "source_text": "功率"
+  },
+  {
+    "text_id": "product.specs.eu.rows.2.value",
+    "scope": "product",
+    "context": "specs.eu.rows.2.value",
+    "source_text": "190 W"
+  },
+  {
+    "text_id": "product.specs.eu.rows.3.label",
+    "scope": "product",
+    "context": "specs.eu.rows.3.label",
+    "source_text": "泵"
+  },
+  {
+    "text_id": "product.specs.eu.rows.3.value",
+    "scope": "product",
+    "context": "specs.eu.rows.3.value",
+    "source_text": "双泵"
+  },
+  {
+    "text_id": "product.specs.eu.rows.4.label",
+    "scope": "product",
+    "context": "specs.eu.rows.4.label",
+    "source_text": "泵抽气压力"
+  },
+  {
+    "text_id": "product.specs.eu.rows.4.value",
+    "scope": "product",
+    "context": "specs.eu.rows.4.value",
+    "source_text": "-958 mbar"
+  },
+  {
+    "text_id": "product.specs.eu.rows.5.label",
+    "scope": "product",
+    "context": "specs.eu.rows.5.label",
+    "source_text": "发热丝宽度"
+  },
+  {
+    "text_id": "product.specs.eu.rows.5.value",
+    "scope": "product",
+    "context": "specs.eu.rows.5.value",
+    "source_text": "1.8 mm × 2"
+  },
+  {
+    "text_id": "product.specs.eu.rows.6.label",
+    "scope": "product",
+    "context": "specs.eu.rows.6.label",
+    "source_text": "最大密封袋宽"
+  },
+  {
+    "text_id": "product.specs.eu.rows.6.value",
+    "scope": "product",
+    "context": "specs.eu.rows.6.value",
+    "source_text": "315 mm"
+  },
+  {
+    "text_id": "product.specs.eu.rows.7.label",
+    "scope": "product",
+    "context": "specs.eu.rows.7.label",
+    "source_text": "尺寸（长×宽×高）"
+  },
+  {
+    "text_id": "product.specs.eu.rows.7.value",
+    "scope": "product",
+    "context": "specs.eu.rows.7.value",
+    "source_text": "380 × 205 × 155 mm"
+  },
+  {
+    "text_id": "product.specs.eu.rows.8.label",
+    "scope": "product",
+    "context": "specs.eu.rows.8.label",
+    "source_text": "重量"
+  },
+  {
+    "text_id": "product.specs.eu.rows.8.value",
+    "scope": "product",
+    "context": "specs.eu.rows.8.value",
+    "source_text": "3.0 kg"
+  },
+  {
+    "text_id": "product.specs.us.rows.0.label",
+    "scope": "product",
+    "context": "specs.us.rows.0.label",
+    "source_text": "电压"
+  },
+  {
+    "text_id": "product.specs.us.rows.0.value",
+    "scope": "product",
+    "context": "specs.us.rows.0.value",
+    "source_text": "110~120 Vac"
+  },
+  {
+    "text_id": "product.specs.us.rows.1.label",
+    "scope": "product",
+    "context": "specs.us.rows.1.label",
+    "source_text": "频率"
+  },
+  {
+    "text_id": "product.specs.us.rows.1.value",
+    "scope": "product",
+    "context": "specs.us.rows.1.value",
+    "source_text": "60 Hz"
+  },
+  {
+    "text_id": "product.specs.us.rows.2.label",
+    "scope": "product",
+    "context": "specs.us.rows.2.label",
+    "source_text": "功率"
+  },
+  {
+    "text_id": "product.specs.us.rows.2.value",
+    "scope": "product",
+    "context": "specs.us.rows.2.value",
+    "source_text": "190 W"
+  },
+  {
+    "text_id": "product.specs.us.rows.3.label",
+    "scope": "product",
+    "context": "specs.us.rows.3.label",
+    "source_text": "泵"
+  },
+  {
+    "text_id": "product.specs.us.rows.3.value",
+    "scope": "product",
+    "context": "specs.us.rows.3.value",
+    "source_text": "双泵"
+  },
+  {
+    "text_id": "product.specs.us.rows.4.label",
+    "scope": "product",
+    "context": "specs.us.rows.4.label",
+    "source_text": "泵抽气压力"
+  },
+  {
+    "text_id": "product.specs.us.rows.4.value",
+    "scope": "product",
+    "context": "specs.us.rows.4.value",
+    "source_text": "-28.3 inHg"
+  },
+  {
+    "text_id": "product.specs.us.rows.5.label",
+    "scope": "product",
+    "context": "specs.us.rows.5.label",
+    "source_text": "发热丝宽度"
+  },
+  {
+    "text_id": "product.specs.us.rows.5.value",
+    "scope": "product",
+    "context": "specs.us.rows.5.value",
+    "source_text": "0.07 inch × 2"
+  },
+  {
+    "text_id": "product.specs.us.rows.6.label",
+    "scope": "product",
+    "context": "specs.us.rows.6.label",
+    "source_text": "最大密封袋宽"
+  },
+  {
+    "text_id": "product.specs.us.rows.6.value",
+    "scope": "product",
+    "context": "specs.us.rows.6.value",
+    "source_text": "12.4 inch"
+  },
+  {
+    "text_id": "product.specs.us.rows.7.label",
+    "scope": "product",
+    "context": "specs.us.rows.7.label",
+    "source_text": "尺寸（长×宽×高）"
+  },
+  {
+    "text_id": "product.specs.us.rows.7.value",
+    "scope": "product",
+    "context": "specs.us.rows.7.value",
+    "source_text": "15 × 8.1 × 6.1 inch"
+  },
+  {
+    "text_id": "product.specs.us.rows.8.label",
+    "scope": "product",
+    "context": "specs.us.rows.8.label",
+    "source_text": "重量"
+  },
+  {
+    "text_id": "product.specs.us.rows.8.value",
+    "scope": "product",
+    "context": "specs.us.rows.8.value",
+    "source_text": "6.6 lb"
+  },
+  {
+    "text_id": "product.ui_labels.address_label",
+    "scope": "product",
+    "context": "ui_labels.address_label",
+    "source_text": "地址"
+  },
+  {
+    "text_id": "product.ui_labels.brand_info_title",
+    "scope": "product",
+    "context": "ui_labels.brand_info_title",
+    "source_text": "品牌商信息"
+  },
+  {
+    "text_id": "product.ui_labels.brand_label",
+    "scope": "product",
+    "context": "ui_labels.brand_label",
+    "source_text": "品牌商"
+  },
+  {
+    "text_id": "product.ui_labels.buttons_col1",
+    "scope": "product",
+    "context": "ui_labels.buttons_col1",
+    "source_text": "No. / Button"
+  },
+  {
+    "text_id": "product.ui_labels.buttons_col2",
+    "scope": "product",
+    "context": "ui_labels.buttons_col2",
+    "source_text": "功能说明"
+  },
+  {
+    "text_id": "product.ui_labels.cover_subtitle",
+    "scope": "product",
+    "context": "ui_labels.cover_subtitle",
+    "source_text": "使用说明书"
+  },
+  {
+    "text_id": "product.ui_labels.email_label",
+    "scope": "product",
+    "context": "ui_labels.email_label",
+    "source_text": "客服邮箱"
+  },
+  {
+    "text_id": "product.ui_labels.footer_suffix",
+    "scope": "product",
+    "context": "ui_labels.footer_suffix",
+    "source_text": "使用说明书"
+  },
+  {
+    "text_id": "product.ui_labels.freshness_col1",
+    "scope": "product",
+    "context": "ui_labels.freshness_col1",
+    "source_text": "储存方式"
+  },
+  {
+    "text_id": "product.ui_labels.freshness_col2",
+    "scope": "product",
+    "context": "ui_labels.freshness_col2",
+    "source_text": "食物类别"
+  },
+  {
+    "text_id": "product.ui_labels.freshness_col3",
+    "scope": "product",
+    "context": "ui_labels.freshness_col3",
+    "source_text": "常规储存"
+  },
+  {
+    "text_id": "product.ui_labels.freshness_col4",
+    "scope": "product",
+    "context": "ui_labels.freshness_col4",
+    "source_text": "真空包装"
+  },
+  {
+    "text_id": "product.ui_labels.manufacturer_label",
+    "scope": "product",
+    "context": "ui_labels.manufacturer_label",
+    "source_text": "制造商"
+  },
+  {
+    "text_id": "product.ui_labels.manufacturer_title",
+    "scope": "product",
+    "context": "ui_labels.manufacturer_title",
+    "source_text": "授权制造商"
+  },
+  {
+    "text_id": "product.ui_labels.parts_col_name",
+    "scope": "product",
+    "context": "ui_labels.parts_col_name",
+    "source_text": "名称"
+  },
+  {
+    "text_id": "product.ui_labels.parts_col_no",
+    "scope": "product",
+    "context": "ui_labels.parts_col_no",
+    "source_text": "编号"
+  },
+  {
+    "text_id": "product.ui_labels.specs_col1",
+    "scope": "product",
+    "context": "ui_labels.specs_col1",
+    "source_text": "参数"
+  },
+  {
+    "text_id": "product.ui_labels.specs_col2",
+    "scope": "product",
+    "context": "ui_labels.specs_col2",
+    "source_text": "规格"
+  },
+  {
+    "text_id": "product.ui_labels.storage_ambient",
+    "scope": "product",
+    "context": "ui_labels.storage_ambient",
+    "source_text": "常温储存"
+  },
+  {
+    "text_id": "product.ui_labels.storage_frozen",
+    "scope": "product",
+    "context": "ui_labels.storage_frozen",
+    "source_text": "冷冻储存"
+  },
+  {
+    "text_id": "product.ui_labels.storage_refrigerated",
+    "scope": "product",
+    "context": "ui_labels.storage_refrigerated",
+    "source_text": "冷藏储存"
+  },
+  {
+    "text_id": "product.ui_labels.trouble_col1",
+    "scope": "product",
+    "context": "ui_labels.trouble_col1",
+    "source_text": "故障现象"
+  },
+  {
+    "text_id": "product.ui_labels.trouble_col2",
+    "scope": "product",
+    "context": "ui_labels.trouble_col2",
+    "source_text": "可能原因"
+  },
+  {
+    "text_id": "product.ui_labels.trouble_col3",
+    "scope": "product",
+    "context": "ui_labels.trouble_col3",
+    "source_text": "解决方案"
+  },
+  {
+    "text_id": "product.ui_labels.warranty_card_title",
+    "scope": "product",
+    "context": "ui_labels.warranty_card_title",
+    "source_text": "保修卡"
+  },
+  {
+    "text_id": "product.ui_labels.wc_address",
+    "scope": "product",
+    "context": "ui_labels.wc_address",
+    "source_text": "地址"
+  },
+  {
+    "text_id": "product.ui_labels.wc_city",
+    "scope": "product",
+    "context": "ui_labels.wc_city",
+    "source_text": "城市 / 州 / 邮政编码"
+  },
+  {
+    "text_id": "product.ui_labels.wc_customer",
+    "scope": "product",
+    "context": "ui_labels.wc_customer",
+    "source_text": "客户名称"
+  },
+  {
+    "text_id": "product.ui_labels.wc_email",
+    "scope": "product",
+    "context": "ui_labels.wc_email",
+    "source_text": "电子邮件地址"
+  },
+  {
+    "text_id": "product.ui_labels.wc_merchant",
+    "scope": "product",
+    "context": "ui_labels.wc_merchant",
+    "source_text": "商户名称"
+  },
+  {
+    "text_id": "product.ui_labels.wc_model",
+    "scope": "product",
+    "context": "ui_labels.wc_model",
+    "source_text": "产品型号"
+  },
+  {
+    "text_id": "product.ui_labels.wc_phone",
+    "scope": "product",
+    "context": "ui_labels.wc_phone",
+    "source_text": "电话号码"
+  },
+  {
+    "text_id": "product.ui_labels.wc_purchase_date",
+    "scope": "product",
+    "context": "ui_labels.wc_purchase_date",
+    "source_text": "原始购买日期"
+  },
+  {
+    "text_id": "product.ui_labels.wc_serial",
+    "scope": "product",
+    "context": "ui_labels.wc_serial",
+    "source_text": "序列号（如适用）"
+  },
+  {
+    "text_id": "product.ui_labels.website_label",
+    "scope": "product",
+    "context": "ui_labels.website_label",
+    "source_text": "网址"
+  },
+  {
+    "text_id": "system.document_title",
+    "scope": "system",
+    "context": "system.document_title",
+    "source_text": "说明书"
+  }
+]
+

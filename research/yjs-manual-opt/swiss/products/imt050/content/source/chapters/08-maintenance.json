@@ -1,0 +1,112 @@
+{
+  "chapter_id": "08-maintenance",
+  "chapter_no": "08",
+  "title": "缁存姢淇濆吇",
+  "toc_title": "缁存姢淇濆吇",
+  "header_ref": "CH.08 鈥?MAINTENANCE",
+  "pages": [
+    {
+      "page_class": "compact-ops",
+      "section_title": "缁存姢淇濆吇",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "鑷姩娓呮磥锛堝埗鍐版ā鍏峰拰鍒跺啺鍏滐級",
+          "text_id": "content.chapter.08-maintenance.page.page1.block.1.text"
+        },
+        {
+          "type": "step_flow",
+          "steps": [
+            {
+              "id": "step1",
+              "text": "缁欐按绠卞姞姘磋嚦姘翠綅绾裤€?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.2.step.step1.text"
+            },
+            {
+              "id": "step2",
+              "text": "寮€鏈虹姸鎬佷笅锛岀偣鍑?**Clean** 鎸夐敭锛屾寜閿伅浜櫧鐏紝浜у搧鑷姩娓呮磥鍒跺啺鍏滃拰鍒跺啺妯°€?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.2.step.step2.text"
+            },
+            {
+              "id": "step3",
+              "text": "娓呮磥瀹屾垚鍚庯紝浜у搧鑷姩鍋滄锛屾寜閿伅鐔勭伃銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.2.step.step3.text"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "鎺掓按鎿嶄綔",
+          "text_id": "content.chapter.08-maintenance.page.page1.block.3.text"
+        },
+        {
+          "type": "step_flow",
+          "steps": [
+            {
+              "id": "step1",
+              "text": "鏂紑鐢垫簮锛屽皢浜у搧鏀剧疆鍒版按妲芥梺銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.4.step.step1.text"
+            },
+            {
+              "id": "step2",
+              "text": "灏嗕骇鍝佸簳閮ㄧ殑鎺掓按瀛斿鏉捐劚锛岃鍐呰厰鐨勬按鎺掑共銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.4.step.step2.text"
+            },
+            {
+              "id": "step3",
+              "text": "鎺掓按瀹屾垚鍚庯紝灏嗘帓姘村瓟濉炲洖鍘熶綅銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.4.step.step3.text"
+            }
+          ]
+        },
+        {
+          "type": "figure_row",
+          "figures": [
+            {
+              "figure": "cleaning.drain_plug",
+              "max_width": "48%",
+              "max_height": "26mm"
+            },
+            {
+              "figure": "cleaning.drain_container",
+              "max_width": "28%",
+              "max_height": "26mm"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "鏃ュ父淇濆吇",
+          "text_id": "content.chapter.08-maintenance.page.page1.block.6.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "瀹氭湡鐢ㄥ共鍑€鐨勬按娓呮礂浜у搧鍐呴儴锛屽缓璁?*姣忓ぉ浣跨敤鍓嶆竻娲椾竴娆?*銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.7.item.1"
+            },
+            {
+              "text": "鐢ㄦ煍杞箍甯冩摝鎷骇鍝佸澹筹紝璇峰嬁浣跨敤鑵愯殌鎬ф竻娲佸墏銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.7.item.2"
+            },
+            {
+              "text": "璇烽伒寰嚜鍔ㄦ竻娲佹楠ゆ竻娲楀埗鍐版ā鍏峰拰鍒跺啺鍏溿€?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.7.item.3"
+            },
+            {
+              "text": "娓呮磥淇濆吇鍓嶈鎷旀帀鐢垫簮锛屽緟浜у搧鍐峰嵈鍚庡啀杩涜澶勭悊銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.7.item.4"
+            }
+          ]
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.08-maintenance.page.page1.section_title"
+    }
+  ],
+  "title_id": "content.chapter.08-maintenance.title",
+  "toc_title_id": "content.chapter.08-maintenance.toc_title",
+  "header_ref_id": "content.chapter.08-maintenance.header_ref"
+}

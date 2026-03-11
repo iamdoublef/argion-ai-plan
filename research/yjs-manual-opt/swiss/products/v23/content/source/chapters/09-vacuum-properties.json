@@ -1,0 +1,353 @@
+{
+  "chapter_id": "09-vacuum-properties",
+  "chapter_no": "09",
+  "title": "鐪熺┖鍖呰鐗规€?",
+  "toc_title": "鐪熺┖鍖呰鐗规€?",
+  "header_ref": "CH.09 鈥?VACUUM PROPERTIES",
+  "pages": [
+    {
+      "page_class": "",
+      "section_title": "鐪熺┖鍖呰鐗规€?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "鐪熺┖鍖呰鏄€氳繃鍘婚櫎瀵嗗皝瀹瑰櫒涓殑澶ч儴鍒嗙┖姘旀潵寤堕暱椋熷搧鐨勫鍛斤紝骞堕槻姝㈢┖姘斿洖娴佸埌瀵嗗皝瀹瑰櫒涓紝浠庤€屽噺灏戞哀鍖栥€傜湡绌哄寘瑁呮湁鍔╀簬淇濇寔椋庡懗鍜屾暣浣撹川閲忋€傚畠杩樻湁鍔╀簬鎶戝埗濂芥哀寰敓鐗╃殑鐢熼暱锛屽湪鏌愪簺鏉′欢涓嬪彲鑳界殑鐜拌薄鏈夛細",
+          "text_id": "content.chapter.09-vacuum-properties.page.page1.block.1.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "**闇夎弻** 鈥?闇夎弻鍦ㄤ綆姘х幆澧冧笅鏃犳硶绻佹畺锛岀湡绌哄寘瑁呰兘澶熸姂鍒堕湁鑿岀殑绻佹畺銆?",
+              "text_id": "content.chapter.09-vacuum-properties.page.page1.block.2.item.1"
+            },
+            {
+              "text": "**閰垫瘝鑿?* 鈥?閰垫瘝闇€瑕佹按銆佺硸鍜屼腑绛夋俯搴︽墠鑳界箒娈栵紝鍙互鍦ㄦ湁绌烘皵鎴栨棤绌烘皵鐨勬儏鍐典笅鐢熷瓨銆傚噺缂撻叺姣嶇殑鐢熼暱闇€瑕佸喎钘忥紝鍐峰喕鍒欏彲浠ユ湁鏁堟姂鍒躲€?",
+              "text_id": "content.chapter.09-vacuum-properties.page.page1.block.2.item.2"
+            },
+            {
+              "text": "**缁嗚弻** 鈥?瀵艰嚧闅鹃椈鐨勬皵鍛炽€佸彉鑹叉垨鍙樻煍杞€傚湪閫傚綋鐨勬潯浠朵笅锛岃倝姣掓鑿屽彲浠ュ湪娌℃湁绌烘皵鐨勬儏鍐典笅鐢熼暱锛屼笖鏃犳硶閫氳繃姘斿懗鎴栧懗閬撴娴嬪埌銆?",
+              "text_id": "content.chapter.09-vacuum-properties.page.page1.block.2.item.3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "涓庝换浣曞叾浠栧偍瀛樻柟寮忎竴鏍凤紝鍦ㄩ鐢ㄥ墠妫€鏌ラ鍝佹槸鍚﹀彉璐ㄦ槸寰堥噸瑕佺殑銆傚湪 -4掳C 鎴栨洿浣庢俯搴︿笅锛屽彲浠ユ樉钁楀噺灏戝井鐢熺墿鐨勭敓闀裤€傚浜庨暱鏈熷偍瀛橈紝寤鸿杩涜鐪熺┖灏佽鍚庝繚鎸佸喎鍐汇€?",
+          "text_id": "content.chapter.09-vacuum-properties.page.page1.block.3.text"
+        },
+        {
+          "type": "notice_box",
+          "title": "NOTICE",
+          "text": "鐪熺┖鍖呰涓嶈兘浠ｆ浛鍐疯棌鎴栧喎鍐汇€備换浣曢渶瑕佸喎钘忕殑鏄撹厫椋熷搧鍦ㄧ湡绌哄寘瑁呭悗浠嶅繀椤讳繚鎸佸喎钘忔垨鍐峰喕銆?",
+          "text_id": "content.chapter.09-vacuum-properties.page.page1.block.4.text",
+          "title_id": "content.chapter.09-vacuum-properties.page.page1.block.4.title"
+        },
+        {
+          "type": "sub_title",
+          "text": "瀛樺偍鎸囧崡",
+          "text_id": "content.chapter.09-vacuum-properties.page.page1.block.5.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "钄彍鍦ㄧ湡绌哄寘瑁呭墠闇€瑕佸厛鐒按銆傚皢钄彍鏀惧叆娌告按涓叜鐔燂紝鐒跺悗娴稿叆鍐锋按涓紝鏈€鍚庣敤姣涘肪鍚稿共姘村垎鍐嶈繘琛岀湡绌哄寘瑁呫€?",
+              "text_id": "content.chapter.09-vacuum-properties.page.page1.block.6.item.1"
+            },
+            {
+              "text": "鍗佸瓧鑺辩钄彍锛堣姳妞拌彍銆佽娊鑿溿€佸嵎蹇冭彍绛夛級鍦ㄥ偍瀛樿繃绋嬩腑浼氳嚜鐒舵帓鏀炬皵浣擄紝鐓啛銆佺湡绌哄皝瑁呭悗寤鸿瀛樻斁鍦ㄥ啺绠遍噷銆?",
+              "text_id": "content.chapter.09-vacuum-properties.page.page1.block.6.item.2"
+            },
+            {
+              "text": "鍒囧繉鐪熺┖鍌ㄥ瓨澶ц挏鎴栬槕鑿囩瓑鐪熻弻椋熷搧銆傛娊鐪熺┖鍚庝細浜х敓鏈夊鐗╄川锛岄鐢ㄤ細褰卞搷鍋ュ悍銆?",
+              "text_id": "content.chapter.09-vacuum-properties.page.page1.block.6.item.3"
+            }
+          ]
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.09-vacuum-properties.page.page1.section_title"
+    },
+    {
+      "page_class": "",
+      "section_title": "鐪熺┖鍖呰鐗规€э紙缁級",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "椋熺墿鐪熺┖淇濋矞鏈熼檺鍙傜収",
+          "text_id": "content.chapter.09-vacuum-properties.page.page2.block.1.text"
+        },
+        {
+          "type": "table_ref",
+          "headers": [
+            {
+              "text": "鍌ㄥ瓨鏂瑰紡",
+              "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.header.1"
+            },
+            {
+              "text": "椋熺墿绫诲埆",
+              "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.header.2"
+            },
+            {
+              "text": "甯歌鍌ㄥ瓨",
+              "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.header.3"
+            },
+            {
+              "text": "鐪熺┖鍖呰",
+              "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.header.4"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "鍐峰喕鍌ㄥ瓨",
+                "rowspan": 4,
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.1"
+              },
+              {
+                "text": "鑲夌被",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.2"
+              },
+              {
+                "text": "6 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.3"
+              },
+              {
+                "text": "15鈥?0 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.4"
+              }
+            ],
+            [
+              {
+                "text": "楸肩被銆佹捣椴?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.2.cell.1"
+              },
+              {
+                "text": "6 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.2.cell.2"
+              },
+              {
+                "text": "10鈥?2 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.2.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "骞叉灉銆佸挅鍟¤眴",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.3.cell.1"
+              },
+              {
+                "text": "6鈥? 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.3.cell.2"
+              },
+              {
+                "text": "18鈥?4 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.3.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "",
+                "colspan": 3,
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.4.cell.1"
+              }
+            ],
+            [
+              {
+                "text": "鍐疯棌鍌ㄥ瓨",
+                "rowspan": 5,
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.5.cell.1"
+              },
+              {
+                "text": "鑲夌被",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.5.cell.2"
+              },
+              {
+                "text": "2鈥? 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.5.cell.3"
+              },
+              {
+                "text": "12鈥?3 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.5.cell.4"
+              }
+            ],
+            [
+              {
+                "text": "楸肩被銆佹捣椴?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.6.cell.1"
+              },
+              {
+                "text": "2鈥? 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.6.cell.2"
+              },
+              {
+                "text": "6鈥? 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.6.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "鐔熻倝绫?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.7.cell.1"
+              },
+              {
+                "text": "2鈥? 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.7.cell.2"
+              },
+              {
+                "text": "10鈥?4 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.7.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "铔嬬被",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.8.cell.1"
+              },
+              {
+                "text": "2鈥? 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.8.cell.2"
+              },
+              {
+                "text": "30鈥?0 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.8.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "钄彍",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.9.cell.1"
+              },
+              {
+                "text": "2鈥? 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.9.cell.2"
+              },
+              {
+                "text": "7鈥?0 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.9.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "",
+                "colspan": 4,
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.10.cell.1"
+              }
+            ],
+            [
+              {
+                "text": "甯告俯鍌ㄥ瓨",
+                "rowspan": 7,
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.11.cell.1"
+              },
+              {
+                "text": "闈㈠寘",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.11.cell.2"
+              },
+              {
+                "text": "1鈥? 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.11.cell.3"
+              },
+              {
+                "text": "6鈥? 澶?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.11.cell.4"
+              }
+            ],
+            [
+              {
+                "text": "鐩掕楗煎共",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.12.cell.1"
+              },
+              {
+                "text": "4鈥? 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.12.cell.2"
+              },
+              {
+                "text": "12 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.12.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "闈㈡潯",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.13.cell.1"
+              },
+              {
+                "text": "5鈥? 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.13.cell.2"
+              },
+              {
+                "text": "12 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.13.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "澶х背",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.14.cell.1"
+              },
+              {
+                "text": "5鈥? 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.14.cell.2"
+              },
+              {
+                "text": "12 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.14.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "闈㈢矇",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.15.cell.1"
+              },
+              {
+                "text": "4鈥? 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.15.cell.2"
+              },
+              {
+                "text": "12 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.15.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "骞茶揣",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.16.cell.1"
+              },
+              {
+                "text": "3鈥? 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.16.cell.2"
+              },
+              {
+                "text": "12 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.16.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "鍜栧暋 / 鑼跺彾 / 濂剁矇",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.17.cell.1"
+              },
+              {
+                "text": "2鈥? 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.17.cell.2"
+              },
+              {
+                "text": "12 鏈?",
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.17.cell.3"
+              }
+            ]
+          ]
+        }
+      ],
+      "page_id": "page2",
+      "section_title_id": "content.chapter.09-vacuum-properties.page.page2.section_title"
+    }
+  ],
+  "title_id": "content.chapter.09-vacuum-properties.title",
+  "toc_title_id": "content.chapter.09-vacuum-properties.toc_title",
+  "header_ref_id": "content.chapter.09-vacuum-properties.header_ref"
+}

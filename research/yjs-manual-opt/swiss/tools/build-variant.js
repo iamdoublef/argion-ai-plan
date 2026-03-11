@@ -42,86 +42,6 @@ function loadProductConfig(dir) {
 const config = loadProductConfig(productDir);
 
 // ---------------------------------------------------------------------------
-// Simplified → Traditional Chinese mapping (covers all characters in the manual)
-// ---------------------------------------------------------------------------
-const S2T_MAP = {
-  '让':'讓','儿':'兒','动':'動','认':'認','应':'應','监':'監','督':'督','间':'間','请':'請',
-  '留':'留','发':'發','开':'開','关':'關','连':'連','线':'線','损':'損','坏':'壞','联':'聯',
-  '维':'維','护':'護','对':'對','尖':'尖','针':'針','纸':'紙','张':'張','须':'須','纹':'紋',
-  '热':'熱','储':'儲','鲜':'鮮','过':'過','质':'質','选':'選','择':'擇','冻':'凍','压':'壓',
-  '机':'機','产':'產','结':'結','构':'構','图':'圖','编':'編','号':'號','称':'稱','锁':'鎖',
-  '扣':'扣','控':'控','制':'製','抽':'抽','气':'氣','盖':'蓋','密':'密','封':'封','圈':'圈',
-  '卷':'卷','袋':'袋','仓':'倉','撑':'撐','管':'管','体':'體','刀':'刀','液':'液','槽':'槽',
-  '腔':'腔','温':'溫','胶':'膠','布':'布','单':'單','独':'獨','长':'長','键':'鍵','灯':'燈',
-  '亮':'亮','恢':'恢','复':'復','默':'默','认':'認','设':'設','置':'置','禁':'禁','智':'智',
-  '能':'能','调':'調','节':'節','续':'續','工':'工','作':'作','隔':'隔','散':'散','实':'實',
-  '固':'固','启':'啟','终':'終','止':'止','柔':'柔','贵':'貴','碎':'碎','满':'滿','直':'直',
-  '确':'確','保':'保','面':'面','松':'鬆','暂':'暫','达':'達','释':'釋','退':'退','出':'出',
-  '闭':'閉','罐':'罐','拧':'擰','适':'適','配':'配','装':'裝','软':'軟','覆':'覆','盖':'蓋',
-  '轻':'輕','微':'微','兼':'兼','容':'容','阀':'閥','将':'將','食':'食','物':'物','酱':'醬',
-  '料':'料','两':'兩','则':'則','宽':'寬','专':'專','用':'用','电':'電','源':'源','插':'插',
-  '入':'入','破':'破','裂':'裂','板':'板','排':'排','脱':'脫','咨':'諮','询':'詢','专':'專',
-  '业':'業','修':'修','全':'全','部':'部','内':'內','翻':'翻','起':'起','正':'正','异':'異',
-  '无':'無','法':'法','拉':'拉','链':'鏈','方':'方','向':'向','标':'標','可':'可','示':'示',
-  '参':'參','考':'考','升':'升','级':'級','略':'略','差':'差','阅':'閱','读':'讀','说':'說',
-  '明':'明','书':'書','妥':'妥','善':'善','购':'購','买':'買','凭':'憑','证':'證','享':'享',
-  '受':'受','服':'服','务':'務','清':'清','洁':'潔','拔':'拔','毛':'毛','刷':'刷','避':'避',
-  '免':'免','硬':'硬','残':'殘','碎':'碎','屑':'屑','尘':'塵','检':'檢','查':'查','严':'嚴',
-  '重':'重','变':'變','形':'形','脱':'脫','落':'落','时':'時','替':'替','换':'換','支':'支',
-  '持':'持','高':'高','霉':'霉','菌':'菌','氧':'氧','环':'環','境':'境','繁':'繁','殖':'殖',
-  '抑':'抑','酵':'酵','母':'母','水':'水','糖':'糖','中':'中','等':'等','存':'存','减':'減',
-  '缓':'緩','生':'生','冷':'冷','藏':'藏','有':'有','效':'效','细':'細','导':'導','难':'難',
-  '闻':'聞','味':'味','道':'道','适':'適','当':'當','条':'條','件':'件','肉':'肉','毒':'毒',
-  '梭':'梭','前':'前','是':'是','否':'否','非':'非','常':'常','规':'規','运':'運','输':'輸',
-  '经':'經','销':'銷','商':'商','零':'零','售':'售','合':'合','伙':'夥','伴':'伴','须':'須',
-  '提':'提','供':'供','原':'原','始':'始','收':'收','据':'據','副':'副','本':'本','客':'客',
-  '户':'戶','城':'城','州':'州','邮':'郵','政':'政','邮':'郵','箱':'箱','日':'日','期':'期',
-  '型':'型','序':'序','列':'列','商':'商','蔬':'蔬','菜':'菜','焯':'焯','沸':'沸','煮':'煮',
-  '熟':'熟','浸':'浸','吸':'吸','干':'乾','十':'十','字':'字','花':'花','科':'科','芽':'芽',
-  '卷':'卷','心':'心','排':'排','放':'放','存':'存','冰':'冰','箱':'箱','切':'切','忌':'忌',
-  '大':'大','蒜':'蒜','蘑':'蘑','菇':'菇','菌':'菌','品':'品','害':'害','影':'影','响':'響',
-  '健':'健','康':'康','类':'類','海':'海','月':'月','天':'天','鱼':'魚','干':'乾','果':'果',
-  '咖':'咖','啡':'啡','豆':'豆','蛋':'蛋','面':'麵','包':'包','饼':'餅','粉':'粉','米':'米',
-  '货':'貨','茶':'茶','叶':'葉','奶':'奶','总':'總','寿':'壽','命':'命','风':'風','帮':'幫',
-  '助':'助','量':'量','个':'個','执':'執','行':'行','进':'進','预':'預','扁':'扁','嘴':'嘴',
-  '圆':'圓','瓶':'瓶','塞':'塞','腌':'醃','网':'網','址':'址','邮':'郵','制':'製','造':'造',
-  '厂':'廠','地':'地','信':'信','息':'息','年':'年','限':'限','数':'數','量':'量','获':'獲',
-  '得':'得','资':'資','格':'格','程':'程','点':'點','击':'擊','运':'運','电':'電','仅':'僅',
-  '烫':'燙','伤':'傷','断':'斷','拆':'拆','悬':'懸','挂':'掛','台':'臺','绊':'絆','倒':'倒',
-  '润':'潤','滑':'滑','剂':'劑','有':'有','丢':'丟','弃':'棄','垃':'垃','圾':'圾','回':'回',
-  '或':'或','处':'處','份':'份','系':'繫','权':'權','整':'整','齐':'齊','割':'割','端':'端',
-  '制':'製','从':'從','拉':'拉','扯':'扯','移':'移','至':'至','刀':'刀','架':'架','滑':'滑',
-  '划':'劃','功':'功','指':'指','引':'引','操':'操','如':'如','何':'何','使':'使','打':'打',
-  '卷':'卷','拉':'拉','所':'所','需':'需','度':'度','最':'最','左':'左','右':'右','边':'邊',
-  '下':'下','着':'著','以':'以','平':'平','放':'放','并':'並','把':'把','手':'手','向':'向',
-  '等':'等','待':'待','完':'完','成':'成','步':'步','骤':'驟','份':'份','需':'需','在':'在',
-  '和':'和','之':'之','建':'建','议':'議','留':'留','间':'間','空':'空','模':'模','式':'式',
-  '若':'若','终':'終','止':'止','采':'採','尝':'嘗','试':'試','后':'後','否':'否','足':'足',
-  '状':'狀','态':'態','配':'配','可':'可','处':'處','于':'於','旋':'旋','转':'轉','力':'力',
-  '挡':'擋','当':'當','段':'段','分':'分','钟':'鐘','底':'底','垫':'墊','厨':'廚','房':'房',
-  '纸':'紙','盘':'盤','通':'通','电':'電','合':'合','上':'上','次':'次','复':'復','倒':'倒',
-  '小':'小','凉':'涼','汁':'汁','弄':'弄','湿':'濕','擦':'擦','容':'容','纳':'納','还':'還',
-  '看':'看','几':'幾','问':'問','题':'題','方':'方','案':'案','解':'解','决':'決','按':'按',
-  '报':'報','警':'警','蜂':'蜂','鸣':'鳴','声':'聲','鸣':'鳴','闪':'閃','目':'目','录':'錄',
-  '须':'須','知':'知','技':'技','术':'術','故':'故','障':'障','养':'養','特':'特','性':'性',
-  '怎':'怎','样':'樣','安':'安','全':'全','为':'為','其':'其','他':'他','设':'設','计':'計',
-  '途':'途','成':'成','人':'人','期':'期','意':'意','外':'外','造':'造','窒':'窒','息':'息',
-  '危':'危','险':'險','接':'接','触':'觸','湿':'濕','严':'嚴','燃':'燃','爆':'爆','炸':'炸',
-  '确':'確','铭':'銘','牌':'牌','离':'離','区':'區','域':'域','勿':'勿','主':'主','浸':'浸',
-  '符':'符','合':'合','范':'範','停':'停','授':'授','自':'自','供':'供','添':'添','加':'加',
-  '任':'任','何':'何','溶':'溶','受':'受','丝':'絲','参':'參','规':'規','规':'規','格':'格',
-  '泵':'泵','宽':'寬','尺':'尺','寸':'寸',
-};
-
-function toTraditional(text) {
-  let result = '';
-  for (const ch of text) {
-    result += S2T_MAP[ch] || ch;
-  }
-  return result;
-}
-
-// ---------------------------------------------------------------------------
 // Language helpers — pick the right field suffix for the target language
 // ---------------------------------------------------------------------------
 function langSuffix(lang) {
@@ -235,8 +155,11 @@ function normalizeChapterEntry(entry, chapter) {
     chapter_id: entry.chapter_id,
     chapter_no: entry.chapter_no,
     title: chapter.title || entry.title,
+    title_id: chapter.title_id || entry.title_id,
     toc_title: chapter.toc_title || entry.toc_title || chapter.title || entry.title,
+    toc_title_id: chapter.toc_title_id || entry.toc_title_id,
     header_ref: chapter.header_ref || entry.header_ref,
+    header_ref_id: chapter.header_ref_id || entry.header_ref_id,
     enabled: entry.enabled !== false,
     file: entry.file,
     pages: chapter.pages || [],
@@ -264,8 +187,11 @@ function validateManifest(manifest, contentRoot) {
   }
 }
 
-function loadContentDocument(productDir, templateLang) {
-  const contentRoot = path.join(productDir, 'content', templateLang);
+function deepClone(value) {
+  return JSON.parse(JSON.stringify(value));
+}
+
+function loadStructuredDocumentFromRoot(contentRoot) {
   const manifestPath = path.join(contentRoot, 'manifest.json');
 
   if (!fs.existsSync(manifestPath)) {
@@ -300,6 +226,226 @@ function loadContentDocument(productDir, templateLang) {
     kind: 'structured',
     manifest,
     chapters,
+  };
+}
+
+function loadSourceDocument(productDir) {
+  return loadStructuredDocumentFromRoot(path.join(productDir, 'content', 'source'));
+}
+
+function loadLocaleCatalog(productDir, locale) {
+  const catalogPath = path.join(productDir, 'i18n', 'compiled', `${locale}.json`);
+  if (!fs.existsSync(catalogPath)) {
+    throw new Error(`Locale catalog not found: ${catalogPath}`);
+  }
+
+  const catalog = readJson(catalogPath);
+  if (!catalog || typeof catalog !== 'object' || Array.isArray(catalog)) {
+    throw new Error(`Invalid locale catalog: ${catalogPath}`);
+  }
+
+  if (!catalog.strings || typeof catalog.strings !== 'object' || Array.isArray(catalog.strings)) {
+    throw new Error(`Locale catalog missing strings map: ${catalogPath}`);
+  }
+
+  return catalog;
+}
+
+function translateCatalogString(catalog, textId, fallback = '') {
+  if (!textId) {
+    return fallback;
+  }
+  if (Object.prototype.hasOwnProperty.call(catalog.strings, textId)) {
+    return catalog.strings[textId];
+  }
+  return fallback;
+}
+
+function localizeStructuredNode(node, catalog) {
+  if (Array.isArray(node)) {
+    node.forEach((item) => localizeStructuredNode(item, catalog));
+    return node;
+  }
+
+  if (!node || typeof node !== 'object') {
+    return node;
+  }
+
+  Object.entries(node).forEach(([key, value]) => {
+    if (key.endsWith('_id')) {
+      const baseKey = key.slice(0, -3);
+      if (typeof node[baseKey] === 'string') {
+        node[baseKey] = translateCatalogString(catalog, value, node[baseKey]);
+      }
+      return;
+    }
+
+    if (Array.isArray(value) || (value && typeof value === 'object')) {
+      localizeStructuredNode(value, catalog);
+    }
+  });
+
+  return node;
+}
+
+function loadContentDocument(productDir, locale) {
+  const sourceDocument = loadSourceDocument(productDir);
+  const catalog = loadLocaleCatalog(productDir, locale);
+  const localizedDocument = deepClone(sourceDocument);
+  localizeStructuredNode(localizedDocument, catalog);
+  return localizedDocument;
+}
+
+const DOCUMENT_TITLE_BY_SUFFIX = {
+  cn: '使用说明书',
+  en: 'User Manual',
+  de: 'Bedienungsanleitung',
+  it: "Manuale d'uso",
+};
+
+function documentTitleForLocale(locale) {
+  const suffix = langSuffix(locale);
+  return DOCUMENT_TITLE_BY_SUFFIX[suffix] || DOCUMENT_TITLE_BY_SUFFIX.en;
+}
+
+let themeRegistryCache = null;
+
+function loadBrandThemes() {
+  if (themeRegistryCache) {
+    return themeRegistryCache;
+  }
+
+  const themesPath = path.resolve(__dirname, '..', 'template', 'shared', 'base', 'brand-themes.json');
+  themeRegistryCache = readJson(themesPath);
+  return themeRegistryCache;
+}
+
+function resolveBrandTheme(brandKey) {
+  const themes = loadBrandThemes();
+  return themes[brandKey] || themes.default || { html: {}, docx: {} };
+}
+
+function buildThemeStyleOverrides(brandKey) {
+  const theme = resolveBrandTheme(brandKey);
+  const htmlVars = theme.html || {};
+  const entries = Object.entries(htmlVars);
+  if (!entries.length) {
+    return '';
+  }
+
+  const declarations = entries.map(([key, value]) => `  ${key}: ${value};`).join('\n');
+  return `:root {\n${declarations}\n}`;
+}
+
+function getBrandDisplayName(brandData, locale) {
+  const suffix = langSuffix(locale);
+  if (suffix === 'cn' && brandData.display_name_cn) {
+    return brandData.display_name_cn;
+  }
+  return brandData.display_name;
+}
+
+function getBrandAddress(brandData, locale) {
+  const suffix = langSuffix(locale);
+  if (suffix === 'cn' && brandData.address_cn) {
+    return brandData.address_cn;
+  }
+  return brandData.address;
+}
+
+function getManufacturerName(config, locale) {
+  const suffix = langSuffix(locale);
+  if (suffix === 'cn' && config.manufacturer.name_cn) {
+    return config.manufacturer.name_cn;
+  }
+  return config.manufacturer.name_en;
+}
+
+function getManufacturerAddress(config, locale) {
+  const suffix = langSuffix(locale);
+  if (suffix === 'cn' && config.manufacturer.address_cn) {
+    return config.manufacturer.address_cn;
+  }
+  return config.manufacturer.address_en;
+}
+
+function buildLocalizedUiLabels(config, catalog, locale) {
+  const suffix = langSuffix(locale);
+  const baseLabels = config.ui_labels[suffix] || config.ui_labels.en || {};
+  const localized = {};
+
+  for (const [key, value] of Object.entries(baseLabels)) {
+    localized[key] = translateCatalogString(catalog, `product.ui_labels.${key}`, value);
+  }
+
+  if (!localized.cover_subtitle) {
+    localized.cover_subtitle = translateCatalogString(catalog, 'system.document_title', documentTitleForLocale(locale));
+  }
+
+  return localized;
+}
+
+function buildLocalizedRuntimeData(config, catalog, brandKey, marketKey, locale) {
+  const suffix = langSuffix(locale);
+  const rawBrand = config.brands[brandKey];
+  const rawManufacturer = config.manufacturer;
+  const rawSpecs = config.specs[marketKey];
+
+  const brand = {
+    display_name: translateCatalogString(catalog, `product.brands.${brandKey}.display_name`, getBrandDisplayName(rawBrand, locale)),
+    name: translateCatalogString(catalog, `product.brands.${brandKey}.name`, rawBrand.name),
+    address: translateCatalogString(catalog, `product.brands.${brandKey}.address`, getBrandAddress(rawBrand, locale)),
+    website: rawBrand.website,
+    support_email: rawBrand.support_email,
+  };
+
+  const manufacturer = {
+    name_primary: translateCatalogString(catalog, 'product.manufacturer.name', getManufacturerName(config, locale)),
+    name_secondary: rawManufacturer.name_en,
+    address: translateCatalogString(catalog, 'product.manufacturer.address', getManufacturerAddress(config, locale)),
+    website: rawManufacturer.website,
+  };
+
+  const labels = buildLocalizedUiLabels(config, catalog, locale);
+  const productName = translateCatalogString(catalog, 'product.product.name', pickField(config.product, 'name', suffix));
+  const documentTitle = translateCatalogString(catalog, 'system.document_title', documentTitleForLocale(locale));
+
+  const specs = {
+    rows: (rawSpecs.rows || []).map((row, index) => ({
+      label: translateCatalogString(catalog, `product.specs.${marketKey}.rows.${index}.label`, pickField(row, 'label', suffix)),
+      value: translateCatalogString(catalog, `product.specs.${marketKey}.rows.${index}.value`, pickField(row, 'value', suffix) || row.value),
+    })),
+  };
+
+  const parts = (config.parts || []).map((part) => ({
+    id: part.id,
+    name: translateCatalogString(catalog, `product.parts.${part.id}.name`, pickField(part, 'name', suffix)),
+  }));
+
+  const buttons = (config.buttons || []).map((button) => ({
+    id: button.id,
+    key: button.key,
+    name: translateCatalogString(catalog, `product.buttons.${button.id}.name`, pickField(button, 'name', suffix)),
+    desc: translateCatalogString(catalog, `product.buttons.${button.id}.desc`, pickField(button, 'desc', suffix)),
+  }));
+
+  return {
+    localized: {
+      product_name: productName,
+      document_title: documentTitle,
+      document_title_upper: suffix === 'cn' ? documentTitle : documentTitle.toUpperCase(),
+    },
+    labels,
+    brand,
+    manufacturer,
+    specs,
+    parts,
+    buttons,
+    runtimeConfig: {
+      ...config,
+      parts,
+      buttons,
+    },
   };
 }
 
@@ -354,8 +500,18 @@ function renderFigureImage(figureRef, context, defaults = {}) {
   return `<img src="./${context.config.images_dir}/${figure.file}" alt="${escapeAttribute(figure.alt || '')}"${styleAttr(style)}>`;
 }
 
+function readTextValue(value) {
+  if (typeof value === 'string') {
+    return value;
+  }
+  if (value && typeof value === 'object' && typeof value.text === 'string') {
+    return value.text;
+  }
+  return '';
+}
+
 function renderBlockListItems(items = []) {
-  return items.map((item) => `<li>${renderTextTokens(item)}</li>`).join('\n');
+  return items.map((item) => `<li>${renderTextTokens(readTextValue(item))}</li>`).join('\n');
 }
 
 function renderTableRef(block, context) {
@@ -400,6 +556,9 @@ function renderTableRef(block, context) {
 
   const labels = tableLabels[context.suffix] || tableLabels.en;
   const headers = block.headers || labels[block.table];
+  const tableClasses = ['structured-table'];
+  if (block.table_class) tableClasses.push(block.table_class);
+  const tableClassAttr = ` class="${tableClasses.join(' ')}"`;
 
   if (Array.isArray(block.rows)) {
     const renderCell = (cell, isHeader = false) => {
@@ -419,7 +578,7 @@ function renderTableRef(block, context) {
       .map((row) => `<tr>${row.map((cell) => renderCell(cell)).join('')}</tr>`)
       .join('\n');
 
-    return `<table>
+    return `<table${tableClassAttr}>
     ${headerHtml}
     <tbody>
 ${rowsHtml}
@@ -429,35 +588,35 @@ ${rowsHtml}
 
   switch (block.table) {
     case 'specs':
-      return `<table>
+      return `<table${tableClassAttr}>
     <thead><tr><th>${headers[0]}</th><th>${headers[1]}</th></tr></thead>
     <tbody>
 ${context.builders.buildSpecsRows(context.specs)}
     </tbody>
   </table>`;
     case 'parts':
-      return `<table>
+      return `<table${tableClassAttr}>
     <thead><tr><th style="width:15%;">${headers[0]}</th><th>${headers[1]}</th><th style="width:15%;">${headers[2]}</th><th>${headers[3]}</th></tr></thead>
     <tbody>
 ${context.builders.buildPartsRows(context.config.parts)}
     </tbody>
   </table>`;
     case 'buttons':
-      return `<table>
+      return `<table${tableClassAttr}>
     <thead><tr><th style="width:45%;">${headers[0]}</th><th>${headers[1]}</th></tr></thead>
     <tbody>
 ${context.builders.buildButtonsRows(context.config.buttons)}
     </tbody>
   </table>`;
     case 'brand_info':
-      return `<table>
+      return `<table${tableClassAttr}>
     <thead><tr><th style="width:30%;">${headers[0]}</th><th>${headers[1]}</th></tr></thead>
     <tbody>
 ${context.builders.buildBrandInfoRows(context.brand)}
     </tbody>
   </table>`;
     case 'manufacturer_info':
-      return `<table>
+      return `<table${tableClassAttr}>
     <thead><tr><th style="width:30%;">${headers[0]}</th><th>${headers[1]}</th></tr></thead>
     <tbody>
 ${context.builders.buildManufacturerRows(context.mfr)}
@@ -586,7 +745,7 @@ function renderStepFlow(block, context) {
 function renderQaList(block) {
   return `<div class="qa-list">
     ${(block.items || []).map((item) => `<div class="qa-item">
-      <div class="sub-title">${renderTextTokens(item.question)}</div>
+      <div class="sub-title">${renderTextTokens(readTextValue(item.question || item.question_text || ''))}</div>
       <ul class="bullet-list">
         ${renderBlockListItems(item.answers || [])}
       </ul>
@@ -595,9 +754,9 @@ function renderQaList(block) {
 }
 
 function renderContactBlock(block) {
-  const email = block.email ? `<b>${renderTextTokens(block.email)}</b>` : '';
-  const text = renderTextTokens(block.text || '');
-  const cutLine = block.cut_line ? `<div class="contact-cut-line">${renderTextTokens(block.cut_line)}</div>` : '';
+  const email = block.email ? `<b>${renderTextTokens(readTextValue(block.email))}</b>` : '';
+  const text = renderTextTokens(readTextValue(block.text || ''));
+  const cutLine = block.cut_line ? `<div class="contact-cut-line">${renderTextTokens(readTextValue(block.cut_line))}</div>` : '';
   return `<div class="contact-block">
     <p>${text}${email}</p>
     ${cutLine}
@@ -608,7 +767,7 @@ function renderWarrantyCard(block, context) {
   const fields = block.fields || [];
   return `<table class="warranty-card">
     <tbody>
-      ${fields.map((field) => `<tr><td>${renderTextTokens(field)}</td><td></td></tr>`).join('\n')}
+      ${fields.map((field) => `<tr><td>${renderTextTokens(readTextValue(field))}</td><td></td></tr>`).join('\n')}
     </tbody>
   </table>`;
 }
@@ -802,16 +961,6 @@ function validateProceduralImageUsage(chapters, imagesManifest) {
   }
 }
 
-function docTypeLabel(suffix) {
-  const labels = {
-    cn: '使用说明书',
-    en: 'User Manual',
-    de: 'Bedienungsanleitung',
-    it: "Manuale d'uso",
-  };
-  return labels[suffix] || labels.en;
-}
-
 function renderStructuredDocument(documentSchema, context) {
   const chapters = documentSchema.chapters.filter((chapter) => chapter.enabled !== false);
   validateProceduralImageUsage(chapters, context.images);
@@ -842,7 +991,7 @@ function renderStructuredDocument(documentSchema, context) {
   </div>
   ${sectionTitle}
   ${blocks}
-  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} ${docTypeLabel(context.suffix)}</span><span>${pageNo}</span></div>
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} ${context.localized.document_title}</span><span>${pageNo}</span></div>
 </div>`);
       pageNo += 1;
     }
@@ -888,10 +1037,15 @@ function buildVariant(regionCode, brandOverride) {
     process.exit(1);
   }
 
-  const brand = config.brands[activeBrand];
-  const specs = config.specs[activeMarket];
-  const mfr   = config.manufacturer;
   const model = config.product.model;
+  const themeStyleOverrides = buildThemeStyleOverrides(activeBrand);
+  const localeCatalog = loadLocaleCatalog(productDir, lang);
+  const localizedRuntime = buildLocalizedRuntimeData(config, localeCatalog, activeBrand, activeMarket, lang);
+  const brand = localizedRuntime.brand;
+  const specs = localizedRuntime.specs;
+  const mfr   = localizedRuntime.manufacturer;
+  const labels = localizedRuntime.labels;
+  const runtimeConfig = localizedRuntime.runtimeConfig;
 
   console.log(`Building: ${model} | region=${regionCode} | brand=${activeBrand} (${brand.display_name}) | market=${activeMarket} | lang=${lang}`);
 
@@ -916,18 +1070,18 @@ function buildVariant(regionCode, brandOverride) {
     'brand.website':           brand.website,
     'brand.support_email':     brand.support_email,
     'product.model':           model,
-    'product.name_cn':         config.product.name_cn,
-    'product.name_en':         config.product.name_en,
-    'product.name_de':         config.product.name_de,
-    'product.name_it':         config.product.name_it,
+    'product.name':            localizedRuntime.localized.product_name,
+    'product.name_cn':         localizedRuntime.localized.product_name,
+    'product.name_en':         localizedRuntime.localized.product_name,
+    'product.name_de':         localizedRuntime.localized.product_name,
+    'product.name_it':         localizedRuntime.localized.product_name,
     'product.cover_image':     config.product.cover_image || '',
-    'manufacturer.name_cn':    mfr.name_cn,
-    'manufacturer.name_en':    mfr.name_en,
-    'manufacturer.address_cn': mfr.address_cn,
-    'manufacturer.address_en': mfr.address_en,
     'manufacturer.website':    mfr.website,
     'warranty.years':          String(config.warranty.years),
     'images_dir':              config.images_dir,
+    'localized.product_name':  localizedRuntime.localized.product_name,
+    'localized.document_title': localizedRuntime.localized.document_title,
+    'localized.document_title_upper': localizedRuntime.localized.document_title_upper,
   };
 
   for (const [key, value] of Object.entries(vars)) {
@@ -939,9 +1093,7 @@ function buildVariant(regionCode, brandOverride) {
   function buildSpecsRows(specsData) {
     return specsData.rows
       .map(r => {
-        const label = pickField(r, 'label', suffix);
-        const value = pickField(r, 'value', suffix) || r.value;
-        return `      <tr><td>${label}</td><td>${value}</td></tr>`;
+        return `      <tr><td>${r.label}</td><td>${r.value}</td></tr>`;
       })
       .join('\n');
   }
@@ -952,9 +1104,9 @@ function buildVariant(regionCode, brandOverride) {
     for (let i = 0; i < half; i++) {
       const left = parts[i];
       const right = parts[i + half];
-      const leftName  = pickField(left, 'name', suffix);
+      const leftName  = left.name;
       const rightId   = right ? right.id : '';
-      const rightName = right ? pickField(right, 'name', suffix) : '';
+      const rightName = right ? right.name : '';
       rows.push(`      <tr><td>${left.id}</td><td>${leftName}</td><td>${rightId}</td><td>${rightName}</td></tr>`);
     }
     return rows.join('\n');
@@ -964,14 +1116,12 @@ function buildVariant(regionCode, brandOverride) {
     return buttons
       .map(b => {
         const keyEscaped = b.key.replace(/&/g, '&amp;');
-        const bName = pickField(b, 'name', suffix);
-        const bDesc = pickField(b, 'desc', suffix);
+        const bName = b.name;
+        const bDesc = b.desc;
         return `      <tr><td><span class="callout-no">${b.id}</span> <span class="btn-name">${keyEscaped}</span>\u3000${bName}</td><td>${bDesc}</td></tr>`;
       })
       .join('\n');
   }
-
-  const labels = config.ui_labels[suffix] || config.ui_labels.en;
 
   function buildBrandInfoRows(brandData) {
     return [
@@ -984,22 +1134,23 @@ function buildVariant(regionCode, brandOverride) {
 
   function buildManufacturerRows(mfrData) {
     return [
-      `      <tr><td style="width:30%">${labels.manufacturer_label}</td><td><b>${mfrData.name_cn}</b><br><span style="font-weight:400;font-size:12px;color:#666">${mfrData.name_en}</span></td></tr>`,
-      `      <tr><td>${labels.address_label}</td><td>${suffix === 'cn' ? mfrData.address_cn : mfrData.address_en}</td></tr>`,
+      `      <tr><td style="width:30%">${labels.manufacturer_label}</td><td><b>${mfrData.name_primary}</b>${mfrData.name_secondary && mfrData.name_secondary !== mfrData.name_primary ? `<br><span style="font-weight:400;font-size:12px;color:#666">${mfrData.name_secondary}</span>` : ''}</td></tr>`,
+      `      <tr><td>${labels.address_label}</td><td>${mfrData.address}</td></tr>`,
       `      <tr><td>${labels.website_label}</td><td>${mfrData.website}</td></tr>`,
     ].join('\n');
   }
 
   const imagesManifest = loadImagesManifest(productDir);
-  const documentSchema = loadContentDocument(productDir, templateLang);
+  const documentSchema = loadContentDocument(productDir, lang);
   const renderedDocument = renderDocument(documentSchema, {
-    config,
+    config: runtimeConfig,
     brand,
     specs,
     mfr,
     model,
     suffix,
     labels,
+    localized: localizedRuntime.localized,
     images: imagesManifest,
     builders: {
       buildSpecsRows,
@@ -1011,6 +1162,7 @@ function buildVariant(regionCode, brandOverride) {
   });
 
   html = replaceTemplateSlots(html, {
+    THEME_STYLE_OVERRIDES: themeStyleOverrides,
     AUTO_TOC: renderedDocument.tocHtml,
     DOCUMENT_BODY: renderedDocument.documentHtml,
   });
@@ -1022,8 +1174,8 @@ function buildVariant(regionCode, brandOverride) {
 
   const blocks = {
     'SPECS_TABLE_ROWS':        buildSpecsRows(specs),
-    'PARTS_TABLE_ROWS':        buildPartsRows(config.parts),
-    'BUTTONS_TABLE_ROWS':      buildButtonsRows(config.buttons),
+    'PARTS_TABLE_ROWS':        buildPartsRows(runtimeConfig.parts),
+    'BUTTONS_TABLE_ROWS':      buildButtonsRows(runtimeConfig.buttons),
     'BRAND_INFO_ROWS':         buildBrandInfoRows(brand),
     'MANUFACTURER_INFO_ROWS':  buildManufacturerRows(mfr),
   };
@@ -1031,11 +1183,6 @@ function buildVariant(regionCode, brandOverride) {
   for (const [key, value] of Object.entries(blocks)) {
     const pattern = new RegExp(`{{#${key}}}`, 'g');
     html = html.replace(pattern, value);
-  }
-
-  // Traditional Chinese conversion for HK/TW
-  if (region.convert === 'traditional') {
-    html = toTraditional(html);
   }
 
   // Validate — no remaining placeholders
@@ -1112,7 +1259,12 @@ module.exports = {
   pickField,
   loadProductConfig,
   loadImagesManifest,
+  loadSourceDocument,
+  loadLocaleCatalog,
   loadContentDocument,
+  buildLocalizedRuntimeData,
+  buildThemeStyleOverrides,
+  resolveBrandTheme,
   renderDocument,
   replaceTemplateSlots,
   renderTextTokens,

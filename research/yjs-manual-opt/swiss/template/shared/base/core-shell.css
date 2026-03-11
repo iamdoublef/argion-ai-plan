@@ -5,6 +5,11 @@
   --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
   --swiss-gray-text: #8E8E93;
+  --brand-accent: var(--swiss-red);
+  --brand-cover-divider: var(--swiss-red);
+  --brand-cover-model: var(--swiss-red);
+  --brand-cover-line: var(--swiss-red);
+  --brand-footer-border: var(--swiss-black);
   --page-width: 148mm;
   --page-height: 210mm;
   --page-margin: 10mm;
@@ -316,6 +321,11 @@ table {
   table-layout: fixed;
 }
 
+.structured-table.table-compact {
+  margin: 6px 0;
+  font-size: 8.4px;
+}
+
 th {
   background: var(--swiss-black);
   color: #FFF;
@@ -334,6 +344,17 @@ td {
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;
+}
+
+.structured-table.table-compact th {
+  padding: 4px 5px;
+  font-size: 7.4px;
+  letter-spacing: 0.25px;
+}
+
+.structured-table.table-compact td {
+  padding: 4px 5px;
+  line-height: 1.35;
 }
 
 tr:nth-child(even) td {
@@ -448,7 +469,7 @@ tr:nth-child(even) td {
   display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-line);
   margin-right: 6px;
   vertical-align: middle;
 }
@@ -457,7 +478,7 @@ tr:nth-child(even) td {
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 2.2px;
-  color: var(--swiss-red);
+  color: var(--brand-cover-model);
   text-transform: uppercase;
   margin-bottom: 4px;
   font-family: "Courier New", monospace;
@@ -487,12 +508,12 @@ tr:nth-child(even) td {
 .cover-divider {
   width: 28px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-divider);
   margin: 10px 0;
 }
 
 .cover-bottom {
-  border-top: 2px solid var(--swiss-black);
+  border-top: 2px solid var(--brand-footer-border);
   padding-top: 6px;
   font-size: 7.2px;
   color: var(--swiss-gray-text);

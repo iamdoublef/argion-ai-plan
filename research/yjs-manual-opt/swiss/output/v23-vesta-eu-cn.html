@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>V23 真空封口机 使用说明书 — Vesta</title>
+<title>V23 真空封口机 说明书 — Vesta</title>
 <style>
 /* SHARED SWISS CN MASTER */
 /* SHARED SWISS BASE MASTER */
@@ -13,6 +13,11 @@
   --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
   --swiss-gray-text: #8E8E93;
+  --brand-accent: var(--swiss-red);
+  --brand-cover-divider: var(--swiss-red);
+  --brand-cover-model: var(--swiss-red);
+  --brand-cover-line: var(--swiss-red);
+  --brand-footer-border: var(--swiss-black);
   --page-width: 148mm;
   --page-height: 210mm;
   --page-margin: 10mm;
@@ -324,6 +329,11 @@ table {
   table-layout: fixed;
 }
 
+.structured-table.table-compact {
+  margin: 6px 0;
+  font-size: 8.4px;
+}
+
 th {
   background: var(--swiss-black);
   color: #FFF;
@@ -342,6 +352,17 @@ td {
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;
+}
+
+.structured-table.table-compact th {
+  padding: 4px 5px;
+  font-size: 7.4px;
+  letter-spacing: 0.25px;
+}
+
+.structured-table.table-compact td {
+  padding: 4px 5px;
+  line-height: 1.35;
 }
 
 tr:nth-child(even) td {
@@ -456,7 +477,7 @@ tr:nth-child(even) td {
   display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-line);
   margin-right: 6px;
   vertical-align: middle;
 }
@@ -465,7 +486,7 @@ tr:nth-child(even) td {
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 2.2px;
-  color: var(--swiss-red);
+  color: var(--brand-cover-model);
   text-transform: uppercase;
   margin-bottom: 4px;
   font-family: "Courier New", monospace;
@@ -495,12 +516,12 @@ tr:nth-child(even) td {
 .cover-divider {
   width: 28px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-divider);
   margin: 10px 0;
 }
 
 .cover-bottom {
-  border-top: 2px solid var(--swiss-black);
+  border-top: 2px solid var(--brand-footer-border);
   padding-top: 6px;
   font-size: 7.2px;
   color: var(--swiss-gray-text);
@@ -687,6 +708,14 @@ tr:nth-child(even) td {
   .rollbag-figure img { max-width: 74mm; }
 }
 
+:root {
+  --swiss-red: #2E75B6;
+  --brand-accent: #2E75B6;
+  --brand-cover-divider: #2E75B6;
+  --brand-cover-model: #2E75B6;
+  --brand-cover-line: #2E75B6;
+  --brand-footer-border: #1F4E79;
+}
 </style>
 </head>
 <body>
@@ -702,7 +731,7 @@ tr:nth-child(even) td {
     </div>
     <div class="cover-model">MODEL V23</div>
     <div class="cover-title">真空封口机</div>
-    <div class="cover-subtitle">使用说明书</div>
+    <div class="cover-subtitle">说明书</div>
     <div class="cover-divider"></div>
   </div>
   <div class="cover-bottom" style="position:absolute;left:14mm;right:14mm;bottom:15mm;">
@@ -716,7 +745,7 @@ tr:nth-child(even) td {
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">V23 — USER MANUAL</div>
+    <div class="header-ref">V23 — 说明书</div>
   </div>
   <div class="toc-title">目录</div>
     <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">安全须知</span></span><span class="toc-page">3</span></div>
@@ -730,7 +759,7 @@ tr:nth-child(even) td {
 <div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">真空包装特性</span></span><span class="toc-page">20</span></div>
 <div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">品牌与保修信息</span></span><span class="toc-page">22</span></div>
 
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>2</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>2</span></div>
 </div>
 
 <div class="page">
@@ -777,7 +806,7 @@ tr:nth-child(even) td {
 <li>请保留购买凭证，以便享受保修服务。</li>
           </ul>
       </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>3</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>3</span></div>
 </div>
 
 <div class="page">
@@ -797,7 +826,7 @@ tr:nth-child(even) td {
 <li>如果需要质地柔软、含水分多的食物在包装后保持形状，可选择冷冻后进行真空封装。</li>
 <li>勿在面盖上放置重物，有可能损坏机器。</li>
       </ul>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>4</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>4</span></div>
 </div>
 
 <div class="page compact-structure">
@@ -810,7 +839,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image5.svg" alt="Product structure diagram" style="max-height:46mm;object-fit:contain">
     
   </div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:15%;">编号</th><th>名称</th><th style="width:15%;">编号</th><th>名称</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>锁扣把手</td><td>8</td><td>卷袋支撑管</td></tr>
@@ -827,7 +856,7 @@ tr:nth-child(even) td {
         
         工作结束后，发热器温度很高，请不要触摸，以免烫伤！
       </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>5</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>5</span></div>
 </div>
 
 <div class="page compact-functions">
@@ -840,7 +869,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image10.svg" alt="Control panel diagram" style="max-height:20mm;object-fit:contain">
     
   </div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:45%;">No. / 按键</th><th>功能说明</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Vac&amp;Seal / Start</span>　抽气密封 / 开始</td><td>点击此按键，将执行所选模式进行工作。</td></tr>
@@ -852,7 +881,7 @@ tr:nth-child(even) td {
       <tr><td><span class="callout-no">7</span> <span class="btn-name">Extend Seal Time</span>　延长密封时间</td><td>在工作前点击，可延长密封时间。</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>6</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>6</span></div>
 </div>
 
 <div class="page">
@@ -861,7 +890,7 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.05 — SPECIFICATIONS</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">05</span>技术参数</h2>
-  <table>
+  <table class="structured-table">
     <thead><tr><th>参数</th><th>规格</th></tr></thead>
     <tbody>
       <tr><td>电压</td><td>220~240 Vac</td></tr>
@@ -875,7 +904,7 @@ tr:nth-child(even) td {
       <tr><td>重量</td><td>3.0 kg</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>7</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>7</span></div>
 </div>
 
 <div class="page compact-ops">
@@ -992,7 +1021,7 @@ tr:nth-child(even) td {
       <img src="./images_v23/image14.svg" alt="密封操作" style="width:34mm;height:auto;object-fit:contain;display:block">
     </div>
   </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>8</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>8</span></div>
 </div>
 
 <div class="page compact-ops">
@@ -1012,7 +1041,7 @@ tr:nth-child(even) td {
         
         启用 Extend Seal Time 功能时，将暂时禁用智能密封调节功能，连续工作时每次工作间隔需大于 20s，并打开面盖以便机器散热。
       </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>9</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>9</span></div>
 </div>
 
 <div class="page compact-ops">
@@ -1110,7 +1139,7 @@ tr:nth-child(even) td {
       <img src="./images_v23/image16.svg" alt="液体模式" style="width:30mm;height:auto;object-fit:contain;display:block">
     </div>
   </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>10</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>10</span></div>
 </div>
 
 <div class="page compact-ops">
@@ -1187,7 +1216,7 @@ tr:nth-child(even) td {
         
         在手动真空过程中，长按按键抽气，松开暂停，此时会处于保压的状态。若 10 秒内不进行再次操作，机器将自动释放压力，并退出手动抽气模式。
       </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>11</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>11</span></div>
 </div>
 
 <div class="page compact-accessories">
@@ -1283,7 +1312,7 @@ tr:nth-child(even) td {
 <img src="./images_v23/image22.svg" alt="Mason Jar Operation" style="width:28mm;height:auto;object-fit:contain;display:block">
     </div>
   </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>12</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>12</span></div>
 </div>
 
 <div class="page compact-accessories">
@@ -1358,7 +1387,7 @@ tr:nth-child(even) td {
       <img src="./images_v23/image24.svg" alt="真空罐操作" style="width:30mm;height:auto;object-fit:contain;display:block">
     </div>
   </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>13</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>13</span></div>
 </div>
 
 <div class="page">
@@ -1433,7 +1462,7 @@ tr:nth-child(even) td {
       <img src="./images_v23/image26.svg" alt="腌制操作" style="width:30mm;height:auto;object-fit:contain;display:block">
     </div>
   </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>14</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>14</span></div>
 </div>
 
 <div class="page">
@@ -1452,7 +1481,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image28.svg" alt="单卷袋放置" style="object-fit:contain">
 <img src="./images_v23/image30.svg" alt="双卷袋放置" style="object-fit:contain">
   </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>15</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>15</span></div>
 </div>
 
 <div class="page">
@@ -1461,7 +1490,7 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>故障排除</h2>
-  <table>
+  <table class="structured-table table-compact">
     <thead><tr><th style="width:22%;">故障现象</th><th style="width:40%;">可能原因</th><th style="width:38%;">解决方案</th></tr></thead>
     <tbody>
 <tr><td rowspan="3"><b>不能开机</b></td><td>电源线未正确插入电源插座</td><td>确保电源线已正确插入。</td></tr>
@@ -1492,7 +1521,7 @@ tr:nth-child(even) td {
         
         若以上故障排除方案均无法解决问题，请联系客服指引解决，请不要擅自拆卸机器。
       </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>16</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>16</span></div>
 </div>
 
 <div class="page">
@@ -1501,7 +1530,7 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>故障排除（附件与报警）</h2>
-  <table>
+  <table class="structured-table">
     <thead><tr><th style="width:22%;">故障现象</th><th style="width:40%;">可能原因</th><th style="width:38%;">解决方案</th></tr></thead>
     <tbody>
 <tr><td rowspan="3"><b>Accessories 模式无法抽气</b></td><td>真空软管扁形吸嘴未完全插入外抽气孔</td><td>用力旋转下压扁形吸嘴，使其完全插入。</td></tr>
@@ -1511,7 +1540,7 @@ tr:nth-child(even) td {
 <tr><td>真空工作过程中连续蜂鸣</td><td>机器无法达到目标压力，检查把手锁紧及袋子是否破损，更换新袋重试。</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>17</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>17</span></div>
 </div>
 
 <div class="page">
@@ -1616,7 +1645,7 @@ tr:nth-child(even) td {
         
         如果长期不清洁，内部管道可能会堵塞，影响抽气性能，此时请联系售后进行管道更换。
       </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>18</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>18</span></div>
 </div>
 
 <div class="page">
@@ -1636,7 +1665,7 @@ tr:nth-child(even) td {
 <li>每次工作结束后，检查密封圈是否已经变形严重，高温胶布是否已经破损/脱落，如有，则请及时替换。</li>
 <li>液体槽和真空软管不支持高温清洁，如洗碗机清洁。</li>
       </ul>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>19</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>19</span></div>
 </div>
 
 <div class="page">
@@ -1663,7 +1692,7 @@ tr:nth-child(even) td {
 <li>十字花科蔬菜（花椰菜、芽菜、卷心菜等）在储存过程中会自然排放气体，煮熟、真空封装后建议存放在冰箱里。</li>
 <li>切忌真空储存大蒜或蘑菇等真菌食品。抽真空后会产生有害物质，食用会影响健康。</li>
       </ul>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>20</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>20</span></div>
 </div>
 
 <div class="page">
@@ -1673,7 +1702,7 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">09</span>真空包装特性（续）</h2>
   <div class="sub-title">食物真空保鲜期限参照</div>
-<table>
+<table class="structured-table">
     <thead><tr><th>储存方式</th><th>食物类别</th><th>常规储存</th><th>真空包装</th></tr></thead>
     <tbody>
 <tr><td rowspan="4">冷冻储存</td><td>肉类</td><td>6 月</td><td>15–20 月</td></tr>
@@ -1695,7 +1724,7 @@ tr:nth-child(even) td {
 <tr><td>咖啡 / 茶叶 / 奶粉</td><td>2–6 月</td><td>12 月</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>21</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>21</span></div>
 </div>
 
 <div class="page compact-warranty">
@@ -1706,7 +1735,7 @@ tr:nth-child(even) td {
   <h2 class="section-title"><span class="chapter-num">10</span>品牌与保修信息</h2>
   <p>感谢您购买 Vesta 真空封口机。如有任何问题，请通过以下方式联系我们：<br>support@vestaprecision.com | www.vestaprecision.com</p>
 <div class="sub-title">品牌商信息</div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:30%;">项目</th><th>信息</th></tr></thead>
     <tbody>
       <tr><td style="width:30%">品牌商</td><td><b>Precision Appliance Technology, Inc.</b></td></tr>
@@ -1716,7 +1745,7 @@ tr:nth-child(even) td {
     </tbody>
   </table>
 <div class="sub-title">授权制造商</div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:30%;">项目</th><th>信息</th></tr></thead>
     <tbody>
       <tr><td style="width:30%">制造商</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
@@ -1736,7 +1765,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image31.png" alt="Warranty separator" style="max-height:4mm;max-width:100%;object-fit:contain">
     
   </div>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>22</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>22</span></div>
 </div>
 
 <div class="page compact-warranty">
@@ -1759,12 +1788,11 @@ tr:nth-child(even) td {
 <tr><td>商户名称</td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 使用说明书</span><span>23</span></div>
+  <div class="page-footer"><span>Vesta V23 说明书</span><span>23</span></div>
 </div>
 
 </body>
 </html>
-
 
 
 

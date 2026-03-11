@@ -13,6 +13,11 @@
   --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
   --swiss-gray-text: #8E8E93;
+  --brand-accent: var(--swiss-red);
+  --brand-cover-divider: var(--swiss-red);
+  --brand-cover-model: var(--swiss-red);
+  --brand-cover-line: var(--swiss-red);
+  --brand-footer-border: var(--swiss-black);
   --page-width: 148mm;
   --page-height: 210mm;
   --page-margin: 10mm;
@@ -324,6 +329,11 @@ table {
   table-layout: fixed;
 }
 
+.structured-table.table-compact {
+  margin: 6px 0;
+  font-size: 8.4px;
+}
+
 th {
   background: var(--swiss-black);
   color: #FFF;
@@ -342,6 +352,17 @@ td {
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;
+}
+
+.structured-table.table-compact th {
+  padding: 4px 5px;
+  font-size: 7.4px;
+  letter-spacing: 0.25px;
+}
+
+.structured-table.table-compact td {
+  padding: 4px 5px;
+  line-height: 1.35;
 }
 
 tr:nth-child(even) td {
@@ -456,7 +477,7 @@ tr:nth-child(even) td {
   display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-line);
   margin-right: 6px;
   vertical-align: middle;
 }
@@ -465,7 +486,7 @@ tr:nth-child(even) td {
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 2.2px;
-  color: var(--swiss-red);
+  color: var(--brand-cover-model);
   text-transform: uppercase;
   margin-bottom: 4px;
   font-family: "Courier New", monospace;
@@ -495,12 +516,12 @@ tr:nth-child(even) td {
 .cover-divider {
   width: 28px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-divider);
   margin: 10px 0;
 }
 
 .cover-bottom {
-  border-top: 2px solid var(--swiss-black);
+  border-top: 2px solid var(--brand-footer-border);
   padding-top: 6px;
   font-size: 7.2px;
   color: var(--swiss-gray-text);
@@ -766,6 +787,14 @@ tr:nth-child(even) td {
   line-height: 1.28;
 }
 
+:root {
+  --swiss-red: #E63946;
+  --brand-accent: #E63946;
+  --brand-cover-divider: #E63946;
+  --brand-cover-model: #E63946;
+  --brand-cover-line: #E63946;
+  --brand-footer-border: #000000;
+}
 </style>
 </head>
 <body>
@@ -795,7 +824,7 @@ tr:nth-child(even) td {
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">WEVAC</div>
-    <div class="header-ref">V23 — USER MANUAL</div>
+    <div class="header-ref">V23 — MANUALE D'USO</div>
   </div>
   <div class="toc-title">Indice</div>
     <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Istruzioni di sicurezza</span></span><span class="toc-page">3</span></div>
@@ -805,9 +834,9 @@ tr:nth-child(even) td {
 <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Specifiche tecniche</span></span><span class="toc-page">7</span></div>
 <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Guida operativa</span></span><span class="toc-page">8</span></div>
 <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Risoluzione dei problemi</span></span><span class="toc-page">16</span></div>
-<div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Manutenzione</span></span><span class="toc-page">20</span></div>
-<div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Proprietà del confezionamento sottovuoto</span></span><span class="toc-page">21</span></div>
-<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Informazioni su marchio e garanzia</span></span><span class="toc-page">23</span></div>
+<div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Manutenzione</span></span><span class="toc-page">19</span></div>
+<div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Proprietà del confezionamento sottovuoto</span></span><span class="toc-page">20</span></div>
+<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Informazioni su marchio e garanzia</span></span><span class="toc-page">22</span></div>
 
   <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>2</span></div>
 </div>
@@ -889,7 +918,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image5.svg" alt="Product structure diagram" style="max-height:46mm;object-fit:contain">
     
   </div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:15%;">N.</th><th>Parte</th><th style="width:15%;">N.</th><th>Parte</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Maniglia di chiusura</td><td>8</td><td>Tubo di supporto rotolo</td></tr>
@@ -919,7 +948,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image10.svg" alt="Control panel diagram" style="max-height:20mm;object-fit:contain">
     
   </div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:45%;">N. / Pulsante</th><th>Descrizione</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Vac&amp;Seal / Start</span>　Aspira e sigilla / Avvio</td><td>Premere questo pulsante per avviare la modalità selezionata.</td></tr>
@@ -940,7 +969,7 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.05 — SPECIFICATIONS</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">05</span>Specifiche tecniche</h2>
-  <table>
+  <table class="structured-table">
     <thead><tr><th>Parametro</th><th>Specifica</th></tr></thead>
     <tbody>
       <tr><td>Tensione</td><td>220~240 Vac</td></tr>
@@ -1540,7 +1569,7 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi</h2>
-  <table>
+  <table class="structured-table table-compact">
     <thead><tr><th style="width:22%;">Problema</th><th style="width:40%;">Possibile causa</th><th style="width:38%;">Soluzione</th></tr></thead>
     <tbody>
 <tr><td rowspan="3"><b>L&#39;apparecchio non si accende</b></td><td>Il cavo non è inserito correttamente nella presa</td><td>Verificare che il cavo sia inserito correttamente.</td></tr>
@@ -1556,35 +1585,40 @@ tr:nth-child(even) td {
 <tr><td>Umidità, particelle o residui nell&#39;area di sigillatura</td><td>Pulire l&#39;area di sigillatura e riprovare.</td></tr>
 <tr><td>Barra di sigillatura non montata</td><td>Montare la barra di sigillatura.</td></tr>
 <tr><td>Tempo di sigillatura predefinito insufficiente</td><td>Premere <span class="btn-name">Extend Seal Time</span> per prolungare il tempo e riprovare.</td></tr>
+<tr><td rowspan="3"><b>真空密封后袋子漏气</b></td><td>高温胶布破损或脱落</td><td>及时替换高温胶布。</td></tr>
+<tr><td>发热温度异常导致袋子融化或密封不充分</td><td>参考抽气不干净和不能密封的解决方案。</td></tr>
+<tr><td>锋利物品刺穿袋子</td><td>用纸巾或防刺穿片包裹锋利边缘，使用新袋重试。</td></tr>
     </tbody>
   </table>
+<div class="note-box">
+        <div class="box-title">提示</div>
+        
+        一些水果和蔬菜在包装前如果没有正确地焯熟，或者热的食物，会释放气体，导致真空袋没有收紧，此类情况属于正常表现，不属于漏气。
+      </div>
+<div class="note-box">
+        
+        
+        若以上故障排除方案均无法解决问题，请联系客服指引解决，请不要擅自拆卸机器。
+      </div>
   <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>16</span></div>
 </div>
 
-<div class="page compact-troubleshoot">
+<div class="page">
   <div class="header-strip">
     <div class="header-brand">WEVAC</div>
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi (Seguito)</h2>
-  <table>
+  <table class="structured-table">
     <thead><tr><th style="width:22%;">Problema</th><th style="width:40%;">Possibile causa</th><th style="width:38%;">Soluzione</th></tr></thead>
     <tbody>
 <tr><td rowspan="3"><b>Il sacchetto perde aria dopo il sottovuoto</b></td><td>Nastro ad alta temperatura danneggiato o staccato</td><td>Sostituire il nastro ad alta temperatura.</td></tr>
 <tr><td>Temperatura anomala che scioglie il sacchetto o sigillatura insufficiente</td><td>Vedere le soluzioni per aspirazione insufficiente e sigillatura non riuscita.</td></tr>
 <tr><td>Oggetti appuntiti che perforano il sacchetto</td><td>Avvolgere gli spigoli con carta assorbente o fogli protettivi e usare un sacchetto nuovo.</td></tr>
+<tr><td rowspan="2"><b>错误报警（蜂鸣声长鸣 + 指示灯快闪）</b></td><td>按下 Vac&amp;Seal/Start 或 Seal 后报警</td><td>检查面盖是否闭合，把手是否已下压锁紧。</td></tr>
+<tr><td>真空工作过程中连续蜂鸣</td><td>机器无法达到目标压力，检查把手锁紧及袋子是否破损，更换新袋重试。</td></tr>
     </tbody>
   </table>
-<div class="note-box">
-        <div class="box-title">NOTA</div>
-        
-        Alcuni frutti e verdure, se non sbollentati correttamente prima del confezionamento, o alimenti caldi, rilasciano gas e il sacchetto non si contrae; è un comportamento normale, non una perdita.
-      </div>
-<div class="note-box">
-        
-        
-        Se nessuna delle soluzioni sopra risolve il problema, contattare l&#39;assistenza clienti; non smontare l&#39;apparecchio da soli.
-      </div>
   <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>17</span></div>
 </div>
 
@@ -1594,122 +1628,103 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi (Accessori e allarmi)</h2>
-  <table>
-    <thead><tr><th style="width:22%;">Problema</th><th style="width:40%;">Possibile causa</th><th style="width:38%;">Soluzione</th></tr></thead>
-    <tbody>
-<tr><td rowspan="3"><b>La modalità Accessories non aspira</b></td><td>L&#39;ugello piatto non è completamente inserito nell&#39;aspirazione esterna</td><td>Premere e ruotare con forza l&#39;ugello piatto fino a inserimento completo.</td></tr>
-<tr><td>La maniglia del coperchio non è abbassata e bloccata</td><td>Abbassare la maniglia per bloccare il coperchio e riprovare.</td></tr>
-<tr><td>Corpi estranei su guarnizione o camera del vuoto</td><td>Aprire il coperchio, rimuovere i corpi estranei, chiudere e riprovare.</td></tr>
-<tr><td rowspan="2"><b>Allarme errore (beep prolungato + LED lampeggianti)</b></td><td>Allarme dopo aver premuto Vac&amp;Seal/Start o Seal</td><td>Verificare che il coperchio sia chiuso e la maniglia abbassata e bloccata.</td></tr>
-<tr><td>Beep continuo durante il vuoto</td><td>L&#39;apparecchio non raggiunge la pressione target; verificare il blocco della maniglia e l&#39;integrità del sacchetto; sostituire con un sacchetto nuovo.</td></tr>
-    </tbody>
-  </table>
-  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>18</span></div>
-</div>
-
-<div class="page">
-  <div class="header-strip">
-    <div class="header-brand">WEVAC</div>
-    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
-  </div>
-  <h2 class="section-title"><span class="chapter-num">07</span>Risoluzione dei problemi (segue)</h2>
-  <div class="sub-title">Procedura in caso di liquidi entrati nell&#39;apparecchio</div>
-<p><b>Liquido nella camera del vuoto:</b></p>
+  <div class="sub-title">如因特殊原因，导致液体进入机器内部的处理方案</div>
+<p><b>液体进入真空腔中：</b></p>
 <div class="step-flow">
     <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">1</span>
-        <div class="step-text">Spegnere immediatamente l&#39;alimentazione e attendere almeno 5 minuti per il raffreddamento dell&#39;elemento riscaldante.</div>
+        <div class="step-text">立即关闭电源，等待至少 5 分钟，让机器发热器冷却。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">2</span>
-        <div class="step-text">Rimuovere il vassoio del liquido e asciugare il liquido.</div>
+        <div class="step-text">将液体槽取出，并清理擦干液体。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">3</span>
-        <div class="step-text">Asciugare il liquido nella camera del vuoto.</div>
+        <div class="step-text">将真空腔中的液体擦干。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">4</span>
-        <div class="step-text">Posizionare carta da cucina o un vassoio sotto l&#39;apparecchio e riaccendere.</div>
+        <div class="step-text">将机器底部铺垫厨房纸或托盘，重新通电。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">5</span>
-        <div class="step-text">Chiudere il coperchio, tenere premuto <span class="btn-name">Pulse Vac</span> per 20 secondi, poi premere <span class="btn-name">Stop</span> per rilasciare; ripetere 5 volte per espellere il liquido dai tubi interni.</div>
+        <div class="step-text">合上面盖，长按 <span class="btn-name">Pulse Vac</span> 按键抽气 20 秒，然后点击 <span class="btn-name">Stop</span> 排气，重复 5 次，让内部管道的液体排出。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">6</span>
-        <div class="step-text">Aprire il coperchio, posizionare carta da cucina o un vassoio sotto l&#39;apparecchio e lasciare asciugare in luogo ventilato per 48 ore senza capovolgere l&#39;apparecchio.</div>
+        <div class="step-text">打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 48 小时，期间不要翻倒机器。</div>
       </div>
       
     </div>
   </div>
-<p><b>Liquido sull&#39;elemento riscaldante:</b></p>
+<p><b>液体进入发热器：</b></p>
 <div class="step-flow">
     <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">1</span>
-        <div class="step-text">Non capovolgere l&#39;apparecchio; spegnere l&#39;alimentazione, attendere 10 minuti per il raffreddamento e lo scarico del liquido interno.</div>
+        <div class="step-text">请勿翻倒机器，关闭电源，等待 10 分钟，让发热器冷却及内部液体排出。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">2</span>
-        <div class="step-text">Pulire e asciugare il liquido dal vassoio, dalla camera del vuoto e dalla base.</div>
+        <div class="step-text">清理和擦干机器接水盘、真空腔、底部的液体。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">3</span>
-        <div class="step-text">Aprire il coperchio, posizionare carta da cucina o un vassoio sotto l&#39;apparecchio e lasciare asciugare in luogo ventilato per 24 ore senza capovolgere.</div>
+        <div class="step-text">打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 24 小时，期间不要翻倒机器。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">4</span>
-        <div class="step-text">Posizionare carta da cucina o un vassoio sotto l&#39;apparecchio e riaccendere.</div>
+        <div class="step-text">将机器底部铺垫厨房纸或托盘，重新通电。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">5</span>
-        <div class="step-text">Chiudere il coperchio, tenere premuto <span class="btn-name">Pulse Vac</span> per 20 secondi, poi premere <span class="btn-name">Stop</span> per rilasciare; ripetere 5 volte per espellere il liquido dai tubi interni.</div>
+        <div class="step-text">合上面盖，长按 <span class="btn-name">Pulse Vac</span> 按键抽气 20 秒，然后点击 <span class="btn-name">Stop</span> 排气，重复 5 次，让内部管道的液体排出。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">6</span>
-        <div class="step-text">Aprire il coperchio, posizionare carta da cucina o un vassoio sotto l&#39;apparecchio e lasciare asciugare in luogo ventilato per 48 ore senza capovolgere.</div>
+        <div class="step-text">打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 48 小时，期间不要翻倒机器。</div>
       </div>
       
     </div>
   </div>
 <div class="caution-box">
-        <div class="box-title">ATTENZIONE</div>
+        <div class="box-title">注意</div>
         
-        Se non si pulisce regolarmente, i tubi interni possono intasarsi e compromettere l&#39;aspirazione; in tal caso contattare l&#39;assistenza per la sostituzione dei tubi.
+        如果长期不清洁，内部管道可能会堵塞，影响抽气性能，此时请联系售后进行管道更换。
       </div>
-  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>19</span></div>
+  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>18</span></div>
 </div>
 
 <div class="page">
@@ -1729,7 +1744,7 @@ tr:nth-child(even) td {
 <li>Dopo ogni utilizzo, controllare che la guarnizione non sia gravemente deformata e che il nastro ad alta temperatura non sia danneggiato o staccato; in caso affermativo, sostituire.</li>
 <li>Il vassoio del liquido e il tubo non supportano la pulizia ad alta temperatura (es. lavastoviglie).</li>
       </ul>
-  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>20</span></div>
+  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>19</span></div>
 </div>
 
 <div class="page">
@@ -1756,7 +1771,7 @@ tr:nth-child(even) td {
 <li>Le crucifere (broccoli, germogli, cavolo, ecc.) rilasciano gas naturalmente durante la conservazione; dopo cottura e sottovuoto conservare in frigorifero.</li>
 <li>Non conservare sottovuoto aglio o funghi: il sottovuoto può produrre sostanze dannose per la salute.</li>
       </ul>
-  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>21</span></div>
+  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>20</span></div>
 </div>
 
 <div class="page">
@@ -1766,7 +1781,7 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">09</span>Proprietà del confezionamento sottovuoto (segue)</h2>
   <div class="sub-title">Riferimento durata conservazione sottovuoto</div>
-<table>
+<table class="structured-table">
     <thead><tr><th>Metodo di conservazione</th><th>Categoria alimenti</th><th>Conservazione normale</th><th>Sottovuoto</th></tr></thead>
     <tbody>
 <tr><td rowspan="4">Congelamento</td><td>Carne</td><td>6 mesi</td><td>15–20 mesi</td></tr>
@@ -1788,7 +1803,7 @@ tr:nth-child(even) td {
 <tr><td>Caffè / Tè / Latte in polvere</td><td>2–6 mesi</td><td>12 mesi</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>22</span></div>
+  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>21</span></div>
 </div>
 
 <div class="page compact-warranty">
@@ -1799,7 +1814,7 @@ tr:nth-child(even) td {
   <h2 class="section-title"><span class="chapter-num">10</span>Informazioni su marchio e garanzia</h2>
   <p>Grazie per aver acquistato WEVAC Sigillatrice Sottovuoto. Per qualsiasi domanda, contattarci:<br>support@wevactech.com | www.wevactech.com</p>
 <div class="sub-title">Informazioni sul marchio</div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:30%;">Campo</th><th>Informazione</th></tr></thead>
     <tbody>
       <tr><td style="width:30%">Marchio</td><td><b>WEVAC TECHNOLOGY CO., LIMITED</b></td></tr>
@@ -1809,10 +1824,10 @@ tr:nth-child(even) td {
     </tbody>
   </table>
 <div class="sub-title">Produttore autorizzato</div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:30%;">Campo</th><th>Informazione</th></tr></thead>
     <tbody>
-      <tr><td style="width:30%">Produttore</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td style="width:30%">Produttore</td><td><b>Guangzhou Argion Electric Appliance Co., Ltd.</b></td></tr>
       <tr><td>Indirizzo</td><td>No. 1, Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
       <tr><td>Sito web</td><td>www.argiontechnology.com</td></tr>
     </tbody>
@@ -1829,7 +1844,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image31.png" alt="Warranty separator" style="max-height:4mm;max-width:100%;object-fit:contain">
     
   </div>
-  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>23</span></div>
+  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>22</span></div>
 </div>
 
 <div class="page compact-warranty">
@@ -1852,7 +1867,7 @@ tr:nth-child(even) td {
 <tr><td>Nome rivenditore</td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>24</span></div>
+  <div class="page-footer"><span>WEVAC V23 Manuale d'uso</span><span>23</span></div>
 </div>
 
 </body>

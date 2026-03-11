@@ -1,0 +1,102 @@
+{
+  "chapter_id": "09-installation-storage-disposal",
+  "chapter_no": "09",
+  "title": "瀹夎杩愯緭銆佸瓨鍌ㄤ笌鎷嗛櫎",
+  "toc_title": "瀹夎杩愯緭銆佸瓨鍌ㄤ笌鎷嗛櫎",
+  "header_ref": "CH.09 鈥?INSTALLATION / STORAGE / DISPOSAL",
+  "pages": [
+    {
+      "page_class": "",
+      "section_title": "瀹夎杩愯緭銆佸瓨鍌ㄤ笌鎷嗛櫎",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "鍖呰杩愯緭",
+          "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.1.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "杩愯緭杩囩▼涓淇濇寔骞宠　锛岄槻姝㈠€剧炕锛涗骇鍝佸€炬枩瑙掍笉寰楀ぇ浜?45掳銆?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.2.item.1"
+            },
+            {
+              "text": "绉诲姩鎴栬繍杈撲骇鍝佹椂搴斾繚鎸佺洿绔嬬姸鎬侊紝閬垮厤鎹熷潖鍘嬬缉鏈哄拰鍒跺喎绯荤粺銆?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.2.item.2"
+            },
+            {
+              "text": "杩愯緭鍚庨渶闈欑疆 4 灏忔椂锛屽緟鍐峰獟绋冲畾鍚庡啀閫氱數銆?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.2.item.3"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "瀹夎",
+          "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.3.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "璇峰皢浜у搧瀹夎鍦ㄥ钩鏁淬€佺ǔ鍥恒€佸共鐕ョ殑鍙伴潰涓婏紝涓嶅緱鍊炬枩鏀剧疆銆?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.4.item.1"
+            },
+            {
+              "text": "鎼繍鏃朵笉瑕佹帹鎷変骇鍝侊紝浠ラ伩鍏嶅€捐鎴栨崯鍧忛儴浠躲€?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.4.item.2"
+            },
+            {
+              "text": "浜у搧鍥涘懆涓庡鎴栫墿鍝佷箣闂撮渶淇濇寔鑷冲皯 120mm锛?.7\"锛夌殑闂磋窛锛屼互纭繚閫氶鍜屽彲缁存姢鎬с€?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.4.item.3"
+            },
+            {
+              "text": "璇疯繙绂荤儹婧愩€佽捀姹藉拰闃冲厜鐩村皠鐜銆?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.4.item.4"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "瀛樺偍涓庢媶闄?",
+          "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.5.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "闀挎湡瀛樻斁鍓嶏紝璇锋帓绌烘按绠卞拰鍐呰厰涓殑姘达紝骞跺畬鎴愭竻娲佷笌鎿﹀共銆?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.6.item.1"
+            },
+            {
+              "text": "璇峰皢浜у搧缃簬骞茬嚗銆侀€氶鐜涓繚瀛橈紝閬垮厤閲嶅帇鍜屾疆婀裤€?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.6.item.2"
+            },
+            {
+              "text": "鏈骇鍝佸惈鐢靛瓙鍏冧欢鍜?R600a 鍒跺喎鍓傦紝涓嶅緱涓庣敓娲诲瀮鍦句竴鍚屼涪寮冦€?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.6.item.3"
+            },
+            {
+              "text": "鎷嗛櫎鎴栨姤搴熸椂锛岃鑱旂郴鎺堟潈鍥炴敹鏈烘瀯鎴栭浂鍞晢锛屾寜褰撳湴娉曡杩涜鐜繚澶勭疆銆?",
+              "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.6.item.4"
+            }
+          ]
+        },
+        {
+          "type": "notice_box",
+          "title": "WEEE / R600a",
+          "text": "璇峰嬁鎹熷潖鍒跺喎鍓傚洖璺€傝嫢闇€瑕佹姤搴熷鐞嗭紝璇蜂氦鐢卞叿澶囪祫璐ㄧ殑搴熷純鐗╁鐞嗘満鏋勫洖鏀讹紝浠ラ伩鍏嶅鐜鍜屼汉韬畨鍏ㄩ€犳垚椋庨櫓銆?",
+          "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.7.text",
+          "title_id": "content.chapter.09-installation-storage-disposal.page.page1.block.7.title"
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.09-installation-storage-disposal.page.page1.section_title"
+    }
+  ],
+  "title_id": "content.chapter.09-installation-storage-disposal.title",
+  "toc_title_id": "content.chapter.09-installation-storage-disposal.toc_title",
+  "header_ref_id": "content.chapter.09-installation-storage-disposal.header_ref"
+}

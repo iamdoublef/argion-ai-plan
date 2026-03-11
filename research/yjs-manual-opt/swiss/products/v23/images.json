@@ -1,0 +1,81 @@
+{
+  "cover.main": {
+    "file": "cover-image.png",
+    "alt": "Product cover image"
+  },
+  "safety.warning_icon": {
+    "file": "image3.png",
+    "alt": "Warning icon"
+  },
+  "structure.main": {
+    "file": "image5.svg",
+    "alt": "Product structure diagram"
+  },
+  "control_panel.main": {
+    "file": "image10.svg",
+    "alt": "Control panel diagram"
+  },
+  "warranty.separator.primary": {
+    "file": "image31.png",
+    "alt": "Warranty separator",
+    "kind": "shared"
+  },
+  "06-operation.page01.image01": {
+    "file": "image12.svg",
+    "alt": "切袋刀操作",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page1.block2.figure1"
+  },
+  "06-operation.page01.image02": {
+    "file": "image14.svg",
+    "alt": "密封操作",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page1.block7.figure1"
+  },
+  "06-operation.page02.image03": {
+    "file": "image16.svg",
+    "alt": "液体模式",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page3.block6.figure1"
+  },
+  "06-operation.page03.image04": {
+    "file": "image18.svg",
+    "alt": "真空软管",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page5.block2.figure1"
+  },
+  "06-operation.page03.image05": {
+    "file": "image20.svg",
+    "alt": "Mason Jar Connection",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page5.block4.figure1"
+  },
+  "06-operation.page03.image06": {
+    "file": "image22.svg",
+    "alt": "Mason Jar Operation",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page5.block4.figure2"
+  },
+  "06-operation.page03.image07": {
+    "file": "image24.svg",
+    "alt": "真空罐操作",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page6.block2.figure1"
+  },
+  "06-operation.page04.image08": {
+    "file": "image26.svg",
+    "alt": "腌制操作",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page7.block2.figure1"
+  },
+  "06-operation.page04.image09": {
+    "file": "image28.svg",
+    "alt": "单卷袋放置",
+    "kind": "reference"
+  },
+  "06-operation.page04.image10": {
+    "file": "image30.svg",
+    "alt": "双卷袋放置",
+    "kind": "reference"
+  }
+}

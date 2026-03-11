@@ -13,6 +13,11 @@
   --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
   --swiss-gray-text: #8E8E93;
+  --brand-accent: var(--swiss-red);
+  --brand-cover-divider: var(--swiss-red);
+  --brand-cover-model: var(--swiss-red);
+  --brand-cover-line: var(--swiss-red);
+  --brand-footer-border: var(--swiss-black);
   --page-width: 148mm;
   --page-height: 210mm;
   --page-margin: 10mm;
@@ -456,7 +461,7 @@ tr:nth-child(even) td {
   display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-line);
   margin-right: 6px;
   vertical-align: middle;
 }
@@ -465,7 +470,7 @@ tr:nth-child(even) td {
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 2.2px;
-  color: var(--swiss-red);
+  color: var(--brand-cover-model);
   text-transform: uppercase;
   margin-bottom: 4px;
   font-family: "Courier New", monospace;
@@ -495,12 +500,12 @@ tr:nth-child(even) td {
 .cover-divider {
   width: 28px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-divider);
   margin: 10px 0;
 }
 
 .cover-bottom {
-  border-top: 2px solid var(--swiss-black);
+  border-top: 2px solid var(--brand-footer-border);
   padding-top: 6px;
   font-size: 7.2px;
   color: var(--swiss-gray-text);
@@ -702,6 +707,14 @@ tr:nth-child(even) td {
   max-height: 4mm !important;
 }
 
+:root {
+  --swiss-red: #2E75B6;
+  --brand-accent: #2E75B6;
+  --brand-cover-divider: #2E75B6;
+  --brand-cover-model: #2E75B6;
+  --brand-cover-line: #2E75B6;
+  --brand-footer-border: #1F4E79;
+}
 </style>
 </head>
 <body>
@@ -1125,7 +1138,7 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>Vesta IMT050 User Manual</span><span>12</span></div>
 </div>
 
-<div class="page compact-install">
+<div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.09 — INSTALLATION / STORAGE / DISPOSAL</div>
@@ -1180,7 +1193,7 @@ tr:nth-child(even) td {
 <table>
     <thead><tr><th style="width:30%;">Field</th><th>Information</th></tr></thead>
     <tbody>
-      <tr><td style="width:30%">Manufacturer</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td style="width:30%">Manufacturer</td><td><b>Guangzhou Argion Electric Appliance Co., Ltd.</b></td></tr>
       <tr><td>Address</td><td>No. 1 Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
       <tr><td>Website</td><td>www.argiontechnology.com</td></tr>
     </tbody>

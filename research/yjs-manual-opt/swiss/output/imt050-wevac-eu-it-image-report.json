@@ -1,0 +1,114 @@
+{
+  "pageCount": 15,
+  "imageReport": {
+    "total": 17,
+    "failed": 0,
+    "zeroWidth": 0,
+    "details": [
+      {
+        "src": "image1.png",
+        "complete": true,
+        "naturalWidth": 572,
+        "renderWidth": 95.578125
+      },
+      {
+        "src": "image3.png",
+        "complete": true,
+        "naturalWidth": 48,
+        "renderWidth": 18
+      },
+      {
+        "src": "image5.png",
+        "complete": true,
+        "naturalWidth": 580,
+        "renderWidth": 205.953125
+      },
+      {
+        "src": "image7.png",
+        "complete": true,
+        "naturalWidth": 572,
+        "renderWidth": 90.375
+      },
+      {
+        "src": "image9.png",
+        "complete": true,
+        "naturalWidth": 820,
+        "renderWidth": 184.4375
+      },
+      {
+        "src": "image14.png",
+        "complete": true,
+        "naturalWidth": 234,
+        "renderWidth": 106.71875
+      },
+      {
+        "src": "image16.png",
+        "complete": true,
+        "naturalWidth": 402,
+        "renderWidth": 145.125
+      },
+      {
+        "src": "image18.png",
+        "complete": true,
+        "naturalWidth": 494,
+        "renderWidth": 110.734375
+      },
+      {
+        "src": "image20.png",
+        "complete": true,
+        "naturalWidth": 276,
+        "renderWidth": 71.625
+      },
+      {
+        "src": "image22.png",
+        "complete": true,
+        "naturalWidth": 276,
+        "renderWidth": 83.03125
+      },
+      {
+        "src": "image24.png",
+        "complete": true,
+        "naturalWidth": 276,
+        "renderWidth": 78.078125
+      },
+      {
+        "src": "image26.png",
+        "complete": true,
+        "naturalWidth": 624,
+        "renderWidth": 176.53125
+      },
+      {
+        "src": "image28.png",
+        "complete": true,
+        "naturalWidth": 118,
+        "renderWidth": 63.53125
+      },
+      {
+        "src": "image30.png",
+        "complete": true,
+        "naturalWidth": 118,
+        "renderWidth": 63.53125
+      },
+      {
+        "src": "image10.png",
+        "complete": true,
+        "naturalWidth": 774,
+        "renderWidth": 124.265625
+      },
+      {
+        "src": "image12.png",
+        "complete": true,
+        "naturalWidth": 196,
+        "renderWidth": 77.03125
+      },
+      {
+        "src": "image31.png",
+        "complete": true,
+        "naturalWidth": 664,
+        "renderWidth": 228
+      }
+    ]
+  },
+  "failedRequests": [],
+  "pass": true
+}

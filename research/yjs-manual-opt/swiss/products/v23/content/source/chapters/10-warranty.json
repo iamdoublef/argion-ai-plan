@@ -1,0 +1,139 @@
+{
+  "chapter_id": "10-warranty",
+  "chapter_no": "10",
+  "title": "品牌与保修信息",
+  "toc_title": "品牌与保修信息",
+  "header_ref": "CH.10 — WARRANTY",
+  "pages": [
+    {
+      "page_class": "compact-warranty",
+      "section_title": "品牌与保修信息",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "感谢您购买 {{brand.display_name}} {{localized.product_name}}。如有任何问题，请通过以下方式联系我们：\n{{brand.support_email}} | {{brand.website}}",
+          "text_id": "content.chapter.10-warranty.page.page1.block.1.text"
+        },
+        {
+          "type": "sub_title",
+          "text": "品牌商信息",
+          "text_id": "content.chapter.10-warranty.page.page1.block.2.text"
+        },
+        {
+          "type": "table_ref",
+          "table": "brand_info"
+        },
+        {
+          "type": "sub_title",
+          "text": "授权制造商",
+          "text_id": "content.chapter.10-warranty.page.page1.block.4.text"
+        },
+        {
+          "type": "table_ref",
+          "table": "manufacturer_info"
+        },
+        {
+          "type": "sub_title",
+          "text": "保修信息",
+          "text_id": "content.chapter.10-warranty.page.page1.block.6.text"
+        },
+        {
+          "type": "paragraph",
+          "text": "本产品提供 **{{warranty.years}} 年有限保修**。自原始购买日期起 {{warranty.years}} 年内可享受保修更换服务。要获得保修更换资格，您必须：",
+          "text_id": "content.chapter.10-warranty.page.page1.block.7.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "在过去 {{warranty.years}} 年内购买过产品。",
+              "text_id": "content.chapter.10-warranty.page.page1.block.8.item.1"
+            },
+            {
+              "text": "有原始订单号或购买时使用的电子邮件。",
+              "text_id": "content.chapter.10-warranty.page.page1.block.8.item.2"
+            },
+            {
+              "text": "如通过经销商或零售合作伙伴购买，须提供原始收据的副本。",
+              "text_id": "content.chapter.10-warranty.page.page1.block.8.item.3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "向我们发送电子邮件申请保修服务：**{{brand.support_email}}**",
+          "text_id": "content.chapter.10-warranty.page.page1.block.9.text"
+        },
+        {
+          "type": "figure",
+          "figure": "warranty.separator.primary",
+          "width": "auto",
+          "max_width": "100%",
+          "max_height": "4mm"
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.10-warranty.page.page1.section_title"
+    },
+    {
+      "page_class": "compact-warranty",
+      "section_title": "",
+      "hide_section_title": true,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "保修卡",
+          "text_id": "content.chapter.10-warranty.page.page2.block.1.text"
+        },
+        {
+          "type": "warranty_card",
+          "fields": [
+            {
+              "text": "客户名称",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.1"
+            },
+            {
+              "text": "地址",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.2"
+            },
+            {
+              "text": "城市 / 州 / 邮政编码",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.3"
+            },
+            {
+              "text": "电话号码",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.4"
+            },
+            {
+              "text": "电子邮件地址",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.5"
+            },
+            {
+              "text": "原始购买日期",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.6"
+            },
+            {
+              "text": "产品型号",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.7"
+            },
+            {
+              "text": "序列号（如适用）",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.8"
+            },
+            {
+              "text": "商户名称",
+              "text_id": "content.chapter.10-warranty.page.page2.block.2.field.9"
+            }
+          ]
+        }
+      ],
+      "page_id": "page2",
+      "section_title_id": "content.chapter.10-warranty.page.page2.section_title"
+    }
+  ],
+  "title_id": "content.chapter.10-warranty.title",
+  "toc_title_id": "content.chapter.10-warranty.toc_title",
+  "header_ref_id": "content.chapter.10-warranty.header_ref"
+}
+

@@ -1,0 +1,103 @@
+{
+  "chapter_id": "02-usage-tips",
+  "chapter_no": "02",
+  "title": "浜у搧鍙婁娇鐢ㄦ彁绀?",
+  "toc_title": "浜у搧鍙婁娇鐢ㄦ彁绀?",
+  "header_ref": "CH.02 鈥?USAGE TIPS",
+  "pages": [
+    {
+      "page_class": "",
+      "section_title": "浜у搧鍙婁娇鐢ㄦ彁绀?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "鏀剧疆涓庨娆′娇鐢?",
+          "text_id": "content.chapter.02-usage-tips.page.page1.block.1.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "灏嗕骇鍝佹斁缃湪鍧氬浐銆佸钩鍧︺€佸共鐕ョ殑鍙伴潰涓娿€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.1"
+            },
+            {
+              "text": "纭繚浜у搧鍥涘懆鐣欐湁鑷冲皯 120mm锛?.7\"锛夌殑閫氶闂磋窛銆?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.2"
+            },
+            {
+              "text": "杩滅鐑簮锛堢儰绠便€佺伓鍙扮瓑锛夛紝閬垮厤闃冲厜鐩村皠銆?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.3"
+            },
+            {
+              "text": "棣栨浣跨敤鍓嶏紝璇峰厛杩愯涓€娆℃竻娲佺▼搴忥紙鍙傝 CH.08 缁存姢淇濆吇锛夈€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.4"
+            },
+            {
+              "text": "棣栨鍒跺啺鍓?5 娆″睘浜庢按闄嶆俯闃舵锛屽啺褰細闅忔按娓╀笅闄嶉€愭笎澧炲ぇ锛屽睘姝ｅ父鐜拌薄銆?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.5"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "鐢ㄦ按瑕佹眰",
+          "text_id": "content.chapter.02-usage-tips.page.page1.block.3.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "浣跨敤楗敤姘村嵆鍙埗鍐帮紝楗敤姘磋秺绾噣鍒欏啺瓒婇€忔槑銆?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.4.item.1"
+            },
+            {
+              "text": "鑻ユ兂杈惧埌鐞嗘兂閫忔槑搴︼紝璇蜂娇鐢ㄧ熆鐗╄川鍚噺杈冧綆鐨勯ギ鐢ㄦ按锛圱DS < 200mg/L锛夈€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.4.item.2"
+            },
+            {
+              "text": "閫傜敤姘存簮锛氱函鍑€楗敤姘淬€丷O鍙嶆笚閫忓鐞嗚嚜鏉ユ按銆佹繁搴﹁繃婊よ嚜鏉ユ按銆佷綆TDS鐭挎硥姘淬€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.4.item.3"
+            },
+            {
+              "text": "**绂佹**浣跨敤鏈夎壊銆佹湁鍛炽€佹湁姘旀场鎴栧惈杩囬ケ鍜屾皵浣撶殑楗搧锛堣尪銆佹灉姹併€佸挅鍟°€佺墰濂躲€佹苯姘寸瓑锛夛紝杩欎簺浼氭薄鏌撶敋鑷虫崯鍧忎骇鍝併€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.4.item.4"
+            }
+          ]
+        },
+        {
+          "type": "sub_title",
+          "text": "浣跨敤鎻愮ず",
+          "text_id": "content.chapter.02-usage-tips.page.page1.block.5.text"
+        },
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "寮€绠卞悗鍙栧嚭鍏ㄩ儴鍖呰鏉愭枡锛屽苟鐢ㄦ箍甯冩摝鎷骇鍝佸唴閮ㄥ悗鍐嶆摝骞层€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.6.item.1"
+            },
+            {
+              "text": "瀛愬脊鍐扮瑁呮弧鍚庯紝浜у搧浼氳嚜鍔ㄦ殏鍋滃埗鍐板苟鍙戝嚭鎻愮ず闊炽€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.6.item.2"
+            },
+            {
+              "text": "涓夌灏哄涓嶈兘鍚屾椂鍒朵綔锛屼絾鍙湪鍒跺啺閫斾腑鍒囨崲鍙︿竴绉嶅昂瀵搞€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.6.item.3"
+            },
+            {
+              "text": "杩炵画鍒跺啺杩囩▼涓紝鍙楁按璐ㄣ€佹按娓╁拰鐜娓╁害褰卞搷锛屽伓灏斿嚭鐜板啺鍧椾笉閫忔槑灞炴甯哥幇璞°€?",
+              "text_id": "content.chapter.02-usage-tips.page.page1.block.6.item.4"
+            }
+          ]
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.02-usage-tips.page.page1.section_title"
+    }
+  ],
+  "title_id": "content.chapter.02-usage-tips.title",
+  "toc_title_id": "content.chapter.02-usage-tips.toc_title",
+  "header_ref_id": "content.chapter.02-usage-tips.header_ref"
+}

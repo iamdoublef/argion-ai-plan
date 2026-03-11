@@ -1,0 +1,86 @@
+{
+  "global": [
+    {
+      "term_id": "manual",
+      "source_term": "说明书",
+      "targets": {
+        "zh-CN": "说明书",
+        "zh-HK": "說明書",
+        "zh-TW": "使用說明書",
+        "en": "User Manual",
+        "de": "Bedienungsanleitung",
+        "it": "Manuale d'uso"
+      },
+      "note": "产品对外交付默认用这组写法。"
+    },
+    {
+      "term_id": "power",
+      "source_term": "电源",
+      "targets": {
+        "zh-CN": "电源",
+        "zh-HK": "電源",
+        "zh-TW": "電源",
+        "en": "Power",
+        "de": "Ein/Aus",
+        "it": "Accensione"
+      },
+      "note": "若面板键帽与术语不同，以面板键帽优先。"
+    },
+    {
+      "term_id": "make_ice",
+      "source_term": "制冰",
+      "targets": {
+        "zh-CN": "制冰",
+        "zh-HK": "製冰",
+        "zh-TW": "製冰",
+        "en": "Make Ice",
+        "de": "Eis machen",
+        "it": "Fai ghiaccio"
+      },
+      "note": "键帽翻译要与面板功能说明一致。"
+    },
+    {
+      "term_id": "warranty",
+      "source_term": "保修",
+      "targets": {
+        "zh-CN": "保修",
+        "zh-HK": "保養／維修",
+        "zh-TW": "保固",
+        "en": "Warranty",
+        "de": "Garantie",
+        "it": "Garanzia"
+      },
+      "note": "香港和台湾场景应采用本地常用称谓。"
+    },
+    {
+      "term_id": "disposal",
+      "source_term": "拆除与废弃",
+      "targets": {
+        "zh-CN": "拆除与废弃",
+        "zh-HK": "拆除及棄置",
+        "zh-TW": "拆除與廢棄",
+        "en": "Removal and Disposal",
+        "de": "Demontage und Entsorgung",
+        "it": "Smontaggio e smaltimento"
+      },
+      "note": "章节名和环保提示统一采用这组术语。"
+    }
+  ],
+  "forbidden_wording": [
+    {
+      "locale": "zh-HK",
+      "source_term": "售后",
+      "preferred": "售後支援 / 維修服務"
+    },
+    {
+      "locale": "zh-TW",
+      "source_term": "售后",
+      "preferred": "售後服務 / 保固服務"
+    },
+    {
+      "locale": "en",
+      "source_term": "after-sales",
+      "preferred": "customer support / warranty service"
+    }
+  ]
+}

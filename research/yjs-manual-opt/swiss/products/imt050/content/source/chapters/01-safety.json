@@ -1,0 +1,187 @@
+{
+  "chapter_id": "01-safety",
+  "chapter_no": "01",
+  "title": "瀹夊叏椤荤煡",
+  "toc_title": "瀹夊叏椤荤煡",
+  "header_ref": "CH.01 鈥?SAFETY",
+  "pages": [
+    {
+      "page_class": "compact-safety",
+      "section_title": "瀹夊叏椤荤煡",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "涓轰簡鎮ㄧ殑瀹夊叏锛屽湪浣跨敤鏈數鍣ㄤ骇鍝佸墠锛岃闃呰鏈墜鍐屼腑鐨勬墍鏈夎鏄庯紝骞跺缁堥伒瀹堜互涓嬪畨鍏ㄩ闃叉帾鏂斤細",
+          "text_id": "content.chapter.01-safety.page.page1.block.1.text"
+        },
+        {
+          "type": "warning_box",
+          "title": "璀﹀憡 WARNING",
+          "icon": "safety.warning_icon",
+          "items": [
+            {
+              "text": "鏈満浠呬緵瀹跺涵浣跨敤锛岃鍕跨敤浜庡叾浠栭潪璁捐鐢ㄩ€斻€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.1"
+            },
+            {
+              "text": "璇峰嬁璁╁効绔ョ帺鑰嶆湰鏈烘垨鐢垫簮绾裤€傚効绔ャ€佽鍔ㄤ笉渚挎垨璁ょ煡鍙楅檺浜哄＋搴斿湪鎴愬勾浜虹洃鐫ｄ笅浣跨敤銆?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.2"
+            },
+            {
+              "text": "灏忛浂浠跺彲鑳介€犳垚绐掓伅鍗遍櫓锛岃鍕胯鍎跨鎺ヨЕ銆?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.3"
+            },
+            {
+              "text": "璇峰嬁鍦ㄩ珮婀块珮娓╃瓑鐜浣跨敤鏈満锛屼弗绂佸湪鏈夋槗鐕冩槗鐖嗘皵浣撶殑鐜涓娇鐢ㄣ€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.4"
+            },
+            {
+              "text": "璇风‘淇濈數婧愮數鍘嬩笌鏈哄櫒閾墝鏍囩ず涓€鑷淬€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.5"
+            },
+            {
+              "text": "浣跨敤鍚庤鍒囨柇鐢垫簮銆?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.6"
+            },
+            {
+              "text": "浠庣數婧愭彃搴т笂鎷斿嚭鎻掑ご鏃惰鎵嬫彙鎻掑ご鎷斿嚭锛岃鍕挎媺鎵數婧愮嚎銆?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.7"
+            },
+            {
+              "text": "璇峰嬁灏嗕富鏈烘垨鐢垫簮绾挎蹈鍏ユ按涓垨鍏朵粬娑蹭綋涓€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.8"
+            },
+            {
+              "text": "鐢垫簮绾块渶瑕佺洿鎺ユ彃鎺ョ鍚堝畨鍏ㄨ鑼冪殑鐢垫簮鎻掑骇涓娿€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.9"
+            },
+            {
+              "text": "濡傚彂鐜版彃澶淬€佺數婧愮嚎鎴栦富鏈烘崯鍧忥紝璇风珛鍗冲仠姝娇鐢ㄥ苟鑱旂郴鍒堕€犲晢鎴栨巿鏉冪淮淇偣澶勭悊锛岃鍕胯嚜琛屾媶淇€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.10"
+            },
+            {
+              "text": "鐢垫簮绾胯鍕挎偓鎸備簬鍙伴潰杈圭紭锛屼互鍏嶅効绔ユ媺鎵垨鎰忓缁婂€掋€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.11"
+            },
+            {
+              "text": "绂佹鍦ㄦ墜鑴氭疆婀挎垨鏈┛闉嬬殑鎯呭喌涓嬭Е鎽镐骇鍝佺數婧愰儴浠躲€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.12"
+            },
+            {
+              "text": "浜у搧鎵€杩炴帴鐨勭數婧愰渶鏈夋紡鐢典繚鎶よ缃€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.13"
+            },
+            {
+              "text": "鎻掑骇蹇呴』婊¤冻褰撳湴娉曡瑕佹眰锛屽畨鍏ㄦ硶瑙勮姹傚己鍒惰繘琛屼骇鍝佹帴鍦般€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.14"
+            },
+            {
+              "text": "娓呮磥銆佺淮鎶ゆ垨鏇存崲閮ㄤ欢鏃讹紝蹇呴』鍒囨柇鐢垫簮銆?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.15"
+            },
+            {
+              "text": "鍒囧嬁灏嗚灪涓濆垁鎴栧叾瀹冪墿浣撴彃鍏ユ暎鐑瓟涓€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.16"
+            },
+            {
+              "text": "鍙湁鎺堟潈鎶€鏈汉鍛樻墠鑳借繘琛屾媶鏈烘鏌ュ拰缁翠慨銆?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.17"
+            },
+            {
+              "text": "鍙戠敓鐏伨鏃讹紝鍒囧嬁娴囨按锛岃浣跨敤浜屾哀鍖栫⒊鐏伀鍣ㄣ€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.18"
+            },
+            {
+              "text": "闄ゅ埗閫犲晢鎺ㄨ崘鐨勬柟娉曞锛屼笉鑳戒娇鐢ㄦ満姊版墜娈垫垨鍏朵粬鏂规硶鍔犻€熼櫎闇溿€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.19"
+            },
+            {
+              "text": "涓嶈鎹熷潖鍒跺喎鍓傚洖璺€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.20"
+            },
+            {
+              "text": "璀﹀憡锛氭槗鐕冩潗鏂欙紝瀛樺湪鍙戠敓鐏伨鐨勯闄┿€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.21"
+            },
+            {
+              "text": "鍒跺喎鍓傚簾鏂欓渶鍦ㄦ巿鏉冨簾鐗╁鐞嗕腑蹇冨鐞嗭紝涓嶈兘闈犺繎鐏簮銆?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.22"
+            },
+            {
+              "text": "璇峰嬁鍦ㄦ湰浜у搧涓偍瀛樺惈鏈夋槗鐕冩帹杩涘墏鐨勬皵婧惰兌缃愮瓑鐖嗙偢鎬х墿璐ㄣ€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.23"
+            },
+            {
+              "text": "淇濇寔鎵€鏈夐€氶鍙ｉ『鐣咃紝淇濇寔浜у搧杩滅鐑簮鎴栬捀姹借缃€?",
+              "text_id": "content.chapter.01-safety.page.page1.block.2.item.24"
+            }
+          ],
+          "title_id": "content.chapter.01-safety.page.page1.block.2.title"
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.01-safety.page.page1.section_title"
+    },
+    {
+      "page_class": "compact-safety",
+      "section_title": "瀹夊叏椤荤煡锛堢画锛?",
+      "blocks": [
+        {
+          "type": "caution_box",
+          "title": "娉ㄦ剰 CAUTION",
+          "items": [
+            {
+              "text": "绉诲姩鎴栬繍杈撲骇鍝佹椂淇濇寔浜у搧鐩寸珛锛屽惁鍒欏彲鑳藉鑷翠骇鍝佹崯鍧忋€?",
+              "text_id": "content.chapter.01-safety.page.page2.block.1.item.1"
+            },
+            {
+              "text": "杩愯緭鍚庨渶闈欑疆4灏忔椂锛屽緟鍐峰獟绋冲畾鍚庡啀閫氱數銆?",
+              "text_id": "content.chapter.01-safety.page.page2.block.1.item.2"
+            },
+            {
+              "text": "瀵圭數鏈哄拰鍒跺喎绯荤粺杩涜缁存姢鏃惰鎴存墜濂椼€?",
+              "text_id": "content.chapter.01-safety.page.page2.block.1.item.3"
+            },
+            {
+              "text": "鍒囧嬁闃诲鏁ｇ儹瀛旓紝浠ョ‘淇濅骇鍝佺殑鑹ソ杩愯浆銆?",
+              "text_id": "content.chapter.01-safety.page.page2.block.1.item.4"
+            },
+            {
+              "text": "璇峰嬁灏嗛潪椋熷搧绫荤墿鍝佹斁缃簬鑵斾綋涓€?",
+              "text_id": "content.chapter.01-safety.page.page2.block.1.item.5"
+            },
+            {
+              "text": "鏈骇鍝佷粎闄愬鍐呬娇鐢ㄣ€?",
+              "text_id": "content.chapter.01-safety.page.page2.block.1.item.6"
+            },
+            {
+              "text": "鏈骇鍝佽璁′负灏嗛ギ鐢ㄦ按鍒朵綔鎴愬啺锛岃涓嶈灏嗘湰浜у搧鐢ㄤ簬璁捐澶栫敤閫斻€?",
+              "text_id": "content.chapter.01-safety.page.page2.block.1.item.7"
+            }
+          ],
+          "title_id": "content.chapter.01-safety.page.page2.block.1.title"
+        },
+        {
+          "type": "notice_box",
+          "title": "鎻愮ず NOTICE",
+          "items": [
+            {
+              "text": "浜у搧鍣煶绛夌骇浣庝簬50 dB(A)銆?",
+              "text_id": "content.chapter.01-safety.page.page2.block.2.item.1"
+            },
+            {
+              "text": "鏈骇鍝佺殑姘斿€欑被鍨嬩负SN锛岄€傚悎鍦?0鈩儈32鈩?/ 50鈩墌89.6鈩?鐨勭幆澧冩俯搴︿腑浣跨敤銆?",
+              "text_id": "content.chapter.01-safety.page.page2.block.2.item.2"
+            }
+          ],
+          "title_id": "content.chapter.01-safety.page.page2.block.2.title"
+        }
+      ],
+      "page_id": "page2",
+      "section_title_id": "content.chapter.01-safety.page.page2.section_title"
+    }
+  ],
+  "title_id": "content.chapter.01-safety.title",
+  "toc_title_id": "content.chapter.01-safety.toc_title",
+  "header_ref_id": "content.chapter.01-safety.header_ref"
+}

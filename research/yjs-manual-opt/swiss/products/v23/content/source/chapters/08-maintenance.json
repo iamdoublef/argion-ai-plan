@@ -1,0 +1,62 @@
+{
+  "chapter_id": "08-maintenance",
+  "chapter_no": "08",
+  "title": "缁存姢淇濆吇",
+  "toc_title": "缁存姢淇濆吇",
+  "header_ref": "CH.08 鈥?MAINTENANCE",
+  "pages": [
+    {
+      "page_class": "",
+      "section_title": "缁存姢淇濆吇",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "bullet_list",
+          "items": [
+            {
+              "text": "纭繚浣跨敤鏈哄櫒鐨勫伐浣滃彴骞虫暣銆佸共鍑€銆佸共鐕ャ€?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.1"
+            },
+            {
+              "text": "鍦ㄤ笉浣跨敤鏈哄櫒鏃惰涓嶈灏嗘満鍣ㄩ攣鎵ｉ攣涓婏紝浠ラ槻瀵嗗皝鍦堣闀挎椂闂存尋鍘嬶紝褰卞搷鍔熻兘銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.2"
+            },
+            {
+              "text": "闇€姣忓懆涓€娆″鏈哄櫒鐨勫瘑灏佸湀銆佸瘑灏佸帇鏉°€佸彂鐑櫒銆佹恫浣撴Ы銆佺湡绌鸿厰杩涜娓呮磥銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.3"
+            },
+            {
+              "text": "鍙戠儹鍣ㄥ拰瀵嗗皝鍘嬫潯鍦ㄥ伐浣滃悗浼氭畫鐣欓珮娓╋紝璇峰緟鏈哄櫒鍐峰嵈鍚庡啀杩涜淇濆吇銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.4"
+            },
+            {
+              "text": "娓呮磥鍓嶆嫈涓嬫満鍣ㄧ數婧愩€?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.5"
+            },
+            {
+              "text": "璇烽噰鐢ㄨ蒋姣涘埛娓呮磥瀵嗗皝鍦堛€佸瘑灏佸帇鏉°€佸彂鐑櫒銆佹恫浣撴Ы銆佺湡绌鸿厰銆佺湡绌鸿蒋绠°€傞伩鍏嶉噰鐢ㄧ‖姣涘埛锛屼互鍏嶆崯鍧忔満鍣ㄣ€?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.6"
+            },
+            {
+              "text": "姣忓ぉ宸ヤ綔缁撴潫鍚庯紝鍙栧嚭娑蹭綋妲芥竻娲佹摝骞诧紝骞剁敤婀挎瘺宸炬垨绾稿肪娓呯悊鐪熺┖鑵斿唴娈嬬暀鐨勭灞戙€佺伆灏樸€?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.7"
+            },
+            {
+              "text": "姣忔宸ヤ綔缁撴潫鍚庯紝妫€鏌ュ瘑灏佸湀鏄惁宸茬粡鍙樺舰涓ラ噸锛岄珮娓╄兌甯冩槸鍚﹀凡缁忕牬鎹?鑴辫惤锛屽鏈夛紝鍒欒鍙婃椂鏇挎崲銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.8"
+            },
+            {
+              "text": "娑蹭綋妲藉拰鐪熺┖杞涓嶆敮鎸侀珮娓╂竻娲侊紝濡傛礂纰楁満娓呮磥銆?",
+              "text_id": "content.chapter.08-maintenance.page.page1.block.1.item.9"
+            }
+          ]
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.08-maintenance.page.page1.section_title"
+    }
+  ],
+  "title_id": "content.chapter.08-maintenance.title",
+  "toc_title_id": "content.chapter.08-maintenance.toc_title",
+  "header_ref_id": "content.chapter.08-maintenance.header_ref"
+}

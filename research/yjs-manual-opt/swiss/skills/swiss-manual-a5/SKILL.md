@@ -1,33 +1,53 @@
 ---
 name: swiss-manual-a5
-description: Swiss 项目级 skill：用于 V23、IMT050 等 Swiss 系列说明书的 A5 共享母版编写、重构、审校与 PDF 验收。
+description: Swiss 项目级 skill：用于 Swiss 系列说明书的 A5 母版、JSON 单源、双轨交付、翻译工作簿和 PDF/DOCX 验收。
 ---
 
 # Swiss A5 说明书 Skill
 
-当任务涉及 `research/yjs-manual-opt/swiss/` 下的说明书模板、共享母版、A5 booklet、PDF 导出、`V23`、`IMT050`、排版、审校、保修卡、共享 CSS 时，先读本文件。
+当任务涉及 `research/yjs-manual-opt/swiss/` 下的说明书模板、共享母版、A5 booklet、PDF、DOCX、V23、IMT050、排版、审校、保修卡、共享 CSS、翻译工作簿、本地化时，先读本文件。
 
 ## 先读哪些文件
 
 1. `research/yjs-manual-opt/swiss/DESIGN-STANDARD.md`
 2. `research/yjs-manual-opt/swiss/SOP-new-product.md`
-3. 当前任务对应模板：
-   - `research/yjs-manual-opt/swiss/template/*.html`
+3. 当前产品数据：
+   - `research/yjs-manual-opt/swiss/products/<product>/product.json`
+   - `research/yjs-manual-opt/swiss/products/<product>/images.json`
+   - `research/yjs-manual-opt/swiss/products/<product>/content/source/manifest.json`
+   - `research/yjs-manual-opt/swiss/products/<product>/content/source/chapters/*.json`
+   - `research/yjs-manual-opt/swiss/products/<product>/i18n/compiled/<locale>.json`
+4. 当前翻译工作簿（如涉及翻译审核）：
+   - `research/yjs-manual-opt/swiss/products/<product>/i18n/workbooks/<locale>.xlsx`
+5. 当前模板与共享样式：
+   - `research/yjs-manual-opt/swiss/template/*-master-*.html`
    - `research/yjs-manual-opt/swiss/template/shared/base/*.css`
-4. 构建与审计工具：
+   - `research/yjs-manual-opt/swiss/template/shared/base/brand-themes.json`
+6. 构建与输出工具：
    - `research/yjs-manual-opt/swiss/tools/build-variant.js`
    - `research/yjs-manual-opt/swiss/tools/export-pdf.js`
    - `research/yjs-manual-opt/swiss/tools/export-pdf-batch.js`
+   - `research/yjs-manual-opt/swiss/tools/export-docx.js`
+   - `research/yjs-manual-opt/swiss/tools/export-translation-workbook.js`
+   - `research/yjs-manual-opt/swiss/tools/compile-translation-workbook.js`
    - `research/yjs-manual-opt/swiss/tools/_audit-visual.js`
 
 ## 当前正式输入契约
 
-Swiss 现有产品只认下面 4 类正式输入：
+Swiss 当前正式结构源固定为：
 
 - `products/<product>/product.json`
 - `products/<product>/images.json`
-- `products/<product>/content/<lang>/manifest.json`
-- `products/<product>/content/<lang>/chapters/*.json`
+- `products/<product>/content/source/manifest.json`
+- `products/<product>/content/source/chapters/*.json`
+
+Swiss 当前正式译文源固定为：
+
+- `products/<product>/i18n/compiled/<locale>.json`
+
+翻译人员的正式编辑面固定为：
+
+- `products/<product>/i18n/workbooks/<locale>.xlsx`
 
 不再把下面这些视为正式接口：
 
@@ -35,37 +55,50 @@ Swiss 现有产品只认下面 4 类正式输入：
 - `content.<lang>.json`
 - `CONTENT_BODY`
 - 模板内写死正文
+- 运行时逐字简转繁
 
-## Agent 路由
+## 当前正式输出
 
-- 生成、重构、修复 Swiss 模板：`.claude/agents/swiss-manual-writer.md`
-- 审计、对齐、比较、PDF 核验：`.claude/agents/swiss-content-auditor.md`
-- 不要把 `.claude/agents/manual-writer.md` / `.claude/agents/manual-auditor.md` 当作 Swiss 当前标准；那两份只保留旧 A4 链路参考。
+### 自有品牌线
+
+- `HTML + PDF`
+
+使用场景：
+
+- 官网/商城内容
+- 自有品牌包装内页
+- 内部审稿与发布
+
+### ODM 线
+
+- `DOCX + PDF`
+
+使用场景：
+
+- 客户拿可编辑 Word/WPS 文件做二次风格化
+- `PDF` 作为审稿稿和参考稿
 
 ## 硬规则
 
 - 页面标准固定为 `A5 portrait 148mm x 210mm`
-- Swiss 统一走 `shared base + shared CSS + thin shell template`
-- 产品差异只允许落在 JSON 数据和产品图片目录，不允许再复制整页模板或把正文写回模板
-- 正式输出主链只有 `HTML + PDF`
-- booklet 仅作兼容性附加产物，不再是硬验收项
-- 可读性优先，允许页数增加；不允许靠全局压字号、压表格、压保修卡来控页数
-- 长语种 `EN/DE/IT` 溢出时，优先拆页/续页，不优先压缩
+- Swiss 统一走 `shared base + shared CSS + thin shell template + brand theme`
+- 产品差异只允许落在 JSON 数据、译文 catalog 和产品图片目录，不允许复制整页模板
+- 模板只承载共享样式、品牌壳层和挂载点，不承载正文事实内容
+- 自有品牌正式交付 `HTML + PDF`
+- ODM 正式交付 `DOCX + PDF`
+- 翻译人员不改 HTML，不改 CSS，不改章节结构 JSON，只改译文工作簿
+- `zh-HK` 和 `zh-TW` 必须是独立 locale catalog，不再用运行时逐字简转繁发布
+- 模型不负责最终排版；模型只用于新产品草稿、翻译草稿、本地化和审计建议
+- 长语种 `EN/DE/IT` 溢出时优先拆页、续页，不优先压缩
 - 禁止按页序号做 `zoom` / `nth-of-type` 打印补丁
-- 安全须知图标必须独立成块，不能融入首行文字
-- 步骤编号、按钮名、控制面板图、结构图、保修卡必须保证不变形、不裁切、不横向顶出
+- 安全图标必须独立成块，不能融入正文
+- 步骤编号、按钮名、控制面板图、结构图、保修卡必须不变形、不裁切、不横向顶出
 - 保修卡允许独立续页，优先完整可见
-- 文本字段只允许轻量 token：
-  - `**粗体**`
-  - `[btn:按钮名]`
-  - `\n` 换行
-- 文本字段禁止内嵌原始 HTML
-- PDF 可作为审稿和应急 hotfix 出口，但下一版必须回写 JSON，不能形成双轨版本
-- 本轮不做 Excel 主源、不做 DOCX 主链、不做 AI 生产导入
+- `PDF hotfix` 只允许作为应急出口；下一版必须回写 JSON/catelog/workbook，不能形成双轨版本
 
 ## 正式 block 类型
 
-正式内容 JSON 只允许这些 block：
+正式内容 JSON 只允许以下 block：
 
 - `paragraph`
 - `bullet_list`
@@ -82,19 +115,36 @@ Swiss 现有产品只认下面 4 类正式输入：
 - `warranty_card`
 - `split_panel`
 
-`html_fragment` 不再允许进入正式内容；构建时一旦出现，直接视为错误。
+`html_fragment` 不再允许进入正式内容；构建时一旦发现，直接视为错误。
+
+## 译文与本地化规则
+
+- 所有可翻译文本必须有稳定 `text_id`
+- 结构与译文分离：结构在 `content/source`，译文在 `i18n/compiled`
+- `i18n/workbooks/<locale>.xlsx` 只是译文编辑面，不是结构源
+- 规范资产优先来自：
+  - `research/yjs-manual-opt/swiss/standards/brand-language-guide.md`
+  - `research/yjs-manual-opt/swiss/standards/terminology-glossary.json`
+  - `research/yjs-manual-opt/swiss/standards/unit-and-measurement-policy.md`
+  - `research/yjs-manual-opt/swiss/standards/locale-guides.json`
+  - `research/yjs-manual-opt/swiss/standards/warning-language-policy.md`
+  - `research/yjs-manual-opt/swiss/standards/ai-new-product-structure-prompt.md`
+  - `research/yjs-manual-opt/swiss/standards/ai-translation-draft-prompt.md`
+  - `research/yjs-manual-opt/swiss/standards/ai-localization-audit-prompt.md`
 
 ## 标准流程
 
-1. 先读 `DESIGN-STANDARD.md`，确认当前 A5 版式口径
-2. 读 `product.json / images.json / manifest.json / chapters/*.json`
-3. 构建 HTML
-4. 导出 PDF
-5. 运行 `_audit-visual.js`
-6. 抽检真实 PDF 渲染图，不只看 HTML/DOM
-7. 关键页通过后才算完成
+1. 先读 `DESIGN-STANDARD.md`
+2. 再读产品结构源、译文 catalog、品牌主题和相关模板
+3. 如涉及翻译审核，先导出或读取 `i18n/workbooks/<locale>.xlsx`
+4. 构建 `HTML`
+5. 导出 `PDF`
+6. 如涉及 ODM，额外导出 `DOCX`
+7. 运行 `_audit-visual.js`
+8. 抽检真实 PDF；ODM 任务额外确认 DOCX 可打开、图文完整
+9. 关键页通过后才算完成
 
-## 必查关键页
+## 必读验收页
 
 - 封面
 - 目录页
@@ -106,12 +156,22 @@ Swiss 现有产品只认下面 4 类正式输入：
 
 ## 验收口径
 
-- 先过结构：共享母版、目录、章节、页眉页脚、页码、续页逻辑
+- 先过结构：目录、章节、页眉页脚、页码、续页逻辑
 - 再过视觉：无 overflow、无图片失真、无横向裁切、无图标融字
-- 最后过真实 PDF：关键信息完整、风格统一、步骤与图片对应准确
+- 再过本地化：术语、单位、品牌称呼、警示语符合规范资产
+- 最后过真实 PDF；ODM 任务再核 DOCX 可编辑性
 
 ## 已知边界
 
-- `HK/TW` 继续基于 `CN` 内容派生
-- `ZA` 继续基于 `EN` 内容派生
-- 本轮优先把现有产品线收口为 JSON 单源；AI 新产品导入放到下一包
+- `HK/TW` 已切到独立 locale catalog，但当前种子译文仍需人工审核
+- `ZA` 继续复用 `en` catalog
+- 模型生成 Word 样式优化可以实验，但不进入正式主链
+- 未来若某个 ODM 客户需要极特殊版式，再做客户级 Word 模板，不把客户差异写回通用母版
+
+## 2026-03 Word 支线补充规则
+
+- `DOCX` 为独立的 A5 可编辑支线，不再按“PDF 影子稿”导出。
+- `HTML/PDF` 与 `DOCX` 共用同一份 JSON 内容源和译文 catalog，但排版引擎完全分开。
+- `DOCX` 采用单一 Word 母版骨架 + 品牌主题包；不允许按产品复制 Word 模板。
+- `DOCX` 的目标是“可编辑且体面”，不是 1:1 还原 `PDF`。
+- 若目标 `DOCX` 正被 WPS/Word 占用，导出器允许落旁路文件 `.__staged.docx`，待锁释放后再替换正式文件。

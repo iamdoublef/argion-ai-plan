@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{product.model}} {{product.name_de}} Bedienungsanleitung - {{brand.display_name}}</title>
+<title>{{product.model}} {{localized.product_name}} {{localized.document_title}} - {{brand.display_name}}</title>
 <style>
 {{> shared/de/core-shell.css}}
 {{> shared/base/imt050-booklet.css}}
+{{#THEME_STYLE_OVERRIDES}}
 </style>
 </head>
 <body>
@@ -18,11 +19,11 @@
   </div>
   <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 8mm;">
     <div style="text-align:left;margin:0 0 8mm;">
-      <img src="./{{images_dir}}/{{product.cover_image}}" alt="{{product.model}} {{product.name_de}}" style="width:auto;height:auto;max-height:48mm;max-width:68%;">
+      <img src="./{{images_dir}}/{{product.cover_image}}" alt="{{product.model}} {{localized.product_name}}" style="width:auto;height:auto;max-height:48mm;max-width:68%;">
     </div>
     <div class="cover-model">MODEL {{product.model}}</div>
-    <div class="cover-title">{{product.name_de}}</div>
-    <div class="cover-subtitle">Bedienungsanleitung</div>
+    <div class="cover-title">{{localized.product_name}}</div>
+    <div class="cover-subtitle">{{localized.document_title}}</div>
     <div class="cover-divider"></div>
   </div>
   {{> shared/de/cover-bottom.html}}
@@ -32,12 +33,12 @@
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">{{brand.display_name}}</div>
-    <div class="header-ref">{{product.model}} — BEDIENUNGSANLEITUNG</div>
+    <div class="header-ref">{{product.model}} — {{localized.document_title_upper}}</div>
   </div>
   <div class="toc-title">Inhalt</div>
     {{#AUTO_TOC}}
 
-  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} Bedienungsanleitung</span><span>2</span></div>
+  <div class="page-footer"><span>{{brand.display_name}} {{product.model}} {{localized.document_title}}</span><span>2</span></div>
 </div>
 
 {{#DOCUMENT_BODY}}

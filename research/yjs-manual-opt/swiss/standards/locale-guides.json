@@ -1,0 +1,56 @@
+{
+  "zh-CN": {
+    "display_name": "简体中文（中国大陆）",
+    "rules": [
+      "保持说明书语气直接、清晰、制造业用户可读。",
+      "按钮名保留英文键帽时，正文采用中文解释加键帽标记。",
+      "尺寸默认保留 mm，必要时可并列 in。",
+      "安全提示使用“警告 / 注意 / 提示”三级体系。"
+    ]
+  },
+  "zh-HK": {
+    "display_name": "繁體中文（香港）",
+    "rules": [
+      "使用香港繁體中文，不直接沿用逐字簡轉繁結果。",
+      "優先使用「說明書、按鈕、電源、維修、儲存、棄置」等香港常用寫法。",
+      "單位保留 mm、kg，可按需要並列 in / lb。",
+      "警示語氣以清晰、正式、易讀為先，避免大陸口語。"
+    ]
+  },
+  "zh-TW": {
+    "display_name": "繁體中文（台灣）",
+    "rules": [
+      "使用台灣繁體中文，不直接沿用逐字簡轉繁結果。",
+      "優先使用「使用說明書、按鍵、電源、保固、存放、廢棄」等台灣常用寫法。",
+      "尺寸與重量優先採公制，必要時可附英制。",
+      "警示語氣以正式、自然、在地化為先。"
+    ]
+  },
+  "en": {
+    "display_name": "English",
+    "rules": [
+      "Use concise appliance-manual English.",
+      "Keep button labels in English and match the product panel exactly.",
+      "Use metric-first notation, with imperial only when product market requires it.",
+      "Warnings must be direct and operational, not marketing-oriented."
+    ]
+  },
+  "de": {
+    "display_name": "Deutsch",
+    "rules": [
+      "Use concise appliance-manual German with natural word order.",
+      "Avoid literal translation from Chinese or English when German phrasing becomes awkward.",
+      "Keep panel button labels aligned with the actual device legend.",
+      "Use German safety wording suitable for home-appliance manuals."
+    ]
+  },
+  "it": {
+    "display_name": "Italiano",
+    "rules": [
+      "Use concise appliance-manual Italian with natural phrasing.",
+      "Avoid literal translation when it harms readability or clarity.",
+      "Keep panel button labels aligned with the actual device legend.",
+      "Use direct warning language suitable for household appliance instructions."
+    ]
+  }
+}

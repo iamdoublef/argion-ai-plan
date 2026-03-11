@@ -1,0 +1,124 @@
+{
+  "chapters": [
+    {
+      "chapter_id": "01-safety",
+      "chapter_no": "01",
+      "title": "瀹夊叏椤荤煡",
+      "toc_title": "瀹夊叏椤荤煡",
+      "header_ref": "CH.01 鈥?SAFETY",
+      "enabled": true,
+      "file": "01-safety.json",
+      "title_id": "content.chapter.01-safety.title",
+      "toc_title_id": "content.chapter.01-safety.toc_title",
+      "header_ref_id": "content.chapter.01-safety.header_ref"
+    },
+    {
+      "chapter_id": "02-usage-tips",
+      "chapter_no": "02",
+      "title": "浜у搧鍙婄湡绌鸿浣跨敤鎻愮ず",
+      "toc_title": "浜у搧鍙婄湡绌鸿浣跨敤鎻愮ず",
+      "header_ref": "CH.02 鈥?USAGE TIPS",
+      "enabled": true,
+      "file": "02-usage-tips.json",
+      "title_id": "content.chapter.02-usage-tips.title",
+      "toc_title_id": "content.chapter.02-usage-tips.toc_title",
+      "header_ref_id": "content.chapter.02-usage-tips.header_ref"
+    },
+    {
+      "chapter_id": "03-structure",
+      "chapter_no": "03",
+      "title": "浜у搧缁撴瀯",
+      "toc_title": "浜у搧缁撴瀯",
+      "header_ref": "CH.03 鈥?STRUCTURE",
+      "enabled": true,
+      "file": "03-structure.json",
+      "title_id": "content.chapter.03-structure.title",
+      "toc_title_id": "content.chapter.03-structure.toc_title",
+      "header_ref_id": "content.chapter.03-structure.header_ref"
+    },
+    {
+      "chapter_id": "04-functions",
+      "chapter_no": "04",
+      "title": "浜у搧鍔熻兘",
+      "toc_title": "浜у搧鍔熻兘",
+      "header_ref": "CH.04 鈥?FUNCTIONS",
+      "enabled": true,
+      "file": "04-functions.json",
+      "title_id": "content.chapter.04-functions.title",
+      "toc_title_id": "content.chapter.04-functions.toc_title",
+      "header_ref_id": "content.chapter.04-functions.header_ref"
+    },
+    {
+      "chapter_id": "05-specifications",
+      "chapter_no": "05",
+      "title": "鎶€鏈弬鏁?",
+      "toc_title": "鎶€鏈弬鏁?",
+      "header_ref": "CH.05 鈥?SPECIFICATIONS",
+      "enabled": true,
+      "file": "05-specifications.json",
+      "title_id": "content.chapter.05-specifications.title",
+      "toc_title_id": "content.chapter.05-specifications.toc_title",
+      "header_ref_id": "content.chapter.05-specifications.header_ref"
+    },
+    {
+      "chapter_id": "06-operation",
+      "chapter_no": "06",
+      "title": "鎿嶄綔鎸囧紩",
+      "toc_title": "鎿嶄綔鎸囧紩",
+      "header_ref": "CH.06 鈥?OPERATION",
+      "enabled": true,
+      "file": "06-operation.json",
+      "title_id": "content.chapter.06-operation.title",
+      "toc_title_id": "content.chapter.06-operation.toc_title",
+      "header_ref_id": "content.chapter.06-operation.header_ref"
+    },
+    {
+      "chapter_id": "07-troubleshooting",
+      "chapter_no": "07",
+      "title": "鏁呴殰鎺掗櫎",
+      "toc_title": "鏁呴殰鎺掗櫎",
+      "header_ref": "CH.07 鈥?TROUBLESHOOTING",
+      "enabled": true,
+      "file": "07-troubleshooting.json",
+      "title_id": "content.chapter.07-troubleshooting.title",
+      "toc_title_id": "content.chapter.07-troubleshooting.toc_title",
+      "header_ref_id": "content.chapter.07-troubleshooting.header_ref"
+    },
+    {
+      "chapter_id": "08-maintenance",
+      "chapter_no": "08",
+      "title": "缁存姢淇濆吇",
+      "toc_title": "缁存姢淇濆吇",
+      "header_ref": "CH.08 鈥?MAINTENANCE",
+      "enabled": true,
+      "file": "08-maintenance.json",
+      "title_id": "content.chapter.08-maintenance.title",
+      "toc_title_id": "content.chapter.08-maintenance.toc_title",
+      "header_ref_id": "content.chapter.08-maintenance.header_ref"
+    },
+    {
+      "chapter_id": "09-vacuum-properties",
+      "chapter_no": "09",
+      "title": "鐪熺┖鍖呰鐗规€?",
+      "toc_title": "鐪熺┖鍖呰鐗规€?",
+      "header_ref": "CH.09 鈥?VACUUM PROPERTIES",
+      "enabled": true,
+      "file": "09-vacuum-properties.json",
+      "title_id": "content.chapter.09-vacuum-properties.title",
+      "toc_title_id": "content.chapter.09-vacuum-properties.toc_title",
+      "header_ref_id": "content.chapter.09-vacuum-properties.header_ref"
+    },
+    {
+      "chapter_id": "10-warranty",
+      "chapter_no": "10",
+      "title": "鍝佺墝涓庝繚淇俊鎭?",
+      "toc_title": "鍝佺墝涓庝繚淇俊鎭?",
+      "header_ref": "CH.10 鈥?WARRANTY",
+      "enabled": true,
+      "file": "10-warranty.json",
+      "title_id": "content.chapter.10-warranty.title",
+      "toc_title_id": "content.chapter.10-warranty.toc_title",
+      "header_ref_id": "content.chapter.10-warranty.header_ref"
+    }
+  ]
+}

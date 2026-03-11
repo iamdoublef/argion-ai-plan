@@ -1,0 +1,35 @@
+{
+  "chapter_id": "04-features",
+  "chapter_no": "04",
+  "title": "浜у搧鍔熻兘",
+  "toc_title": "浜у搧鍔熻兘",
+  "header_ref": "CH.04 鈥?FEATURES",
+  "pages": [
+    {
+      "page_class": "compact-functions",
+      "section_title": "浜у搧鍔熻兘",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "figure",
+          "figure": "structure.legend",
+          "max_height": "24mm"
+        },
+        {
+          "type": "figure",
+          "figure": "control_panel.main",
+          "max_height": "20mm"
+        },
+        {
+          "type": "table_ref",
+          "table": "buttons"
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.04-features.page.page1.section_title"
+    }
+  ],
+  "title_id": "content.chapter.04-features.title",
+  "toc_title_id": "content.chapter.04-features.toc_title",
+  "header_ref_id": "content.chapter.04-features.header_ref"
+}

@@ -1,0 +1,30 @@
+{
+  "chapter_id": "03-structure",
+  "chapter_no": "03",
+  "title": "浜у搧缁撴瀯",
+  "toc_title": "浜у搧缁撴瀯",
+  "header_ref": "CH.03 鈥?STRUCTURE",
+  "pages": [
+    {
+      "page_class": "compact-structure",
+      "section_title": "浜у搧缁撴瀯",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "figure",
+          "figure": "structure.main",
+          "max_height": "56mm"
+        },
+        {
+          "type": "table_ref",
+          "table": "parts"
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.03-structure.page.page1.section_title"
+    }
+  ],
+  "title_id": "content.chapter.03-structure.title",
+  "toc_title_id": "content.chapter.03-structure.toc_title",
+  "header_ref_id": "content.chapter.03-structure.header_ref"
+}

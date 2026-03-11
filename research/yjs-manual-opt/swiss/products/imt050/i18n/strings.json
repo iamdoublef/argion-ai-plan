@@ -1,0 +1,2055 @@
+[
+  {
+    "text_id": "content.chapter.01-safety.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[0].header_ref",
+    "source_text": "CH.01 — SAFETY"
+  },
+  {
+    "text_id": "content.chapter.01-safety.header_ref",
+    "scope": "content",
+    "context": "content.chapter.01-safety.header_ref",
+    "source_text": "CH.01 — SAFETY"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[0].text",
+    "source_text": "为了您的安全，在使用本电器产品前，请阅读本手册中的所有说明，并始终遵守以下安全预防措施："
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.1",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[0].text",
+    "source_text": "本机仅供家庭使用，请勿用于其他非设计用途。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.10",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[9].text",
+    "source_text": "如发现插头、电源线或主机损坏，请立即停止使用并联系制造商或授权维修点处理，请勿自行拆修。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.11",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[10].text",
+    "source_text": "电源线请勿悬挂于台面边缘，以免儿童拉扯或意外绊倒。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.12",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[11].text",
+    "source_text": "禁止在手脚潮湿或未穿鞋的情况下触摸产品电源部件。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.13",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[12].text",
+    "source_text": "产品所连接的电源需有漏电保护装置。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.14",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[13].text",
+    "source_text": "插座必须满足当地法规要求，安全法规要求强制进行产品接地。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.15",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[14].text",
+    "source_text": "清洁、维护或更换部件时，必须切断电源。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.16",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[15].text",
+    "source_text": "切勿将螺丝刀或其它物体插入散热孔中。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.17",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[16].text",
+    "source_text": "只有授权技术人员才能进行拆机检查和维修。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.18",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[17].text",
+    "source_text": "发生火灾时，切勿浇水，请使用二氧化碳灭火器。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.19",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[18].text",
+    "source_text": "除制造商推荐的方法外，不能使用机械手段或其他方法加速除霜。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.2",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[1].text",
+    "source_text": "请勿让儿童玩耍本机或电源线。儿童、行动不便或认知受限人士应在成年人监督下使用。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.20",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[19].text",
+    "source_text": "不要损坏制冷剂回路。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.21",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[20].text",
+    "source_text": "警告：易燃材料，存在发生火灾的风险。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.22",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[21].text",
+    "source_text": "制冷剂废料需在授权废物处理中心处理，不能靠近火源。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.23",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[22].text",
+    "source_text": "请勿在本产品中储存含有易燃推进剂的气溶胶罐等爆炸性物质。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.24",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[23].text",
+    "source_text": "保持所有通风口顺畅，保持产品远离热源或蒸汽装置。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.3",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[2].text",
+    "source_text": "小零件可能造成窒息危险，请勿让儿童接触。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.4",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[3].text",
+    "source_text": "请勿在高湿高温等环境使用本机，严禁在有易燃易爆气体的环境中使用。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.5",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[4].text",
+    "source_text": "请确保电源电压与机器铭牌标示一致。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.6",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[5].text",
+    "source_text": "使用后请切断电源。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.7",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[6].text",
+    "source_text": "从电源插座上拔出插头时请手握插头拔出，请勿拉扯电源线。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.8",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[7].text",
+    "source_text": "请勿将主机或电源线浸入水中或其他液体中。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.item.9",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].items[8].text",
+    "source_text": "电源线需要直接插接符合安全规范的电源插座上。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.block.2.title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].blocks[1].title",
+    "source_text": "警告 WARNING"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[0].section_title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.1.item.1",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[0].items[0].text",
+    "source_text": "移动或运输产品时保持产品直立，否则可能导致产品损坏。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.1.item.2",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[0].items[1].text",
+    "source_text": "运输后需静置4小时，待冷媒稳定后再通电。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.1.item.3",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[0].items[2].text",
+    "source_text": "对电机和制冷系统进行维护时要戴手套。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.1.item.4",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[0].items[3].text",
+    "source_text": "切勿阻塞散热孔，以确保产品的良好运转。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.1.item.5",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[0].items[4].text",
+    "source_text": "请勿将非食品类物品放置于腔体中。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.1.item.6",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[0].items[5].text",
+    "source_text": "本产品仅限室内使用。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.1.item.7",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[0].items[6].text",
+    "source_text": "本产品设计为将饮用水制作成冰，请不要将本产品用于设计外用途。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.1.title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[0].title",
+    "source_text": "注意 CAUTION"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.2.item.1",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[1].items[0].text",
+    "source_text": "产品噪音等级低于50 dB(A)。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.2.item.2",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[1].items[1].text",
+    "source_text": "本产品的气候类型为SN，适合在10℃~32℃ / 50℉~89.6℉ 的环境温度中使用。"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.block.2.title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].blocks[1].title",
+    "source_text": "提示 NOTICE"
+  },
+  {
+    "text_id": "content.chapter.01-safety.page.page2.section_title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.pages[1].section_title",
+    "source_text": "安全须知（续）"
+  },
+  {
+    "text_id": "content.chapter.01-safety.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[0].title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.01-safety.title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.01-safety.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[0].toc_title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.01-safety.toc_title",
+    "scope": "content",
+    "context": "content.chapter.01-safety.toc_title",
+    "source_text": "安全须知"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[1].header_ref",
+    "source_text": "CH.02 — USAGE TIPS"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.header_ref",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.header_ref",
+    "source_text": "CH.02 — USAGE TIPS"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[0].text",
+    "source_text": "放置与首次使用"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.1",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[1].items[0].text",
+    "source_text": "将产品放置在坚固、平坦、干燥的台面上。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.2",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[1].items[1].text",
+    "source_text": "确保产品四周留有至少 120mm（4.7\"）的通风间距。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.3",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[1].items[2].text",
+    "source_text": "远离热源（烤箱、灶台等），避免阳光直射。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.4",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[1].items[3].text",
+    "source_text": "首次使用前，请先运行一次清洁程序（参见 CH.08 维护保养）。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.2.item.5",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[1].items[4].text",
+    "source_text": "首次制冰前 5 次属于水降温阶段，冰形会随水温下降逐渐增大，属正常现象。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[2].text",
+    "source_text": "用水要求"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.4.item.1",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[3].items[0].text",
+    "source_text": "使用饮用水即可制冰，饮用水越纯净则冰越透明。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.4.item.2",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[3].items[1].text",
+    "source_text": "若想达到理想透明度，请使用矿物质含量较低的饮用水（TDS < 200mg/L）。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.4.item.3",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[3].items[2].text",
+    "source_text": "适用水源：纯净饮用水、RO反渗透处理自来水、深度过滤自来水、低TDS矿泉水。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.4.item.4",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[3].items[3].text",
+    "source_text": "**禁止**使用有色、有味、有气泡或含过饱和气体的饮品（茶、果汁、咖啡、牛奶、汽水等），这些会污染甚至损坏产品。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.5.text",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[4].text",
+    "source_text": "使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.6.item.1",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[5].items[0].text",
+    "source_text": "开箱后取出全部包装材料，并用湿布擦拭产品内部后再擦干。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.6.item.2",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[5].items[1].text",
+    "source_text": "子弹冰篮装满后，产品会自动暂停制冰并发出提示音。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.6.item.3",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[5].items[2].text",
+    "source_text": "三种尺寸不能同时制作，但可在制冰途中切换另一种尺寸。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.block.6.item.4",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].blocks[5].items[3].text",
+    "source_text": "连续制冰过程中，受水质、水温和环境温度影响，偶尔出现冰块不透明属正常现象。"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.pages[0].section_title",
+    "source_text": "产品及使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[1].title",
+    "source_text": "产品及使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.title",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.title",
+    "source_text": "产品及使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[1].toc_title",
+    "source_text": "产品及使用提示"
+  },
+  {
+    "text_id": "content.chapter.02-usage-tips.toc_title",
+    "scope": "content",
+    "context": "content.chapter.02-usage-tips.toc_title",
+    "source_text": "产品及使用提示"
+  },
+  {
+    "text_id": "content.chapter.03-structure.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[2].header_ref",
+    "source_text": "CH.03 — STRUCTURE"
+  },
+  {
+    "text_id": "content.chapter.03-structure.header_ref",
+    "scope": "content",
+    "context": "content.chapter.03-structure.header_ref",
+    "source_text": "CH.03 — STRUCTURE"
+  },
+  {
+    "text_id": "content.chapter.03-structure.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.03-structure.pages[0].section_title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.03-structure.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[2].title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.03-structure.title",
+    "scope": "content",
+    "context": "content.chapter.03-structure.title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.03-structure.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[2].toc_title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.03-structure.toc_title",
+    "scope": "content",
+    "context": "content.chapter.03-structure.toc_title",
+    "source_text": "产品结构"
+  },
+  {
+    "text_id": "content.chapter.04-features.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[3].header_ref",
+    "source_text": "CH.04 — FEATURES"
+  },
+  {
+    "text_id": "content.chapter.04-features.header_ref",
+    "scope": "content",
+    "context": "content.chapter.04-features.header_ref",
+    "source_text": "CH.04 — FEATURES"
+  },
+  {
+    "text_id": "content.chapter.04-features.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.04-features.pages[0].section_title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.04-features.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[3].title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.04-features.title",
+    "scope": "content",
+    "context": "content.chapter.04-features.title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.04-features.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[3].toc_title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.04-features.toc_title",
+    "scope": "content",
+    "context": "content.chapter.04-features.toc_title",
+    "source_text": "产品功能"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[4].header_ref",
+    "source_text": "CH.05 — SPECIFICATIONS"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.header_ref",
+    "scope": "content",
+    "context": "content.chapter.05-specifications.header_ref",
+    "source_text": "CH.05 — SPECIFICATIONS"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.05-specifications.pages[0].section_title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[4].title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.title",
+    "scope": "content",
+    "context": "content.chapter.05-specifications.title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[4].toc_title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.05-specifications.toc_title",
+    "scope": "content",
+    "context": "content.chapter.05-specifications.toc_title",
+    "source_text": "技术参数"
+  },
+  {
+    "text_id": "content.chapter.06-operation.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[5].header_ref",
+    "source_text": "CH.06 — OPERATION"
+  },
+  {
+    "text_id": "content.chapter.06-operation.header_ref",
+    "scope": "content",
+    "context": "content.chapter.06-operation.header_ref",
+    "source_text": "CH.06 — OPERATION"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[0].text",
+    "source_text": "工作前准备"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.2.item.1",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[1].items[0].text",
+    "source_text": "务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与墙或物品之间距离必须 ≥ 120 mm（4.7 in），以确保通风良好。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.2.item.2",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[1].items[1].text",
+    "source_text": "若第一次使用产品，或距离上一次很长时间没有使用产品，请先运行一次清洁程序。请参阅 CH.08 维护保养中的清洁说明。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[2].text",
+    "source_text": "产品开机"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.4.item.1",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[3].items[0].text",
+    "source_text": "给产品接通电源，产品发出“滴”一声，所有按键点亮后再熄灭，表示已经接通电源。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.4.item.2",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[3].items[1].text",
+    "source_text": "然后点击 **Power** 按键，按键显示白灯，产品已处于开机状态。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.5.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[4].text",
+    "source_text": "如何制作子弹冰"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.6.step.fill_tank.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[5].steps[1].text",
+    "source_text": "给子弹冰水箱中注满水，注水至水位刻度处。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.6.step.open_lid.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[5].steps[0].text",
+    "source_text": "打开腔盖，并取出子弹冰篮和水箱。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.block.6.step.seat_tank.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].blocks[5].steps[2].text",
+    "source_text": "然后将水箱放入子弹冰内腔，请用手按压下水箱，确保已经装到位。水箱松动可能导致产品无法工作。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[0].section_title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.1.step.return_basket.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[0].steps[0].text",
+    "source_text": "然后放入子弹冰篮，并关闭腔盖。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.1.step.select_size.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[0].steps[1].text",
+    "source_text": "点击 **Make Ice** 按键，切换点亮按键上方的 S / M / L 指示灯，选择需要制作的子弹冰尺寸。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.1.step.start_cycle.text",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[0].steps[2].text",
+    "source_text": "选择完尺寸后，产品自动开始制作子弹冰。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.2.item.1.label_before",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[1].items[0].label_before",
+    "source_text": "ICE FULL →"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.2.item.2.label_before",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[1].items[1].label_before",
+    "source_text": "ADD WATER →"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.3.item.1",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[2].items[0].text",
+    "source_text": "制冰中途可点击 **Make Ice** 按键切换制冰尺寸。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.3.item.2",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[2].items[1].text",
+    "source_text": "制冰中途可点击 **Power** 按键终止，子弹冰制冰按键灯熄灭，产品停止子弹冰制冰。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.3.item.3",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[2].items[2].text",
+    "source_text": "当产品检测到子弹冰冰篮装满后，**ICE FULL** 警示灯点亮为绿灯，产品停止制冰。待冰融解，或取走后，产品会自动恢复制冰。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.3.item.4",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[2].items[3].text",
+    "source_text": "请留意，制冰期间若 **ADD WATER** 警示灯点亮红灯，产品会停止制冰，请及时给水箱补充水。"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.block.3.title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].blocks[2].title",
+    "source_text": "提示 NOTICE"
+  },
+  {
+    "text_id": "content.chapter.06-operation.page.page2.section_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.pages[1].section_title",
+    "source_text": "操作指引（续）"
+  },
+  {
+    "text_id": "content.chapter.06-operation.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[5].title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[5].toc_title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.06-operation.toc_title",
+    "scope": "content",
+    "context": "content.chapter.06-operation.toc_title",
+    "source_text": "操作指引"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[6].header_ref",
+    "source_text": "CH.07 — TROUBLESHOOTING"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.header_ref",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.header_ref",
+    "source_text": "CH.07 — TROUBLESHOOTING"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].headers[0].text",
+    "source_text": "故障现象"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].headers[1].text",
+    "source_text": "可能原因"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].headers[2].text",
+    "source_text": "解决方案"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[0][0].text",
+    "source_text": "不能开机"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[0][1].text",
+    "source_text": "电源未连接或插座无电"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[0][2].text",
+    "source_text": "检查电源连接及插座是否正常。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.2.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[1][0].text",
+    "source_text": "不能排水"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.2.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[1][1].text",
+    "source_text": "排水胶塞未松开或排水口堵塞"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.2.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[1][2].text",
+    "source_text": "检查产品底部排水胶塞是否已松开；检查排水口是否堵塞。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.3.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[2][0].text",
+    "source_text": "不能制冰"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.3.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[2][1].text",
+    "source_text": "水箱缺水（ADD WATER亮红灯）"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.3.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[2][2].text",
+    "source_text": "给水箱加水至水位线。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[3][0].text",
+    "source_text": "不能制冰"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[3][1].text",
+    "source_text": "制冰模具只结霜无法结冰（管道无法抽水）"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[3][2].text",
+    "source_text": "加水至水位线，静置半小时后重新启动。观察制冰兜是否有注水，有则表示抽水泵已复位。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.5.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[4][0].text",
+    "source_text": "制冰中途停止"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.5.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[4][1].text",
+    "source_text": "冰篮已满（ICE FULL亮绿灯）"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.5.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[4][2].text",
+    "source_text": "取走冰块或等待冰融解，产品会自动恢复制冰。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.6.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[5][0].text",
+    "source_text": "制冰中途停止"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.6.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[5][1].text",
+    "source_text": "水箱缺水（ADD WATER亮红灯）"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.6.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[5][2].text",
+    "source_text": "及时给水箱补充水，产品会自动恢复制冰。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.7.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[6][0].text",
+    "source_text": "前5次冰块偏小"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.7.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[6][1].text",
+    "source_text": "水温较高，处于降温阶段"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.7.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[6][2].text",
+    "source_text": "属正常现象，冰形会随水温下降逐渐增大，达到标准尺寸。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.8.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[7][0].text",
+    "source_text": "制冰效果不理想"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.8.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[7][1].text",
+    "source_text": "通风间距不足或环境温度过高"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.8.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[7][2].text",
+    "source_text": "确保四周≥120mm间距；将产品移至阴凉通风处。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.9.cell.1",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[8][0].text",
+    "source_text": "冰块不透明"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.9.cell.2",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[8][1].text",
+    "source_text": "水质矿物质含量高或水温/环温影响"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.9.cell.3",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[0].rows[8][2].text",
+    "source_text": "使用TDS<200mg/L的纯净水；连续制冰偶尔不透明属正常现象。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.2.text",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[1].text",
+    "source_text": "如果用户不按照本手册操作产品，并对产品造成任何损坏或质量问题，工厂、经销商及品牌商将不承担任何责任。"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.block.2.title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].blocks[1].title",
+    "source_text": "免责声明 DISCLAIMER"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.pages[0].section_title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[6].title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[6].toc_title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.07-troubleshooting.toc_title",
+    "scope": "content",
+    "context": "content.chapter.07-troubleshooting.toc_title",
+    "source_text": "故障排除"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[7].header_ref",
+    "source_text": "CH.08 — MAINTENANCE"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.header_ref",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.header_ref",
+    "source_text": "CH.08 — MAINTENANCE"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[0].text",
+    "source_text": "自动清洁（制冰模具和制冰兜）"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.2.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[1].steps[0].text",
+    "source_text": "给水箱加水至水位线。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.2.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[1].steps[1].text",
+    "source_text": "开机状态下，点击 **Clean** 按键，按键灯亮白灯，产品自动清洁制冰兜和制冰模。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.2.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[1].steps[2].text",
+    "source_text": "清洁完成后，产品自动停止，按键灯熄灭。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[2].text",
+    "source_text": "排水操作"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.4.step.step1.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[3].steps[0].text",
+    "source_text": "断开电源，将产品放置到水槽旁。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.4.step.step2.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[3].steps[1].text",
+    "source_text": "将产品底部的排水孔塞松脱，让内腔的水排干。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.4.step.step3.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[3].steps[2].text",
+    "source_text": "排水完成后，将排水孔塞回原位。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.6.text",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[5].text",
+    "source_text": "日常保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.7.item.1",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[6].items[0].text",
+    "source_text": "定期用干净的水清洗产品内部，建议**每天使用前清洗一次**。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.7.item.2",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[6].items[1].text",
+    "source_text": "用柔软湿布擦拭产品外壳，请勿使用腐蚀性清洁剂。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.7.item.3",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[6].items[2].text",
+    "source_text": "请遵循自动清洁步骤清洗制冰模具和制冰兜。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.block.7.item.4",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].blocks[6].items[3].text",
+    "source_text": "清洁保养前请拔掉电源，待产品冷却后再进行处理。"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.pages[0].section_title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[7].title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.title",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[7].toc_title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.08-maintenance.toc_title",
+    "scope": "content",
+    "context": "content.chapter.08-maintenance.toc_title",
+    "source_text": "维护保养"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[8].header_ref",
+    "source_text": "CH.09 — INSTALLATION / STORAGE / DISPOSAL"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.header_ref",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.header_ref",
+    "source_text": "CH.09 — INSTALLATION / STORAGE / DISPOSAL"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[0].text",
+    "source_text": "包装运输"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.2.item.1",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[1].items[0].text",
+    "source_text": "运输过程中请保持平衡，防止倾翻；产品倾斜角不得大于 45°。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.2.item.2",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[1].items[1].text",
+    "source_text": "移动或运输产品时应保持直立状态，避免损坏压缩机和制冷系统。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.2.item.3",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[1].items[2].text",
+    "source_text": "运输后需静置 4 小时，待冷媒稳定后再通电。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.3.text",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[2].text",
+    "source_text": "安装"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.4.item.1",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[3].items[0].text",
+    "source_text": "请将产品安装在平整、稳固、干燥的台面上，不得倾斜放置。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.4.item.2",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[3].items[1].text",
+    "source_text": "搬运时不要推拉产品，以避免倾覆或损坏部件。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.4.item.3",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[3].items[2].text",
+    "source_text": "产品四周与墙或物品之间需保持至少 120mm（4.7\"）的间距，以确保通风和可维护性。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.4.item.4",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[3].items[3].text",
+    "source_text": "请远离热源、蒸汽和阳光直射环境。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.5.text",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[4].text",
+    "source_text": "存储与拆除"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.6.item.1",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[5].items[0].text",
+    "source_text": "长期存放前，请排空水箱和内腔中的水，并完成清洁与擦干。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.6.item.2",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[5].items[1].text",
+    "source_text": "请将产品置于干燥、通风环境中保存，避免重压和潮湿。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.6.item.3",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[5].items[2].text",
+    "source_text": "本产品含电子元件和 R600a 制冷剂，不得与生活垃圾一同丢弃。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.6.item.4",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[5].items[3].text",
+    "source_text": "拆除或报废时，请联系授权回收机构或零售商，按当地法规进行环保处置。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.7.text",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[6].text",
+    "source_text": "请勿损坏制冷剂回路。若需要报废处理，请交由具备资质的废弃物处理机构回收，以避免对环境和人身安全造成风险。"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.block.7.title",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].blocks[6].title",
+    "source_text": "WEEE / R600a"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.pages[0].section_title",
+    "source_text": "安装运输、存储与拆除"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[8].title",
+    "source_text": "安装运输、存储与拆除"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.title",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.title",
+    "source_text": "安装运输、存储与拆除"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[8].toc_title",
+    "source_text": "安装运输、存储与拆除"
+  },
+  {
+    "text_id": "content.chapter.09-installation-storage-disposal.toc_title",
+    "scope": "content",
+    "context": "content.chapter.09-installation-storage-disposal.toc_title",
+    "source_text": "安装运输、存储与拆除"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.header_ref",
+    "scope": "content",
+    "context": "content.manifest.chapters[9].header_ref",
+    "source_text": "CH.10 — WARRANTY"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.header_ref",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.header_ref",
+    "source_text": "CH.10 — WARRANTY"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[0].text",
+    "source_text": "感谢您购买 {{brand.display_name}} {{localized.product_name}}。如有任何问题，请通过以下方式联系我们：\n{{brand.support_email}} | {{brand.website}}"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.11.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[10].text",
+    "source_text": "保修卡"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.12.field.1",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[11].fields[0].text",
+    "source_text": "客户名称"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.12.field.2",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[11].fields[1].text",
+    "source_text": "地址"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.12.field.3",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[11].fields[2].text",
+    "source_text": "城市 / 州 / 邮政编码"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.12.field.4",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[11].fields[3].text",
+    "source_text": "电话号码"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.2.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[1].text",
+    "source_text": "品牌商信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.4.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[3].text",
+    "source_text": "授权制造商"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.6.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[5].text",
+    "source_text": "保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.7.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[6].text",
+    "source_text": "本产品提供 **{{warranty.years}} 年有限保修**。自原始购买日期起 {{warranty.years}} 年内可享受保修更换服务。要获得保修更换资格，您必须："
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.8.item.1",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[7].items[0].text",
+    "source_text": "在过去 {{warranty.years}} 年内购买过产品。"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.8.item.2",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[7].items[1].text",
+    "source_text": "有原始订单号或购买时使用的电子邮件。"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.8.item.3",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[7].items[2].text",
+    "source_text": "如通过经销商或零售合作伙伴购买，须提供原始收据的副本。"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.block.9.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].blocks[8].text",
+    "source_text": "向我们发送电子邮件申请保修服务：**{{brand.support_email}}**"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page1.section_title",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[0].section_title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.1.text",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[0].text",
+    "source_text": "保修卡"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.1",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[0].text",
+    "source_text": "电子邮件地址"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.2",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[1].text",
+    "source_text": "原始购买日期"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.3",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[2].text",
+    "source_text": "产品型号"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.4",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[3].text",
+    "source_text": "序列号（如适用）"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.block.2.field.5",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].blocks[1].fields[4].text",
+    "source_text": "商户名称"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.page.page2.section_title",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.pages[1].section_title",
+    "source_text": "品牌与保修信息（续）"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.title",
+    "scope": "content",
+    "context": "content.manifest.chapters[9].title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.title",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.toc_title",
+    "scope": "content",
+    "context": "content.manifest.chapters[9].toc_title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "content.chapter.10-warranty.toc_title",
+    "scope": "content",
+    "context": "content.chapter.10-warranty.toc_title",
+    "source_text": "品牌与保修信息"
+  },
+  {
+    "text_id": "product.brands.act.address",
+    "scope": "product",
+    "context": "brands.act.address",
+    "source_text": "新加坡巴耶利峇路60号巴耶利峇广场#11-19, 邮编409051"
+  },
+  {
+    "text_id": "product.brands.act.display_name",
+    "scope": "product",
+    "context": "brands.act.display_name",
+    "source_text": "ACT"
+  },
+  {
+    "text_id": "product.brands.act.name",
+    "scope": "product",
+    "context": "brands.act.name",
+    "source_text": "ADVANCED CUISINE TECHNOLOGY PTE. LTD."
+  },
+  {
+    "text_id": "product.brands.vesta.address",
+    "scope": "product",
+    "context": "brands.vesta.address",
+    "source_text": "美国华盛顿州贝尔维尤市139th Ave SE 3120号500套房 邮编98005"
+  },
+  {
+    "text_id": "product.brands.vesta.display_name",
+    "scope": "product",
+    "context": "brands.vesta.display_name",
+    "source_text": "维思特"
+  },
+  {
+    "text_id": "product.brands.vesta.name",
+    "scope": "product",
+    "context": "brands.vesta.name",
+    "source_text": "Precision Appliance Technology, Inc."
+  },
+  {
+    "text_id": "product.brands.wevac.address",
+    "scope": "product",
+    "context": "brands.wevac.address",
+    "source_text": "香港九龙尖沙咀漆咸道南87-105号百利商业中心404A室"
+  },
+  {
+    "text_id": "product.brands.wevac.display_name",
+    "scope": "product",
+    "context": "brands.wevac.display_name",
+    "source_text": "威富可"
+  },
+  {
+    "text_id": "product.brands.wevac.name",
+    "scope": "product",
+    "context": "brands.wevac.name",
+    "source_text": "WEVAC TECHNOLOGY CO., LIMITED"
+  },
+  {
+    "text_id": "product.buttons.1.desc",
+    "scope": "product",
+    "context": "buttons.1.desc",
+    "source_text": "点击开机，长按关机。"
+  },
+  {
+    "text_id": "product.buttons.1.name",
+    "scope": "product",
+    "context": "buttons.1.name",
+    "source_text": "电源"
+  },
+  {
+    "text_id": "product.buttons.2.desc",
+    "scope": "product",
+    "context": "buttons.2.desc",
+    "source_text": "切换制冰尺寸（S / M / L），选择后产品自动制冰。"
+  },
+  {
+    "text_id": "product.buttons.2.name",
+    "scope": "product",
+    "context": "buttons.2.name",
+    "source_text": "制冰"
+  },
+  {
+    "text_id": "product.buttons.3.desc",
+    "scope": "product",
+    "context": "buttons.3.desc",
+    "source_text": "启动自动清洁程序（清洁制冰兜和制冰模）。"
+  },
+  {
+    "text_id": "product.buttons.3.name",
+    "scope": "product",
+    "context": "buttons.3.name",
+    "source_text": "清洁"
+  },
+  {
+    "text_id": "product.buttons.4.desc",
+    "scope": "product",
+    "context": "buttons.4.desc",
+    "source_text": "指示灯（绿灯）— 冰篮已满，产品暂停制冰。"
+  },
+  {
+    "text_id": "product.buttons.4.name",
+    "scope": "product",
+    "context": "buttons.4.name",
+    "source_text": "冰满"
+  },
+  {
+    "text_id": "product.buttons.5.desc",
+    "scope": "product",
+    "context": "buttons.5.desc",
+    "source_text": "指示灯（红灯）— 水箱缺水，产品暂停制冰，请及时补水。"
+  },
+  {
+    "text_id": "product.buttons.5.name",
+    "scope": "product",
+    "context": "buttons.5.name",
+    "source_text": "加水"
+  },
+  {
+    "text_id": "product.manufacturer.address",
+    "scope": "product",
+    "context": "manufacturer.address",
+    "source_text": "广东省广州市番禺区南村镇启业路1号"
+  },
+  {
+    "text_id": "product.manufacturer.name",
+    "scope": "product",
+    "context": "manufacturer.name",
+    "source_text": "广州亚俊氏真空科技股份有限公司"
+  },
+  {
+    "text_id": "product.parts.1.name",
+    "scope": "product",
+    "context": "parts.1.name",
+    "source_text": "腔盖"
+  },
+  {
+    "text_id": "product.parts.2.name",
+    "scope": "product",
+    "context": "parts.2.name",
+    "source_text": "冰篮"
+  },
+  {
+    "text_id": "product.parts.3.name",
+    "scope": "product",
+    "context": "parts.3.name",
+    "source_text": "制冰模具"
+  },
+  {
+    "text_id": "product.parts.4.name",
+    "scope": "product",
+    "context": "parts.4.name",
+    "source_text": "水箱"
+  },
+  {
+    "text_id": "product.parts.5.name",
+    "scope": "product",
+    "context": "parts.5.name",
+    "source_text": "水箱提手"
+  },
+  {
+    "text_id": "product.parts.6.name",
+    "scope": "product",
+    "context": "parts.6.name",
+    "source_text": "控制面板"
+  },
+  {
+    "text_id": "product.parts.7.name",
+    "scope": "product",
+    "context": "parts.7.name",
+    "source_text": "排水孔"
+  },
+  {
+    "text_id": "product.product.name",
+    "scope": "product",
+    "context": "product.name",
+    "source_text": "制冰机"
+  },
+  {
+    "text_id": "product.specs.eu.rows.0.label",
+    "scope": "product",
+    "context": "specs.eu.rows.0.label",
+    "source_text": "电压"
+  },
+  {
+    "text_id": "product.specs.eu.rows.0.value",
+    "scope": "product",
+    "context": "specs.eu.rows.0.value",
+    "source_text": "220~240 Vac"
+  },
+  {
+    "text_id": "product.specs.eu.rows.1.label",
+    "scope": "product",
+    "context": "specs.eu.rows.1.label",
+    "source_text": "频率"
+  },
+  {
+    "text_id": "product.specs.eu.rows.1.value",
+    "scope": "product",
+    "context": "specs.eu.rows.1.value",
+    "source_text": "50 Hz"
+  },
+  {
+    "text_id": "product.specs.eu.rows.10.label",
+    "scope": "product",
+    "context": "specs.eu.rows.10.label",
+    "source_text": "冰块 L"
+  },
+  {
+    "text_id": "product.specs.eu.rows.10.value",
+    "scope": "product",
+    "context": "specs.eu.rows.10.value",
+    "source_text": "Φ22 × 27 mm"
+  },
+  {
+    "text_id": "product.specs.eu.rows.11.label",
+    "scope": "product",
+    "context": "specs.eu.rows.11.label",
+    "source_text": "通风间距"
+  },
+  {
+    "text_id": "product.specs.eu.rows.11.value",
+    "scope": "product",
+    "context": "specs.eu.rows.11.value",
+    "source_text": "≥ 120 mm / 4.7\""
+  },
+  {
+    "text_id": "product.specs.eu.rows.12.label",
+    "scope": "product",
+    "context": "specs.eu.rows.12.label",
+    "source_text": "冷媒"
+  },
+  {
+    "text_id": "product.specs.eu.rows.12.value",
+    "scope": "product",
+    "context": "specs.eu.rows.12.value",
+    "source_text": "R600a"
+  },
+  {
+    "text_id": "product.specs.eu.rows.13.label",
+    "scope": "product",
+    "context": "specs.eu.rows.13.label",
+    "source_text": "水箱容量"
+  },
+  {
+    "text_id": "product.specs.eu.rows.13.value",
+    "scope": "product",
+    "context": "specs.eu.rows.13.value",
+    "source_text": "MAX 1.0 L / MIN 0.75 L"
+  },
+  {
+    "text_id": "product.specs.eu.rows.14.label",
+    "scope": "product",
+    "context": "specs.eu.rows.14.label",
+    "source_text": "制冰周期"
+  },
+  {
+    "text_id": "product.specs.eu.rows.14.value",
+    "scope": "product",
+    "context": "specs.eu.rows.14.value",
+    "source_text": "S: 9pcs/8min, M: 9pcs/10min, L: 9pcs/11.5min"
+  },
+  {
+    "text_id": "product.specs.eu.rows.15.label",
+    "scope": "product",
+    "context": "specs.eu.rows.15.label",
+    "source_text": "工作环境"
+  },
+  {
+    "text_id": "product.specs.eu.rows.15.value",
+    "scope": "product",
+    "context": "specs.eu.rows.15.value",
+    "source_text": "5~32℃, ≤85% RH"
+  },
+  {
+    "text_id": "product.specs.eu.rows.16.label",
+    "scope": "product",
+    "context": "specs.eu.rows.16.label",
+    "source_text": "噪音"
+  },
+  {
+    "text_id": "product.specs.eu.rows.16.value",
+    "scope": "product",
+    "context": "specs.eu.rows.16.value",
+    "source_text": "≤ 50 dB(A)"
+  },
+  {
+    "text_id": "product.specs.eu.rows.2.label",
+    "scope": "product",
+    "context": "specs.eu.rows.2.label",
+    "source_text": "制冰功率"
+  },
+  {
+    "text_id": "product.specs.eu.rows.2.value",
+    "scope": "product",
+    "context": "specs.eu.rows.2.value",
+    "source_text": "110 W"
+  },
+  {
+    "text_id": "product.specs.eu.rows.3.label",
+    "scope": "product",
+    "context": "specs.eu.rows.3.label",
+    "source_text": "脱冰功率"
+  },
+  {
+    "text_id": "product.specs.eu.rows.3.value",
+    "scope": "product",
+    "context": "specs.eu.rows.3.value",
+    "source_text": "130 W"
+  },
+  {
+    "text_id": "product.specs.eu.rows.4.label",
+    "scope": "product",
+    "context": "specs.eu.rows.4.label",
+    "source_text": "尺寸（宽×深×高）"
+  },
+  {
+    "text_id": "product.specs.eu.rows.4.value",
+    "scope": "product",
+    "context": "specs.eu.rows.4.value",
+    "source_text": "235 × 305 × 321 mm"
+  },
+  {
+    "text_id": "product.specs.eu.rows.5.label",
+    "scope": "product",
+    "context": "specs.eu.rows.5.label",
+    "source_text": "净重"
+  },
+  {
+    "text_id": "product.specs.eu.rows.5.value",
+    "scope": "product",
+    "context": "specs.eu.rows.5.value",
+    "source_text": "7 kg / 15.4 lb"
+  },
+  {
+    "text_id": "product.specs.eu.rows.6.label",
+    "scope": "product",
+    "context": "specs.eu.rows.6.label",
+    "source_text": "24h制冰量"
+  },
+  {
+    "text_id": "product.specs.eu.rows.6.value",
+    "scope": "product",
+    "context": "specs.eu.rows.6.value",
+    "source_text": "6.9~7.4 kg"
+  },
+  {
+    "text_id": "product.specs.eu.rows.7.label",
+    "scope": "product",
+    "context": "specs.eu.rows.7.label",
+    "source_text": "排水方式"
+  },
+  {
+    "text_id": "product.specs.eu.rows.7.value",
+    "scope": "product",
+    "context": "specs.eu.rows.7.value",
+    "source_text": "手动排水"
+  },
+  {
+    "text_id": "product.specs.eu.rows.8.label",
+    "scope": "product",
+    "context": "specs.eu.rows.8.label",
+    "source_text": "冰块 S"
+  },
+  {
+    "text_id": "product.specs.eu.rows.8.value",
+    "scope": "product",
+    "context": "specs.eu.rows.8.value",
+    "source_text": "Φ19 × 24 mm"
+  },
+  {
+    "text_id": "product.specs.eu.rows.9.label",
+    "scope": "product",
+    "context": "specs.eu.rows.9.label",
+    "source_text": "冰块 M"
+  },
+  {
+    "text_id": "product.specs.eu.rows.9.value",
+    "scope": "product",
+    "context": "specs.eu.rows.9.value",
+    "source_text": "Φ21 × 25 mm"
+  },
+  {
+    "text_id": "product.specs.us.rows.0.label",
+    "scope": "product",
+    "context": "specs.us.rows.0.label",
+    "source_text": "电压"
+  },
+  {
+    "text_id": "product.specs.us.rows.0.value",
+    "scope": "product",
+    "context": "specs.us.rows.0.value",
+    "source_text": "110~120 Vac"
+  },
+  {
+    "text_id": "product.specs.us.rows.1.label",
+    "scope": "product",
+    "context": "specs.us.rows.1.label",
+    "source_text": "频率"
+  },
+  {
+    "text_id": "product.specs.us.rows.1.value",
+    "scope": "product",
+    "context": "specs.us.rows.1.value",
+    "source_text": "60 Hz"
+  },
+  {
+    "text_id": "product.specs.us.rows.10.label",
+    "scope": "product",
+    "context": "specs.us.rows.10.label",
+    "source_text": "冰块 L"
+  },
+  {
+    "text_id": "product.specs.us.rows.10.value",
+    "scope": "product",
+    "context": "specs.us.rows.10.value",
+    "source_text": "Φ22 × 27 mm"
+  },
+  {
+    "text_id": "product.specs.us.rows.11.label",
+    "scope": "product",
+    "context": "specs.us.rows.11.label",
+    "source_text": "通风间距"
+  },
+  {
+    "text_id": "product.specs.us.rows.11.value",
+    "scope": "product",
+    "context": "specs.us.rows.11.value",
+    "source_text": "≥ 120 mm / 4.7\""
+  },
+  {
+    "text_id": "product.specs.us.rows.12.label",
+    "scope": "product",
+    "context": "specs.us.rows.12.label",
+    "source_text": "冷媒"
+  },
+  {
+    "text_id": "product.specs.us.rows.12.value",
+    "scope": "product",
+    "context": "specs.us.rows.12.value",
+    "source_text": "R600a"
+  },
+  {
+    "text_id": "product.specs.us.rows.13.label",
+    "scope": "product",
+    "context": "specs.us.rows.13.label",
+    "source_text": "水箱容量"
+  },
+  {
+    "text_id": "product.specs.us.rows.13.value",
+    "scope": "product",
+    "context": "specs.us.rows.13.value",
+    "source_text": "MAX 1.0 L / MIN 0.75 L"
+  },
+  {
+    "text_id": "product.specs.us.rows.14.label",
+    "scope": "product",
+    "context": "specs.us.rows.14.label",
+    "source_text": "制冰周期"
+  },
+  {
+    "text_id": "product.specs.us.rows.14.value",
+    "scope": "product",
+    "context": "specs.us.rows.14.value",
+    "source_text": "S: 9pcs/8min, M: 9pcs/10min, L: 9pcs/11.5min"
+  },
+  {
+    "text_id": "product.specs.us.rows.15.label",
+    "scope": "product",
+    "context": "specs.us.rows.15.label",
+    "source_text": "工作环境"
+  },
+  {
+    "text_id": "product.specs.us.rows.15.value",
+    "scope": "product",
+    "context": "specs.us.rows.15.value",
+    "source_text": "5~32℃, ≤85% RH"
+  },
+  {
+    "text_id": "product.specs.us.rows.16.label",
+    "scope": "product",
+    "context": "specs.us.rows.16.label",
+    "source_text": "噪音"
+  },
+  {
+    "text_id": "product.specs.us.rows.16.value",
+    "scope": "product",
+    "context": "specs.us.rows.16.value",
+    "source_text": "≤ 50 dB(A)"
+  },
+  {
+    "text_id": "product.specs.us.rows.2.label",
+    "scope": "product",
+    "context": "specs.us.rows.2.label",
+    "source_text": "制冰功率"
+  },
+  {
+    "text_id": "product.specs.us.rows.2.value",
+    "scope": "product",
+    "context": "specs.us.rows.2.value",
+    "source_text": "110 W"
+  },
+  {
+    "text_id": "product.specs.us.rows.3.label",
+    "scope": "product",
+    "context": "specs.us.rows.3.label",
+    "source_text": "脱冰功率"
+  },
+  {
+    "text_id": "product.specs.us.rows.3.value",
+    "scope": "product",
+    "context": "specs.us.rows.3.value",
+    "source_text": "170 W"
+  },
+  {
+    "text_id": "product.specs.us.rows.4.label",
+    "scope": "product",
+    "context": "specs.us.rows.4.label",
+    "source_text": "尺寸（宽×深×高）"
+  },
+  {
+    "text_id": "product.specs.us.rows.4.value",
+    "scope": "product",
+    "context": "specs.us.rows.4.value",
+    "source_text": "235 × 305 × 321 mm"
+  },
+  {
+    "text_id": "product.specs.us.rows.5.label",
+    "scope": "product",
+    "context": "specs.us.rows.5.label",
+    "source_text": "净重"
+  },
+  {
+    "text_id": "product.specs.us.rows.5.value",
+    "scope": "product",
+    "context": "specs.us.rows.5.value",
+    "source_text": "7 kg / 15.4 lb"
+  },
+  {
+    "text_id": "product.specs.us.rows.6.label",
+    "scope": "product",
+    "context": "specs.us.rows.6.label",
+    "source_text": "24h制冰量"
+  },
+  {
+    "text_id": "product.specs.us.rows.6.value",
+    "scope": "product",
+    "context": "specs.us.rows.6.value",
+    "source_text": "6.9~7.4 kg"
+  },
+  {
+    "text_id": "product.specs.us.rows.7.label",
+    "scope": "product",
+    "context": "specs.us.rows.7.label",
+    "source_text": "排水方式"
+  },
+  {
+    "text_id": "product.specs.us.rows.7.value",
+    "scope": "product",
+    "context": "specs.us.rows.7.value",
+    "source_text": "手动排水"
+  },
+  {
+    "text_id": "product.specs.us.rows.8.label",
+    "scope": "product",
+    "context": "specs.us.rows.8.label",
+    "source_text": "冰块 S"
+  },
+  {
+    "text_id": "product.specs.us.rows.8.value",
+    "scope": "product",
+    "context": "specs.us.rows.8.value",
+    "source_text": "Φ19 × 24 mm"
+  },
+  {
+    "text_id": "product.specs.us.rows.9.label",
+    "scope": "product",
+    "context": "specs.us.rows.9.label",
+    "source_text": "冰块 M"
+  },
+  {
+    "text_id": "product.specs.us.rows.9.value",
+    "scope": "product",
+    "context": "specs.us.rows.9.value",
+    "source_text": "Φ21 × 25 mm"
+  },
+  {
+    "text_id": "product.ui_labels.address_label",
+    "scope": "product",
+    "context": "ui_labels.address_label",
+    "source_text": "地址"
+  },
+  {
+    "text_id": "product.ui_labels.brand_info_title",
+    "scope": "product",
+    "context": "ui_labels.brand_info_title",
+    "source_text": "品牌商信息"
+  },
+  {
+    "text_id": "product.ui_labels.brand_label",
+    "scope": "product",
+    "context": "ui_labels.brand_label",
+    "source_text": "品牌商"
+  },
+  {
+    "text_id": "product.ui_labels.buttons_col1",
+    "scope": "product",
+    "context": "ui_labels.buttons_col1",
+    "source_text": "No. / 按键"
+  },
+  {
+    "text_id": "product.ui_labels.buttons_col2",
+    "scope": "product",
+    "context": "ui_labels.buttons_col2",
+    "source_text": "功能说明"
+  },
+  {
+    "text_id": "product.ui_labels.email_label",
+    "scope": "product",
+    "context": "ui_labels.email_label",
+    "source_text": "客服邮箱"
+  },
+  {
+    "text_id": "product.ui_labels.manufacturer_label",
+    "scope": "product",
+    "context": "ui_labels.manufacturer_label",
+    "source_text": "制造商"
+  },
+  {
+    "text_id": "product.ui_labels.manufacturer_title",
+    "scope": "product",
+    "context": "ui_labels.manufacturer_title",
+    "source_text": "授权制造商"
+  },
+  {
+    "text_id": "product.ui_labels.parts_col_name",
+    "scope": "product",
+    "context": "ui_labels.parts_col_name",
+    "source_text": "名称"
+  },
+  {
+    "text_id": "product.ui_labels.parts_col_no",
+    "scope": "product",
+    "context": "ui_labels.parts_col_no",
+    "source_text": "编号"
+  },
+  {
+    "text_id": "product.ui_labels.specs_col1",
+    "scope": "product",
+    "context": "ui_labels.specs_col1",
+    "source_text": "参数"
+  },
+  {
+    "text_id": "product.ui_labels.specs_col2",
+    "scope": "product",
+    "context": "ui_labels.specs_col2",
+    "source_text": "规格"
+  },
+  {
+    "text_id": "product.ui_labels.trouble_col1",
+    "scope": "product",
+    "context": "ui_labels.trouble_col1",
+    "source_text": "故障现象"
+  },
+  {
+    "text_id": "product.ui_labels.trouble_col2",
+    "scope": "product",
+    "context": "ui_labels.trouble_col2",
+    "source_text": "可能原因"
+  },
+  {
+    "text_id": "product.ui_labels.trouble_col3",
+    "scope": "product",
+    "context": "ui_labels.trouble_col3",
+    "source_text": "解决方案"
+  },
+  {
+    "text_id": "product.ui_labels.warranty_card_title",
+    "scope": "product",
+    "context": "ui_labels.warranty_card_title",
+    "source_text": "保修卡"
+  },
+  {
+    "text_id": "product.ui_labels.website_label",
+    "scope": "product",
+    "context": "ui_labels.website_label",
+    "source_text": "网址"
+  },
+  {
+    "text_id": "system.document_title",
+    "scope": "system",
+    "context": "system.document_title",
+    "source_text": "说明书"
+  }
+]
+

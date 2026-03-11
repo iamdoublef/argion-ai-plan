@@ -1,0 +1,428 @@
+{
+  "chapter_id": "07-troubleshooting",
+  "chapter_no": "07",
+  "title": "鏁呴殰鎺掗櫎",
+  "toc_title": "鏁呴殰鎺掗櫎",
+  "header_ref": "CH.07 鈥?TROUBLESHOOTING",
+  "pages": [
+    {
+      "page_class": "",
+      "section_title": "鏁呴殰鎺掗櫎",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "table_ref",
+          "table_class": "table-compact",
+          "headers": [
+            {
+              "text": "鏁呴殰鐜拌薄",
+              "width": "22%",
+              "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.1"
+            },
+            {
+              "text": "鍙兘鍘熷洜",
+              "width": "40%",
+              "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.2"
+            },
+            {
+              "text": "瑙ｅ喅鏂规",
+              "width": "38%",
+              "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.header.3"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "**涓嶈兘寮€鏈?*",
+                "rowspan": 3,
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.1"
+              },
+              {
+                "text": "鐢垫簮绾挎湭姝ｇ‘鎻掑叆鐢垫簮鎻掑骇",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.2"
+              },
+              {
+                "text": "纭繚鐢垫簮绾垮凡姝ｇ‘鎻掑叆銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "鐢垫簮绾跨牬瑁傛垨鎹熷潖",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.2.cell.1"
+              },
+              {
+                "text": "鏂數妫€鏌ョ數婧愮嚎锛屽鏈夋崯鍧忚鍜ㄨ涓撲笟浜哄憳鏇存崲銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.2.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "鎺у埗鏉挎垨闈㈡澘鎺掔嚎绔瓙鏉捐劚",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.3.cell.1"
+              },
+              {
+                "text": "璇峰挩璇笓涓氫汉鍛樿繘琛岀淮淇€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.3.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "**鎶芥皵涓嶅共鍑€**",
+                "rowspan": 6,
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.1"
+              },
+              {
+                "text": "琚嬪瓙寮€鍙ｆ湭鍏ㄩ儴鍦ㄥ瘑灏佸湀鍐?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.2"
+              },
+              {
+                "text": "纭繚琚嬪瓙鐨勫紑鍙ｅ叏閮ㄥ湪涓嬬湡绌鸿厰瀵嗗皝鍦堝唴銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "浣跨敤浜嗛潪绾硅矾鐪熺┖琚?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.5.cell.1"
+              },
+              {
+                "text": "纭繚浣跨敤甯︽湁绾硅矾鐨勭湡绌鸿銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.5.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "瀵嗗皝鍦堢牬鎹熴€佺炕璧锋垨瀹夎涓嶆纭?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.6.cell.1"
+              },
+              {
+                "text": "妫€鏌ュ瘑灏佸湀鐘舵€佸苟姝ｇ‘瀹夎銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.6.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "琚嬪瓙鐮存崯鎴栨湁閽堝瓟",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.7.cell.1"
+              },
+              {
+                "text": "鏇存崲鏂扮殑鐪熺┖琚嬨€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.7.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "琚嬪彛鏈夊紓鐗╁鑷村瘑灏佷笉瀹屾暣",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.8.cell.1"
+              },
+              {
+                "text": "灏嗚鍙ｆ竻娲佸共鍑€鍚庡啀璇曘€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.8.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "鐑皝鏃堕棿杩囬暱瀵艰嚧娓╁害杩囬珮",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.9.cell.1"
+              },
+              {
+                "text": "鎵撳紑闈㈢洊锛岄潤缃喎鍗翠竴娈垫椂闂村啀浣跨敤銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.9.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "**涓嶈兘瀵嗗皝鎴栧瘑灏佹晥鏋滀笉鐞嗘兂**",
+                "rowspan": 4,
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.10.cell.1"
+              },
+              {
+                "text": "琚嬪彛娌℃湁姝ｇ‘鏀惧埌鍙戠儹鍣ㄤ笂",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.10.cell.2"
+              },
+              {
+                "text": "閲嶆柊鏀剧疆琚嬪彛锛岀‘淇濆钩鏁磋法杩囧彂鐑櫒銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.10.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "瀵嗗皝鍖哄煙鏈夋按鍒嗐€侀绮掓垨纰庣墖",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.11.cell.1"
+              },
+              {
+                "text": "娓呮磥瀵嗗皝鍖哄煙鍚庨噸璇曘€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.11.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "瀵嗗皝鍘嬫潯鏈畨瑁?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.12.cell.1"
+              },
+              {
+                "text": "瀹夎瀵嗗皝鍘嬫潯銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.12.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "榛樿瀵嗗皝鏃堕棿涓嶈冻",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.13.cell.1"
+              },
+              {
+                "text": "鐐瑰嚮 [btn:Extend Seal Time] 寤堕暱瀵嗗皝鏃堕棿鍚庨噸璇曘€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.13.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "**鐪熺┖瀵嗗皝鍚庤瀛愭紡姘?*",
+                "rowspan": 3,
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.14.cell.1"
+              },
+              {
+                "text": "楂樻俯鑳跺竷鐮存崯鎴栬劚钀?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.14.cell.2"
+              },
+              {
+                "text": "鍙婃椂鏇挎崲楂樻俯鑳跺竷銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.14.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "鍙戠儹娓╁害寮傚父瀵艰嚧琚嬪瓙铻嶅寲鎴栧瘑灏佷笉鍏呭垎",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.15.cell.1"
+              },
+              {
+                "text": "鍙傝€冩娊姘斾笉骞插噣鍜屼笉鑳藉瘑灏佺殑瑙ｅ喅鏂规銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.15.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "閿嬪埄鐗╁搧鍒虹┛琚嬪瓙",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.16.cell.1"
+              },
+              {
+                "text": "鐢ㄧ焊宸炬垨闃插埡绌跨墖鍖呰９閿嬪埄杈圭紭锛屼娇鐢ㄦ柊琚嬮噸璇曘€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.16.cell.2"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "notice_box",
+          "title": "鎻愮ず",
+          "text": "涓€浜涙按鏋滃拰钄彍鍦ㄥ寘瑁呭墠濡傛灉娌℃湁姝ｇ‘鍦扮劘鐔燂紝鎴栬€呯儹鐨勯鐗╋紝浼氶噴鏀炬皵浣擄紝瀵艰嚧鐪熺┖琚嬫病鏈夋敹绱э紝姝ょ被鎯呭喌灞炰簬姝ｅ父琛ㄧ幇锛屼笉灞炰簬婕忔皵銆?",
+          "text_id": "content.chapter.07-troubleshooting.page.page1.block.2.text",
+          "title_id": "content.chapter.07-troubleshooting.page.page1.block.2.title"
+        },
+        {
+          "type": "notice_box",
+          "text": "鑻ヤ互涓婃晠闅滄帓闄ゆ柟妗堝潎鏃犳硶瑙ｅ喅闂锛岃鑱旂郴瀹㈡湇鎸囧紩瑙ｅ喅锛岃涓嶈鎿呰嚜鎷嗗嵏鏈哄櫒銆?",
+          "text_id": "content.chapter.07-troubleshooting.page.page1.block.3.text"
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.07-troubleshooting.page.page1.section_title"
+    },
+    {
+      "page_class": "",
+      "section_title": "鏁呴殰鎺掗櫎锛堥檮浠朵笌鎶ヨ锛?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "table_ref",
+          "headers": [
+            {
+              "text": "鏁呴殰鐜拌薄",
+              "width": "22%",
+              "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.header.1"
+            },
+            {
+              "text": "鍙兘鍘熷洜",
+              "width": "40%",
+              "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.header.2"
+            },
+            {
+              "text": "瑙ｅ喅鏂规",
+              "width": "38%",
+              "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.header.3"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "**Accessories 妯″紡鏃犳硶鎶芥皵**",
+                "rowspan": 3,
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.1.cell.1"
+              },
+              {
+                "text": "鐪熺┖杞鎵佸舰鍚稿槾鏈畬鍏ㄦ彃鍏ュ鎶芥皵瀛?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.1.cell.2"
+              },
+              {
+                "text": "鐢ㄥ姏鏃嬭浆涓嬪帇鎵佸舰鍚稿槾锛屼娇鍏跺畬鍏ㄦ彃鍏ャ€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.1.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "闈㈢洊鎶婃墜鏈笅鍘嬮攣绱?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.2.cell.1"
+              },
+              {
+                "text": "涓嬪帇鎶婃墜浠ラ攣绱ч潰鐩栧悗閲嶈瘯銆?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.2.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "瀵嗗皝鍦堟垨鐪熺┖鑵斾笂鏈夊紓鐗?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.3.cell.1"
+              },
+              {
+                "text": "鎵撳紑闈㈢洊娓呴櫎寮傜墿锛岄棴鐩栭噸璇曘€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.3.cell.2"
+              }
+            ],
+            [
+              {
+                "text": "**閿欒鎶ヨ锛堣渹楦ｅ０闀块福 + 鎸囩ず鐏揩闂級**",
+                "rowspan": 2,
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.4.cell.1"
+              },
+              {
+                "text": "鎸変笅 Vac&Seal/Start 鎴?Seal 鍚庢姤璀?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.4.cell.2"
+              },
+              {
+                "text": "妫€鏌ラ潰鐩栨槸鍚﹂棴鍚堬紝鎶婃墜鏄惁宸蹭笅鍘嬮攣绱с€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.4.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "鐪熺┖宸ヤ綔杩囩▼涓繛缁渹楦?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.5.cell.1"
+              },
+              {
+                "text": "鏈哄櫒鏃犳硶杈惧埌鐩爣鍘嬪姏锛屾鏌ユ妸鎵嬮攣绱у強琚嬪瓙鏄惁鐮存崯锛屾洿鎹㈡柊琚嬮噸璇曘€?",
+                "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.5.cell.2"
+              }
+            ]
+          ]
+        }
+      ],
+      "page_id": "page2",
+      "section_title_id": "content.chapter.07-troubleshooting.page.page2.section_title"
+    },
+    {
+      "page_class": "",
+      "section_title": "鏁呴殰鎺掗櫎锛堢画锛?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "sub_title",
+          "text": "濡傚洜鐗规畩鍘熷洜锛屽鑷存恫浣撹繘鍏ユ満鍣ㄥ唴閮ㄧ殑澶勭悊鏂规",
+          "text_id": "content.chapter.07-troubleshooting.page.page3.block.1.text"
+        },
+        {
+          "type": "paragraph",
+          "text": "**娑蹭綋杩涘叆鐪熺┖鑵斾腑锛?*",
+          "text_id": "content.chapter.07-troubleshooting.page.page3.block.2.text"
+        },
+        {
+          "type": "step_flow",
+          "steps": [
+            {
+              "id": "step1",
+              "text": "绔嬪嵆鍏抽棴鐢垫簮锛岀瓑寰呰嚦灏?5 鍒嗛挓锛岃鏈哄櫒鍙戠儹鍣ㄥ喎鍗淬€?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step1.text"
+            },
+            {
+              "id": "step2",
+              "text": "灏嗘恫浣撴Ы鍙栧嚭锛屽苟娓呯悊鎿﹀共娑蹭綋銆?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step2.text"
+            },
+            {
+              "id": "step3",
+              "text": "灏嗙湡绌鸿厰涓殑娑蹭綋鎿﹀共銆?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step3.text"
+            },
+            {
+              "id": "step4",
+              "text": "灏嗘満鍣ㄥ簳閮ㄩ摵鍨帹鎴跨焊鎴栨墭鐩橈紝閲嶆柊閫氱數銆?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step4.text"
+            },
+            {
+              "id": "step5",
+              "text": "鍚堜笂闈㈢洊锛岄暱鎸?[btn:Pulse Vac] 鎸夐敭鎶芥皵 20 绉掞紝鐒跺悗鐐瑰嚮 [btn:Stop] 鎺掓皵锛岄噸澶?5 娆★紝璁╁唴閮ㄧ閬撶殑娑蹭綋鎺掑嚭銆?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step5.text"
+            },
+            {
+              "id": "step6",
+              "text": "鎵撳紑闈㈢洊锛屽湪鏈哄櫒搴曢儴閾哄灚鍘ㄦ埧绾告垨鎵樼洏锛屽皢鏈哄櫒鏀剧疆浜庨€氶澶勬櫨骞?48 灏忔椂锛屾湡闂翠笉瑕佺炕鍊掓満鍣ㄣ€?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.3.step.step6.text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**娑蹭綋杩涘叆鍙戠儹鍣細**",
+          "text_id": "content.chapter.07-troubleshooting.page.page3.block.4.text"
+        },
+        {
+          "type": "step_flow",
+          "steps": [
+            {
+              "id": "step1",
+              "text": "璇峰嬁缈诲€掓満鍣紝鍏抽棴鐢垫簮锛岀瓑寰?10 鍒嗛挓锛岃鍙戠儹鍣ㄥ喎鍗村強鍐呴儴娑蹭綋鎺掑嚭銆?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step1.text"
+            },
+            {
+              "id": "step2",
+              "text": "娓呯悊鍜屾摝骞叉満鍣ㄦ帴姘寸洏銆佺湡绌鸿厰銆佸簳閮ㄧ殑娑蹭綋銆?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step2.text"
+            },
+            {
+              "id": "step3",
+              "text": "鎵撳紑闈㈢洊锛屽湪鏈哄櫒搴曢儴閾哄灚鍘ㄦ埧绾告垨鎵樼洏锛屽皢鏈哄櫒鏀剧疆浜庨€氶澶勬櫨骞?24 灏忔椂锛屾湡闂翠笉瑕佺炕鍊掓満鍣ㄣ€?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step3.text"
+            },
+            {
+              "id": "step4",
+              "text": "灏嗘満鍣ㄥ簳閮ㄩ摵鍨帹鎴跨焊鎴栨墭鐩橈紝閲嶆柊閫氱數銆?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step4.text"
+            },
+            {
+              "id": "step5",
+              "text": "鍚堜笂闈㈢洊锛岄暱鎸?[btn:Pulse Vac] 鎸夐敭鎶芥皵 20 绉掞紝鐒跺悗鐐瑰嚮 [btn:Stop] 鎺掓皵锛岄噸澶?5 娆★紝璁╁唴閮ㄧ閬撶殑娑蹭綋鎺掑嚭銆?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step5.text"
+            },
+            {
+              "id": "step6",
+              "text": "鎵撳紑闈㈢洊锛屽湪鏈哄櫒搴曢儴閾哄灚鍘ㄦ埧绾告垨鎵樼洏锛屽皢鏈哄櫒鏀剧疆浜庨€氶澶勬櫨骞?48 灏忔椂锛屾湡闂翠笉瑕佺炕鍊掓満鍣ㄣ€?",
+              "text_id": "content.chapter.07-troubleshooting.page.page3.block.5.step.step6.text"
+            }
+          ]
+        },
+        {
+          "type": "caution_box",
+          "title": "娉ㄦ剰",
+          "text": "濡傛灉闀挎湡涓嶆竻娲侊紝鍐呴儴绠￠亾鍙兘浼氬牭濉烇紝褰卞搷鎶芥皵鎬ц兘锛屾鏃惰鑱旂郴鍞悗杩涜绠￠亾鏇存崲銆?",
+          "text_id": "content.chapter.07-troubleshooting.page.page3.block.6.text",
+          "title_id": "content.chapter.07-troubleshooting.page.page3.block.6.title"
+        }
+      ],
+      "page_id": "page3",
+      "section_title_id": "content.chapter.07-troubleshooting.page.page3.section_title"
+    }
+  ],
+  "title_id": "content.chapter.07-troubleshooting.title",
+  "toc_title_id": "content.chapter.07-troubleshooting.toc_title",
+  "header_ref_id": "content.chapter.07-troubleshooting.header_ref"
+}

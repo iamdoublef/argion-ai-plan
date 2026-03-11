@@ -1,0 +1,25 @@
+{
+  "chapter_id": "05-specifications",
+  "chapter_no": "05",
+  "title": "鎶€鏈弬鏁?",
+  "toc_title": "鎶€鏈弬鏁?",
+  "header_ref": "CH.05 鈥?SPECIFICATIONS",
+  "pages": [
+    {
+      "page_class": "compact-table",
+      "section_title": "鎶€鏈弬鏁?",
+      "hide_section_title": false,
+      "blocks": [
+        {
+          "type": "table_ref",
+          "table": "specs"
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.05-specifications.page.page1.section_title"
+    }
+  ],
+  "title_id": "content.chapter.05-specifications.title",
+  "toc_title_id": "content.chapter.05-specifications.toc_title",
+  "header_ref_id": "content.chapter.05-specifications.header_ref"
+}

@@ -13,6 +13,11 @@
   --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
   --swiss-gray-text: #8E8E93;
+  --brand-accent: var(--swiss-red);
+  --brand-cover-divider: var(--swiss-red);
+  --brand-cover-model: var(--swiss-red);
+  --brand-cover-line: var(--swiss-red);
+  --brand-footer-border: var(--swiss-black);
   --page-width: 148mm;
   --page-height: 210mm;
   --page-margin: 10mm;
@@ -324,6 +329,11 @@ table {
   table-layout: fixed;
 }
 
+.structured-table.table-compact {
+  margin: 6px 0;
+  font-size: 8.4px;
+}
+
 th {
   background: var(--swiss-black);
   color: #FFF;
@@ -342,6 +352,17 @@ td {
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;
+}
+
+.structured-table.table-compact th {
+  padding: 4px 5px;
+  font-size: 7.4px;
+  letter-spacing: 0.25px;
+}
+
+.structured-table.table-compact td {
+  padding: 4px 5px;
+  line-height: 1.35;
 }
 
 tr:nth-child(even) td {
@@ -456,7 +477,7 @@ tr:nth-child(even) td {
   display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-line);
   margin-right: 6px;
   vertical-align: middle;
 }
@@ -465,7 +486,7 @@ tr:nth-child(even) td {
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 2.2px;
-  color: var(--swiss-red);
+  color: var(--brand-cover-model);
   text-transform: uppercase;
   margin-bottom: 4px;
   font-family: "Courier New", monospace;
@@ -495,12 +516,12 @@ tr:nth-child(even) td {
 .cover-divider {
   width: 28px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-divider);
   margin: 10px 0;
 }
 
 .cover-bottom {
-  border-top: 2px solid var(--swiss-black);
+  border-top: 2px solid var(--brand-footer-border);
   padding-top: 6px;
   font-size: 7.2px;
   color: var(--swiss-gray-text);
@@ -702,6 +723,14 @@ tr:nth-child(even) td {
   max-height: 4mm !important;
 }
 
+:root {
+  --swiss-red: #E63946;
+  --brand-accent: #E63946;
+  --brand-cover-divider: #E63946;
+  --brand-cover-model: #E63946;
+  --brand-cover-line: #E63946;
+  --brand-footer-border: #000000;
+}
 </style>
 </head>
 <body>
@@ -849,7 +878,7 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>WEVAC IMT050 Bedienungsanleitung</span><span>5</span></div>
 </div>
 
-<div class="page">
+<div class="page compact-structure">
   <div class="header-strip">
     <div class="header-brand">WEVAC</div>
     <div class="header-ref">KAP.03 — PRODUKTAUFBAU</div>
@@ -859,7 +888,7 @@ tr:nth-child(even) td {
     <img src="./images_imt050/image5.png" alt="Product structure diagram" style="max-height:56mm;object-fit:contain">
     
   </div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:15%;">Nr.</th><th>Teil</th><th style="width:15%;">Nr.</th><th>Teil</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Deckel</td><td>5</td><td>Wassertankgriff</td></tr>
@@ -871,7 +900,7 @@ tr:nth-child(even) td {
   <div class="page-footer"><span>WEVAC IMT050 Bedienungsanleitung</span><span>6</span></div>
 </div>
 
-<div class="page">
+<div class="page compact-functions">
   <div class="header-strip">
     <div class="header-brand">WEVAC</div>
     <div class="header-ref">KAP.04 — FUNKTIONEN</div>
@@ -885,7 +914,7 @@ tr:nth-child(even) td {
     <img src="./images_imt050/image9.png" alt="Control panel diagram" style="max-height:20mm;object-fit:contain">
     
   </div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:45%;">Nr. / Taste</th><th>Beschreibung</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Power</span>　Ein/Aus</td><td>Drücken zum Einschalten; lang drücken zum Ausschalten.</td></tr>
@@ -904,7 +933,7 @@ tr:nth-child(even) td {
     <div class="header-ref">KAP.05 — TECHNISCHE DATEN</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">05</span>Technische Daten</h2>
-  <table>
+  <table class="structured-table">
     <thead><tr><th>Parameter</th><th>Spezifikation</th></tr></thead>
     <tbody>
       <tr><td>Spannung</td><td>220~240 Vac</td></tr>
@@ -1035,7 +1064,7 @@ tr:nth-child(even) td {
     <div class="header-ref">KAP.07 — FEHLERBEHEBUNG</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung</h2>
-  <table>
+  <table class="structured-table">
     <thead><tr><th style="width:22%;">Problem</th><th style="width:33%;">Mögliche Ursache</th><th>Lösung</th></tr></thead>
     <tbody>
 <tr><td>Gerät schaltet sich nicht ein</td><td>Strom nicht angeschlossen oder Steckdose ohne Strom</td><td>Stromverbindung prüfen und sicherstellen, dass die Steckdose funktioniert.</td></tr>
@@ -1167,7 +1196,7 @@ tr:nth-child(even) td {
   <h2 class="section-title"><span class="chapter-num">10</span>Marken- und Garantieinformationen</h2>
   <p>Vielen Dank für den Kauf des WEVAC Eiswürfelbereiter. Bei Fragen kontaktieren Sie uns unter:<br>support@wevactech.com | www.wevactech.com</p>
 <div class="sub-title">Markeninformation</div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:30%;">Feld</th><th>Information</th></tr></thead>
     <tbody>
       <tr><td style="width:30%">Marke</td><td><b>WEVAC TECHNOLOGY CO., LIMITED</b></td></tr>
@@ -1177,10 +1206,10 @@ tr:nth-child(even) td {
     </tbody>
   </table>
 <div class="sub-title">Autorisierter Hersteller</div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:30%;">Feld</th><th>Information</th></tr></thead>
     <tbody>
-      <tr><td style="width:30%">Hersteller</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td style="width:30%">Hersteller</td><td><b>Guangzhou Argion Electric Appliance Co., Ltd.</b></td></tr>
       <tr><td>Adresse</td><td>No. 1 Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
       <tr><td>Webseite</td><td>www.argiontechnology.com</td></tr>
     </tbody>

@@ -1,0 +1,118 @@
+{
+  "default": {
+    "html": {
+      "--swiss-red": "#E63946",
+      "--brand-accent": "#E63946",
+      "--brand-cover-divider": "#E63946",
+      "--brand-cover-model": "#E63946",
+      "--brand-cover-line": "#E63946",
+      "--brand-footer-border": "#000000"
+    },
+    "docx": {
+      "primary": "1A1A1A",
+      "accent": "E63946",
+      "light": "666666",
+      "muted": "9A9A9A",
+      "font": "Arial",
+      "coverDivider": "E63946",
+      "coverModel": "E63946",
+      "chapterBar": "000000",
+      "tableHeaderFill": "1A1A1A",
+      "tableHeaderText": "FFFFFF",
+      "tableLabelFill": "F4F4F4",
+      "warningFill": "FFF3D6",
+      "cautionFill": "F7D9DD",
+      "noticeFill": "DCECF8",
+      "boxBorder": "D4D4D4",
+      "headerBorder": "D9D9D9",
+      "footerText": "8A8A8A"
+    }
+  },
+  "wevac": {
+    "html": {
+      "--swiss-red": "#E63946",
+      "--brand-accent": "#E63946",
+      "--brand-cover-divider": "#E63946",
+      "--brand-cover-model": "#E63946",
+      "--brand-cover-line": "#E63946",
+      "--brand-footer-border": "#000000"
+    },
+    "docx": {
+      "primary": "1A1A1A",
+      "accent": "E63946",
+      "light": "666666",
+      "muted": "9A9A9A",
+      "font": "Arial",
+      "coverDivider": "E63946",
+      "coverModel": "E63946",
+      "chapterBar": "000000",
+      "tableHeaderFill": "1A1A1A",
+      "tableHeaderText": "FFFFFF",
+      "tableLabelFill": "F4F4F4",
+      "warningFill": "FFF3D6",
+      "cautionFill": "F7D9DD",
+      "noticeFill": "DCECF8",
+      "boxBorder": "D4D4D4",
+      "headerBorder": "D9D9D9",
+      "footerText": "8A8A8A"
+    }
+  },
+  "vesta": {
+    "html": {
+      "--swiss-red": "#2E75B6",
+      "--brand-accent": "#2E75B6",
+      "--brand-cover-divider": "#2E75B6",
+      "--brand-cover-model": "#2E75B6",
+      "--brand-cover-line": "#2E75B6",
+      "--brand-footer-border": "#1F4E79"
+    },
+    "docx": {
+      "primary": "1F1F1F",
+      "accent": "2E75B6",
+      "light": "666666",
+      "muted": "8A8A8A",
+      "font": "Arial",
+      "coverDivider": "2E75B6",
+      "coverModel": "2E75B6",
+      "chapterBar": "1F1F1F",
+      "tableHeaderFill": "2E75B6",
+      "tableHeaderText": "FFFFFF",
+      "tableLabelFill": "EAF2FB",
+      "warningFill": "FFF3D6",
+      "cautionFill": "FBE5EA",
+      "noticeFill": "EAF2FB",
+      "boxBorder": "C8D9EE",
+      "headerBorder": "C8D9EE",
+      "footerText": "7B8EA6"
+    }
+  },
+  "act": {
+    "html": {
+      "--swiss-red": "#C76A1B",
+      "--brand-accent": "#C76A1B",
+      "--brand-cover-divider": "#C76A1B",
+      "--brand-cover-model": "#C76A1B",
+      "--brand-cover-line": "#C76A1B",
+      "--brand-footer-border": "#8A4A14"
+    },
+    "docx": {
+      "primary": "1F1F1F",
+      "accent": "C76A1B",
+      "light": "666666",
+      "muted": "8A8A8A",
+      "font": "Arial",
+      "coverDivider": "C76A1B",
+      "coverModel": "C76A1B",
+      "chapterBar": "1F1F1F",
+      "tableHeaderFill": "C76A1B",
+      "tableHeaderText": "FFFFFF",
+      "tableLabelFill": "F8E8D9",
+      "warningFill": "FFF3D6",
+      "cautionFill": "F8E1D0",
+      "noticeFill": "F7EFE7",
+      "boxBorder": "E2C6AB",
+      "headerBorder": "E2C6AB",
+      "footerText": "8A6B52"
+    }
+  }
+}

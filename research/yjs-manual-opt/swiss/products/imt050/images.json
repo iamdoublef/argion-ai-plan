@@ -1,0 +1,94 @@
+{
+  "cover.main": {
+    "file": "image1.png",
+    "alt": "Product cover image"
+  },
+  "safety.warning_icon": {
+    "file": "image3.png",
+    "alt": "Warning icon"
+  },
+  "structure.main": {
+    "file": "image5.png",
+    "alt": "Product structure diagram"
+  },
+  "structure.legend": {
+    "file": "image7.png",
+    "alt": "Structure legend"
+  },
+  "control_panel.main": {
+    "file": "image9.png",
+    "alt": "Control panel diagram"
+  },
+  "cleaning.drain_plug": {
+    "file": "image10.png",
+    "alt": "Drain plug"
+  },
+  "cleaning.drain_container": {
+    "file": "image12.png",
+    "alt": "Drain container"
+  },
+  "operation.make_ice.fill_tank": {
+    "file": "image14.png",
+    "alt": "Fill water tank",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page1.fill_tank"
+  },
+  "operation.make_ice.max_mark": {
+    "file": "image16.png",
+    "alt": "Water level mark",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page1.fill_tank"
+  },
+  "operation.make_ice.seat_tank": {
+    "file": "image18.png",
+    "alt": "Seat tank inside chamber",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page1.seat_tank"
+  },
+  "operation.make_ice.return_basket": {
+    "file": "image20.png",
+    "alt": "Return ice basket",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page2.return_basket"
+  },
+  "operation.make_ice.close_lid": {
+    "file": "image22.png",
+    "alt": "Close lid",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page2.return_basket"
+  },
+  "operation.make_ice.closed_unit": {
+    "file": "image24.png",
+    "alt": "Unit closed",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page2.return_basket"
+  },
+  "operation.make_ice.select_size": {
+    "file": "image26.png",
+    "alt": "Select ice size",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page2.select_size"
+  },
+  "operation.make_ice.ice_full_status": {
+    "file": "image28.png",
+    "alt": "Ice full indicator",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page2.block2"
+  },
+  "operation.make_ice.add_water_status": {
+    "file": "image30.png",
+    "alt": "Add water indicator",
+    "kind": "procedural",
+    "usage_ref": "06-operation.page2.block2"
+  },
+  "warranty.separator.primary": {
+    "file": "image31.png",
+    "alt": "Warranty separator",
+    "kind": "shared"
+  },
+  "warranty.separator.secondary": {
+    "file": "image32.png",
+    "alt": "Warranty separator",
+    "kind": "shared"
+  }
+}

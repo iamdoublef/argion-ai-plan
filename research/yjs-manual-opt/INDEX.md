@@ -163,3 +163,14 @@ commit: uncommitted
 - ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/audit/audit-metrics-v2.json`
 - ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/audit/image-load-report.json`
 - ptr: `file:research/yjs-manual-opt/releases/2026-03-01_full-fix-v2/audit/source-media-crosscheck-v2.json`
+
+### 2026-03-11 Swiss JSON 单源 + 双渲染器落地（HTML/PDF 主链稳定，DOCX 可编辑支线接通）
+本轮完成 Swiss 说明书从模板写死内容切到 JSON 单源，结构、图片、翻译和品牌主题分层；自有品牌走 HTML/PDF，ODM 新增 A5 Word 可编辑支线，42 个现有变体可批量重建。
+
+- ptr: `file:research/yjs-manual-opt/swiss/SOP-new-product.md`
+- ptr: `file:research/yjs-manual-opt/swiss/skills/swiss-manual-a5/SKILL.md`
+- ptr: `file:research/yjs-manual-opt/swiss/tools/build-variant.js`
+- ptr: `file:research/yjs-manual-opt/swiss/tools/export-docx.js`
+- ptr: `file:research/yjs-manual-opt/swiss/template/shared/base/brand-themes.json`
+- ptr: `file:research/yjs-manual-opt/swiss/products/imt050/product.json`
+- ptr: `file:research/yjs-manual-opt/swiss/products/v23/product.json`

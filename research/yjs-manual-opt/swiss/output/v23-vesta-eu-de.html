@@ -13,6 +13,11 @@
   --swiss-red: #E63946;
   --swiss-gray-bg: #F2F2F7;
   --swiss-gray-text: #8E8E93;
+  --brand-accent: var(--swiss-red);
+  --brand-cover-divider: var(--swiss-red);
+  --brand-cover-model: var(--swiss-red);
+  --brand-cover-line: var(--swiss-red);
+  --brand-footer-border: var(--swiss-black);
   --page-width: 148mm;
   --page-height: 210mm;
   --page-margin: 10mm;
@@ -324,6 +329,11 @@ table {
   table-layout: fixed;
 }
 
+.structured-table.table-compact {
+  margin: 6px 0;
+  font-size: 8.4px;
+}
+
 th {
   background: var(--swiss-black);
   color: #FFF;
@@ -342,6 +352,17 @@ td {
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;
+}
+
+.structured-table.table-compact th {
+  padding: 4px 5px;
+  font-size: 7.4px;
+  letter-spacing: 0.25px;
+}
+
+.structured-table.table-compact td {
+  padding: 4px 5px;
+  line-height: 1.35;
 }
 
 tr:nth-child(even) td {
@@ -456,7 +477,7 @@ tr:nth-child(even) td {
   display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-line);
   margin-right: 6px;
   vertical-align: middle;
 }
@@ -465,7 +486,7 @@ tr:nth-child(even) td {
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 2.2px;
-  color: var(--swiss-red);
+  color: var(--brand-cover-model);
   text-transform: uppercase;
   margin-bottom: 4px;
   font-family: "Courier New", monospace;
@@ -495,12 +516,12 @@ tr:nth-child(even) td {
 .cover-divider {
   width: 28px;
   height: 3px;
-  background: var(--swiss-red);
+  background: var(--brand-cover-divider);
   margin: 10px 0;
 }
 
 .cover-bottom {
-  border-top: 2px solid var(--swiss-black);
+  border-top: 2px solid var(--brand-footer-border);
   padding-top: 6px;
   font-size: 7.2px;
   color: var(--swiss-gray-text);
@@ -766,6 +787,14 @@ tr:nth-child(even) td {
   line-height: 1.28;
 }
 
+:root {
+  --swiss-red: #2E75B6;
+  --brand-accent: #2E75B6;
+  --brand-cover-divider: #2E75B6;
+  --brand-cover-model: #2E75B6;
+  --brand-cover-line: #2E75B6;
+  --brand-footer-border: #1F4E79;
+}
 </style>
 </head>
 <body>
@@ -795,7 +824,7 @@ tr:nth-child(even) td {
 <div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
-    <div class="header-ref">V23 — USER MANUAL</div>
+    <div class="header-ref">V23 — BEDIENUNGSANLEITUNG</div>
   </div>
   <div class="toc-title">Inhaltsverzeichnis</div>
     <div class="toc-item"><span><span class="toc-chapter">01</span><span class="toc-name">Sicherheitshinweise</span></span><span class="toc-page">3</span></div>
@@ -805,9 +834,9 @@ tr:nth-child(even) td {
 <div class="toc-item"><span><span class="toc-chapter">05</span><span class="toc-name">Technische Daten</span></span><span class="toc-page">7</span></div>
 <div class="toc-item"><span><span class="toc-chapter">06</span><span class="toc-name">Bedienungsanleitung</span></span><span class="toc-page">8</span></div>
 <div class="toc-item"><span><span class="toc-chapter">07</span><span class="toc-name">Fehlerbehebung</span></span><span class="toc-page">16</span></div>
-<div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Wartung & Pflege</span></span><span class="toc-page">20</span></div>
-<div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vakuumverpackungs-Eigenschaften</span></span><span class="toc-page">21</span></div>
-<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Marken- & Garantieinformationen</span></span><span class="toc-page">23</span></div>
+<div class="toc-item"><span><span class="toc-chapter">08</span><span class="toc-name">Wartung & Pflege</span></span><span class="toc-page">19</span></div>
+<div class="toc-item"><span><span class="toc-chapter">09</span><span class="toc-name">Vakuumverpackungs-Eigenschaften</span></span><span class="toc-page">20</span></div>
+<div class="toc-item"><span><span class="toc-chapter">10</span><span class="toc-name">Marken- & Garantieinformationen</span></span><span class="toc-page">22</span></div>
 
   <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>2</span></div>
 </div>
@@ -889,7 +918,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image5.svg" alt="Product structure diagram" style="max-height:46mm;object-fit:contain">
     
   </div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:15%;">Nr.</th><th>Teil</th><th style="width:15%;">Nr.</th><th>Teil</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Verschlussgriff</td><td>8</td><td>Rollenbeutel-Stützrohr</td></tr>
@@ -919,7 +948,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image10.svg" alt="Control panel diagram" style="max-height:20mm;object-fit:contain">
     
   </div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:45%;">Nr. / Taste</th><th>Beschreibung</th></tr></thead>
     <tbody>
       <tr><td><span class="callout-no">1</span> <span class="btn-name">Vac&amp;Seal / Start</span>　Vakuumversiegelung / Start</td><td>Drücken Sie diese Taste, um den ausgewählten Modus zu starten.</td></tr>
@@ -940,7 +969,7 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.05 — SPECIFICATIONS</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">05</span>Technische Daten</h2>
-  <table>
+  <table class="structured-table">
     <thead><tr><th>Parameter</th><th>Spezifikation</th></tr></thead>
     <tbody>
       <tr><td>Spannung</td><td>220~240 Vac</td></tr>
@@ -1540,7 +1569,7 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung</h2>
-  <table>
+  <table class="structured-table table-compact">
     <thead><tr><th style="width:22%;">Fehlersymptom</th><th style="width:40%;">Mögliche Ursache</th><th style="width:38%;">Lösung</th></tr></thead>
     <tbody>
 <tr><td rowspan="3"><b>Gerät lässt sich nicht einschalten</b></td><td>Netzkabel nicht korrekt in die Steckdose gesteckt</td><td>Stellen Sie sicher, dass das Netzkabel korrekt eingesteckt ist.</td></tr>
@@ -1556,35 +1585,40 @@ tr:nth-child(even) td {
 <tr><td>Feuchtigkeit, Partikel oder Rückstände im Versiegelungsbereich</td><td>Versiegelungsbereich reinigen und erneut versuchen.</td></tr>
 <tr><td>Versiegelungsleiste nicht montiert</td><td>Versiegelungsleiste montieren.</td></tr>
 <tr><td>Standard-Siegelzeit zu kurz</td><td><span class="btn-name">Extend Seal Time</span> drücken, um die Siegelzeit zu verlängern, und erneut versuchen.</td></tr>
+<tr><td rowspan="3"><b>真空密封后袋子漏气</b></td><td>高温胶布破损或脱落</td><td>及时替换高温胶布。</td></tr>
+<tr><td>发热温度异常导致袋子融化或密封不充分</td><td>参考抽气不干净和不能密封的解决方案。</td></tr>
+<tr><td>锋利物品刺穿袋子</td><td>用纸巾或防刺穿片包裹锋利边缘，使用新袋重试。</td></tr>
     </tbody>
   </table>
+<div class="note-box">
+        <div class="box-title">提示</div>
+        
+        一些水果和蔬菜在包装前如果没有正确地焯熟，或者热的食物，会释放气体，导致真空袋没有收紧，此类情况属于正常表现，不属于漏气。
+      </div>
+<div class="note-box">
+        
+        
+        若以上故障排除方案均无法解决问题，请联系客服指引解决，请不要擅自拆卸机器。
+      </div>
   <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>16</span></div>
 </div>
 
-<div class="page compact-troubleshoot">
+<div class="page">
   <div class="header-strip">
     <div class="header-brand">Vesta</div>
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Forts.)</h2>
-  <table>
+  <table class="structured-table">
     <thead><tr><th style="width:22%;">Fehlersymptom</th><th style="width:40%;">Mögliche Ursache</th><th style="width:38%;">Lösung</th></tr></thead>
     <tbody>
 <tr><td rowspan="3"><b>Beutel verliert nach Vakuumversiegelung Luft</b></td><td>Hitzebeständiges Klebeband beschädigt oder abgelöst</td><td>Hitzebeständiges Klebeband zeitnah ersetzen.</td></tr>
 <tr><td>Abnorme Heiztemperatur führt zu Schmelzen oder unzureichender Versiegelung</td><td>Siehe Lösungen bei „Unzureichendes Vakuum“ und „Versiegelung nicht möglich“.</td></tr>
 <tr><td>Scharfe Gegenstände haben den Beutel durchstochen</td><td>Scharfe Kanten mit Küchenpapier oder Prickelschutzfolie umwickeln und neuen Beutel verwenden.</td></tr>
+<tr><td rowspan="2"><b>错误报警（蜂鸣声长鸣 + 指示灯快闪）</b></td><td>按下 Vac&amp;Seal/Start 或 Seal 后报警</td><td>检查面盖是否闭合，把手是否已下压锁紧。</td></tr>
+<tr><td>真空工作过程中连续蜂鸣</td><td>机器无法达到目标压力，检查把手锁紧及袋子是否破损，更换新袋重试。</td></tr>
     </tbody>
   </table>
-<div class="note-box">
-        <div class="box-title">HINWEIS</div>
-        
-        Wenn Obst und Gemüse vor dem Verpacken nicht richtig blanchiert wurden oder heiße Lebensmittel verpackt werden, können Gase freigesetzt werden, sodass sich der Vakuumbeutel nicht zusammenzieht. Dies ist ein normales Verhalten und kein Luftverlust.
-      </div>
-<div class="note-box">
-        
-        
-        Wenn die oben genannten Lösungen das Problem nicht beheben, wenden Sie sich an den Kundenservice. Öffnen Sie das Gerät nicht eigenständig.
-      </div>
   <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>17</span></div>
 </div>
 
@@ -1594,122 +1628,103 @@ tr:nth-child(even) td {
     <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
   </div>
   <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Zubehör & Alarm)</h2>
-  <table>
-    <thead><tr><th style="width:22%;">Fehlersymptom</th><th style="width:40%;">Mögliche Ursache</th><th style="width:38%;">Lösung</th></tr></thead>
-    <tbody>
-<tr><td rowspan="3"><b>Accessories-Modus evakuiert nicht</b></td><td>Flache Vakuumschlauch-Düse nicht vollständig in den äußeren Ansaugstutzen eingesteckt</td><td>Flache Düse mit Druck drehen und vollständig einschieben.</td></tr>
-<tr><td>Klappengriff nicht nach unten gedrückt/verriegelt</td><td>Griff nach unten drücken, um die Klappe zu verriegeln, und erneut versuchen.</td></tr>
-<tr><td>Fremdkörper auf Dichtung oder in Vakuumkammer</td><td>Klappe öffnen, Fremdkörper entfernen, schließen und erneut versuchen.</td></tr>
-<tr><td rowspan="2"><b>Fehleralarm (langer Piepton + schnelles Blinken)</b></td><td>Alarm beim Drücken von Vac&amp;Seal/Start oder Seal</td><td>Prüfen Sie, ob die Klappe geschlossen und der Griff verriegelt ist.</td></tr>
-<tr><td>Dauerpiepen während des Vakuumvorgangs</td><td>Gerät erreicht Zielvakuum nicht; Griffverriegelung und Beutelzustand prüfen, neuen Beutel verwenden.</td></tr>
-    </tbody>
-  </table>
-  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>18</span></div>
-</div>
-
-<div class="page">
-  <div class="header-strip">
-    <div class="header-brand">Vesta</div>
-    <div class="header-ref">CH.07 — TROUBLESHOOTING</div>
-  </div>
-  <h2 class="section-title"><span class="chapter-num">07</span>Fehlerbehebung (Forts.)</h2>
-  <div class="sub-title">Behandlungsanleitung bei Flüssigkeitseintritt ins Gerät (z. B. durch besondere Umstände)</div>
-<p><b>Flüssigkeit in der Vakuumkammer:</b></p>
+  <div class="sub-title">如因特殊原因，导致液体进入机器内部的处理方案</div>
+<p><b>液体进入真空腔中：</b></p>
 <div class="step-flow">
     <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">1</span>
-        <div class="step-text">Strom sofort trennen und mindestens 5 Minuten warten, bis das Heizelement abgekühlt ist.</div>
+        <div class="step-text">立即关闭电源，等待至少 5 分钟，让机器发热器冷却。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">2</span>
-        <div class="step-text">Flüssigkeitsauffangschale entnehmen und Flüssigkeit entfernen und abtrocknen.</div>
+        <div class="step-text">将液体槽取出，并清理擦干液体。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">3</span>
-        <div class="step-text">Flüssigkeit in der Vakuumkammer abtrocknen.</div>
+        <div class="step-text">将真空腔中的液体擦干。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">4</span>
-        <div class="step-text">Küchenpapier oder Tablett unter das Gerät legen und wieder einschalten.</div>
+        <div class="step-text">将机器底部铺垫厨房纸或托盘，重新通电。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">5</span>
-        <div class="step-text">Klappe schließen, <span class="btn-name">Pulse Vac</span>-Taste 20 Sekunden gedrückt halten zum Evakuieren, dann <span class="btn-name">Stop</span> drücken zum Entlüften. 5-mal wiederholen, um Flüssigkeit aus den inneren Leitungen zu entfernen.</div>
+        <div class="step-text">合上面盖，长按 <span class="btn-name">Pulse Vac</span> 按键抽气 20 秒，然后点击 <span class="btn-name">Stop</span> 排气，重复 5 次，让内部管道的液体排出。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">6</span>
-        <div class="step-text">Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 48 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</div>
+        <div class="step-text">打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 48 小时，期间不要翻倒机器。</div>
       </div>
       
     </div>
   </div>
-<p><b>Flüssigkeit am Heizelement:</b></p>
+<p><b>液体进入发热器：</b></p>
 <div class="step-flow">
     <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">1</span>
-        <div class="step-text">Gerät nicht kippen. Strom trennen, 10 Minuten warten, bis Heizelement abgekühlt und innere Flüssigkeit abgeflossen ist.</div>
+        <div class="step-text">请勿翻倒机器，关闭电源，等待 10 分钟，让发热器冷却及内部液体排出。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">2</span>
-        <div class="step-text">Flüssigkeit in Auffangschale, Vakuumkammer und am Boden entfernen und abtrocknen.</div>
+        <div class="step-text">清理和擦干机器接水盘、真空腔、底部的液体。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">3</span>
-        <div class="step-text">Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 24 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</div>
+        <div class="step-text">打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 24 小时，期间不要翻倒机器。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">4</span>
-        <div class="step-text">Küchenpapier oder Tablett unter das Gerät legen und wieder einschalten.</div>
+        <div class="step-text">将机器底部铺垫厨房纸或托盘，重新通电。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">5</span>
-        <div class="step-text">Klappe schließen, <span class="btn-name">Pulse Vac</span>-Taste 20 Sekunden gedrückt halten zum Evakuieren, dann <span class="btn-name">Stop</span> drücken zum Entlüften. 5-mal wiederholen, um Flüssigkeit aus den inneren Leitungen zu entfernen.</div>
+        <div class="step-text">合上面盖，长按 <span class="btn-name">Pulse Vac</span> 按键抽气 20 秒，然后点击 <span class="btn-name">Stop</span> 排气，重复 5 次，让内部管道的液体排出。</div>
       </div>
       
     </div>
 <div class="step-flow-step">
       <div class="step-flow-row">
         <span class="step-num">6</span>
-        <div class="step-text">Klappe öffnen, Küchenpapier oder Tablett unter das Gerät legen und 48 Stunden an einem gut belüfteten Ort trocknen lassen. Gerät während dieser Zeit nicht kippen.</div>
+        <div class="step-text">打开面盖，在机器底部铺垫厨房纸或托盘，将机器放置于通风处晾干 48 小时，期间不要翻倒机器。</div>
       </div>
       
     </div>
   </div>
 <div class="caution-box">
-        <div class="box-title">VORSICHT</div>
+        <div class="box-title">注意</div>
         
-        Bei längerer Nichtreinigung können die inneren Leitungen verstopfen und die Evakuierungsleistung beeinträchtigen. Wenden Sie sich in diesem Fall an den Kundendienst für einen Leitungsaustausch.
+        如果长期不清洁，内部管道可能会堵塞，影响抽气性能，此时请联系售后进行管道更换。
       </div>
-  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>19</span></div>
+  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>18</span></div>
 </div>
 
 <div class="page">
@@ -1729,7 +1744,7 @@ tr:nth-child(even) td {
 <li>Nach jedem Betrieb prüfen, ob die Dichtung stark verformt oder das hitzebeständige Klebeband beschädigt/abgelöst ist; gegebenenfalls zeitnah ersetzen.</li>
 <li>Flüssigkeitsauffangschale und Vakuumschlauch sind nicht für Heißreinigung (z. B. Spülmaschine) geeignet.</li>
       </ul>
-  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>20</span></div>
+  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>19</span></div>
 </div>
 
 <div class="page">
@@ -1756,7 +1771,7 @@ tr:nth-child(even) td {
 <li>Kreuzblütler (Blumenkohl, Sprossen, Kohl usw.) geben während der Lagerung natürlicherweise Gase ab; nach dem Kochen und Vakuumversiegeln sollten sie im Kühlschrank aufbewahrt werden.</li>
 <li>Lagern Sie Knoblauch oder Pilze und andere Pilzlebensmittel niemals unter Vakuum. Nach dem Evakuieren können schädliche Stoffe entstehen, die die Gesundheit beeinträchtigen können.</li>
       </ul>
-  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>21</span></div>
+  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>20</span></div>
 </div>
 
 <div class="page">
@@ -1766,7 +1781,7 @@ tr:nth-child(even) td {
   </div>
   <h2 class="section-title"><span class="chapter-num">09</span>Vakuumverpackungs-Eigenschaften (Forts.)</h2>
   <div class="sub-title">Referenz zur Haltbarkeit vakuumverpackter Lebensmittel</div>
-<table>
+<table class="structured-table">
     <thead><tr><th>Lagerungsart</th><th>Lebensmittelkategorie</th><th>Konventionelle Lagerung</th><th>Vakuumverpackung</th></tr></thead>
     <tbody>
 <tr><td rowspan="4">Tiefkühllagerung</td><td>Fleisch</td><td>6 Mon.</td><td>15–20 Mon.</td></tr>
@@ -1788,7 +1803,7 @@ tr:nth-child(even) td {
 <tr><td>Kaffee / Tee / Milchpulver</td><td>2–6 Mon.</td><td>12 Mon.</td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>22</span></div>
+  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>21</span></div>
 </div>
 
 <div class="page compact-warranty">
@@ -1799,7 +1814,7 @@ tr:nth-child(even) td {
   <h2 class="section-title"><span class="chapter-num">10</span>Marken- & Garantieinformationen</h2>
   <p>Vielen Dank für den Kauf von Vesta Vakuumiergerät. Bei Fragen erreichen Sie uns unter:<br>support@vestaprecision.com | www.vestaprecision.com</p>
 <div class="sub-title">Markeninhaber-Informationen</div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:30%;">Feld</th><th>Information</th></tr></thead>
     <tbody>
       <tr><td style="width:30%">Marke</td><td><b>Precision Appliance Technology, Inc.</b></td></tr>
@@ -1809,10 +1824,10 @@ tr:nth-child(even) td {
     </tbody>
   </table>
 <div class="sub-title">Autorisierter Hersteller</div>
-<table>
+<table class="structured-table">
     <thead><tr><th style="width:30%;">Feld</th><th>Information</th></tr></thead>
     <tbody>
-      <tr><td style="width:30%">Hersteller</td><td><b>广州亚俊氏真空科技股份有限公司</b><br><span style="font-weight:400;font-size:12px;color:#666">Guangzhou Argion Electric Appliance Co., Ltd.</span></td></tr>
+      <tr><td style="width:30%">Hersteller</td><td><b>Guangzhou Argion Electric Appliance Co., Ltd.</b></td></tr>
       <tr><td>Adresse</td><td>No. 1, Qiye Road, Nancun Town, Panyu District, Guangzhou, Guangdong, China</td></tr>
       <tr><td>Webseite</td><td>www.argiontechnology.com</td></tr>
     </tbody>
@@ -1829,7 +1844,7 @@ tr:nth-child(even) td {
     <img src="./images_v23/image31.png" alt="Warranty separator" style="max-height:4mm;max-width:100%;object-fit:contain">
     
   </div>
-  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>23</span></div>
+  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>22</span></div>
 </div>
 
 <div class="page compact-warranty">
@@ -1852,7 +1867,7 @@ tr:nth-child(even) td {
 <tr><td>Händlername</td><td></td></tr>
     </tbody>
   </table>
-  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>24</span></div>
+  <div class="page-footer"><span>Vesta V23 Bedienungsanleitung</span><span>23</span></div>
 </div>
 
 </body>
