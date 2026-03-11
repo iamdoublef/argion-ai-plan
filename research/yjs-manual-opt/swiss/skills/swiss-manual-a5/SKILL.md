@@ -89,6 +89,7 @@ Swiss 当前正式译文源固定为：
 - 中文 DOCX 正式基线固定为：
   - `research/yjs-manual-opt/swiss/template/shared/docx/base-template-cn.docx`
   - `research/yjs-manual-opt/swiss/WORD-BASE-TEMPLATE-CN.md`
+- `research/yjs-manual-opt/swiss/output/` 只保留少量中文基线样稿与代表稿；批量输出、审阅截图、缓存和 preview 一律视为可再生产物
 - 翻译人员不改 HTML，不改 CSS，不改章节结构 JSON，只改译文工作簿
 - `zh-HK` 和 `zh-TW` 必须是独立 locale catalog，不再用运行时逐字简转繁发布
 - 模型不负责最终排版；模型只用于新产品草稿、翻译草稿、本地化和审计建议

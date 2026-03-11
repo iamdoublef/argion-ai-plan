@@ -2,3 +2,9 @@
 research/yjs-boss-pitch/__pycache__/
 research/yjs-boss-pitch/nul
 node_modules/
+output/
+nul
+research/yjs-manual-opt/swiss/output/*
+!research/yjs-manual-opt/swiss/output/imt050-wevac-eu-cn.docx
+!research/yjs-manual-opt/swiss/output/v23-wevac-eu-cn.docx
+!research/yjs-manual-opt/swiss/output/imt050-wevac-eu-cn.pdf
