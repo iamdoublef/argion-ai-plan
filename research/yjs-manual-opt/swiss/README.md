@@ -204,4 +204,8 @@ node tools/_audit-visual.js output/imt050-wevac-eu-cn.html
 - `HTML/PDF` 与 `DOCX` 共用同一份 JSON 内容源和译文 catalog，但排版引擎完全分开。
 - `DOCX` 采用单一 Word 母版骨架 + 品牌主题包；不允许按产品复制 Word 模板。
 - `DOCX` 的目标是“可编辑且体面”，不是 1:1 还原 `PDF`。
+- 中文 Word 基线固定为：
+  - `research/yjs-manual-opt/swiss/template/shared/docx/base-template-cn.docx`
+  - `research/yjs-manual-opt/swiss/WORD-BASE-TEMPLATE-CN.md`
+- 新产品中文 Word 默认复用这套母版骨架，只微调内容和图片，不重做风格。
 - 若目标 `DOCX` 正被 WPS/Word 占用，导出器允许落旁路文件 `.__staged.docx`，待锁释放后再替换正式文件。

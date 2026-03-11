@@ -23,15 +23,18 @@ function loadExportDocxModule(productName) {
 
 test('buildDocx returns A5 Word profile and themed document for IMT050 ACT CN', async () => {
   const { buildDocx, DOCX_PROFILE } = loadExportDocxModule('imt050');
-  const result = buildDocx('cn', 'act');
+  const result = await buildDocx('cn', 'act');
 
   assert.equal(result.model, 'IMT050');
   assert.equal(result.activeBrand, 'act');
   assert.equal(result.locale, 'zh-CN');
   assert.equal(result.profile.page.width, DOCX_PROFILE.page.width);
   assert.equal(result.profile.page.height, DOCX_PROFILE.page.height);
+  assert.equal(result.templateProfile, 'A5_CN_BASE_V1');
   assert.equal(result.theme.accent, 'C76A1B');
   assert.equal(result.theme.tableHeaderFill, 'C76A1B');
+  assert.equal(result.theme.latinFont, 'Arial Narrow');
+  assert.ok(result.theme.cjkFont);
 
   const buffer = await Packer.toBuffer(result.doc);
   assert.ok(buffer.length > 50_000);
@@ -39,13 +42,15 @@ test('buildDocx returns A5 Word profile and themed document for IMT050 ACT CN', 
 
 test('buildDocx returns A5 Word profile and themed document for V23 Vesta GB', async () => {
   const { buildDocx } = loadExportDocxModule('v23');
-  const result = buildDocx('gb', 'vesta');
+  const result = await buildDocx('gb', 'vesta');
 
   assert.equal(result.model, 'V23');
   assert.equal(result.activeBrand, 'vesta');
   assert.equal(result.locale, 'en');
+  assert.equal(result.templateProfile, 'A5_CN_BASE_V1');
   assert.equal(result.theme.accent, '2E75B6');
   assert.equal(result.theme.tableHeaderFill, '2E75B6');
+  assert.ok(result.assetStats.rasterizedCount > 0);
 
   const buffer = await Packer.toBuffer(result.doc);
   assert.ok(buffer.length > 50_000);

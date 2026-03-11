@@ -86,6 +86,9 @@ Swiss 当前正式译文源固定为：
 - 模板只承载共享样式、品牌壳层和挂载点，不承载正文事实内容
 - 自有品牌正式交付 `HTML + PDF`
 - ODM 正式交付 `DOCX + PDF`
+- 中文 DOCX 正式基线固定为：
+  - `research/yjs-manual-opt/swiss/template/shared/docx/base-template-cn.docx`
+  - `research/yjs-manual-opt/swiss/WORD-BASE-TEMPLATE-CN.md`
 - 翻译人员不改 HTML，不改 CSS，不改章节结构 JSON，只改译文工作簿
 - `zh-HK` 和 `zh-TW` 必须是独立 locale catalog，不再用运行时逐字简转繁发布
 - 模型不负责最终排版；模型只用于新产品草稿、翻译草稿、本地化和审计建议
@@ -174,4 +177,5 @@ Swiss 当前正式译文源固定为：
 - `HTML/PDF` 与 `DOCX` 共用同一份 JSON 内容源和译文 catalog，但排版引擎完全分开。
 - `DOCX` 采用单一 Word 母版骨架 + 品牌主题包；不允许按产品复制 Word 模板。
 - `DOCX` 的目标是“可编辑且体面”，不是 1:1 还原 `PDF`。
+- 中文 Word 输出默认复用 `base-template-cn.docx` 骨架，后续新产品只微调内容和图片，不重做风格。
 - 若目标 `DOCX` 正被 WPS/Word 占用，导出器允许落旁路文件 `.__staged.docx`，待锁释放后再替换正式文件。

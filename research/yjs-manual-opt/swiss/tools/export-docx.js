@@ -12,11 +12,12 @@
  */
 const fs = require('fs');
 const path = require('path');
+const sharp = require('sharp');
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, ImageRun,
   Header, Footer, AlignmentType, LevelFormat, HeadingLevel, BorderStyle,
   WidthType, ShadingType, PageNumber, TableOfContents,
-  TabStopType, TabStopPosition, VerticalAlign, TableLayoutType,
+  TabStopType, TabStopPosition, VerticalAlign, TableLayoutType, SectionType,
 } = require('docx');
 
 const {
@@ -38,6 +39,8 @@ const productDir = path.resolve(getArg('product', path.resolve(__dirname, '..', 
 const regionKey = getArg('region', 'cn');
 const brandKey = getArg('brand', null);
 const outputDir = path.resolve(__dirname, '..', 'output');
+const writeBaseTemplateCn = args.includes('--write-base-template-cn');
+const baseTemplatePath = path.resolve(__dirname, '..', 'template', 'shared', 'docx', 'base-template-cn.docx');
 
 const config = loadProductConfig(productDir);
 
@@ -52,6 +55,7 @@ const MARGIN_Y = Math.round(10 * MM);
 const CONTENT_W = PAGE_W - MARGIN_X * 2;
 
 const DOCX_PROFILE = {
+  templateId: 'A5_CN_BASE_V1',
   page: {
     width: PAGE_W,
     height: PAGE_H,
@@ -65,6 +69,9 @@ const DOCX_PROFILE = {
     stepSingle: { width: 300, height: 190 },
     stepDouble: { width: 185, height: 145 },
     stepTriple: { width: 125, height: 110 },
+    stepSingleCompact: { width: 250, height: 155 },
+    stepDoubleCompact: { width: 160, height: 120 },
+    stepTripleCompact: { width: 110, height: 92 },
     rowSingle: { width: 260, height: 170 },
     rowDouble: { width: 170, height: 125 },
     rowTriple: { width: 120, height: 100 },
@@ -76,13 +83,17 @@ const DOCX_PROFILE = {
     headerSize: 18,
   },
   text: {
-    bodySize: 20,
+    bodySize: 21,
     subtitleSize: 24,
-    chapterNumberSize: 34,
-    chapterTitleSize: 34,
+    sectionTitleSize: 26,
+    chapterNumberSize: 38,
+    chapterTitleSize: 36,
     coverBrandSize: 28,
-    coverProductSize: 32,
-    coverModelSize: 20,
+    coverTypeSize: 19,
+    coverProductSize: 34,
+    coverModelSize: 18,
+    coverCompanySize: 16,
+    tocTitleSize: 30,
     smallSize: 16,
   },
 };
@@ -95,27 +106,56 @@ const DEFAULT_DOCX_THEME = {
   accent: 'E63946',
   light: '666666',
   muted: '9A9A9A',
-  font: 'Arial',
+  font: 'Arial Narrow',
+  latinFont: 'Arial Narrow',
+  cjkFont: '宋体',
+  titleLatinFont: 'Arial Black',
+  titleCjkFont: '黑体',
   coverDivider: 'E63946',
   coverModel: 'E63946',
+  coverType: '666666',
+  coverTitle: '1A1A1A',
+  coverCompany: '8A8A8A',
   chapterBar: '000000',
+  chapterNumber: 'E63946',
+  chapterTitle: '1A1A1A',
+  chapterHeaderRef: '8A8A8A',
+  tocTitle: '1A1A1A',
+  tocText: '666666',
+  sectionTitle: '1A1A1A',
   tableHeaderFill: '1A1A1A',
   tableHeaderText: 'FFFFFF',
   tableLabelFill: 'F4F4F4',
+  tableBorder: 'D4D4D4',
   warningFill: 'FFF3D6',
   cautionFill: 'F7D9DD',
   noticeFill: 'DCECF8',
+  warningBorder: 'E2C55A',
+  cautionBorder: 'D9A7B3',
+  noticeBorder: '9FC4DA',
   boxBorder: 'D4D4D4',
   headerBorder: 'D9D9D9',
+  headerText: '7A7A7A',
   footerText: '8A8A8A',
 };
 
 let ACTIVE_THEME = { ...DEFAULT_DOCX_THEME };
-let FONT = DEFAULT_DOCX_THEME.font;
+let FONT = buildFontBundle(DEFAULT_DOCX_THEME.latinFont, DEFAULT_DOCX_THEME.cjkFont);
+let TITLE_FONT = buildFontBundle(DEFAULT_DOCX_THEME.titleLatinFont, DEFAULT_DOCX_THEME.titleCjkFont);
+
+function buildFontBundle(latin, cjk) {
+  return {
+    ascii: latin,
+    hAnsi: latin,
+    cs: latin,
+    eastAsia: cjk,
+  };
+}
 
 function applyDocxTheme(docxTheme = {}) {
   ACTIVE_THEME = { ...DEFAULT_DOCX_THEME, ...docxTheme };
-  FONT = ACTIVE_THEME.font || DEFAULT_DOCX_THEME.font;
+  FONT = buildFontBundle(ACTIVE_THEME.latinFont, ACTIVE_THEME.cjkFont);
+  TITLE_FONT = buildFontBundle(ACTIVE_THEME.titleLatinFont, ACTIVE_THEME.titleCjkFont);
 }
 
 function border(color = ACTIVE_THEME.boxBorder, size = 1, style = BorderStyle.SINGLE) {
@@ -132,41 +172,43 @@ const NO_BORDERS = {
 function boxBorders(color = ACTIVE_THEME.boxBorder) {
   return { top: border(color), bottom: border(color), left: border(color), right: border(color) };
 }
-const CELL_BORDERS = boxBorders();
 const CELL_MARGINS = { top: 70, bottom: 70, left: 90, right: 90 };
 const CELL_MARGINS_COMPACT = { top: 40, bottom: 40, left: 70, right: 70 };
+const DOCX_IMAGE_CACHE_DIR = path.resolve(outputDir, '_docx_raster_cache');
 
 // ---------------------------------------------------------------------------
 // Text token parsing: [btn:XXX] and **bold**
 // ---------------------------------------------------------------------------
 function parseTextTokens(text, base = {}) {
-  if (!text) return [new TextRun({ text: '', font: FONT, ...base })];
+  const runFont = base.font || FONT;
+  const { font: _font, ...runBase } = base;
+  if (!text) return [new TextRun({ text: '', font: runFont, ...runBase })];
   const runs = [];
   const regex = /(\[btn:([^\]]+)\]|\*\*([^*]+)\*\*)/g;
   let lastIndex = 0;
   let match;
   while ((match = regex.exec(text)) !== null) {
     if (match.index > lastIndex) {
-      runs.push(new TextRun({ text: text.slice(lastIndex, match.index), font: FONT, ...base }));
+      runs.push(new TextRun({ text: text.slice(lastIndex, match.index), font: runFont, ...runBase }));
     }
     if (match[2]) {
       runs.push(new TextRun({
         text: match[2],
         bold: true,
-        font: FONT,
+        font: runFont,
         color: ACTIVE_THEME.accent,
-        ...base,
+        ...runBase,
       }));
     } else if (match[3]) {
-      runs.push(new TextRun({ text: match[3], bold: true, font: FONT, ...base }));
+      runs.push(new TextRun({ text: match[3], bold: true, font: runFont, ...runBase }));
     }
     lastIndex = regex.lastIndex;
   }
   if (lastIndex < text.length) {
-    runs.push(new TextRun({ text: text.slice(lastIndex), font: FONT, ...base }));
+    runs.push(new TextRun({ text: text.slice(lastIndex), font: runFont, ...runBase }));
   }
   if (runs.length === 0) {
-    runs.push(new TextRun({ text: '', font: FONT, ...base }));
+    runs.push(new TextRun({ text: '', font: runFont, ...runBase }));
   }
   return runs;
 }
@@ -188,20 +230,46 @@ function resolveVars(text, vars) {
 // ---------------------------------------------------------------------------
 // Image loading helper
 // ---------------------------------------------------------------------------
+async function prepareImagesManifestForDocx(imagesManifest, imagesDir, cacheNamespace) {
+  const cloned = {};
+  const cacheDir = path.join(DOCX_IMAGE_CACHE_DIR, cacheNamespace);
+  fs.mkdirSync(cacheDir, { recursive: true });
+  let rasterizedCount = 0;
+
+  for (const [key, figure] of Object.entries(imagesManifest || {})) {
+    const clonedFigure = { ...figure };
+    const absPath = path.join(imagesDir, figure.file);
+    clonedFigure.absPath = absPath;
+
+    if (fs.existsSync(absPath) && path.extname(absPath).toLowerCase() === '.svg') {
+      const pngPath = path.join(cacheDir, `${key.replace(/[^a-z0-9._-]+/gi, '_')}.png`);
+      await sharp(absPath, { density: 220 }).png({ compressionLevel: 9 }).toFile(pngPath);
+      clonedFigure.docxFile = pngPath;
+      rasterizedCount += 1;
+    }
+
+    cloned[key] = clonedFigure;
+  }
+
+  return {
+    manifest: cloned,
+    stats: { rasterizedCount },
+  };
+}
+
 function loadImage(figureRef, imagesManifest, imagesDir) {
   const figure = typeof figureRef === 'string'
     ? imagesManifest[figureRef]
     : (figureRef.figure ? imagesManifest[figureRef.figure] : figureRef);
   if (!figure || !figure.file) return null;
 
-  const imgPath = path.join(imagesDir, figure.file);
+  const imgPath = figure.docxFile || figure.absPath || path.join(imagesDir, figure.file);
   if (!fs.existsSync(imgPath)) return null;
 
-  const ext = path.extname(figure.file).slice(1).toLowerCase();
-  // DOCX only supports raster formats 鈥?SVG is not supported
+  const ext = path.extname(imgPath).slice(1).toLowerCase();
   const typeMap = { png: 'png', jpg: 'jpg', jpeg: 'jpg', gif: 'gif', bmp: 'bmp' };
   const docxType = typeMap[ext];
-  if (!docxType) return null; // Skip unsupported formats (SVG, etc.)
+  if (!docxType) return null;
 
   const data = fs.readFileSync(imgPath);
   return {
@@ -312,6 +380,7 @@ function makeTextParagraph(text, options = {}) {
     border: paragraphBorder,
     keepLines = false,
     keepNext = false,
+    font = FONT,
   } = options;
 
   return new Paragraph({
@@ -324,7 +393,7 @@ function makeTextParagraph(text, options = {}) {
     keepNext,
     border: paragraphBorder,
     spacing: { before, after, line: 320 },
-    children: parseTextTokens(text, { size, color, bold, italics }),
+    children: parseTextTokens(text, { size, color, bold, italics, font }),
   });
 }
 
@@ -395,12 +464,22 @@ function makeBorderlessCell(children, width) {
 }
 
 function isCompactTable(block = {}) {
-  const flag = `${block.table_class || ''} ${block.className || ''}`.toLowerCase();
+  const flag = `${block.table_class || ''} ${block.className || ''} ${block.page_class || ''}`.toLowerCase();
   return Boolean(block.compact || flag.includes('compact'));
 }
 
-function figureSizePreset(count, variant = 'row') {
+function isCompactLayout(block = {}) {
+  const flag = `${block.page_class || ''} ${block.className || ''}`.toLowerCase();
+  return Boolean(block.compact || flag.includes('compact'));
+}
+
+function figureSizePreset(count, variant = 'row', compact = false) {
   if (variant === 'step') {
+    if (compact) {
+      if (count <= 1) return DOCX_PROFILE.images.stepSingleCompact;
+      if (count === 2) return DOCX_PROFILE.images.stepDoubleCompact;
+      return DOCX_PROFILE.images.stepTripleCompact;
+    }
     if (count <= 1) return DOCX_PROFILE.images.stepSingle;
     if (count === 2) return DOCX_PROFILE.images.stepDouble;
     return DOCX_PROFILE.images.stepTriple;
@@ -541,9 +620,14 @@ function renderSubTitle(block, ctx) {
   return [makeTextParagraph(resolveVars(readTextValue(block.text), ctx.vars), {
     before: 120,
     after: 100,
-    size: DOCX_PROFILE.text.subtitleSize,
+    size: DOCX_PROFILE.text.sectionTitleSize,
     bold: true,
     keepNext: true,
+    font: TITLE_FONT,
+    color: ACTIVE_THEME.sectionTitle,
+    border: {
+      bottom: { style: BorderStyle.SINGLE, size: 8, color: ACTIVE_THEME.headerBorder },
+    },
   })];
 }
 
@@ -555,14 +639,22 @@ function renderBulletList(block, ctx) {
   }));
 }
 
-function renderAlertBox(block, ctx, shading) {
-  const fill = typeof shading === 'string' ? shading : shading.fill;
+function getAlertTheme(kind) {
+  if (kind === 'warning_box') return { fill: ACTIVE_THEME.warningFill, border: ACTIVE_THEME.warningBorder };
+  if (kind === 'caution_box') return { fill: ACTIVE_THEME.cautionFill, border: ACTIVE_THEME.cautionBorder };
+  return { fill: ACTIVE_THEME.noticeFill, border: ACTIVE_THEME.noticeBorder };
+}
+
+function renderAlertBox(block, ctx, kind) {
+  const theme = getAlertTheme(kind);
   const elements = [];
   if (block.title) {
     elements.push(makeTextParagraph(resolveVars(readTextValue(block.title), ctx.vars), {
       after: 60,
       bold: true,
       size: DOCX_PROFILE.text.subtitleSize - 2,
+      font: TITLE_FONT,
+      color: ACTIVE_THEME.primary,
     }));
   }
   if (block.icon) {
@@ -579,6 +671,7 @@ function renderAlertBox(block, ctx, shading) {
       elements.push(makeTextParagraph(resolveVars(readTextValue(item), ctx.vars), {
         after: 50,
         numbering: { reference: 'bullets', level: 0 },
+        size: DOCX_PROFILE.text.bodySize,
       }));
     }
   } else if (block.text) {
@@ -595,8 +688,8 @@ function renderAlertBox(block, ctx, shading) {
     rows: [new TableRow({
       children: [makeCell(elements, {
         width: CONTENT_W,
-        borders: boxBorders(ACTIVE_THEME.boxBorder),
-        shading: { fill, type: ShadingType.CLEAR },
+        borders: boxBorders(theme.border),
+        shading: { fill: theme.fill, type: ShadingType.CLEAR },
         margins: { top: 120, bottom: 120, left: 150, right: 150 },
       })],
     })],
@@ -605,58 +698,58 @@ function renderAlertBox(block, ctx, shading) {
 
 function renderStepFlow(block, ctx) {
   const startAt = Number(block.start_at || 1);
-  const elements = [];
+  const compact = isCompactLayout(block);
+  const numberWidth = Math.round(CONTENT_W * (compact ? 0.08 : 0.09));
+  const textWidth = CONTENT_W - numberWidth;
+  const rows = [];
   for (let i = 0; i < (block.steps || []).length; i++) {
     const step = block.steps[i];
     const figureCount = (step.figures || []).length;
     const body = [
       ...makeTextParagraphs(resolveVars(readTextValue(step.text || step), ctx.vars), {
-        after: figureCount ? 70 : 20,
-        size: DOCX_PROFILE.text.bodySize,
+        after: figureCount ? (compact ? 45 : 70) : 10,
+        size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.text.bodySize,
       }),
     ];
     if (figureCount) {
       body.push(...renderFigureGrid(step.figures, ctx, {
         variant: 'step',
-        sizePreset: figureSizePreset(figureCount, 'step'),
+        sizePreset: figureSizePreset(figureCount, 'step', compact),
       }));
     }
-
-    const numberWidth = Math.round(CONTENT_W * 0.09);
-    const textWidth = CONTENT_W - numberWidth;
-    elements.push(new Table({
-      width: { size: CONTENT_W, type: WidthType.DXA },
-      columnWidths: [numberWidth, textWidth],
-      layout: TableLayoutType.FIXED,
-      borders: NO_BORDERS,
-      rows: [new TableRow({
-        children: [
-          makeCell([
-            makeTextParagraph(String(startAt + i), {
-              after: 0,
-              bold: true,
-              size: DOCX_PROFILE.text.subtitleSize,
-              color: 'FFFFFF',
-              alignment: AlignmentType.CENTER,
-            }),
-          ], {
-            width: numberWidth,
-            borders: NO_BORDERS,
-            shading: { fill: ACTIVE_THEME.accent, type: ShadingType.CLEAR },
-            margins: { top: 120, bottom: 120, left: 0, right: 0 },
-            verticalAlign: VerticalAlign.CENTER,
+    rows.push(new TableRow({
+      cantSplit: true,
+      children: [
+        makeCell([
+          makeTextParagraph(String(startAt + i), {
+            after: 0,
+            bold: true,
+            size: compact ? DOCX_PROFILE.table.headerSize : DOCX_PROFILE.text.subtitleSize,
+            color: 'FFFFFF',
+            alignment: AlignmentType.CENTER,
           }),
-          makeCell(body, {
-            width: textWidth,
-            borders: boxBorders(ACTIVE_THEME.headerBorder),
-            margins: { top: 100, bottom: 100, left: 120, right: 120 },
-          }),
-        ],
-      })],
+        ], {
+          width: numberWidth,
+          borders: NO_BORDERS,
+          shading: { fill: ACTIVE_THEME.accent, type: ShadingType.CLEAR },
+          margins: { top: compact ? 80 : 120, bottom: compact ? 80 : 120, left: 0, right: 0 },
+          verticalAlign: VerticalAlign.CENTER,
+        }),
+        makeCell(body, {
+          width: textWidth,
+          borders: boxBorders(ACTIVE_THEME.boxBorder),
+          margins: { top: compact ? 80 : 100, bottom: compact ? 80 : 100, left: 120, right: 120 },
+        }),
+      ],
     }));
-    elements.push(makeSpacer(80));
   }
-  return elements;
+  return [new Table({
+    width: { size: CONTENT_W, type: WidthType.DXA },
+    columnWidths: [numberWidth, textWidth],
+    layout: TableLayoutType.FIXED,
+    borders: NO_BORDERS,
+    rows,
+  }), makeSpacer(compact ? 50 : 80)];
 }
 
 function renderFigureBlock(block, ctx) {
@@ -693,14 +786,15 @@ function renderFigureRow(block, ctx) {
 }
 
 function renderSplitPanel(block, ctx) {
-  const leftWidth = Math.round(CONTENT_W * 0.58);
+  const compact = isCompactLayout(block);
+  const leftWidth = Math.round(CONTENT_W * (compact ? 0.55 : 0.58));
   const rightWidth = CONTENT_W - leftWidth;
   const leftChildren = [];
   for (const child of block.body_blocks || []) {
-    leftChildren.push(...renderBlock(child, ctx));
+    leftChildren.push(...renderBlock({ ...child, page_class: child.page_class || block.page_class || '' }, ctx));
   }
   const rightChildren = renderStackedFigures(block.figures || [], ctx, {
-    sizePreset: DOCX_PROFILE.images.splitPanel,
+    sizePreset: compact ? DOCX_PROFILE.images.rowDouble : DOCX_PROFILE.images.splitPanel,
   });
   return [new Table({
     width: { size: CONTENT_W, type: WidthType.DXA },
@@ -712,16 +806,16 @@ function renderSplitPanel(block, ctx) {
         makeCell(leftChildren, {
           width: leftWidth,
           borders: NO_BORDERS,
-          margins: { top: 0, bottom: 0, left: 0, right: 120 },
+          margins: { top: 0, bottom: 0, left: 0, right: compact ? 80 : 120 },
         }),
         makeCell(rightChildren, {
           width: rightWidth,
-          borders: boxBorders(ACTIVE_THEME.headerBorder),
-          margins: { top: 90, bottom: 90, left: 90, right: 90 },
+          borders: NO_BORDERS,
+          margins: { top: 20, bottom: 20, left: compact ? 40 : 60, right: 0 },
         }),
       ],
     })],
-  }), makeSpacer(100)];
+  }), makeSpacer(compact ? 60 : 100)];
 }
 
 function renderTableRef(block, ctx) {
@@ -970,9 +1064,9 @@ function renderBlock(block, ctx) {
     case 'paragraph': return renderParagraphBlock(block, ctx);
     case 'sub_title': return renderSubTitle(block, ctx);
     case 'bullet_list': return renderBulletList(block, ctx);
-    case 'warning_box': return renderAlertBox(block, ctx, ACTIVE_THEME.warningFill);
-    case 'caution_box': return renderAlertBox(block, ctx, ACTIVE_THEME.cautionFill);
-    case 'notice_box': return renderAlertBox(block, ctx, ACTIVE_THEME.noticeFill);
+    case 'warning_box': return renderAlertBox(block, ctx, 'warning_box');
+    case 'caution_box': return renderAlertBox(block, ctx, 'caution_box');
+    case 'notice_box': return renderAlertBox(block, ctx, 'notice_box');
     case 'step_flow': return renderStepFlow(block, ctx);
     case 'figure': return renderFigureBlock(block, ctx);
     case 'figure_row': return renderFigureRow(block, ctx);
@@ -992,7 +1086,6 @@ function renderBlock(block, ctx) {
 function renderChapterHeading(chapter) {
   return [
     new Paragraph({
-      pageBreakBefore: true,
       heading: HeadingLevel.HEADING_1,
       spacing: { before: 0, after: 60, line: 320 },
       border: { left: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.chapterBar } },
@@ -1001,17 +1094,17 @@ function renderChapterHeading(chapter) {
       children: [
         new TextRun({
           text: `${chapter.chapter_no} `,
-          font: FONT,
+          font: TITLE_FONT,
           bold: true,
           size: DOCX_PROFILE.text.chapterNumberSize,
-          color: ACTIVE_THEME.accent,
+          color: ACTIVE_THEME.chapterNumber,
         }),
         new TextRun({
           text: chapter.title,
-          font: FONT,
+          font: TITLE_FONT,
           bold: true,
           size: DOCX_PROFILE.text.chapterTitleSize,
-          color: ACTIVE_THEME.primary,
+          color: ACTIVE_THEME.chapterTitle,
         }),
       ],
     }),
@@ -1022,22 +1115,39 @@ function renderChapterHeading(chapter) {
         text: chapter.header_ref,
         font: FONT,
         size: DOCX_PROFILE.text.smallSize,
-        color: ACTIVE_THEME.light,
+        color: ACTIVE_THEME.chapterHeaderRef,
       })],
     }),
   ];
 }
 
-function renderPageSectionTitle(page, chapter) {
+function shouldPageBreakBeforePage(page, chapter, pageIndex) {
+  if (pageIndex === 0) return false;
+  if (page.force_page_break) return true;
+  const title = `${page.section_title || ''}`.toLowerCase();
+  const pageKey = `${page.page_key || ''}`.toLowerCase();
+  if (title.includes('\u7eed') || title.includes('continued')) return true;
+  if (pageKey.includes('continued') || pageKey.includes('warranty') || pageKey.includes('appendix')) return true;
+  if ((page.blocks || []).some((block) => block.type === 'warranty_card')) return true;
+  return false;
+}
+
+function renderPageSectionTitle(page, chapter, pageIndex) {
   if (page.hide_section_title) return [];
   const title = page.section_title || chapter.title;
-  if (!title || title === chapter.title) return [];
+  const pageBreakBefore = shouldPageBreakBeforePage(page, chapter, pageIndex);
+  if (!title || title === chapter.title) {
+    return pageBreakBefore ? [new Paragraph({ pageBreakBefore: true, children: [] })] : [];
+  }
   return [makeTextParagraph(title, {
     before: 40,
     after: 90,
     bold: true,
-    size: DOCX_PROFILE.text.subtitleSize,
+    size: DOCX_PROFILE.text.sectionTitleSize,
     keepNext: true,
+    font: TITLE_FONT,
+    color: ACTIVE_THEME.sectionTitle,
+    pageBreakBefore,
   })];
 }
 
@@ -1050,33 +1160,42 @@ function buildCoverBlock(ctx) {
 
   const children = [
     new Paragraph({
-      spacing: { before: 380, after: 50 },
+      spacing: { before: 220, after: 35 },
       children: [new TextRun({
         text: ctx.brand.display_name,
-        font: FONT,
+        font: TITLE_FONT,
         bold: true,
         size: DOCX_PROFILE.text.coverBrandSize,
         color: ACTIVE_THEME.primary,
       })],
     }),
     new Paragraph({
-      spacing: { after: 50 },
+      spacing: { after: 40 },
       children: [new TextRun({
-        text: `MODEL ${ctx.model}`,
+        text: ctx.localized.document_title,
         font: FONT,
+        size: DOCX_PROFILE.text.coverTypeSize,
+        color: ACTIVE_THEME.coverType,
+      })],
+    }),
+    new Paragraph({
+      spacing: { after: 24 },
+      children: [new TextRun({
+        text: ctx.localized.product_name,
+        font: TITLE_FONT,
         bold: true,
-        size: DOCX_PROFILE.text.coverModelSize,
-        color: ACTIVE_THEME.coverModel,
+        size: DOCX_PROFILE.text.coverProductSize,
+        color: ACTIVE_THEME.coverTitle,
       })],
     }),
     new Paragraph({
       spacing: { after: 120 },
       children: [new TextRun({
-        text: ctx.localized.product_name,
+        text: ctx.model,
         font: FONT,
         bold: true,
-        size: DOCX_PROFILE.text.coverProductSize,
-        color: ACTIVE_THEME.primary,
+        size: DOCX_PROFILE.text.coverModelSize,
+        color: ACTIVE_THEME.coverModel,
       })],
     }),
     new Paragraph({
@@ -1096,21 +1215,12 @@ function buildCoverBlock(ctx) {
 
   children.push(
     new Paragraph({
-      spacing: { after: 40 },
-      children: [new TextRun({
-        text: ctx.localized.document_title,
-        font: FONT,
-        size: DOCX_PROFILE.text.subtitleSize,
-        color: ACTIVE_THEME.light,
-      })],
-    }),
-    new Paragraph({
       spacing: { before: 140, after: 0 },
       children: [new TextRun({
-        text: ctx.brand.name,
+        text: ctx.brand.website || ctx.brand.name,
         font: FONT,
-        size: DOCX_PROFILE.text.smallSize,
-        color: ACTIVE_THEME.light,
+        size: DOCX_PROFILE.text.coverCompanySize,
+        color: ACTIVE_THEME.coverCompany,
       })],
     })
   );
@@ -1118,15 +1228,16 @@ function buildCoverBlock(ctx) {
   return children;
 }
 
-function buildHeader(ctx) {
+function buildHeader(ctx, chapter = null) {
+  const rightText = chapter?.header_ref || `${ctx.model}  ${ctx.localized.document_title}`;
   return new Header({
     children: [new Paragraph({
       spacing: { after: 40 },
       border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: ACTIVE_THEME.headerBorder } },
       tabStops: [{ type: TabStopType.RIGHT, position: TabStopPosition.MAX }],
       children: [
-        new TextRun({ text: ctx.brand.display_name, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.light }),
-        new TextRun({ text: `\t${ctx.model}  ${ctx.localized.document_title}`, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.light }),
+        new TextRun({ text: ctx.brand.display_name, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.headerText }),
+        new TextRun({ text: `\t${rightText}`, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.headerText }),
       ],
     })],
   });
@@ -1147,7 +1258,7 @@ function buildFooter(ctx) {
   });
 }
 
-function buildDocx(regionCode, brandOverride) {
+async function buildDocx(regionCode, brandOverride) {
   const region = config.regions[regionCode];
   if (!region) {
     throw new Error(
@@ -1167,10 +1278,13 @@ function buildDocx(regionCode, brandOverride) {
 
   console.log(`DOCX: ${model} | region=${regionCode} | brand=${activeBrand} | lang=${lang}`);
 
-  const imagesManifest = loadImagesManifest(productDir);
+  const baseImagesManifest = loadImagesManifest(productDir);
+  const imagesDir = path.join(productDir, 'images');
+  const cacheNamespace = `${path.basename(productDir)}-${regionCode}-${activeBrand}`;
+  const preparedImages = await prepareImagesManifestForDocx(baseImagesManifest, imagesDir, cacheNamespace);
+  const imagesManifest = preparedImages.manifest;
   const documentSchema = loadContentDocument(productDir, lang);
   const chapters = documentSchema.chapters.filter((ch) => ch.enabled !== false);
-  const imagesDir = path.join(productDir, 'images');
 
   const vars = {
     'brand.display_name': localizedRuntime.brand.display_name,
@@ -1220,35 +1334,73 @@ function buildDocx(regionCode, brandOverride) {
   const tocTitle = langSuffix(lang) === 'cn' ? '目录' : 'Contents';
   const tocChildren = [
     new Paragraph({
-      pageBreakBefore: true,
+      heading: HeadingLevel.HEADING_1,
       spacing: { before: 0, after: 120 },
       children: [new TextRun({
         text: tocTitle,
-        font: FONT,
+        font: TITLE_FONT,
         bold: true,
-        size: DOCX_PROFILE.text.chapterTitleSize - 2,
-        color: ACTIVE_THEME.primary,
+        size: DOCX_PROFILE.text.tocTitleSize,
+        color: ACTIVE_THEME.tocTitle,
       })],
     }),
     new TableOfContents(tocTitle, {
       hyperlink: true,
       headingStyleRange: '1-2',
-      stylesWithLevels: [
-        { styleName: 'Heading1', level: 1 },
-        { styleName: 'Heading2', level: 2 },
-      ],
+      rightTabStop: TabStopPosition.MAX,
     }),
   ];
 
-  const contentChildren = [];
+  const sections = [
+    {
+      properties: {
+        page: {
+          size: { width: PAGE_W, height: PAGE_H },
+          margin: { top: MARGIN_Y, right: MARGIN_X, bottom: MARGIN_Y, left: MARGIN_X },
+        },
+      },
+      children: coverChildren,
+    },
+    {
+      properties: {
+        type: SectionType.NEXT_PAGE,
+        page: {
+          size: { width: PAGE_W, height: PAGE_H },
+          margin: { top: MARGIN_Y, right: MARGIN_X, bottom: MARGIN_Y, left: MARGIN_X },
+        },
+      },
+      headers: { default: buildHeader(ctx) },
+      footers: { default: buildFooter(ctx) },
+      children: tocChildren,
+    },
+  ];
+
   for (const chapter of chapters) {
-    contentChildren.push(...renderChapterHeading(chapter));
-    for (const page of (chapter.pages || [])) {
-      contentChildren.push(...renderPageSectionTitle(page, chapter));
+    const chapterChildren = [...renderChapterHeading(chapter)];
+    for (let pageIndex = 0; pageIndex < (chapter.pages || []).length; pageIndex += 1) {
+      const page = chapter.pages[pageIndex];
+      chapterChildren.push(...renderPageSectionTitle(page, chapter, pageIndex));
       for (const block of page.blocks || []) {
-        contentChildren.push(...renderBlock(block, ctx));
+        chapterChildren.push(...renderBlock({
+          ...block,
+          page_class: page.page_class || '',
+          page_id: page.page_id || '',
+          chapter_id: chapter.chapter_id || '',
+        }, ctx));
       }
     }
+    sections.push({
+      properties: {
+        type: SectionType.NEXT_PAGE,
+        page: {
+          size: { width: PAGE_W, height: PAGE_H },
+          margin: { top: MARGIN_Y, right: MARGIN_X, bottom: MARGIN_Y, left: MARGIN_X },
+        },
+      },
+      headers: { default: buildHeader(ctx, chapter) },
+      footers: { default: buildFooter(ctx) },
+      children: chapterChildren,
+    });
   }
 
   const doc = new Document({
@@ -1268,8 +1420,8 @@ function buildDocx(regionCode, brandOverride) {
           run: {
             size: DOCX_PROFILE.text.chapterTitleSize,
             bold: true,
-            font: FONT,
-            color: ACTIVE_THEME.primary,
+            font: TITLE_FONT,
+            color: ACTIVE_THEME.chapterTitle,
           },
           paragraph: { spacing: { before: 200, after: 120 }, outlineLevel: 0 },
         },
@@ -1280,38 +1432,17 @@ function buildDocx(regionCode, brandOverride) {
           next: 'Normal',
           quickFormat: true,
           run: {
-            size: DOCX_PROFILE.text.subtitleSize,
+            size: DOCX_PROFILE.text.sectionTitleSize,
             bold: true,
-            font: FONT,
-            color: ACTIVE_THEME.primary,
+            font: TITLE_FONT,
+            color: ACTIVE_THEME.sectionTitle,
           },
           paragraph: { spacing: { before: 120, after: 80 }, outlineLevel: 1 },
         },
       ],
     },
     numbering: { config: numberingConfigs },
-    sections: [
-      {
-        properties: {
-          page: {
-            size: { width: PAGE_W, height: PAGE_H },
-            margin: { top: MARGIN_Y, right: MARGIN_X, bottom: MARGIN_Y, left: MARGIN_X },
-          },
-        },
-        children: coverChildren,
-      },
-      {
-        properties: {
-          page: {
-            size: { width: PAGE_W, height: PAGE_H },
-            margin: { top: MARGIN_Y, right: MARGIN_X, bottom: MARGIN_Y, left: MARGIN_X },
-          },
-        },
-        headers: { default: buildHeader(ctx) },
-        footers: { default: buildFooter(ctx) },
-        children: [...tocChildren, ...contentChildren],
-      },
-    ],
+    sections,
   });
 
   return {
@@ -1322,13 +1453,12 @@ function buildDocx(regionCode, brandOverride) {
     locale: lang,
     model,
     profile: DOCX_PROFILE,
+    templateProfile: DOCX_PROFILE.templateId,
     theme: ACTIVE_THEME,
+    assetStats: preparedImages.stats,
   };
 }
 
-// ---------------------------------------------------------------------------
-// Main
-// ---------------------------------------------------------------------------
 async function writeBufferWithRetry(outPath, buffer, retries = 5, delayMs = 250) {
   let lastError = null;
   for (let attempt = 0; attempt < retries; attempt++) {
@@ -1355,11 +1485,15 @@ async function writeBufferWithRetry(outPath, buffer, retries = 5, delayMs = 250)
 }
 
 async function writeDocx(regionCode, brandOverride) {
-  const { doc, activeBrand, market, model } = buildDocx(regionCode, brandOverride);
+  const { doc, activeBrand, market, model } = await buildDocx(regionCode, brandOverride);
   const outName = `${model.toLowerCase()}-${activeBrand}-${market}-${regionCode}.docx`;
   const outPath = path.join(outputDir, outName);
   const buffer = await Packer.toBuffer(doc);
   const actualPath = await writeBufferWithRetry(outPath, buffer);
+  if (writeBaseTemplateCn && regionCode === 'cn') {
+    fs.mkdirSync(path.dirname(baseTemplatePath), { recursive: true });
+    fs.copyFileSync(actualPath, baseTemplatePath);
+  }
   console.log(`  -> ${path.basename(actualPath)} (${(buffer.length / 1024).toFixed(1)} KB)`);
   return { outName: path.basename(actualPath), outPath: actualPath, activeBrand, market, model, regionCode };
 }

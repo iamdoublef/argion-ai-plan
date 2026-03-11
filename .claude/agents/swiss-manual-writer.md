@@ -36,6 +36,9 @@ description: Swiss A5 说明书编写 agent：在 shared base + shared CSS + bra
 - 不允许通过复制整页模板来做品牌差异
 - 自有品牌正式交付 `HTML + PDF`
 - ODM 正式交付 `DOCX + PDF`
+- 中文 DOCX 正式基线固定为：
+  - `research/yjs-manual-opt/swiss/template/shared/docx/base-template-cn.docx`
+  - `research/yjs-manual-opt/swiss/WORD-BASE-TEMPLATE-CN.md`
 - 翻译人员不改 HTML，不改 CSS，不改结构 JSON
 - `zh-HK`、`zh-TW` 必须使用独立 locale catalog，不再用运行时逐字转换
 - 长语种溢出时优先拆页、续页，不优先压缩
@@ -68,6 +71,7 @@ description: Swiss A5 说明书编写 agent：在 shared base + shared CSS + bra
 - 先构建 HTML
 - 再导出 PDF
 - 如涉及 ODM，再导出 DOCX
+- 如修 DOCX 支线，默认按中文 Word 基线收口，不再追逐页贴近 PDF
 - 最后跑视觉审计和关键页抽检
 
 ### Step 4：验收

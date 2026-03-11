@@ -9,6 +9,9 @@
 - 结构源只认 JSON
 - 译文编辑面只认翻译工作簿
 - `PDF` 用于审稿和交付；若发生应急 hotfix，下一版必须回写正式源头
+- 中文 Word 基线固定为：
+  - `research/yjs-manual-opt/swiss/template/shared/docx/base-template-cn.docx`
+  - `research/yjs-manual-opt/swiss/WORD-BASE-TEMPLATE-CN.md`
 
 本 SOP 适用于 `research/yjs-manual-opt/swiss/` 当前 A5 共享母版体系。
 
@@ -74,6 +77,7 @@
 - `HTML` 只用于技术预览和定位问题
 - `PDF` 是审稿和最终交付界面
 - `DOCX` 是 ODM 客户的可编辑交付稿，不是正式源头
+- 中文 `DOCX` 默认复用固定 A5 Word 母版骨架，新产品只微调内容和图片
 
 ## 目录结构
 
@@ -329,6 +333,7 @@ node tools/export-docx.js --product products/<product> --all
 - 译文审核不需要碰 HTML
 - `zh-HK`、`zh-TW` 不再依赖逐字简转繁发布
 - ODM 可稳定输出 DOCX
+- 中文 DOCX 需符合固定基线样稿和版式规范
 - 无 unresolved placeholder
 - 无 raw HTML
 - 无 `html_fragment`
@@ -343,4 +348,8 @@ node tools/export-docx.js --product products/<product> --all
 - `HTML/PDF` 与 `DOCX` 共用同一份 JSON 内容源和译文 catalog，但排版引擎完全分开。
 - `DOCX` 采用单一 Word 母版骨架 + 品牌主题包；不允许按产品复制 Word 模板。
 - `DOCX` 的目标是“可编辑且体面”，不是 1:1 还原 `PDF`。
+- 中文 Word 正式基线固定为：
+  - `research/yjs-manual-opt/swiss/template/shared/docx/base-template-cn.docx`
+  - `research/yjs-manual-opt/swiss/WORD-BASE-TEMPLATE-CN.md`
+- 后续新产品中文 Word 默认复用这套骨架，只允许内容和图片微调，不重做版式体系。
 - 若目标 `DOCX` 正被 WPS/Word 占用，导出器允许落旁路文件 `.__staged.docx`，待锁释放后再替换正式文件。
