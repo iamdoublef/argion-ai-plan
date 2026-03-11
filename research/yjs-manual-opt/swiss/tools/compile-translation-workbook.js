@@ -14,7 +14,29 @@ function getArg(name, fallback = null) {
 const workbookArg = getArg('workbook', null);
 const productArg = getArg('product', path.join('products', 'v23'));
 const localeArg = getArg('locale', null);
+const checkLangFlag = args.includes('--check-lang');
+const strictFlag = args.includes('--strict');
 const productDir = path.isAbsolute(productArg) ? productArg : path.resolve(swissRoot, productArg);
+
+/**
+ * Check for source language residuals in target locale strings.
+ * @param {Record<string,string>} strings - compiled text_id → text map
+ * @param {string} locale - target locale (e.g. 'en', 'de')
+ * @param {{ strict?: boolean }} options
+ * @returns {Array<{ text_id: string, value: string, isError: boolean }>}
+ */
+function checkLanguage(strings, locale, options = {}) {
+  const { strict = false } = options;
+  if (locale.startsWith('zh')) return []; // source language, skip
+  const cjkRe = /[\u4e00-\u9fff]/;
+  const warnings = [];
+  for (const [text_id, value] of Object.entries(strings)) {
+    if (cjkRe.test(value)) {
+      warnings.push({ text_id, value, isError: strict });
+    }
+  }
+  return warnings;
+}
 
 function compileWorkbook(workbookPath, locale) {
   const wb = XLSX.readFile(workbookPath);
@@ -47,6 +69,28 @@ function main() {
   const locale = localeArg || path.basename(workbookPath, path.extname(workbookPath));
   const outPath = compileWorkbook(workbookPath, locale);
   console.log(`Compiled locale catalog: ${outPath}`);
+
+  if (checkLangFlag) {
+    const compiled = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+    const warnings = checkLanguage(compiled.strings, locale, { strict: strictFlag });
+    if (warnings.length > 0) {
+      console.log(`\nLanguage check: ${warnings.length} issue(s) found in ${locale}:`);
+      for (const w of warnings) {
+        const level = w.isError ? 'ERROR' : 'WARNING';
+        console.log(`  [${level}] ${w.text_id}: "${w.value.substring(0, 60)}"`);
+      }
+      if (strictFlag) {
+        console.log('\n--strict mode: aborting due to language issues.');
+        process.exit(1);
+      }
+    } else {
+      console.log(`\nLanguage check: PASS (0 issues)`);
+    }
+  }
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = { compileWorkbook, checkLanguage };

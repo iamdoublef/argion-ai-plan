@@ -68,11 +68,20 @@
         {
           "type": "figure",
           "figure": "warranty.separator.primary"
-        },
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.10-warranty.page.page1.section_title"
+    },
+    {
+      "page_class": "compact-warranty",
+      "section_title": "品牌与保修信息（续）",
+      "hide_section_title": false,
+      "blocks": [
         {
           "type": "sub_title",
           "text": "保修卡",
-          "text_id": "content.chapter.10-warranty.page.page1.block.11.text"
+          "text_id": "content.chapter.10-warranty.page.page2.block.1.text"
         },
         {
           "type": "warranty_card",
@@ -92,26 +101,7 @@
             {
               "text": "电话号码",
               "text_id": "content.chapter.10-warranty.page.page1.block.12.field.4"
-            }
-          ]
-        }
-      ],
-      "page_id": "page1",
-      "section_title_id": "content.chapter.10-warranty.page.page1.section_title"
-    },
-    {
-      "page_class": "compact-warranty",
-      "section_title": "品牌与保修信息（续）",
-      "hide_section_title": false,
-      "blocks": [
-        {
-          "type": "sub_title",
-          "text": "保修卡",
-          "text_id": "content.chapter.10-warranty.page.page2.block.1.text"
-        },
-        {
-          "type": "warranty_card",
-          "fields": [
+            },
             {
               "text": "电子邮件地址",
               "text_id": "content.chapter.10-warranty.page.page2.block.2.field.1"

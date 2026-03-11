@@ -422,7 +422,7 @@ page-footer：约 8mm
 | `export-pdf.js` | 不变 |
 | `export-pdf-batch.js` | 不变 |
 | `make-booklet.py` | 不变 |
-| `_audit-visual.js` | 不变（后续增强） |
+| `audit-visual.js` | 新版，结构化 JSON 输出，替代旧 `_audit-visual.js` |
 | master template shell 部分 | 小改（TOC 改为 slot） |
 
 ---

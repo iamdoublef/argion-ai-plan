@@ -260,7 +260,7 @@ node tools/export-docx.js --product products/<product> --region <region>
 ### Step 10：审计
 
 ```powershell
-node tools/_audit-visual.js output/<product>-<brand>-<market>-<region>.html
+node tools/audit-visual.js output/<product>-<brand>-<market>-<region>.html
 ```
 
 ### Step 11：人工抽检

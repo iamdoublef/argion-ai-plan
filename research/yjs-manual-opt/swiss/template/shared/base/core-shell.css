@@ -168,6 +168,11 @@ p {
   page-break-inside: avoid;
 }
 
+.figure-row img {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .step-figures {
   margin: 4px 0 8px 28px !important;
   width: calc(100% - 28px);

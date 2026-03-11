@@ -12,8 +12,9 @@ description: Swiss A5 说明书编写 agent：在 shared base + shared CSS + bra
 按顺序读取：
 
 1. `research/yjs-manual-opt/swiss/skills/swiss-manual-a5/SKILL.md`
-2. `research/yjs-manual-opt/swiss/DESIGN-STANDARD.md`
-3. `research/yjs-manual-opt/swiss/SOP-new-product.md`
+2. `research/yjs-manual-opt/swiss/DESIGN-STANDARD.md`（含 §十七 内容结构约束）
+3. `research/yjs-manual-opt/swiss/QA-RULES.md`（审计流程与自查清单）
+4. `research/yjs-manual-opt/swiss/SOP-new-product.md`
 4. 当前产品结构源和译文源：
    - `research/yjs-manual-opt/swiss/products/<product>/product.json`
    - `research/yjs-manual-opt/swiss/products/<product>/images.json`
@@ -74,12 +75,21 @@ description: Swiss A5 说明书编写 agent：在 shared base + shared CSS + bra
 - 如修 DOCX 支线，默认按中文 Word 基线收口，不再追逐页贴近 PDF
 - 最后跑视觉审计和关键页抽检
 
-### Step 4：验收
+### Step 4：自渲染验证（Writer 自查）
 
-必须同时满足：
+构建完成后，Writer 必须自行执行以下验证，不得跳过：
+
+1. 构建 HTML 并导出 PDF
+2. 运行 `node tools/audit-visual.js output/<file>.html` 检查溢出、空页、残留
+3. 运行 `node tools/compile-translation-workbook.js --workbook <locale>.xlsx --check-lang` 检查语言残留
+4. 确认 QA-RULES.md Phase 1（静态检查）和 Phase 3（渲染后视觉检查）全部通过
+5. 如涉及多语种，至少对 zh-CN + en 各构建一次并审查
+
+最终验收标准（必须同时满足）：
 
 - 结构正确
 - PDF 真实渲染正常
+- audit-visual.js 无 ERROR
 - ODM 任务的 DOCX 可打开、可编辑、图文完整
 
 ## 关键验收页
@@ -91,6 +101,17 @@ description: Swiss A5 说明书编写 agent：在 shared base + shared CSS + bra
 - 操作页
 - 最后一页保修页
 - 保修卡续页
+
+## 工具清单
+
+| 工具 | 路径 | 用途 |
+|------|------|------|
+| build-variant.js | tools/build-variant.js | 构建单个变体 HTML |
+| build-all.js | tools/build-all.js | 批量构建所有变体 |
+| export-pdf.js | tools/export-pdf.js | HTML → PDF |
+| audit-visual.js | tools/audit-visual.js | 渲染后视觉审计（溢出/空页/残留） |
+| compile-translation-workbook.js | tools/compile-translation-workbook.js | xlsx → JSON + --check-lang |
+| sync-json-to-workbook.js | tools/sync-json-to-workbook.js | 编译后 JSON → xlsx 回写 |
 
 ## 输出物
 
