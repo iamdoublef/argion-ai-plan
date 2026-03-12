@@ -175,10 +175,14 @@ p {
 
 .page.roll-storage-vertical .fig-wrap {
   margin: 6px 0;
+  width: 100%;
 }
 
 .page.roll-storage-vertical .fig-wrap img {
+  display: block;
+  width: 100%;
   max-height: 46mm;
+  margin: 0 auto;
 }
 
 .page.roll-storage-vertical .fig-wrap.roll-storage-figure-primary img {

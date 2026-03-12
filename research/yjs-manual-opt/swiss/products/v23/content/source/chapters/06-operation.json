@@ -609,13 +609,13 @@
           "type": "figure",
           "figure": "06-operation.page04.image09",
           "className": "roll-storage-figure roll-storage-figure-primary",
-          "max_height": "40mm"
+          "max_height": "34mm"
         },
         {
           "type": "figure",
           "figure": "06-operation.page04.image10",
           "className": "roll-storage-figure roll-storage-figure-secondary",
-          "max_height": "98mm"
+          "max_height": "128mm"
         }
       ],
       "page_id": "page8",

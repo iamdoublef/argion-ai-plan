@@ -5,6 +5,8 @@
 - [DESIGN-STANDARD.md](/D:/work/private/yjsplan/research/yjs-manual-opt/swiss/DESIGN-STANDARD.md)
 - [QA-RULES.md](/D:/work/private/yjsplan/research/yjs-manual-opt/swiss/QA-RULES.md)
 
+未被当前批准版验证通过的页面级修补，不写入本文件；这里只沉淀已经被接受的 `V23` 产品线规则。
+
 ## 当前批准版基线
 
 - 当前 `V23` 中文批准版基线：`research/yjs-manual-opt/swiss/output/v23-wevac-eu-cn.html`
@@ -42,6 +44,11 @@
 4. `10 品牌与保修信息` 当前基线规则
    - `保修信息 + 保修卡` 在 `V23` 中默认同页
    - 若后续文字增长导致必须拆页，先确认是否属于真实内容增长，而不是版式退化
+
+## 产品经验与公共经验的边界
+
+- `V23 README` 只写 `V23` 自己的批准版基线、派生矩阵、分页经验和回写要求。
+- 可复用到其他产品的规则，例如图片承载尺寸、保修分页、`rowspan` 防护、单位一致性，统一写回公共规范，不在这里重复展开。
 
 ## V23 后续地区 / 翻译 / 单位版本的推荐顺序
 

@@ -48,6 +48,9 @@ commit: worktree
 - ptr: `research/yjs-manual-opt/swiss/products/v23/README.md`
 - ptr: `research/yjs-manual-opt/swiss/DESIGN-STANDARD.md`
 - ptr: `research/yjs-manual-opt/swiss/QA-RULES.md`
+- 产品特征与派生经验：看 `research/yjs-manual-opt/swiss/products/v23/README.md`
+- 通用结构/渲染标准：看 `research/yjs-manual-opt/swiss/DESIGN-STANDARD.md`
+- 通用审计逻辑与失败模式：看 `research/yjs-manual-opt/swiss/QA-RULES.md`
 
 ### 2026-03-11 Swiss JSON 单源 + 双渲染器正式落地
 commit: 9effce9
