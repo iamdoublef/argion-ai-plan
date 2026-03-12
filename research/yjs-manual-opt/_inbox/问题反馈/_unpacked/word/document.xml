@@ -1,0 +1,737 @@
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpsCustomData="http://www.wps.cn/officeDocument/2013/wpsCustomData" mc:Ignorable="w14 w15 wp14">
+  <w:body>
+    <w:p w14:paraId="3D47DA31">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>品牌与保固信息  信息如果放不了一页就分开放。统一一下规范，另外里面的中文英文的字体也没有统一。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="529B676D">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5271770" cy="6997065"/>
+            <wp:effectExtent l="0" t="0" r="6985" b="8890"/>
+            <wp:docPr id="1" name="图片 1" descr="d0811c2a691837e97d7d46c6982fd1f1"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="1" name="图片 1" descr="d0811c2a691837e97d7d46c6982fd1f1"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId4"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5271770" cy="6997065"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1B40D7CB">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="06B3216F">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>这个表格中间多了一行空行</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0305FB4F">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5274310" cy="5767705"/>
+            <wp:effectExtent l="0" t="0" r="4445" b="7620"/>
+            <wp:docPr id="2" name="图片 2" descr="6801cd57ac9bc4036b8e3a23655c2356"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="2" name="图片 2" descr="6801cd57ac9bc4036b8e3a23655c2356"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId5"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5274310" cy="5767705"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5ACD2D21">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="46E17A53">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>06 操作指引（附件使用）有几页没必要分页的，分页了。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="245F6EBC">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>这个页面不应该有部分是红点作为开头，一部分用序号开头，统一成序号开头</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1B3C7FB1">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5271770" cy="5508625"/>
+            <wp:effectExtent l="0" t="0" r="6985" b="7620"/>
+            <wp:docPr id="3" name="图片 3" descr="a4ff9d740e7f0accf3a2d01623b89d9b"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="3" name="图片 3" descr="a4ff9d740e7f0accf3a2d01623b89d9b"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId6"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5271770" cy="5508625"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="367E6CDF">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="47D0F1C7">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>真空软管的描述偏离比较大，原来是用图序来描述，html和pdf改了描述，你确认一下怎么做</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="759A3EBF">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5268595" cy="2717165"/>
+            <wp:effectExtent l="0" t="0" r="10160" b="3175"/>
+            <wp:docPr id="4" name="图片 4" descr="72623c7b411cdfdd260533486dc27d2e"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="4" name="图片 4" descr="72623c7b411cdfdd260533486dc27d2e"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId7"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5268595" cy="2717165"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="51C8CBC8">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="00D5A75E">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>这个明显配图太小了，应该改为上下排，扩大排版</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2944753E">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="018863D3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5269230" cy="4223385"/>
+            <wp:effectExtent l="0" t="0" r="9525" b="8255"/>
+            <wp:docPr id="5" name="图片 5" descr="fe59373b8b97cd89a7d8f735a43def66"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="5" name="图片 5" descr="fe59373b8b97cd89a7d8f735a43def66"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId8"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5269230" cy="4223385"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="47D9DB0F">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="51ED825E">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>第一列的颜色不正确。应该全部为白色，现在是第一列1行是白色，第二行开始是灰色。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="554A7677">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5039995" cy="5682615"/>
+            <wp:effectExtent l="0" t="0" r="1270" b="6350"/>
+            <wp:docPr id="7" name="图片 7" descr="d9572a10c95cb414184bac41ab332481"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="7" name="图片 7" descr="d9572a10c95cb414184bac41ab332481"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId9"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5039995" cy="5682615"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="244854A9">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7F3021B6">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>故障排除的这两页是否能合并到一起？分了两页又不太和谐。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5E218CAA">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="011379BC">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>这两个配图看起来一大一小，有点奇怪，全局检查一下是不是部分配图存在大小不一致的情况。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6CD4234E">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="32C18999">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5073015" cy="5225415"/>
+            <wp:effectExtent l="0" t="0" r="635" b="10160"/>
+            <wp:docPr id="6" name="图片 6" descr="63a2dea2db633bb094677d936ade2143"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="6" name="图片 6" descr="63a2dea2db633bb094677d936ade2143"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId10"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5073015" cy="5225415"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2E5C3948">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5F80E0D2">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>这里为什么分页了？应该在一页才对。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3B6233C1">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7065CAB0">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5203190" cy="8338185"/>
+            <wp:effectExtent l="0" t="0" r="0" b="6350"/>
+            <wp:docPr id="8" name="图片 8" descr="ef814db7ef65929250d6aa233c74e5f8"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="8" name="图片 8" descr="ef814db7ef65929250d6aa233c74e5f8"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId11"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5203190" cy="8338185"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="51AB5E50">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:br w:type="page"/>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3A7714B3">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:t>红色位置是不是跟上一章节太紧密了，又跟自己的章节太远了。</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="445BB4E5">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia" w:eastAsiaTheme="minorEastAsia"/>
+          <w:lang w:eastAsia="zh-CN"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="5269865" cy="4233545"/>
+            <wp:effectExtent l="0" t="0" r="8890" b="8890"/>
+            <wp:docPr id="9" name="图片 9" descr="d6f6e03e29b75d30d83f52011ca045f3"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="9" name="图片 9" descr="d6f6e03e29b75d30d83f52011ca045f3"/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId12"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5269865" cy="4233545"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+      <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+      <w:bookmarkEnd w:id="0"/>
+    </w:p>
+    <w:sectPr>
+      <w:pgSz w:w="11906" w:h="16838"/>
+      <w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="851" w:footer="992" w:gutter="0"/>
+      <w:cols w:space="425" w:num="1"/>
+      <w:docGrid w:type="lines" w:linePitch="312" w:charSpace="0"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

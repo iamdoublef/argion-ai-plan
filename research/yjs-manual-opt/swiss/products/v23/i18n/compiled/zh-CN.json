@@ -446,7 +446,9 @@
     "product.ui_labels.freshness_col2": "食物类别",
     "product.ui_labels.freshness_col3": "常规储存",
     "product.ui_labels.freshness_col4": "真空包装",
-    "system.document_title": "说明书"
+    "system.document_title": "说明书",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step1.text": "对梅森罐适配器和带阀门拉链袋抽真空时，圆形吸嘴采用方向①。",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step2.text": "对真空罐和瓶塞抽真空时，根据抽气口大小选择方向①或②。",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step3.text": "真空软管扁形吸嘴③用于连接机器面盖上的外抽气口③。"
   }
 }
-

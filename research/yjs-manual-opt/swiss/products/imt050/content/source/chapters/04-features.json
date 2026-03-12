@@ -13,12 +13,12 @@
         {
           "type": "figure",
           "figure": "structure.legend",
-          "max_height": "24mm"
+          "max_height": "36mm"
         },
         {
           "type": "figure",
           "figure": "control_panel.main",
-          "max_height": "20mm"
+          "max_height": "30mm"
         },
         {
           "type": "table_ref",

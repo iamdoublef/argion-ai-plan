@@ -446,7 +446,9 @@
     "product.ui_labels.freshness_col2": "Lebensmittelkategorie",
     "product.ui_labels.freshness_col3": "Normale Lagerung",
     "product.ui_labels.freshness_col4": "Vakuumverpackt",
-    "system.document_title": "Bedienungsanleitung"
+    "system.document_title": "Bedienungsanleitung",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step1.text": "Bei Einmachglas-Adapter und Reißverschlussbeuteln mit Ventil: Runde Düse in Richtung ① verwenden.",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step2.text": "Bei Vakuumbehältern und Stopfen: Je nach Größe der Ansaugöffnung Richtung ① oder ② wählen.",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step3.text": "Die flache Vakuumschlauch-Düse ③ dient zur Verbindung mit dem äußeren Ansaugstutzen ③ an der Klappe."
   }
 }
-

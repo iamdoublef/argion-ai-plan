@@ -446,6 +446,9 @@
     "product.ui_labels.freshness_col2": "Food Category",
     "product.ui_labels.freshness_col3": "Regular Storage",
     "product.ui_labels.freshness_col4": "Vacuum Sealed",
-    "system.document_title": "User Manual"
+    "system.document_title": "User Manual",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step1.text": "For Mason jar adapters and valve zipper bags, use the round nozzle in orientation ①.",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step2.text": "For vacuum canisters and bottle stoppers, choose orientation ① or ② depending on the valve size.",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step3.text": "The flat nozzle ③ on the vacuum hose connects to the external vacuum port ③ on the machine lid."
   }
 }

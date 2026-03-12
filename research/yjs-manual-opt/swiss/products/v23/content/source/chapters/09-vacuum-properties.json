@@ -104,7 +104,7 @@
             [
               {
                 "text": "鍐峰喕鍌ㄥ瓨",
-                "rowspan": 3,
+                "rowspan": 4,
                 "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.1.cell.1"
               },
               {
@@ -146,6 +146,13 @@
               {
                 "text": "18鈥?4 鏈?",
                 "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.3.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "",
+                "colspan": 3,
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.4.cell.1"
               }
             ],
             [
@@ -221,6 +228,13 @@
               {
                 "text": "7鈥?0 澶?",
                 "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.9.cell.3"
+              }
+            ],
+            [
+              {
+                "text": "",
+                "colspan": 4,
+                "text_id": "content.chapter.09-vacuum-properties.page.page2.block.2.row.10.cell.1"
               }
             ],
             [

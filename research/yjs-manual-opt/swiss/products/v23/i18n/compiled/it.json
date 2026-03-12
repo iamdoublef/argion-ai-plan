@@ -446,7 +446,9 @@
     "product.ui_labels.freshness_col2": "Categoria alimento",
     "product.ui_labels.freshness_col3": "Conservazione normale",
     "product.ui_labels.freshness_col4": "Sottovuoto",
-    "system.document_title": "Manuale d'uso"
+    "system.document_title": "Manuale d'uso",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step1.text": "Per barattoli Mason e sacchetti con zip e valvola: usare l'ugello circolare in direzione ①.",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step2.text": "Per contenitori sottovuoto e tappi: scegliere direzione ① o ② in base alla dimensione dell'apertura.",
+    "content.chapter.06-operation.page.page5.block.2.body.1.step.step3.text": "L'ugello piatto ③ del tubo si collega all'aspirazione esterna ③ sul coperchio."
   }
 }
-

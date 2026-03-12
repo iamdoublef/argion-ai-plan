@@ -13,7 +13,7 @@
         {
           "type": "figure",
           "figure": "control_panel.main",
-          "max_height": "20mm"
+          "max_height": "40mm"
         },
         {
           "type": "table_ref",
