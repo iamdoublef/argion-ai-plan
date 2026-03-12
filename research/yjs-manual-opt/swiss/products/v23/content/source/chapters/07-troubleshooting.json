@@ -315,16 +315,7 @@
               }
             ]
           ]
-        }
-      ],
-      "page_id": "page2",
-      "section_title_id": "content.chapter.07-troubleshooting.page.page2.section_title"
-    },
-    {
-      "page_class": "",
-      "section_title": "鏁呴殰鎺掗櫎锛堢画锛?",
-      "hide_section_title": false,
-      "blocks": [
+        },
         {
           "type": "sub_title",
           "text": "濡傚洜鐗规畩鍘熷洜锛屽鑷存恫浣撹繘鍏ユ満鍣ㄥ唴閮ㄧ殑澶勭悊鏂规",
@@ -418,8 +409,8 @@
           "title_id": "content.chapter.07-troubleshooting.page.page3.block.6.title"
         }
       ],
-      "page_id": "page3",
-      "section_title_id": "content.chapter.07-troubleshooting.page.page3.section_title"
+      "page_id": "page2",
+      "section_title_id": "content.chapter.07-troubleshooting.page.page2.section_title"
     }
   ],
   "title_id": "content.chapter.07-troubleshooting.title",

@@ -128,16 +128,7 @@
               "height": "auto"
             }
           ]
-        }
-      ],
-      "page_id": "page1",
-      "section_title_id": "content.chapter.06-operation.page.page1.section_title"
-    },
-    {
-      "page_class": "compact-ops",
-      "section_title": "鎿嶄綔鎸囧紩",
-      "hide_section_title": false,
-      "blocks": [
+        },
         {
           "type": "sub_title",
           "text": "6.3 濡備綍寤堕暱瀵嗗皝鏃堕棿",
@@ -156,8 +147,8 @@
           "title_id": "content.chapter.06-operation.page.page2.block.3.title"
         }
       ],
-      "page_id": "page2",
-      "section_title_id": "content.chapter.06-operation.page.page2.section_title"
+      "page_id": "page1",
+      "section_title_id": "content.chapter.06-operation.page.page1.section_title"
     },
     {
       "page_class": "compact-ops",
@@ -353,19 +344,22 @@
           "type": "split_panel",
           "body_blocks": [
             {
-              "type": "bullet_list",
-              "items": [
+              "type": "step_flow",
+              "steps": [
                 {
-                  "text": "瀵规妫綈閫傞厤鍣ㄥ拰甯﹂榾闂ㄦ媺閾捐鎶界湡绌烘椂锛屽渾褰㈠惛鍢撮噰鐢ㄦ柟鍚?銆?",
-                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.1"
+                  "id": "step1",
+                  "text": "瀵规妫綈閫傞厤鍣ㄥ拰甯﹂榾闂ㄦ媺閾捐鎶界湡绌烘椂锛屽渾褰㈠惛鍢撮噰鐢ㄦ柟鍚戔憼銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.step.step1.text"
                 },
                 {
-                  "text": "瀵圭湡绌虹綈鍜岀摱濉炴娊鐪熺┖鏃讹紝鏍规嵁鎶芥皵鍙ｅぇ灏忛€夋嫨鏂瑰悜1鎴?銆?",
-                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.2"
+                  "id": "step2",
+                  "text": "瀵圭湡绌虹綈鍜岀摱濉炴娊鐪熺┖鏃讹紝鏍规嵁鎶芥皵鍙ｅぇ灏忛€夋嫨鏂瑰悜鈶犳垨鈶°€?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.step.step2.text"
                 },
                 {
-                  "text": "鐪熺┖杞鎵佸舰鍚稿槾3鐢ㄤ簬杩炴帴鏈哄櫒闈㈢洊涓婄殑澶栨娊姘斿彛3銆?",
-                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.item.3"
+                  "id": "step3",
+                  "text": "鐪熺┖杞鎵佸舰鍚稿槾鈶㈢敤浜庤繛鎺ユ満鍣ㄩ潰鐩栦笂鐨勫鎶芥皵鍙ｂ憅銆?",
+                  "text_id": "content.chapter.06-operation.page.page5.block.2.body.1.step.step3.text"
                 }
               ]
             }
@@ -520,16 +514,7 @@
               "height": "auto"
             }
           ]
-        }
-      ],
-      "page_id": "page6",
-      "section_title_id": "content.chapter.06-operation.page.page6.section_title"
-    },
-    {
-      "page_class": "",
-      "section_title": "鎿嶄綔鎸囧紩锛堢画锛?",
-      "hide_section_title": false,
-      "blocks": [
+        },
         {
           "type": "sub_title",
           "text": "6.9 濡備綍鑵屽埗",
@@ -593,8 +578,8 @@
           ]
         }
       ],
-      "page_id": "page7",
-      "section_title_id": "content.chapter.06-operation.page.page7.section_title"
+      "page_id": "page6",
+      "section_title_id": "content.chapter.06-operation.page.page6.section_title"
     },
     {
       "page_class": "",
@@ -625,12 +610,19 @@
         },
         {
           "type": "figure_row",
+          "className": "figure-row--stacked",
+          "gap": "4mm",
+          "margin": "6px 0 0",
           "figures": [
             {
-              "figure": "06-operation.page04.image09"
+              "figure": "06-operation.page04.image09",
+              "width": "88mm",
+              "max_width": "100%"
             },
             {
-              "figure": "06-operation.page04.image10"
+              "figure": "06-operation.page04.image10",
+              "width": "88mm",
+              "max_width": "100%"
             }
           ]
         }

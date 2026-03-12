@@ -32,7 +32,16 @@
         {
           "type": "table_ref",
           "table": "manufacturer_info"
-        },
+        }
+      ],
+      "page_id": "page1",
+      "section_title_id": "content.chapter.10-warranty.page.page1.section_title"
+    },
+    {
+      "page_class": "compact-warranty",
+      "section_title": "品牌与保修信息（续）",
+      "hide_section_title": false,
+      "blocks": [
         {
           "type": "sub_title",
           "text": "保修信息",
@@ -71,16 +80,7 @@
           "width": "auto",
           "max_width": "100%",
           "max_height": "4mm"
-        }
-      ],
-      "page_id": "page1",
-      "section_title_id": "content.chapter.10-warranty.page.page1.section_title"
-    },
-    {
-      "page_class": "compact-warranty",
-      "section_title": "",
-      "hide_section_title": true,
-      "blocks": [
+        },
         {
           "type": "sub_title",
           "text": "保修卡",
@@ -136,4 +136,3 @@
   "toc_title_id": "content.chapter.10-warranty.toc_title",
   "header_ref_id": "content.chapter.10-warranty.header_ref"
 }
-
