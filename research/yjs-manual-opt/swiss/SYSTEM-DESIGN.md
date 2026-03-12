@@ -123,7 +123,7 @@ node tools/build-variant.js --product products/v23 --region gb --brand wevac
 | `export-pdf.js` | HTML | PDF | Playwright 无头浏览器 |
 | `export-pdf-batch.js` | 多个 HTML | 多个 PDF | 同上，批量 |
 | `export-docx.js` | JSON 源 + compiled JSON | DOCX | 纯代码生成（docx 库），14 种 block 渲染器 |
-| `make-booklet.py` | PDF | 骑马钉拼版 PDF | PyMuPDF |
+| ~~`make-booklet.py`~~ | ~~PDF~~ | ~~骑马钉拼版 PDF~~ | ~~已删除~~ |
 
 ---
 
@@ -135,7 +135,8 @@ swiss/
 ├── DESIGN-STANDARD.md        ← 视觉规范（A5 尺寸、色彩、字体）
 ├── SOP-new-product.md         ← 操作手册（新产品 12 步、维护流程、hotfix 规则）
 ├── WORD-BASE-TEMPLATE-CN.md   ← Word 母版基线说明
-├── ARCHITECTURE-PLAN.md       ← 历史文档：从 HTML-blob 架构迁移到 JSON-source 的方案
+├── operation-manual.md         ← 操作手册（角色定义、AI 操作指南、命令速查）
+├── HANDOVER.md                ← 交接文档
 ├── README.md                  ← 快速概览
 │
 ├── products/                  ← 产品数据（每产品一个目录）
@@ -188,11 +189,11 @@ swiss/
 │   ├── export-pdf.js                   ← ⑤ PDF 导出（Playwright）
 │   ├── export-pdf-batch.js             ← ⑤ 批量 PDF
 │   ├── export-docx.js                  ← ⑤ DOCX 导出（1421 行，14 种渲染器）
-│   ├── make-booklet.py                 ← 骑马钉拼版
-│   ├── audit-visual.js                 ← 视觉审计（溢出/重叠/空页/残留，JSON 输出）
-│   ├── migrate-json-single-source.js   ← 历史迁移工具
-│   ├── migrate-source-i18n.js          ← 历史迁移工具
-│   └── normalize-json-content.js       ← JSON 内容规范化
+│   └── audit-visual.js                 ← 视觉审计（溢出/重叠/空页/残留，JSON 输出）
+│
+├── _archived/                 ← 归档文件（已完成使命的工具和调研文档）
+│   ├── research/              ← 需求调研阶段文档
+│   └── normalize-json-content.js ← 数据清洗工具（归档）
 │
 ├── tests/                     ← 测试套件（node:test，共 24 个用例）
 │   ├── build-variant-content.test.js     (9 tests)
@@ -451,4 +452,5 @@ node tools/export-pdf.js output/v23-wevac-eu-gb.html
 | 视觉规范 | `DESIGN-STANDARD.md` | A5 版式设计标准 |
 | 操作手册 | `SOP-new-product.md` | 新产品接入与维护操作指南 |
 | Word 基线 | `WORD-BASE-TEMPLATE-CN.md` | DOCX 版式说明 |
-| 架构迁移记录 | `ARCHITECTURE-PLAN.md` | 从 HTML-blob 到 JSON-source 的历史方案 |
+| 操作手册 | `operation-manual.md` | 角色定义、AI 操作指南、命令速查 |
+| 交接文档 | `HANDOVER.md` | 环境准备、交付物清单、接手指南 |

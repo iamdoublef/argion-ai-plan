@@ -47,7 +47,7 @@ Index-First 规范已在用户级全局生效（`~/.Codex/rules/common/index-fir
 - Swiss 任务的路由规则：
   - 生成/重构/修复模板 → `.claude/agents/swiss-manual-writer.md`
   - 审计/对齐/比较/PDF核验 → `.claude/agents/swiss-content-auditor.md`
-- 禁止默认复用 `.claude/agents/manual-writer.md` 或 `.claude/agents/manual-auditor.md` 处理 Swiss 当前任务，除非用户明确要求走旧 A4 链路。
+- 旧 A4 链路 agent（`manual-writer.md`、`manual-auditor.md`）已删除，所有说明书任务统一走 Swiss agent。
 
 ## 网络访问策略（三级降级）
 
