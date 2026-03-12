@@ -564,6 +564,7 @@ function renderTableRef(block, context) {
     const renderCell = (cell, isHeader = false) => {
       const normalized = typeof cell === 'string' ? { text: cell } : cell;
       const attrs = [];
+      if (normalized.className) attrs.push(` class="${escapeAttribute(normalized.className)}"`);
       if (normalized.width) attrs.push(` style="width:${escapeAttribute(normalized.width)};"`);
       if (normalized.rowspan) attrs.push(` rowspan="${escapeAttribute(normalized.rowspan)}"`);
       if (normalized.colspan) attrs.push(` colspan="${escapeAttribute(normalized.colspan)}"`);

@@ -1,7 +1,7 @@
 # Swiss 说明书 QA 审计规范
 
-**版本**：v1.0  
-**日期**：2026-03-16  
+**版本**：v1.1  
+**日期**：2026-03-12  
 **适用范围**：Swiss A5 booklet 产品说明书全流程质量保障  
 **引用标准**：`DESIGN-STANDARD.md`（视觉 + 内容结构标准）
 
@@ -58,6 +58,7 @@ Phase 5: 全变体验证
 | figure 引用指向存在的 images.json key | DESIGN-STANDARD §十 | ERROR | 解析 figure 引用，与 images.json 交叉比对 |
 | text_id 唯一且有对应翻译 | — | ERROR | 收集所有 text_id，检查 compiled JSON 中是否存在 |
 | object_fit 值为 contain | DESIGN-STANDARD §十七 C6 | WARNING | grep JSON 中所有 object_fit 字段值 |
+| `rowspan` 配置与分组数据行数一致 | DESIGN-STANDARD §十七 C17 | ERROR | 检查结构化表格分组总行数与跨行配置是否匹配；不匹配则极易错位 |
 
 ### 1b. 翻译完整性检查
 
@@ -88,6 +89,8 @@ Phase 5: 全变体验证
 | 所有元素的 scrollHeight ≤ clientHeight | §十七 C8 | ERROR |
 | 所有元素的 scrollWidth ≤ clientWidth | §十七 C4/C5 | ERROR |
 | 无空页面（content height < 10% page height） | — | WARNING |
+| 同章连续页不得出现明显“大面积留白 + 下一页仍为同主题延续” | §十七 C15 | WARNING |
+| `warranty_info + warranty_card` 若被拆页，需确认是否确因内容过长而非默认分页导致 | §十七 C16 | WARNING |
 
 ### 3b. 图片渲染检查
 
@@ -148,6 +151,14 @@ Phase 5: 全变体验证
 > ⚠️ **关键风险**：如果 compiled JSON 被手动修复但 workbook 未同步，重新运行 `compile-translation-workbook.js` 会**覆盖修复**。
 > 工具链中应使用 `tools/sync-json-to-workbook.js` 反写 workbook，或在 QA report 中明确标注 WARNING。
 
+### 4d. 单位一致性检查
+
+| 检查项 | 严重级别 | 检查方法 |
+|--------|---------|---------|
+| 正文中的尺寸/温度/时间/重量/压力单位与规格表单位一致 | ERROR | 对照 `product.json` 的 `specs.us / specs.eu` 与 compiled JSON 正文表达抽检 |
+| 同一地区版本中不得同时出现冲突的双套单位口径 | WARNING | 检查正文和规格表是否混用不同单位体系或不同写法 |
+| `zh-HK` / `zh-TW` 不得回退为逐字简转繁 | WARNING | 与 zh-CN 逐条比对，完全相同条目标记并人工复核 |
+
 ---
 
 ## 五、Phase 5 — 全变体验证
@@ -179,6 +190,15 @@ node tools/build-all.js --product v23
 # v23-wevac-eu-gb.html  PASS (0 errors, 1 warning)
 # v23-wevac-eu-de.html  FAIL (1 error: page overflow on page 12)
 ```
+
+### 同一产品线批准版派生检查
+
+- 当某产品线已经存在批准版时，后续地区/品牌版本的审计必须先对照批准版检查：
+  - 章节顺序是否一致
+  - 图文组织是否一致
+  - 保修页与长表分页逻辑是否退化
+  - 仅允许品牌字段、主题 token、本地化文本和市场/法规必要差异发生变化
+- 若发现派生版本为了解决局部问题而改动正文结构，应标记为 WARNING，并回查是否应先修中文批准版或公共规范。
 
 ---
 
@@ -220,3 +240,4 @@ node tools/build-all.js --product products/<name>
 | 版本 | 日期 | 变更内容 |
 |------|------|---------|
 | v1.0 | 2026-03-16 | 初稿创建：5 阶段审计流程、翻译质检规则（3 种失败模式）、全变体验证矩阵、工具清单 |
+| v1.1 | 2026-03-12 | 回写 V23 派生审计经验：rowspan 错位、长页留白、保修分页、正文与规格表单位一致性、批准版派生检查 |

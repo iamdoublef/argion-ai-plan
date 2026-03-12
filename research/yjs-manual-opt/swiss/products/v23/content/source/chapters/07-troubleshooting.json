@@ -6,7 +6,7 @@
   "header_ref": "CH.07 鈥?TROUBLESHOOTING",
   "pages": [
     {
-      "page_class": "",
+      "page_class": "troubleshooting-primary",
       "section_title": "鏁呴殰鎺掗櫎",
       "hide_section_title": false,
       "blocks": [
@@ -35,6 +35,7 @@
               {
                 "text": "**涓嶈兘寮€鏈?*",
                 "rowspan": 3,
+                "className": "group-odd",
                 "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.1.cell.1"
               },
               {
@@ -70,6 +71,7 @@
               {
                 "text": "**鎶芥皵涓嶅共鍑€**",
                 "rowspan": 6,
+                "className": "group-even",
                 "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.4.cell.1"
               },
               {
@@ -135,6 +137,7 @@
               {
                 "text": "**涓嶈兘瀵嗗皝鎴栧瘑灏佹晥鏋滀笉鐞嗘兂**",
                 "rowspan": 4,
+                "className": "group-odd",
                 "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.10.cell.1"
               },
               {
@@ -180,6 +183,7 @@
               {
                 "text": "**鐪熺┖瀵嗗皝鍚庤瀛愭紡姘?*",
                 "rowspan": 3,
+                "className": "group-even",
                 "text_id": "content.chapter.07-troubleshooting.page.page1.block.1.row.14.cell.1"
               },
               {
@@ -230,12 +234,13 @@
       "section_title_id": "content.chapter.07-troubleshooting.page.page1.section_title"
     },
     {
-      "page_class": "",
+      "page_class": "troubleshooting-extended",
       "section_title": "鏁呴殰鎺掗櫎锛堥檮浠朵笌鎶ヨ锛?",
       "hide_section_title": false,
       "blocks": [
         {
           "type": "table_ref",
+          "table_class": "table-compact",
           "headers": [
             {
               "text": "鏁呴殰鐜拌薄",
@@ -258,6 +263,7 @@
               {
                 "text": "**Accessories 妯″紡鏃犳硶鎶芥皵**",
                 "rowspan": 3,
+                "className": "group-odd",
                 "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.1.cell.1"
               },
               {
@@ -293,6 +299,7 @@
               {
                 "text": "**閿欒鎶ヨ锛堣渹楦ｅ０闀块福 + 鎸囩ず鐏揩闂級**",
                 "rowspan": 2,
+                "className": "group-even",
                 "text_id": "content.chapter.07-troubleshooting.page.page2.block.1.row.4.cell.1"
               },
               {

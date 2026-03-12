@@ -173,6 +173,23 @@ p {
   min-width: 0;
 }
 
+.page.roll-storage-vertical .fig-wrap {
+  margin: 6px 0;
+}
+
+.page.roll-storage-vertical .fig-wrap img {
+  max-height: 46mm;
+}
+
+.page.roll-storage-vertical .fig-wrap.roll-storage-figure-primary img {
+  max-height: 40mm;
+}
+
+.page.roll-storage-vertical .fig-wrap.roll-storage-figure-secondary img {
+  max-height: 98mm;
+  max-width: 100%;
+}
+
 .step-figures {
   margin: 4px 0 8px 28px !important;
   width: calc(100% - 28px);
@@ -362,8 +379,204 @@ td {
   line-height: 1.35;
 }
 
+html[lang="en"] .page.troubleshooting-extended .structured-table,
+html[lang="de"] .page.troubleshooting-extended .structured-table,
+html[lang="it"] .page.troubleshooting-extended .structured-table {
+  margin: 4px 0;
+  font-size: 8.2px;
+}
+
+html[lang="en"] .page.troubleshooting-extended th,
+html[lang="de"] .page.troubleshooting-extended th,
+html[lang="it"] .page.troubleshooting-extended th {
+  padding: 4px 5px;
+  font-size: 7.2px;
+  letter-spacing: 0.2px;
+}
+
+html[lang="en"] .page.troubleshooting-extended td,
+html[lang="de"] .page.troubleshooting-extended td,
+html[lang="it"] .page.troubleshooting-extended td {
+  padding: 4px 5px;
+  line-height: 1.28;
+}
+
+html[lang="en"] .page.troubleshooting-extended .sub-title,
+html[lang="de"] .page.troubleshooting-extended .sub-title,
+html[lang="it"] .page.troubleshooting-extended .sub-title {
+  margin: 6px 0 4px;
+  font-size: 10px;
+}
+
+html[lang="en"] .page.troubleshooting-extended .step-flow,
+html[lang="de"] .page.troubleshooting-extended .step-flow,
+html[lang="it"] .page.troubleshooting-extended .step-flow {
+  margin: 6px 0;
+}
+
+html[lang="en"] .page.troubleshooting-extended .step-flow-step,
+html[lang="de"] .page.troubleshooting-extended .step-flow-step,
+html[lang="it"] .page.troubleshooting-extended .step-flow-step {
+  margin-bottom: 4px;
+}
+
+html[lang="en"] .page.troubleshooting-extended .step-flow-row,
+html[lang="de"] .page.troubleshooting-extended .step-flow-row,
+html[lang="it"] .page.troubleshooting-extended .step-flow-row {
+  min-height: 16px;
+  font-size: 9px;
+  line-height: 1.35;
+}
+
+html[lang="en"] .page.troubleshooting-extended .paragraph,
+html[lang="de"] .page.troubleshooting-extended .paragraph,
+html[lang="it"] .page.troubleshooting-extended .paragraph {
+  margin: 4px 0;
+}
+
+html[lang="en"] .page.troubleshooting-extended .caution-box,
+html[lang="de"] .page.troubleshooting-extended .caution-box,
+html[lang="it"] .page.troubleshooting-extended .caution-box {
+  padding: 6px 8px;
+  margin: 8px 0 0;
+  font-size: 8.5px;
+}
+
+html[lang="en"] .page.troubleshooting-extended .caution-box .box-title,
+html[lang="de"] .page.troubleshooting-extended .caution-box .box-title,
+html[lang="it"] .page.troubleshooting-extended .caution-box .box-title {
+  font-size: 8px;
+  margin-bottom: 4px;
+}
+
+html[lang="de"] .page.troubleshooting-primary .structured-table.table-compact {
+  margin: 4px 0;
+  font-size: 8.1px;
+}
+
+html[lang="de"] .page.troubleshooting-primary .structured-table.table-compact th {
+  padding: 4px 5px;
+  font-size: 7px;
+  letter-spacing: 0.2px;
+}
+
+html[lang="de"] .page.troubleshooting-primary .structured-table.table-compact td {
+  padding: 3px 4px;
+  line-height: 1.24;
+}
+
+html[lang="de"] .page.troubleshooting-primary .note-box {
+  padding: 6px 8px;
+  margin: 8px 0;
+  font-size: 8.4px;
+}
+
+html[lang="de"] .page.troubleshooting-primary .note-box .box-title {
+  font-size: 8px;
+  margin-bottom: 3px;
+}
+
+html[lang="de"] .page.troubleshooting-extended .structured-table,
+html[lang="it"] .page.troubleshooting-extended .structured-table {
+  font-size: 8px;
+}
+
+html[lang="de"] .page.troubleshooting-extended th,
+html[lang="it"] .page.troubleshooting-extended th {
+  padding: 3px 4px;
+  font-size: 7px;
+}
+
+html[lang="de"] .page.troubleshooting-extended td,
+html[lang="it"] .page.troubleshooting-extended td {
+  padding: 3px 4px;
+  line-height: 1.24;
+}
+
+html[lang="de"] .page.troubleshooting-extended .sub-title,
+html[lang="it"] .page.troubleshooting-extended .sub-title {
+  margin: 5px 0 3px;
+  font-size: 9.5px;
+}
+
+html[lang="de"] .page.troubleshooting-extended .step-flow,
+html[lang="it"] .page.troubleshooting-extended .step-flow {
+  margin: 4px 0;
+}
+
+html[lang="de"] .page.troubleshooting-extended .step-flow-step,
+html[lang="it"] .page.troubleshooting-extended .step-flow-step {
+  margin-bottom: 3px;
+}
+
+html[lang="de"] .page.troubleshooting-extended .step-flow-row,
+html[lang="it"] .page.troubleshooting-extended .step-flow-row {
+  min-height: 15px;
+  font-size: 8.7px;
+  line-height: 1.28;
+}
+
+html[lang="de"] .page.troubleshooting-extended .paragraph,
+html[lang="it"] .page.troubleshooting-extended .paragraph {
+  margin: 3px 0;
+}
+
+html[lang="de"] .page.troubleshooting-extended .caution-box,
+html[lang="it"] .page.troubleshooting-extended .caution-box {
+  padding: 5px 7px;
+  margin: 6px 0 0;
+  font-size: 8.2px;
+}
+
+html[lang="de"] .page.troubleshooting-extended .caution-box .box-title,
+html[lang="it"] .page.troubleshooting-extended .caution-box .box-title {
+  font-size: 7.8px;
+  margin-bottom: 3px;
+}
+
 tr:nth-child(even) td {
   background: var(--swiss-gray-bg);
+}
+
+.structured-table td.group-odd {
+  background: #fff !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.structured-table td.group-even {
+  background: var(--swiss-gray-bg) !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.structured-table tbody tr td.group-odd,
+.structured-table tbody tr:nth-child(even) td.group-odd,
+.structured-table tbody tr:nth-child(odd) td.group-odd {
+  background: #fff !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.structured-table tbody tr td.group-even,
+.structured-table tbody tr:nth-child(even) td.group-even,
+.structured-table tbody tr:nth-child(odd) td.group-even {
+  background: var(--swiss-gray-bg) !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.structured-table.storage-reference-table {
+  margin: 6px 0;
+}
+
+.structured-table.storage-reference-table td,
+.structured-table.storage-reference-table th {
+  vertical-align: top;
+}
+
+.structured-table.storage-reference-table td[rowspan] {
+  background-clip: padding-box;
 }
 
 .fig-wrap {

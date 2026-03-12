@@ -1,0 +1,35 @@
+{
+  "skill_name": "swiss-issue-fix",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "V23 的 wevac-eu-cn 变体审计报告显示第 7 页图片溢出右边界，请修复",
+      "expected_output": "定位到 images.json 或 CSS 中的图片尺寸/object-fit 问题，修复源文件后重新构建验证",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "IMT050 的德语变体出现中文残留，audit-visual.js 报了 3 个 ERROR",
+      "expected_output": "检查 i18n/compiled/de.json 中缺失的 text_id，补充翻译并同步回写 workbook",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "构建 V23 时报错 Cannot read properties of undefined，build-variant.js 第 200 行附近",
+      "expected_output": "定位 JSON 数据文件中缺失的字段或 manifest.json 引用了不存在的章节文件，修复数据源",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "V23 的 DOCX 输出在 WPS 中打开后保修卡页被截断了一半",
+      "expected_output": "检查 warranty_card 是否跨了 page block，确认 export-docx.js 的分页逻辑，修复 JSON 结构",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "修改了 V23 的 en locale 翻译后，zh-HK 变体的目录页页码全部偏移了",
+      "expected_output": "确认 en 变体修改未污染其他 locale，检查构建是否正确隔离 locale 数据",
+      "files": []
+    }
+  ]
+}

@@ -511,16 +511,7 @@
               "height": "auto"
             }
           ]
-        }
-      ],
-      "page_id": "page6",
-      "section_title_id": "content.chapter.06-operation.page.page6.section_title"
-    },
-    {
-      "page_class": "",
-      "section_title": "鎿嶄綔鎸囧紩锛堢画锛?",
-      "hide_section_title": false,
-      "blocks": [
+        },
         {
           "type": "sub_title",
           "text": "6.9 濡備綍鑵屽埗",
@@ -578,17 +569,17 @@
           "figures": [
             {
               "figure": "06-operation.page04.image08",
-              "width": "30mm",
+              "width": "28mm",
               "height": "auto"
             }
           ]
         }
       ],
-      "page_id": "page7",
-      "section_title_id": "content.chapter.06-operation.page.page7.section_title"
+      "page_id": "page6",
+      "section_title_id": "content.chapter.06-operation.page.page6.section_title"
     },
     {
-      "page_class": "",
+      "page_class": "roll-storage-vertical",
       "section_title": "鎿嶄綔鎸囧紩锛堢画锛?",
       "hide_section_title": false,
       "blocks": [
@@ -615,15 +606,16 @@
           ]
         },
         {
-          "type": "figure_row",
-          "figures": [
-            {
-              "figure": "06-operation.page04.image09"
-            },
-            {
-              "figure": "06-operation.page04.image10"
-            }
-          ]
+          "type": "figure",
+          "figure": "06-operation.page04.image09",
+          "className": "roll-storage-figure roll-storage-figure-primary",
+          "max_height": "40mm"
+        },
+        {
+          "type": "figure",
+          "figure": "06-operation.page04.image10",
+          "className": "roll-storage-figure roll-storage-figure-secondary",
+          "max_height": "98mm"
         }
       ],
       "page_id": "page8",
