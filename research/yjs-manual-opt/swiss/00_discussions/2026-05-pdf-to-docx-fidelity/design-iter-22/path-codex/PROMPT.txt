@@ -1,0 +1,23 @@
+You are Codex doing design-iter-22. 26 winners累积. W26: 8.69 / 12.40 (plateau).
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+GOAL: visual < 8.0 AND max < 11.5.
+
+W26 reached a plateau across multiple iter-21 paths at 8.69/12.40. Need fresh approaches.
+
+Try DEEPER structural changes:
+1. **Header band**: PDF target has very thin top hairline; our header band may be too thick
+2. **Footer band**: same — check footer hairline width and position
+3. **Page break**: try forcing page break at specific position
+4. **Body font 7pt → 7.05pt** (very fine size tune)
+5. **Cover product image position fine tune (y-offset ±1mm)**
+6. **Step badge dimensions**: 13.5×13.5 EMU vs 13×13 vs 14×14
+7. **WARNING box internal padding** structural change
+
+STARTER: design-iter-21/path-codex-A/build_b2_docx.py
+WORKDIR: design-iter-22/path-codex
+
+ONE focused change per iter. Up to 8 iter.
+PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual. START NOW.
