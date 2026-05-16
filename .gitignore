@@ -34,6 +34,13 @@ research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design
 # unrelated post_*.md and gstack-verification produced by other tools
 post_*.md
 research/gstack-verification/
+
+# design-iter-02 generated images (keep code/notes/docx, drop PNGs and PDFs)
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-02/triplets/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-02/triplets_a2/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-02/winner_png/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-02/winner_150/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-02/winner_a2_150/
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/path-*/**/png/
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/path-*/**/pdf/
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/path-*/**/side_by_side/

@@ -1,0 +1,37 @@
+You are Codex working on design-iter-02. Previous round (design-iter-01) winner is B2 iter-04 with visual diff 13.80.
+
+INVESTIGATION RESULT FROM HUMAN ANALYSIS:
+- WARNING box border IS already red (was a 150dpi rendering artifact, not a bug)
+- All major design elements correct: fonts (MicrosoftYaHei + Arial Black + Courier New), cover colors, step badges (small black squares), warning icons (▲), brand info headers
+- REMAINING ISSUE: line-height / row-height differences cause content to shift vertically vs PDF, producing high pixel diff (14-28 on some pages) even though design is visually correct
+- User is still rejecting as "美感差距太大" — wants pixel-level closer match
+
+YOUR JOB:
+Modify D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\path-b2\build_b2_docx.py to reduce line-height-induced shift on each page. Specifically:
+
+1. Increase line_spacing on body text paragraphs by ~5-10% so content vertical position matches PDF
+2. Increase paragraph spacing.after on bullet lists slightly so groups align with PDF
+3. Increase table row heights (cell margins or w:trHeight) slightly so table content fills row like PDF
+4. Test against the worst pages: page 3, 5, 6, 7, 9, 10, 11, 13, 14
+
+ITERATION:
+- Each iter:
+  1. Edit build_b2_docx.py
+  2. python build_b2_docx.py <out_path>
+  3. python score_candidate.py <docx> --target imt050-wevac-eu-cn.pdf --baseline-pngs baseline/target_png
+  4. Goal: overall visual diff < 13.0 AND no individual page > 22
+
+WORKDIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-02\path-codex
+INPUTS:
+- PDF target: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Source HTML: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.html
+- Current build_b2_docx.py: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\path-b2\build_b2_docx.py
+- Current winner: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\path-b2\iter-04\output.docx
+- Scoring: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\score_candidate.py
+- Baseline PNG: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\baseline\target_png
+- Triplets (per-page comparison): D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-02\triplets
+
+DO 3-5 iterations, write notes.md per iter, final-recommendation.md at end. Exit cleanly with STATUS.md when done.
+
+Set PYTHONUTF8=1 environment variable for Python calls.
+START NOW.
