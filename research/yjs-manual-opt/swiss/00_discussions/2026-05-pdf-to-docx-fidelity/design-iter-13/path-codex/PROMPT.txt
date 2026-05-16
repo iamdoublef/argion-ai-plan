@@ -1,0 +1,33 @@
+You are Codex doing design-iter-13. Customer rejects after 18 winners (W1-W18). W18 = 9.67/13.35 (bullets fixed red ✱).
+
+⚠️ Anti-cheat enforced.
+
+Try LARGER structural changes since micro-tweaks plateau:
+
+1. WARNING/CAUTION/NOTICE box internal structure — try removing the table wrapper, use paragraph with left+right padding via indent + border?
+2. Cover page MAJOR rebalance — try repositioning product image (height/y-position vs PDF target_spans)
+3. Header band height — try shrinking from current to ~10mm to match PDF more tightly
+4. Footer position — verify it sits at y=276mm not y=283mm
+
+GOAL: visual < 9 AND max < 12.
+
+STARTER: design-iter-12/path-codex/build_b2_docx.py
+WORKDIR: design-iter-13/path-codex
+
+CONSTRAINTS:
+- wt_count ≥ 300
+- image_hack=false
+- text_ratio ≤ 1.20
+- editable_pct = 100%
+
+Score after each iter; revert if regression > 0.1.
+Up to 8 iter. STATUS.md at end.
+PYTHONUTF8=1 required.
+
+INPUTS:
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Spans: ../../design-iter-01/target_spans.json
+- Scoring: ../../score_candidate.py
+- Baseline: ../../baseline/target_png
+
+START NOW.
