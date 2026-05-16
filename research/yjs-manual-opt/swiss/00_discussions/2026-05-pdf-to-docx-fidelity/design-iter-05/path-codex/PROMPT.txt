@@ -1,0 +1,42 @@
+You are Codex doing design-iter-05. The previous design-iter-04/iter-02 attempt CHEATED by rendering each PDF page as a PNG image and embedding it — that is FORBIDDEN.
+
+⚠️ HARD CONSTRAINT (do NOT violate):
+- Output DOCX must have wt_count ≥ 300 (real <w:t> text nodes)
+- Output DOCX must NOT use page-as-image hack (do not embed full-page screenshots)
+- Output DOCX must have text_ratio between 0.95 and 1.20 (no alt-text bloat)
+- Total embedded images should be ≤ 700KB (just product diagrams, not full pages)
+
+The scoring tool now detects image-hack and will fail editable_pct = 0% if detected.
+
+Current PASSING winner (real editable): design-iter-03/path-codex/iter-02/output.docx (visual 10.74, max 17.74, wt_count 457, image bytes 700KB).
+
+YOUR JOB: improve from 10.74/17.74 to visual < 9 + max < 14 BUT keep wt_count ≥ 300 and total image bytes ≤ 800KB.
+
+Strategy:
+- Tune build_b2_docx.py spacing/margins/line-height further
+- Per-page targeted fixes for p3 (17.38), p9 (13.64), p10 (13.03), p13 (13.79), p14 (17.74)
+- DO NOT add page screenshots
+- DO NOT add huge fixed images
+- Verify each iter: open output.docx zipfile, count <w:t> nodes, ensure ≥ 300
+
+INPUTS:
+- Starter (real editable best): D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-03\path-codex\iter-02\output.docx
+- Builder to modify: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-03\path-codex\build_b2_docx.py
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- HTML source: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.html
+- Scoring: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\score_candidate.py (NOW with anti-cheat)
+
+WORKDIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-05\path-codex
+
+PER ITER:
+1. Edit build_b2_docx.py
+2. python build_b2_docx.py iter-N/output.docx
+3. PYTHONUTF8=1 python ../../score_candidate.py iter-N/output.docx --target ../../../../../output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+4. Verify in JSON: editability.wt_count >= 300 AND editability.image_hack_detected == false AND text.ratio < 1.20
+5. If editable_pct = 0% or wt_count < 300: REVERT, this iter is invalid
+6. Stop when: overall < 9 AND max < 14 AND editable PASS
+
+Up to 8 iterations. Write notes.md + STATUS.md cleanly.
+PYTHONUTF8=1 required.
+
+START NOW.

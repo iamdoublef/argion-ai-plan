@@ -73,16 +73,26 @@ def pdf_text_chars(pdf_path: Path) -> dict:
 
 
 def docx_editability(docx_path: Path) -> dict:
-    """Check whether text lives in editable paragraphs vs text boxes."""
+    """Check whether text lives in editable paragraphs vs text boxes vs page-image hacks."""
     with zipfile.ZipFile(docx_path) as zf:
         document_xml = zf.read("word/document.xml").decode("utf-8", errors="replace")
+        # Count embedded images in word/media/
+        media_files = [n for n in zf.namelist() if n.startswith("word/media/")]
+        total_image_size = sum(zf.getinfo(n).file_size for n in media_files)
     txbx_blocks = len(re.findall(r"<w:txbxContent", document_xml))
     wp_t = len(re.findall(r"<w:t[\s>]", document_xml))
     wp_drawing_text = len(re.findall(r"<wps:txbx", document_xml))
+    drawings = document_xml.count("<w:drawing>")
+    # Anti-cheat: if drawings ≈ pages and wt_count < 50, this is likely "render each page as an image" hack
+    # Real editable Chinese manual should have wt_count ≥ 200 for 15 pages
+    is_image_hack = wp_t < 100 and drawings >= 15 and total_image_size > 1_500_000
     return {
         "wt_count": wp_t,
         "txbx_count": txbx_blocks + wp_drawing_text,
-        "editable_pct": round(100 * wp_t / (wp_t + txbx_blocks + wp_drawing_text + 1e-9), 1),
+        "drawings_count": drawings,
+        "image_bytes": total_image_size,
+        "image_hack_detected": is_image_hack,
+        "editable_pct": round(100 * wp_t / (wp_t + txbx_blocks + wp_drawing_text + 1e-9), 1) if not is_image_hack else 0.0,
     }
 
 
@@ -142,8 +152,8 @@ def score(target_pdf: Path, target_pngs: Path, candidate_docx: Path) -> dict:
     text_ratio = cand_text["total"] / max(1, target_text["total"])
 
     pass_pages = cand_pages_count <= target_pages_count + 1
-    pass_text = text_ratio >= 0.95
-    pass_edit = edit["editable_pct"] >= 95.0
+    pass_text = 0.95 <= text_ratio <= 1.20  # also reject bloat (image-hack with alt-text repetition)
+    pass_edit = edit["editable_pct"] >= 95.0 and not edit.get("image_hack_detected", False) and edit["wt_count"] >= 200
     pass_visual = visual.get("overall_mean_diff", 999) < 60  # ≈ 25% pixel diff
 
     result = {

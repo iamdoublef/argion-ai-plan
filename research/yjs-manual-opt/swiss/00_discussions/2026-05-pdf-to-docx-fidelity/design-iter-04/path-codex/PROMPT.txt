@@ -1,0 +1,32 @@
+You are Codex doing design-iter-04 round 5. Customer keeps rejecting "no aesthetic" despite passing thresholds. Previous winner: design-iter-03/path-codex/iter-02/output.docx (visual diff 10.74, max page 17.74).
+
+CUSTOMER QUOTE: "Completely unacceptable, no aesthetic at all..." — they keep rejecting even when our automated scores pass. They are judging by EYE not numbers.
+
+YOUR JOB: Push visual diff < 9.0 AND max page < 14.0. Focus on the worst pages and any visible design errors a human would notice.
+
+WORKDIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-04\path-codex
+STARTING POINT: copy `design-iter-03/path-codex/build_b2_docx.py` to your workdir.
+
+PER-PAGE TARGETS (current → goal):
+- p3 (01 安全须知): 17.38 → <12 — WARNING box layout precision; bullet indent
+- p5 (02 产品提示): 13.72 → <10 — sub-title spacing
+- p9 (06 操作指引): 13.64 → <10 — step badges + image alignment
+- p10 (06 续): 13.03 → <10
+- p11 (07 故障排除): 12.36 → <10 — table row heights
+- p13 (09 安装运输): 13.79 → <10 — bullet list line-height
+- p14 (10 保修): 17.74 → <14 — table internal spacing; warranty list
+
+INPUTS:
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Source HTML: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.html
+- Current best: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-03\path-codex\iter-02\output.docx
+- Current builder: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-03\path-codex\build_b2_docx.py
+- PDF metadata: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\target_spans.json
+- Scoring: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\score_candidate.py
+- Baseline PNG: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\baseline\target_png
+
+Do up to 8 iterations. STOP when visual < 9.0 AND max < 14.0. Write notes.md per iter, final-recommendation.md and STATUS.md at end.
+
+PYTHONUTF8=1 required. Exit cleanly with STATUS.md.
+
+START NOW.
