@@ -1,0 +1,27 @@
+You are Codex doing design-iter-20. W24 just achieved visual 8.73 / max 12.48 (突破双阈值 <9 + <12.5).
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+NEW STRETCH GOAL: visual < 8.0 AND max < 11.5.
+
+Current per-page bottlenecks (W24):
+- p3 (01 安全须知): 12.46 — WARNING bullet list line spacing
+- p11 (07 故障排除): 12.48 — table internal padding
+- p14 (10 保修): 12.46 — warranty card row + zebra
+- p9 (06 操作指引): 11.99 — step images
+
+Apply lessons from iter-19's success — unpack docx, find p11/p3 XML differences vs PDF.
+
+Try:
+1. p11 troubleshooting table: cell margin top/bottom 30 → 28 or 32 dxa
+2. p3 WARNING bullet line_spacing 1.10 → 1.08
+3. p9 step image figure_row alignment offset
+4. p3 介绍段 spacing reduction
+5. Consider header band height 12 → 10mm
+
+STARTER: design-iter-19/path-codex/build_b2_docx.py
+WORKDIR: design-iter-20/path-codex
+
+ONE focused change per iter. Up to 8 iter.
+PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual. START NOW.
