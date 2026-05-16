@@ -1,0 +1,33 @@
+You are Codex doing design-iter-10. Customer continues to reject (15+ rounds). Push hard LEGALLY.
+
+Current W15: design-iter-09/path-codex/iter-09/output.docx → visual 9.71, max 13.46.
+
+⚠️ Anti-cheat enforced.
+
+NEW GOAL: visual < 8.5 AND max < 12.0.
+
+Per-page worst targets (W15):
+- p3 (13.46) → <11 — WARNING box content layout
+- p9 (13.36) → <10 — operations
+- p11 (12.39) → <10 — troubleshooting table
+- p13 (12.70) → <10 — installation
+- p14 (12.99) → <10 — warranty
+
+Starter: design-iter-09/path-codex/build_b2_docx.py
+WORKDIR: design-iter-10/path-codex
+
+PER ITER:
+1. One focused change
+2. python build_b2_docx.py iter-N/output.docx
+3. PYTHONUTF8=1 python ../../score_candidate.py iter-N/output.docx --target ../../../../../output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+4. Revert if regression > 0.1
+5. STOP when visual<8.5 AND max<12, OR after 10 iters
+
+PYTHONUTF8=1 required. STATUS.md when done.
+Inputs:
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Spans: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\target_spans.json
+- Scoring: ../../score_candidate.py
+- Baseline: ../../baseline/target_png
+
+START NOW.
