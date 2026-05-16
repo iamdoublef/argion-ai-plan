@@ -1,0 +1,26 @@
+You are Codex doing design-iter-18. 23 winners W1-W23. W23: visual 9.25 / max 13.00.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+GOAL: visual < 9.0 AND max < 12.5.
+
+Codex iter-17 found:
+- top_margin 10.0 → 10.2mm (-0.24)
+- zebra gray F4F4F4 → F2F2F7 (-0.02)
+- header hairline thinner: REGRESSED (rejected)
+
+Try in iter-18:
+1. left/right margin micro-adjust 10.0 → 10.2 or 9.9mm
+2. bottom margin micro-adjust
+3. line_spacing for body 1.16 → 1.14 / 1.18
+4. table header text size 6.5pt → 6.0/7.0
+5. zebra gray exact match — try F5F5F7 / E8E8ED
+6. WARNING box title size MicrosoftYaHei-Bold exact match (PDF target span data shows 7.5pt)
+
+STARTER: design-iter-17/path-codex/build_b2_docx.py
+WORKDIR: design-iter-18/path-codex
+
+ONE focused change per iter. Up to 8 iter.
+PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual.
+START NOW.

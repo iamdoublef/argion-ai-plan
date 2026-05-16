@@ -1,0 +1,33 @@
+You are Codex doing design-iter-19. 23 winners累积. W23: 9.25/13.00 plateau.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+FOCUS: SPECIFIC pages dragging max up. Codex iter-18 found no broad improvement; need PAGE-SPECIFIC code changes.
+
+Bottleneck pages (W23):
+- p14 (10 品牌与保修信息): 12.99/13.00 — warranty card table internal spacing
+- p3 (01 安全须知): ~12.96 — WARNING box bullet spacing
+- p9 (06 操作指引): ~12.94 — step flow
+
+Approach:
+1. UNPACK W23 docx via `python C:/Users/iamdo/.claude/skills/docx/scripts/office/unpack.py <docx> <out>`
+2. Look at word/document.xml for page 14 warranty table rows
+3. Compare to target PDF expected layout (target_spans.json)
+4. Modify build_b2_docx.py to render p14 with specific:
+   - Cell vertical alignment
+   - Row height
+   - Cell margins
+   - Inner paragraph spacing
+5. Test, score, iterate
+
+PRIORITIZE breaking p14 < 12.
+
+STARTER: design-iter-17/path-codex/build_b2_docx.py (or design-iter-18 if useful)
+WORKDIR: design-iter-19/path-codex
+
+ITER cadence: ONE focused tweak per iter, score, revert if regress.
+Up to 8 iter. STATUS.md at end.
+PYTHONUTF8=1 required.
+Inputs as usual.
+
+START NOW.
