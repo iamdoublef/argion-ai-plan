@@ -1,0 +1,23 @@
+You are Codex doing design-iter-14. 19 winners W1-W19. Current: visual 9.60, max 13.30. Plateau is REAL.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+GOAL: any improvement. Try fresh angles:
+
+1. **Page 3 (13.30 max)** — biggest gap. WARNING box bullets currently span more vertical space than PDF.
+   - Try reducing bullet `paragraph_format.space_before` to 0
+   - Try reducing `paragraph_format.space_after` from 1pt to 0.5pt
+2. **Page 9/13 (~13)** — try slight body-text size reduction (BODY_PT 7.0 → 6.85)
+3. **Chinese character spacing** — PDF may have w:characterSpacing or slight kerning that you haven't applied
+4. **Top/bottom margin** — try +0.5mm top to push content down (some pages may benefit)
+5. **Header band height** — check if header takes ≥ 12mm in your output but PDF only takes 10mm
+
+STARTER: design-iter-13/path-codex/build_b2_docx.py
+WORKDIR: design-iter-14/path-codex
+
+PER ITER ONE CHANGE. Revert if regress > 0.05.
+Up to 6 iter. STATUS.md when done.
+PYTHONUTF8=1 required.
+
+Inputs as usual.
+START NOW.
