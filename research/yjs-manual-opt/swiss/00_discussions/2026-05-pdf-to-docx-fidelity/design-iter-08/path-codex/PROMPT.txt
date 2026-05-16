@@ -1,0 +1,43 @@
+You are Codex doing design-iter-08. The customer KEEPS rejecting (8+ rounds of /goal). Push as hard as possible.
+
+Current best (W13): design-iter-07/path-codex/iter-03/output.docx → visual 10.09, max 15.35.
+
+⚠️ HARD CONSTRAINT — anti-cheat enforced:
+- wt_count ≥ 300 (real text nodes)
+- text_ratio ∈ [0.95, 1.20] (no bloat)
+- image_hack_detected must be false
+- editable_pct must = 100%
+score_candidate.py auto-detects and FAILS image-hack attempts.
+
+GOAL: visual < 9.0 AND max < 13.0.
+
+Strategy ideas (try multiple):
+1. Per-page table cell padding fine-tuning (different per page)
+2. Adjust bullet symbol size/color/spacing for red asterisk to match PDF exact pixel
+3. Sub-title spacing precise match (look at target_spans.json for y-positions)
+4. Cover image scale and y-position (PDF measures show the product image at specific x,y)
+5. Header band height
+6. Top/bottom margin micro-adjust
+7. Try increasing line_spacing on body bullets (currently 1.16; PDF may be 1.20-1.25)
+8. Try changing chapter title vertical position by ~2-3pt
+
+WORKDIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-08\path-codex
+STARTER: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-07\path-codex\build_b2_docx.py
+
+INPUTS:
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Target spans (PDF metadata): D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\target_spans.json
+- Scoring: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\score_candidate.py (anti-cheat enabled)
+- Baseline PNGs: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\baseline\target_png
+
+PER ITER:
+1. Edit build_b2_docx.py (try ONE specific tweak per iter)
+2. python build_b2_docx.py iter-N/output.docx
+3. PYTHONUTF8=1 python ../../score_candidate.py iter-N/output.docx --target ../../../../../output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+4. Read score json: check editable_pct=100, image_hack=false, wt_count>=300, text_ratio<=1.20
+5. If visual or max REGRESS by more than 0.1, REVERT and try a different tweak
+6. STOP when visual<9 AND max<13
+
+Up to 10 iterations. STATUS.md when done.
+PYTHONUTF8=1 required everywhere.
+START NOW.
