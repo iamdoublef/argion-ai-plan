@@ -1,0 +1,22 @@
+You are Codex doing design-iter-21 PATH A. 25 winners累积. W25: 8.71 / 12.40.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+GOAL: visual < 8.0 AND max < 11.5.
+
+Per-page W25 status:
+- p3 (~12.40)
+- p11 (~12.40)
+- p14 (~12.35)
+
+PATH A FOCUS: Aggressive per-character spacing exploration.
+- Try CHAR_SPACING_TWIPS = 4, 6, 7 (different from W25's 5)
+- Try WARNING_CHAR_SPACING_TWIPS = 6, 8 (different from W25's 7)
+- Try per-page char spacing (small=p1/2, large=p11/p14)
+
+STARTER: design-iter-20/path-codex/build_b2_docx.py
+WORKDIR: design-iter-21/path-codex-A
+
+ONE focused change per iter. Up to 6 iter.
+PYTHONUTF8=1. STATUS.md.
+START NOW.

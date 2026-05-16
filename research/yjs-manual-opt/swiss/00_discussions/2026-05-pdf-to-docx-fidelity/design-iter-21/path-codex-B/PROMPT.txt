@@ -1,0 +1,19 @@
+You are Codex doing design-iter-21 PATH B. 25 winners累积. W25: 8.71 / 12.40.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+GOAL: visual < 8.0 AND max < 11.5.
+
+PATH B FOCUS: image rendering / position.
+- Try product image scale 95%, 100%, 105%, 110% of current
+- Try cover image y-offset adjustment
+- Try step images (page 9/10) width
+- Try product diagram (page 6) scale
+- Investigate if any image is rendered slightly off-position
+
+STARTER: design-iter-20/path-codex/build_b2_docx.py
+WORKDIR: design-iter-21/path-codex-B
+
+ONE focused change per iter. Up to 6 iter.
+PYTHONUTF8=1. STATUS.md.
+START NOW.
