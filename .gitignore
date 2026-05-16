@@ -79,3 +79,11 @@ bash.exe.stackdump
 tmp/
 .omx/
 research/yjs-manual-opt/_inbox/参考方案/
+
+# design-iter-03
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-03/**/png/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-03/**/pdf/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-03/**/_score_tmp/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-03/**/codex_log*.txt
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-03/**/codex_last*.txt
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-03/**/review_iter*/

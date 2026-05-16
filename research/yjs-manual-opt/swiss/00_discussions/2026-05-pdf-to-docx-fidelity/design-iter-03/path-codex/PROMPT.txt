@@ -1,0 +1,42 @@
+You are Codex doing design-iter-03 round 4 (the customer keeps rejecting). Previous winner: design-iter-02/path-codex/iter-05/output.docx (visual diff 12.88, max page 19.59, 15 pages, 100% editable).
+
+CUSTOMER QUOTE (translated): "Completely unacceptable, no aesthetic at all, completely different layout from PDF, do pixel-level comparison, you're a design expert, fix step by step until basically matches PDF aesthetic, don't stop."
+
+YOUR JOB: Per-page targeted fixes to push visual diff < 12.0 AND max page diff < 18.0. The customer is judging by visual look, not just numbers — find subtle design errors per page.
+
+WORKDIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-03\path-codex
+STARTING POINT: copy `design-iter-02/path-codex/build_b2_docx.py` to start.
+
+PER-PAGE TARGETS (current diff → target):
+- p3 (01 安全须知): 17.99 → <13. WARNING box title/icon position; bullet list line-height
+- p5 (02 产品提示): 14.49 → <12. sub-title underline gap; bullet spacing
+- p6 (03 产品结构): 14.70 → <12. Product diagram image scale; numbered table cell padding
+- p7 (04 产品功能): 17.01 → <13. Button table column widths; image+table mixed layout
+- p9 (06 操作指引): 12.71 → <11. Step badges; image alignment
+- p11 (07 故障排除): 16.89 → <13. Troubleshooting table row heights; DISCLAIMER box
+- p13 (09 安装运输): 15.02 → <12. WEEE notice box; bullets
+- p14 (10 保修信息): 19.59 → <15. brand_info/manufacturer_info table internal spacing; warranty bullet list
+
+INPUTS:
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Source HTML: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.html
+- Current best: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-02\path-codex\iter-05\output.docx
+- Current builder: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-02\path-codex\build_b2_docx.py
+- PDF metadata: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\target_spans.json
+- Scoring: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\score_candidate.py
+- Baseline PNG: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\baseline\target_png
+
+WORKFLOW per iter:
+1. Read target page span by span (using target_spans.json), focus on page positions/sizes
+2. Open winner's iter-N/_score_tmp/png/page-XX.png and PDF baseline/target_png/page-XX.png side by side
+3. Identify visual difference (font size off? padding off? color off? alignment off?)
+4. Edit build_b2_docx.py to fix specifically that issue
+5. python build_b2_docx.py iter-N/output.docx
+6. PYTHONUTF8=1 python ../../score_candidate.py iter-N/output.docx --target <PDF> --baseline-pngs ../../baseline/target_png
+7. If overall < 12 AND max < 18: STOP. Otherwise iterate.
+
+Do up to 8 iterations. Write notes.md per iter with per-page diff changes. Write final-recommendation.md and STATUS.md at end.
+
+PYTHONUTF8=1 required for all Python calls. Don't fail with exit 1 — write STATUS.md and exit cleanly.
+
+START NOW.
