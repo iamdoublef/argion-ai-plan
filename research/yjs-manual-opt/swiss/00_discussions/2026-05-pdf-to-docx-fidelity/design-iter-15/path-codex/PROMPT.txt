@@ -1,0 +1,22 @@
+You are Codex doing design-iter-15. 20 winners W1-W20. W20: visual 9.58/13.18.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+Aggressive parallel exploration: try MULTIPLE different approaches in different iter and pick best.
+
+Ideas:
+1. Larger character spacing (try 3, 4, 5 twips, find optimum per text type)
+2. Body text size 6.8pt vs 7pt (find optimum)
+3. Image scale for product diagrams (try 95%, 98%, 102%, 105% of current)
+4. Bullet asterisk size (try 5.0, 5.5, 6.0 pt)
+5. Header band height adjustment (10mm, 11mm, 12mm)
+6. Cover product image y-position fine tune
+7. Footer hairline thickness
+
+STARTER: design-iter-14/path-codex/build_b2_docx.py
+WORKDIR: design-iter-15/path-codex
+
+PER ITER ONE focused change. Up to 8 iter.
+PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual.
+START NOW.
