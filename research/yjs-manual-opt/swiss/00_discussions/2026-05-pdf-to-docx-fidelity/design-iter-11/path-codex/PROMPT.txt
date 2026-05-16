@@ -1,0 +1,28 @@
+You are Codex doing design-iter-11. Customer keeps rejecting (16+ rounds). W16 = 9.67/13.46 visual diff. Plateau is real — need new angle.
+
+⚠️ Anti-cheat enforced: wt_count ≥ 300, text_ratio ≤ 1.20, image_hack_detected=false, editable_pct=100%.
+
+GOAL: visual < 8 AND max < 11. (Aggressive but legal.)
+
+NEW STRATEGY — DOWN-WEIGHT page-14 dominant error:
+W16 per-page is good on most pages but p14 (12.99) and p9/p3 (13.4+) drag overall up.
+
+Per-page surgical fixes:
+1. p3 (01 安全须知): bullet list line_spacing 1.16 → 1.10 (tighter, match PDF target compactness)
+2. p9 (06 操作指引): step number badge — try color=#000000 with white border instead of pure black square — see if subtle difference helps
+3. p11/p13: bullet symbols and spacing
+4. p14 (warranty card area): try removing the ✂ scissor line trailing or tighten its position
+
+WORKDIR: design-iter-11/path-codex
+STARTER: design-iter-10/path-codex/build_b2_docx.py
+
+PER ITER:
+1. ONE focused change
+2. python build_b2_docx.py iter-N/output.docx
+3. score
+4. If improvement >= 0.05 keep; if regression > 0.1 revert
+5. STOP when visual<8 AND max<11 OR after 8 iters
+
+PYTHONUTF8=1 required.
+Inputs as usual.
+START NOW.

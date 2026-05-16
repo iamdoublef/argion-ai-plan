@@ -1,0 +1,34 @@
+You are Codex doing design-iter-12 SURGICAL: specifically address bullets.
+
+Current W16: visual 9.67. PDF target uses RED ASTERISK (✱ or U+002A red bold) for bullets, but W16 renders BLACK ROUND DOTS (•). Customer can see this difference.
+
+⚠️ Anti-cheat enforced (wt_count≥300, image_hack=false).
+
+STARTER: design-iter-11/path-codex/build_b2_docx.py
+WORKDIR: design-iter-12/path-codex
+
+CHANGES TO TRY:
+1. In build_b2_docx.py, locate every bullet construction (look for "bullet" or "•" or pPr/numPr or list code).
+2. Replace black ● bullet with red ✱ (U+002A asterisk, bold, color RED=#E63946).
+3. Adjust bullet font to Arial Black or just keep Arial with bold+red.
+4. Tune bullet character size relative to text size (PDF bullet appears slightly larger than text).
+5. Verify wt_count stays ≥ 300.
+
+GOAL: Get any improvement over 9.67. Lower max page diff also welcome.
+
+PER ITER:
+1. Edit
+2. python build_b2_docx.py iter-N/output.docx
+3. PYTHONUTF8=1 python ../../score_candidate.py iter-N/output.docx --target ../../../../../output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+4. If regression > 0.1, revert and try different approach
+5. Up to 5 iter
+
+PYTHONUTF8=1 required. STATUS.md when done.
+
+INPUTS:
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Spans: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\target_spans.json
+- Scoring: ../../score_candidate.py
+- Baseline: ../../baseline/target_png
+
+START NOW.
