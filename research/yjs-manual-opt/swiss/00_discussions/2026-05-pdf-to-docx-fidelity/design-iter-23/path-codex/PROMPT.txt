@@ -1,0 +1,27 @@
+You are Codex doing design-iter-23. 27 winners累积. W27: 8.67 / 12.35. Plateau is intense.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+GOAL: visual < 8.0 OR max < 12.0.
+
+LIFE OF CODEX: this is a fine-tuning exercise. Each iter gains 0.02-0.05. Be patient.
+
+W27 per-page bottlenecks (sorted by diff):
+- p3 ~12.x
+- p11 ~12.35
+- p14 ~12.x
+
+Try fresh ideas:
+1. **Disable** char_spacing on bullet lists (maybe it's overshooting on text-heavy pages)
+2. Try negative space_after on body text (-0.5pt)
+3. Try first-line indent on body paragraphs
+4. Try shading on specific cells with very subtle gray
+5. Different image_aspect adjustment for specific images
+6. Re-examine page break position
+
+STARTER: design-iter-22/path-codex/build_b2_docx.py
+WORKDIR: design-iter-23/path-codex
+
+ONE focused change per iter. Up to 8 iter.
+PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual. START NOW.

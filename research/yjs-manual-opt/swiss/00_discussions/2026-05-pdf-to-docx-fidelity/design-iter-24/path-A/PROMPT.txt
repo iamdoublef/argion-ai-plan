@@ -1,0 +1,30 @@
+You are Codex Path A doing design-iter-24. 27 winners累积. W27: 8.67/12.35 (deep plateau).
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+Approach: OOXML post-processing. Generate docx with build_b2_docx.py, then UNPACK and edit XML directly to add things python-docx can't do well.
+
+Try:
+1. Add `w:spacing w:line="240" w:lineRule="exact"` to specific paragraphs (exact line spacing instead of multiple)
+2. Add `w:tblpPr` for floating table positioning on specific tables
+3. Add `w:kern w:val="14"` for Chinese font kerning enable
+4. Set `w:autoSpaceDE w:val="0"` and `w:autoSpaceDN w:val="0"` to disable East Asian auto-spacing
+
+Process:
+1. python build_b2_docx.py iter-N/output.docx
+2. python C:/Users/iamdo/.claude/skills/docx/scripts/office/unpack.py iter-N/output.docx iter-N/unpacked
+3. Edit XML
+4. python C:/Users/iamdo/.claude/skills/docx/scripts/office/pack.py iter-N/unpacked iter-N/output.docx --original iter-N/output.docx --validate false
+5. score, revert if regress
+
+WORKDIR: design-iter-24/path-A
+Up to 5 iter. PYTHONUTF8=1.
+
+Inputs:
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Builder: design-iter-22/path-codex/build_b2_docx.py
+- Scoring: ../../score_candidate.py
+- Baseline: ../../baseline/target_png
+- unpack/pack: C:/Users/iamdo/.claude/skills/docx/scripts/office/
+
+START NOW.

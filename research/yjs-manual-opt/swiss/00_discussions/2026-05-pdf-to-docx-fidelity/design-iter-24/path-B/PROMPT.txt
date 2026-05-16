@@ -1,0 +1,20 @@
+You are Codex Path B doing design-iter-24. 27 winners累积. W27: 8.67/12.35.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+Path B Approach: visual rendering optimization.
+
+Try:
+1. Try a slightly different image embedding (PNG vs JPG, different dpi)
+2. Replace existing inline drawings with anchored drawings positioned absolutely (NOT a hack, just different positioning)
+3. Try sectPr changes for page properties
+4. Try setting w:gridCol values explicitly for all tables
+5. Try setting `w:rPr/w:rFonts w:hint="eastAsia"` on Chinese runs
+
+STARTER: design-iter-23/path-codex/build_b2_docx.py
+WORKDIR: design-iter-24/path-B
+
+Up to 5 iter. PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual.
+
+START NOW.
