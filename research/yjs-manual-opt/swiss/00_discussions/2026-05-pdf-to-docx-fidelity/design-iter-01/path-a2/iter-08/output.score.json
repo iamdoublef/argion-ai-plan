@@ -1,0 +1,47 @@
+{
+  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-01\\path-a2\\iter-08\\output.docx",
+  "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "pages": {
+    "target": 15,
+    "candidate": 15,
+    "ratio": 1.0
+  },
+  "text": {
+    "target_chars": 4620,
+    "candidate_chars": 4625,
+    "ratio": 1.0
+  },
+  "editability": {
+    "wt_count": 433,
+    "txbx_count": 0,
+    "editable_pct": 100.0
+  },
+  "visual": {
+    "per_page_mean_diff": [
+      3.38,
+      5.47,
+      18.13,
+      9.88,
+      14.16,
+      20.59,
+      18.71,
+      18.89,
+      15.96,
+      13.29,
+      24.71,
+      12.22,
+      14.47,
+      27.62,
+      7.9
+    ],
+    "overall_mean_diff": 15.03,
+    "max_page_diff": 27.62
+  },
+  "pass": {
+    "pages": true,
+    "text": true,
+    "editable": true,
+    "visual": true,
+    "overall": true
+  }
+}

@@ -1,0 +1,74 @@
+You are Codex working on Path B2 of design-iter-01 (SECOND BIG ROUND).
+
+CONTEXT: First round produced visually OK but customer rejected as "no design sense, doesn't match PDF aesthetic". You must fix PRECISE design errors measured against the target PDF.
+
+MANDATORY READING:
+1. D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\DESIGN_BRIEF.md
+2. D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\design_diff_report.md
+3. D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\target_spans.json
+
+YOUR SLOT: B2 — keep using your custom python-docx + BeautifulSoup approach (continue from build_b2_docx.py iter-03).
+WORK DIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\path-b2
+PREVIOUS GENERATOR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\path-b-codex\b2-custom\build_b2_docx.py
+Copy it here to design-iter-01\path-b2\build_b2_docx.py and improve.
+
+SPECIFIC FIXES TO MAKE:
+
+P0 FONTS — set per-run fonts explicitly in OOXML:
+```python
+from docx.oxml.ns import qn
+from docx.oxml import OxmlElement
+
+def set_run_fonts(run, latin='Arial', east_asia='Microsoft YaHei', latin_bold='Arial Black', is_bold=False, is_mono=False):
+    rPr = run._element.get_or_add_rPr()
+    rFonts = rPr.find(qn('w:rFonts'))
+    if rFonts is None:
+        rFonts = OxmlElement('w:rFonts')
+        rPr.insert(0, rFonts)
+    if is_mono:
+        rFonts.set(qn('w:ascii'), 'Courier New')
+        rFonts.set(qn('w:hAnsi'), 'Courier New')
+        rFonts.set(qn('w:cs'), 'Courier New')
+    else:
+        rFonts.set(qn('w:ascii'), latin_bold if is_bold else latin)
+        rFonts.set(qn('w:hAnsi'), latin_bold if is_bold else latin)
+        rFonts.set(qn('w:cs'), latin_bold if is_bold else latin)
+    rFonts.set(qn('w:eastAsia'), east_asia)  # CRITICAL: must be 'Microsoft YaHei'
+```
+
+P0 COVER COLOR ERROR:
+- Currently "威富可" is colored red in your build_b2_docx.py — flip it to BLACK
+- Add a SHORT red horizontal line BEFORE 威富可 (use a paragraph with bottom border, but short width via tab stop or table cell)
+
+P0 SIZES (currently too big):
+- Body text size=14 (7pt) not 16
+- Section title 18 (9pt)
+- Chapter title 22 (11pt) — for "01" use Arial Black with size 27 (13.5pt)
+- Cover "制冰机" size 36 (18pt)
+- Small labels (MODEL/disclaimer) size 10-11
+
+P1 GRAY: change all grays to #8E8E93 (not #8A8A8A or #9A9A9A)
+
+P1 TABLE STYLING:
+- Zebra rows: alternating #F4F4F4 / #FFFFFF
+- Horizontal borders only (top and bottom of cell), no vertical
+- Table header: fill #1A1A1A + white text
+
+P2 WARNING ICONS:
+- Before "WARNING" title: add a red ▲ (use unicode triangle U+25B2, color #E63946)
+- Before "CAUTION": add black ▲
+- Before "NOTICE": add a blue/info icon, e.g. unicode ℹ
+
+ITERATION LOOP:
+For each iter (iter-01, iter-02, ...):
+1. Edit build_b2_docx.py
+2. Run: python build_b2_docx.py iter-NN/output.docx
+3. Score: PYTHONUTF8=1 python ../../score_candidate.py iter-NN/output.docx --target D:/work/private/yjsplan/research/yjs-manual-opt/swiss/output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+4. Run extract_spans.py on iter-NN/pdf/output.pdf, check fonts/sizes
+5. Look at rendered PNGs (side-by-side) to verify aesthetic
+
+PASS CRITERIA: same as B1 — fonts match, sizes match (7-7.5pt body), cover color correct, tables stylized.
+
+DON'T STOP until pass. If quota runs out, save STATUS.md and stop cleanly.
+
+START NOW.

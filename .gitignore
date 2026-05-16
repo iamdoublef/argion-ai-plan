@@ -21,6 +21,19 @@ research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/hires_winner/
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/zoom_compare/
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/heatmap/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/png/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/pdf/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/_score_tmp/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/_docx_raster_cache/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/unpacked/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/unpacked-out/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/side_by_side*/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/sbs/
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/codex_log*.txt
+research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/design-iter-*/**/codex_last*.txt
+# unrelated post_*.md and gstack-verification produced by other tools
+post_*.md
+research/gstack-verification/
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/path-*/**/png/
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/path-*/**/pdf/
 research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/path-*/**/side_by_side/

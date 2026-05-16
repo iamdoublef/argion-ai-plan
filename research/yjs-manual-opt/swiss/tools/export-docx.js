@@ -63,7 +63,7 @@ const DOCX_PROFILE = {
     marginY: MARGIN_Y,
   },
   images: {
-    cover: { width: 310, height: 220 },
+    cover: { width: 170, height: 123 },
     figure: { width: 310, height: 205 },
     splitPanel: { width: 160, height: 130 },
     stepSingle: { width: 260, height: 160 },
@@ -83,18 +83,20 @@ const DOCX_PROFILE = {
     headerSize: 14,
   },
   text: {
-    bodySize: 16,
-    subtitleSize: 18,
-    sectionTitleSize: 20,
-    chapterNumberSize: 24,
-    chapterTitleSize: 24,
-    coverBrandSize: 28,
-    coverTypeSize: 16,
-    coverProductSize: 24,
-    coverModelSize: 16,
+    bodySize: 14,
+    subtitleSize: 14,
+    sectionTitleSize: 18,
+    chapterNumberSize: 27,
+    chapterTitleSize: 22,
+    coverBrandSize: 15,
+    coverTypeSize: 11,
+    coverProductSize: 36,
+    coverModelSize: 11,
     coverCompanySize: 14,
-    tocTitleSize: 28,
-    smallSize: 13,
+    tocTitleSize: 30,
+    headerBrandSize: 14,
+    headerMetaSize: 11,
+    smallSize: 10,
   },
 };
 
@@ -105,21 +107,22 @@ const DEFAULT_DOCX_THEME = {
   primary: '1A1A1A',
   accent: 'E63946',
   light: '666666',
-  muted: '9A9A9A',
+  muted: '8E8E93',
   font: 'Arial',
   latinFont: 'Arial',
-  cjkFont: '宋体',
-  titleLatinFont: 'Arial',
-  titleCjkFont: '黑体',
+  cjkFont: 'Microsoft YaHei',
+  titleLatinFont: 'Arial Black',
+  titleCjkFont: 'Microsoft YaHei',
+  monoFont: 'Courier New',
   coverDivider: 'E63946',
   coverModel: 'E63946',
-  coverType: '666666',
+  coverType: '8E8E93',
   coverTitle: '1A1A1A',
-  coverCompany: '8A8A8A',
+  coverCompany: '8E8E93',
   chapterBar: '000000',
   chapterNumber: 'E63946',
   chapterTitle: '1A1A1A',
-  chapterHeaderRef: '8A8A8A',
+  chapterHeaderRef: '8E8E93',
   tocTitle: '1A1A1A',
   tocText: '666666',
   sectionTitle: '1A1A1A',
@@ -129,7 +132,7 @@ const DEFAULT_DOCX_THEME = {
   tableHeaderFill: '1A1A1A',
   tableHeaderText: 'FFFFFF',
   tableLabelFill: 'F4F4F4',
-  tableBorder: 'D4D4D4',
+  tableBorder: 'CCCCCC',
   warningFill: 'FFF3D6',
   cautionFill: 'F7D9DD',
   noticeFill: 'DCECF8',
@@ -144,13 +147,14 @@ const DEFAULT_DOCX_THEME = {
   noticeText: '4A4A4A',
   boxBorder: 'D4D4D4',
   headerBorder: 'D9D9D9',
-  headerText: '7A7A7A',
-  footerText: '8A8A8A',
+  headerText: '8E8E93',
+  footerText: '8E8E93',
 };
 
 let ACTIVE_THEME = { ...DEFAULT_DOCX_THEME };
 let FONT = buildFontBundle(DEFAULT_DOCX_THEME.latinFont, DEFAULT_DOCX_THEME.cjkFont);
 let TITLE_FONT = buildFontBundle(DEFAULT_DOCX_THEME.titleLatinFont, DEFAULT_DOCX_THEME.titleCjkFont);
+let MONO_FONT = buildFontBundle(DEFAULT_DOCX_THEME.monoFont, DEFAULT_DOCX_THEME.cjkFont);
 
 function buildFontBundle(latin, cjk) {
   return {
@@ -162,9 +166,25 @@ function buildFontBundle(latin, cjk) {
 }
 
 function applyDocxTheme(docxTheme = {}) {
-  ACTIVE_THEME = { ...DEFAULT_DOCX_THEME, ...docxTheme };
+  ACTIVE_THEME = {
+    ...DEFAULT_DOCX_THEME,
+    ...docxTheme,
+    light: DEFAULT_DOCX_THEME.muted,
+    muted: DEFAULT_DOCX_THEME.muted,
+    headerText: DEFAULT_DOCX_THEME.headerText,
+    footerText: DEFAULT_DOCX_THEME.footerText,
+    coverType: DEFAULT_DOCX_THEME.coverType,
+    coverCompany: DEFAULT_DOCX_THEME.coverCompany,
+    chapterHeaderRef: DEFAULT_DOCX_THEME.chapterHeaderRef,
+    latinFont: DEFAULT_DOCX_THEME.latinFont,
+    cjkFont: DEFAULT_DOCX_THEME.cjkFont,
+    titleLatinFont: DEFAULT_DOCX_THEME.titleLatinFont,
+    titleCjkFont: DEFAULT_DOCX_THEME.titleCjkFont,
+    monoFont: DEFAULT_DOCX_THEME.monoFont,
+  };
   FONT = buildFontBundle(ACTIVE_THEME.latinFont, ACTIVE_THEME.cjkFont);
   TITLE_FONT = buildFontBundle(ACTIVE_THEME.titleLatinFont, ACTIVE_THEME.titleCjkFont);
+  MONO_FONT = buildFontBundle(ACTIVE_THEME.monoFont, ACTIVE_THEME.cjkFont);
 }
 
 function border(color = ACTIVE_THEME.boxBorder, size = 1, style = BorderStyle.SINGLE) {
@@ -177,12 +197,22 @@ const NO_BORDERS = {
   bottom: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
   left: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
   right: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
+  insideHorizontal: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
+  insideVertical: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
 };
 function boxBorders(color = ACTIVE_THEME.boxBorder) {
   return { top: border(color), bottom: border(color), left: border(color), right: border(color) };
 }
-const CELL_MARGINS = { top: 36, bottom: 36, left: 70, right: 70 };
-const CELL_MARGINS_COMPACT = { top: 20, bottom: 20, left: 48, right: 48 };
+function horizontalBorders(color = ACTIVE_THEME.tableBorder, size = 1) {
+  return {
+    top: border(color, size),
+    bottom: border(color, size),
+    left: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
+    right: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
+  };
+}
+const CELL_MARGINS = { top: 30, bottom: 30, left: 60, right: 60 };
+const CELL_MARGINS_COMPACT = { top: 30, bottom: 30, left: 60, right: 60 };
 const DOCX_IMAGE_CACHE_DIR = path.resolve(outputDir, '_docx_raster_cache');
 
 // ---------------------------------------------------------------------------
@@ -445,12 +475,13 @@ function makeTextCell(text, opts = {}) {
     color: opts.color || ACTIVE_THEME.primary,
     bold: opts.bold || false,
     alignment: opts.alignment,
+    font: opts.font || FONT,
   }), {
     width: opts.width,
     rowSpan: opts.rowSpan,
     columnSpan: opts.columnSpan,
     shading: opts.shading,
-    borders: opts.borders || boxBorders(),
+    borders: opts.borders || horizontalBorders(ACTIVE_THEME.tableBorder),
     margins: opts.compact ? CELL_MARGINS_COMPACT : (opts.margins || CELL_MARGINS),
     verticalAlign: opts.verticalAlign || VerticalAlign.CENTER,
   });
@@ -462,8 +493,9 @@ function makeHeaderCell(text, opts = {}) {
     shading: { fill: ACTIVE_THEME.tableHeaderFill, type: ShadingType.CLEAR },
     color: ACTIVE_THEME.tableHeaderText,
     bold: true,
-    alignment: AlignmentType.CENTER,
+    alignment: opts.alignment || AlignmentType.LEFT,
     size: DOCX_PROFILE.table.headerSize,
+    borders: opts.borders || horizontalBorders(ACTIVE_THEME.tableBorder),
   });
 }
 
@@ -476,7 +508,7 @@ function makeBorderlessCell(children, width) {
 }
 
 function zebraShading(rowIndex) {
-  return rowIndex % 2 === 1 ? { fill: 'F2F2F7', type: ShadingType.CLEAR } : undefined;
+  return rowIndex % 2 === 1 ? { fill: ACTIVE_THEME.tableLabelFill, type: ShadingType.CLEAR } : undefined;
 }
 
 function isCompactTable(block = {}) {
@@ -656,21 +688,38 @@ function renderBulletList(block, ctx) {
 }
 
 function getAlertTheme(kind) {
-  if (kind === 'warning_box') return { border: ACTIVE_THEME.accent, titleColor: ACTIVE_THEME.accent, textColor: ACTIVE_THEME.primary };
-  if (kind === 'caution_box') return { border: ACTIVE_THEME.primary, titleColor: ACTIVE_THEME.primary, textColor: ACTIVE_THEME.primary };
-  return { border: ACTIVE_THEME.headerBorder, titleColor: ACTIVE_THEME.primary, textColor: ACTIVE_THEME.primary, fill: 'F2F2F7' };
+  if (kind === 'warning_box') {
+    return { border: ACTIVE_THEME.accent, titleColor: ACTIVE_THEME.accent, icon: '\u25B2', iconColor: ACTIVE_THEME.accent, textColor: ACTIVE_THEME.primary };
+  }
+  if (kind === 'caution_box') {
+    return { border: ACTIVE_THEME.primary, titleColor: ACTIVE_THEME.primary, icon: '\u25B2', iconColor: 'D99A00', textColor: ACTIVE_THEME.primary };
+  }
+  return { border: ACTIVE_THEME.headerBorder, titleColor: ACTIVE_THEME.primary, icon: '\u258C', iconColor: '1A5276', textColor: ACTIVE_THEME.primary, fill: 'F2F2F7' };
 }
 
 function renderAlertBox(block, ctx, kind) {
   const theme = getAlertTheme(kind);
   const elements = [];
   if (block.title) {
-      elements.push(makeTextParagraph(resolveVars(readTextValue(block.title), ctx.vars), {
-      after: 30,
-      bold: true,
-      size: DOCX_PROFILE.text.subtitleSize,
-      font: TITLE_FONT,
-      color: theme.titleColor,
+    const showTextIcon = !block.icon;
+    elements.push(new Paragraph({
+      spacing: { after: 30, line: 210 },
+      children: [
+        ...(showTextIcon ? [new TextRun({
+          text: theme.icon,
+          font: TITLE_FONT,
+          bold: true,
+          size: 18,
+          color: theme.iconColor,
+        })] : []),
+        new TextRun({
+          text: `${showTextIcon ? ' ' : ''}${resolveVars(readTextValue(block.title), ctx.vars)}`,
+          font: TITLE_FONT,
+          bold: true,
+          size: DOCX_PROFILE.text.subtitleSize,
+          color: theme.titleColor,
+        }),
+      ],
     }));
   }
   if (block.icon) {
@@ -714,9 +763,16 @@ function renderAlertBox(block, ctx, kind) {
 }
 
 function renderStepFlow(block, ctx) {
+  // PDF style: small 13.5pt BLACK square badge with white Arial-Black number,
+  // TOP aligned, NOT a full-height accent column.
+  // We keep a 2-col table but make the number cell visually small via:
+  //   - narrow column (just enough for "01")
+  //   - BLACK shading (not accent red)
+  //   - TOP vertical alignment so badge sits at top of row
+  //   - tight margins so badge height = number height, not the row height
   const startAt = Number(block.start_at || 1);
   const compact = isCompactLayout(block);
-  const numberWidth = Math.round(CONTENT_W * (compact ? 0.08 : 0.09));
+  const numberWidth = Math.round(CONTENT_W * 0.055);  // ~4.8mm, matches PDF 13.5pt badge
   const textWidth = CONTENT_W - numberWidth;
   const rows = [];
   for (let i = 0; i < (block.steps || []).length; i++) {
@@ -737,20 +793,22 @@ function renderStepFlow(block, ctx) {
     rows.push(new TableRow({
       cantSplit: true,
       children: [
+        // BADGE cell: small black square at top, white Arial-Black number
         makeCell([
           makeTextParagraph(String(startAt + i), {
             after: 0,
             bold: true,
-            size: compact ? DOCX_PROFILE.table.headerSize : DOCX_PROFILE.text.subtitleSize,
+            size: 14,                          // ~7pt, fits 4.8mm badge
             color: 'FFFFFF',
             alignment: AlignmentType.CENTER,
+            font: TITLE_FONT,                  // Arial Black
           }),
         ], {
           width: numberWidth,
           borders: NO_BORDERS,
-          shading: { fill: ACTIVE_THEME.accent, type: ShadingType.CLEAR },
-          margins: { top: compact ? 34 : 48, bottom: compact ? 34 : 48, left: 0, right: 0 },
-          verticalAlign: VerticalAlign.CENTER,
+          shading: { fill: ACTIVE_THEME.primary, type: ShadingType.CLEAR }, // BLACK, was accent red
+          margins: { top: 20, bottom: 0, left: 0, right: 0 },               // top-sit, no extra padding
+          verticalAlign: VerticalAlign.TOP,                                   // top align (key fix)
         }),
         makeCell(body, {
           width: textWidth,
@@ -760,7 +818,7 @@ function renderStepFlow(block, ctx) {
             left: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
             right: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
           },
-          margins: { top: compact ? 34 : 44, bottom: compact ? 34 : 44, left: 90, right: 70 },
+          margins: { top: 30, bottom: compact ? 30 : 44, left: 140, right: 70 },
         }),
       ],
     }));
@@ -910,6 +968,7 @@ function renderCustomTable(block, ctx) {
     width: { size: CONTENT_W, type: WidthType.DXA },
     columnWidths: colWidths,
     layout: TableLayoutType.FIXED,
+    borders: NO_BORDERS,
     rows: tableRows,
   });
 }
@@ -917,7 +976,7 @@ function renderCustomTable(block, ctx) {
 function renderSpecsTable(ctx, block = {}) {
   const specsRows = ctx.specs.rows;
   const compact = isCompactTable(block);
-  const colWidths = [Math.round(CONTENT_W * 0.45), Math.round(CONTENT_W * 0.55)];
+  const colWidths = [Math.round(CONTENT_W * 0.5), Math.round(CONTENT_W * 0.5)];
   const tableRows = [
     new TableRow({
       children: [
@@ -931,12 +990,12 @@ function renderSpecsTable(ctx, block = {}) {
     const shading = zebraShading(ri);
     tableRows.push(new TableRow({
       children: [
-        makeTextCell(r.label, { width: colWidths[0], compact, size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.table.bodySize, bold: true, shading }),
+        makeTextCell(r.label, { width: colWidths[0], compact, size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.table.bodySize, shading }),
         makeTextCell(r.value, { width: colWidths[1], compact, size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.table.bodySize, shading }),
       ],
     }));
   }
-  return new Table({ width: { size: CONTENT_W, type: WidthType.DXA }, columnWidths: colWidths, layout: TableLayoutType.FIXED, rows: tableRows });
+  return new Table({ width: { size: CONTENT_W, type: WidthType.DXA }, columnWidths: colWidths, layout: TableLayoutType.FIXED, borders: NO_BORDERS, rows: tableRows });
 }
 
 function renderPartsTable(ctx, block = {}) {
@@ -967,7 +1026,7 @@ function renderPartsTable(ctx, block = {}) {
       ],
     }));
   }
-  return new Table({ width: { size: CONTENT_W, type: WidthType.DXA }, columnWidths: cw, layout: TableLayoutType.FIXED, rows: tableRows });
+  return new Table({ width: { size: CONTENT_W, type: WidthType.DXA }, columnWidths: cw, layout: TableLayoutType.FIXED, borders: NO_BORDERS, rows: tableRows });
 }
 
 function renderButtonsTable(ctx, block = {}) {
@@ -992,46 +1051,70 @@ function renderButtonsTable(ctx, block = {}) {
       ],
     }));
   }
-  return new Table({ width: { size: CONTENT_W, type: WidthType.DXA }, columnWidths: cw, layout: TableLayoutType.FIXED, rows: tableRows });
+  return new Table({ width: { size: CONTENT_W, type: WidthType.DXA }, columnWidths: cw, layout: TableLayoutType.FIXED, borders: NO_BORDERS, rows: tableRows });
 }
 
-function renderInfoTable(rows, compact = false) {
+function localizedInfoHeaders(ctx) {
+  if ((ctx.lang || '').startsWith('zh')) return ['项目', '信息'];
+  return ['Item', 'Information'];
+}
+
+function renderInfoTable(rows, compact = false, headers = null) {
   const cw = [Math.round(CONTENT_W * 0.3), Math.round(CONTENT_W * 0.7)];
+  const tableRows = [];
+  if (headers) {
+    tableRows.push(new TableRow({
+      children: [
+        makeHeaderCell(headers[0], { width: cw[0], compact }),
+        makeHeaderCell(headers[1], { width: cw[1], compact }),
+      ],
+    }));
+  }
+  tableRows.push(...rows.map(([label, value], ri) => {
+    const shading = zebraShading(ri);
+    return new TableRow({
+      children: [
+        makeTextCell(label, { width: cw[0], compact, bold: true, shading }),
+        makeTextCell(value, { width: cw[1], compact, shading }),
+      ],
+    });
+  }));
   return new Table({
     width: { size: CONTENT_W, type: WidthType.DXA },
     columnWidths: cw,
     layout: TableLayoutType.FIXED,
-    rows: rows.map(([label, value]) => new TableRow({
-      children: [
-        makeTextCell(label, {
-          width: cw[0],
-          compact,
-          bold: true,
-          shading: { fill: ACTIVE_THEME.tableLabelFill, type: ShadingType.CLEAR },
-        }),
-        makeTextCell(value, { width: cw[1], compact }),
-      ],
-    })),
+    borders: NO_BORDERS,
+    rows: tableRows,
   });
 }
 
 function renderBrandInfoTable(ctx, block = {}) {
   const brand = ctx.brand;
+  const isChinese = (ctx.lang || '').startsWith('zh');
+  const headers = [
+    isChinese ? '项目' : 'Field',
+    isChinese ? '信息' : 'Information',
+  ];
   return renderInfoTable([
     [ctx.labels.brand_label || 'Brand', brand.name],
     [ctx.labels.address_label || 'Address', brand.address],
     [ctx.labels.website_label || 'Website', brand.website],
     [ctx.labels.email_label || 'Email', brand.support_email],
-  ], isCompactTable(block));
+  ], isCompactTable(block), headers);
 }
 
 function renderManufacturerTable(ctx, block = {}) {
   const mfr = ctx.mfr;
+  const isChinese = (ctx.lang || '').startsWith('zh');
+  const headers = [
+    isChinese ? '项目' : 'Field',
+    isChinese ? '信息' : 'Information',
+  ];
   return renderInfoTable([
     [ctx.labels.manufacturer_label || 'Manufacturer', mfr.name_secondary && mfr.name_secondary !== mfr.name_primary ? `${mfr.name_primary}\n${mfr.name_secondary}` : mfr.name_primary],
     [ctx.labels.address_label || 'Address', mfr.address],
     [ctx.labels.website_label || 'Website', mfr.website],
-  ], isCompactTable(block));
+  ], isCompactTable(block), headers);
 }
 
 function renderQaList(block, ctx) {
@@ -1068,24 +1151,25 @@ function renderContactBlock(block, ctx) {
 function renderWarrantyCard(block, ctx) {
   const fields = block.fields || [];
   const cw = [Math.round(CONTENT_W * 0.35), Math.round(CONTENT_W * 0.65)];
-  const accentTopBdr = { style: BorderStyle.SINGLE, size: 8, color: ACTIVE_THEME.accent };
+  const firstRowBorders = {
+    ...horizontalBorders(),
+    top: { style: BorderStyle.SINGLE, size: 8, color: ACTIVE_THEME.accent },
+  };
   const rows = fields.map((field, fi) => {
     const isFirst = fi === 0;
+    const shading = zebraShading(fi);
     return new TableRow({
       children: [
         makeTextCell(resolveVars(readTextValue(field), ctx.vars), {
           width: cw[0],
           bold: true,
-          shading: { fill: ACTIVE_THEME.tableLabelFill, type: ShadingType.CLEAR },
-          borders: isFirst
-            ? { top: accentTopBdr, bottom: border(), left: border(), right: border() }
-            : undefined,
+          shading,
+          borders: isFirst ? firstRowBorders : undefined,
         }),
         makeTextCell('', {
           width: cw[1],
-          borders: isFirst
-            ? { top: accentTopBdr, bottom: border(), left: border(), right: border() }
-            : undefined,
+          shading,
+          borders: isFirst ? firstRowBorders : undefined,
         }),
       ],
     });
@@ -1094,6 +1178,7 @@ function renderWarrantyCard(block, ctx) {
     width: { size: CONTENT_W, type: WidthType.DXA },
     columnWidths: cw,
     layout: TableLayoutType.FIXED,
+    borders: NO_BORDERS,
     rows,
   })];
 }
@@ -1138,7 +1223,7 @@ function renderChapterHeading(chapter) {
     new Paragraph({
       heading: HeadingLevel.HEADING_1,
       spacing: { before: 0, after: 60, line: 320 },
-      border: { left: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.chapterBar } },
+      border: { left: { style: BorderStyle.SINGLE, size: 6, color: ACTIVE_THEME.chapterBar } },
       indent: { left: 160 },
       keepNext: true,
       children: [
@@ -1157,16 +1242,6 @@ function renderChapterHeading(chapter) {
           color: ACTIVE_THEME.chapterTitle,
         }),
       ],
-    }),
-    new Paragraph({
-      spacing: { after: 40 },
-      alignment: AlignmentType.RIGHT,
-      children: [new TextRun({
-        text: chapter.header_ref,
-        font: FONT,
-        size: DOCX_PROFILE.text.smallSize,
-        color: ACTIVE_THEME.chapterHeaderRef,
-      })],
     }),
   ];
 }
@@ -1188,7 +1263,7 @@ function renderPageSectionTitle(page, chapter, pageIndex) {
     return [new Paragraph({
       pageBreakBefore,
       spacing: { before: 0, after: 60, line: 260 },
-      border: { left: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.chapterBar } },
+      border: { left: { style: BorderStyle.SINGLE, size: 6, color: ACTIVE_THEME.chapterBar } },
       indent: { left: 160 },
       keepNext: true,
       children: [
@@ -1230,28 +1305,40 @@ function buildCoverBlock(ctx) {
 
   const children = [];
 
-  // 1. Brand name with accent line (top-left, like PDF)
+  // 1. Brand name as inline "━━ 威富可" (small, top-left like PDF)
+  // PDF measurement: red short dash + small bold black "威富可" ~7.5pt, left-aligned, very subtle
   children.push(new Paragraph({
-    spacing: { before: 80, after: 20 },
+    spacing: { before: 240, after: 0 },
+    indent: { right: CONTENT_W - 300 },
     border: { top: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.accent } },
     children: [],
   }));
   children.push(new Paragraph({
-    spacing: { before: 0, after: 180 },
-    children: [new TextRun({
-      text: ctx.brand.display_name,
-      font: TITLE_FONT,
-      bold: true,
-      size: DOCX_PROFILE.text.coverBrandSize,
-      color: ACTIVE_THEME.accent,
-      characterSpacing: 80,
-    })],
+    spacing: { before: 0, after: 360 },
+    indent: { left: 380 },
+    children: [
+      new TextRun({
+        text: '━━━  ',
+        font: FONT,
+        bold: true,
+        size: 1,
+        color: 'FFFFFF',
+      }),
+      new TextRun({
+        text: ctx.brand.display_name,
+        font: TITLE_FONT,
+        bold: true,
+        size: DOCX_PROFILE.text.coverBrandSize,
+        color: ACTIVE_THEME.primary,
+        characterSpacing: 60,
+      }),
+    ],
   }));
 
-  // 2. Product image (centered, large)
+  // 2. Product image (small, left-aligned, like PDF center-left placement)
   if (coverImage) {
     children.push(new Paragraph({
-      spacing: { before: 120, after: 150 },
+      spacing: { before: 2650, after: 200 },
       alignment: AlignmentType.LEFT,
       children: [makeImageRun(coverImage, DOCX_PROFILE.images.cover.width, DOCX_PROFILE.images.cover.height, 'cover')],
     }));
@@ -1259,12 +1346,12 @@ function buildCoverBlock(ctx) {
 
   // 3. Model + Product name + Document type (bottom area)
   children.push(new Paragraph({
-    spacing: { before: 150, after: 18 },
+    spacing: { before: 510, after: 18 },
     children: [new TextRun({
       text: `MODEL  ${ctx.model}`,
-      font: FONT,
+      font: MONO_FONT,
       size: DOCX_PROFILE.text.coverModelSize,
-      color: ACTIVE_THEME.muted,
+      color: ACTIVE_THEME.coverModel,
       characterSpacing: 60,
     })],
   }));
@@ -1289,29 +1376,45 @@ function buildCoverBlock(ctx) {
   }));
   // Accent divider
   children.push(new Paragraph({
-    spacing: { before: 20, after: 220 },
+    spacing: { before: 20, after: 2750 },
+    indent: { right: CONTENT_W - 420 },
     border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.accent } },
     children: [],
   }));
 
-  // 4. Disclaimer at bottom
-  const disclaimer = ctx.lang && ctx.lang.startsWith('zh')
+  // 4. Disclaimer at bottom \u2014 PDF has 2-line wrap with subtle black hairline above
+  const disclaimerLine1 = ctx.lang && ctx.lang.startsWith('zh')
     ? '\u4F7F\u7528\u4EA7\u54C1\u524D\u8BF7\u4ED4\u7EC6\u9605\u8BFB\u672C\u8BF4\u660E\u4E66\uFF0C\u5E76\u59A5\u5584\u4FDD\u7BA1\u3002'
     : 'Please read this manual carefully before use and keep it for future reference.';
+  const disclaimerLine2 = ctx.lang && ctx.lang.startsWith('zh')
+    ? '\u8BF4\u660E\u4E66\u4E2D\u7684\u4EA7\u54C1\u3001\u914D\u4EF6\u7B49\u63D2\u56FE\u5747\u4E3A\u793A\u610F\u56FE\uFF0C\u4EC5\u4F9B\u53C2\u8003\u3002\u7531\u4E8E\u4EA7\u54C1\u7684\u66F4\u65B0\u4E0E\u5347\u7EA7\uFF0C\u4EA7\u54C1\u5B9E\u7269\u4E0E\u793A\u610F\u56FE\u53EF\u80FD\u7565\u6709\u5DEE\u5F02\uFF0C\u8BF7\u4EE5\u5B9E\u7269\u4E3A\u51C6\u3002'
+    : '';
+  // Thin black hairline above disclaimer (PDF has this)
   children.push(new Paragraph({
-    spacing: { before: 0, after: 0 },
+    spacing: { before: 0, after: 60 },
     border: { top: { style: BorderStyle.SINGLE, size: 4, color: ACTIVE_THEME.primary } },
     children: [],
   }));
   children.push(new Paragraph({
-    spacing: { before: 45, after: 0 },
+    spacing: { before: 0, after: 30, line: 200 },
     children: [new TextRun({
-      text: disclaimer,
+      text: disclaimerLine1,
       font: FONT,
-      size: 15,
+      size: DOCX_PROFILE.text.smallSize,
       color: ACTIVE_THEME.muted,
     })],
   }));
+  if (disclaimerLine2) {
+    children.push(new Paragraph({
+      spacing: { before: 0, after: 0, line: 200 },
+      children: [new TextRun({
+        text: disclaimerLine2,
+        font: FONT,
+        size: DOCX_PROFILE.text.smallSize,
+        color: ACTIVE_THEME.muted,
+      })],
+    }));
+  }
 
   return children;
 }
@@ -1324,8 +1427,8 @@ function buildHeader(ctx, chapter = null) {
       border: { top: { style: BorderStyle.SINGLE, size: 18, color: ACTIVE_THEME.primary } },
       tabStops: [{ type: TabStopType.RIGHT, position: CONTENT_W }],
       children: [
-        new TextRun({ text: ctx.brand.display_name, font: FONT, size: DOCX_PROFILE.text.smallSize, bold: true, color: ACTIVE_THEME.primary }),
-        new TextRun({ text: `\t${rightText}`, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.headerText }),
+        new TextRun({ text: ctx.brand.display_name, font: FONT, size: DOCX_PROFILE.text.headerBrandSize, bold: true, color: ACTIVE_THEME.primary }),
+        new TextRun({ text: `\t${rightText}`, font: MONO_FONT, size: DOCX_PROFILE.text.headerMetaSize, color: ACTIVE_THEME.headerText }),
       ],
     })],
   });
@@ -1341,10 +1444,11 @@ function buildFooter(ctx) {
       border: { top: { style: BorderStyle.SINGLE, size: 4, color: ACTIVE_THEME.tableBorder } },
       tabStops: [{ type: TabStopType.RIGHT, position: CONTENT_W }],
       children: [
-        new TextRun({ text: `${ctx.brand.display_name}  \u00B7  ${ctx.model}`, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+        new TextRun({ text: `${ctx.brand.display_name}  \u00B7  `, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+        new TextRun({ text: ctx.model, font: MONO_FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
         new TextRun({ text: '\t', font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
         new TextRun({ text: pagePrefix, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
-        new TextRun({ children: [PageNumber.CURRENT], font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+        new TextRun({ children: [PageNumber.CURRENT], font: MONO_FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
         new TextRun({ text: pageSuffix, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
       ],
     })],
@@ -1383,7 +1487,7 @@ function buildStaticTocChildren(chapters, tocTitle) {
           spacing: { before: 0, after: 0, line: 240 },
           children: [new TextRun({
             text: chapter.chapter_no,
-            font: FONT,
+            font: MONO_FONT,
             bold: true,
             size: DOCX_PROFILE.text.bodySize,
             color: ACTIVE_THEME.accent,
@@ -1412,7 +1516,7 @@ function buildStaticTocChildren(chapters, tocTitle) {
           spacing: { before: 0, after: 0, line: 240 },
           children: [new TextRun({
             text: String(pageNo),
-            font: FONT,
+            font: MONO_FONT,
             size: DOCX_PROFILE.text.smallSize,
             color: ACTIVE_THEME.muted,
           })],
@@ -1557,7 +1661,6 @@ async function buildDocx(regionCode, brandOverride) {
         },
       },
       headers: { default: buildHeader(ctx) },
-      footers: { default: buildFooter(ctx) },
       children: tocChildren,
     },
   ];
@@ -1585,7 +1688,6 @@ async function buildDocx(regionCode, brandOverride) {
         },
       },
       headers: { default: buildHeader(ctx, chapter) },
-      footers: { default: buildFooter(ctx) },
       children: chapterChildren,
     });
   }
@@ -1597,50 +1699,6 @@ async function buildDocx(regionCode, brandOverride) {
           run: { font: FONT, size: DOCX_PROFILE.text.bodySize },
         },
       },
-      paragraphStyles: [
-        {
-          id: 'Heading1',
-          name: 'Heading 1',
-          basedOn: 'Normal',
-          next: 'Normal',
-          quickFormat: true,
-          run: {
-            size: 34,
-            bold: true,
-            font: FONT,
-            color: ACTIVE_THEME.primary,
-          },
-          paragraph: { spacing: { before: 300, after: 120 }, outlineLevel: 0 },
-        },
-        {
-          id: 'Heading2',
-          name: 'Heading 2',
-          basedOn: 'Normal',
-          next: 'Normal',
-          quickFormat: true,
-          run: {
-            size: 26,
-            bold: true,
-            font: FONT,
-            color: ACTIVE_THEME.primary,
-          },
-          paragraph: { spacing: { before: 200, after: 80 }, outlineLevel: 1 },
-        },
-        {
-          id: 'Heading3',
-          name: 'Heading 3',
-          basedOn: 'Normal',
-          next: 'Normal',
-          quickFormat: true,
-          run: {
-            size: 22,
-            bold: true,
-            font: FONT,
-            color: ACTIVE_THEME.light || '4A4A4A',
-          },
-          paragraph: { spacing: { before: 160, after: 60 }, outlineLevel: 2 },
-        },
-      ],
     },
     numbering: { config: numberingConfigs },
     sections,

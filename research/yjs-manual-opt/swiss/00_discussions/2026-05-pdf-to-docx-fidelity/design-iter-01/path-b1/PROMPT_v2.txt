@@ -1,0 +1,33 @@
+You are Codex. Continue design-iter-01 work. Previous run exit 1 mid-task.
+
+CURRENT BEST: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\path-claude-main\iter-02\output.docx
+  - 15 pages, visual diff 14.14, fonts now match PDF (MicrosoftYaHei + Arial Black + Courier New)
+  - But still differences vs PDF for design polish
+WORKDIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\path-b1
+
+READ FIRST:
+- D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\DESIGN_BRIEF.md
+- D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\path-claude-main\iter-02\spans.json
+
+GOAL: Continue improving visual fidelity in swiss/tools/export-docx.js. Target visual diff < 13.0 AND visually closer to PDF aesthetic.
+
+CURRENT REMAINING ISSUES (manual eye check):
+- Cover product image position slightly off (should be centered higher, currently bottom-left)
+- TOC chapter numbers should be Arial Black not Arial regular (some still ArialMT)
+- Chapter heading left bar might be too thick or wrong color
+- Warning box icon position needs check
+- Page 8 (specs table) - PDF has subtle row heights, check spacing
+
+DO:
+1. Edit swiss/tools/export-docx.js
+2. Run: node swiss/tools/export-docx.js --product swiss/products/imt050 --region cn --brand wevac
+3. Copy output to design-iter-01/path-b1/iter-NN/output.docx
+4. Score: PYTHONUTF8=1 python ../../score_candidate.py iter-NN/output.docx --target D:/work/private/yjsplan/research/yjs-manual-opt/swiss/output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+5. Extract spans: PYTHONUTF8=1 python ../../extract_spans.py iter-NN/_score_tmp/pdf/output.pdf iter-NN/spans.json
+6. Compare fonts to target
+
+STOP after 3 iterations or when visual diff < 13.0. Write iter-NN/notes.md after each iter. Write final-recommendation.md at end.
+
+IMPORTANT: Don't fail with exit 1. If you finish your changes, write a one-line summary to STATUS.md and exit cleanly.
+
+START NOW.

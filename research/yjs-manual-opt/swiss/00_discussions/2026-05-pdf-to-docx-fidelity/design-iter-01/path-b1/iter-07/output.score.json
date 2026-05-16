@@ -1,0 +1,47 @@
+{
+  "candidate": "iter-07\\output.docx",
+  "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "pages": {
+    "target": 15,
+    "candidate": 15,
+    "ratio": 1.0
+  },
+  "text": {
+    "target_chars": 4620,
+    "candidate_chars": 4445,
+    "ratio": 0.96
+  },
+  "editability": {
+    "wt_count": 361,
+    "txbx_count": 0,
+    "editable_pct": 100.0
+  },
+  "visual": {
+    "per_page_mean_diff": [
+      2.73,
+      4.79,
+      17.85,
+      9.24,
+      14.3,
+      17.91,
+      18.66,
+      13.9,
+      17.58,
+      15.44,
+      19.7,
+      11.92,
+      14.54,
+      24.68,
+      6.85
+    ],
+    "overall_mean_diff": 14.01,
+    "max_page_diff": 24.68
+  },
+  "pass": {
+    "pages": true,
+    "text": true,
+    "editable": true,
+    "visual": true,
+    "overall": true
+  }
+}

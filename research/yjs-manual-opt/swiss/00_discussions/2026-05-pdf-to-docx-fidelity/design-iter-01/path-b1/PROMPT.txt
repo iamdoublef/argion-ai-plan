@@ -1,0 +1,76 @@
+You are Codex working on Path B1 of a SECOND BIG ROUND (design-iter-01) of PDF→Word fidelity.
+
+CONTEXT: First round produced visually OK but the customer rejected it as "no design sense, doesn't match PDF aesthetic". You must fix specific PRECISE design errors that were measured against the target PDF.
+
+MANDATORY READING (do NOT skip):
+1. D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\DESIGN_BRIEF.md
+2. D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\design_diff_report.md
+3. D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\target_spans.json (precise PDF metadata)
+
+YOUR SLOT: B1 — keep using the docx-skill strict toolchain (modify swiss/tools/export-docx.js).
+WORK DIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\path-b1
+
+SPECIFIC FIXES TO MAKE (precise, not approximate):
+
+P0 FONTS (every page is wrong currently):
+- swiss/tools/export-docx.js DEFAULT_DOCX_THEME:
+  - cjkFont: 'Microsoft YaHei'    (was '宋体' — LibreOffice falls back to SimSun, breaking the look)
+  - titleCjkFont: 'Microsoft YaHei'
+  - latinFont: 'Arial'
+  - titleLatinFont: 'Arial Black' (PDF uses Arial-Black for big titles)
+- Add a monoFont 'Courier New' field, use it for chapter numbers (01-10) and MODEL labels
+- Wherever you set <w:rFonts ...> in OOXML output, ensure eastAsia attr is "Microsoft YaHei" not 宋体
+
+P0 FONT SIZES (currently 7-15% too big):
+- DOCX_PROFILE.text: bodySize: 14 (was 16), subtitleSize: 14, sectionTitleSize: 18 (was 20),
+  chapterNumberSize: 27 (Arial Black 13.5pt), chapterTitleSize: 22 (was 24),
+  coverProductSize: 36 (制冰机 18pt), coverTypeSize: 11, smallSize: 10 (was 13)
+
+P0 COVER COLOR ERROR (重大设计错误):
+- "威富可" must be BLACK (#1A1A1A) with a SHORT red horizontal line above it
+- Currently the cover paints "威富可" in RED — this is wrong, PDF uses BLACK
+- The RED accent in PDF is reserved for "MODEL IMT050" and the bottom divider
+- Look at the page-1 spans: target accent_red_text is ['MODEL IMT050'], winner is ['威富可'] — flip it back
+
+P1 GRAY COLOR:
+- light/muted/headerText/footerText: #8E8E93 (was #8A8A8A) — match PDF measurement
+
+P1 TABLE STYLING (huge drawings gap on pages 8, 11, 14, 15):
+- Add zebra striping: every odd row has fill #F4F4F4 (light gray)
+- Change cell borders: top/bottom only, no left/right (PDF uses horizontal-only table style)
+- Table header: dark fill #1A1A1A with white text (already done partly)
+- Tighten cell margins to {top:30, bottom:30, left:60, right:60} half-DXA
+
+P2 CHAPTER HEADING:
+- chapterBar size 12→6 (thinner, ~0.75pt), color stays black
+- chapterNumber font use Arial Black + Courier New mix? Look at PDF: it's Arial-Black 13.5pt
+
+P2 WARNING BOX ICON:
+- Add a ▲ red triangle (size 18, color #E63946) before WARNING title
+- Same for CAUTION (different color)
+- Same for NOTICE (▌or ℹ icon)
+
+ITERATION LOOP:
+For each iter:
+1. Edit swiss/tools/export-docx.js (or copy to design-iter-01/path-b1/iter-NN/code/ if you want to keep the master pristine — your call)
+2. Run: node swiss/tools/export-docx.js --product swiss/products/imt050 --region cn --brand wevac
+3. The output goes to swiss/output/imt050-wevac-eu-cn.docx
+4. Copy to design-iter-01/path-b1/iter-NN/output.docx
+5. Run score:
+   PYTHONUTF8=1 python ../../score_candidate.py iter-NN/output.docx --target D:/work/private/yjsplan/research/yjs-manual-opt/swiss/output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+6. Run extract_spans to verify fonts:
+   PYTHONUTF8=1 python ../../extract_spans.py iter-NN/pdf/output.pdf iter-NN/spans.json
+   Then check: fonts should include MicrosoftYaHei (or "Microsoft YaHei" — depends on PDF metadata), Arial-Black, CourierNewPSMT
+7. Render side-by-side and READ the images (in your tool environment) to verify aesthetics
+
+PASS CRITERIA (this round):
+- Font diff: winner has MicrosoftYaHei / Arial Black / Courier New (not SimSun/SimHei/Arial only)
+- Body size: 7.0-7.5pt (not 8.0)
+- Cover: "威富可" black, "MODEL IMT050" red
+- Tables: zebra + horizontal-only borders + dark header
+- Visual: side-by-side images look like the same manual at first glance
+
+DON'T STOP until pass criteria met. Iterate as many times as needed.
+If you run out of API budget or quota, write a status file in path-b1/STATUS.md and stop cleanly so the next session can resume.
+
+START NOW.
