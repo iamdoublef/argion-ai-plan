@@ -1,0 +1,33 @@
+You are Codex doing design-iter-07. Previous best (LEGAL, no image hack): design-iter-05/path-codex/iter-04 with cover dash trimmed = W12, visual 10.31 / max 17.67.
+
+⚠️ HARD CONSTRAINT — anti-cheat enforced by score_candidate.py:
+- wt_count ≥ 200 (now requires real text nodes)
+- text_ratio ≤ 1.20 (no alt-text bloat)
+- image_hack_detected must be false (no page-as-image embed)
+- editable_pct must show 100%
+
+The Customer keeps rejecting saying "no aesthetic". Push as far as possible WHILE STAYING LEGAL.
+
+GOAL: visual < 9.0 AND max < 14.0 OR achieve max < 14 even if overall stays ~10.
+
+STARTING POINT: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-05\path-codex\build_b2_docx.py (cover dash already trimmed to ━━)
+
+WORKDIR: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-07\path-codex
+
+Per-page targets (W12 current → goal):
+- p3 (01 安全须知): 13.81 → <11 — bullet indent + WARNING box title spacing
+- p9 (06 操作指引): 13.05 → <11 — step badge size / position
+- p10 (06 续): 11.06 → <10
+- p11 (07 故障排除): 12.36 → <11 — table internal padding
+- p13 (09 安装运输): 13.57 → <11 — bullet line-height
+- p14 (10 保修): 17.67 → <14 — table internal spacing (be careful: row_height changes can push max higher elsewhere)
+
+PER ITER:
+1. python build_b2_docx.py iter-N/output.docx
+2. PYTHONUTF8=1 python ../../score_candidate.py iter-N/output.docx --target ../../../../../output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+3. Verify in score json: editable_pct=100, wt_count≥300, image_hack_detected=false, text_ratio≤1.20
+4. If REGRESS overall, REVERT
+5. Stop when visual<9 AND max<14, OR after 8 iters
+
+Write notes.md per iter, STATUS.md at end.
+START NOW.
