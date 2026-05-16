@@ -1,0 +1,33 @@
+You are Codex doing design-iter-09. Customer keeps rejecting (10+ rounds). Push as hard as possible LEGALLY.
+
+Current W14: design-iter-08/path-codex/iter-10/output.docx → visual 9.84, max 14.60.
+
+⚠️ Anti-cheat enforced: wt_count≥300, text_ratio≤1.20, no image hack.
+
+NEW GOAL: visual < 8.5 AND max < 13.0. Per-page worst targets:
+- p3 (13.46) → <11
+- p9 (13.37) → <11
+- p11 (12.39) → <11
+- p13 (13.09) → <11
+- p14 (14.60) → <12
+
+STARTER: design-iter-08/path-codex/build_b2_docx.py (now with iter-10 tweaks)
+WORKDIR: design-iter-09/path-codex
+
+Strategy:
+- p3 WARNING box: try paragraph_format.line_spacing 1.20 for bullets
+- p9/p10 step list: tighten cell margin around badge, check step number position
+- p11 troubleshooting table: cell horizontal-only borders refine
+- p13 install/storage: WEEE notice box height
+- p14 warranty card area: very fine tuning to match PDF row spacing
+
+Do 6-10 iter, one focused change each. Revert if regression > 0.1.
+PYTHONUTF8=1 required. STATUS.md when done.
+
+Inputs:
+- Target PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf
+- Target spans: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\design-iter-01\target_spans.json
+- Scoring: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\score_candidate.py
+- Baseline: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\baseline\target_png
+
+START NOW.
