@@ -1,0 +1,23 @@
+You are Codex doing design-iter-17. W22 = 9.51 / 12.89, 24 winners累积. PDF bullet 实测是红色 ● Arial-Black 5.25pt (W22 已实现).
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+GOAL: visual < 9.
+
+CURRENT W22 PER-PAGE bottleneck:
+- 几乎所有页都在 8-12 区间，没有明显离群点
+- Need broad small improvements
+
+Try:
+1. Header/footer hairline thickness — match PDF exact (PDF uses ~0.5pt? 1pt?)
+2. Margin micro-adjust top by ±0.2mm
+3. Table cell shading color exact match (#F2F2F7 vs current #F4F4F4 or similar)
+4. Section title underline thickness/color
+5. Step number badge — size 13.5pt × 13.5pt (matches PDF spec, possibly smaller now)
+6. WARNING box title 警告 size — PDF measures 7.5pt MicrosoftYaHei-Bold
+
+STARTER: design-iter-16/path-codex/build_b2_docx.py
+WORKDIR: design-iter-17/path-codex
+
+PER ITER ONE change. Up to 8 iter. PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual. START NOW.
