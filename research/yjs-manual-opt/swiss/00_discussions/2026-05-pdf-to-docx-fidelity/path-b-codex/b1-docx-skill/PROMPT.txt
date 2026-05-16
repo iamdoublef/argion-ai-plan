@@ -1,0 +1,57 @@
+You are Codex. Goal: produce an editable Word document (.docx) that visually matches a reference PDF.
+
+WORKING DIRECTORY (cd here first):
+D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\path-b-codex\b1-docx-skill
+
+CRITICAL CONSTRAINT: The end customer wants a WORD file they can locally edit. So:
+- Every paragraph in the output .docx must be a real Word paragraph (not a text frame, not an image-of-text).
+- Tables must be real Word tables.
+- Images must be real embedded image runs.
+- pdf2docx is FORBIDDEN — it produces text frames that customers cannot easily edit.
+
+CONSTRAINT (this slot only): You must use the Anthropic docx skill scripts:
+  C:\Users\iamdo\.claude\skills\docx\scripts\office\unpack.py
+  C:\Users\iamdo\.claude\skills\docx\scripts\office\pack.py
+  C:\Users\iamdo\.claude\skills\docx\scripts\office\soffice.py
+  C:\Users\iamdo\.claude\skills\docx\scripts\office\validate.py
+Reading: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\BRIEF_SHARED.md
+Reading: C:\Users\iamdo\.claude\skills\docx\SKILL.md
+
+INPUTS:
+- Target PDF:           D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf  (15 pages, A5)
+- Source HTML:          D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.html
+- Source JSON content:  D:\work\private\yjsplan\research\yjs-manual-opt\swiss\products\imt050\product.json
+- Source JSON content:  D:\work\private\yjsplan\research\yjs-manual-opt\swiss\products\imt050\images.json
+- Source images dir:    D:\work\private\yjsplan\research\yjs-manual-opt\swiss\products\imt050\images\
+- Existing problem doc: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.docx  (24 pages, needs slimming)
+- Existing generator:   D:\work\private\yjsplan\research\yjs-manual-opt\swiss\tools\export-docx.js
+
+BASELINE DIAGNOSIS (already done — DON'T redo):
+- Existing DOCX produces 24 pages when converted to PDF; target is 15.
+- TOC blank when LibreOffice converts (docx-js TOC is a Word field, not updated headless).
+- Chapter title pages are nearly empty (forced page break + heading occupies its own page).
+- Cover: brand name too large, missing letter-spacing, product image oversized, disclaimer missing.
+- Cells/alert boxes use 70-DXA top/bottom margins which is too generous.
+
+COMPARISON TOOL (use it to self-check):
+  python D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\compare_pdfs.py docx2pdf <your.docx> <pdf_dir>
+  python <...>\compare_pdfs.py render <pdf_dir>\<name>.pdf <png_dir> --dpi 150
+  python <...>\compare_pdfs.py compare <...>\baseline\target_png <png_dir> <side_dir> --label-a TARGET --label-b B1
+
+ITERATE FOREVER (or until pass): create iter-01, iter-02, ... folders. Each iter must:
+1. Have a plan.md describing what to change vs previous iter
+2. Have output.docx
+3. Have pdf/, png/, side_by_side/ subdirs from compare tool
+4. Have notes.md with what you observed and what's still wrong
+
+PASS CRITERIA (all must be true):
+- DOCX→PDF ≤ 16 pages (target 15)
+- All visible text from target PDF is in DOCX as editable paragraphs (verify by unpack.py — look at document.xml, every text must be in <w:t>, not <wp:txbx>)
+- Chapter numbers, accent red lines, alert boxes, tables visibly close to target positions
+- TOC has visible entries (not blank)
+
+WHEN DONE: write a final-recommendation.md and a WORKFLOW.md that gives reproducible commands.
+
+If you get stuck for more than 2 iters without progress, look up techniques on x.com, reddit.com, or anthropic docs.
+
+START NOW. Work efficiently. Be terse in commentary but thorough in execution.

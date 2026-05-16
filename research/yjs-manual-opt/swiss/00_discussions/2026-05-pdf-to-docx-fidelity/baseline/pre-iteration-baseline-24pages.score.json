@@ -1,0 +1,47 @@
+{
+  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\final\\0-pre-iteration-baseline-24pages.docx",
+  "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "pages": {
+    "target": 15,
+    "candidate": 24,
+    "ratio": 1.6
+  },
+  "text": {
+    "target_chars": 4620,
+    "candidate_chars": 4955,
+    "ratio": 1.07
+  },
+  "editability": {
+    "wt_count": 327,
+    "txbx_count": 0,
+    "editable_pct": 100.0
+  },
+  "visual": {
+    "per_page_mean_diff": [
+      5.27,
+      4.22,
+      17.93,
+      12.17,
+      13.78,
+      19.44,
+      12.91,
+      22.21,
+      21.61,
+      10.33,
+      24.61,
+      18.25,
+      13.87,
+      27.74,
+      7.26
+    ],
+    "overall_mean_diff": 15.44,
+    "max_page_diff": 27.74
+  },
+  "pass": {
+    "pages": false,
+    "text": true,
+    "editable": true,
+    "visual": true,
+    "overall": false
+  }
+}

@@ -15,7 +15,21 @@
       "WebFetch(domain:asq.org)",
       "WebFetch(domain:www.investopedia.com)",
       "WebFetch(domain:www.sciencedirect.com)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.template.net)",
+      "WebFetch(domain:www.smartsheet.com)",
+      "WebFetch(domain:create.microsoft.com)",
+      "WebFetch(domain:www.vertex42.com)",
+      "WebFetch(domain:helpjuice.com)",
+      "WebFetch(domain:www.sampletemplates.com)",
+      "WebFetch(domain:www.slite.com)",
+      "WebFetch(domain:www.freepik.com)",
+      "WebFetch(domain:m365.cloud.microsoft)",
+      "WebFetch(domain:www.klariti.com)",
+      "WebFetch(domain:sonat.com)",
+      "WebFetch(domain:manuals.plus)",
+      "WebFetch(domain:visme.co)"
     ]
-  }
+  },
+  "prefersReducedMotion": false
 }

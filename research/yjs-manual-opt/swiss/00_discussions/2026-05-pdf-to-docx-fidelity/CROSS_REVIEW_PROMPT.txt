@@ -1,0 +1,37 @@
+You are Codex doing cross-review of 4 competing DOCX candidates for an A5 Chinese product manual (IMT050 ice maker).
+
+CUSTOMER NEED:
+- They need an EDITABLE Word .docx (not pixel-perfect PDF clone)
+- They want to make small local edits in Word, so all text must be real paragraphs (not text frames)
+- Visual should be close to the reference PDF, but content editability is more important
+
+REFERENCE PDF: D:\work\private\yjsplan\research\yjs-manual-opt\swiss\output\imt050-wevac-eu-cn.pdf (15 pages, A5)
+
+CANDIDATES TO EVALUATE (all passed automated tests):
+
+| Slot | DOCX path | Visual diff | Method |
+|---|---|---|---|
+| B1 iter-03 | path-b-codex\b1-docx-skill\iter-03\output.docx | 13.59 | Modified swiss\tools\export-docx.js (docx-js) with compact spacing + static TOC |
+| B2 iter-03 | path-b-codex\b2-custom\iter-03\output.docx | 14.57 | Custom python-docx generator that parses the HTML and rebuilds the document |
+| A1 iter-02 | path-a-claude\a1-docx-skill\iter-02\output.docx | 14.71 | Used docx skill scripts (unpack/edit XML/pack) on the baseline |
+| A2 iter-02 | path-a-claude\a2-custom\iter-02\output.docx | 16.50 | Custom python-docx + pandoc approach |
+
+YOUR TASK:
+1. For each candidate, open the corresponding side_by_side/ folder and review side-01..side-15.png. Check visual fidelity to the target.
+2. Unpack each candidate (`python C:\Users\iamdo\.claude\skills\docx\scripts\office\unpack.py <docx> <out>`) and inspect document.xml: confirm text is in `<w:t>` and there are no `<wp:txbx>` / `<v:textbox>`.
+3. Pick the winner — the one a customer would prefer for editing. Justify with 3-5 bullets.
+4. Suggest 1-2 improvements that would close the remaining visual gap.
+
+DELIVERABLE: Write a markdown file at:
+D:\work\private\yjsplan\research\yjs-manual-opt\swiss\00_discussions\2026-05-pdf-to-docx-fidelity\CROSS_REVIEW.md
+
+Sections:
+- Winner: <candidate id>
+- Why: <3-5 bullets>
+- Runner-up: <candidate id>
+- Suggested improvements: <1-2 bullets>
+- Risk / caveats: <if any>
+
+Keep it terse. ~30 lines.
+
+Use the work/ paths above.

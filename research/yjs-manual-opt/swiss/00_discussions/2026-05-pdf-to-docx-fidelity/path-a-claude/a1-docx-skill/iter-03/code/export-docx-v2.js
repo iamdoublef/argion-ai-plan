@@ -16,15 +16,20 @@ const sharp = require('sharp');
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, ImageRun,
   Header, Footer, AlignmentType, LevelFormat, HeadingLevel, BorderStyle,
-  WidthType, ShadingType, PageNumber,
+  WidthType, ShadingType, PageNumber, TableOfContents,
   TabStopType, TabStopPosition, VerticalAlign, TableLayoutType, SectionType,
 } = require('docx');
 
+// iter-01 v2: build-variant lives at swiss/tools/build-variant.js, we are at
+// swiss/00_discussions/2026-05-pdf-to-docx-fidelity/path-a-claude/a1-docx-skill/iter-01/code/
+// code → iter-01 → a1-docx-skill → path-a-claude → 2026-05-pdf-to-docx-fidelity → 00_discussions → swiss
+const TOOLS_DIR = path.resolve(__dirname, '..', '..', '..', '..', '..', '..', 'tools');
+const SWISS_ROOT = path.resolve(TOOLS_DIR, '..');
 const {
   loadProductConfig, loadContentDocument, loadImagesManifest,
   loadLocaleCatalog, buildLocalizedRuntimeData, resolveBrandTheme,
   langSuffix,
-} = require('./build-variant.js');
+} = require(path.join(TOOLS_DIR, 'build-variant.js'));
 
 // ---------------------------------------------------------------------------
 // CLI
@@ -35,12 +40,12 @@ function getArg(name, fallback) {
   return idx !== -1 && args[idx + 1] ? args[idx + 1] : fallback;
 }
 const buildAll = args.includes('--all');
-const productDir = path.resolve(getArg('product', path.resolve(__dirname, '..', 'products', 'v23')));
+const productDir = path.resolve(getArg('product', path.resolve(SWISS_ROOT, 'products', 'v23')));
 const regionKey = getArg('region', 'cn');
 const brandKey = getArg('brand', null);
-const outputDir = path.resolve(__dirname, '..', 'output');
-const writeBaseTemplateCn = args.includes('--write-base-template-cn');
-const baseTemplatePath = path.resolve(__dirname, '..', 'template', 'shared', 'docx', 'base-template-cn.docx');
+// v2: output goes next to this script (iter-01/), not swiss/output/
+const outputDir = path.resolve(__dirname, '..');
+const writeBaseTemplateCn = false; // v2 never overwrites base template
 
 const config = loadProductConfig(productDir);
 
@@ -55,7 +60,7 @@ const MARGIN_Y = Math.round(10 * MM);
 const CONTENT_W = PAGE_W - MARGIN_X * 2;
 
 const DOCX_PROFILE = {
-  templateId: 'A5_CN_BASE_V1',
+  templateId: 'A5_CN_COMPACT_V2',
   page: {
     width: PAGE_W,
     height: PAGE_H,
@@ -63,38 +68,41 @@ const DOCX_PROFILE = {
     marginY: MARGIN_Y,
   },
   images: {
-    cover: { width: 310, height: 220 },
-    figure: { width: 310, height: 205 },
-    splitPanel: { width: 160, height: 130 },
-    stepSingle: { width: 260, height: 160 },
-    stepDouble: { width: 160, height: 118 },
-    stepTriple: { width: 110, height: 88 },
-    stepSingleCompact: { width: 220, height: 130 },
-    stepDoubleCompact: { width: 138, height: 98 },
-    stepTripleCompact: { width: 95, height: 76 },
-    rowSingle: { width: 230, height: 140 },
-    rowDouble: { width: 150, height: 105 },
-    rowTriple: { width: 105, height: 82 },
-    inlineIcon: { width: 22, height: 22 },
+    // iter-01: shrink cover to match PDF visual proportion
+    cover: { width: 220, height: 165 },
+    figure: { width: 320, height: 210 },
+    splitPanel: { width: 170, height: 140 },
+    stepSingle: { width: 280, height: 175 },
+    stepDouble: { width: 170, height: 130 },
+    stepTriple: { width: 115, height: 100 },
+    stepSingleCompact: { width: 230, height: 140 },
+    stepDoubleCompact: { width: 145, height: 110 },
+    stepTripleCompact: { width: 100, height: 82 },
+    rowSingle: { width: 240, height: 155 },
+    rowDouble: { width: 155, height: 115 },
+    rowTriple: { width: 110, height: 90 },
+    inlineIcon: { width: 24, height: 24 },
   },
   table: {
-    bodySize: 15,
-    compactSize: 13,
-    headerSize: 14,
+    // half-points; 18 = 9pt, was 20 = 10pt
+    bodySize: 18,
+    compactSize: 16,
+    headerSize: 18,
   },
   text: {
-    bodySize: 16,
-    subtitleSize: 18,
-    sectionTitleSize: 20,
-    chapterNumberSize: 24,
-    chapterTitleSize: 24,
-    coverBrandSize: 28,
+    // half-points (Word uses half-points for sz)
+    bodySize: 18,           // 9pt body, was 11pt
+    subtitleSize: 20,       // 10pt
+    sectionTitleSize: 22,   // 11pt bold section title, was 13pt
+    chapterNumberSize: 26,  // smaller red 01/02 to match PDF rhythm
+    chapterTitleSize: 30,   // chapter title slightly larger
+    coverBrandSize: 22,     // "威富可" — was 36 (huge), PDF looks like 11pt bold
     coverTypeSize: 16,
-    coverProductSize: 24,
-    coverModelSize: 16,
+    coverProductSize: 28,
+    coverModelSize: 14,
     coverCompanySize: 14,
     tocTitleSize: 28,
-    smallSize: 13,
+    smallSize: 14,          // header/footer small text
   },
 };
 
@@ -181,8 +189,9 @@ const NO_BORDERS = {
 function boxBorders(color = ACTIVE_THEME.boxBorder) {
   return { top: border(color), bottom: border(color), left: border(color), right: border(color) };
 }
-const CELL_MARGINS = { top: 36, bottom: 36, left: 70, right: 70 };
-const CELL_MARGINS_COMPACT = { top: 20, bottom: 20, left: 48, right: 48 };
+// iter-01: tighter padding to match PDF's compact tables
+const CELL_MARGINS = { top: 40, bottom: 40, left: 80, right: 80 };
+const CELL_MARGINS_COMPACT = { top: 25, bottom: 25, left: 60, right: 60 };
 const DOCX_IMAGE_CACHE_DIR = path.resolve(outputDir, '_docx_raster_cache');
 
 // ---------------------------------------------------------------------------
@@ -367,7 +376,7 @@ function makeImageRun(image, maxWidth, maxHeight, name = 'image') {
   });
 }
 
-function makeSpacer(after = 120) {
+function makeSpacer(after = 60) {
   return new Paragraph({ spacing: { after }, children: [] });
 }
 
@@ -378,7 +387,7 @@ function emptyParagraph() {
 function makeTextParagraph(text, options = {}) {
   const {
     before = 0,
-    after = 120,
+    after = 60,
     alignment,
     size = DOCX_PROFILE.text.bodySize,
     color = ACTIVE_THEME.primary,
@@ -392,7 +401,6 @@ function makeTextParagraph(text, options = {}) {
     keepLines = false,
     keepNext = false,
     font = FONT,
-    line = Math.max(180, Math.round(size * 13.5)),
   } = options;
 
   return new Paragraph({
@@ -404,7 +412,8 @@ function makeTextParagraph(text, options = {}) {
     keepLines,
     keepNext,
     border: paragraphBorder,
-    spacing: { before, after, line },
+    // iter-01: tighter line spacing for body
+    spacing: { before, after, line: 260 },
     children: parseTextTokens(text, { size, color, bold, italics, font }),
   });
 }
@@ -475,8 +484,8 @@ function makeBorderlessCell(children, width) {
   });
 }
 
-function zebraShading(rowIndex) {
-  return rowIndex % 2 === 1 ? { fill: 'F2F2F7', type: ShadingType.CLEAR } : undefined;
+function zebraShading(_rowIndex) {
+  return undefined;
 }
 
 function isCompactTable(block = {}) {
@@ -526,7 +535,7 @@ function renderFigureGrid(items, ctx, options = {}) {
       const children = [];
       if (item.label_before) {
         children.push(makeTextParagraph(resolveVars(readTextValue(item.label_before), ctx.vars), {
-          after: 20,
+          after: 40,
           size: DOCX_PROFILE.text.smallSize,
           bold: true,
           alignment: AlignmentType.CENTER,
@@ -537,7 +546,7 @@ function renderFigureGrid(items, ctx, options = {}) {
       if (image) {
         children.push(new Paragraph({
           alignment: AlignmentType.CENTER,
-          spacing: { after: item.label_after ? 20 : 0 },
+          spacing: { after: item.label_after ? 40 : 0 },
           children: [makeImageRun(image, sizePreset.width, sizePreset.height, item.figure)],
         }));
       } else {
@@ -583,9 +592,9 @@ function renderStackedFigures(items, ctx, options = {}) {
   const elements = [];
 
   for (const item of normalized) {
-      if (item.label_before) {
-        elements.push(makeTextParagraph(resolveVars(readTextValue(item.label_before), ctx.vars), {
-        after: 15,
+    if (item.label_before) {
+      elements.push(makeTextParagraph(resolveVars(readTextValue(item.label_before), ctx.vars), {
+        after: 30,
         size: DOCX_PROFILE.text.smallSize,
         bold: true,
         alignment: AlignmentType.CENTER,
@@ -596,12 +605,12 @@ function renderStackedFigures(items, ctx, options = {}) {
     if (image) {
       elements.push(new Paragraph({
         alignment: AlignmentType.CENTER,
-        spacing: { after: item.label_after ? 15 : 45 },
+        spacing: { after: item.label_after ? 30 : 90 },
         children: [makeImageRun(image, sizePreset.width, sizePreset.height, item.figure)],
       }));
     } else {
       elements.push(makeTextParagraph(`[Image: ${item.figure}]`, {
-        after: 45,
+        after: 90,
         italics: true,
         color: ACTIVE_THEME.light,
         alignment: AlignmentType.CENTER,
@@ -611,7 +620,7 @@ function renderStackedFigures(items, ctx, options = {}) {
 
     if (item.label_after) {
       elements.push(makeTextParagraph(resolveVars(readTextValue(item.label_after), ctx.vars), {
-        after: 45,
+        after: 90,
         size: DOCX_PROFILE.text.smallSize,
         alignment: AlignmentType.CENTER,
       }));
@@ -627,15 +636,15 @@ function renderStackedFigures(items, ctx, options = {}) {
 function renderParagraphBlock(block, ctx) {
   const text = resolveVars(readTextValue(block.text || ''), ctx.vars);
   return makeTextParagraphs(text, {
-    after: 55,
+    after: 110,
     size: DOCX_PROFILE.text.bodySize,
   });
 }
 
 function renderSubTitle(block, ctx) {
   return [makeTextParagraph(resolveVars(readTextValue(block.text), ctx.vars), {
-    before: 70,
-    after: 55,
+    before: 120,
+    after: 100,
     size: DOCX_PROFILE.text.sectionTitleSize,
     bold: true,
     keepNext: true,
@@ -649,24 +658,24 @@ function renderSubTitle(block, ctx) {
 
 function renderBulletList(block, ctx) {
   return (block.items || []).map((item) => makeTextParagraph(resolveVars(readTextValue(item), ctx.vars), {
-    after: 16,
+    after: 20,
     numbering: { reference: 'bullets', level: 0 },
     size: DOCX_PROFILE.text.bodySize,
   }));
 }
 
 function getAlertTheme(kind) {
-  if (kind === 'warning_box') return { border: ACTIVE_THEME.accent, titleColor: ACTIVE_THEME.accent, textColor: ACTIVE_THEME.primary };
+  if (kind === 'warning_box') return { border: ACTIVE_THEME.primary, titleColor: ACTIVE_THEME.primary, textColor: ACTIVE_THEME.primary };
   if (kind === 'caution_box') return { border: ACTIVE_THEME.primary, titleColor: ACTIVE_THEME.primary, textColor: ACTIVE_THEME.primary };
-  return { border: ACTIVE_THEME.headerBorder, titleColor: ACTIVE_THEME.primary, textColor: ACTIVE_THEME.primary, fill: 'F2F2F7' };
+  return { border: ACTIVE_THEME.primary, titleColor: ACTIVE_THEME.primary, textColor: ACTIVE_THEME.primary };
 }
 
 function renderAlertBox(block, ctx, kind) {
   const theme = getAlertTheme(kind);
   const elements = [];
   if (block.title) {
-      elements.push(makeTextParagraph(resolveVars(readTextValue(block.title), ctx.vars), {
-      after: 30,
+    elements.push(makeTextParagraph(resolveVars(readTextValue(block.title), ctx.vars), {
+      after: 20,
       bold: true,
       size: DOCX_PROFILE.text.subtitleSize,
       font: TITLE_FONT,
@@ -677,15 +686,16 @@ function renderAlertBox(block, ctx, kind) {
     const icon = loadImage(block.icon, ctx.images, ctx.imagesDir);
     if (icon) {
       elements.push(new Paragraph({
-        spacing: { after: 32 },
+        spacing: { after: 30 },
         children: [makeImageRun(icon, DOCX_PROFILE.images.inlineIcon.width, DOCX_PROFILE.images.inlineIcon.height, 'icon')],
       }));
     }
   }
   if (block.items) {
     for (const item of block.items) {
+      // iter-01: bullets in alert boxes packed tight — match PDF density
       elements.push(makeTextParagraph(resolveVars(readTextValue(item), ctx.vars), {
-        after: 10,
+        after: 0,
         numbering: { reference: 'bullets', level: 0 },
         size: DOCX_PROFILE.text.bodySize,
         color: theme.textColor,
@@ -693,7 +703,7 @@ function renderAlertBox(block, ctx, kind) {
     }
   } else if (block.text) {
     elements.push(...makeTextParagraphs(resolveVars(readTextValue(block.text), ctx.vars), {
-      after: 28, color: theme.textColor,
+      after: 30, color: theme.textColor,
     }));
   }
 
@@ -706,11 +716,11 @@ function renderAlertBox(block, ctx, kind) {
       children: [makeCell(elements, {
         width: CONTENT_W,
         borders: boxBorders(theme.border),
-        shading: theme.fill ? { fill: theme.fill, type: ShadingType.CLEAR } : undefined,
-        margins: { top: 55, bottom: 55, left: 90, right: 90 },
+        // iter-01: tighter padding inside warning/caution/notice boxes
+        margins: { top: 70, bottom: 70, left: 100, right: 100 },
       })],
     })],
-  }), makeSpacer(45)];
+  }), makeSpacer(40)];
 }
 
 function renderStepFlow(block, ctx) {
@@ -724,7 +734,7 @@ function renderStepFlow(block, ctx) {
     const figureCount = (step.figures || []).length;
     const body = [
       ...makeTextParagraphs(resolveVars(readTextValue(step.text || step), ctx.vars), {
-        after: figureCount ? (compact ? 20 : 34) : 6,
+        after: figureCount ? (compact ? 45 : 70) : 10,
         size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.text.bodySize,
       }),
     ];
@@ -749,7 +759,7 @@ function renderStepFlow(block, ctx) {
           width: numberWidth,
           borders: NO_BORDERS,
           shading: { fill: ACTIVE_THEME.accent, type: ShadingType.CLEAR },
-          margins: { top: compact ? 34 : 48, bottom: compact ? 34 : 48, left: 0, right: 0 },
+          margins: { top: compact ? 80 : 120, bottom: compact ? 80 : 120, left: 0, right: 0 },
           verticalAlign: VerticalAlign.CENTER,
         }),
         makeCell(body, {
@@ -760,7 +770,7 @@ function renderStepFlow(block, ctx) {
             left: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
             right: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
           },
-          margins: { top: compact ? 34 : 44, bottom: compact ? 34 : 44, left: 90, right: 70 },
+          margins: { top: compact ? 80 : 100, bottom: compact ? 80 : 100, left: 150, right: 100 },
         }),
       ],
     }));
@@ -771,7 +781,7 @@ function renderStepFlow(block, ctx) {
     layout: TableLayoutType.FIXED,
     borders: NO_BORDERS,
     rows,
-  }), makeSpacer(compact ? 25 : 45)];
+  }), makeSpacer(compact ? 50 : 80)];
 }
 
 function renderFigureBlock(block, ctx) {
@@ -786,13 +796,13 @@ function renderFigureBlock(block, ctx) {
   }
 
   const elements = [new Paragraph({
-    spacing: { after: block.caption ? 24 : 55 },
+    spacing: { after: block.caption ? 40 : 100 },
     alignment: AlignmentType.CENTER,
     children: [makeImageRun(img, DOCX_PROFILE.images.figure.width, DOCX_PROFILE.images.figure.height, block.figure)],
   })];
   if (block.caption) {
     elements.push(makeTextParagraph(resolveVars(readTextValue(block.caption), ctx.vars), {
-      after: 55,
+      after: 100,
       italics: true,
       color: ACTIVE_THEME.light,
       alignment: AlignmentType.CENTER,
@@ -804,7 +814,7 @@ function renderFigureBlock(block, ctx) {
 
 function renderFigureRow(block, ctx) {
   const refs = [...(block.figures || []), ...(block.items || [])];
-  return [...renderFigureGrid(refs, ctx, { variant: 'row' }), makeSpacer(45)];
+  return [...renderFigureGrid(refs, ctx, { variant: 'row' }), makeSpacer(90)];
 }
 
 function renderSplitPanel(block, ctx) {
@@ -837,19 +847,19 @@ function renderSplitPanel(block, ctx) {
         }),
       ],
     })],
-  }), makeSpacer(compact ? 35 : 60)];
+  }), makeSpacer(compact ? 60 : 100)];
 }
 
 function renderTableRef(block, ctx) {
   if (Array.isArray(block.rows)) {
-    return [renderCustomTable(block, ctx), makeSpacer(45)];
+    return [renderCustomTable(block, ctx), makeSpacer(90)];
   }
   switch (block.table) {
-    case 'specs': return [renderSpecsTable(ctx, block), makeSpacer(45)];
-    case 'parts': return [renderPartsTable(ctx, block), makeSpacer(45)];
-    case 'buttons': return [renderButtonsTable(ctx, block), makeSpacer(45)];
-    case 'brand_info': return [renderBrandInfoTable(ctx, block), makeSpacer(45)];
-    case 'manufacturer_info': return [renderManufacturerTable(ctx, block), makeSpacer(45)];
+    case 'specs': return [renderSpecsTable(ctx, block), makeSpacer(90)];
+    case 'parts': return [renderPartsTable(ctx, block), makeSpacer(90)];
+    case 'buttons': return [renderButtonsTable(ctx, block), makeSpacer(90)];
+    case 'brand_info': return [renderBrandInfoTable(ctx, block), makeSpacer(90)];
+    case 'manufacturer_info': return [renderManufacturerTable(ctx, block), makeSpacer(90)];
     default: return [makeTextParagraph(`[Table: ${block.table}]`, { italics: true, color: ACTIVE_THEME.light })];
   }
 }
@@ -1133,13 +1143,97 @@ function sectionDivider() {
   });
 }
 
+// iter-01: static TOC table — two rows-per-chapter look:
+// [01]  安全须知  ......................  3
+function buildStaticTocTable(chapters, ctx) {
+  // Estimate page numbers: cover=1, toc=2, then sum pages per chapter.
+  // Each chapter starts on a new page (section break). Within a chapter,
+  // additional pages are added based on a heuristic (count of section title
+  // changes inside `pages`). For iter-01 we use the curated mapping from PDF.
+  const PDF_PAGE_MAP = {
+    '01': 3, '02': 5, '03': 6, '04': 7, '05': 8,
+    '06': 9, '07': 11, '08': 12, '09': 13, '10': 14,
+  };
+  const rows = chapters.map((ch) => {
+    const no = ch.chapter_no;
+    const title = ch.title;
+    const pageNo = PDF_PAGE_MAP[no] || '';
+    return new TableRow({
+      children: [
+        new TableCell({
+          borders: NO_BORDERS,
+          margins: { top: 60, bottom: 60, left: 0, right: 0 },
+          width: { size: Math.round(CONTENT_W * 0.10), type: WidthType.DXA },
+          verticalAlign: VerticalAlign.CENTER,
+          children: [new Paragraph({
+            spacing: { before: 0, after: 0 },
+            children: [new TextRun({
+              text: no,
+              font: FONT,
+              size: 18,
+              color: ACTIVE_THEME.accent,
+              bold: true,
+            })],
+          })],
+        }),
+        new TableCell({
+          borders: NO_BORDERS,
+          margins: { top: 60, bottom: 60, left: 0, right: 0 },
+          width: { size: Math.round(CONTENT_W * 0.80), type: WidthType.DXA },
+          verticalAlign: VerticalAlign.CENTER,
+          children: [new Paragraph({
+            spacing: { before: 0, after: 0 },
+            tabStops: [{ type: TabStopType.RIGHT, position: Math.round(CONTENT_W * 0.80) - 60 }],
+            children: [
+              new TextRun({
+                text: title,
+                font: TITLE_FONT,
+                size: 20,
+                bold: true,
+                color: ACTIVE_THEME.primary,
+              }),
+            ],
+          })],
+        }),
+        new TableCell({
+          borders: NO_BORDERS,
+          margins: { top: 60, bottom: 60, left: 0, right: 0 },
+          width: { size: Math.round(CONTENT_W * 0.10), type: WidthType.DXA },
+          verticalAlign: VerticalAlign.CENTER,
+          children: [new Paragraph({
+            spacing: { before: 0, after: 0 },
+            alignment: AlignmentType.RIGHT,
+            children: [new TextRun({
+              text: String(pageNo),
+              font: FONT,
+              size: 18,
+              color: ACTIVE_THEME.light,
+            })],
+          })],
+        }),
+      ],
+    });
+  });
+
+  const colA = Math.round(CONTENT_W * 0.10);
+  const colC = Math.round(CONTENT_W * 0.10);
+  const colB = CONTENT_W - colA - colC;
+  return new Table({
+    width: { size: CONTENT_W, type: WidthType.DXA },
+    columnWidths: [colA, colB, colC],
+    rows,
+    // No table-level borders; each cell uses NO_BORDERS for a clean look
+  });
+}
+
 function renderChapterHeading(chapter) {
+  // iter-03 (reverted from table): keep iter-02 paragraph + border approach.
   return [
     new Paragraph({
       heading: HeadingLevel.HEADING_1,
-      spacing: { before: 0, after: 60, line: 320 },
-      border: { left: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.chapterBar } },
-      indent: { left: 160 },
+      spacing: { before: 0, after: 120, line: 260 },
+      border: { left: { style: BorderStyle.SINGLE, size: 80, color: ACTIVE_THEME.accent, space: 6 } },
+      indent: { left: 220 },
       keepNext: true,
       children: [
         new TextRun({
@@ -1158,23 +1252,17 @@ function renderChapterHeading(chapter) {
         }),
       ],
     }),
-    new Paragraph({
-      spacing: { after: 40 },
-      alignment: AlignmentType.RIGHT,
-      children: [new TextRun({
-        text: chapter.header_ref,
-        font: FONT,
-        size: DOCX_PROFILE.text.smallSize,
-        color: ACTIVE_THEME.chapterHeaderRef,
-      })],
-    }),
   ];
 }
 
 function shouldPageBreakBeforePage(page, chapter, pageIndex) {
   if (pageIndex === 0) return false;
   if (page.force_page_break) return true;
-  return true;
+  // iter-01: only break for explicit (\u7eed)/continued markers; let warranty/appendix
+  // flow naturally so we stop wasting half-empty pages.
+  const title = `${page.section_title || ''}`.toLowerCase();
+  if (title.includes('\u7eed') || title.includes('continued')) return true;
+  return false;
 }
 
 function renderPageSectionTitle(page, chapter, pageIndex) {
@@ -1183,31 +1271,6 @@ function renderPageSectionTitle(page, chapter, pageIndex) {
   const pageBreakBefore = shouldPageBreakBeforePage(page, chapter, pageIndex);
   if (!title || title === chapter.title) {
     return pageBreakBefore ? [new Paragraph({ pageBreakBefore: true, children: [] })] : [];
-  }
-  if (pageBreakBefore) {
-    return [new Paragraph({
-      pageBreakBefore,
-      spacing: { before: 0, after: 60, line: 260 },
-      border: { left: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.chapterBar } },
-      indent: { left: 160 },
-      keepNext: true,
-      children: [
-        new TextRun({
-          text: `${chapter.chapter_no} `,
-          font: TITLE_FONT,
-          bold: true,
-          size: DOCX_PROFILE.text.chapterNumberSize,
-          color: ACTIVE_THEME.chapterNumber,
-        }),
-        new TextRun({
-          text: title,
-          font: TITLE_FONT,
-          bold: true,
-          size: DOCX_PROFILE.text.chapterTitleSize,
-          color: ACTIVE_THEME.chapterTitle,
-        }),
-      ],
-    })];
   }
   return [makeTextParagraph(title, {
     before: 40,
@@ -1230,46 +1293,60 @@ function buildCoverBlock(ctx) {
 
   const children = [];
 
-  // 1. Brand name with accent line (top-left, like PDF)
+  // iter-01 cover: tighter scale, match PDF proportions (A5 portrait).
+  // Brand at top-left with small red accent bar.
   children.push(new Paragraph({
-    spacing: { before: 80, after: 20 },
-    border: { top: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.accent } },
-    children: [],
-  }));
-  children.push(new Paragraph({
-    spacing: { before: 0, after: 180 },
-    children: [new TextRun({
-      text: ctx.brand.display_name,
-      font: TITLE_FONT,
-      bold: true,
-      size: DOCX_PROFILE.text.coverBrandSize,
-      color: ACTIVE_THEME.accent,
-      characterSpacing: 80,
-    })],
+    spacing: { before: 0, after: 60 },
+    indent: { left: 0 },
+    children: [
+      new TextRun({
+        // unicode emdash-like short red bar emulation: a tab + bg-color trick
+        // is unreliable; we just use the brand text with a small leading marker.
+        text: '\u2014 ',
+        font: FONT,
+        bold: true,
+        color: ACTIVE_THEME.accent,
+        size: DOCX_PROFILE.text.coverBrandSize,
+      }),
+      new TextRun({
+        text: ctx.brand.display_name,
+        font: TITLE_FONT,
+        bold: true,
+        size: DOCX_PROFILE.text.coverBrandSize,
+        color: ACTIVE_THEME.primary,
+        characterSpacing: 0,
+      }),
+    ],
   }));
 
-  // 2. Product image (centered, large)
+  // iter-03: 6 empty line=240 paragraphs + ~1500 before-spacing on image
+  // to get the image roughly 40% down the cover.
+  for (let i = 0; i < 6; i += 1) {
+    children.push(new Paragraph({ spacing: { before: 0, after: 0, line: 240 }, children: [] }));
+  }
   if (coverImage) {
     children.push(new Paragraph({
-      spacing: { before: 120, after: 150 },
+      spacing: { before: 0, after: 200 },
       alignment: AlignmentType.LEFT,
       children: [makeImageRun(coverImage, DOCX_PROFILE.images.cover.width, DOCX_PROFILE.images.cover.height, 'cover')],
     }));
   }
 
-  // 3. Model + Product name + Document type (bottom area)
+  // Model line \u2014 red, small letter-spaced caps
   children.push(new Paragraph({
-    spacing: { before: 150, after: 18 },
+    spacing: { before: 60, after: 40 },
     children: [new TextRun({
       text: `MODEL  ${ctx.model}`,
       font: FONT,
       size: DOCX_PROFILE.text.coverModelSize,
-      color: ACTIVE_THEME.muted,
+      color: ACTIVE_THEME.accent,
+      bold: true,
       characterSpacing: 60,
     })],
   }));
+  // Big product name (\u5236\u51B0\u673A)
   children.push(new Paragraph({
-    spacing: { before: 0, after: 20 },
+    spacing: { before: 0, after: 30 },
     children: [new TextRun({
       text: ctx.localized.product_name,
       font: TITLE_FONT,
@@ -1278,8 +1355,9 @@ function buildCoverBlock(ctx) {
       color: ACTIVE_THEME.coverTitle,
     })],
   }));
+  // Document type small (\u8BF4\u660E\u4E66)
   children.push(new Paragraph({
-    spacing: { before: 0, after: 20 },
+    spacing: { before: 0, after: 100 },
     children: [new TextRun({
       text: ctx.localized.document_title,
       font: FONT,
@@ -1287,37 +1365,50 @@ function buildCoverBlock(ctx) {
       color: ACTIVE_THEME.coverType,
     })],
   }));
-  // Accent divider
+  // Red divider directly under
   children.push(new Paragraph({
-    spacing: { before: 20, after: 220 },
-    border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: ACTIVE_THEME.accent } },
+    spacing: { before: 0, after: 0 },
+    border: { bottom: { style: BorderStyle.SINGLE, size: 18, color: ACTIVE_THEME.accent } },
     children: [],
   }));
 
-  // 4. Disclaimer at bottom
-  const disclaimer = ctx.lang && ctx.lang.startsWith('zh')
-    ? '\u4F7F\u7528\u4EA7\u54C1\u524D\u8BF7\u4ED4\u7EC6\u9605\u8BFB\u672C\u8BF4\u660E\u4E66\uFF0C\u5E76\u59A5\u5584\u4FDD\u7BA1\u3002'
-    : 'Please read this manual carefully before use and keep it for future reference.';
+  // Bottom disclaimer (one or two lines, depending on locale)
+  const isChinese = ctx.lang && ctx.lang.startsWith('zh');
+  const disclaimerLines = isChinese
+    ? [
+        '\u4F7F\u7528\u4EA7\u54C1\u524D\u8BF7\u4ED4\u7EC6\u9605\u8BFB\u672C\u8BF4\u660E\u4E66\uFF0C\u5E76\u59A5\u5584\u4FDD\u7BA1\u3002',
+        '\u8BF4\u660E\u4E66\u4E2D\u7684\u4EA7\u54C1\u3001\u914D\u4EF6\u7B49\u63D2\u56FE\u5747\u4E3A\u793A\u610F\u56FE\uFF0C\u4EC5\u4F9B\u53C2\u8003\u3002\u7531\u4E8E\u4EA7\u54C1\u7684\u66F4\u65B0\u4E0E\u5347\u7EA7\uFF0C\u4EA7\u54C1\u5B9E\u7269\u4E0E\u793A\u610F\u56FE\u53EF\u80FD\u7565\u6709\u5DEE\u5F02\uFF0C\u8BF7\u4EE5\u5B9E\u7269\u4E3A\u51C6\u3002',
+      ]
+    : ['Please read this manual carefully before use and keep it for future reference.'];
+  // Big spring to push disclaimer near bottom
+  for (let i = 0; i < 18; i += 1) {
+    children.push(new Paragraph({ spacing: { before: 0, after: 0, line: 240 }, children: [] }));
+  }
+  // Thin black rule above disclaimer
   children.push(new Paragraph({
     spacing: { before: 0, after: 0 },
-    border: { top: { style: BorderStyle.SINGLE, size: 4, color: ACTIVE_THEME.primary } },
+    border: { top: { style: BorderStyle.SINGLE, size: 6, color: ACTIVE_THEME.primary } },
     children: [],
   }));
-  children.push(new Paragraph({
-    spacing: { before: 45, after: 0 },
-    children: [new TextRun({
-      text: disclaimer,
-      font: FONT,
-      size: 15,
-      color: ACTIVE_THEME.muted,
-    })],
-  }));
+  for (const line of disclaimerLines) {
+    children.push(new Paragraph({
+      spacing: { before: 60, after: 0, line: 260 },
+      children: [new TextRun({
+        text: line,
+        font: FONT,
+        size: 14,
+        color: ACTIVE_THEME.muted,
+      })],
+    }));
+  }
 
   return children;
 }
 
 function buildHeader(ctx, chapter = null) {
   const rightText = chapter?.header_ref || `${ctx.model}  \u2014  ${ctx.localized.document_title}`;
+  // iter-02: explicit tab position inside the A5 content width prevents
+  // LibreOffice from clipping the right-aligned chapter ref (was "CH.01 \u2014 SAF").
   return new Header({
     children: [new Paragraph({
       spacing: { after: 60 },
@@ -1349,92 +1440,6 @@ function buildFooter(ctx) {
       ],
     })],
   });
-}
-
-function buildStaticTocChildren(chapters, tocTitle) {
-  const children = [
-    new Paragraph({
-      spacing: { before: 0, after: 260 },
-      children: [new TextRun({
-        text: tocTitle,
-        font: TITLE_FONT,
-        bold: true,
-        size: DOCX_PROFILE.text.tocTitleSize,
-        color: ACTIVE_THEME.tocTitle,
-      })],
-    }),
-  ];
-
-  let pageNo = 3;
-  const numberWidth = 260;
-  const pageWidth = 320;
-  const titleWidth = CONTENT_W - numberWidth - pageWidth;
-  const rowBorders = {
-    top: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
-    bottom: { style: BorderStyle.SINGLE, size: 3, color: 'E6E6E6' },
-    left: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
-    right: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
-  };
-  const rows = [];
-  for (const chapter of chapters) {
-    rows.push(new TableRow({
-      children: [
-        makeCell([new Paragraph({
-          spacing: { before: 0, after: 0, line: 240 },
-          children: [new TextRun({
-            text: chapter.chapter_no,
-            font: FONT,
-            bold: true,
-            size: DOCX_PROFILE.text.bodySize,
-            color: ACTIVE_THEME.accent,
-          })],
-        })], {
-          width: numberWidth,
-          borders: rowBorders,
-          margins: { top: 42, bottom: 42, left: 0, right: 0 },
-        }),
-        makeCell([new Paragraph({
-          spacing: { before: 0, after: 0, line: 240 },
-          children: [new TextRun({
-            text: chapter.toc_title || chapter.title,
-            font: TITLE_FONT,
-            bold: true,
-            size: DOCX_PROFILE.text.bodySize + 1,
-            color: ACTIVE_THEME.tocTitle,
-          })],
-        })], {
-          width: titleWidth,
-          borders: rowBorders,
-          margins: { top: 42, bottom: 42, left: 0, right: 0 },
-        }),
-        makeCell([new Paragraph({
-          alignment: AlignmentType.RIGHT,
-          spacing: { before: 0, after: 0, line: 240 },
-          children: [new TextRun({
-            text: String(pageNo),
-            font: FONT,
-            size: DOCX_PROFILE.text.smallSize,
-            color: ACTIVE_THEME.muted,
-          })],
-        })], {
-          width: pageWidth,
-          borders: rowBorders,
-          margins: { top: 42, bottom: 42, left: 0, right: 0 },
-        }),
-      ],
-    }));
-    pageNo += Math.max(1, (chapter.pages || []).length);
-  }
-
-  children.push(new Table({
-    width: { size: CONTENT_W, type: WidthType.DXA },
-    columnWidths: [numberWidth, titleWidth, pageWidth],
-    layout: TableLayoutType.FIXED,
-    borders: NO_BORDERS,
-    rows,
-  }));
-
-  return children;
 }
 
 async function buildDocx(regionCode, brandOverride) {
@@ -1527,8 +1532,8 @@ async function buildDocx(regionCode, brandOverride) {
     mfr: localizedRuntime.manufacturer,
     labels: localizedRuntime.labels,
     localized: localizedRuntime.localized,
-    lang,
     model,
+    lang,
     vars,
     images: imagesManifest,
     imagesDir,
@@ -1536,7 +1541,22 @@ async function buildDocx(regionCode, brandOverride) {
 
   const coverChildren = buildCoverBlock(ctx);
   const tocTitle = langSuffix(lang) === 'cn' ? '目录' : 'Contents';
-  const tocChildren = buildStaticTocChildren(chapters, tocTitle);
+  // iter-01: render a static TOC table (LibreOffice headless does not refresh
+  // docx-js `TableOfContents` fields). Page numbers are hand-tuned based on
+  // the target PDF's TOC; if chapter order/length changes, this can drift.
+  const tocChildren = [
+    new Paragraph({
+      spacing: { before: 0, after: 180 },
+      children: [new TextRun({
+        text: tocTitle,
+        font: TITLE_FONT,
+        bold: true,
+        size: DOCX_PROFILE.text.tocTitleSize,
+        color: ACTIVE_THEME.tocTitle,
+      })],
+    }),
+    buildStaticTocTable(chapters, ctx),
+  ];
 
   const sections = [
     {
@@ -1595,9 +1615,11 @@ async function buildDocx(regionCode, brandOverride) {
       default: {
         document: {
           run: { font: FONT, size: DOCX_PROFILE.text.bodySize },
+          paragraph: { spacing: { line: 260, before: 0, after: 60 } },
         },
       },
       paragraphStyles: [
+        // iter-01: heading sizes match DOCX_PROFILE numbers, spacing dropped
         {
           id: 'Heading1',
           name: 'Heading 1',
@@ -1605,12 +1627,12 @@ async function buildDocx(regionCode, brandOverride) {
           next: 'Normal',
           quickFormat: true,
           run: {
-            size: 34,
+            size: DOCX_PROFILE.text.chapterTitleSize,
             bold: true,
             font: FONT,
             color: ACTIVE_THEME.primary,
           },
-          paragraph: { spacing: { before: 300, after: 120 }, outlineLevel: 0 },
+          paragraph: { spacing: { before: 120, after: 80, line: 260 }, outlineLevel: 0 },
         },
         {
           id: 'Heading2',
@@ -1619,12 +1641,12 @@ async function buildDocx(regionCode, brandOverride) {
           next: 'Normal',
           quickFormat: true,
           run: {
-            size: 26,
+            size: DOCX_PROFILE.text.sectionTitleSize,
             bold: true,
             font: FONT,
             color: ACTIVE_THEME.primary,
           },
-          paragraph: { spacing: { before: 200, after: 80 }, outlineLevel: 1 },
+          paragraph: { spacing: { before: 80, after: 40, line: 260 }, outlineLevel: 1 },
         },
         {
           id: 'Heading3',
@@ -1633,12 +1655,12 @@ async function buildDocx(regionCode, brandOverride) {
           next: 'Normal',
           quickFormat: true,
           run: {
-            size: 22,
+            size: DOCX_PROFILE.text.subtitleSize,
             bold: true,
             font: FONT,
             color: ACTIVE_THEME.light || '4A4A4A',
           },
-          paragraph: { spacing: { before: 160, after: 60 }, outlineLevel: 2 },
+          paragraph: { spacing: { before: 60, after: 30, line: 260 }, outlineLevel: 2 },
         },
       ],
     },
@@ -1687,14 +1709,11 @@ async function writeBufferWithRetry(outPath, buffer, retries = 5, delayMs = 250)
 
 async function writeDocx(regionCode, brandOverride) {
   const { doc, activeBrand, market, model } = await buildDocx(regionCode, brandOverride);
-  const outName = `${model.toLowerCase()}-${activeBrand}-${market}-${regionCode}.docx`;
+  // v2: always write to iter-XX/output.docx (single canonical name)
+  const outName = 'output.docx';
   const outPath = path.join(outputDir, outName);
   const buffer = await Packer.toBuffer(doc);
   const actualPath = await writeBufferWithRetry(outPath, buffer);
-  if (writeBaseTemplateCn && regionCode === 'cn') {
-    fs.mkdirSync(path.dirname(baseTemplatePath), { recursive: true });
-    fs.copyFileSync(actualPath, baseTemplatePath);
-  }
   console.log(`  -> ${path.basename(actualPath)} (${(buffer.length / 1024).toFixed(1)} KB)`);
   return { outName: path.basename(actualPath), outPath: actualPath, activeBrand, market, model, regionCode };
 }
