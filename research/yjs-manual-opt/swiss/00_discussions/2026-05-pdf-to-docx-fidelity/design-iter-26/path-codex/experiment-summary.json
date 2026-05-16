@@ -1,0 +1,293 @@
+{
+  "baseline": {
+    "candidate": "output.docx",
+    "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+    "pages": {
+      "target": 15,
+      "candidate": 15,
+      "ratio": 1.0
+    },
+    "text": {
+      "target_chars": 4620,
+      "candidate_chars": 4626,
+      "ratio": 1.0
+    },
+    "editability": {
+      "wt_count": 445,
+      "txbx_count": 0,
+      "drawings_count": 16,
+      "image_bytes": 530887,
+      "image_hack_detected": false,
+      "editable_pct": 100.0
+    },
+    "visual": {
+      "per_page_mean_diff": [
+        2.93,
+        3.25,
+        12.04,
+        7.09,
+        10.94,
+        6.19,
+        7.81,
+        7.84,
+        11.99,
+        10.14,
+        12.14,
+        10.01,
+        11.7,
+        12.35,
+        3.65
+      ],
+      "overall_mean_diff": 8.67,
+      "max_page_diff": 12.35
+    },
+    "pass": {
+      "pages": true,
+      "text": true,
+      "editable": true,
+      "visual": true,
+      "overall": true
+    }
+  },
+  "rows": [
+    {
+      "name": "iter-1-image-resample-150dpi",
+      "patch_counts": {
+        "images": 16,
+        "bytes_before": 530887,
+        "bytes_after": 218444
+      },
+      "overall": 8.67,
+      "max": 12.35,
+      "per_page": [
+        2.93,
+        3.25,
+        12.04,
+        7.09,
+        10.94,
+        6.16,
+        7.86,
+        7.84,
+        11.98,
+        10.17,
+        12.14,
+        10.01,
+        11.7,
+        12.35,
+        3.65
+      ],
+      "pass": {
+        "pages": true,
+        "text": true,
+        "editable": true,
+        "visual": true,
+        "overall": true
+      }
+    },
+    {
+      "name": "iter-2-image-resample-300dpi",
+      "patch_counts": {
+        "images": 16,
+        "bytes_before": 530887,
+        "bytes_after": 632787
+      },
+      "overall": 8.67,
+      "max": 12.35,
+      "per_page": [
+        2.94,
+        3.25,
+        12.04,
+        7.09,
+        10.94,
+        6.17,
+        7.81,
+        7.84,
+        12.0,
+        10.16,
+        12.14,
+        10.02,
+        11.7,
+        12.35,
+        3.65
+      ],
+      "pass": {
+        "pages": true,
+        "text": true,
+        "editable": true,
+        "visual": true,
+        "overall": true
+      }
+    },
+    {
+      "name": "iter-3-inline-extents-quarter-pt",
+      "patch_counts": 16,
+      "overall": 8.67,
+      "max": 12.35,
+      "per_page": [
+        2.92,
+        3.25,
+        12.04,
+        7.09,
+        10.94,
+        6.34,
+        7.8,
+        7.84,
+        11.88,
+        10.01,
+        12.14,
+        10.03,
+        11.7,
+        12.35,
+        3.65
+      ],
+      "pass": {
+        "pages": true,
+        "text": true,
+        "editable": true,
+        "visual": true,
+        "overall": true
+      }
+    },
+    {
+      "name": "iter-4-rfonts-arial-yahei-hint",
+      "patch_counts": 407,
+      "overall": 10.62,
+      "max": 22.33,
+      "per_page": [
+        2.93,
+        3.25,
+        16.5,
+        6.59,
+        10.92,
+        7.71,
+        11.28,
+        10.34,
+        14.07,
+        10.87,
+        17.23,
+        10.92,
+        10.58,
+        22.33,
+        3.73
+      ],
+      "pass": {
+        "pages": true,
+        "text": true,
+        "editable": true,
+        "visual": true,
+        "overall": true
+      }
+    },
+    {
+      "name": "iter-5-bookmarks-before-chapters",
+      "patch_counts": 35,
+      "overall": 8.67,
+      "max": 12.35,
+      "per_page": [
+        2.93,
+        3.25,
+        12.04,
+        7.09,
+        10.94,
+        6.19,
+        7.81,
+        7.84,
+        11.99,
+        10.14,
+        12.14,
+        10.01,
+        11.7,
+        12.35,
+        3.65
+      ],
+      "pass": {
+        "pages": true,
+        "text": true,
+        "editable": true,
+        "visual": true,
+        "overall": true
+      }
+    },
+    {
+      "name": "iter-6-contextual-spacing-all",
+      "patch_counts": 280,
+      "overall": 13.86,
+      "max": 33.63,
+      "per_page": [
+        3.53,
+        3.69,
+        16.58,
+        8.55,
+        13.82,
+        18.57,
+        16.49,
+        13.3,
+        15.31,
+        12.34,
+        18.99,
+        12.16,
+        14.92,
+        33.63,
+        5.97
+      ],
+      "pass": {
+        "pages": true,
+        "text": true,
+        "editable": true,
+        "visual": true,
+        "overall": true
+      }
+    }
+  ],
+  "selected": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-26\\path-codex\\seed-output.docx",
+  "final": {
+    "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-26\\path-codex\\output.docx",
+    "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+    "pages": {
+      "target": 15,
+      "candidate": 15,
+      "ratio": 1.0
+    },
+    "text": {
+      "target_chars": 4620,
+      "candidate_chars": 4626,
+      "ratio": 1.0
+    },
+    "editability": {
+      "wt_count": 445,
+      "txbx_count": 0,
+      "drawings_count": 16,
+      "image_bytes": 530887,
+      "image_hack_detected": false,
+      "editable_pct": 100.0
+    },
+    "visual": {
+      "per_page_mean_diff": [
+        2.93,
+        3.25,
+        12.04,
+        7.09,
+        10.94,
+        6.19,
+        7.81,
+        7.84,
+        11.99,
+        10.14,
+        12.14,
+        10.01,
+        11.7,
+        12.35,
+        3.65
+      ],
+      "overall_mean_diff": 8.67,
+      "max_page_diff": 12.35
+    },
+    "pass": {
+      "pages": true,
+      "text": true,
+      "editable": true,
+      "visual": true,
+      "overall": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+You are Codex doing design-iter-26. 28 winners. W28: 8.67/12.35 PLATEAU CONFIRMED across iter-21~25.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+LESSONS LEARNED — these all FAILED to improve W28:
+- char spacing 4-8 twips (5 is optimal)
+- footer hairline, header rule changes
+- cover image position fine tune
+- step badge size variants
+- alert box padding
+- line-spacing exact mode
+- floating tables
+- kerning
+- autoSpace off (neutral)
+- East Asia font hint
+- gridCol explicit
+- JPEG image embedding
+- anchored drawings (failed)
+- per-page section margins
+- numPr w:ilvl real bullets
+- run vertical position offsets
+- szCs match
+- noWrap on cells
+- explicit page margin overrides
+
+REMAINING UNEXPLORED:
+1. **Image quality**: try resampling product diagrams to specific DPI before embed
+2. **Image position offset**: anchor=inline with explicit cx/cy in EMUs from spans data
+3. **Margin pixel-perfect**: target_spans.json gives PDF body region; try matching that exactly
+4. **Custom font fallback chain**: w:rFonts ascii=Arial hAnsi=Arial cs=Arial eastAsia="Microsoft YaHei" might need different order or `hint`
+5. **Add a Bookmark/Anchor before each chapter** — may affect layout
+6. **Try `w:contextualSpacing w:val="1"`** — collapses same-style paragraph spacing
+
+GOAL: any improvement. Plateau is hard but micro-gains add up.
+
+STARTER: design-iter-24/path-A/build_b2_docx.py + patch_ooxml.py
+WORKDIR: design-iter-26/path-codex
+
+Up to 6 iter. PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual. START NOW.

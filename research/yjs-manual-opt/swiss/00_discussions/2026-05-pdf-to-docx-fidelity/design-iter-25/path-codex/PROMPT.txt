@@ -1,0 +1,22 @@
+You are Codex doing design-iter-25. 28 winners. W28: 8.67/12.35. Multiple paths confirmed PLATEAU.
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+GOAL: ANY improvement. Codex has tried many things. New angle needed.
+
+Hard pages remain: p3 (12.04), p9 (11.99), p11 (12.14), p14 (12.35).
+
+Try these UNEXPLORED angles:
+1. **NumPr w:ilvl**: Set custom numbering for bullet lists with exact indent
+2. **w:framePr**: Force frame positioning on specific paragraphs
+3. **w:textAlignment w:val="auto"** vs "baseline" — affects Chinese rendering
+4. **w:rPr/w:position**: vertical position offset for run-level fine tuning
+5. **w:szCs vs w:sz**: complex script size vs latin size on Chinese runs
+6. **Page-specific section breaks** to allow per-page margin overrides
+7. **w:noWrap on table cell** to prevent line breaks affecting score
+
+STARTER: design-iter-24/path-A/build_b2_docx.py + patch_ooxml.py if useful
+WORKDIR: design-iter-25/path-codex
+
+UP TO 6 ITER. PYTHONUTF8=1. STATUS.md when done.
+Inputs as usual. START NOW.
