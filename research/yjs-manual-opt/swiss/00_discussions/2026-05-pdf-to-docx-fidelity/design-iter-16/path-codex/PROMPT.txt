@@ -1,0 +1,25 @@
+You are Codex doing design-iter-16. 21 winners. W21: visual 9.53 / max 12.96 (CHAR_SPACING_TWIPS=5).
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20.
+
+ALL pages now under 13 max diff! Push for visual < 9 next.
+
+Per-page (W21):
+- p3: 12.96 (highest)
+- p9: 12.94
+- p13: 12.x
+- p14: 12.99
+
+Explore:
+1. CHAR_SPACING higher (try 6, 7, 8) — find when it overshoots
+2. Mixed: 5 for body, higher for warning bullets
+3. Tighter line spacing for warning bullets (try 1.10 vs current)
+4. body PT alt sizes
+5. specific p3 / p9 / p14 paragraph spacing
+
+STARTER: design-iter-15/path-codex/build_b2_docx.py
+WORKDIR: design-iter-16/path-codex
+
+PER ITER ONE focused change. Up to 8 iter.
+PYTHONUTF8=1. STATUS.md at end.
+Inputs as usual. START NOW.
