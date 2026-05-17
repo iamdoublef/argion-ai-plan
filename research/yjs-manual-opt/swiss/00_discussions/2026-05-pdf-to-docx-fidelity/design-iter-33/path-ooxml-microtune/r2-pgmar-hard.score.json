@@ -1,5 +1,5 @@
 {
-  "candidate": "r8-winner.docx",
+  "candidate": "r2-pgmar-hard.docx",
   "target": "..\\..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
@@ -25,20 +25,20 @@
       3.25,
       11.89,
       7.09,
-      10.75,
+      10.94,
       6.19,
       7.81,
       7.84,
       11.88,
       10.14,
-      12.14,
-      9.85,
-      11.68,
-      12.3,
+      12.36,
+      10.01,
+      11.7,
+      12.36,
       3.65
     ],
-    "overall_mean_diff": 8.63,
-    "max_page_diff": 12.3
+    "overall_mean_diff": 8.67,
+    "max_page_diff": 12.36
   },
   "pass": {
     "pages": true,

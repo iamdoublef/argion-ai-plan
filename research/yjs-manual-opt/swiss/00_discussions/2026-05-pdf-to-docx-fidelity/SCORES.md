@@ -1,14 +1,21 @@
 # IMT050 Word DOCX 视觉保真评分记录
 
-## 当前最优：W27
+## 当前最优：W29（design-iter-33 OOXML 微调）
 
 - **文件**: `final/imt050-wevac-eu-cn.docx`
-- **LibreOffice 渲染评分**: `8.67 / 12.35`（mean / max）
-- **MS Word 渲染评分**: `9.16 / 15.27`（mean / max）⚠ Word 比 LO 渲染差，因为 Word 默认 CJK 字距/行距与 Adobe PDF 不一致
-- **Anti-cheat**: PASS（wt_count=457, image_hack=false, text_ratio=1.0, drawings=16）
-- **MS Word 可打开**: PASS（docx2pdf Word COM 渲染成功）
+- **LibreOffice 渲染评分**: `8.63 / 12.30`（mean / max）— 突破 W27 plateau
+- **Anti-cheat**: PASS（wt_count=445, image_hack=false, text_ratio=1.0, drawings=16）
+- **MS Word 可打开**: PASS（docx2pdf Word COM 渲染 15 页）
 - **页数**: 15（与目标 PDF 一致）
 - **可编辑性**: 100%（无 text_box / 图片 hack）
+- **突破手法**: per-section pgMar w:top 子像素微调（p3/p5/p9/p12/p13 各 +3 twips，p14 +1 twip）
+- **详见**: `design-iter-33/path-ooxml-microtune/STATUS.md`
+
+## 历史 W27（前 plateau）
+
+- **LibreOffice 渲染评分**: `8.67 / 12.35`（mean / max）
+- **MS Word 渲染评分**: `9.16 / 15.27`（mean / max）
+- 已被 W29 替换
 
 ## 评分基准说明
 
@@ -20,7 +27,8 @@
 
 | Winner | Path | Visualdiff | 备注 |
 |--------|------|-----------|------|
-| W27 | codex-design-iter22-iter08 | 8.67 / 12.35 | **当前 final** |
+| W29 | design-iter-33 path-ooxml-microtune | **8.63 / 12.30** | **当前 final** — pgMar w:top 子像素微调 |
+| W27 | codex-design-iter22-iter08 | 8.67 / 12.35 | 前 final，已被 W29 替换 |
 | W28 | codex-design-iter24-pathA | 8.67 / OOXML autospace | ⚠ Word 报"文件损坏" — 已回退 |
 | W26 | 双路并发 char-spacing + image | 8.69 / 12.40 | |
 | W25 | per-page surgical | 8.71 / 12.40 | |
@@ -40,7 +48,9 @@
 
 ## 28 路径已尝试且失败的优化
 
-字距 4-8 twips（5 最优）、页眉页脚 hairline、封面图位、step badge 大小、警告框 padding、line-spacing exact 模式、浮动表、字间距、autoSpace 关、East Asia font hint、gridCol 显式、JPEG 嵌图、anchored drawings、per-page section margin、numPr 真实 bullet、run vertical position offset、szCs 匹配、noWrap、显式 page margin、frame_pr、bookmark、contextualSpacing、char spacing 子像素调整、image DPI 99%/101%、tab_stops、tcMar tweaks、subtitle space_after 子点变化、body 7.05→7.00pt — 全部回归或中性。
+字距 4-8 twips（5 最优）、页眉页脚 hairline、封面图位、step badge 大小、警告框 padding、line-spacing exact 模式、浮动表、字间距、autoSpace 关、East Asia font hint、gridCol 显式、JPEG 嵌图、anchored drawings、numPr 真实 bullet、run vertical position offset、szCs 匹配、noWrap、显式 page margin、frame_pr、bookmark、contextualSpacing、char spacing 子像素调整、image DPI 99%/101%、tab_stops、tcMar tweaks、subtitle space_after 子点变化、body 7.05→7.00pt — 全部回归或中性。
+
+**注**: 之前曾把"per-page section margin"列入失败清单，但 design-iter-33 实证 pgMar w:top 子 twip 量级（+3/+1）逐页选择性应用可突破 plateau（W27 → W29）。
 
 ## 当前后台任务
 
@@ -63,6 +73,12 @@
 - 新约束：用 `C:/Users/iamdo/.claude/skills/docx/` 的 unpack/pack/validate 工作流
 - 新需求：docx 必须可参数化（文字替换 → 快速交付 IMT060/IMT070 等变体）
 - 进行中（后台 bqacq4kha）
+
+### iter-33 path-ooxml-microtune（W29 突破）
+- 操作: per-section pgMar w:top 微调（p3/p5/p9/p12/p13 +3 twips, p14 +1 twip）
+- 结果: **8.67 / 12.35 → 8.63 / 12.30**（mean -0.04, max -0.05）
+- Word-safe 验证: validate.py + Word COM 15 页渲染 PASS
+- 关键洞察: pgMar 调整对 LO 评分**逐页敏感度不同**——p11 反向劣化、p14 仅+1 受益；偏移量级 1-3 twips 是甜区，>5 过冲
 
 ### iter-30 path-docx-skill 完成 ✅ 里程碑
 

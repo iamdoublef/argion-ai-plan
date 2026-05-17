@@ -1,5 +1,5 @@
 {
-  "candidate": "r8-winner.docx",
+  "candidate": "r6-best.docx",
   "target": "..\\..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
@@ -34,11 +34,11 @@
       12.14,
       9.85,
       11.68,
-      12.3,
+      12.35,
       3.65
     ],
     "overall_mean_diff": 8.63,
-    "max_page_diff": 12.3
+    "max_page_diff": 12.35
   },
   "pass": {
     "pages": true,
