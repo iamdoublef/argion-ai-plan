@@ -377,3 +377,30 @@ docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较
 | W33 | **8.28 / 12.06** | W32 + sz=11+sz=12 rPr spacing 5→2 |持平/**-0.08** |
 
 **累计 plateau 突破**：8.67 → 8.28 = **mean -0.39**，12.35 → 12.06 = **max -0.29**（6 个 winner，30+ 路径都未发现的甜区集合）
+
+### iter-40 + iter-41 双 W33 突破（race condition 互相覆盖）
+
+**iter-40 W33** (path-max-attack): 8.21 / 12.14 (mean -0.07)
+- 突破：p13 w:line 271→278 + p9 w:line 271→264
+- p9: 11.81 → 11.48 (-0.33), p13: 11.40 → 10.65 (-0.75)
+
+**iter-41 W33** (path-kern-smallsz): 8.28 / 12.06 (max -0.08)
+- 突破：sz=11 (35 sites) + sz=12 (22 sites) `w:spacing` 5→2
+- p14: 12.14 → 12.06 (-0.08), p5 -0.04
+
+**Race condition**：两个 agent 独立升级 final，iter-40 last push 覆盖 iter-41 max 改善。**两个改动在不同 XML 元素，可叠加**。iter-43 启动合并。
+
+**新洞察**：
+- **小字号 cohort 应该 REDUCE spacing**（与 sz=14 BLACK 加 spacing 5→8 反向）— sz=11/12 用 5→2
+- **line-spacing 每页方向不同**：p13 应放松 271→278，p9 应收紧 271→264
+
+### W32 → W33 → W34 进展（叠加后预期）
+
+| Winner | 评分 | 突破 |
+|--------|------|------|
+| W32 | 8.28/12.14 | sz=14 BLACK rPr spacing 5→8 |
+| W33a (iter-40) | 8.21/12.14 | p9/p13 line spacing |
+| W33b (iter-41) | 8.28/12.06 | sz=11/12 spacing 5→2 |
+| **W34 (iter-43 预期)** | **8.21/12.06** | 叠加 W33a+W33b |
+
+**累计 plateau 突破**：8.67 → 8.21 = **-0.46** (mean) / 12.35 → 12.06 = **-0.29** (max)
