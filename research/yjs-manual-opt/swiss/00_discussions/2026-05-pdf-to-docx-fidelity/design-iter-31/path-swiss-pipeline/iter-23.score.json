@@ -1,0 +1,50 @@
+{
+  "candidate": "design-iter-31\\path-swiss-pipeline\\iter-23.docx",
+  "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "pages": {
+    "target": 15,
+    "candidate": 15,
+    "ratio": 1.0
+  },
+  "text": {
+    "target_chars": 4620,
+    "candidate_chars": 4628,
+    "ratio": 1.0
+  },
+  "editability": {
+    "wt_count": 440,
+    "txbx_count": 0,
+    "drawings_count": 17,
+    "image_bytes": 533482,
+    "image_hack_detected": false,
+    "editable_pct": 100.0
+  },
+  "visual": {
+    "per_page_mean_diff": [
+      3.09,
+      5.14,
+      17.7,
+      9.63,
+      14.43,
+      19.2,
+      19.51,
+      10.2,
+      15.29,
+      12.58,
+      18.83,
+      11.56,
+      14.28,
+      13.32,
+      5.6
+    ],
+    "overall_mean_diff": 12.69,
+    "max_page_diff": 19.51
+  },
+  "pass": {
+    "pages": true,
+    "text": true,
+    "editable": true,
+    "visual": true,
+    "overall": true
+  }
+}

@@ -290,3 +290,17 @@ docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较
 - 同样的「+3 twips magic number」在 W27 → W31 跨基线后**仍然成立**
 - 但**作用集合需要重新搜索**（W27 用 75 sites all colors→9；W31 用 71 sites black-only→8）
 - 下一瓶颈：p3 (11.66) / p9 (11.78) / p11 (11.09) / p13 (11.40) / p14 (12.22) 五页 plateau
+
+### W31 → W32 五连突破
+
+| Winner | 评分 | 突破方法 |
+|--------|------|---------|
+| W31 (iter-38) | 8.49/12.26 | keycap chip 结构 (Consolas+bdr，p7 -1.13) |
+| W32 (iter-39) | **8.27/12.22** | sz=14 BLACK rPr w:spacing 5→8 (71 sites，p5/p9/p13 改善) |
+
+**iter-39 关键发现**：
+- W31 的 W30→W31 迁移链丢失了 iter-35 的 char spacing 胜利动作（sz=14 body 88 sites 仍全 spacing=5）
+- 重新应用 spacing 5→8 在 W32 基础上立刻 -0.20 mean
+- val=9 在新基线下让 p10/p12 超阈值；val=8 是新甜区
+
+**累计 plateau 突破**：8.67 → 8.27 = **-0.40**（5 个 winner，30+ 路径都不知道的甜区集合）

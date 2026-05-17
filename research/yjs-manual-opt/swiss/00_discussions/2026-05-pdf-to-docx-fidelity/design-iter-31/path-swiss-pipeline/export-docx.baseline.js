@@ -54,72 +54,6 @@ const MARGIN_X = Math.round(10 * MM);
 const MARGIN_Y = Math.round(10 * MM);
 const CONTENT_W = PAGE_W - MARGIN_X * 2;
 
-// ---------------------------------------------------------------------------
-// W27-tuned defaults (extracted from design-iter-22/path-codex/build_b2_docx.py).
-// Sizes are in OOXML half-points (1 pt = 2). Margins in DXA (1 pt = 20).
-// These are the "Swiss A5 booklet" baseline. Brands may override via
-// brand-themes.json > <brand>.docx.sizes / .images / .margins.
-// ---------------------------------------------------------------------------
-const DEFAULT_DOCX_SIZES = {
-  // Body / text
-  bodySize: 14,            // 7.0pt (PDF measured 7.05pt -> 14.1 half-pt)
-  subtitleSize: 15,        // 7.5pt -- sub_title (PDF 7.5pt)
-  sectionTitleSize: 18,    // 9.0pt -- sub_title fallback
-  chapterNumberSize: 27,   // 13.5pt -- chapter num (red)
-  chapterTitleSize: 22,    // 11.0pt -- chapter title
-  // Cover
-  coverBrandSize: 15,      // 7.5pt -- brand top line
-  coverTypeSize: 15,       // 7.5pt -- document subtitle
-  coverProductSize: 36,    // 18.0pt -- product name big
-  coverModelSize: 12,      // 6.0pt -- MODEL mono red (was 11)
-  coverCompanySize: 11,    // 5.4pt -- footer disclaimer (was 14)
-  // TOC
-  tocTitleSize: 30,        // 15.0pt -- TOC title
-  tocChapterSize: 14,      // 7.0pt -- chap num mono red
-  tocTextSize: 15,         // 7.5pt -- chap name bold
-  tocPageSize: 13,         // 6.5pt -- page number mono gray
-  // Header / footer
-  headerBrandSize: 14,     // 6.75pt bold -- header left
-  headerMetaSize: 11,      // 5.4pt mono -- header right
-  smallSize: 11,           // 5.4pt -- small/disclaimer/footer
-  // Tables
-  tableBodySize: 14,       // 6.7pt
-  tableCompactSize: 13,    // 6.5pt
-  tableHeaderSize: 12,     // 6.0pt
-};
-
-const DEFAULT_DOCX_IMAGES = {
-  cover: { width: 119, height: 92 },         // 42x32.5 mm (~119x92 docx px @ 72dpi)
-  figure: { width: 310, height: 205 },
-  splitPanel: { width: 160, height: 130 },
-  stepSingle: { width: 260, height: 160 },
-  stepDouble: { width: 160, height: 118 },
-  stepTriple: { width: 110, height: 88 },
-  stepSingleCompact: { width: 220, height: 130 },
-  stepDoubleCompact: { width: 138, height: 98 },
-  stepTripleCompact: { width: 95, height: 76 },
-  rowSingle: { width: 230, height: 140 },
-  rowDouble: { width: 150, height: 105 },
-  rowTriple: { width: 105, height: 82 },
-  inlineIcon: { width: 22, height: 22 },
-};
-
-const DEFAULT_DOCX_MARGINS = {
-  // Cell margins in DXA. W27 baseline:
-  //  - normal table: pad_v=36, pad_l=55
-  //  - compact (≥8 rows): pad_v=32, pad_l=55
-  //  - compact-warranty (spread out): pad_v=52, pad_l=87
-  cellNormal:   { top: 40, bottom: 40, left: 60, right: 60 },
-  cellCompact:  { top: 38, bottom: 38, left: 60, right: 60 },
-  cellWarranty: { top: 32, bottom: 32, left: 80, right: 60 },
-  alertCell:    { top: 55, bottom: 55, left: 90, right: 90 },
-  noteCell:     { top: 55, bottom: 55, left: 90, right: 90 },
-};
-
-let SIZES = { ...DEFAULT_DOCX_SIZES };
-let IMAGES = { ...DEFAULT_DOCX_IMAGES };
-let MARGINS = { ...DEFAULT_DOCX_MARGINS };
-
 const DOCX_PROFILE = {
   templateId: 'A5_CN_BASE_V1',
   page: {
@@ -128,33 +62,41 @@ const DOCX_PROFILE = {
     marginX: MARGIN_X,
     marginY: MARGIN_Y,
   },
-  // Backward-compat lookup tables — read by other Swiss modules.
-  // Wrapped as getters so brand-theme overrides take effect at render time.
-  get images() { return IMAGES; },
-  get text() {
-    return {
-      bodySize: SIZES.bodySize,
-      subtitleSize: SIZES.subtitleSize,
-      sectionTitleSize: SIZES.sectionTitleSize,
-      chapterNumberSize: SIZES.chapterNumberSize,
-      chapterTitleSize: SIZES.chapterTitleSize,
-      coverBrandSize: SIZES.coverBrandSize,
-      coverTypeSize: SIZES.coverTypeSize,
-      coverProductSize: SIZES.coverProductSize,
-      coverModelSize: SIZES.coverModelSize,
-      coverCompanySize: SIZES.coverCompanySize,
-      tocTitleSize: SIZES.tocTitleSize,
-      headerBrandSize: SIZES.headerBrandSize,
-      headerMetaSize: SIZES.headerMetaSize,
-      smallSize: SIZES.smallSize,
-    };
+  images: {
+    cover: { width: 170, height: 123 },
+    figure: { width: 310, height: 205 },
+    splitPanel: { width: 160, height: 130 },
+    stepSingle: { width: 260, height: 160 },
+    stepDouble: { width: 160, height: 118 },
+    stepTriple: { width: 110, height: 88 },
+    stepSingleCompact: { width: 220, height: 130 },
+    stepDoubleCompact: { width: 138, height: 98 },
+    stepTripleCompact: { width: 95, height: 76 },
+    rowSingle: { width: 230, height: 140 },
+    rowDouble: { width: 150, height: 105 },
+    rowTriple: { width: 105, height: 82 },
+    inlineIcon: { width: 22, height: 22 },
   },
-  get table() {
-    return {
-      bodySize: SIZES.tableBodySize,
-      compactSize: SIZES.tableCompactSize,
-      headerSize: SIZES.tableHeaderSize,
-    };
+  table: {
+    bodySize: 15,
+    compactSize: 13,
+    headerSize: 14,
+  },
+  text: {
+    bodySize: 14,
+    subtitleSize: 14,
+    sectionTitleSize: 18,
+    chapterNumberSize: 27,
+    chapterTitleSize: 22,
+    coverBrandSize: 15,
+    coverTypeSize: 11,
+    coverProductSize: 36,
+    coverModelSize: 11,
+    coverCompanySize: 14,
+    tocTitleSize: 30,
+    headerBrandSize: 14,
+    headerMetaSize: 11,
+    smallSize: 10,
   },
 };
 
@@ -240,10 +182,6 @@ function applyDocxTheme(docxTheme = {}) {
     titleCjkFont: DEFAULT_DOCX_THEME.titleCjkFont,
     monoFont: DEFAULT_DOCX_THEME.monoFont,
   };
-  // Brand-themable: sizes / images / margins (defaults from W27 baseline).
-  SIZES = { ...DEFAULT_DOCX_SIZES, ...(docxTheme.sizes || {}) };
-  IMAGES = { ...DEFAULT_DOCX_IMAGES, ...(docxTheme.images || {}) };
-  MARGINS = { ...DEFAULT_DOCX_MARGINS, ...(docxTheme.margins || {}) };
   FONT = buildFontBundle(ACTIVE_THEME.latinFont, ACTIVE_THEME.cjkFont);
   TITLE_FONT = buildFontBundle(ACTIVE_THEME.titleLatinFont, ACTIVE_THEME.titleCjkFont);
   MONO_FONT = buildFontBundle(ACTIVE_THEME.monoFont, ACTIVE_THEME.cjkFont);
@@ -273,10 +211,8 @@ function horizontalBorders(color = ACTIVE_THEME.tableBorder, size = 1) {
     right: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
   };
 }
-// CELL_MARGINS are now drawn from MARGINS (theme-overridable); call as functions.
-function cellMargins() { return { ...MARGINS.cellNormal }; }
-function cellMarginsCompact() { return { ...MARGINS.cellCompact }; }
-function cellMarginsWarranty() { return { ...MARGINS.cellWarranty }; }
+const CELL_MARGINS = { top: 30, bottom: 30, left: 60, right: 60 };
+const CELL_MARGINS_COMPACT = { top: 30, bottom: 30, left: 60, right: 60 };
 const DOCX_IMAGE_CACHE_DIR = path.resolve(outputDir, '_docx_raster_cache');
 
 // ---------------------------------------------------------------------------
@@ -295,13 +231,11 @@ function parseTextTokens(text, base = {}) {
       runs.push(new TextRun({ text: text.slice(lastIndex, match.index), font: runFont, ...runBase }));
     }
     if (match[2]) {
-      // [btn:Power] -> monospace Courier black on light gray, wrapped in spaces
       runs.push(new TextRun({
-        text: ` ${match[2]} `,
+        text: match[2],
         bold: true,
-        font: MONO_FONT,
-        color: ACTIVE_THEME.primary,
-        shading: { type: ShadingType.CLEAR, fill: 'F2F2F7', color: 'auto' },
+        font: runFont,
+        color: ACTIVE_THEME.accent,
         ...runBase,
       }));
     } else if (match[3]) {
@@ -488,8 +422,7 @@ function makeTextParagraph(text, options = {}) {
     keepLines = false,
     keepNext = false,
     font = FONT,
-    // W27 BODY_LINE_SPACING=1.16 -> docx-js auto (240) * 1.16 ≈ 278.
-    line = 280,
+    line = Math.max(180, Math.round(size * 13.5)),
   } = options;
 
   return new Paragraph({
@@ -525,7 +458,7 @@ function makeCell(children, opts = {}) {
   const width = opts.width || undefined;
   return new TableCell({
     borders: opts.borders || boxBorders(),
-    margins: opts.margins || cellMargins(),
+    margins: opts.margins || CELL_MARGINS,
     shading: opts.shading,
     width: width ? { size: width, type: WidthType.DXA } : undefined,
     rowSpan: opts.rowSpan,
@@ -536,12 +469,6 @@ function makeCell(children, opts = {}) {
 }
 
 function makeTextCell(text, opts = {}) {
-  // Pick cell margins: warranty > compact > normal.
-  let margins;
-  if (opts.margins) margins = opts.margins;
-  else if (opts.warranty) margins = cellMarginsWarranty();
-  else if (opts.compact) margins = cellMarginsCompact();
-  else margins = cellMargins();
   return makeCell(makeTextParagraphs(readTextValue(text || ''), {
     after: 0,
     size: opts.size || DOCX_PROFILE.table.bodySize,
@@ -555,7 +482,7 @@ function makeTextCell(text, opts = {}) {
     columnSpan: opts.columnSpan,
     shading: opts.shading,
     borders: opts.borders || horizontalBorders(ACTIVE_THEME.tableBorder),
-    margins,
+    margins: opts.compact ? CELL_MARGINS_COMPACT : (opts.margins || CELL_MARGINS),
     verticalAlign: opts.verticalAlign || VerticalAlign.CENTER,
   });
 }
@@ -592,14 +519,6 @@ function isCompactTable(block = {}) {
 function isCompactLayout(block = {}) {
   const flag = `${block.page_class || ''} ${block.className || ''}`.toLowerCase();
   return Boolean(block.compact || flag.includes('compact'));
-}
-
-// W27 'compact_warranty' tables get TALLER cells (52 dxa pad_v vs 36 normal),
-// because the chapter 10 (warranty) brand_info/manufacturer_info tables need
-// breathing room rather than tighter packing.
-function isWarrantyTable(block = {}) {
-  const flag = `${block.page_class || ''} ${block.className || ''}`.toLowerCase();
-  return flag.includes('compact-warranty');
 }
 
 function figureSizePreset(count, variant = 'row', compact = false) {
@@ -746,11 +665,10 @@ function renderParagraphBlock(block, ctx) {
 }
 
 function renderSubTitle(block, ctx) {
-  // W27 sub_title: 7.5pt bold black, BLACK bottom border thin.
   return [makeTextParagraph(resolveVars(readTextValue(block.text), ctx.vars), {
     before: 70,
     after: 55,
-    size: SIZES.subtitleSize,
+    size: DOCX_PROFILE.text.sectionTitleSize,
     bold: true,
     keepNext: true,
     font: TITLE_FONT,
@@ -762,27 +680,11 @@ function renderSubTitle(block, ctx) {
 }
 
 function renderBulletList(block, ctx) {
-  // W27: 3.2mm left indent (~180 DXA), 3.2mm hanging.
-  // Bullet = manual leading "•    " run, RED Arial Black 5.8pt (size half-pt 12),
-  // body text 7pt (size half-pt 14). Letting docx-js's numbering paint the bullet
-  // produces too-small glyphs in LibreOffice; manual prefix renders predictable.
-  return (block.items || []).map((item) => {
-    const text = resolveVars(readTextValue(item), ctx.vars);
-    return new Paragraph({
-      spacing: { before: 0, after: 32, line: 270 },
-      indent: { left: 180, hanging: 180 },
-      children: [
-        new TextRun({
-          text: '•   ',
-          font: TITLE_FONT,
-          bold: true,
-          size: 14, // 7pt bullet — visibility through LO rendering
-          color: ACTIVE_THEME.accent,
-        }),
-        ...parseTextTokens(text, { size: SIZES.bodySize, font: FONT }),
-      ],
-    });
-  });
+  return (block.items || []).map((item) => makeTextParagraph(resolveVars(readTextValue(item), ctx.vars), {
+    after: 16,
+    numbering: { reference: 'bullets', level: 0 },
+    size: DOCX_PROFILE.text.bodySize,
+  }));
 }
 
 function getAlertTheme(kind) {
@@ -796,42 +698,25 @@ function getAlertTheme(kind) {
 }
 
 function renderAlertBox(block, ctx, kind) {
-  // W27 layout:
-  //   - warning box: red 1.5pt border (sz=12), title in red 6.5pt bold + ▲ icon left of title
-  //   - caution box: black 1pt border (sz=8)
-  //   - note box: light gray fill F2F2F7, no border
-  //   - cell margins: warning/caution top/bot 46 dxa, left 176, right 110
-  //   - note: top/bot 44 dxa, left 205, right 110
   const theme = getAlertTheme(kind);
-  const isNote = kind === 'notice_box';
-  const isWarning = kind === 'warning_box';
-  const isCaution = kind === 'caution_box';
-  // W27 compact_safety: title 6.38pt, bullets 6.98pt, line 0.96, after 1.35pt.
-  // Only kick in when the box has many items (would otherwise overflow).
-  const itemCount = Array.isArray(block.items) ? block.items.length : 0;
-  const compactSafety = String(block.page_class || '').includes('compact-safety') && itemCount >= 12;
-  const borderSize = isWarning ? 12 : (isCaution ? 8 : 0);
-  const cellMargin = isNote ? MARGINS.noteCell : MARGINS.alertCell;
   const elements = [];
-
   if (block.title) {
-    // Only warning_box shows the ▲ icon (and only when no explicit block.icon).
-    const showTextIcon = !block.icon && isWarning;
+    const showTextIcon = !block.icon;
     elements.push(new Paragraph({
-      spacing: { after: compactSafety ? 8 : 20, line: 220 },
+      spacing: { after: 30, line: 210 },
       children: [
         ...(showTextIcon ? [new TextRun({
-          text: theme.icon + ' ',
+          text: theme.icon,
           font: TITLE_FONT,
           bold: true,
-          size: 14,
+          size: 18,
           color: theme.iconColor,
         })] : []),
         new TextRun({
-          text: resolveVars(readTextValue(block.title), ctx.vars),
+          text: `${showTextIcon ? ' ' : ''}${resolveVars(readTextValue(block.title), ctx.vars)}`,
           font: TITLE_FONT,
           bold: true,
-          size: compactSafety ? 12 : 13, // 6.38pt vs 6.5pt
+          size: DOCX_PROFILE.text.subtitleSize,
           color: theme.titleColor,
         }),
       ],
@@ -841,50 +726,24 @@ function renderAlertBox(block, ctx, kind) {
     const icon = loadImage(block.icon, ctx.images, ctx.imagesDir);
     if (icon) {
       elements.push(new Paragraph({
-        spacing: { after: compactSafety ? 6 : 18 },
-        indent: { left: -60 }, // pull icon to the left like W27 compact-safety mode
-        children: [makeImageRun(icon,
-          compactSafety ? Math.round(IMAGES.inlineIcon.width * 0.86) : IMAGES.inlineIcon.width,
-          compactSafety ? Math.round(IMAGES.inlineIcon.height * 0.86) : IMAGES.inlineIcon.height,
-          'icon')],
+        spacing: { after: 32 },
+        children: [makeImageRun(icon, DOCX_PROFILE.images.inlineIcon.width, DOCX_PROFILE.images.inlineIcon.height, 'icon')],
       }));
     }
   }
   if (block.items) {
-    const bulletLine = compactSafety ? 192 : 250;     // 0.96 vs 1.04 line spacing
-    const bulletAfter = compactSafety ? 6 : 12;       // 1.35pt vs 1.2pt
-    const bulletSize = compactSafety ? 14 : SIZES.bodySize; // W27 compact_safety uses 6.98pt body = 14
     for (const item of block.items) {
-      const itemText = resolveVars(readTextValue(item), ctx.vars);
-      elements.push(new Paragraph({
-        spacing: { before: 0, after: bulletAfter, line: bulletLine },
-        indent: { left: 180, hanging: 180 },
-        children: [
-          new TextRun({
-            text: '•   ',
-            font: TITLE_FONT,
-            bold: true,
-            size: compactSafety ? 11 : 14, // 5.25pt vs 7pt bullet
-            color: ACTIVE_THEME.accent,
-          }),
-          ...parseTextTokens(itemText, { size: bulletSize, font: FONT, color: theme.textColor }),
-        ],
+      elements.push(makeTextParagraph(resolveVars(readTextValue(item), ctx.vars), {
+        after: 10,
+        numbering: { reference: 'bullets', level: 0 },
+        size: DOCX_PROFILE.text.bodySize,
+        color: theme.textColor,
       }));
     }
   } else if (block.text) {
     elements.push(...makeTextParagraphs(resolveVars(readTextValue(block.text), ctx.vars), {
-      after: 20, color: theme.textColor, size: SIZES.bodySize,
+      after: 28, color: theme.textColor,
     }));
-  }
-
-  const borders = (isWarning || isCaution)
-    ? boxBorders(theme.border)
-    : (isNote ? NO_BORDERS : boxBorders(theme.border));
-  // Override border thickness on warning/caution
-  if (isWarning || isCaution) {
-    for (const edge of ['top', 'bottom', 'left', 'right']) {
-      borders[edge] = { style: BorderStyle.SINGLE, size: borderSize, color: theme.border };
-    }
   }
 
   return [new Table({
@@ -895,62 +754,82 @@ function renderAlertBox(block, ctx, kind) {
     rows: [new TableRow({
       children: [makeCell(elements, {
         width: CONTENT_W,
-        borders,
-        shading: (isNote || theme.fill) ? { fill: theme.fill || 'F2F2F7', type: ShadingType.CLEAR } : undefined,
-        margins: cellMargin,
+        borders: boxBorders(theme.border),
+        shading: theme.fill ? { fill: theme.fill, type: ShadingType.CLEAR } : undefined,
+        margins: { top: 55, bottom: 55, left: 90, right: 90 },
       })],
     })],
-  }), makeSpacer(40)];
+  }), makeSpacer(45)];
 }
 
 function renderStepFlow(block, ctx) {
-  // W27 layout (build_b2_docx.py add_step_flow):
-  //   - badge: 13.5pt black square, white Arial-Black num, padded with 2 spaces "  n  "
-  //   - inline (not table column), badge then gap then text
-  //   - line spacing 1.10
-  //   - step text: 7pt body
-  // We use an inline-shaded run instead of a 2-col table to match the PDF tight
-  // inline badge geometry.
+  // PDF style: small 13.5pt BLACK square badge with white Arial-Black number,
+  // TOP aligned, NOT a full-height accent column.
+  // We keep a 2-col table but make the number cell visually small via:
+  //   - narrow column (just enough for "01")
+  //   - BLACK shading (not accent red)
+  //   - TOP vertical alignment so badge sits at top of row
+  //   - tight margins so badge height = number height, not the row height
   const startAt = Number(block.start_at || 1);
   const compact = isCompactLayout(block);
-  const elements = [];
+  const numberWidth = Math.round(CONTENT_W * 0.055);  // ~4.8mm, matches PDF 13.5pt badge
+  const textWidth = CONTENT_W - numberWidth;
+  const rows = [];
   for (let i = 0; i < (block.steps || []).length; i++) {
     const step = block.steps[i];
     const figureCount = (step.figures || []).length;
-    // Inline step text with leading shaded badge run
-    const textRuns = parseTextTokens(resolveVars(readTextValue(step.text || step), ctx.vars), {
-      size: compact ? SIZES.tableCompactSize : SIZES.bodySize,
-      font: FONT,
-    });
-    const p = new Paragraph({
-      spacing: { before: 0, after: figureCount ? 20 : 40, line: 220 },
-      children: [
-        new TextRun({
-          text: `  ${startAt + i}  `,
-          font: TITLE_FONT,
-          bold: true,
-          size: SIZES.bodySize,
-          color: 'FFFFFF',
-          shading: { type: ShadingType.CLEAR, fill: ACTIVE_THEME.primary, color: 'auto' },
-        }),
-        new TextRun({
-          text: '   ',
-          font: FONT,
-          size: SIZES.bodySize,
-        }),
-        ...textRuns,
-      ],
-    });
-    elements.push(p);
+    const body = [
+      ...makeTextParagraphs(resolveVars(readTextValue(step.text || step), ctx.vars), {
+        after: figureCount ? (compact ? 20 : 34) : 6,
+        size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.text.bodySize,
+      }),
+    ];
     if (figureCount) {
-      elements.push(...renderFigureGrid(step.figures, ctx, {
+      body.push(...renderFigureGrid(step.figures, ctx, {
         variant: 'step',
         sizePreset: figureSizePreset(figureCount, 'step', compact),
       }));
     }
+    rows.push(new TableRow({
+      cantSplit: true,
+      children: [
+        // BADGE cell: small black square at top, white Arial-Black number
+        makeCell([
+          makeTextParagraph(String(startAt + i), {
+            after: 0,
+            bold: true,
+            size: 14,                          // ~7pt, fits 4.8mm badge
+            color: 'FFFFFF',
+            alignment: AlignmentType.CENTER,
+            font: TITLE_FONT,                  // Arial Black
+          }),
+        ], {
+          width: numberWidth,
+          borders: NO_BORDERS,
+          shading: { fill: ACTIVE_THEME.primary, type: ShadingType.CLEAR }, // BLACK, was accent red
+          margins: { top: 20, bottom: 0, left: 0, right: 0 },               // top-sit, no extra padding
+          verticalAlign: VerticalAlign.TOP,                                   // top align (key fix)
+        }),
+        makeCell(body, {
+          width: textWidth,
+          borders: {
+            top: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
+            bottom: { style: BorderStyle.SINGLE, size: 4, color: ACTIVE_THEME.tableBorder },
+            left: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
+            right: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
+          },
+          margins: { top: 30, bottom: compact ? 30 : 44, left: 140, right: 70 },
+        }),
+      ],
+    }));
   }
-  elements.push(makeSpacer(compact ? 25 : 45));
-  return elements;
+  return [new Table({
+    width: { size: CONTENT_W, type: WidthType.DXA },
+    columnWidths: [numberWidth, textWidth],
+    layout: TableLayoutType.FIXED,
+    borders: NO_BORDERS,
+    rows,
+  }), makeSpacer(compact ? 25 : 45)];
 }
 
 function renderFigureBlock(block, ctx) {
@@ -964,26 +843,10 @@ function renderFigureBlock(block, ctx) {
     })];
   }
 
-  // Honor block.max_height = "72mm" etc. Default to DOCX_PROFILE.images.figure.
-  let maxW = IMAGES.figure.width;
-  let maxH = IMAGES.figure.height;
-  if (block.max_height) {
-    const m = String(block.max_height).match(/^([\d.]+)(mm|pt|in)?$/);
-    if (m) {
-      const value = parseFloat(m[1]);
-      const unit = m[2] || 'mm';
-      // docx-js inline ImageRun uses pixels (96 dpi). 1mm = 3.78 px.
-      const pxPerUnit = unit === 'mm' ? 3.78 : unit === 'pt' ? 1.333 : 96;
-      maxH = Math.round(value * pxPerUnit);
-      // Allow image to expand wider too -- target is ~60mm for structure pages.
-      maxW = Math.max(maxW, Math.round(value * pxPerUnit * 1.4));
-    }
-  }
-
   const elements = [new Paragraph({
     spacing: { after: block.caption ? 24 : 55 },
     alignment: AlignmentType.CENTER,
-    children: [makeImageRun(img, maxW, maxH, block.figure)],
+    children: [makeImageRun(img, DOCX_PROFILE.images.figure.width, DOCX_PROFILE.images.figure.height, block.figure)],
   })];
   if (block.caption) {
     elements.push(makeTextParagraph(resolveVars(readTextValue(block.caption), ctx.vars), {
@@ -1049,13 +912,6 @@ function renderTableRef(block, ctx) {
   }
 }
 
-// W27 row heights: normal=215 DXA, compact=225 DXA, warranty-card=242 DXA.
-// We disable explicit row heights — letting cells auto-grow gives better
-// LO/Word page break behavior and matches target tighter in most pages.
-function tableRowHeight(compact) {
-  return undefined;
-}
-
 function renderCustomTable(block, ctx) {
   const headers = block.headers || [];
   const rows = block.rows || [];
@@ -1077,7 +933,6 @@ function renderCustomTable(block, ctx) {
 
   if (headers.length) {
     tableRows.push(new TableRow({
-      height: tableRowHeight(compact),
       children: headers.map((h, i) => {
         const text = typeof h === 'string' ? h : h.text || '';
         return makeHeaderCell(text, { width: colWidths[i], compact });
@@ -1102,11 +957,11 @@ function renderCustomTable(block, ctx) {
           columnSpan: cs,
           compact,
           shading,
-          size: compact ? SIZES.tableCompactSize : SIZES.tableBodySize,
+          size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.table.bodySize,
         }
       ));
     }
-    if (cells.length) tableRows.push(new TableRow({ height: tableRowHeight(compact), children: cells }));
+    if (cells.length) tableRows.push(new TableRow({ children: cells }));
   }
 
   return new Table({
@@ -1124,7 +979,6 @@ function renderSpecsTable(ctx, block = {}) {
   const colWidths = [Math.round(CONTENT_W * 0.5), Math.round(CONTENT_W * 0.5)];
   const tableRows = [
     new TableRow({
-      height: tableRowHeight(compact),
       children: [
         makeHeaderCell(ctx.labels.specs_col1 || 'Parameter', { width: colWidths[0], compact }),
         makeHeaderCell(ctx.labels.specs_col2 || 'Specification', { width: colWidths[1], compact }),
@@ -1135,10 +989,9 @@ function renderSpecsTable(ctx, block = {}) {
     const r = specsRows[ri];
     const shading = zebraShading(ri);
     tableRows.push(new TableRow({
-      height: tableRowHeight(compact),
       children: [
-        makeTextCell(r.label, { width: colWidths[0], compact, size: compact ? SIZES.tableCompactSize : SIZES.tableBodySize, shading }),
-        makeTextCell(r.value, { width: colWidths[1], compact, size: compact ? SIZES.tableCompactSize : SIZES.tableBodySize, shading }),
+        makeTextCell(r.label, { width: colWidths[0], compact, size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.table.bodySize, shading }),
+        makeTextCell(r.value, { width: colWidths[1], compact, size: compact ? DOCX_PROFILE.table.compactSize : DOCX_PROFILE.table.bodySize, shading }),
       ],
     }));
   }
@@ -1152,7 +1005,6 @@ function renderPartsTable(ctx, block = {}) {
   const cw = [Math.round(CONTENT_W * 0.12), Math.round(CONTENT_W * 0.38), Math.round(CONTENT_W * 0.12), Math.round(CONTENT_W * 0.38)];
   const tableRows = [
     new TableRow({
-      height: tableRowHeight(compact),
       children: [
         makeHeaderCell(ctx.labels.parts_col_no || 'No.', { width: cw[0], compact }),
         makeHeaderCell(ctx.labels.parts_col_name || 'Part', { width: cw[1], compact }),
@@ -1166,7 +1018,6 @@ function renderPartsTable(ctx, block = {}) {
     const right = parts[i + half];
     const shading = zebraShading(i);
     tableRows.push(new TableRow({
-      height: tableRowHeight(compact),
       children: [
         makeTextCell(String(left.id), { width: cw[0], compact, shading }),
         makeTextCell(left.name, { width: cw[1], compact, shading }),
@@ -1184,7 +1035,6 @@ function renderButtonsTable(ctx, block = {}) {
   const cw = [Math.round(CONTENT_W * 0.45), Math.round(CONTENT_W * 0.55)];
   const tableRows = [
     new TableRow({
-      height: tableRowHeight(compact),
       children: [
         makeHeaderCell(ctx.labels.buttons_col1 || 'Button', { width: cw[0], compact }),
         makeHeaderCell(ctx.labels.buttons_col2 || 'Description', { width: cw[1], compact }),
@@ -1195,7 +1045,6 @@ function renderButtonsTable(ctx, block = {}) {
     const b = buttons[bi];
     const shading = zebraShading(bi);
     tableRows.push(new TableRow({
-      height: tableRowHeight(compact),
       children: [
         makeTextCell(`${b.id}. [btn:${b.key}] ${b.name}`, { width: cw[0], compact, shading }),
         makeTextCell(b.desc, { width: cw[1], compact, shading }),
@@ -1210,26 +1059,23 @@ function localizedInfoHeaders(ctx) {
   return ['Item', 'Information'];
 }
 
-function renderInfoTable(rows, compact = false, headers = null, warranty = false) {
+function renderInfoTable(rows, compact = false, headers = null) {
   const cw = [Math.round(CONTENT_W * 0.3), Math.round(CONTENT_W * 0.7)];
   const tableRows = [];
-  const cellExtra = { compact, warranty };
   if (headers) {
     tableRows.push(new TableRow({
-      height: tableRowHeight(compact),
       children: [
-        makeHeaderCell(headers[0], { width: cw[0], ...cellExtra }),
-        makeHeaderCell(headers[1], { width: cw[1], ...cellExtra }),
+        makeHeaderCell(headers[0], { width: cw[0], compact }),
+        makeHeaderCell(headers[1], { width: cw[1], compact }),
       ],
     }));
   }
   tableRows.push(...rows.map(([label, value], ri) => {
     const shading = zebraShading(ri);
     return new TableRow({
-      height: tableRowHeight(compact),
       children: [
-        makeTextCell(label, { width: cw[0], ...cellExtra, bold: true, shading }),
-        makeTextCell(value, { width: cw[1], ...cellExtra, shading }),
+        makeTextCell(label, { width: cw[0], compact, bold: true, shading }),
+        makeTextCell(value, { width: cw[1], compact, shading }),
       ],
     });
   }));
@@ -1254,7 +1100,7 @@ function renderBrandInfoTable(ctx, block = {}) {
     [ctx.labels.address_label || 'Address', brand.address],
     [ctx.labels.website_label || 'Website', brand.website],
     [ctx.labels.email_label || 'Email', brand.support_email],
-  ], isCompactTable(block), headers, isWarrantyTable(block));
+  ], isCompactTable(block), headers);
 }
 
 function renderManufacturerTable(ctx, block = {}) {
@@ -1268,7 +1114,7 @@ function renderManufacturerTable(ctx, block = {}) {
     [ctx.labels.manufacturer_label || 'Manufacturer', mfr.name_secondary && mfr.name_secondary !== mfr.name_primary ? `${mfr.name_primary}\n${mfr.name_secondary}` : mfr.name_primary],
     [ctx.labels.address_label || 'Address', mfr.address],
     [ctx.labels.website_label || 'Website', mfr.website],
-  ], isCompactTable(block), headers, isWarrantyTable(block));
+  ], isCompactTable(block), headers);
 }
 
 function renderQaList(block, ctx) {
@@ -1281,20 +1127,9 @@ function renderQaList(block, ctx) {
       size: DOCX_PROFILE.text.subtitleSize - 2,
     }));
     for (const answer of item.answers || []) {
-      const answerText = resolveVars(readTextValue(answer), ctx.vars);
-      elements.push(new Paragraph({
-        spacing: { before: 0, after: 40, line: 240 },
-        indent: { left: 180, hanging: 180 },
-        children: [
-          new TextRun({
-            text: '•   ',
-            font: TITLE_FONT,
-            bold: true,
-            size: 14, // 7pt bullet to match W27 visually-large red dot
-            color: ACTIVE_THEME.accent,
-          }),
-          ...parseTextTokens(answerText, { size: SIZES.bodySize, font: FONT }),
-        ],
+      elements.push(makeTextParagraph(resolveVars(readTextValue(answer), ctx.vars), {
+        after: 40,
+        numbering: { reference: 'bullets', level: 0 },
       }));
     }
   }
@@ -1384,7 +1219,6 @@ function sectionDivider() {
 }
 
 function renderChapterHeading(chapter) {
-  // W27: left BLACK bar size=18 + space=4, chap num red 13.5pt bold, title 11pt bold.
   return [
     new Paragraph({
       heading: HeadingLevel.HEADING_1,
@@ -1397,14 +1231,14 @@ function renderChapterHeading(chapter) {
           text: `${chapter.chapter_no} `,
           font: TITLE_FONT,
           bold: true,
-          size: SIZES.chapterNumberSize,
+          size: DOCX_PROFILE.text.chapterNumberSize,
           color: ACTIVE_THEME.chapterNumber,
         }),
         new TextRun({
           text: chapter.title,
           font: TITLE_FONT,
           bold: true,
-          size: SIZES.chapterTitleSize,
+          size: DOCX_PROFILE.text.chapterTitleSize,
           color: ACTIVE_THEME.chapterTitle,
         }),
       ],
@@ -1428,7 +1262,7 @@ function renderPageSectionTitle(page, chapter, pageIndex) {
   if (pageBreakBefore) {
     return [new Paragraph({
       pageBreakBefore,
-      spacing: { before: 0, after: 60, line: 320 },
+      spacing: { before: 0, after: 60, line: 260 },
       border: { left: { style: BorderStyle.SINGLE, size: 6, color: ACTIVE_THEME.chapterBar } },
       indent: { left: 160 },
       keepNext: true,
@@ -1437,14 +1271,14 @@ function renderPageSectionTitle(page, chapter, pageIndex) {
           text: `${chapter.chapter_no} `,
           font: TITLE_FONT,
           bold: true,
-          size: SIZES.chapterNumberSize,
+          size: DOCX_PROFILE.text.chapterNumberSize,
           color: ACTIVE_THEME.chapterNumber,
         }),
         new TextRun({
           text: title,
           font: TITLE_FONT,
           bold: true,
-          size: SIZES.chapterTitleSize,
+          size: DOCX_PROFILE.text.chapterTitleSize,
           color: ACTIVE_THEME.chapterTitle,
         }),
       ],
@@ -1586,95 +1420,38 @@ function buildCoverBlock(ctx) {
 }
 
 function buildHeader(ctx, chapter = null) {
-  // W27 header: thick BLACK rule (sz=18) on top, brand bold 6.75pt left, mono 5.4pt gray right.
   const rightText = chapter?.header_ref || `${ctx.model}  \u2014  ${ctx.localized.document_title}`;
   return new Header({
     children: [new Paragraph({
-      spacing: { after: 60, line: 220 },
+      spacing: { after: 60 },
       border: { top: { style: BorderStyle.SINGLE, size: 18, color: ACTIVE_THEME.primary } },
       tabStops: [{ type: TabStopType.RIGHT, position: CONTENT_W }],
       children: [
-        new TextRun({
-          text: ctx.brand.display_name,
-          font: FONT,
-          size: 13, // 6.75pt
-          bold: true,
-          color: ACTIVE_THEME.primary,
-        }),
-        new TextRun({
-          text: `\t${rightText}`,
-          font: MONO_FONT,
-          size: SIZES.smallSize,
-          color: ACTIVE_THEME.headerText,
-        }),
+        new TextRun({ text: ctx.brand.display_name, font: FONT, size: DOCX_PROFILE.text.headerBrandSize, bold: true, color: ACTIVE_THEME.primary }),
+        new TextRun({ text: `\t${rightText}`, font: MONO_FONT, size: DOCX_PROFILE.text.headerMetaSize, color: ACTIVE_THEME.headerText }),
       ],
     })],
   });
 }
 
 function buildFooter(ctx) {
-  // W27 footer: two-cell table with thin top rule. Left = "<brand> <model> <doc_title>",
-  // right = page number (mono gray). Same on every body page.
   const isChinese = (ctx.lang || '').startsWith('zh');
-  const leftText = isChinese
-    ? `${ctx.brand.display_name} ${ctx.model} ${ctx.localized.document_title}`
-    : `${ctx.brand.display_name} ${ctx.model} ${ctx.localized.document_title}`;
-  const colLeft = Math.round(CONTENT_W * 0.62);
-  const colRight = CONTENT_W - colLeft;
-  const footerCellBorders = {
-    top: { style: BorderStyle.SINGLE, size: 4, color: 'EEEEEE' },
-    left: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
-    right: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
-    bottom: { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' },
-  };
+  const pagePrefix = isChinese ? '\u7B2C ' : 'Page ';
+  const pageSuffix = isChinese ? ' \u9875' : '';
   return new Footer({
-    children: [
-      new Table({
-        width: { size: CONTENT_W, type: WidthType.DXA },
-        columnWidths: [colLeft, colRight],
-        layout: TableLayoutType.FIXED,
-        borders: NO_BORDERS,
-        rows: [new TableRow({
-          children: [
-            makeCell([
-              new Paragraph({
-                spacing: { before: 0, after: 0, line: 200 },
-                children: [
-                  new TextRun({
-                    text: leftText,
-                    font: FONT,
-                    size: SIZES.smallSize,
-                    color: ACTIVE_THEME.footerText,
-                  }),
-                ],
-              }),
-            ], {
-              width: colLeft,
-              borders: footerCellBorders,
-              margins: { top: 35, bottom: 0, left: 0, right: 0 },
-            }),
-            makeCell([
-              new Paragraph({
-                alignment: AlignmentType.RIGHT,
-                spacing: { before: 0, after: 0, line: 200 },
-                children: [
-                  new TextRun({
-                    children: [PageNumber.CURRENT],
-                    font: MONO_FONT,
-                    size: SIZES.smallSize,
-                    color: ACTIVE_THEME.footerText,
-                  }),
-                ],
-              }),
-            ], {
-              width: colRight,
-              borders: footerCellBorders,
-              margins: { top: 35, bottom: 0, left: 0, right: 0 },
-            }),
-          ],
-        })],
-      }),
-    ],
+    children: [new Paragraph({
+      spacing: { before: 40 },
+      border: { top: { style: BorderStyle.SINGLE, size: 4, color: ACTIVE_THEME.tableBorder } },
+      tabStops: [{ type: TabStopType.RIGHT, position: CONTENT_W }],
+      children: [
+        new TextRun({ text: `${ctx.brand.display_name}  \u00B7  `, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+        new TextRun({ text: ctx.model, font: MONO_FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+        new TextRun({ text: '\t', font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+        new TextRun({ text: pagePrefix, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+        new TextRun({ children: [PageNumber.CURRENT], font: MONO_FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+        new TextRun({ text: pageSuffix, font: FONT, size: DOCX_PROFILE.text.smallSize, color: ACTIVE_THEME.footerText }),
+      ],
+    })],
   });
 }
 
@@ -1813,16 +1590,14 @@ async function buildDocx(regionCode, brandOverride) {
   const numberingConfigs = [
     {
       reference: 'bullets',
-      // W27 bullet indent: 3.2mm left + 3.2mm hanging (~181 DXA).
-      // Bullet glyph: U+2022 in red Arial Black size 11 half-pt (~5.5pt).
       levels: [{
         level: 0,
         format: LevelFormat.BULLET,
         text: '\u2022',
         alignment: AlignmentType.LEFT,
         style: {
-          paragraph: { indent: { left: 220, hanging: 200 } },
-          run: { color: ACTIVE_THEME.accent, bold: true, size: 11, font: TITLE_FONT },
+          paragraph: { indent: { left: 420, hanging: 210 } },
+          run: { color: ACTIVE_THEME.accent },
         },
       }, {
         level: 1,
@@ -1830,7 +1605,7 @@ async function buildDocx(regionCode, brandOverride) {
         text: '\u2013',
         alignment: AlignmentType.LEFT,
         style: {
-          paragraph: { indent: { left: 420, hanging: 200 } },
+          paragraph: { indent: { left: 720, hanging: 210 } },
         },
       }],
     },
@@ -1842,7 +1617,7 @@ async function buildDocx(regionCode, brandOverride) {
         text: '%1.',
         alignment: AlignmentType.LEFT,
         style: {
-          paragraph: { indent: { left: 280, hanging: 220 } },
+          paragraph: { indent: { left: 450, hanging: 230 } },
           run: { bold: true, color: ACTIVE_THEME.accent },
         },
       }],
@@ -1886,7 +1661,6 @@ async function buildDocx(regionCode, brandOverride) {
         },
       },
       headers: { default: buildHeader(ctx) },
-      footers: { default: buildFooter(ctx) },
       children: tocChildren,
     },
   ];
@@ -1914,7 +1688,6 @@ async function buildDocx(regionCode, brandOverride) {
         },
       },
       headers: { default: buildHeader(ctx, chapter) },
-      footers: { default: buildFooter(ctx) },
       children: chapterChildren,
     });
   }
