@@ -1,0 +1,3065 @@
+{
+  "paragraph_borders": [
+    {
+      "style": null,
+      "text": "",
+      "sides": {
+        "top": {
+          "sz": "10",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可IMT050 — 说明书",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.01 — SAFETY",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "01 安全须知",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.01 — SAFETY",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "01 安全须知（续）",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.02 — USAGE TIPS",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "02 产品及使用提示",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "放置与首次使用",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "用水要求",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "使用提示",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.03 — STRUCTURE",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "03 产品结构",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.04 — FEATURES",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "04 产品功能",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.05 — SPECIFICATIONS",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "05 技术参数",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.06 — OPERATION",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "06 操作指引",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "工作前准备",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "产品开机",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "如何制作子弹冰",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.06 — OPERATION",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "06 操作指引（续）",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.07 — TROUBLESHOOTING",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "07 故障排除",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.08 — MAINTENANCE",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "08 维护保养",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "自动清洁（制冰模具和制冰兜）",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "排水操作",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "日常保养",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.09 — INSTALLATION / STORAGE / DISPOSAL",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "09 安装运输、存储与拆除",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "包装运输",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "安装",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "存储与拆除",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.10 — WARRANTY",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "10 品牌与保修信息",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "品牌商信息",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "授权制造商",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "保修信息",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "威富可CH.10 — WARRANTY",
+      "sides": {
+        "top": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "10 品牌与保修信息（续）",
+      "sides": {
+        "left": {
+          "sz": "18",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    },
+    {
+      "style": null,
+      "text": "保修卡",
+      "sides": {
+        "bottom": {
+          "sz": "6",
+          "color": "000000",
+          "val": "single"
+        }
+      }
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          null
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "12",
+            "color": "E63946",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "警告 WARNING•    本机仅供家庭使用，请勿用于其他非设计用途。•    请勿让儿童玩耍本机或电源线。儿童、行动不便或认知受限人士应在成年人监督下使用。•    小零件可能造成窒息危险，请勿让儿童接触。•    请勿在高湿高温等环境使用本机，严禁在有易燃易爆气体的环境中使用。•    请确保电源电压与机器铭牌标示一致。•    使用后请切断电源。•    从电源插座上拔出插头时请手握插头拔"
+    },
+    {
+      "index": 1,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          null
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "8",
+            "color": "000000",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "注意 CAUTION•    移动或运输产品时保持产品直立，否则可能导致产品损坏。•    运输后需静置4小时，待冷媒稳定后再通电。•    对电机和制冷系统进行维护时要戴手套。•    切勿阻塞散热孔，以确保产品的良好运转。•    请勿将非食品类物品放置于腔体中。•    本产品仅限室内使用。•    本产品设计为将饮用水制作成冰，请不要将本产品用于设计外用途。"
+    },
+    {
+      "index": 2,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          "F2F2F7"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          null
+        ]
+      ],
+      "first_cell_text": "提示 NOTICE•    产品噪音等级低于50 dB(A)。•    本产品的气候类型为SN，适合在10℃~32℃ / 50℉~89.6℉ 的环境温度中使用。"
+    },
+    {
+      "index": 3,
+      "rows": 5,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        }
+      ],
+      "cell_shades": [
+        [
+          "1A1A1A",
+          "1A1A1A",
+          "1A1A1A",
+          "1A1A1A"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF",
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7",
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF",
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7",
+          "F2F2F7",
+          "F2F2F7"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "编号 | 名称 | 编号 | 名称"
+    },
+    {
+      "index": 4,
+      "rows": 6,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        },
+        {
+          "val": "215",
+          "rule": "atLeast"
+        }
+      ],
+      "cell_shades": [
+        [
+          "1A1A1A",
+          "1A1A1A"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "No. / 按键 | 功能说明"
+    },
+    {
+      "index": 5,
+      "rows": 18,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        }
+      ],
+      "cell_shades": [
+        [
+          "1A1A1A",
+          "1A1A1A"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "参数 | 规格"
+    },
+    {
+      "index": 6,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          null
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          null
+        ]
+      ],
+      "first_cell_text": ""
+    },
+    {
+      "index": 7,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "first_cell_text": " |  | "
+    },
+    {
+      "index": 8,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          null
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          null
+        ]
+      ],
+      "first_cell_text": ""
+    },
+    {
+      "index": 9,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          "F2F2F7"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          null
+        ]
+      ],
+      "first_cell_text": "提示 NOTICE•    制冰中途可点击 Make Ice 按键切换制冰尺寸。•    制冰中途可点击 Power 按键终止，子弹冰制冰按键灯熄灭，产品停止子弹冰制冰。•    当产品检测到子弹冰冰篮装满后，ICE FULL 警示灯点亮为绿灯，产品停止制冰。待冰融解，或取走后，产品会自动恢复制冰。•    请留意，制冰期间若 ADD WATER 警示灯点亮红灯，产品会停止制冰，请及时给水箱补充水"
+    },
+    {
+      "index": 10,
+      "rows": 10,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        }
+      ],
+      "cell_shades": [
+        [
+          "1A1A1A",
+          "1A1A1A",
+          "1A1A1A"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF",
+          "FFFFFF"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "CCCCCC",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "故障现象 | 可能原因 | 解决方案"
+    },
+    {
+      "index": 11,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          null
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "8",
+            "color": "000000",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "免责声明 DISCLAIMER如果用户不按照本手册操作产品，并对产品造成任何损坏或质量问题，工厂、经销商及品牌商将不承担任何责任。"
+    },
+    {
+      "index": 12,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          null,
+          null
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          null,
+          null
+        ]
+      ],
+      "first_cell_text": " | "
+    },
+    {
+      "index": 13,
+      "rows": 1,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        null
+      ],
+      "cell_shades": [
+        [
+          "F2F2F7"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          null
+        ]
+      ],
+      "first_cell_text": "WEEE / R600a请勿损坏制冷剂回路。若需要报废处理，请交由具备资质的废弃物处理机构回收，以避免对环境和人身安全造成风险。"
+    },
+    {
+      "index": 14,
+      "rows": 5,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        {
+          "val": "242",
+          "rule": "atLeast"
+        },
+        {
+          "val": "242",
+          "rule": "atLeast"
+        },
+        {
+          "val": "242",
+          "rule": "atLeast"
+        },
+        {
+          "val": "242",
+          "rule": "atLeast"
+        },
+        {
+          "val": "242",
+          "rule": "atLeast"
+        }
+      ],
+      "cell_shades": [
+        [
+          "1A1A1A",
+          "1A1A1A"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "项目 | 信息"
+    },
+    {
+      "index": 15,
+      "rows": 4,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        {
+          "val": "242",
+          "rule": "atLeast"
+        },
+        {
+          "val": "242",
+          "rule": "atLeast"
+        },
+        {
+          "val": "242",
+          "rule": "atLeast"
+        },
+        {
+          "val": "242",
+          "rule": "atLeast"
+        }
+      ],
+      "cell_shades": [
+        [
+          "1A1A1A",
+          "1A1A1A"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "项目 | 信息"
+    },
+    {
+      "index": 16,
+      "rows": 9,
+      "tblBorders": {
+        "top": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "left": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "bottom": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "right": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideH": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        },
+        "insideV": {
+          "sz": null,
+          "color": null,
+          "val": "nil"
+        }
+      },
+      "row_heights": [
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        },
+        {
+          "val": "225",
+          "rule": "atLeast"
+        }
+      ],
+      "cell_shades": [
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ],
+        [
+          "FFFFFF",
+          "FFFFFF"
+        ],
+        [
+          "F2F2F7",
+          "F2F2F7"
+        ]
+      ],
+      "cell_borders_top": [
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ],
+        [
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          },
+          {
+            "sz": "4",
+            "color": "D9D9D9",
+            "val": "single"
+          }
+        ]
+      ],
+      "first_cell_text": "客户名称 | "
+    }
+  ],
+  "table_styles": {},
+  "para_spacing_by_style": {
+    "Header": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "Footer": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "Heading1": {
+      "before": "480",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "Heading2": {
+      "before": "200",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "Heading3": {
+      "before": "200",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "Heading4": {
+      "before": "200",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "Heading5": {
+      "before": "200",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "Heading6": {
+      "before": "200",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "Heading7": {
+      "before": "200",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "Heading8": {
+      "before": "200",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "Heading9": {
+      "before": "200",
+      "after": "0",
+      "line": null,
+      "lineRule": null
+    },
+    "NoSpacing": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "Title": {
+      "before": null,
+      "after": "300",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "BodyText": {
+      "before": null,
+      "after": "120",
+      "line": null,
+      "lineRule": null
+    },
+    "BodyText2": {
+      "before": null,
+      "after": "120",
+      "line": "480",
+      "lineRule": "auto"
+    },
+    "BodyText3": {
+      "before": null,
+      "after": "120",
+      "line": null,
+      "lineRule": null
+    },
+    "ListContinue": {
+      "before": null,
+      "after": "120",
+      "line": null,
+      "lineRule": null
+    },
+    "ListContinue2": {
+      "before": null,
+      "after": "120",
+      "line": null,
+      "lineRule": null
+    },
+    "ListContinue3": {
+      "before": null,
+      "after": "120",
+      "line": null,
+      "lineRule": null
+    },
+    "Caption": {
+      "before": null,
+      "after": null,
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "IntenseQuote": {
+      "before": "200",
+      "after": "280",
+      "line": null,
+      "lineRule": null
+    },
+    "TableGrid": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightShading": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightShading-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightShading-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightShading-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightShading-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightShading-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightShading-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightList": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightList-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightList-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightList-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightList-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightList-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightList-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightGrid": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightGrid-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightGrid-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightGrid-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightGrid-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightGrid-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "LightGrid-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading1-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading1-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading1-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading1-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading1-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading1-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading2-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading2-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading2-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading2-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading2-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumShading2-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList1-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList1-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList1-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList1-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList1-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList1-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList2-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList2-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList2-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList2-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList2-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumList2-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid1-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid1-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid1-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid1-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid1-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid1-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid2-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid2-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid2-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid2-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid2-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid2-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid3-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid3-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid3-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid3-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid3-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "MediumGrid3-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "DarkList": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "DarkList-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "DarkList-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "DarkList-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "DarkList-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "DarkList-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "DarkList-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulShading": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulShading-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulShading-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulShading-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulShading-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulShading-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulShading-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulList": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulList-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulList-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulList-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulList-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulList-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulList-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulGrid": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulGrid-Accent1": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulGrid-Accent2": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulGrid-Accent3": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulGrid-Accent4": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulGrid-Accent5": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    },
+    "ColorfulGrid-Accent6": {
+      "before": null,
+      "after": "0",
+      "line": "240",
+      "lineRule": "auto"
+    }
+  },
+  "run_sizes_by_style": {
+    "Heading1": {
+      "sz_half_pt": "28"
+    },
+    "Heading2": {
+      "sz_half_pt": "26"
+    },
+    "Heading8": {
+      "sz_half_pt": "20"
+    },
+    "Heading9": {
+      "sz_half_pt": "20"
+    },
+    "Title": {
+      "sz_half_pt": "52"
+    },
+    "Subtitle": {
+      "sz_half_pt": "24"
+    },
+    "BodyText3": {
+      "sz_half_pt": "16"
+    },
+    "MacroText": {
+      "sz_half_pt": "20"
+    },
+    "Caption": {
+      "sz_half_pt": "18"
+    }
+  },
+  "numbered_lists": [],
+  "section": {
+    "pgMar": {
+      "top": "578",
+      "right": "567",
+      "bottom": "567",
+      "left": "567",
+      "header": "227",
+      "footer": "198",
+      "gutter": "0"
+    },
+    "pgSz": {
+      "w": "8391",
+      "h": "11906"
+    }
+  }
+}

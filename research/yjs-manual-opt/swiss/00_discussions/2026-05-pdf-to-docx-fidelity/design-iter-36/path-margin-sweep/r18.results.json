@@ -1,0 +1,479 @@
+[
+  {
+    "name": "r18-current-best",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "top": 5
+      },
+      "5": {
+        "right": 3,
+        "top": 3
+      },
+      "6": {
+        "top": 20
+      },
+      "7": {
+        "right": 3,
+        "top": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r18-p15tp15",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "top": 5
+      },
+      "5": {
+        "right": 3,
+        "top": 3
+      },
+      "6": {
+        "top": 20
+      },
+      "7": {
+        "right": 3,
+        "top": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 15
+      }
+    },
+    "mean": 8.31,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.45,
+      10.65,
+      4.35,
+      7.73,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.44
+    ]
+  },
+  {
+    "name": "r18-p15tp25",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "top": 5
+      },
+      "5": {
+        "right": 3,
+        "top": 3
+      },
+      "6": {
+        "top": 20
+      },
+      "7": {
+        "right": 3,
+        "top": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 25
+      }
+    },
+    "mean": 8.33,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.45,
+      10.65,
+      4.35,
+      7.73,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.66
+    ]
+  },
+  {
+    "name": "r18-p4tp10",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "top": 10
+      },
+      "5": {
+        "right": 3,
+        "top": 3
+      },
+      "6": {
+        "top": 20
+      },
+      "7": {
+        "right": 3,
+        "top": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.3,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.34,
+      10.65,
+      4.35,
+      7.73,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r18-p4tp7",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "top": 7
+      },
+      "5": {
+        "right": 3,
+        "top": 3
+      },
+      "6": {
+        "top": 20
+      },
+      "7": {
+        "right": 3,
+        "top": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.3,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.41,
+      10.65,
+      4.35,
+      7.73,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r18-p5tp10",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "top": 5
+      },
+      "5": {
+        "right": 3,
+        "top": 10
+      },
+      "6": {
+        "top": 20
+      },
+      "7": {
+        "right": 3,
+        "top": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.31,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.45,
+      10.63,
+      4.35,
+      7.73,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r18-p8tp5",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "top": 5
+      },
+      "5": {
+        "right": 3,
+        "top": 3
+      },
+      "6": {
+        "top": 20
+      },
+      "7": {
+        "right": 3,
+        "top": 3
+      },
+      "8": {
+        "top": 5
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.32,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.45,
+      10.65,
+      4.35,
+      7.73,
+      8.0,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r18-p12tp5",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "top": 5
+      },
+      "5": {
+        "right": 3,
+        "top": 3
+      },
+      "6": {
+        "top": 20
+      },
+      "7": {
+        "right": 3,
+        "top": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "12": {
+        "top": 5
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.33,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.45,
+      10.65,
+      4.35,
+      7.73,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      10.15,
+      11.53,
+      12.2,
+      3.34
+    ]
+  }
+]

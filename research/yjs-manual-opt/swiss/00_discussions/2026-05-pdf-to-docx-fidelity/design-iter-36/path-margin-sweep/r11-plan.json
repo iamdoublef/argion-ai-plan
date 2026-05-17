@@ -1,0 +1,14 @@
+[
+  {"name": "r11-extra-p9rp4", "spec": {"3": {"right": 3}, "5": {"right": 3}, "9": {"right": 4}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}}},
+  {"name": "r11-extra-p11tm20", "spec": {"3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -20, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}}},
+  {"name": "r11-extra-p10tm10", "spec": {"3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -10}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}}},
+  {"name": "r11-extra-p13tp5", "spec": {"3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 5}, "14": {"right": 5, "top": -3}}},
+  {"name": "r11-extra-p14tm4", "spec": {"3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -4}}},
+  {"name": "r11-extra-p14rp7", "spec": {"3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 7, "top": -3}}},
+  {"name": "r11-p1-r3-tweaks", "spec": {"1": {"top": -2}, "3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}}},
+  {"name": "r11-p2-explore", "spec": {"2": {"top": -2}, "3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}}},
+  {"name": "r11-p4-explore", "spec": {"3": {"right": 3}, "4": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}}},
+  {"name": "r11-p7-explore", "spec": {"3": {"right": 3}, "5": {"right": 3}, "7": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}}},
+  {"name": "r11-p15-explore", "spec": {"3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}, "15": {"top": -2}}},
+  {"name": "r11-p15-tp3", "spec": {"3": {"right": 3}, "5": {"right": 3}, "9": {"right": 2}, "10": {"top": -5}, "11": {"top": -17, "right": 1}, "13": {"top": 3}, "14": {"right": 5, "top": -3}, "15": {"top": 3}}}
+]

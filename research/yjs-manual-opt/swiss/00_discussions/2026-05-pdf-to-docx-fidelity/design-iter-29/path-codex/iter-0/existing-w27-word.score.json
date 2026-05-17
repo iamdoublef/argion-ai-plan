@@ -1,0 +1,27 @@
+{
+  "word_pdf": "iter-0\\existing-w27-word_render.pdf",
+  "word_png_dir": "iter-0\\word_png",
+  "visual": {
+    "per_page_mean_diff": [
+      2.79,
+      2.87,
+      15.27,
+      6.68,
+      11.27,
+      3.95,
+      8.58,
+      8.65,
+      13.86,
+      10.87,
+      14.24,
+      10.75,
+      9.8,
+      14.45,
+      3.4
+    ],
+    "overall_mean_diff": 9.16,
+    "max_page_diff": 15.27,
+    "target_pages": 15,
+    "candidate_pages": 15
+  }
+}

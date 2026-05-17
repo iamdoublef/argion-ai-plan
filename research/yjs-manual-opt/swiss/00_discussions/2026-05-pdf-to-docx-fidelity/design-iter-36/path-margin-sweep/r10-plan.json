@@ -1,0 +1,21 @@
+[
+  {"name": "r10-mega-plus-p3bp3", "spec": {"11": {"top": -17, "right": 1}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3, "bottom": 3}, "10": {"top": -5}, "9": {"right": 2}, "5": {"right": 3}}},
+  {"name": "r10-mega-plus-p3lp3", "spec": {"11": {"top": -17, "right": 1}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3, "left": 3}, "10": {"top": -5}, "9": {"right": 2}, "5": {"right": 3}}},
+  {"name": "r10-mega-plus-p9rp5", "spec": {"11": {"top": -17, "right": 1}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3}, "10": {"top": -5}, "9": {"right": 5}, "5": {"right": 3}}},
+  {"name": "r10-mega-plus-p10bp5", "spec": {"11": {"top": -17, "right": 1}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3}, "10": {"top": -5, "bottom": 5}, "9": {"right": 2}, "5": {"right": 3}}},
+  {"name": "r10-mega-plus-p11bp5", "spec": {"11": {"top": -17, "right": 1, "bottom": 5}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3}, "10": {"top": -5}, "9": {"right": 2}, "5": {"right": 3}}},
+  {"name": "r10-mega-plus-p14alldim", "spec": {"11": {"top": -17, "right": 1}, "14": {"right": 5, "top": -3, "bottom": 3, "left": 3}, "13": {"top": 3}, "3": {"right": 3}, "10": {"top": -5}, "9": {"right": 2}, "5": {"right": 3}}},
+  {"name": "r10-p11-bp20", "spec": {"11": {"bottom": 20}}},
+  {"name": "r10-p11-bp50", "spec": {"11": {"bottom": 50}}},
+  {"name": "r10-p11-bigleft", "spec": {"11": {"left": 5}}},
+  {"name": "r10-p11-bigright", "spec": {"11": {"right": 5}}},
+  {"name": "r10-p11-rp10-tm17", "spec": {"11": {"top": -17, "right": 10}}},
+  {"name": "r10-p11-rp20-tm17", "spec": {"11": {"top": -17, "right": 20}}},
+  {"name": "r10-p11-tm25", "spec": {"11": {"top": -25}}},
+  {"name": "r10-p11-tm30", "spec": {"11": {"top": -30}}},
+  {"name": "r10-p11-bigfooter", "spec": {"11": {"footer": 50}}},
+  {"name": "r10-p11-bigheader", "spec": {"11": {"header": 50}}},
+  {"name": "r10-p7-rp3", "spec": {"7": {"right": 3}}},
+  {"name": "r10-p8-rp3", "spec": {"8": {"right": 3}}},
+  {"name": "r10-p11-bigtop-50", "spec": {"11": {"top": -50}}}
+]

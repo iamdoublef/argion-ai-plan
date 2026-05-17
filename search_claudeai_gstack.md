@@ -1,0 +1,2128 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "jump to content" [ref=e3] [cursor=pointer]:
+      - /url: "#content"
+    - generic [ref=e5]:
+      - generic [ref=e7] [cursor=pointer]: 我的看板
+      - generic [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "popular" [ref=e11] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/popular/
+          - listitem [ref=e12]:
+            - text: "-"
+            - link "所有" [ref=e13] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/all/
+          - listitem [ref=e14]:
+            - text: "-"
+            - link "users" [ref=e15] [cursor=pointer]:
+              - /url: https://old.reddit.com/users/
+        - text: "|"
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "AskReddit" [ref=e18] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/AskReddit/
+          - listitem [ref=e19]:
+            - text: "-"
+            - link "pics" [ref=e20] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/pics/
+          - listitem [ref=e21]:
+            - text: "-"
+            - link "funny" [ref=e22] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/funny/
+          - listitem [ref=e23]:
+            - text: "-"
+            - link "movies" [ref=e24] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/movies/
+          - listitem [ref=e25]:
+            - text: "-"
+            - link "gaming" [ref=e26] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/gaming/
+          - listitem [ref=e27]:
+            - text: "-"
+            - link "worldnews" [ref=e28] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/worldnews/
+          - listitem [ref=e29]:
+            - text: "-"
+            - link "news" [ref=e30] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/news/
+          - listitem [ref=e31]:
+            - text: "-"
+            - link "todayilearned" [ref=e32] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/todayilearned/
+          - listitem [ref=e33]:
+            - text: "-"
+            - link "nottheonion" [ref=e34] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/nottheonion/
+          - listitem [ref=e35]:
+            - text: "-"
+            - link "explainlikeimfive" [ref=e36] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/explainlikeimfive/
+          - listitem [ref=e37]:
+            - text: "-"
+            - link "mildlyinteresting" [ref=e38] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/mildlyinteresting/
+          - listitem [ref=e39]:
+            - text: "-"
+            - link "DIY" [ref=e40] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/DIY/
+          - listitem [ref=e41]:
+            - text: "-"
+            - link "videos" [ref=e42] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/videos/
+          - listitem [ref=e43]:
+            - text: "-"
+            - link "OldSchoolCool" [ref=e44] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/OldSchoolCool/
+          - listitem [ref=e45]:
+            - text: "-"
+            - link "TwoXChromosomes" [ref=e46] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/TwoXChromosomes/
+          - listitem [ref=e47]:
+            - text: "-"
+            - link "tifu" [ref=e48] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/tifu/
+          - listitem [ref=e49]:
+            - text: "-"
+            - link "Music" [ref=e50] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/Music/
+          - listitem [ref=e51]:
+            - text: "-"
+            - link "books" [ref=e52] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/books/
+          - listitem [ref=e53]:
+            - text: "-"
+            - link "LifeProTips" [ref=e54] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/LifeProTips/
+          - listitem [ref=e55]:
+            - text: "-"
+            - link "dataisbeautiful" [ref=e56] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/dataisbeautiful/
+          - listitem [ref=e57]:
+            - text: "-"
+            - link "aww" [ref=e58] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/aww/
+          - listitem [ref=e59]:
+            - text: "-"
+            - link "science" [ref=e60] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/science/
+          - listitem [ref=e61]:
+            - text: "-"
+            - link "space" [ref=e62] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/space/
+          - listitem [ref=e63]:
+            - text: "-"
+            - link "Showerthoughts" [ref=e64] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/Showerthoughts/
+          - listitem [ref=e65]:
+            - text: "-"
+            - link "askscience" [ref=e66] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/askscience/
+          - listitem [ref=e67]:
+            - text: "-"
+            - link "Jokes" [ref=e68] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/Jokes/
+          - listitem [ref=e69]:
+            - text: "-"
+            - link "Art" [ref=e70] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/Art/
+          - listitem [ref=e71]:
+            - text: "-"
+            - link "singapore" [ref=e72] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/singapore/
+          - listitem [ref=e73]:
+            - text: "-"
+            - link "IAmA" [ref=e74] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/IAmA/
+          - listitem [ref=e75]:
+            - text: "-"
+            - link "Futurology" [ref=e76] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/Futurology/
+          - listitem [ref=e77]:
+            - text: "-"
+            - link "sports" [ref=e78] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/sports/
+          - listitem [ref=e79]:
+            - text: "-"
+            - link "UpliftingNews" [ref=e80] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/UpliftingNews/
+          - listitem [ref=e81]:
+            - text: "-"
+            - link "food" [ref=e82] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/food/
+          - listitem [ref=e83]:
+            - text: "-"
+            - link "nosleep" [ref=e84] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/nosleep/
+          - listitem [ref=e85]:
+            - text: "-"
+            - link "creepy" [ref=e86] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/creepy/
+          - listitem [ref=e87]:
+            - text: "-"
+            - link "history" [ref=e88] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/history/
+          - listitem [ref=e89]:
+            - text: "-"
+            - link "gifs" [ref=e90] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/gifs/
+          - listitem [ref=e91]:
+            - text: "-"
+            - link "InternetIsBeautiful" [ref=e92] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/InternetIsBeautiful/
+          - listitem [ref=e93]:
+            - text: "-"
+            - link "GetMotivated" [ref=e94] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/GetMotivated/
+          - listitem [ref=e95]:
+            - text: "-"
+            - link "gadgets" [ref=e96] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/gadgets/
+          - listitem [ref=e97]:
+            - text: "-"
+            - link "announcements" [ref=e98] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/announcements/
+          - listitem [ref=e99]:
+            - text: "-"
+            - link "WritingPrompts" [ref=e100] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/WritingPrompts/
+          - listitem [ref=e101]:
+            - text: "-"
+            - link "philosophy" [ref=e102] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/philosophy/
+          - listitem [ref=e103]:
+            - text: "-"
+            - link "Documentaries" [ref=e104] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/Documentaries/
+          - listitem [ref=e105]:
+            - text: "-"
+            - link "EarthPorn" [ref=e106] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/EarthPorn/
+          - listitem [ref=e107]:
+            - text: "-"
+            - link "photoshopbattles" [ref=e108] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/photoshopbattles/
+          - listitem [ref=e109]:
+            - text: "-"
+            - link "listentothis" [ref=e110] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/listentothis/
+          - listitem [ref=e111]:
+            - text: "-"
+            - link "blog" [ref=e112] [cursor=pointer]:
+              - /url: https://old.reddit.com/r/blog/
+      - link "更多 »" [ref=e113] [cursor=pointer]:
+        - /url: https://old.reddit.com/subreddits/
+    - generic [ref=e114]:
+      - link "reddit.com" [ref=e115] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e116]:
+        - link "ClaudeAI" [ref=e117] [cursor=pointer]:
+          - /url: https://old.reddit.com/r/ClaudeAI/
+        - text: ": search results - gstack"
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - text: Want to join?
+        - link "Log in" [ref=e120] [cursor=pointer]:
+          - /url: https://www.reddit.com/login
+        - text: or
+        - link "註冊" [ref=e121] [cursor=pointer]:
+          - /url: https://www.reddit.com/login
+        - text: in seconds.
+      - list
+  - generic [ref=e122]:
+    - link "發表新連結" [ref=e126] [cursor=pointer]:
+      - /url: https://old.reddit.com/r/ClaudeAI/submit
+    - link "發表新文章" [ref=e131] [cursor=pointer]:
+      - /url: https://old.reddit.com/r/ClaudeAI/submit?selftext=true
+    - generic [ref=e134]:
+      - heading "ClaudeAI" [level=1] [ref=e135]:
+        - link "ClaudeAI" [ref=e136] [cursor=pointer]:
+          - /url: https://old.reddit.com/r/ClaudeAI/
+      - link "join" [ref=e138] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e140]:
+        - text: 社群已經成立
+        - time [ref=e141]: 3 年
+    - generic [ref=e143]:
+      - heading "板主" [level=1] [ref=e145]
+      - list [ref=e146]:
+        - listitem [ref=e147]:
+          - link "message the mods" [ref=e148] [cursor=pointer]:
+            - /url: /message/compose/?to=/r/ClaudeAI
+  - main [ref=e149]:
+    - generic [ref=e150]:
+      - heading "搜尋" [level=4] [ref=e151]
+      - search [ref=e153]:
+        - textbox "搜尋" [ref=e154]: gstack
+        - button "搜尋" [ref=e155] [cursor=pointer]
+        - generic [ref=e157]:
+          - checkbox "搜尋範圍僅限 r/ClaudeAI" [checked] [ref=e158]
+          - text: 搜尋範圍僅限 r/ClaudeAI
+        - paragraph [ref=e159]:
+          - link "進階搜尋：依照作者、版面..." [ref=e160] [cursor=pointer]:
+            - /url: https://www.reddit.com/wiki/search
+    - generic [ref=e162]:
+      - generic [ref=e163]:
+        - text: 貼文
+        - generic [ref=e164]:
+          - generic [ref=e165]:
+            - text: "排序依據:"
+            - generic [ref=e166]: 頭等
+          - generic [ref=e167]:
+            - text: "連結發表時間:"
+            - generic [ref=e168]: 任何時間
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - link [ref=e171] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1s7jdof/garry_tan_opensourced_gstack_his_personal_skill/
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - 'link "Garry Tan open-sourced gstack : his personal skill pack for Claude Code (56k stars)" [ref=e174] [cursor=pointer]':
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1s7jdof/garry_tan_opensourced_gstack_his_personal_skill/
+                - text: Garry Tan open-sourced
+                - mark [ref=e175]: gstack
+                - text: ": his personal skill pack for Claude Code (56k stars)"
+              - generic "Other" [ref=e176]
+            - generic [ref=e177]:
+              - text: 282 指標 •
+              - link "91 留言" [ref=e179] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1s7jdof/garry_tan_opensourced_gstack_his_personal_skill/
+              - generic [ref=e180]:
+                - text: 已發送
+                - time [ref=e181]: 1 月前
+              - generic [ref=e182]:
+                - text: by
+                - link "Miserable_Celery9917" [ref=e183] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Miserable_Celery9917
+              - generic [ref=e184]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e185] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e188]:
+              - paragraph [ref=e189]:
+                - text: Hey
+                - link "r/ClaudeAI" [ref=e190] [cursor=pointer]:
+                  - /url: /r/ClaudeAI
+                - text: ","
+              - paragraph [ref=e191]: Garry Tan (CEO of Y Combinator) just open-sourced gstack — his own personal pack of slash commands/skills for Claude Code.
+              - paragraph [ref=e192]: "Instead of treating Claude as one generic assistant, gstack turns it into a structured virtual team with specialized roles:"
+              - paragraph [ref=e193]: • CEO (product strategy & vision)
+              - paragraph [ref=e194]: • Engineering Manager (architecture guardrails)
+              - paragraph [ref=e195]: • Designer (catches AI slop and improves UX)
+              - paragraph [ref=e196]: • Reviewer & QA Lead (finds bugs and tests in real browser)
+              - paragraph [ref=e197]: • Security Officer (OWASP + STRIDE audits)
+              - paragraph [ref=e198]: • Release Engineer
+              - paragraph [ref=e199]: • Retro, Doc Engineer, etc.
+              - paragraph [ref=e200]: He says it helps him ship 10k–20k lines of code per day while running YC.
+              - paragraph [ref=e201]: The repo already has 54k+ stars in a very short time.
+              - paragraph [ref=e202]:
+                - text: "Repo:"
+                - link "https://github.com/garrytan/gstack" [ref=e203] [cursor=pointer]:
+                  - /url: https://github.com/garrytan/gstack
+              - paragraph [ref=e204]: Has anyone here tried gstack yet?
+              - paragraph [ref=e205]: Does it actually make a noticeable difference compared to plain Claude Code, especially for larger coding sessions? Or is it mostly hype?
+              - paragraph [ref=e206]: Would love to hear real user experiences.
+            - generic [ref=e207]: 更多
+        - generic [ref=e208]:
+          - link [ref=e209] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1sybpya/compared_11_popular_claude_code_workflow_systems/
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - link "Compared 11 popular Claude Code workflow systems in one table — here's the canonical pipeline of each" [ref=e212] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sybpya/compared_11_popular_claude_code_workflow_systems/
+              - generic "Claude Code" [ref=e213]
+            - generic [ref=e214]:
+              - text: 135 指標 •
+              - link "31 留言" [ref=e216] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sybpya/compared_11_popular_claude_code_workflow_systems/
+              - generic [ref=e217]:
+                - text: 已發送
+                - time [ref=e218]: 17 天前
+              - generic [ref=e219]:
+                - text: by
+                - link "shanraisshan" [ref=e220] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/shanraisshan
+              - generic [ref=e221]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e222] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e225]:
+              - paragraph [ref=e226]: Mapped the canonical pipeline of 11 popular Claude Code workflow systems side-by-side. Yellow tags = sub-loops (repeat per task / per story / until verified); blue = top-level steps. Pipeline length turns out to be a personality trait — OpenSpec ships in 3 steps, BMAD runs 12.
+              - paragraph [ref=e227]:
+                - text: "Full table + sources:"
+                - link "https://github.com/shanraisshan/claude-code-best-practice#%EF%B8%8F-development-workflows" [ref=e228] [cursor=pointer]:
+                  - /url: https://github.com/shanraisshan/claude-code-best-practice#%EF%B8%8F-development-workflows
+            - generic [ref=e229]: 更多
+            - link "https://i.redd.it/6cop4xrmgzxg1.png" [ref=e232] [cursor=pointer]:
+              - /url: https://i.redd.it/6cop4xrmgzxg1.png
+        - generic [ref=e233]:
+          - link [ref=e234] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1sgjmec/the_11step_workflow_i_use_for_every_claude_code/
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - 'link "The 11-step workflow I use for every Claude Code project now: from idea validation to shipping with accumulated knowledge" [ref=e237] [cursor=pointer]':
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sgjmec/the_11step_workflow_i_use_for_every_claude_code/
+              - generic "Productivity" [ref=e238]
+            - generic [ref=e239]:
+              - text: 40 指標 •
+              - link "24 留言" [ref=e241] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sgjmec/the_11step_workflow_i_use_for_every_claude_code/
+              - generic [ref=e242]:
+                - text: 已發送
+                - time [ref=e243]: 1 月前
+              - generic [ref=e244]:
+                - text: by
+                - link "Ok_Today5649" [ref=e245] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Ok_Today5649
+              - generic [ref=e246]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e247] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e250]:
+              - paragraph [ref=e251]: "I rebuilt my development workflow around three open-source skill packs: gstack, Superpowers and Compound Engineering. After testing the combination for three weeks, I settled on an 11-step sequence that I now use for every project."
+              - paragraph [ref=e252]: "The core insight: most of the value comes from the steps before and after the actual coding. Here is the full workflow."
+              - 'heading "Phase 1: Build the right thing (Steps 1-4)" [level=1] [ref=e253]'
+              - paragraph [ref=e254]:
+                - strong [ref=e255]: "Step 1: The 95% confidence prompt."
+              - paragraph [ref=e256]: "Before touching any tool, run this prompt:"
+              - paragraph [ref=e257]:
+                - text: "I'm about to start this project: [YOUR PROJECT IN 1-2 SENTENCES]."
+                - text: Interview me until you have 95% confidence about what I actually
+                - text: want, not what I think I should want. Challenge my assumptions.
+                - text: Ask about edge cases I haven't considered.
+              - paragraph [ref=e258]: This flips the dynamic. AI asks you questions instead of you prompting AI. Most projects fail because nobody clarified what to build. This step fixes that in 10-15 minutes.
+              - paragraph [ref=e259]:
+                - strong [ref=e260]: "Step 2: /office-hours (gstack)."
+              - paragraph [ref=e261]: Describe what you are building. gstack challenges your idea from multiple angles. This is about whether the project makes sense in its current form.
+              - paragraph [ref=e262]:
+                - strong [ref=e263]: "Step 3: /plan-ceo-review (gstack)."
+              - paragraph [ref=e264]: Product gate. Is this worth building? Does it solve a real problem? If the gate fails, go back to step 1. That feels frustrating in the moment but saves enormous time later.
+              - paragraph [ref=e265]:
+                - strong [ref=e266]: "Step 4: /plan-eng-review (gstack)."
+              - paragraph [ref=e267]: Architecture gate. Will the technical foundation hold? Are dependencies clean? Both gates must pass before any code gets written.
+              - 'heading "Phase 2: Build it right (Steps 5-9)" [level=1] [ref=e268]'
+              - paragraph [ref=e269]:
+                - strong [ref=e270]: "Step 5: /ce:brainstorm (Compound Engineering)."
+              - paragraph [ref=e271]: Now you have a validated idea that passed both gates. CE brainstorm explores requirements and approaches, then condenses them into a spec.
+              - paragraph [ref=e272]:
+                - strong [ref=e273]: "Step 6: /ce:plan (CE)."
+              - paragraph [ref=e274]: This is where CE stands out. It spawns parallel research agents that dig through your project history, scan codebase patterns and read git commit logs. The plan is based on real data from your project, not generic best practices.
+              - paragraph [ref=e275]: In one of my projects, /ce:plan recognized that I had used the same parsing pattern in three previous features. It suggested reusing that as a shared module instead of reimplementing from scratch. Without the research step I would have built it again from zero.
+              - paragraph [ref=e276]:
+                - strong [ref=e277]: "Step 7: /ce:work (CE)."
+              - paragraph [ref=e278]: Execute the plan with task tracking. If steps 1-6 were clean, this usually runs smoothly.
+              - paragraph [ref=e279]:
+                - strong [ref=e280]: "Step 8: /ce:review (CE)."
+              - paragraph [ref=e281]: "Dynamic reviewer ensemble. Minimum six always-on reviewers: correctness, security, performance, testing, maintainability and adversarial. Each produces an independent report. More reviewers activate based on the complexity of the diff."
+              - paragraph [ref=e282]: "This implements Anthropic's core finding in practice: the builder does not evaluate their own work. Six independent checkers do."
+              - paragraph [ref=e283]:
+                - strong [ref=e284]: "Step 9: /qa (gstack)."
+              - paragraph [ref=e285]: Real browser, real clicks, real user testing on staging. Code review catches bugs in code. QA catches bugs in experience. Both together catch things that either one alone would miss.
+              - 'heading "Phase 3: Learn (Steps 10-11)" [level=1] [ref=e286]'
+              - paragraph [ref=e287]:
+                - strong [ref=e288]: "Step 10: /ce:compound (CE)."
+              - paragraph [ref=e289]: "This is the step most people skip. Run it after every feature or bugfix. Five subagents start in parallel:"
+              - list [ref=e290]:
+                - listitem [ref=e291]: "Context Analyzer : traces the conversation, extracts problem type"
+                - listitem [ref=e292]: "Solution Extractor : captures what worked, what failed, root cause"
+                - listitem [ref=e293]: "Related Docs Finder : searches existing knowledge, updates old docs"
+                - listitem [ref=e294]: "Prevention Strategist: identifies how to prevent this problem class"
+                - listitem [ref=e295]: "Category Classifier : tags and categorizes for structured retrieval"
+              - paragraph [ref=e296]: Results go into docs/solutions/. Next time you run step 6, the plan phase already knows everything you learned this time.
+              - paragraph [ref=e297]:
+                - strong [ref=e298]: "Step 11: Ship it."
+              - paragraph [ref=e299]: Push to production. Start the next feature at step 1 with a smarter planning layer.
+              - heading "The logic behind the sequence" [level=1] [ref=e300]
+              - paragraph [ref=e301]: Steps 1-4 make sure you build the right thing. Steps 5-9 make sure you build it right. Step 10 makes sure next time is faster. Skip the first four and you risk building something nobody needs. Skip step 10 and you keep debugging the same problems twice.
+              - paragraph [ref=e302]: "Quick note: these skill packs run as plugins in Claude Code. Install once and the commands are available in every project."
+              - paragraph [ref=e303]: If you want to start small, pick gstack and run /office-hours with the 95% confidence prompt on your next project. That single change made the biggest immediate difference for me. Add the other layers once you are comfortable with the first one.
+              - paragraph [ref=e304]:
+                - strong [ref=e305]: "Repos:"
+              - list [ref=e306]:
+                - listitem [ref=e307]:
+                  - text: "gstack:"
+                  - link "github.com/garrytan/gstack" [ref=e308] [cursor=pointer]:
+                    - /url: http://github.com/garrytan/gstack
+                - listitem [ref=e309]:
+                  - text: "Superpowers:"
+                  - link "github.com/obra/superpowers" [ref=e310] [cursor=pointer]:
+                    - /url: http://github.com/obra/superpowers
+                - listitem [ref=e311]:
+                  - text: "Compound Engineering:"
+                  - link "github.com/EveryInc/compound-engineering-plugin" [ref=e312] [cursor=pointer]:
+                    - /url: http://github.com/EveryInc/compound-engineering-plugin
+              - paragraph [ref=e313]: What does your Claude Code workflow look like? Curious how others structure the steps between "idea" and "shipped feature."
+            - generic [ref=e314]: 更多
+        - generic [ref=e315]:
+          - link [ref=e316] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1seq57c/thank_you_for_so_many_downloads_ive_made_various/
+          - generic [ref=e317]:
+            - generic [ref=e318]:
+              - link "Thank you for so many downloads. I've made various changes to make this skill even more useful and seamless so you guys and scroll more reels." [ref=e319] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1seq57c/thank_you_for_so_many_downloads_ive_made_various/
+              - generic "Built with Claude" [ref=e320]
+            - generic [ref=e321]:
+              - text: 22 指標 •
+              - link "29 留言" [ref=e323] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1seq57c/thank_you_for_so_many_downloads_ive_made_various/
+              - generic [ref=e324]:
+                - text: 已發送
+                - time [ref=e325]: 1 月前
+              - generic [ref=e326]:
+                - text: by
+                - link "Shorty52249" [ref=e327] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Shorty52249
+              - generic [ref=e328]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e329] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e332]:
+              - paragraph [ref=e333]: 1222 downloads on my claude skill which I build for fun in less than 12hrs. Totally unexpected!! Thank you all for this much support!! Drop some more suggestions or open an issue. I'm actively maintaining it.
+              - paragraph [ref=e334]: The skill is very simple. I got overwhelmed with how many skills I have installed on my system. So I build a skill for Claude that will intelligently pick the other skills that are actually required for that particular job without me even to think what to pick. This was the main idea.
+              - paragraph [ref=e335]:
+                - link "https://www.npmjs.com/package/claude-jarvis" [ref=e336] [cursor=pointer]:
+                  - /url: https://www.npmjs.com/package/claude-jarvis
+              - code [ref=e338]: npm i claude-jarvis
+            - generic [ref=e339]: 更多
+            - link "https://i.redd.it/1jivemfabqtg1.png" [ref=e342] [cursor=pointer]:
+              - /url: https://i.redd.it/1jivemfabqtg1.png
+        - generic [ref=e343]:
+          - link [ref=e344] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1sgltdd/i_spent_serious_time_with_workflows_like/
+          - generic [ref=e345]:
+            - generic [ref=e346]:
+              - link "I spent serious time with workflows like Superpowers and gstack, here's my honest research takeaway" [ref=e347] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sgltdd/i_spent_serious_time_with_workflows_like/
+                - text: I spent serious time with workflows like Superpowers and
+                - mark [ref=e348]: gstack
+                - text: ", here's my honest research takeaway"
+              - generic "Other" [ref=e349]
+            - generic [ref=e350]:
+              - text: 18 指標 •
+              - link "32 留言" [ref=e352] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sgltdd/i_spent_serious_time_with_workflows_like/
+              - generic [ref=e353]:
+                - text: 已發送
+                - time [ref=e354]: 1 月前
+              - generic [ref=e355]:
+                - text: by
+                - link "UnusualExcuse3825" [ref=e356] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/UnusualExcuse3825
+              - generic [ref=e357]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e358] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e361]:
+              - paragraph [ref=e362]: This is basically my personal research log, not a recommendation post.
+              - paragraph [ref=e363]: "I systematically tried a lot of what's been hot lately: Superpowers, gstack, plus whatever I could find on how people gate agent steps."
+              - paragraph [ref=e364]: I felt it helps to repeat the same steps and the same phrases. Less "what do I do next?" in my head. But I've seen the flip side too. A workflow can sound super legit, but still ship junk. The worst one is one chat writes the code and then says "yeah looks good."
+              - paragraph [ref=e365]: "After all that reading and messing around, my rule for myself is pretty simple: skills aren't a cheat code but guardrails. And proof can't just be the model sounding confident. It needs to be something you can point at."
+              - paragraph [ref=e366]: I made a little setup for myself so I can't bail on the steps I already decided were important.
+              - paragraph [ref=e367]: If you've gone through the same pile of docs/repos and ended up keeping some bits and deleting others, I'd love to swap notes. I'm quite interested in what you landed on.
+            - generic [ref=e368]: 更多
+        - generic [ref=e369]:
+          - link "5:55" [ref=e370] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1slc2sl/today_im_going_to_show_you_how_to_replace_your/
+            - generic [ref=e371]: 5:55
+          - generic [ref=e372]:
+            - generic [ref=e373]:
+              - link "Today I'm going to show you how to replace your markdown files with compiled workflows" [ref=e374] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1slc2sl/today_im_going_to_show_you_how_to_replace_your/
+              - generic "Built with Claude" [ref=e375]
+            - generic [ref=e376]:
+              - text: 6 指標 •
+              - link "3 留言" [ref=e378] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1slc2sl/today_im_going_to_show_you_how_to_replace_your/
+              - generic [ref=e379]:
+                - text: 已發送
+                - time [ref=e380]: 1 月前
+              - generic [ref=e381]:
+                - text: by
+                - link "Moraispgsi" [ref=e382] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Moraispgsi
+              - generic [ref=e383]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e384] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e387]:
+              - paragraph [ref=e388]:
+                - text: What you see in the video is
+                - link "FWStack" [ref=e389] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/fwstack
+                - text: ", a lean Claude Code plugin that will transform the way you use Claude Code."
+              - paragraph [ref=e390]: "My take: markdown files are unreliable. They clog your context window with generic instructions, often contradictory. They provide no dynamic data and don't help the model most of the time. If you watched the demo, let me explain what happened and how you can benefit from this."
+              - paragraph [ref=e391]: "What you saw:"
+              - list [ref=e392]:
+                - listitem [ref=e393]: I typed /fwstack:create with a description in English
+                - listitem [ref=e394]: The workflow gathered project context, Claude designed a spec
+                - listitem [ref=e395]: The validator rejected vague language, Claude fixed and resubmitted
+                - listitem [ref=e396]: Claude wrote a 310-line workflow with 7 nodes, parallel execution, and a quality gate
+                - listitem [ref=e397]: The compiler validated it, dependencies checked, workflow installed
+                - listitem [ref=e398]: Ran it immediately - found SQL injection, hardcoded API key, eval() usage
+                - listitem [ref=e399]: "Score: 60/100, below the 70 threshold - gate FAILED correctly"
+              - paragraph [ref=e400]:
+                - text: What initially started as parody (
+                - link "previous blog post" [ref=e401] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/ClaudeAI/comments/1sjrou5/yesterday_i_got_ratiod_for_saying_i_made_gstack/
+                - text: ), has become quite an experience in just 3 days of building.
+              - paragraph [ref=e402]:
+                - text: Look at how the workflow is displayed by the plugin,
+                - strong [ref=e403]: that could be your workflow in the next 5 minutes.
+              - paragraph [ref=e404]: FWStack runs compiled pipelines instead of prompts. Each workflow is a TypeScript file that the Flow Weaver compiler validates, the graph must be correct, types must match, connections must exist. The AI only gets control at specific pause points. Everything else (linting, testing, secret scanning, git diff) runs as real code without it.
+              - paragraph [ref=e405]: "This is /fwstack:create - one of 7 workflows in the plugin:"
+              - paragraph [ref=e406]: "- /fwstack:review - code review with real linters, structured findings"
+              - paragraph [ref=e407]: "- /fwstack:plan - implementation planning with acceptance criteria"
+              - paragraph [ref=e408]: "- /fwstack:tdd - TDD with real test gates (RED must fail, GREEN must pass)"
+              - paragraph [ref=e409]: "- /fwstack:security - SAST + secret scanning + OWASP analysis"
+              - paragraph [ref=e410]: "- /fwstack:ship - release pipeline, tests must pass before anything else"
+              - paragraph [ref=e411]: "- /fwstack:create - describe a workflow, the compiler builds and installs it"
+              - paragraph [ref=e412]: "- /fwstack:run - run any custom workflow you created"
+              - paragraph [ref=e413]: "The difference from markdown-based tools: these workflows enforce steps. The AI can't skip the linter. Can't skip the test gate. Can't hand-wave the security scan. The compiler validates the structure. The workflow enforces the execution order."
+              - paragraph [ref=e414]: "Install:"
+              - code [ref=e416]: /plugin marketplace add synergenius-fw/claude-plugins /plugin install fwstack
+              - paragraph [ref=e417]:
+                - strong [ref=e418]: "The workflows are TypeScript files running on a Node process. Anything Node can do, your workflow can do: HTTP calls, cron jobs, database queries, shell commands, calling Python or Go scripts, reading APIs, writing files. If you can write it in a function, it becomes a deterministic pipeline node."
+              - paragraph [ref=e419]:
+                - text: See what the built-in workflows look like at the
+                - link "FWStack GitHub (Open Source MIT)" [ref=e420] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/fwstack
+              - paragraph [ref=e421]:
+                - text: Built on
+                - link "Flow Weaver" [ref=e422] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/flow-weaver
+                - text: ". Come show me what you can build:"
+                - link "r/FlowWeaver" [ref=e423] [cursor=pointer]:
+                  - /url: /r/FlowWeaver
+            - generic [ref=e424]: 更多
+            - link "https://v.redd.it/7q1fr42c46vg1" [ref=e427] [cursor=pointer]:
+              - /url: https://v.redd.it/7q1fr42c46vg1
+        - generic [ref=e428]:
+          - link [ref=e429] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1sl1ev5/which_workflow_are_you_actively_using/
+          - generic [ref=e430]:
+            - generic [ref=e431]:
+              - link "which workflow are you actively using?" [ref=e432] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sl1ev5/which_workflow_are_you_actively_using/
+              - generic "Question" [ref=e433]
+            - generic [ref=e434]:
+              - text: 7 指標 •
+              - link "19 留言" [ref=e436] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sl1ev5/which_workflow_are_you_actively_using/
+              - generic [ref=e437]:
+                - text: 已發送
+                - time [ref=e438]: 1 月前
+              - generic [ref=e439]:
+                - text: by
+                - link "shayanraisgt" [ref=e440] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/shayanraisgt
+              - generic [ref=e441]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e442] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - paragraph [ref=e446]: i tried superpowers brain storming skill and find it useful.
+            - link "https://i.redd.it/mspoh6okw3vg1.png" [ref=e449] [cursor=pointer]:
+              - /url: https://i.redd.it/mspoh6okw3vg1.png
+        - generic [ref=e450]:
+          - link [ref=e451] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1scics4/browser_cli_a_tokenefficient_browser_tool_for_ai/
+          - generic [ref=e452]:
+            - generic [ref=e453]:
+              - link "Browser CLI — a token-efficient browser tool for AI coding agents (95% fewer tokens than Playwright MCP)" [ref=e454] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1scics4/browser_cli_a_tokenefficient_browser_tool_for_ai/
+              - generic "Built with Claude" [ref=e455]
+            - generic [ref=e456]:
+              - text: 4 指標 •
+              - link "7 留言" [ref=e458] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1scics4/browser_cli_a_tokenefficient_browser_tool_for_ai/
+              - generic [ref=e459]:
+                - text: 已發送
+                - time [ref=e460]: 1 月前
+              - generic [ref=e461]:
+                - text: by
+                - link "BagNervous" [ref=e462] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/BagNervous
+              - generic [ref=e463]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e464] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e467]:
+              - paragraph [ref=e468]:
+                - text: I've been using Claude Code for a Laravel monorepo and noticed browser verification was eating ~30,000 tokens per session through Playwright MCP protocol overhead. Every
+                - code [ref=e469]: browser_navigate
+                - text: +
+                - code [ref=e470]: browser_snapshot
+                - text: call costs ~1,500 tokens in JSON schema framing — even though the actual useful output is just a few lines of text.
+              - paragraph [ref=e471]:
+                - text: So I built
+                - strong [ref=e472]: Browser CLI
+                - text: — a persistent headless Chromium daemon that you talk to via plain Bash commands. Same Playwright ARIA snapshot technology underneath, but ~50-100 tokens per call instead of ~1,500.
+              - paragraph [ref=e473]:
+                - strong [ref=e474]: "GitHub:"
+                - link "https://github.com/tuandm/browser-cli" [ref=e475] [cursor=pointer]:
+                  - /url: https://github.com/tuandm/browser-cli
+              - heading "What it does" [level=1] [ref=e476]
+              - code [ref=e478]: "browser-cli goto https://example.com # Navigate browser-cli snapshot -i # ARIA tree with refs browser-cli click # Click by ref browser-cli fill \"hello\" # Fill input browser-cli css font-size # Get computed CSS value browser-cli inspect # Full box model + styles browser-cli screenshot /tmp/page.png # Screenshot browser-cli snapshot -D # Diff: what changed since last snapshot browser-cli responsive /tmp # Screenshots at mobile/tablet/desktop"
+              - paragraph [ref=e479]: The server auto-starts on first call (~3s), then subsequent calls are ~100-200ms. It stays alive for 30 min, preserving cookies, tabs, and state between commands.
+              - heading "Token savings" [level=1] [ref=e480]
+              - table [ref=e481]:
+                - rowgroup [ref=e482]:
+                  - row "Tool Per call 20 calls" [ref=e483]:
+                    - columnheader "Tool" [ref=e484]
+                    - columnheader "Per call" [ref=e485]
+                    - columnheader "20 calls" [ref=e486]
+                - rowgroup [ref=e487]:
+                  - row "Playwright MCP ~1,500 tokens ~30,000 tokens" [ref=e488]:
+                    - cell "Playwright MCP" [ref=e489]
+                    - cell "~1,500 tokens" [ref=e490]
+                    - cell "~30,000 tokens" [ref=e491]
+                  - row "Browser CLI ~75 tokens ~1,500 tokens" [ref=e492]:
+                    - cell "Browser CLI" [ref=e493]:
+                      - strong [ref=e494]: Browser CLI
+                    - cell "~75 tokens" [ref=e495]
+                    - cell "~1,500 tokens" [ref=e496]
+              - paragraph [ref=e497]:
+                - text: That's
+                - strong [ref=e498]: 95% savings
+                - text: on browser verification. For automated pipelines that do multiple tasks per session, this compounds fast.
+              - heading "Features you won't find in Playwright MCP or @playwright/cli" [level=1] [ref=e499]
+              - list [ref=e500]:
+                - listitem [ref=e501]:
+                  - strong [ref=e502]: CSS inspection
+                  - text: —
+                  - code [ref=e503]: css
+                  - link "u/e3" [ref=e504] [cursor=pointer]:
+                    - /url: /u/e3
+                  - code [ref=e505]: padding
+                  - text: returns computed values.
+                  - code [ref=e506]: inspect @e3
+                  - text: gives full box model + 16 key styles as JSON. No other CLI browser tool does this.
+                - listitem [ref=e507]:
+                  - strong [ref=e508]: Live style mutation
+                  - text: —
+                  - code [ref=e509]: style
+                  - link "u/e3" [ref=e510] [cursor=pointer]:
+                    - /url: /u/e3
+                  - code [ref=e511]: color red
+                  - text: with
+                  - code [ref=e512]: style --undo
+                  - text: . Debug CSS without touching source code.
+                - listitem [ref=e513]:
+                  - strong [ref=e514]: Snapshot diffing
+                  - text: —
+                  - code [ref=e515]: snapshot -D
+                  - text: compares before/after ARIA trees. Verify your click actually changed something.
+                - listitem [ref=e516]:
+                  - strong [ref=e517]: Responsive presets
+                  - text: —
+                  - code [ref=e518]: responsive /tmp
+                  - text: takes mobile + tablet + desktop screenshots in one command.
+                - listitem [ref=e519]:
+                  - strong [ref=e520]: Auth profiles
+                  - text: —
+                  - code [ref=e521]: handoff
+                  - text: opens a visible Chrome for manual SSO/MFA login,
+                  - code [ref=e522]: resume
+                  - text: goes back to headless,
+                  - code [ref=e523]: auth-save admin
+                  - text: "encrypts the session (AES-256). Next time:"
+                  - code [ref=e524]: goto-auth
+                  - link "https://app.com/dashboard" [ref=e525] [cursor=pointer]:
+                    - /url: https://app.com/dashboard
+                    - code [ref=e526]: https://app.com/dashboard
+                  - code [ref=e527]: "--profile admin"
+                  - text: — no login needed.
+                - listitem [ref=e528]:
+                  - strong [ref=e529]: Command batching
+                  - text: —
+                  - code [ref=e530]: chain [["goto","url"],["snapshot","-i"],["console"]]
+                  - text: runs multiple commands in one call.
+              - heading "How it works" [level=1] [ref=e531]
+              - code [ref=e533]: AI Agent → Bash → CLI client (bin/browse.mjs) ↓ HTTP POST (localhost) Server (src/server.mjs) ↓ Playwright API Chromium (headless)
+              - paragraph [ref=e534]: Pure Node.js. Playwright is the only dependency. No Bun, no Rust, no MCP overhead.
+              - heading "Claude Code integration" [level=1] [ref=e535]
+              - paragraph [ref=e536]: "Install globally and add permissions:"
+              - code [ref=e538]: npm install -g /browser-cli
+              - paragraph [ref=e539]:
+                - code [ref=e540]: .claude/settings.json
+                - text: ":"
+              - code [ref=e542]: "{ \"permissions\": { \"allow\": [\"Bash(browser-cli*)\"] } }"
+              - paragraph [ref=e543]:
+                - text: Add a rule at
+                - code [ref=e544]: .claude/rules/browser-cli.md
+                - text: telling Claude to use Browser CLI instead of Playwright MCP — and it does. I ran 5 eval scenarios and Claude picked the right command every time with the rule loaded.
+              - paragraph [ref=e545]:
+                - text: It also ships as a Claude Code plugin (
+                - code [ref=e546]: plugin.json
+                - text: included) for future marketplace distribution.
+              - heading "Acknowledgments" [level=1] [ref=e547]
+              - paragraph [ref=e548]:
+                - text: Inspired by
+                - link "gstack" [ref=e549] [cursor=pointer]:
+                  - /url: https://github.com/garrytan/gstack
+                - text: by Garry Tan, which pioneered the persistent Chromium CLI approach for AI agents. The core insight — that Bash commands are dramatically more token-efficient than MCP for browser automation — came from gstack. Browser CLI builds on that with CSS inspection, auth profiles, and a pure Node.js stack.
+              - paragraph [ref=e550]:
+                - text: The underlying technology is
+                - link "Playwright" [ref=e551] [cursor=pointer]:
+                  - /url: https://playwright.dev/
+                - text: by Microsoft.
+              - heading "Links" [level=1] [ref=e552]
+              - list [ref=e553]:
+                - listitem [ref=e554]:
+                  - strong [ref=e555]: "GitHub:"
+                  - link "https://github.com/tuandm/browser-cli" [ref=e556] [cursor=pointer]:
+                    - /url: https://github.com/tuandm/browser-cli
+                - listitem [ref=e557]:
+                  - strong [ref=e558]: "npm:"
+                  - code [ref=e559]: npm install -g \@tuandm/browser-cli
+                - listitem [ref=e560]:
+                  - strong [ref=e561]: "License:"
+                  - text: MIT
+              - paragraph [ref=e562]: Would love feedback. What commands would you add? Anyone else hitting the MCP token overhead problem?
+            - generic [ref=e563]: 更多
+        - generic [ref=e564]:
+          - link [ref=e565] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1ryr0xd/multi_agent_usage_and_best_way_to_ensure_solid/
+          - generic [ref=e566]:
+            - generic [ref=e567]:
+              - link "Multi agent usage and best way to ensure solid plans before Implementation" [ref=e568] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1ryr0xd/multi_agent_usage_and_best_way_to_ensure_solid/
+              - generic "Question" [ref=e569]
+            - generic [ref=e570]:
+              - text: 2 指標 •
+              - link "4 留言" [ref=e572] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1ryr0xd/multi_agent_usage_and_best_way_to_ensure_solid/
+              - generic [ref=e573]:
+                - text: 已發送
+                - time [ref=e574]: 1 月前
+              - generic [ref=e575]:
+                - text: by
+                - link "maofan" [ref=e576] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/maofan
+              - generic [ref=e577]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e578] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e581]:
+              - paragraph [ref=e582]: "I've on the 5x plan so have to be somewhat mindful of token usage, I've found a nice sweet spot with using the `/mode opusplan` that I discovered a few days ago. It's not listed in the drop down menu but it uses opus for planning and then switches to sonnet for implementation."
+              - paragraph [ref=e583]: My setup is fairly vanilla, use the claude code CLI the superpowers plugin and the pr-review-toolkit plugin, with my own commands and skills built up.
+              - paragraph [ref=e584]: I recently started pasting those plans into gemini "thinking" model in the web UI and asking it to critique it, which has been surprisingly effective even though it has no project context. With a few back and forths between my copy and pasting plans to them both, I have ended up with a much more solid plan. Clearly I need to introduce a new AI into the mix with some project context to make it even better.
+              - paragraph [ref=e585]: "I'm sure to some of you this is of no surprise but It's so effective I want to bake it into my workflow. For those who have done this already:"
+              - list [ref=e586]:
+                - listitem [ref=e587]:
+                  - paragraph [ref=e588]: Do you get a similar result from just asking Claude to critique his own plan or is it important to use another companies models? They are built different so I assume will offer a different perspective
+                - listitem [ref=e589]:
+                  - paragraph [ref=e590]: Do you use some sort of open harness where you can use one terminal or system to automate this interaction? I looking into opencode but it looks like I can't use my claude subscription
+                - listitem [ref=e591]:
+                  - paragraph [ref=e592]: Do you have a model you particularly like as a argument partner for Claude?
+                - listitem [ref=e593]:
+                  - paragraph [ref=e594]: For those coding everyday have you found any really good systems that have supercharged your productivity? I'm aware of GSD and the gstack, but I've been wary of adding too much that I don't understand to the mix, until I've become really comfortable with how the system works.
+            - generic [ref=e595]: 更多
+        - generic [ref=e596]:
+          - link [ref=e597] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1rtetb5/i_built_an_opensource_tool_that_autoreviews_every/
+          - generic [ref=e598]:
+            - generic [ref=e599]:
+              - link "I built an open-source tool that auto-reviews every PR/MR using Claude Code CLI — zero config" [ref=e600] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1rtetb5/i_built_an_opensource_tool_that_autoreviews_every/
+              - generic "Built with Claude" [ref=e601]
+            - generic [ref=e602]:
+              - text: 2 指標 •
+              - link "2 留言" [ref=e604] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1rtetb5/i_built_an_opensource_tool_that_autoreviews_every/
+              - generic [ref=e605]:
+                - text: 已發送
+                - time [ref=e606]: 2 月前
+              - generic [ref=e607]:
+                - text: by
+                - link "Time_Alternative675" [ref=e608] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Time_Alternative675
+              - generic [ref=e609]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e610] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e613]:
+              - paragraph [ref=e614]: I built claude-code-reviewer — a tool that automatically reviews your GitHub PRs and GitLab MRs using Claude Code CLI.
+              - paragraph [ref=e615]: "**How it works:**"
+              - paragraph [ref=e616]: "- Clone the repo, run setup — it auto-detects your platform (GitHub/GitLab), authenticates, and installs a scheduler"
+              - paragraph [ref=e617]: "- Every 15 min it checks for open PRs/MRs where you're a reviewer"
+              - paragraph [ref=e618]: "- Clones the repo (cached after first run), checks out the PR branch, and runs a two-pass review:"
+              - paragraph [ref=e619]: "- Pass 1 (CRITICAL): SQL injection, race conditions, trust boundary violations — these block"
+              - paragraph [ref=e620]: "- Pass 2 (INFORMATIONAL): dead code, test gaps, performance — noted but non-blocking"
+              - paragraph [ref=e621]: "- Posts inline comments on the exact code lines + a summary comment"
+              - paragraph [ref=e622]: "**One-command install — paste into Claude Code:**"
+              - paragraph [ref=e623]:
+                - text: "Install claude-code-reviewer: run git clone"
+                - link "https://github.com/shubhesh07/claude-code-reviewer.git" [ref=e624] [cursor=pointer]:
+                  - /url: https://github.com/shubhesh07/claude-code-reviewer.git
+                - text: ~/claude-code-reviewer && cd ~/claude-code-reviewer && ./setup.sh --auto
+              - paragraph [ref=e625]: "**Or review a single PR/MR immediately:**"
+              - paragraph [ref=e626]:
+                - text: ./review.sh
+                - link "https://github.com/org/repo/pull/123" [ref=e627] [cursor=pointer]:
+                  - /url: https://github.com/org/repo/pull/123
+              - paragraph [ref=e628]:
+                - text: ./review.sh
+                - link "https://gitlab.com/org/project/-/merge_requests/42" [ref=e629] [cursor=pointer]:
+                  - /url: https://gitlab.com/org/project/-/merge_requests/42
+              - paragraph [ref=e630]: "**Features:**"
+              - paragraph [ref=e631]: "- Works with both GitHub and GitLab"
+              - paragraph [ref=e632]: "- Two review modes: gstack (full repo context, two-pass) and builtin (diff-only, faster)"
+              - paragraph [ref=e633]: "- Customizable checklist — add your own rules"
+              - paragraph [ref=e634]: "- Cached clones — first review clones, subsequent reviews just fetch"
+              - paragraph [ref=e635]: "- Greptile bot comment triage (GitHub)"
+              - paragraph [ref=e636]: Uses the gstack review methodology by Garry Tan.
+              - paragraph [ref=e637]:
+                - text: "GitHub:"
+                - link "https://github.com/shubhesh07/claude-code-reviewer" [ref=e638] [cursor=pointer]:
+                  - /url: https://github.com/shubhesh07/claude-code-reviewer
+              - paragraph [ref=e639]: MIT licensed, feedback welcome!
+            - generic [ref=e640]: 更多
+        - generic [ref=e641]:
+          - link [ref=e642] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1su66ah/spent_a_week_building_a_cli_so_my_ai_agent_would/
+          - generic [ref=e643]:
+            - generic [ref=e644]:
+              - link "Spent a week building a CLI so my AI agent would stop spawning a fresh browser every time" [ref=e645] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1su66ah/spent_a_week_building_a_cli_so_my_ai_agent_would/
+              - generic "Built with Claude" [ref=e646]
+            - generic [ref=e647]:
+              - text: 2 指標 •
+              - link "3 留言" [ref=e649] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1su66ah/spent_a_week_building_a_cli_so_my_ai_agent_would/
+              - generic [ref=e650]:
+                - text: 已發送
+                - time [ref=e651]: 22 天前
+              - generic [ref=e652]:
+                - text: by
+                - link "chocate" [ref=e653] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/chocate
+              - generic [ref=e654]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e655] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e658]:
+              - paragraph [ref=e659]: Most browser-automation tools boot a fresh browser on every command. Ghax keeps a CDP session open via a small persistent daemon, so you pay the cold start once per session instead of once per call.
+              - paragraph [ref=e660]:
+                - text: Cold-start workflow (launch → goto → text → eval → screenshot → snapshot → close), Apple Silicon, against
+                - code [ref=e661]: example.com
+                - text: ":"
+              - table [ref=e662]:
+                - rowgroup [ref=e663]:
+                  - row "Tool Cold start Warm (per command)" [ref=e664]:
+                    - columnheader "Tool" [ref=e665]
+                    - columnheader "Cold start" [ref=e666]
+                    - columnheader "Warm (per command)" [ref=e667]
+                - rowgroup [ref=e668]:
+                  - row "ghax 1.56 s 49 ms" [ref=e669]:
+                    - cell "ghax" [ref=e670]:
+                      - strong [ref=e671]: ghax
+                    - cell "1.56 s" [ref=e672]
+                    - cell "49 ms" [ref=e673]:
+                      - strong [ref=e674]: 49 ms
+                  - row "gstack-browse 6.70 s 58 ms" [ref=e675]:
+                    - cell "gstack-browse" [ref=e676]
+                    - cell "6.70 s" [ref=e677]
+                    - cell "58 ms" [ref=e678]
+                  - row "agent-browser 3.48 s 344 ms" [ref=e679]:
+                    - cell "agent-browser" [ref=e680]
+                    - cell "3.48 s" [ref=e681]
+                    - cell "344 ms" [ref=e682]
+                  - row "playwright-cli 5.13 s 680 ms" [ref=e683]:
+                    - cell "playwright-cli" [ref=e684]
+                    - cell "5.13 s" [ref=e685]
+                    - cell "680 ms" [ref=e686]
+              - paragraph [ref=e687]: "Warm-loop on a real Wikipedia article (~250 KB): ghax 117 ms/cmd vs playwright-cli 778 ms/cmd. Text extraction is 9× faster — 154 ms vs 1,404 ms — because ghax hits a DOM that's already parsed instead of booting a browser just to query it."
+              - paragraph [ref=e688]:
+                - text: The CLI is Rust, ~3 MB stripped, ~20 ms cold start for single-command invocations. The daemon is an ~80 KB Node bundle that holds one CDP connection open. Full methodology and reproduction steps in
+                - code [ref=e689]: docs/BENCHMARK.md
+                - text: .
+              - paragraph [ref=e690]: "Features:"
+              - list [ref=e691]:
+                - listitem [ref=e692]:
+                  - text: Accessibility-tree snapshots with
+                  - code [ref=e693]: "@e<n>"
+                  - text: refs — click by role and name, not brittle CSS selectors
+                - listitem [ref=e694]: Dialog-aware walker — when a modal is open, snapshots walk the modal instead of the aria-hidden app behind it
+                - listitem [ref=e695]:
+                  - text: Shadow-DOM traversal with chain selectors (
+                  - code [ref=e696]: host >> inner
+                  - text: ) for custom-element apps (Lit, Shoelace, web components)
+                - listitem [ref=e697]: MV3 extension internals — service worker eval, chrome.storage read/write, popup/options/side-panel eval, and hot-reload of the SW plus content scripts in ~5 s without losing tab state
+                - listitem [ref=e698]:
+                  - text: Console and network capture with HAR export, dedup, and source-map resolution (maps
+                  - code [ref=e699]: main.abc123.js:1:48291
+                  - text: to
+                  - code [ref=e700]: src/AuthForm.tsx:42:12
+                  - text: )
+                - listitem [ref=e701]: Core Web Vitals — LCP with the element that triggered it, FCP, CLS, TTFB, full nav timing
+                - listitem [ref=e702]:
+                  - text: Real user gestures via CDP
+                  - code [ref=e703]: Input.dispatch*
+                  - text: (needed for APIs like
+                  - code [ref=e704]: chrome.sidePanel.open()
+                  - text: that refuse synthetic clicks)
+                - listitem [ref=e705]: Batch execution — one round-trip plan with auto re-snapshot between ref-using steps, so a mid-plan combobox reshuffle doesn't wreck later refs
+                - listitem [ref=e706]: Live CSS/JS fix-preview — mutate the running page, measure, and screenshot in one call
+              - paragraph [ref=e707]: Works with Edge, Chrome, Chromium, Brave, and Arc.
+              - paragraph [ref=e708]:
+                - link "https://github.com/kepptic/ghax" [ref=e709] [cursor=pointer]:
+                  - /url: https://github.com/kepptic/ghax
+            - generic [ref=e710]: 更多
+        - generic [ref=e711]:
+          - link [ref=e712] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1rx83do/i_adapted_garry_tans_gstack_for_c_development_now/
+          - generic [ref=e713]:
+            - generic [ref=e714]:
+              - link "I adapted Garry Tan's gstack for C++ development — now with n8n automation" [ref=e715] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1rx83do/i_adapted_garry_tans_gstack_for_c_development_now/
+                - text: I adapted Garry Tan's
+                - mark [ref=e716]: gstack
+                - text: for C++ development — now with n8n automation
+              - generic "Built with Claude" [ref=e717]
+            - generic [ref=e718]:
+              - text: 2 指標 •
+              - link "4 留言" [ref=e720] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1rx83do/i_adapted_garry_tans_gstack_for_c_development_now/
+              - generic [ref=e721]:
+                - text: 已發送
+                - time [ref=e722]: 1 月前
+              - generic [ref=e723]:
+                - text: by
+                - link "Valuable_Elevator948" [ref=e724] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Valuable_Elevator948
+              - generic [ref=e725]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e726] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e729]:
+              - paragraph [ref=e730]:
+                - text: I've been using Garry Tan's
+                - link "gstack" [ref=e731] [cursor=pointer]:
+                  - /url: https://github.com/garrytan/gstack
+                - text: for a while and found it incredibly useful — but it's built for web development (Playwright, npm, React). I adapted it for C++ development.
+              - paragraph [ref=e732]:
+                - strong [ref=e733]: "What I changed:"
+              - paragraph [ref=e734]: "Every skill, workflow, and placeholder generator rewritten for the C++ toolchain: - cmake/make/ninja instead of npm - ctest + GTest/Catch2 instead of Playwright - clang-tidy/cppcheck instead of ESLint - ASan/UBSan/TSan/valgrind instead of browser console logs"
+              - paragraph [ref=e735]:
+                - strong [ref=e736]: "What it does:"
+              - paragraph [ref=e737]:
+                - text: "13 specialist AI roles for C++ development: -"
+                - code [ref=e738]: /review
+                - text: — Pre-landing PR review for memory safety, UB, data races -
+                - code [ref=e739]: /qa
+                - text: — Build → test → static analysis → sanitizers → fix → re-verify -
+                - code [ref=e740]: /ship
+                - text: — One-command ship with PR creation -
+                - code [ref=e741]: /plan-eng-review
+                - text: — Architecture planning with ownership diagrams - Plus 9 more (CEO review, design audit, retro, etc.)
+              - paragraph [ref=e742]:
+                - strong [ref=e743]: "New in v0.7.0 (my additions):"
+              - list [ref=e744]:
+                - listitem [ref=e745]: n8n integration for GitHub webhook → gstack++ → Slack/Jira automation
+                - listitem [ref=e746]: MCP server wrapper for external AI agents (Claude Desktop, Cursor)
+                - listitem [ref=e747]: Pre-built workflows for review, QA, and ship
+              - paragraph [ref=e748]:
+                - strong [ref=e749]: "Installation:"
+              - paragraph [ref=e750]:
+                - code [ref=e751]: bash git clone https://github.com/bulyaki/gstackplusplus.git ~/.claude/skills/gstackplusplus cd ~/.claude/skills/gstackplusplus && ./setup
+              - paragraph [ref=e752]: Takes ~5 minutes. Works with Claude Code, Codex, Qwen, Cursor, Copilot.
+              - paragraph [ref=e753]:
+                - strong [ref=e754]: "Repo:"
+                - link "https://github.com/bulyaki/gstackplusplus" [ref=e755] [cursor=pointer]:
+                  - /url: https://github.com/bulyaki/gstackplusplus
+            - generic [ref=e756]: 更多
+        - generic [ref=e757]:
+          - link [ref=e758] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1rxd36p/drowning_in_ai_how_do_i_actually_learn_this/
+          - generic [ref=e759]:
+            - generic [ref=e760]:
+              - link "Drowning in AI! how do I actually learn this properly?" [ref=e761] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1rxd36p/drowning_in_ai_how_do_i_actually_learn_this/
+              - generic "Question" [ref=e762]
+            - generic [ref=e763]:
+              - text: 2 指標 •
+              - link "8 留言" [ref=e765] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1rxd36p/drowning_in_ai_how_do_i_actually_learn_this/
+              - generic [ref=e766]:
+                - text: 已發送
+                - time [ref=e767]: 1 月前
+              - generic [ref=e768]:
+                - text: by
+                - link "Winter_Pop9267" [ref=e769] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Winter_Pop9267
+              - generic [ref=e770]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e771] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e774]:
+              - paragraph [ref=e775]:
+                - strong [ref=e776]: Hello good people, hopefully smarter than me at AI,
+              - paragraph [ref=e777]: I am a software engineer with 4 years of experience. I have mid level knowledge about programming, APIs, databases, development, etc. I would rate myself as an average developer. I started using AI from mid 2023, just asking questions on ChatGPT or getting some code snippet help.
+              - paragraph [ref=e778]: About 6 months back I started using AI agents like Cursor and Claude Code. I had little knowledge. The only thing I did was bad prompting, very bad prompting. “Fix this”, “Do that” etc were my prompts without enough explanation. Then I started to realize AI hallucinations and how to use context efficiently. After that I started prompting more broadly and got moderately good results than before. Things were going fine until I realized I am just prompting, not actually using AI to its fullest. I was just sitting behind the machine, allowing or rejecting bad codes.
+              - paragraph [ref=e779]: I did not learn proper AI usage,I was overwhelmed with all AI stuff. MCP servers, orchestration, OpenClaw, one after another, it keeps coming. Just one week back I discovered GStack by Gary and using that I understood how far behind I am in the space of AI building.
+              - paragraph [ref=e780]: With this situation I am asking for your help. I somewhat understand software engineering. I am not asking for design patterns or general coding help, nor do I want to be 10x developer in a day.
+              - paragraph [ref=e781]:
+                - text: I am asking how do I level up in this game in long run?
+                - text: I see people saying their AI codes while they are asleep or away, how is this done?
+                - text: How do people use multiple AI models in one coding session for better output?
+                - text: What do you suggest I follow step by step?
+              - paragraph [ref=e782]: I believe more like me are at this stage.Your guidance will help us all. Please take some time to educate us.
+              - paragraph [ref=e783]: Thanks in advance.
+            - generic [ref=e784]: 更多
+        - generic [ref=e785]:
+          - link [ref=e786] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1s5uga4/sextant_making_claude_code_read_your_code_before/
+          - generic [ref=e787]:
+            - generic [ref=e788]:
+              - 'link "Sextant: Making Claude Code Read Your Code Before Changing It" [ref=e789] [cursor=pointer]':
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1s5uga4/sextant_making_claude_code_read_your_code_before/
+              - generic "Vibe Coding" [ref=e790]
+            - generic [ref=e791]:
+              - text: 1 指標 •
+              - link "4 留言" [ref=e793] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1s5uga4/sextant_making_claude_code_read_your_code_before/
+              - generic [ref=e794]:
+                - text: 已發送
+                - time [ref=e795]: 1 月前
+              - generic [ref=e796]:
+                - text: by
+                - link "Salt-Ad1762" [ref=e797] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Salt-Ad1762
+              - generic [ref=e798]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e799] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e802]:
+              - paragraph [ref=e803]:
+                - link "https://preview.redd.it/kmfzgtu0sqrg1.png?width=1536&format=png&auto=webp&s=4110707658e25253d1412487cc444dd96ef3a34d" [ref=e804] [cursor=pointer]:
+                  - /url: https://preview.redd.it/kmfzgtu0sqrg1.png?width=1536&format=png&auto=webp&s=4110707658e25253d1412487cc444dd96ef3a34d
+              - paragraph [ref=e805]:
+                - text: "An architecture-aware engineering principles framework for Claude Code, built for real work on existing codebases: bug fixes, feature work, refactoring, code review, migration, and more. Instead of treating every request the same way,"
+                - link "Sextant" [ref=e806] [cursor=pointer]:
+                  - /url: https://github.com/hellotern/Sextant
+                - text: routes work by task type, applies rules that match the size of the change, and makes principle conflicts explicit instead of leaving them to guesswork.
+              - heading "1. Why Sextant Exists" [level=1] [ref=e807]
+              - paragraph [ref=e808]: If you have used Claude Code on anything more serious than a toy project, you have probably seen the same patterns.
+              - paragraph [ref=e809]: Sometimes it starts editing too early. It reads the error trace, opens one nearby function, and jumps into a fix before it has actually located the root cause.
+              - paragraph [ref=e810]: Sometimes it ignores the shape of the existing system. You ask for a feature, and instead of extending the pattern that is already there, it invents a new one.
+              - paragraph [ref=e811]: And sometimes it applies the wrong amount of process. A tiny local change gets treated like an architecture exercise, while a cross-module change gets handled as if it were just a one-file patch.
+              - paragraph [ref=e812]: "Sextant is built around a simple idea: first establish a safe baseline, then figure out what kind of task this is, and then apply the rules that make sense for that kind of change. The goal is not to add ceremony. The goal is to help Claude Code make better decisions before it starts modifying code."
+              - heading "2. Task-Type Routing Instead of One Generic Workflow" [level=1] [ref=e813]
+              - paragraph [ref=e814]: Sextant is not one monolithic prompt. It is a set of specialized sub-skills, and Claude Code automatically matches the user’s request to the most relevant one.
+              - paragraph [ref=e815]: That matters because a bug fix should not behave like a migration, and a code review should not behave like a feature implementation.
+              - paragraph [ref=e816]: "Here is the structure at a high level:"
+              - paragraph [ref=e817]:
+                - link "https://preview.redd.it/nxja28vosqrg1.png?width=1594&format=png&auto=webp&s=9c9c885041ce6fcab31d955e93969f77d55a4eb5" [ref=e818] [cursor=pointer]:
+                  - /url: https://preview.redd.it/nxja28vosqrg1.png?width=1594&format=png&auto=webp&s=9c9c885041ce6fcab31d955e93969f77d55a4eb5
+              - paragraph [ref=e819]: "One detail I like here is the disambiguation step. For example, the bug-fix skill first asks whether the issue is actually broken behavior or whether the requirement changed. If it is the latter, Sextant redirects the work to `modify-feature` instead of pretending it is a bug. That is a small design choice, but it prevents a lot of wasted motion."
+              - heading "3. Different Task Sizes Activate Different Rules" [level=1] [ref=e820]
+              - paragraph [ref=e821]: Another thing Sextant does explicitly is treat small and large changes differently.
+              - paragraph [ref=e822]: "The same `fix-bug` skill does not always run with the same rule depth. Instead, the rules that get activated depend on the task size:"
+              - paragraph [ref=e823]:
+                - text: "-"
+                - strong [ref=e824]: Lightweight
+                - text: ": single-function tweaks, config changes, and other narrow edits. These use the baseline rules, anti-pattern detection, and direct execution."
+                - text: "-"
+                - strong [ref=e825]: Medium
+                - text: ": module-internal changes or work that introduces new functions or classes. These add checks like SRP, DRY, and interface contract review."
+                - text: "-"
+                - strong [ref=e826]: Large
+                - text: ": cross-module changes or public interface changes. These bring in broader checks such as impact analysis and architecture compliance review."
+              - paragraph [ref=e827]: This is not left to vibes. Sextant defines a five-factor Impact Radius Scorecard based on things like files changed, public interface changes, dependency direction changes, data structure changes, and downstream blast radius. That score determines whether the work is treated as lightweight, medium, large, or architectural.
+              - paragraph [ref=e828]: What matters here is not the labels themselves. It is that the rule activation is explicit. Small tasks stay small. Bigger tasks do not get to pretend they are small just because the initial diff looks simple.
+              - heading "4. Principle Conflicts Are Handled as Decisions, Not Vibes" [level=1] [ref=e829]
+              - paragraph [ref=e830]: A lot of engineering advice sounds reasonable in isolation.
+              - paragraph [ref=e831]: Keep things DRY. Avoid overengineering. Respect boundaries. Minimize change. Prefer secure choices.
+              - paragraph [ref=e832]: The hard part is when those principles collide.
+              - paragraph [ref=e833]: Sextant makes that collision explicit. Instead of vaguely saying “balance the tradeoffs,” it defines arbitration rules for common conflicts.
+              - paragraph [ref=e834]: "A few examples:"
+              - paragraph [ref=e835]:
+                - text: "-"
+                - strong [ref=e836]: DRY vs YAGNI
+                - text: ": if shared logic has only one caller, YAGNI wins."
+                - text: "-"
+                - strong [ref=e837]: OCP vs YAGNI
+                - text: ": if an interface has only one implementation, ship the concrete class directly."
+                - text: "-"
+                - strong [ref=e838]: DRY vs Layer Boundaries
+                - text: ": if deduplication would cut across boundaries, the boundary wins."
+                - text: "-"
+                - strong [ref=e839]: Baseline vs Minimal Change
+                - text: ": if you are fixing a bug and notice nearby baseline issues, minimal change usually wins."
+                - text: "-"
+                - strong [ref=e840]: Security vs Convenience
+                - text: ": security wins."
+              - paragraph [ref=e841]: That matters more than it sounds. A lot of AI-generated changes go off track not because the code is syntactically wrong, but because the model does not know which principle should take priority in context. Sextant’s approach is to reduce that ambiguity.
+              - heading "5. Where Sextant Fits Compared with Superpowers and gstack" [level=1] [ref=e842]
+              - paragraph [ref=e843]: In the Claude Code skills ecosystem, Superpowers (by Jesse Vincent / obra) and gstack (by Garry Tan) are two well-known frameworks. The comparison is not really about which one is “best.” It is about what kind of work each one is optimized for.
+              - heading "Design Philosophy at a Glance" [level=1] [ref=e844]
+              - paragraph [ref=e845]:
+                - link "https://preview.redd.it/5x7el8issqrg1.png?width=1962&format=png&auto=webp&s=63d308ae9f89861edda4bd8044eff9cc1ee25f94" [ref=e846] [cursor=pointer]:
+                  - /url: https://preview.redd.it/5x7el8issqrg1.png?width=1962&format=png&auto=webp&s=63d308ae9f89861edda4bd8044eff9cc1ee25f94
+              - paragraph [ref=e847]: A table like this can make the differences look cleaner than they feel in real use, but it does help anchor the comparison.
+              - paragraph [ref=e848]: "One practical difference is how you get into a workflow. Superpowers and gstack both lean on explicit slash commands, so the user chooses the mode up front. Sextant leans the other way: you describe the task in natural language, and Claude Code matches it to a sub-skill. Neither model is universally better. One gives you more explicit control; the other asks you to remember less while you are already in the middle of debugging or implementation."
+              - paragraph [ref=e849]: "The TDD row shows a similar difference in philosophy. Superpowers is prescriptive about test-first development. Sextant treats it as a project-level setting. That is less a question of capability than of taste: should the framework enforce a working style, or adapt to the one the project already uses?"
+              - heading "Where Each Framework Shines" [level=1] [ref=e850]
+              - paragraph [ref=e851]: "This is where the comparison becomes more useful than the feature list. Superpowers makes the most sense when the team wants a structured loop for new work: brainstorm, plan, implement, and keep TDD front and center. gstack is more helpful when the missing piece is not code structure but role coverage — product questions, design feedback, QA flows, and the kind of prompts a solo builder or small team would otherwise have to simulate manually."
+              - paragraph [ref=e852]: "Sextant is aimed at a different problem: everyday engineering work inside an existing system. When the codebase already has architecture, module boundaries, compatibility constraints, and a lot of history, what matters most is not brainstorming or role-play. You need the AI to understand the code it is about to change, route the task correctly, and apply checks that match the scope of the change. That is Sextant’s center of gravity."
+              - heading "What Stands Out in Practice" [level=1] [ref=e853]
+              - paragraph [ref=e854]: "What makes Sextant stand out is not that it tries to do everything. It is that a few decisions are made explicit instead of being left implicit: task-type routing, principle conflict arbitration, confirmation before riskier edits, visible progress during multi-step work, and optional GitNexus acceleration. The architecture-paradigm support is part of the same pattern. A layer violation does not look the same in a backend service, a frontend component tree, or a monorepo, so the framework tries to judge the same principle in context rather than as a flat rule."
+              - heading "6. Why GitNexus Changes the Workflow" [level=1] [ref=e855]
+              - paragraph [ref=e856]: One of the more practical parts of Sextant is how well it lines up with GitNexus.
+              - paragraph [ref=e857]: Claude Code fundamentally operates at the text level. It reads files, searches symbols, and traces call chains one hop at a time. That is fine in smaller projects, but it becomes expensive and incomplete in larger codebases.
+              - paragraph [ref=e858]: "Three bottlenecks show up quickly:"
+              - paragraph [ref=e859]:
+                - text: "- grep finds text matches, not relationships"
+                - text: "- call-chain tracing becomes hop-by-hop manual exploration"
+                - text: "- “what breaks if I change this?” becomes difficult without a global view"
+              - paragraph [ref=e860]: GitNexus addresses that by indexing the codebase as a knowledge graph. It parses ASTs, extracts relationships such as calls, imports, and inheritance, stores them in a queryable graph, and exposes tools through MCP. That means the agent can ask relationship-oriented questions directly instead of reconstructing everything from text search.
+              - paragraph [ref=e861]: Just as importantly, the integration is optional.
+              - paragraph [ref=e862]: "Sextant checks whether a `.gitnexus/` directory exists. If it does, the GitNexus tool guidance is injected. If not, the same workflow falls back to grep and file reading. In other words, GitNexus is an accelerator, not a requirement."
+              - heading "7. What GitNexus Looks Like in Practice" [level=1] [ref=e863]
+              - paragraph [ref=e864]: The difference becomes clearer in actual workflows.
+              - heading "Bug Fixing" [level=1] [ref=e865]
+              - paragraph [ref=e866]: Without GitNexus, locating root cause means grepping for error keywords, opening files one by one, tracing callers manually, and estimating impact as you go.
+              - paragraph [ref=e867]: With GitNexus, the same step can use graph queries to locate relevant symbols, inspect caller/callee context, trace the execution path, and enumerate affected upstream callers.
+              - paragraph [ref=e868]: The workflow is the same. What changes is how expensive each step is.
+              - heading "New Feature Work" [level=1] [ref=e869]
+              - paragraph [ref=e870]: When adding a feature, Sextant wants to understand the existing architecture and find the most relevant reference module.
+              - paragraph [ref=e871]: Without GitNexus, that means browsing directories and inferring from filenames and code.
+              - paragraph [ref=e872]: With GitNexus, the agent can search for semantically related modules, inspect a module’s dependency relationships, and look for existing extension points like strategies, factories, registries, or plugins. That makes the integration decision less speculative.
+              - heading "Migration" [level=1] [ref=e873]
+              - paragraph [ref=e874]: For migrations, the job is not just to find direct references to an old API, but to understand the impact scope and migration order.
+              - paragraph [ref=e875]: Without GitNexus, that is mostly grep.
+              - paragraph [ref=e876]: With GitNexus, the agent can query upstream impact and detect circular dependencies that affect sequencing. That lines up directly with Sextant’s leaf-first migration principle.
+              - 'heading "8. A Real Example: Two Bugs in a C++ Orchestrator" [level=1] [ref=e877]'
+              - paragraph [ref=e878]: The strongest part of the story is the execution example, because it shows how these ideas play out in an actual bug-fix flow.
+              - paragraph [ref=e879]: "The project is a C++ orchestrator for a voice interaction system involving VAD, ASR, TTC, and related components. The user reported multiple issues in `orchestrator.cpp`, which triggered Sextant’s `fix-bug` skill."
+              - 'heading "Step 1: Read First, Then Diagnose" [level=1] [ref=e880]'
+              - paragraph [ref=e881]:
+                - link "https://preview.redd.it/s01f0o21tqrg1.png?width=2714&format=png&auto=webp&s=5cd62cd188858cb13e05bcdbfcfe2c21fc2cf784" [ref=e882] [cursor=pointer]:
+                  - /url: https://preview.redd.it/s01f0o21tqrg1.png?width=2714&format=png&auto=webp&s=5cd62cd188858cb13e05bcdbfcfe2c21fc2cf784
+              - paragraph [ref=e883]: Sextant starts by loading the skill, showing the progress block, and reading the relevant file.
+              - paragraph [ref=e884]:
+                - link "https://preview.redd.it/mqixchx2tqrg1.png?width=2692&format=png&auto=webp&s=b9c8dbe6603cea858aed84c66e880b58017adfc0" [ref=e885] [cursor=pointer]:
+                  - /url: https://preview.redd.it/mqixchx2tqrg1.png?width=2692&format=png&auto=webp&s=b9c8dbe6603cea858aed84c66e880b58017adfc0
+              - paragraph [ref=e886]: "After analysis, it produces four findings. Two of them are explicitly judged to be **not bugs in scope** because they are intentional stubs marked for a later task. The other two are treated as real gaps:"
+              - paragraph [ref=e887]:
+                - text: "- `on_asr_result()` can transition to `PROCESSING` even when TTC still indicates `CONTINUE_LISTENING`"
+                - text: "- `graceful_shutdown()` persists state to the orchestrator’s own database connection, but checkpoints a different SQLite connection instead"
+              - paragraph [ref=e888]: That first distinction matters. It shows the system is not simply treating unfinished-looking code as broken code.
+              - 'heading "Step 2 and Step 3: Ask Before Editing" [level=1] [ref=e889]'
+              - paragraph [ref=e890]:
+                - link "https://preview.redd.it/o9ozzre4tqrg1.png?width=2718&format=png&auto=webp&s=62cc1b20218c060d4b40b56266aee4833910804e" [ref=e891] [cursor=pointer]:
+                  - /url: https://preview.redd.it/o9ozzre4tqrg1.png?width=2718&format=png&auto=webp&s=62cc1b20218c060d4b40b56266aee4833910804e
+              - paragraph [ref=e892]: "For the TTC-related issue, Sextant presents several repair options to the user through an interactive UI, including a recommended option to gate `on_asr_result()` on the `CONTINUE_LISTENING` decision."
+              - paragraph [ref=e893]: The important point here is not the exact UI. It is that the fix plan is surfaced before code changes happen. The user sees the root cause, the proposed change shape, and the risk, then confirms the direction. That is the confirmation gate in action.
+              - 'heading "Step 4: Verify and Report Limits" [level=1] [ref=e894]'
+              - paragraph [ref=e895]:
+                - link "https://preview.redd.it/tmhhg8j5tqrg1.png?width=2668&format=png&auto=webp&s=2ba26e9a2e885d0f0bc10d612b5f57f654232c52" [ref=e896] [cursor=pointer]:
+                  - /url: https://preview.redd.it/tmhhg8j5tqrg1.png?width=2668&format=png&auto=webp&s=2ba26e9a2e885d0f0bc10d612b5f57f654232c52
+              - paragraph [ref=e897]: "After the fixes, Sextant runs boundary validation and summarizes what was verified:"
+              - paragraph [ref=e898]:
+                - text: "- the TTC gating issue is fixed"
+                - text: "- the normal path is unaffected"
+                - text: "- the gate acts as a safety net for edge cases"
+                - text: "- the correct database is now checkpointed"
+                - text: "- the build is clean and no callers are affected"
+              - paragraph [ref=e899]: "It also explicitly notes what was **not** covered by automated timing tests, including the `<20ms` barge-in path and the `5ms` AED window."
+              - paragraph [ref=e900]: That kind of verification summary is one of the clearest parts of the example. It is not just “fixed.” It is “fixed, here is what we checked, and here is what still needs real testing.”
+              - heading "9. What the Example Actually Shows" [level=1] [ref=e901]
+              - paragraph [ref=e902]: The orchestrator example ends up making the point more clearly than any feature list could.
+              - paragraph [ref=e903]: "It shows that Sextant is trying to produce a particular kind of behavior:"
+              - list [ref=e904]:
+                - listitem [ref=e905]:
+                  - paragraph [ref=e906]:
+                    - text: "**Read before acting**"
+                    - text: Do not jump from symptom to edit.
+                - listitem [ref=e907]:
+                  - paragraph [ref=e908]:
+                    - text: "**Keep bug fixes small when they should stay small**"
+                    - text: In the example, the final changes are narrow and local.
+                - listitem [ref=e909]:
+                  - paragraph [ref=e910]:
+                    - text: "**Ask before applying non-trivial fixes**"
+                    - text: The user sees the plan before the patch lands.
+                - listitem [ref=e911]:
+                  - paragraph [ref=e912]:
+                    - text: "**Make execution visible**"
+                    - text: Progress blocks show what step the workflow is in.
+                - listitem [ref=e913]:
+                  - paragraph [ref=e914]:
+                    - text: "**Be honest about verification**"
+                    - text: Risks and untested edges are called out explicitly.
+              - paragraph [ref=e915]: That is really the best summary of what Sextant is for. It is less about “AI that writes code faster” and more about “AI that changes code with better judgment.”
+              - paragraph [ref=e916]: — -
+              - heading "Installation" [level=1] [ref=e917]
+              - code [ref=e919]: "# Option 1: Official Claude marketplace /plugin install sextant@claude-plugins-official # Option 2: Via GitHub marketplace /plugin marketplace add hellotern/sextant /plugin install sextant@mohist-plugins # Option 3: Team configuration (commit to repo, team gets it on checkout) # Configure in .claude/settings.json"
+              - paragraph [ref=e920]: See the GitHub repository for full installation instructions and documentation.
+              - heading "Closing Thought" [level=1] [ref=e921]
+              - paragraph [ref=e922]: Sextant is not presented as a replacement for every other Claude Code framework. Superpowers and gstack solve different problems.
+              - paragraph [ref=e923]: "What Sextant is trying to do is narrower and, to me, more grounded: help Claude Code work more reliably inside existing codebases, where architecture, task shape, change scope, and principle conflicts all matter before the first edit is made."
+              - paragraph [ref=e924]:
+                - strong [ref=e925]: Principles are tools, not chains
+                - text: . The goal is not more process for its own sake. The goal is to make better changes with lower long-term maintenance cost.
+            - generic [ref=e926]: 更多
+        - generic [ref=e927]:
+          - link [ref=e928] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1rrzs34/steal_my_playbook_for_oneshotting_prs_with_claude/
+          - generic [ref=e929]:
+            - generic [ref=e930]:
+              - link "Steal my playbook for one-shotting PRs with Claude Code" [ref=e931] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1rrzs34/steal_my_playbook_for_oneshotting_prs_with_claude/
+              - generic "Productivity" [ref=e932]
+            - generic [ref=e933]:
+              - text: 1 指標 •
+              - link "1 留言" [ref=e935] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1rrzs34/steal_my_playbook_for_oneshotting_prs_with_claude/
+              - generic [ref=e936]:
+                - text: 已發送
+                - time [ref=e937]: 2 月前
+              - generic [ref=e938]:
+                - text: by
+                - link "nicolascoding" [ref=e939] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/nicolascoding
+              - generic [ref=e940]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e941] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e944]:
+              - heading "Steal my playbook for one-shotting PRs with Claude Code" [level=1] [ref=e945]
+              - paragraph [ref=e946]: Been running this system internally for weeks and Garry Tan (YC CEO) just open-sourced gstack using the same mental model so figured it's worth sharing.
+              - paragraph [ref=e947]: "I call it the Director/Manager/Engineer model:"
+              - paragraph [ref=e948]: You = Director of Engineering (write the brief, set acceptance criteria) Claude Code = Engineering Manager (studies codebase, plans, executes) Skills/plugins = Development team (each owns a lane)
+              - paragraph [ref=e949]:
+                - strong [ref=e950]: "The workflow:"
+              - list [ref=e951]:
+                - listitem [ref=e952]:
+                  - strong [ref=e953]: YOU - Director Mode (5-10 min)
+                  - text: Write a real feature brief. Problem, constraints, what "done" looks like. No code, no implementation hints.
+                - listitem [ref=e954]:
+                  - strong [ref=e955]: /batch - Manager & Delegation Mode (20+ min)
+                  - text: Hand off the brief. Claude studies your codebase and CLAUDE.md, asks clarifying questions, then executes across parallel worktrees. Tell it which skills to use (feature-dev, frontend-design, etc).
+                - listitem [ref=e956]:
+                  - strong [ref=e957]: /simplify - Peer Review (20 min)
+                  - text: 3 parallel agents review for efficiency, correctness, and maintainability before you even look at the diff.
+                - listitem [ref=e958]:
+                  - strong [ref=e959]: HUMAN - QA (10-30 min)
+                  - text: Click through every flow. Try to break it. Give specific feedback, not "it's buggy."
+                - listitem [ref=e960]:
+                  - strong [ref=e961]: /code-review - Final Gate (5-10 min)
+                  - text: 4 independent agents with confidence scoring. Security, performance, standards compliance.
+                - listitem [ref=e962]:
+                  - strong [ref=e963]: Ship it.
+                  - text: ~45-90 min total for a merge-ready feature.
+              - paragraph [ref=e964]: The key insight is to stop prompting like a developer and start directing like an executive. The moment I stopped micromanaging function signatures and started writing briefs, everything clicked.
+              - paragraph [ref=e965]: What's wild is Garry Tan independently built gstack on the exact same role hierarchy. CEO review, eng manager review, staff engineer review, release engineer shipping. Same idea, built separately. The convergent evolution is telling.
+              - paragraph [ref=e966]:
+                - strong [ref=e967]: "Where gstack and this approach differ:"
+              - list [ref=e968]:
+                - listitem [ref=e969]: gstack has /plan-ceo-review (forces "10-star product" thinking). We keep planning as a human step
+                - listitem [ref=e970]: We use /batch + feature-dev + frontend-design for building. gstack doesn't have a dedicated build phase
+                - listitem [ref=e971]: gstack has /ship (automated PRs) and /browse (Playwright QA). still doing those manually on our end. I'm afraid to give claude full access to our CI/CD, it feels like I'm giving it a hand grenade.
+                - listitem [ref=e972]: We run two review passes (7+ agents). gstack bundles into one
+              - paragraph [ref=e973]: They're complementary, not competitive. Been using both.
+              - paragraph [ref=e974]: Anyone else running a role-based setup like this? Curious what you've landed on.
+              - paragraph [ref=e975]:
+                - text: "Wrote up a full comparison of gstack vs our approach with tables:"
+                - link "https://www.turbodocx.com/blog/garry-tan-gstack" [ref=e976] [cursor=pointer]:
+                  - /url: https://www.turbodocx.com/blog/garry-tan-gstack
+              - paragraph [ref=e977]:
+                - text: "Deeper dive on the workflow:"
+                - link "https://www.turbodocx.com/blog/how-i-use-claude-code-to-ship-features-in-one-session" [ref=e978] [cursor=pointer]:
+                  - /url: https://www.turbodocx.com/blog/how-i-use-claude-code-to-ship-features-in-one-session
+            - generic [ref=e979]: 更多
+        - generic [ref=e980]:
+          - link [ref=e981] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1sf5u6s/skills_are_written_processes_for_claude_that_you/
+          - generic [ref=e982]:
+            - generic [ref=e983]:
+              - link "Skills are written processes for Claude that you don't want to specify or don't know how to ask" [ref=e984] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sf5u6s/skills_are_written_processes_for_claude_that_you/
+              - generic "Productivity" [ref=e985]
+            - generic [ref=e986]:
+              - text: 1 指標 •
+              - link "1 留言" [ref=e988] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sf5u6s/skills_are_written_processes_for_claude_that_you/
+              - generic [ref=e989]:
+                - text: 已發送
+                - time [ref=e990]: 1 月前
+              - generic [ref=e991]:
+                - text: by
+                - link "No-Compote-6794" [ref=e992] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/No-Compote-6794
+              - generic [ref=e993]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e994] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e997]:
+              - paragraph [ref=e998]: Using claude code has been a very time consuming for me. specifically bc i can't ask what i don't know, and i notice i'm starting to micro-manage due to lack of (more senior) SWE experience and i am becoming the bottleneck.
+              - paragraph [ref=e999]: I was filming a demo of the desktop assistant i built for navigating UI's and doing things you don't know how to do. one thing i don't know is how to "install" a skill. i roughly knew what skills are, but have never used one or truly understood the value proposition. so i asked it to install gstack for me since i heard a lot about it. claude's TUI glitched out before i understood what's happening so i thought my assistant didn't do it successfully. (see screen recording below).
+              - paragraph [ref=e1000]: The next day, when I was working on another project in next.js, i notice it started using a headless browser to test the app, and i was able to have claude work for 18 minute straight (a new record for me). i thought this was a new claude update, but when i ask claude where it knows how to do this, it said it was a skill from gstack. My dumb assistant's previous install was successful.
+              - paragraph [ref=e1001]: Previously, i would've added playwright mcp and make sure i remind claude to use it to test the app, click the buttons, take a screenshot, see the screenshot itself to verify e2e. i'd need to do this every once in a while to make sure claude understands and remember to test so i don't have to.
+              - paragraph [ref=e1002]: I went on to ask what else is in the stack and it showed me what you see in this screenshot. the designer skill / process is another one i would've never be able to specify since i'm not a designer and would always just use shadcn and call it. as a backend person my whole life, my CSS always sucked and my web pages look like what a 3yo would've drawn with crayon.
+              - paragraph [ref=e1003]: For me today skills allowed me to intervene less so claude can just keep running. I notice a skill is surprisingly educational to me as it follows someone else's professional process that I'm not aware of. Now I can just specify things at higher level intent so that it wouldn't be bottle necked by my lack of knowledge.
+              - paragraph [ref=e1004]: And I wonder if this is how professions and services will be distributed in the future.
+              - paragraph [ref=e1005]:
+                - text: "- code to the desktop assistant i used:"
+                - link "https://github.com/Emericen/openmnk" [ref=e1006] [cursor=pointer]:
+                  - /url: https://github.com/Emericen/openmnk
+              - paragraph [ref=e1007]:
+                - text: "- screen recording of it installing gstack:"
+                - link "https://youtu.be/l1gTizI8SXE" [ref=e1008] [cursor=pointer]:
+                  - /url: https://youtu.be/l1gTizI8SXE
+            - generic [ref=e1009]: 更多
+            - link "https://i.redd.it/0265y3c15ttg1.png" [ref=e1012] [cursor=pointer]:
+              - /url: https://i.redd.it/0265y3c15ttg1.png
+        - generic [ref=e1013]:
+          - link [ref=e1014] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1sdx3ii/i_was_too_lazy_to_pick_the_right_claude_code/
+          - generic [ref=e1015]:
+            - generic [ref=e1016]:
+              - link "I was too lazy to pick the right Claude Code skill. So I built one that picks skills for me." [ref=e1017] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sdx3ii/i_was_too_lazy_to_pick_the_right_claude_code/
+              - generic "Built with Claude" [ref=e1018]
+            - generic [ref=e1019]:
+              - text: 0 指標 •
+              - link "1 留言" [ref=e1021] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sdx3ii/i_was_too_lazy_to_pick_the_right_claude_code/
+              - generic [ref=e1022]:
+                - text: 已發送
+                - time [ref=e1023]: 1 月前
+              - generic [ref=e1024]:
+                - text: by
+                - link "Shorty52249" [ref=e1025] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Shorty52249
+              - generic [ref=e1026]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1027] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1030]:
+              - paragraph [ref=e1031]: I have 50+ Claude Code skills installed - GSD, Superpowers, gstack, custom stuff. They're powerful. They 10x my workflow. I barely use them.
+              - paragraph [ref=e1032]: Not because they're bad. Because I forget which one to use when. Do I want brainstorm or gsd-quick? systematic-debugging or investigate? ship or gsd-ship? By the time I figure it out I've lost 5 minutes and the will to code.
+              - paragraph [ref=e1033]: "So I did what I always do when something annoys me enough: I automated it."
+              - paragraph [ref=e1034]: I built /jarvis - a single Claude Code skill that takes whatever you type in plain English, reads your project state, figures out which of your installed skills is the highest ROI choice, tells you in one line what it picked (and why), and executes it.
+              - paragraph [ref=e1035]: /jarvis why is the memory engine crashing on startup
+              - paragraph [ref=e1036]: "-> systematic-debugging: exception on startup, root cause first - bold move not reading the error message. let's see."
+              - paragraph [ref=e1037]: /jarvis ship this
+              - paragraph [ref=e1038]: "-> ship: branch ready, creating PR - either it works or you'll be back in 10 minutes. let's go."
+              - paragraph [ref=e1039]: /jarvis where are we
+              - paragraph [ref=e1040]: "-> gsd-progress: checking project state - let's see how far we've gotten while you were watching reels."
+              - paragraph [ref=e1041]: "The routing has two stages:"
+              - paragraph [ref=e1042]: Stage 1 - A hardcoded fast path for the 15 things developers actually do 95% of the time. Instant match.
+              - paragraph [ref=e1043]:
+                - text: Stage 2 - If Stage 1 misses, it scans every
+                - link "SKILL.md" [ref=e1044] [cursor=pointer]:
+                  - /url: http://SKILL.md
+                - text: on your machine, reads the description field (same way you'd skim a list), and picks the best match semantically. New skill installed yesterday that Jarvis doesn't know about? Doesn't matter. It'll find it.
+              - paragraph [ref=e1045]: /jarvis write a LinkedIn carousel about my project
+              - paragraph [ref=e1046]: "-> carousel-writer-sms (discovered): writing LinkedIn carousel content - found something you didn't even know you had. you're welcome."
+              - paragraph [ref=e1047]: The (discovered) tag means it found it dynamically. No config, no registry, no telling it anything.
+              - paragraph [ref=e1048]: It also has a personality. Every routing line ends with a light roast of whatever you just asked it to do. "Checking in on the thing you've definitely been avoiding." "Tests! Before shipping! I need a moment." "Walk away. Come back to a finished feature. This is the dream."
+              - paragraph [ref=e1049]: A bit of context on why this exists.
+              - paragraph [ref=e1050]: I'm currently building Synapse-OSS - an open source AI personal assistant that actually evolves with you. Persistent memory, hybrid RAG, a knowledge graph that grows over time, multi-channel support (WhatsApp, Telegram, Discord), and a soul-brain sync system where the AI's personality adapts to yours across sessions. Every instance becomes a unique architecture shaped entirely by the person it serves.
+              - paragraph [ref=e1051]: It's the kind of AI assistant that knows you. Not "here's your weather" knows you. Actually knows you.
+              - paragraph [ref=e1052]: Jarvis was born out of that project. I was deep in Synapse development, context-switching between 8 different Claude Code workflows per hour, and losing my mind trying to remember which skill to call. So I spent 3 days building a router instead of shipping features. 3 days. Because I kept laughing at the roasts and adding more.
+              - paragraph [ref=e1053]: Worth it!!
+              - paragraph [ref=e1054]: "If Jarvis sounds like something you'd use, Synapse is the bigger vision behind it. Same philosophy: AI that handles the cognitive overhead so you can focus on actually thinking."
+              - paragraph [ref=e1055]:
+                - text: "Synapse repo:"
+                - link "github.com/UpayanGhosh/Synapse-OSS" [ref=e1056] [cursor=pointer]:
+                  - /url: http://github.com/UpayanGhosh/Synapse-OSS
+              - paragraph [ref=e1057]: "Install Jarvis:"
+              - code [ref=e1059]: npm install -g claude-jarvis
+              - paragraph [ref=e1060]: Restart Claude Code. That's it. It auto-installs GSD and Superpowers for you too, because of course it does.
+              - paragraph [ref=e1061]: I've freed up a genuine 40% of my brain that used to be occupied by "which skill do I need right now." That brainpower is now being used to scroll reels. Peak optimization.
+              - paragraph [ref=e1062]:
+                - text: "Jarvis repo:"
+                - link "github.com/UpayanGhosh/claude-jarvis" [ref=e1063] [cursor=pointer]:
+                  - /url: http://github.com/UpayanGhosh/claude-jarvis
+            - generic [ref=e1064]: 更多
+            - link "https://i.redd.it/07iio3y0aktg1.png" [ref=e1067] [cursor=pointer]:
+              - /url: https://i.redd.it/07iio3y0aktg1.png
+        - generic [ref=e1068]:
+          - link [ref=e1069] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1s3h006/upstack_claude_code_skills_for_redgreen_tdd/
+          - generic [ref=e1070]:
+            - generic [ref=e1071]:
+              - link "Upstack, Claude Code skills for red/green TDD" [ref=e1072] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1s3h006/upstack_claude_code_skills_for_redgreen_tdd/
+              - generic "Coding" [ref=e1073]
+            - generic [ref=e1074]:
+              - text: 0 指標 •
+              - link "2 留言" [ref=e1076] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1s3h006/upstack_claude_code_skills_for_redgreen_tdd/
+              - generic [ref=e1077]:
+                - text: 已發送
+                - time [ref=e1078]: 1 月前
+              - generic [ref=e1079]:
+                - text: by
+                - link "Otherwise_Series6137" [ref=e1080] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Otherwise_Series6137
+              - generic [ref=e1081]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1082] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1085]:
+              - paragraph [ref=e1086]:
+                - text: Inspired by Garry Tan (YC president)'s gstack,
+                - link "upstack" [ref=e1087] [cursor=pointer]:
+                  - /url: https://github.com/Upsolve-Labs/upstack
+                - text: is a set of Claude Code skills designed for smaller-scale iterations to add finessed polish to our product that genuinely delights users. upstack's focus on red/green TDD and making screenshots and postman collections gives us the confidence we need to ship PRs to production, fast.
+              - paragraph [ref=e1088]: gstack is perfect for new, ambitious projects, and doing the "first 80%". upstack is designed for smaller, last-mile iterations, focused on testing, correctness, and polish. We've deliberately made the skills compatible with gstack so you can use both at once.
+              - paragraph [ref=e1089]: Feedback and contributions always welcome!
+            - generic [ref=e1090]: 更多
+        - generic [ref=e1091]:
+          - link [ref=e1092] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1s58u7h/garry_tan_gstack_will_soon_overtake_ecc_and/
+          - generic [ref=e1093]:
+            - generic [ref=e1094]:
+              - link "Garry Tan gstack will soon overtake ECC and Superpowers in github ★" [ref=e1095] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1s58u7h/garry_tan_gstack_will_soon_overtake_ecc_and/
+                - text: Garry Tan
+                - mark [ref=e1096]: gstack
+                - text: will soon overtake ECC and Superpowers in github ★
+              - generic "Coding" [ref=e1097]
+            - generic [ref=e1098]:
+              - text: 0 指標 •
+              - link "1 留言" [ref=e1100] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1s58u7h/garry_tan_gstack_will_soon_overtake_ecc_and/
+              - generic [ref=e1101]:
+                - text: 已發送
+                - time [ref=e1102]: 1 月前
+              - generic [ref=e1103]:
+                - text: by
+                - link "shanraisshan" [ref=e1104] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/shanraisshan
+              - generic [ref=e1105]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1106] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1109]:
+              - paragraph [ref=e1110]:
+                - text: Tracking the GitHub stars race among the top Claude Code ecosystem repos. Garry Tan's gstack (built on top of Claude Code) has been growing at ~3.3k stars/day over the past week, outpacing both Everything Claude Code (ECC) at ~3.1k/day and Superpowers at ~2.6k/day.
+                - strong [ref=e1111]: "Current GitHub stars as of Mar 27:"
+                - text: "- Superpowers (Claude Code extension): 118k - Everything Claude Code: 111k - gstack (Claude Code wrapper): 52k"
+              - code [ref=e1113]: gstack went from 29k to 52k in just 7 days — a 2x jump. At current rates, it would need ~18-20 days to overtake ECC and ~25 days for Superpowers.
+            - generic [ref=e1114]: 更多
+            - link "https://i.redd.it/6flmskuy4mrg1.jpeg" [ref=e1117] [cursor=pointer]:
+              - /url: https://i.redd.it/6flmskuy4mrg1.jpeg
+        - generic [ref=e1118]:
+          - link [ref=e1119] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1t2j49z/upskill_skill_registry_your_agent_consults_before/
+          - generic [ref=e1120]:
+            - generic [ref=e1121]:
+              - 'link "Upskill: skill registry your agent consults before it starts. 10k+ indexed, free, open source." [ref=e1122] [cursor=pointer]':
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1t2j49z/upskill_skill_registry_your_agent_consults_before/
+              - generic "Built with Claude" [ref=e1123]
+            - generic [ref=e1124]:
+              - text: 0 指標 •
+              - link "10 留言" [ref=e1126] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1t2j49z/upskill_skill_registry_your_agent_consults_before/
+              - generic [ref=e1127]:
+                - text: 已發送
+                - time [ref=e1128]: 13 天前
+              - generic [ref=e1129]:
+                - text: by
+                - link "Comprehensive_Quit67" [ref=e1130] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Comprehensive_Quit67
+              - generic [ref=e1131]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1132] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1135]:
+              - paragraph [ref=e1136]: You give Claude Code a real task and watch it work… from memory.
+              - list [ref=e1137]:
+                - listitem [ref=e1138]: Ask for a landing page → generic off-brand Tailwind hero
+                - listitem [ref=e1139]: Ask for Clerk auth → skips JWT verification
+                - listitem [ref=e1140]: “I’ll write a CSV parser” → reinvents half of papaparse (badly)
+              - paragraph [ref=e1141]:
+                - text: You just spent 20 minutes and 1k tokens watching it iterate on something that already has a
+                - emphasis [ref=e1142]: perfect answer somewhere online
+                - text: .
+              - paragraph [ref=e1143]:
+                - text: The frustrating part isn’t that Claude is bad.
+                - text: It’s that the right playbooks already exist.
+              - list [ref=e1144]:
+                - listitem [ref=e1145]: Anthropic has a 4,000-word frontend design skill (layout, typography, motion, accessibility)
+                - listitem [ref=e1146]: Clerk has an end-to-end auth implementation
+                - listitem [ref=e1147]: obra/superpowers has hundreds more
+              - paragraph [ref=e1148]:
+                - strong [ref=e1149]: The expertise exists. The routing doesn’t.
+              - 'heading "What I built: upskill (free)" [level=1] [ref=e1150]'
+              - paragraph [ref=e1151]:
+                - strong [ref=e1152]: upskill = routing layer for skills
+              - paragraph [ref=e1153]:
+                - text: Install it once, add one line to your agent config (
+                - code [ref=e1154]: CLAUDE.md
+                - text: "), and now:"
+              - blockquote
+              - paragraph [ref=e1155]: Instead of guessing, it pulls a vetted playbook and follows it.
+              - heading "What changes?" [level=1] [ref=e1156]
+              - paragraph [ref=e1157]:
+                - text: "Same prompt:"
+                - emphasis [ref=e1158]: “design a landing page”
+                - text: → Now follows Anthropic’s actual playbook
+              - paragraph [ref=e1159]:
+                - text: "Same prompt:"
+                - emphasis [ref=e1160]: “add Clerk auth”
+                - text: → Full implementation, JWT verification included
+              - paragraph [ref=e1161]: "Think of it as:"
+              - blockquote
+              - heading "Under the hood" [level=1] [ref=e1162]
+              - list [ref=e1163]:
+                - listitem [ref=e1164]:
+                  - text: "10k+ indexed skills from:"
+                  - list [ref=e1165]:
+                    - listitem [ref=e1166]: Anthropic, OpenAI, Stripe, Vercel, Microsoft
+                    - listitem [ref=e1167]: Garry Tan (gstack), obra/superpowers
+                    - listitem [ref=e1168]: 100+ independent authors
+                - listitem [ref=e1169]:
+                  - text: "Search = hybrid:"
+                  - list [ref=e1170]:
+                    - listitem [ref=e1171]: Postgres full-text search (for exact stuff like flags, APIs)
+                    - listitem [ref=e1172]: 1024-dim vector embeddings (for semantic matching)
+                    - listitem [ref=e1173]: Re-ranked by stars, installs, community feedback
+              - paragraph [ref=e1174]:
+                - text: → Pure vectors miss specifics
+                - text: → Pure FTS misses intent
+                - text: → Hybrid works better
+              - heading "Auth-aware ranking (optional)" [level=1] [ref=e1175]
+              - paragraph [ref=e1176]: "If env vars exist locally:"
+              - list [ref=e1177]:
+                - listitem [ref=e1178]:
+                  - code [ref=e1179]: AWS_ACCESS_KEY_ID
+                  - text: → AWS skills rank higher
+                - listitem [ref=e1180]:
+                  - code [ref=e1181]: STRIPE_SECRET_KEY
+                  - text: → Stripe-specific flows rank higher
+              - paragraph [ref=e1182]: Only variable names are used. Values never leave your machine.
+              - heading "Safety" [level=1] [ref=e1183]
+              - paragraph [ref=e1184]: "Every skill goes through LLM adversarial review at index time:"
+              - list [ref=e1185]:
+                - listitem [ref=e1186]: Prompt injection
+                - listitem [ref=e1187]: Credential exfiltration
+                - listitem [ref=e1188]: Typosquatting / lookalike domains
+                - listitem [ref=e1189]: Hidden malicious instructions
+              - paragraph [ref=e1190]: "Out of 10k+ skills:"
+              - list [ref=e1191]:
+                - listitem [ref=e1192]: Hundreds were blocked
+                - listitem [ref=e1193]:
+                  - text: Found real attacks (e.g. hidden
+                  - code [ref=e1194]: onerror="alert('XSS')"
+                  - text: + “skip tests”)
+              - paragraph [ref=e1195]: "A few false positives (being tuned):"
+              - list [ref=e1196]:
+                - listitem [ref=e1197]:
+                  - code [ref=e1198]: rm -rf node_modules
+                  - text: in legit guides
+                - listitem [ref=e1199]: Google Drive delete API
+                - listitem [ref=e1200]:
+                  - text: Warnings about
+                  - code [ref=e1201]: NEXT_PUBLIC
+                  - text: misuse
+              - heading "Privacy" [level=1] [ref=e1202]
+              - paragraph [ref=e1203]: Default = locked down
+              - list [ref=e1204]:
+                - listitem [ref=e1205]:
+                  - code [ref=e1206]: upskill find
+                  - text: → sends only your query
+                - listitem [ref=e1207]: Telemetry → opt-in
+                - listitem [ref=e1208]: Env-aware ranking → opt-in
+                - listitem [ref=e1209]: Skill submissions → opt-in
+              - paragraph [ref=e1210]: Everything toggleable anytime.
+              - heading "Not just for code" [level=1] [ref=e1211]
+              - paragraph [ref=e1212]: "Covers workflows like:"
+              - list [ref=e1213]:
+                - listitem [ref=e1214]: Slides
+                - listitem [ref=e1215]: Email triage
+                - listitem [ref=e1216]: Google Workspace
+                - listitem [ref=e1217]: Notion queries
+                - listitem [ref=e1218]: Calendar automation
+                - listitem [ref=e1219]: Scientific writing
+                - listitem [ref=e1220]: Malware analysis
+                - listitem [ref=e1221]: Accessibility audits
+                - listitem [ref=e1222]: Sales playbooks
+              - paragraph [ref=e1223]:
+                - text: If your agent is about to “wing it”…
+                - text: there’s probably already a better playbook.
+              - heading "Try it" [level=1] [ref=e1224]
+              - code [ref=e1226]: npm install -g /upskill upskill install npx -y skills add Autoloops/upskill/skill
+              - paragraph [ref=e1227]: It’ll ask a few questions and wire itself into your agent.
+              - paragraph [ref=e1228]:
+                - text: "Repo:"
+                - link "https://github.com/Autoloops/upskill" [ref=e1229] [cursor=pointer]:
+                  - /url: https://github.com/Autoloops/upskill
+                - text: MIT licensed. PRs welcome.
+            - generic [ref=e1230]: 更多
+            - link "https://i.redd.it/h3yjlbrtswyg1.png" [ref=e1233] [cursor=pointer]:
+              - /url: https://i.redd.it/h3yjlbrtswyg1.png
+        - generic [ref=e1234]:
+          - link [ref=e1235] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1sa3sx2/i_built_a_free_open_source_mac_banking_app_for/
+          - generic [ref=e1236]:
+            - generic [ref=e1237]:
+              - link "I built a free, open source Mac banking app for Germany in 6 weeks with Claude Code" [ref=e1238] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sa3sx2/i_built_a_free_open_source_mac_banking_app_for/
+              - generic "Built with Claude" [ref=e1239]
+            - generic [ref=e1240]:
+              - text: 0 指標 •
+              - link "6 留言" [ref=e1242] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sa3sx2/i_built_a_free_open_source_mac_banking_app_for/
+              - generic [ref=e1243]:
+                - text: 已發送
+                - time [ref=e1244]: 1 月前
+              - generic [ref=e1245]:
+                - text: by
+                - link "klotzbrocken" [ref=e1246] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/klotzbrocken
+              - generic [ref=e1247]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1248] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1251]:
+              - paragraph [ref=e1252]:
+                - emphasis [ref=e1253]: Processing img svzc1ks3kosg1...
+              - paragraph [ref=e1254]:
+                - text: I built
+                - strong [ref=e1255]: simplebanking,
+                - text: a free, open source macOS menu bar app that shows your German banks balance at a glance, without ever opening your banking app.
+              - paragraph [ref=e1256]: "Here's what it does:"
+              - list [ref=e1257]:
+                - listitem [ref=e1258]: Lives in your Mac menu bar and shows your live balance across multiple German bank accounts (read-only, no payments)
+                - listitem [ref=e1259]: Instant transaction search, automatic subscription detection with cancel links, a financial health score and a MoneyMood heatmap for spending patterns
+                - listitem [ref=e1260]: "All data stays locally on your Mac: no server, no tracking, no ads"
+                - listitem [ref=e1261]:
+                  - text: Built on Open Banking via
+                  - link "YAXI" [ref=e1262] [cursor=pointer]:
+                    - /url: https://yaxi.tech/
+              - paragraph [ref=e1263]:
+                - text: "It's completely free to try and open source:"
+                - link "https://github.com/klotzbrocken/simplebanking" [ref=e1264] [cursor=pointer]:
+                  - /url: https://github.com/klotzbrocken/simplebanking
+              - paragraph [ref=e1265]:
+                - text: I'm a product & strategy person, not a engineer. I built this almost entirely with
+                - strong [ref=e1266]: Claude Code
+                - text: in about 6 weeks. Today it has ~1,000 daily active users.
+              - paragraph [ref=e1267]:
+                - strong [ref=e1268]: "What I actually learned building with Claude Code:"
+              - list [ref=e1269]:
+                - listitem [ref=e1270]:
+                  - text: You learn a ton about
+                  - strong [ref=e1271]: architecture
+                  - text: "when you treat Claude like a colleague. Plan mode is your best friend: let it think in steps before it touches any code."
+                - listitem [ref=e1272]:
+                  - strong [ref=e1273]: Branches are your best friend.
+                  - text: Seriously. Non-negotiable.
+                - listitem [ref=e1274]:
+                  - strong [ref=e1275]: Pixel-perfect descriptions
+                  - text: of what should go where on the screen matter a lot more than you'd think.
+                - listitem [ref=e1276]:
+                  - text: Tell Claude to change
+                  - strong [ref=e1277]: exactly one thing at a time
+                  - text: and explicitly not touch the rest (otherwise you wake up in merge-conflict hell).
+                - listitem [ref=e1278]: "Writing good prompts is not a kids' birthday party: you need structure, constraints and a clear definition of \"done\"."
+                - listitem [ref=e1279]:
+                  - strong [ref=e1280]: Gstack
+                  - text: was a huge help to keep everything organized across prompts, flows and the overall architecture.
+              - paragraph [ref=e1281]: "What I didn't expect: you still get your own little shitstorm in some circles just because you used AI – no matter how good the app turned out or how happy the users are."
+              - paragraph [ref=e1282]: Oh, and experienced engineers did a full code review afterwards, partly to catch issues, partly (their own confession) to steal a few ideas for their own projects.
+              - paragraph [ref=e1283]: "For those of you building with Claude Code: where do you still hit the wall? Architecture, debugging, or keeping prompts and projects maintainable over time?"
+              - paragraph [ref=e1284]:
+                - text: "Website:"
+                - link "www.simplebanking.de" [ref=e1285] [cursor=pointer]:
+                  - /url: http://www.simplebanking.de/
+              - paragraph [ref=e1286]:
+                - text: "Github:"
+                - link "https://github.com/klotzbrocken/simplebanking" [ref=e1287] [cursor=pointer]:
+                  - /url: https://github.com/klotzbrocken/simplebanking
+            - generic [ref=e1288]: 更多
+            - link "https://www.reddit.com/gallery/1sa3sx2" [ref=e1291] [cursor=pointer]:
+              - /url: https://www.reddit.com/gallery/1sa3sx2
+        - generic [ref=e1292]:
+          - link [ref=e1293] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1skq2l0/got_ratiod_yesterday_today_fwstack_rejects_your/
+          - generic [ref=e1294]:
+            - generic [ref=e1295]:
+              - link "Got ratio'd yesterday. Today fwstack rejects your plan if you can't prove it's done." [ref=e1296] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1skq2l0/got_ratiod_yesterday_today_fwstack_rejects_your/
+              - generic "Built with Claude" [ref=e1297]
+            - generic [ref=e1298]:
+              - text: 0 指標 •
+              - link "3 留言" [ref=e1300] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1skq2l0/got_ratiod_yesterday_today_fwstack_rejects_your/
+              - generic [ref=e1301]:
+                - text: 已發送
+                - time [ref=e1302]: 1 月前
+              - generic [ref=e1303]:
+                - text: by
+                - link "Moraispgsi" [ref=e1304] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Moraispgsi
+              - generic [ref=e1305]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1306] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1309]:
+              - paragraph [ref=e1310]:
+                - text: Yesterday I published
+                - link "fwstack" [ref=e1311] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/fwstack
+                - text: ", 5 deterministic dev workflows for Claude Code, built with"
+                - link "Flow Weaver" [ref=e1312] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/flow-weaver
+                - text: . Got ratio'd. Fair enough.
+              - heading "Today I doubled down" [level=1] [ref=e1313]
+              - paragraph [ref=e1314]: The plan workflow now requires acceptance criteria, shell commands that prove each task is done. No exit 0, no next task.
+              - paragraph [ref=e1315]:
+                - code [ref=e1316]: /fwstack:plan add webhook delivery with retry and dead letter queue
+              - paragraph [ref=e1317]:
+                - link "https://preview.redd.it/zcckh50b31vg1.png?width=1600&format=png&auto=webp&s=480f33bb9020a0ab366cfe4d9a8b771e38031ad2" [ref=e1318] [cursor=pointer]:
+                  - /url: https://preview.redd.it/zcckh50b31vg1.png?width=1600&format=png&auto=webp&s=480f33bb9020a0ab366cfe4d9a8b771e38031ad2
+              - paragraph [ref=e1319]: The workflow gathers your codebase context, pauses for Claude to plan, then validates every task has executable checks. Reject vague plans. Reject weak commands. If you say "implement", it loops over each task, pauses for Claude to code, then runs the checks automatically.
+              - paragraph [ref=e1320]:
+                - link "A full demo" [ref=e1321] [cursor=pointer]:
+                  - /url: https://reddit.com/link/1skq2l0/video/qzuwefo981vg1/player
+              - paragraph [ref=e1322]: The AI can't skip steps because it doesn't control the pipeline.
+              - paragraph [ref=e1323]: "Install:"
+              - paragraph [ref=e1324]:
+                - code [ref=e1325]: /plugin marketplace add synergenius-fw/claude-plugins
+              - paragraph [ref=e1326]:
+                - code [ref=e1327]: /plugin install fwstack
+              - paragraph [ref=e1328]: Built in a day without touching code on Flow Weaver. If this resonates, come shape it.
+              - paragraph [ref=e1329]:
+                - text: Flow Weaver
+                - link "GitHub" [ref=e1330] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/flow-weaver
+                - text: "|"
+                - link "Website" [ref=e1331] [cursor=pointer]:
+                  - /url: https://flowweaver.ai/
+                - text: "|"
+                - link "Discord" [ref=e1332] [cursor=pointer]:
+                  - /url: https://discord.gg/TCn4qntaeT
+                - text: "|"
+                - link "X/Twitter" [ref=e1333] [cursor=pointer]:
+                  - /url: https://x.com/moraispgsi
+                - text: "|"
+                - link "fwstack Github" [ref=e1334] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/fwstack
+              - paragraph [ref=e1335]: "Previous post:"
+              - paragraph [ref=e1336]:
+                - link "https://www.reddit.com/r/ClaudeAI/comments/1sjrou5/yesterday_i_got_ratiod_for_saying_i_made_gstack/" [ref=e1337] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/ClaudeAI/comments/1sjrou5/yesterday_i_got_ratiod_for_saying_i_made_gstack/
+            - generic [ref=e1338]: 更多
+        - generic [ref=e1339]:
+          - link [ref=e1340] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1sjrou5/yesterday_i_got_ratiod_for_saying_i_made_gstack/
+          - generic [ref=e1341]:
+            - generic [ref=e1342]:
+              - link "Yesterday I got ratio'd for saying I made gstack obsolete. Today I actually did it in a day (fwstack) using Flow Weaver and Claude Code." [ref=e1343] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sjrou5/yesterday_i_got_ratiod_for_saying_i_made_gstack/
+                - text: Yesterday I got ratio'd for saying I made
+                - mark [ref=e1344]: gstack
+                - text: obsolete. Today I actually did it in a day (fwstack) using Flow Weaver and Claude Code.
+              - generic "Built with Claude" [ref=e1345]
+            - generic [ref=e1346]:
+              - text: 0 指標 •
+              - link "2 留言" [ref=e1348] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1sjrou5/yesterday_i_got_ratiod_for_saying_i_made_gstack/
+              - generic [ref=e1349]:
+                - text: 已發送
+                - time [ref=e1350]: 1 月前
+              - generic [ref=e1351]:
+                - text: by
+                - link "Moraispgsi" [ref=e1352] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Moraispgsi
+              - generic [ref=e1353]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1354] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1357]:
+              - paragraph [ref=e1358]:
+                - text: I'm Ricardo, creator of Flow Weaver (a TypeScript workflow compiler). Yesterday I posted claiming Flow Weaver workflows could replace prompt-based skill packs like
+                - strong [ref=e1359]: gstack
+                - text: . Got ratio'd. Fair enough.
+              - heading "So I built fwstack:" [level=1] [ref=e1360]
+              - paragraph [ref=e1361]:
+                - strong [ref=e1362]: fwstack,
+                - text: MIT licensed, OS, Claude Code plugin. 5 compiled workflows, or bring your own.
+                - link "https://github.com/synergenius-fw/fwstack" [ref=e1363] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/fwstack
+              - paragraph [ref=e1364]: "Install:"
+              - paragraph [ref=e1365]:
+                - code [ref=e1366]: /plugin marketplace add synergenius-fw/claude-plugins
+              - paragraph [ref=e1367]:
+                - code [ref=e1368]: /plugin install fwstack
+              - heading "What you get:" [level=1] [ref=e1369]
+              - paragraph [ref=e1370]:
+                - strong [ref=e1371]: "/fwstack:review:"
+                - text: runs real eslint + tsc, then pauses for Claude to analyze the diff with linter context. Findings extracted as structured JSON, deduplicated, ranked by severity.
+              - paragraph [ref=e1372]:
+                - strong [ref=e1373]: "/fwstack:tdd:"
+                - text: RED/GREEN cycle with real test execution. Runs npm test, checks exit codes. The RED gate blocks until your test actually fails. The GREEN gate blocks until it passes. Claude can't skip steps.
+              - paragraph [ref=e1374]:
+                - strong [ref=e1375]: "/fwstack:security:"
+                - text: runs npm audit + semgrep, then pauses for OWASP/STRIDE analysis. Drops findings below 8/10 confidence. No hallucinated vulnerabilities.
+              - paragraph [ref=e1376]:
+                - strong [ref=e1377]: "/fwstack:ship:"
+                - text: checks you're on a feature branch, runs full test suite. If tests fail, it stops. No override. Then pauses for changelog.
+              - paragraph [ref=e1378]: "/fwstack:plan: reads your codebase structure, pauses for Claude to plan. Validates the output: rejects \"TBD\", \"as needed\", \"maybe\". Every task needs a real file path."
+              - heading "What it looks like running /fwstack:tdd:" [level=1] [ref=e1379]
+              - paragraph [ref=e1380]:
+                - link "https://reddit.com/link/1sjrou5/video/f5p534fwvtug1/player" [ref=e1381] [cursor=pointer]:
+                  - /url: https://reddit.com/link/1sjrou5/video/f5p534fwvtug1/player
+              - paragraph [ref=e1382]: Every node shows timing. Parallel branches visible. Live progress bar during execution. The plugin renders this, not Claude.
+              - paragraph [ref=e1383]: These aren't prompts telling Claude what to do. They're compiled pipelines where Claude only gets control at pause points. Everything else is deterministic code running real tools.
+              - paragraph [ref=e1384]: Built in a day without touching code on Flow Weaver. If this resonates, come shape it.
+              - paragraph [ref=e1385]:
+                - text: Flow Weaver
+                - link "GitHub" [ref=e1386] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/flow-weaver
+                - text: "|"
+                - link "Website" [ref=e1387] [cursor=pointer]:
+                  - /url: https://flowweaver.ai/
+                - text: "|"
+                - link "Discord" [ref=e1388] [cursor=pointer]:
+                  - /url: https://discord.gg/TCn4qntaeT
+                - text: "|"
+                - link "X/Twitter" [ref=e1389] [cursor=pointer]:
+                  - /url: https://x.com/moraispgsi
+                - text: "|"
+                - link "fwstack Github" [ref=e1390] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/fwstack
+              - heading "Previously TLDR:" [level=1] [ref=e1391]
+              - paragraph [ref=e1392]:
+                - text: "The post:"
+                - link "I think I accidentally made gstack and superpowers obsolete" [ref=e1393] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/ClaudeAI/comments/1siwil7/i_think_i_accidentally_made_gstack_and/
+              - paragraph [ref=e1394]: I presented Flow Weaver as a workflow typescript compiler and demonstrated my vision into what an integrated experience would be with Claude Code and its workflows.
+              - paragraph [ref=e1395]:
+                - link "Workflows look like this" [ref=e1396] [cursor=pointer]:
+                  - /url: https://preview.redd.it/3dp3msttetug1.png?width=1080&format=png&auto=webp&s=dc23a0705a8f84af059e92f6f9925ca45cc5a16e
+              - paragraph [ref=e1397]: "The teaser:"
+              - paragraph [ref=e1398]:
+                - link "Demonstrates the interaction of a workflow with Claude Code" [ref=e1399] [cursor=pointer]:
+                  - /url: https://reddit.com/link/1sjrou5/video/e965sgs1ftug1/player
+            - generic [ref=e1400]: 更多
+        - generic [ref=e1401]:
+          - link [ref=e1402] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1siwil7/i_think_i_accidentally_made_gstack_and/
+          - generic [ref=e1403]:
+            - generic [ref=e1404]:
+              - link "I think I accidentally made gstack and superpowers obsolete" [ref=e1405] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1siwil7/i_think_i_accidentally_made_gstack_and/
+                - text: I think I accidentally made
+                - mark [ref=e1406]: gstack
+                - text: and superpowers obsolete
+              - generic "Built with Claude" [ref=e1407]
+            - generic [ref=e1408]:
+              - text: 0 指標 •
+              - link "6 留言" [ref=e1410] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1siwil7/i_think_i_accidentally_made_gstack_and/
+              - generic [ref=e1411]:
+                - text: 已發送
+                - time [ref=e1412]: 1 月前
+              - generic [ref=e1413]:
+                - text: by
+                - link "Moraispgsi" [ref=e1414] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Moraispgsi
+              - generic [ref=e1415]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1416] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1419]:
+              - paragraph [ref=e1420]: Ok that's probably an exaggeration. But hear me out.
+              - paragraph [ref=e1421]: For the past 2 years I've been building a TypeScript workflow compiler called Flow Weaver. You annotate TypeScript functions with inputs, outputs, and connections. The compiler validates the graph and generates standalone TypeScript. No runtime dependency. No YAML. Just code.
+              - paragraph [ref=e1422]: While developing it I noticed that using Claude Code I could now create those workflows and evolve them rapidly and easily. So easily that I started to forget its syntax. I just ask Claude and it generates the workflow through a conversation for me. The iteration loop is very tight where I just don't have to touch it anymore.
+              - paragraph [ref=e1423]: "Here is what that looks like visually (just a random example):"
+              - paragraph [ref=e1424]:
+                - link "https://preview.redd.it/3da1fnfromug1.png?width=2104&format=png&auto=webp&s=f144a68043ec4e991e56b4135795fa812b73f2ee" [ref=e1425] [cursor=pointer]:
+                  - /url: https://preview.redd.it/3da1fnfromug1.png?width=2104&format=png&auto=webp&s=f144a68043ec4e991e56b4135795fa812b73f2ee
+              - paragraph [ref=e1426]:
+                - text: Then it hit me, what if
+                - strong [ref=e1427]: Flow Weaver...
+                - text: was the deterministic layer that we have been missing.
+              - paragraph [ref=e1428]: Think about it...
+              - paragraph [ref=e1429]:
+                - text: How many written workflow descriptions do you have scattered around. CLAUDE.md. Skills. Hooks. Memory files.
+                - strong [ref=e1430]: All describing a process you want the AI to follow.
+                - text: And you even go out of your way to install
+                - strong [ref=e1431]: gstack
+                - text: and
+                - strong [ref=e1432]: superpowers
+                - text: on top.
+              - paragraph [ref=e1433]:
+                - strong [ref=e1434]: But they're all just text. The LLM decides whether to follow them.
+              - paragraph [ref=e1435]: Is this you?
+              - paragraph [ref=e1436]:
+                - link "https://preview.redd.it/0tlx8jg8rmug1.png?width=1038&format=png&auto=webp&s=9c92e5aa01b207b0ce68f7e1ffe2293f64e17327" [ref=e1437] [cursor=pointer]:
+                  - /url: https://preview.redd.it/0tlx8jg8rmug1.png?width=1038&format=png&auto=webp&s=9c92e5aa01b207b0ce68f7e1ffe2293f64e17327
+              - paragraph [ref=e1438]: Here is what I envisioned as a use case for Flow Weaver, this is simply a teaser I made to showcase what I just said.
+              - paragraph [ref=e1439]:
+                - link "https://reddit.com/link/1siwil7/video/ks6ay9ullmug1/player" [ref=e1440] [cursor=pointer]:
+                  - /url: https://reddit.com/link/1siwil7/video/ks6ay9ullmug1/player
+              - paragraph [ref=e1441]: "What you're seeing is a compiled Flow Weaver workflow running inside Claude Code. You say \"Review this PR\" and Claude Code runs the workflow:"
+              - list [ref=e1442]:
+                - listitem [ref=e1443]:
+                  - strong [ref=e1444]: Gather Context
+                  - text: "runs first: a pure function, no AI, deterministic"
+                - listitem [ref=e1445]:
+                  - text: The workflow hits
+                  - strong [ref=e1446]: Wait for Agent,
+                  - text: execution pauses. It sends a structured prompt back to Claude Code with the full context
+                - listitem [ref=e1447]: Claude analyzes the code, finds the issues, returns the result
+                - listitem [ref=e1448]:
+                  - text: The workflow resumes
+                  - strong [ref=e1449]: ","
+                  - strong [ref=e1450]: Format Comments
+                  - text: structures the output
+                - listitem [ref=e1451]: Done.
+              - paragraph [ref=e1452]: Claude Code doesn't control the order. It starts the workflow, it is then given control back to resolve the workflow's prompt, does the thinking, and returns control with the response. The workflow decides what happens with the result.
+              - paragraph [ref=e1453]: That's the difference. Not another prompt telling Claude what to do fighting all the other contradictory rules you may have added. A compiler enforcing it.
+              - paragraph [ref=e1454]: Want to share a workflow with your team or friends? It's just a TypeScript file. No Flow Weaver runtime needed.
+              - paragraph [ref=e1455]: If you think I'm onto something, I'd love to hear it. But if this is just my imagination, let me know that too.
+              - paragraph [ref=e1456]: Also, if any of this is confusing, allow me to explain, ask away. Thank you.
+              - paragraph [ref=e1457]:
+                - text: It's free to use, source-available on GitHub, free for individuals and teams up to 15.
+                - link "GitHub" [ref=e1458] [cursor=pointer]:
+                  - /url: https://github.com/synergenius-fw/flow-weaver
+                - text: "|"
+                - link "Website" [ref=e1459] [cursor=pointer]:
+                  - /url: https://flowweaver.ai/
+                - text: "|"
+                - link "Discord" [ref=e1460] [cursor=pointer]:
+                  - /url: https://discord.gg/TCn4qntaeT
+                - text: "|"
+                - link "X/Twitter" [ref=e1461] [cursor=pointer]:
+                  - /url: https://x.com/moraispgsi
+              - paragraph [ref=e1462]: The project is still early, if any of this resonates, come shape it.
+            - generic [ref=e1463]: 更多
+        - generic [ref=e1464]:
+          - link [ref=e1465] [cursor=pointer]:
+            - /url: /r/ClaudeAI/comments/1tchwa7/i_run_30_claudecodexgemini_sessions_in_parallel/
+          - generic [ref=e1466]:
+            - generic [ref=e1467]:
+              - link "I run 30+ Claude/Codex/Gemini sessions in parallel. Open-sourced the dashboard." [ref=e1468] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1tchwa7/i_run_30_claudecodexgemini_sessions_in_parallel/
+              - generic "Built with Claude" [ref=e1469]
+            - generic [ref=e1470]:
+              - text: 0 指標 •
+              - link "14 留言" [ref=e1472] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/ClaudeAI/comments/1tchwa7/i_run_30_claudecodexgemini_sessions_in_parallel/
+              - generic [ref=e1473]:
+                - text: 已發送
+                - time [ref=e1474]: 2 天前
+              - generic [ref=e1475]:
+                - text: by
+                - link "Mediocre-Thing7641" [ref=e1476] [cursor=pointer]:
+                  - /url: https://old.reddit.com/user/Mediocre-Thing7641
+              - generic [ref=e1477]:
+                - text: to
+                - link "r/ClaudeAI" [ref=e1478] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/ClaudeAI/
+            - generic [ref=e1481]:
+              - paragraph [ref=e1482]:
+                - link "https://www.youtube.com/watch?v=kEVyULB4r9c" [ref=e1483] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=kEVyULB4r9c
+                  - code [ref=e1484]: https://www.youtube.com/watch?v=kEVyULB4r9c
+              - paragraph [ref=e1485]: Sharing this in case it's useful.
+              - paragraph [ref=e1486]:
+                - text: "I've been running 30+ Claude Code sessions in parallel for months to ship two products. Every orchestrator I tried wanted to OWN execution: you launch agents through the dashboard, and the moment you open a terminal and"
+                - code [ref=e1487]: claude --resume
+                - text: something by hand, the dashboard goes blind. The card freezes.
+              - paragraph [ref=e1488]: So I built CCC (Command Center for Claude) the other way around. It reads Claude Code's on-disk state as the source of truth - JSONL transcripts, the live session registry, sidecar files from two hooks it installs into your settings. Every Claude session on your Mac shows up. Terminal, headless, dashboard-spawned. Close the dashboard, sessions keep running.
+              - paragraph [ref=e1489]: "What I actually use it for, daily:"
+              - paragraph [ref=e1490]:
+                - text: → Sees every session — terminal, headless, dashboard-spawned. The moment you
+                - code [ref=e1491]: claude --resume
+                - text: in any terminal, the row shows up. No invisible work. (Used to find 8 orphaned sessions I'd forgotten about.)
+              - paragraph [ref=e1492]: → GitHub Issues → kanban cards → sessions. New issue = new row. One click spawns a headless Claude. Card moves Working → Review → In Testing automatically as the agent ships.
+              - paragraph [ref=e1493]: → Sibling-session commit coordination. Multiple terminals on the same clone use a scratch chat file to negotiate who commits first. No more clobbered commits across parallel branches.
+              - paragraph [ref=e1494]: → Worktree view — every branch your sessions are on, with PR badges, commit/push state, and time-gap markers across days.
+              - paragraph [ref=e1495]: "→ Per-turn auto-summaries. After each turn: a DID / INSIGHT / NEXT-STEP block. Scan 30 sessions in 2 minutes instead of reading transcripts."
+              - paragraph [ref=e1496]: "v3 stuff (newer, just shipped):"
+              - paragraph [ref=e1497]:
+                - text: → Multi-engine. Codex (via
+                - code [ref=e1498]: codex exec
+                - text: ") and Gemini CLI both on the same board with their own engine chip. Honest asymmetry: Codex is fire-and-watch (no mid-run inject); Gemini has full discovery / transcript / spawn / resume parity with Claude."
+              - paragraph [ref=e1499]: → Multi-repo. A vertical repo sidebar shows every known repo (running CCC servers on top, switchable repos below). The "All repos" view aggregates every conversation across every folder you've ever Claude-Code'd in.
+              - paragraph [ref=e1500]:
+                - text: → History search. A 🔎 drawer (or
+                - code [ref=e1501]: /
+                - text: shortcut) runs BM25 across every transcript on your machine. Optional semantic search via Ollama if you've got it installed. Inline sidebar search also surfaces matches from other repos as you type.
+              - paragraph [ref=e1502]: → Side-by-side conversations. Drag a session row onto the right or bottom edge of the open chat to split the pane. Each pane has its own composer and SSE stream.
+              - paragraph [ref=e1503]: → Group chats between sessions, with you in the room. Sessions coordinate over a shared per-topic file — multi-agent collaboration with human-in-the-loop.
+              - paragraph [ref=e1504]: → In-UI terminal (cwd clamped to the selected repo; don't run on untrusted networks), PR merge with auto-rebase recovery, PWA install, Tailscale-aware origin allowlist, launchd service install so it survives reboots.
+              - paragraph [ref=e1505]: One-click install. Local. No telemetry. Nothing in the cloud.
+              - paragraph [ref=e1506]: MIT, Python 3 stdlib, macOS. Two-line install.
+              - paragraph [ref=e1507]: 🔗 link in the first comment.
+              - paragraph [ref=e1508]:
+                - link "https://preview.redd.it/v8glq802601h1.png?width=3644&format=png&auto=webp&s=b545e8d688f1b5493f99da8bce82f78dfaa1b250" [ref=e1509] [cursor=pointer]:
+                  - /url: https://preview.redd.it/v8glq802601h1.png?width=3644&format=png&auto=webp&s=b545e8d688f1b5493f99da8bce82f78dfaa1b250
+              - paragraph [ref=e1510]:
+                - link "https://imgur.com/a/zCfOOfl" [ref=e1511] [cursor=pointer]:
+                  - /url: https://imgur.com/a/zCfOOfl
+            - generic [ref=e1512]: 更多
+      - generic [ref=e1515]:
+        - text: 閱讀更多：
+        - link "下一頁 ›" [ref=e1516] [cursor=pointer]:
+          - /url: https://old.reddit.com/r/ClaudeAI/search/?q=gstack&restrict_sr=on&sort=top&count=25&after=t3_1tchwa7
+  - generic [ref=e1517]:
+    - generic [ref=e1518]:
+      - list [ref=e1520]:
+        - listitem [ref=e1521]: 關於
+        - listitem [ref=e1522]:
+          - link "網誌" [ref=e1523] [cursor=pointer]:
+            - /url: https://redditblog.com
+        - listitem [ref=e1524]:
+          - link "關於" [ref=e1525] [cursor=pointer]:
+            - /url: https://www.redditinc.com
+        - listitem [ref=e1526]:
+          - link "廣告" [ref=e1527] [cursor=pointer]:
+            - /url: https://www.redditinc.com/advertising
+        - listitem [ref=e1528]:
+          - link "careers" [ref=e1529] [cursor=pointer]:
+            - /url: https://www.redditinc.com/careers
+      - list [ref=e1531]:
+        - listitem [ref=e1532]: 幫助
+        - listitem [ref=e1533]:
+          - link "網站規定" [ref=e1534] [cursor=pointer]:
+            - /url: https://old.reddit.com/rules/
+        - listitem [ref=e1535]:
+          - link "Reddit help center" [ref=e1536] [cursor=pointer]:
+            - /url: https://www.reddithelp.com
+        - listitem [ref=e1537]:
+          - link "reddit 站規" [ref=e1538] [cursor=pointer]:
+            - /url: https://old.reddit.com/wiki/reddiquette/
+        - listitem [ref=e1539]:
+          - link "mod guidelines" [ref=e1540] [cursor=pointer]:
+            - /url: https://old.reddit.com/help/healthycommunities/
+        - listitem [ref=e1541]:
+          - link "聯絡我們" [ref=e1542] [cursor=pointer]:
+            - /url: https://old.reddit.com/contact/
+      - list [ref=e1544]:
+        - listitem [ref=e1545]: 應用程式 & 工具
+        - listitem [ref=e1546]:
+          - link "Reddit for iPhone" [ref=e1547] [cursor=pointer]:
+            - /url: https://itunes.apple.com/us/app/reddit-the-official-app/id1064216828?mt=8
+        - listitem [ref=e1548]:
+          - link "Reddit for Android" [ref=e1549] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.reddit.frontpage
+        - listitem [ref=e1550]:
+          - link "mobile website" [ref=e1551] [cursor=pointer]:
+            - /url: "#"
+      - list [ref=e1553]:
+        - listitem [ref=e1554]: <3
+        - listitem [ref=e1555]:
+          - link "reddit premium" [ref=e1556] [cursor=pointer]:
+            - /url: https://old.reddit.com/premium/
+    - paragraph [ref=e1557]:
+      - text: 使用本網站即代表您接受我們的
+      - link "User Agreement" [ref=e1558] [cursor=pointer]:
+        - /url: https://old.reddit.com/help/useragreement
+      - text: 和
+      - link "隱私權政策" [ref=e1559] [cursor=pointer]:
+        - /url: https://old.reddit.com/help/privacypolicy
+      - text: . © 2026 reddit inc. 股份有限公司 保留所有權利
+    - paragraph [ref=e1560]: REDDIT and the ALIEN Logo are registered trademarks of reddit inc.
+  - img [ref=e1561]
+  - paragraph [ref=e1562]: π

@@ -1,0 +1,592 @@
+[
+  {
+    "name": "r5-p11-m12",
+    "spec": {
+      "11": {
+        "top": -12
+      }
+    },
+    "mean": 8.59,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      11.67,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p11-m13",
+    "spec": {
+      "11": {
+        "top": -13
+      }
+    },
+    "mean": 8.59,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      11.62,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p11-m14",
+    "spec": {
+      "11": {
+        "top": -14
+      }
+    },
+    "mean": 8.59,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      11.6,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p11-m16",
+    "spec": {
+      "11": {
+        "top": -16
+      }
+    },
+    "mean": 8.59,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      11.6,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p11-m17",
+    "spec": {
+      "11": {
+        "top": -17
+      }
+    },
+    "mean": 8.59,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      11.57,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p11-m18",
+    "spec": {
+      "11": {
+        "top": -18
+      }
+    },
+    "mean": 8.59,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      11.63,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p13-tp1",
+    "spec": {
+      "13": {
+        "top": 1
+      }
+    },
+    "mean": 8.62,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.61,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p13-tp3",
+    "spec": {
+      "13": {
+        "top": 3
+      }
+    },
+    "mean": 8.62,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.57,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p13-tp4",
+    "spec": {
+      "13": {
+        "top": 4
+      }
+    },
+    "mean": 8.62,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.64,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p13-tp5",
+    "spec": {
+      "13": {
+        "top": 5
+      }
+    },
+    "mean": 8.62,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.61,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-stack6",
+    "spec": {
+      "11": {
+        "top": -15
+      },
+      "14": {
+        "right": 5
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "13": {
+        "top": 2
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r5-stack7",
+    "spec": {
+      "11": {
+        "top": -15
+      },
+      "14": {
+        "right": 5
+      },
+      "13": {
+        "top": 2
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r5-stack8",
+    "spec": {
+      "11": {
+        "top": -10
+      },
+      "14": {
+        "right": 5
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "13": {
+        "top": 2
+      }
+    },
+    "mean": 8.59,
+    "max": 12.27,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.12,
+      11.71,
+      9.85,
+      11.59,
+      12.27,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-stack9",
+    "spec": {
+      "11": {
+        "top": -15
+      },
+      "14": {
+        "right": 5
+      },
+      "13": {
+        "top": 4
+      }
+    },
+    "mean": 8.58,
+    "max": 12.27,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      11.58,
+      9.85,
+      11.64,
+      12.27,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-stack10",
+    "spec": {
+      "11": {
+        "top": -15
+      },
+      "14": {
+        "right": 5
+      },
+      "10": {
+        "top": -2
+      },
+      "13": {
+        "top": 2
+      }
+    },
+    "mean": 8.58,
+    "max": 12.27,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.12,
+      11.58,
+      9.85,
+      11.59,
+      12.27,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-stack11-all",
+    "spec": {
+      "11": {
+        "top": -15
+      },
+      "14": {
+        "right": 5
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "13": {
+        "top": 3
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "mean": 8.58,
+    "max": 12.27,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.12,
+      11.58,
+      9.85,
+      11.57,
+      12.27,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p14-right-p8",
+    "spec": {
+      "14": {
+        "right": 8
+      }
+    },
+    "mean": 8.62,
+    "max": 12.28,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.28,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p14-right-p10",
+    "spec": {
+      "14": {
+        "right": 10
+      }
+    },
+    "mean": 8.62,
+    "max": 12.28,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.28,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r5-p14-right-p12",
+    "spec": {
+      "14": {
+        "right": 12
+      }
+    },
+    "mean": 8.62,
+    "max": 12.28,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.28,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  }
+]

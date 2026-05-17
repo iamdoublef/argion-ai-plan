@@ -1,0 +1,1272 @@
+{
+  "1": {
+    "size_font_histogram": [
+      {
+        "size": 5.4,
+        "font": "NSimSun",
+        "count": 2
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 6.0,
+        "font": "CourierNewPS-BoldMT",
+        "count": 1
+      },
+      {
+        "size": 18.0,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei",
+        "count": 1
+      }
+    ],
+    "span_samples": [
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          47.8,
+          43.1,
+          74.1,
+          53.0
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 6.0,
+        "font": "CourierNewPS-BoldMT",
+        "color": 15087942,
+        "bbox": [
+          28.3,
+          328.8,
+          89.7,
+          335.6
+        ],
+        "text": "M O D E L  I M T 0 5 0"
+      },
+      {
+        "size": 18.0,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          336.5,
+          80.8,
+          360.2
+        ],
+        "text": "制冰机"
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei",
+        "color": 9342611,
+        "bbox": [
+          28.3,
+          361.1,
+          52.6,
+          371.0
+        ],
+        "text": "说明书"
+      },
+      {
+        "size": 5.4,
+        "font": "NSimSun",
+        "color": 9342611,
+        "bbox": [
+          39.7,
+          537.6,
+          153.1,
+          543.0
+        ],
+        "text": "使用产品前请仔细阅读本说明书，并妥善保管。"
+      },
+      {
+        "size": 5.4,
+        "font": "NSimSun",
+        "color": 9342611,
+        "bbox": [
+          39.7,
+          545.9,
+          347.5,
+          551.3
+        ],
+        "text": "说明书中的产品、配件等插图均为示意图，仅供参考。由于产品的更新与升级，产品实物与示意图可能略有差异，请以实物为准。"
+      }
+    ],
+    "span_count": 6,
+    "page_size": [
+      420.0,
+      595.0
+    ],
+    "drawings_count": 5
+  },
+  "3": {
+    "size_font_histogram": [
+      {
+        "size": 6.98,
+        "font": "MicrosoftYaHei",
+        "count": 24
+      },
+      {
+        "size": 5.25,
+        "font": "Arial-Black",
+        "count": 24
+      },
+      {
+        "size": 5.25,
+        "font": "NSimSun",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "CourierNewPSMT",
+        "count": 2
+      },
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 7.27,
+        "font": "MicrosoftYaHei",
+        "count": 1
+      },
+      {
+        "size": 6.38,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 6.38,
+        "font": "Arial-Black",
+        "count": 1
+      }
+    ],
+    "span_samples": [
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          36.4,
+          50.7,
+          45.3
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "color": 9342611,
+        "bbox": [
+          343.9,
+          38.8,
+          391.2,
+          45.2
+        ],
+        "text": "CH.01 — SAFETY"
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "color": 15087942,
+        "bbox": [
+          37.3,
+          52.6,
+          55.1,
+          71.7
+        ],
+        "text": "01"
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          55.1,
+          53.2,
+          112.7,
+          71.0
+        ],
+        "text": " 安全须知"
+      },
+      {
+        "size": 7.27,
+        "font": "MicrosoftYaHei",
+        "color": 2236962,
+        "bbox": [
+          28.3,
+          77.1,
+          348.4,
+          86.7
+        ],
+        "text": "为了您的安全，在使用本电器产品前，请阅读本手册中的所有说明，并始终遵守以下安全预防措施："
+      },
+      {
+        "size": 6.38,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 15087942,
+        "bbox": [
+          37.3,
+          101.3,
+          50.7,
+          109.7
+        ],
+        "text": "警告"
+      },
+      {
+        "size": 6.38,
+        "font": "Arial-Black",
+        "color": 15087942,
+        "bbox": [
+          51.3,
+          101.0,
+          92.3,
+          110.0
+        ],
+        "text": " WARNING"
+      },
+      {
+        "size": 6.98,
+        "font": "MicrosoftYaHei",
+        "color": 0,
+        "bbox": [
+          46.3,
+          134.4,
+          192.8,
+          143.6
+        ],
+        "text": "本机仅供家庭使用，请勿用于其他非设计用途。"
+      }
+    ],
+    "span_count": 59,
+    "page_size": [
+      420.0,
+      595.0
+    ],
+    "drawings_count": 6
+  },
+  "4": {
+    "size_font_histogram": [
+      {
+        "size": 6.98,
+        "font": "MicrosoftYaHei",
+        "count": 17
+      },
+      {
+        "size": 5.25,
+        "font": "Arial-Black",
+        "count": 9
+      },
+      {
+        "size": 6.98,
+        "font": "ArialMT",
+        "count": 8
+      },
+      {
+        "size": 6.38,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 2
+      },
+      {
+        "size": 6.38,
+        "font": "Arial-Black",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "NSimSun",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "CourierNewPSMT",
+        "count": 2
+      },
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      }
+    ],
+    "span_samples": [
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          36.4,
+          50.7,
+          45.3
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "color": 9342611,
+        "bbox": [
+          343.9,
+          38.8,
+          391.2,
+          45.2
+        ],
+        "text": "CH.01 — SAFETY"
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "color": 15087942,
+        "bbox": [
+          37.3,
+          52.6,
+          55.1,
+          71.7
+        ],
+        "text": "01"
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          55.1,
+          53.2,
+          152.6,
+          71.0
+        ],
+        "text": " 安全须知（续）"
+      },
+      {
+        "size": 6.38,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          37.3,
+          84.8,
+          50.7,
+          93.2
+        ],
+        "text": "注意"
+      },
+      {
+        "size": 6.38,
+        "font": "Arial-Black",
+        "color": 0,
+        "bbox": [
+          51.3,
+          84.5,
+          90.3,
+          93.5
+        ],
+        "text": " CAUTION"
+      },
+      {
+        "size": 6.38,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 3355443,
+        "bbox": [
+          38.1,
+          198.8,
+          51.1,
+          207.2
+        ],
+        "text": "提示"
+      },
+      {
+        "size": 6.38,
+        "font": "Arial-Black",
+        "color": 3355443,
+        "bbox": [
+          51.4,
+          198.5,
+          82.2,
+          207.5
+        ],
+        "text": " NOTICE"
+      }
+    ],
+    "span_count": 46,
+    "page_size": [
+      420.0,
+      595.0
+    ],
+    "drawings_count": 8
+  },
+  "7": {
+    "size_font_histogram": [
+      {
+        "size": 6.6,
+        "font": "MicrosoftYaHei",
+        "count": 13
+      },
+      {
+        "size": 6.6,
+        "font": "ArialMT",
+        "count": 8
+      },
+      {
+        "size": 6.29,
+        "font": "CourierNewPS-BoldMT",
+        "count": 5
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "NSimSun",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "CourierNewPSMT",
+        "count": 2
+      },
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 6.0,
+        "font": "Arial-BoldMT",
+        "count": 1
+      }
+    ],
+    "span_samples": [
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          36.4,
+          50.7,
+          45.3
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "color": 9342611,
+        "bbox": [
+          337.2,
+          38.8,
+          391.2,
+          45.2
+        ],
+        "text": "CH.04 — FEATURES"
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "color": 15087942,
+        "bbox": [
+          37.3,
+          52.6,
+          55.1,
+          71.7
+        ],
+        "text": "04"
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          55.1,
+          53.2,
+          112.7,
+          71.0
+        ],
+        "text": " 产品功能"
+      },
+      {
+        "size": 6.0,
+        "font": "Arial-BoldMT",
+        "color": 16777215,
+        "bbox": [
+          32.5,
+          285.6,
+          49.4,
+          292.3
+        ],
+        "text": "NO. / "
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 16777215,
+        "bbox": [
+          49.7,
+          284.7,
+          62.0,
+          292.6
+        ],
+        "text": "按键"
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 16777215,
+        "bbox": [
+          155.6,
+          284.7,
+          180.4,
+          292.6
+        ],
+        "text": "功能说明"
+      },
+      {
+        "size": 6.6,
+        "font": "ArialMT",
+        "color": 1710618,
+        "bbox": [
+          32.8,
+          301.5,
+          38.4,
+          308.9
+        ],
+        "text": "1 "
+      }
+    ],
+    "span_count": 37,
+    "page_size": [
+      420.0,
+      595.0
+    ],
+    "drawings_count": 48
+  },
+  "8": {
+    "size_font_histogram": [
+      {
+        "size": 6.67,
+        "font": "ArialMT",
+        "count": 23
+      },
+      {
+        "size": 6.67,
+        "font": "MicrosoftYaHei",
+        "count": 21
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "NSimSun",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "CourierNewPSMT",
+        "count": 2
+      },
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      }
+    ],
+    "span_samples": [
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          36.4,
+          50.7,
+          45.3
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "color": 9342611,
+        "bbox": [
+          316.9,
+          38.8,
+          391.2,
+          45.2
+        ],
+        "text": "CH.05 — SPECIFICATIONS"
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "color": 15087942,
+        "bbox": [
+          37.3,
+          52.6,
+          55.1,
+          71.7
+        ],
+        "text": "05"
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          55.1,
+          53.2,
+          112.7,
+          71.0
+        ],
+        "text": " 技术参数"
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 16777215,
+        "bbox": [
+          32.5,
+          79.2,
+          44.7,
+          87.1
+        ],
+        "text": "参数"
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 16777215,
+        "bbox": [
+          213.5,
+          79.2,
+          225.8,
+          87.1
+        ],
+        "text": "规格"
+      },
+      {
+        "size": 6.67,
+        "font": "MicrosoftYaHei",
+        "color": 1710618,
+        "bbox": [
+          32.8,
+          94.9,
+          46.2,
+          103.7
+        ],
+        "text": "电压"
+      },
+      {
+        "size": 6.67,
+        "font": "ArialMT",
+        "color": 1710618,
+        "bbox": [
+          213.9,
+          96.0,
+          252.9,
+          103.4
+        ],
+        "text": "220~240 Vac"
+      }
+    ],
+    "span_count": 54,
+    "page_size": [
+      420.0,
+      595.0
+    ],
+    "drawings_count": 110
+  },
+  "9": {
+    "size_font_histogram": [
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei",
+        "count": 15
+      },
+      {
+        "size": 7.5,
+        "font": "ArialMT",
+        "count": 7
+      },
+      {
+        "size": 6.0,
+        "font": "Arial-Black",
+        "count": 4
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 3
+      },
+      {
+        "size": 6.75,
+        "font": "Arial-Black",
+        "count": 3
+      },
+      {
+        "size": 5.25,
+        "font": "NSimSun",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "CourierNewPSMT",
+        "count": 2
+      },
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 7.5,
+        "font": "Arial-BoldMT",
+        "count": 1
+      }
+    ],
+    "span_samples": [
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          36.4,
+          50.7,
+          45.3
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "color": 9342611,
+        "bbox": [
+          333.8,
+          38.8,
+          391.2,
+          45.2
+        ],
+        "text": "CH.06 — OPERATION"
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "color": 15087942,
+        "bbox": [
+          37.3,
+          52.6,
+          55.1,
+          71.7
+        ],
+        "text": "06"
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          55.1,
+          53.2,
+          112.7,
+          71.0
+        ],
+        "text": " 操作指引"
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          78.3,
+          66.9,
+          88.2
+        ],
+        "text": "工作前准备"
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          155.6,
+          59.1,
+          165.5
+        ],
+        "text": "产品开机"
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          211.1,
+          82.4,
+          221.0
+        ],
+        "text": "如何制作子弹冰"
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei",
+        "color": 0,
+        "bbox": [
+          37.3,
+          98.6,
+          389.8,
+          108.5
+        ],
+        "text": "务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与"
+      }
+    ],
+    "span_count": 41,
+    "page_size": [
+      420.0,
+      595.0
+    ],
+    "drawings_count": 11
+  },
+  "11": {
+    "size_font_histogram": [
+      {
+        "size": 6.52,
+        "font": "MicrosoftYaHei",
+        "count": 39
+      },
+      {
+        "size": 6.52,
+        "font": "ArialMT",
+        "count": 7
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 3
+      },
+      {
+        "size": 5.25,
+        "font": "NSimSun",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "CourierNewPSMT",
+        "count": 2
+      },
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 6.38,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 6.38,
+        "font": "Arial-Black",
+        "count": 1
+      },
+      {
+        "size": 6.67,
+        "font": "MicrosoftYaHei",
+        "count": 1
+      }
+    ],
+    "span_samples": [
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          36.4,
+          50.7,
+          45.3
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "color": 9342611,
+        "bbox": [
+          313.5,
+          38.8,
+          391.2,
+          45.2
+        ],
+        "text": "CH.07 — TROUBLESHOOTING"
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "color": 15087942,
+        "bbox": [
+          37.3,
+          52.6,
+          55.1,
+          71.7
+        ],
+        "text": "07"
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          55.1,
+          53.2,
+          112.7,
+          71.0
+        ],
+        "text": " 故障排除"
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 16777215,
+        "bbox": [
+          32.5,
+          78.4,
+          57.2,
+          86.3
+        ],
+        "text": "故障现象"
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 16777215,
+        "bbox": [
+          112.1,
+          78.4,
+          136.9,
+          86.3
+        ],
+        "text": "可能原因"
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 16777215,
+        "bbox": [
+          231.6,
+          78.4,
+          256.4,
+          86.3
+        ],
+        "text": "解决方案"
+      },
+      {
+        "size": 6.52,
+        "font": "MicrosoftYaHei",
+        "color": 1710618,
+        "bbox": [
+          32.8,
+          93.6,
+          58.9,
+          102.2
+        ],
+        "text": "不能开机"
+      }
+    ],
+    "span_count": 60,
+    "page_size": [
+      420.0,
+      595.0
+    ],
+    "drawings_count": 87
+  },
+  "14": {
+    "size_font_histogram": [
+      {
+        "size": 6.67,
+        "font": "MicrosoftYaHei",
+        "count": 12
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei",
+        "count": 11
+      },
+      {
+        "size": 6.67,
+        "font": "ArialMT",
+        "count": 7
+      },
+      {
+        "size": 7.5,
+        "font": "ArialMT",
+        "count": 6
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 4
+      },
+      {
+        "size": 6.0,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 4
+      },
+      {
+        "size": 6.0,
+        "font": "Arial-Black",
+        "count": 3
+      },
+      {
+        "size": 7.5,
+        "font": "Arial-BoldMT",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "NSimSun",
+        "count": 2
+      },
+      {
+        "size": 5.25,
+        "font": "CourierNewPSMT",
+        "count": 2
+      },
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "count": 1
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "count": 1
+      },
+      {
+        "size": 6.67,
+        "font": "Arial-BoldMT",
+        "count": 1
+      }
+    ],
+    "span_samples": [
+      {
+        "size": 6.75,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          28.3,
+          36.4,
+          50.7,
+          45.3
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 5.62,
+        "font": "CourierNewPSMT",
+        "color": 9342611,
+        "bbox": [
+          337.2,
+          38.8,
+          391.2,
+          45.2
+        ],
+        "text": "CH.10 — WARRANTY"
+      },
+      {
+        "size": 13.5,
+        "font": "Arial-Black",
+        "color": 15087942,
+        "bbox": [
+          37.3,
+          52.6,
+          55.1,
+          71.7
+        ],
+        "text": "10"
+      },
+      {
+        "size": 13.5,
+        "font": "MicrosoftYaHei-Bold",
+        "color": 0,
+        "bbox": [
+          55.1,
+          53.2,
+          152.6,
+          71.0
+        ],
+        "text": " 品牌与保修信息"
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei",
+        "color": 2236962,
+        "bbox": [
+          28.3,
+          77.6,
+          65.8,
+          87.5
+        ],
+        "text": "感谢您购买"
+      },
+      {
+        "size": 7.5,
+        "font": "ArialMT",
+        "color": 2236962,
+        "bbox": [
+          65.8,
+          78.7,
+          67.9,
+          87.1
+        ],
+        "text": " "
+      },
+      {
+        "size": 7.5,
+        "font": "MicrosoftYaHei",
+        "color": 2236962,
+        "bbox": [
+          67.9,
+          77.6,
+          90.4,
+          87.5
+        ],
+        "text": "威富可"
+      },
+      {
+        "size": 7.5,
+        "font": "ArialMT",
+        "color": 2236962,
+        "bbox": [
+          90.4,
+          78.7,
+          92.5,
+          87.1
+        ],
+        "text": " "
+      }
+    ],
+    "span_count": 59,
+    "page_size": [
+      420.0,
+      595.0
+    ],
+    "drawings_count": 57
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {"name": "r8-p14-rp5-tm4", "spec": {"14": {"right": 5, "top": -4}}},
+  {"name": "r8-p14-rp5-tm6", "spec": {"14": {"right": 5, "top": -6}}},
+  {"name": "r8-p14-rp5-tm8", "spec": {"14": {"right": 5, "top": -8}}},
+  {"name": "r8-p14-rp5-tm10", "spec": {"14": {"right": 5, "top": -10}}},
+  {"name": "r8-p14-tp3-bigsweep", "spec": {"14": {"right": 5, "top": -3, "header": 10}}},
+  {"name": "r8-p14-tp3-hm10", "spec": {"14": {"right": 5, "top": -3, "header": -10}}},
+  {"name": "r8-p14-tp3-fp10", "spec": {"14": {"right": 5, "top": -3, "footer": 10}}},
+  {"name": "r8-best-plus-p10tm5", "spec": {"11": {"top": -17}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3}, "10": {"top": -5}, "9": {"right": 2}}},
+  {"name": "r8-best-plus-p13tp5", "spec": {"11": {"top": -17}, "14": {"right": 5, "top": -3}, "13": {"top": 5}, "3": {"right": 3}, "10": {"top": -2}, "9": {"right": 2}}},
+  {"name": "r8-best-plus-p13tp15", "spec": {"11": {"top": -17}, "14": {"right": 5, "top": -3}, "13": {"top": 15}, "3": {"right": 3}, "10": {"top": -2}, "9": {"right": 2}}},
+  {"name": "r8-best-plus-p3rp5", "spec": {"11": {"top": -17}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 5}, "10": {"top": -2}, "9": {"right": 2}}},
+  {"name": "r8-best-plus-p11rp1", "spec": {"11": {"top": -17, "right": 1}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3}, "10": {"top": -2}, "9": {"right": 2}}},
+  {"name": "r8-best-plus-p5rp3", "spec": {"11": {"top": -17}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3}, "10": {"top": -2}, "9": {"right": 2}, "5": {"right": 3}}},
+  {"name": "r8-best-plus-p12rp3", "spec": {"11": {"top": -17}, "14": {"right": 5, "top": -3}, "13": {"top": 3}, "3": {"right": 3}, "10": {"top": -2}, "9": {"right": 2}, "12": {"right": 3}}},
+  {"name": "r8-p13-lp1", "spec": {"13": {"left": 1}}},
+  {"name": "r8-p13-lp3", "spec": {"13": {"left": 3}}},
+  {"name": "r8-p13-lp5", "spec": {"13": {"left": 5}}},
+  {"name": "r8-p13-rp5", "spec": {"13": {"right": 5}}},
+  {"name": "r8-p13-bp5", "spec": {"13": {"bottom": 5}}},
+  {"name": "r8-p13-hm5", "spec": {"13": {"header": -5}}},
+  {"name": "r8-p13-hp10", "spec": {"13": {"header": 10}}}
+]

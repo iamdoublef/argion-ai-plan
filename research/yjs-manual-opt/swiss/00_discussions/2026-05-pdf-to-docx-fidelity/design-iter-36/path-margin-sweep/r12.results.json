@@ -1,0 +1,641 @@
+[
+  {
+    "name": "r12-p15tp5",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 5
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.38
+    ]
+  },
+  {
+    "name": "r12-p15tp10",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 10
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.47
+    ]
+  },
+  {
+    "name": "r12-p15tp20",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 20
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.42
+    ]
+  },
+  {
+    "name": "r12-p15rp3",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3,
+        "right": 3
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r12-p15rp5",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3,
+        "right": 5
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r12-p15-rp5-only",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "right": 5
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r12-p1rp3",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      },
+      "1": {
+        "right": 3
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r12-p2rp3",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      },
+      "2": {
+        "right": 3
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r12-p4rp3",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "4": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r12-p6rp3",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "6": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r12-p7rp3",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "7": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.46,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.79,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r12-p8rp3",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "8": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.34
+    ]
+  },
+  {
+    "name": "r12-p12rp3",
+    "spec": {
+      "3": {
+        "right": 3
+      },
+      "5": {
+        "right": 3
+      },
+      "9": {
+        "right": 2
+      },
+      "10": {
+        "top": -5
+      },
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "12": {
+        "right": 3
+      },
+      "13": {
+        "top": 3
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "15": {
+        "top": 3
+      }
+    },
+    "mean": 8.47,
+    "max": 12.2,
+    "per_page": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.86,
+      11.53,
+      12.2,
+      3.34
+    ]
+  }
+]

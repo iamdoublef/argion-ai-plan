@@ -1,0 +1,612 @@
+[
+  {
+    "name": "r7-best-plus-p14tm3",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "mean": 8.57,
+    "max": 12.26,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.12,
+      11.57,
+      9.85,
+      11.57,
+      12.26,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-best-plus-p14tm1",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -1
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "mean": 8.58,
+    "max": 12.32,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.12,
+      11.57,
+      9.85,
+      11.57,
+      12.32,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-best-plus-p14tm2",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -2
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "mean": 8.58,
+    "max": 12.28,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.12,
+      11.57,
+      9.85,
+      11.57,
+      12.28,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-best-plus-p9-tm2",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2,
+        "top": -2
+      }
+    },
+    "mean": 8.58,
+    "max": 12.27,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.96,
+      10.12,
+      11.57,
+      9.85,
+      11.57,
+      12.27,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-best-plus-p9-tm5",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2,
+        "top": -5
+      }
+    },
+    "mean": 8.58,
+    "max": 12.27,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.92,
+      10.12,
+      11.57,
+      9.85,
+      11.57,
+      12.27,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p9-top-m5",
+    "spec": {
+      "9": {
+        "top": -5
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.93,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p9-top-m10",
+    "spec": {
+      "9": {
+        "top": -10
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.92,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p9-top-p5",
+    "spec": {
+      "9": {
+        "top": 5
+      }
+    },
+    "mean": 8.64,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      12.15,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p9-bot-m3",
+    "spec": {
+      "9": {
+        "bottom": -3
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p9-bot-p3",
+    "spec": {
+      "9": {
+        "bottom": 3
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p3-top-m3",
+    "spec": {
+      "3": {
+        "top": -3
+      }
+    },
+    "mean": 8.64,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      12.04,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p3-top-p3",
+    "spec": {
+      "3": {
+        "top": 3
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      12.01,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p3-top-m5",
+    "spec": {
+      "3": {
+        "top": -5
+      }
+    },
+    "mean": 8.64,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      12.1,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p5-top-m5",
+    "spec": {
+      "5": {
+        "top": -5
+      }
+    },
+    "mean": 8.64,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.98,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p5-top-m10",
+    "spec": {
+      "5": {
+        "top": -10
+      }
+    },
+    "mean": 8.65,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      11.17,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p12-top-m5",
+    "spec": {
+      "12": {
+        "top": -5
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r7-p12-top-m10",
+    "spec": {
+      "12": {
+        "top": -10
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.93,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p10-top-m5",
+    "spec": {
+      "10": {
+        "top": -5
+      }
+    },
+    "mean": 8.62,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.01,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r7-p10-top-m10",
+    "spec": {
+      "10": {
+        "top": -10
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  }
+]

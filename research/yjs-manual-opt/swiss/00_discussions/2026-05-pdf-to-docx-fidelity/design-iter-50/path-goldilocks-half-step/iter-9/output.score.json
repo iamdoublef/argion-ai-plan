@@ -1,0 +1,50 @@
+{
+  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-50\\path-goldilocks-half-step\\iter-9\\output.docx",
+  "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "pages": {
+    "target": 15,
+    "candidate": 15,
+    "ratio": 1.0
+  },
+  "text": {
+    "target_chars": 4626,
+    "candidate_chars": 4626,
+    "ratio": 1.0
+  },
+  "editability": {
+    "wt_count": 446,
+    "txbx_count": 0,
+    "drawings_count": 16,
+    "image_bytes": 530887,
+    "image_hack_detected": false,
+    "editable_pct": 100.0
+  },
+  "visual": {
+    "per_page_mean_diff": [
+      2.88,
+      3.25,
+      11.07,
+      6.27,
+      10.05,
+      4.33,
+      7.71,
+      7.85,
+      11.35,
+      10.03,
+      10.91,
+      9.93,
+      10.48,
+      11.99,
+      3.31
+    ],
+    "overall_mean_diff": 8.09,
+    "max_page_diff": 11.99
+  },
+  "pass": {
+    "pages": true,
+    "text": true,
+    "editable": true,
+    "visual": true,
+    "overall": true
+  }
+}

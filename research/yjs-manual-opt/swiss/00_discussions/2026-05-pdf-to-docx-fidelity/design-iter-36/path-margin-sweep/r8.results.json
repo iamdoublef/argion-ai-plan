@@ -1,0 +1,701 @@
+[
+  {
+    "name": "r8-p14-rp5-tm4",
+    "spec": {
+      "14": {
+        "right": 5,
+        "top": -4
+      }
+    },
+    "mean": 8.64,
+    "max": 12.45,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.45,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p14-rp5-tm6",
+    "spec": {
+      "14": {
+        "right": 5,
+        "top": -6
+      }
+    },
+    "mean": 8.63,
+    "max": 12.39,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.39,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p14-rp5-tm8",
+    "spec": {
+      "14": {
+        "right": 5,
+        "top": -8
+      }
+    },
+    "mean": 8.63,
+    "max": 12.42,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.42,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p14-rp5-tm10",
+    "spec": {
+      "14": {
+        "right": 5,
+        "top": -10
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r8-p14-tp3-bigsweep",
+    "spec": {
+      "14": {
+        "right": 5,
+        "top": -3,
+        "header": 10
+      }
+    },
+    "mean": 8.62,
+    "max": 12.26,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.26,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p14-tp3-hm10",
+    "spec": {
+      "14": {
+        "right": 5,
+        "top": -3,
+        "header": -10
+      }
+    },
+    "mean": 8.62,
+    "max": 12.26,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.26,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p14-tp3-fp10",
+    "spec": {
+      "14": {
+        "right": 5,
+        "top": -3,
+        "footer": 10
+      }
+    },
+    "mean": 8.62,
+    "max": 12.27,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.27,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-best-plus-p10tm5",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -5
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "mean": 8.57,
+    "max": 12.26,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.01,
+      11.57,
+      9.85,
+      11.57,
+      12.26,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-best-plus-p13tp5",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "13": {
+        "top": 5
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "mean": 8.58,
+    "max": 12.26,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.12,
+      11.57,
+      9.85,
+      11.61,
+      12.26,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-best-plus-p13tp15",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "13": {
+        "top": 15
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r8-best-plus-p3rp5",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 5
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "mean": 8.58,
+    "max": 12.26,
+    "per_page": [
+      2.93,
+      3.25,
+      11.9,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.12,
+      11.57,
+      9.85,
+      11.57,
+      12.26,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-best-plus-p11rp1",
+    "spec": {
+      "11": {
+        "top": -17,
+        "right": 1
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      }
+    },
+    "mean": 8.57,
+    "max": 12.26,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.12,
+      11.56,
+      9.85,
+      11.57,
+      12.26,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-best-plus-p5rp3",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      },
+      "5": {
+        "right": 3
+      }
+    },
+    "mean": 8.57,
+    "max": 12.26,
+    "per_page": [
+      2.93,
+      3.25,
+      11.86,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.87,
+      10.12,
+      11.57,
+      9.85,
+      11.57,
+      12.26,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-best-plus-p12rp3",
+    "spec": {
+      "11": {
+        "top": -17
+      },
+      "14": {
+        "right": 5,
+        "top": -3
+      },
+      "13": {
+        "top": 3
+      },
+      "3": {
+        "right": 3
+      },
+      "10": {
+        "top": -2
+      },
+      "9": {
+        "right": 2
+      },
+      "12": {
+        "right": 3
+      }
+    },
+    "error": "score_failed",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 214, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 197, in main\n    result = score(target_pdf, target_pngs, cand)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 133, in score\n    cand_pdf = docx_to_pdf(candidate_docx, work / \"pdf\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\score_candidate.py\", line 38, in docx_to_pdf\n    raise RuntimeError(f\"soffice failed: {r.returncode}\\n{r.stderr}\")\nRuntimeError: soffice failed: 1\n\n"
+  },
+  {
+    "name": "r8-p13-lp1",
+    "spec": {
+      "13": {
+        "left": 1
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.67,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p13-lp3",
+    "spec": {
+      "13": {
+        "left": 3
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.67,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p13-lp5",
+    "spec": {
+      "13": {
+        "left": 5
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p13-rp5",
+    "spec": {
+      "13": {
+        "right": 5
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p13-bp5",
+    "spec": {
+      "13": {
+        "bottom": 5
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p13-hm5",
+    "spec": {
+      "13": {
+        "header": -5
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  },
+  {
+    "name": "r8-p13-hp10",
+    "spec": {
+      "13": {
+        "header": 10
+      }
+    },
+    "mean": 8.63,
+    "max": 12.3,
+    "per_page": [
+      2.93,
+      3.25,
+      11.89,
+      7.09,
+      10.75,
+      6.19,
+      7.81,
+      7.84,
+      11.88,
+      10.14,
+      12.14,
+      9.85,
+      11.68,
+      12.3,
+      3.65
+    ],
+    "pages_match": true,
+    "text_match": true,
+    "editable_pct": 100.0
+  }
+]

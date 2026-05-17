@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<w:ftr xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 wp14">
+  <w:p>
+    <w:pPr>
+      <w:pStyle w:val="Footer"/>
+    </w:pPr>
+    <w:r/>
+  </w:p>
+  <w:tbl>
+    <w:tblPr>
+      <w:tblW w:type="dxa" w:w="7257"/>
+      <w:jc w:val="center"/>
+      <w:tblLayout w:type="fixed"/>
+      <w:tblLook w:firstColumn="1" w:firstRow="1" w:lastColumn="0" w:lastRow="0" w:noHBand="0" w:noVBand="1" w:val="04A0"/>
+      <w:tblBorders>
+        <w:top w:val="nil"/>
+        <w:left w:val="nil"/>
+        <w:bottom w:val="nil"/>
+        <w:right w:val="nil"/>
+        <w:insideH w:val="nil"/>
+        <w:insideV w:val="nil"/>
+      </w:tblBorders>
+    </w:tblPr>
+    <w:tblGrid>
+      <w:gridCol w:w="3628"/>
+      <w:gridCol w:w="3628"/>
+    </w:tblGrid>
+    <w:tr>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:type="dxa" w:w="5216"/>
+          <w:tcBorders>
+            <w:left w:val="nil"/>
+            <w:right w:val="nil"/>
+            <w:bottom w:val="nil"/>
+            <w:top w:val="single" w:sz="4" w:space="0" w:color="EEEEEE"/>
+          </w:tcBorders>
+          <w:tcMar>
+            <w:top w:w="35" w:type="dxa"/>
+            <w:start w:w="0" w:type="dxa"/>
+            <w:bottom w:w="0" w:type="dxa"/>
+            <w:end w:w="0" w:type="dxa"/>
+          </w:tcMar>
+        </w:tcPr>
+        <w:p>
+          <w:pPr>
+            <w:spacing w:after="0"/>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+              <w:b w:val="0"/>
+              <w:sz w:val="10"/>
+              <w:color w:val="E8E8E8"/>
+              <w:spacing w:val="2"/>
+            </w:rPr>
+            <w:t>威富可 IMT050 说明书</w:t>
+          </w:r>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:type="dxa" w:w="2041"/>
+          <w:tcBorders>
+            <w:left w:val="nil"/>
+            <w:right w:val="nil"/>
+            <w:bottom w:val="nil"/>
+            <w:top w:val="single" w:sz="4" w:space="0" w:color="EEEEEE"/>
+          </w:tcBorders>
+          <w:tcMar>
+            <w:top w:w="35" w:type="dxa"/>
+            <w:start w:w="0" w:type="dxa"/>
+            <w:bottom w:w="0" w:type="dxa"/>
+            <w:end w:w="0" w:type="dxa"/>
+          </w:tcMar>
+        </w:tcPr>
+        <w:p>
+          <w:pPr>
+            <w:spacing w:after="0"/>
+            <w:jc w:val="right"/>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:ascii="Courier New" w:hAnsi="Courier New" w:cs="Courier New" w:eastAsia="Microsoft YaHei"/>
+              <w:b w:val="0"/>
+              <w:sz w:val="10"/>
+              <w:color w:val="E8E8E8"/>
+            </w:rPr>
+            <w:t>12</w:t>
+          </w:r>
+        </w:p>
+      </w:tc>
+    </w:tr>
+  </w:tbl>
+</w:ftr>

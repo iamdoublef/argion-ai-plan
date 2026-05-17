@@ -1,0 +1,50 @@
+{
+  "candidate": "iter-2\\output.docx",
+  "target": "..\\..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
+  "pages": {
+    "target": 15,
+    "candidate": 15,
+    "ratio": 1.0
+  },
+  "text": {
+    "target_chars": 4620,
+    "candidate_chars": 4520,
+    "ratio": 0.98
+  },
+  "editability": {
+    "wt_count": 456,
+    "txbx_count": 0,
+    "drawings_count": 17,
+    "image_bytes": 533482,
+    "image_hack_detected": false,
+    "editable_pct": 100.0
+  },
+  "visual": {
+    "per_page_mean_diff": [
+      3.32,
+      2.52,
+      15.98,
+      7.53,
+      11.56,
+      10.19,
+      11.91,
+      8.14,
+      13.16,
+      12.1,
+      14.13,
+      10.73,
+      12.85,
+      22.98,
+      5.26
+    ],
+    "overall_mean_diff": 10.82,
+    "max_page_diff": 22.98
+  },
+  "pass": {
+    "pages": true,
+    "text": true,
+    "editable": true,
+    "visual": true,
+    "overall": true
+  }
+}

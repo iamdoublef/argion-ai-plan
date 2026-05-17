@@ -1,0 +1,50 @@
+{
+  "candidate": "W30plus.docx",
+  "target": "..\\..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
+  "pages": {
+    "target": 15,
+    "candidate": 15,
+    "ratio": 1.0
+  },
+  "text": {
+    "target_chars": 4620,
+    "candidate_chars": 4626,
+    "ratio": 1.0
+  },
+  "editability": {
+    "wt_count": 446,
+    "txbx_count": 0,
+    "drawings_count": 16,
+    "image_bytes": 530887,
+    "image_hack_detected": false,
+    "editable_pct": 100.0
+  },
+  "visual": {
+    "per_page_mean_diff": [
+      2.88,
+      3.25,
+      11.66,
+      6.77,
+      10.75,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
+      9.85,
+      11.53,
+      12.2,
+      3.58
+    ],
+    "overall_mean_diff": 8.48,
+    "max_page_diff": 12.2
+  },
+  "pass": {
+    "pages": true,
+    "text": true,
+    "editable": true,
+    "visual": true,
+    "overall": true
+  }
+}
