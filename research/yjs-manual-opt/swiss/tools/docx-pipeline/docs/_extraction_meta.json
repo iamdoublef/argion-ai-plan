@@ -1,476 +1,514 @@
 {
-  "total": 277,
+  "version": "v2",
+  "total": 304,
   "by_area": {
-    "cover": 5,
-    "toc": 13,
-    "safety": 41,
-    "install": 36,
-    "operate": 55,
-    "spec": 22,
-    "troubleshoot": 34,
-    "clean": 18,
-    "warranty": 39,
+    "cover": 4,
+    "toc": 12,
+    "safety": 43,
+    "install": 46,
+    "operate": 60,
+    "spec": 23,
+    "troubleshoot": 40,
+    "clean": 17,
+    "warranty": 45,
     "footer": 14
   },
+  "split_stats": {
+    "wt_split_count": 60,
+    "brand_wt_touched": 30,
+    "brand_replaced_occurrences": 30
+  },
+  "notice_pivot_pos": 61497,
   "entries": [
     {
       "key": "cover_1",
-      "text": "威富可",
-      "page": 1,
-      "area": "cover",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 1936
-    },
-    {
-      "key": "cover_2",
       "text": "制冰机",
       "page": 1,
       "area": "cover",
       "subarea": "",
       "source": "document.xml",
-      "offset": 4247
+      "offset": 4246,
+      "split": false
     },
     {
-      "key": "cover_3",
+      "key": "cover_2",
       "text": "说明书",
       "page": 1,
       "area": "cover",
       "subarea": "",
       "source": "document.xml",
-      "offset": 4677
+      "offset": 4676,
+      "split": false
     },
     {
-      "key": "cover_4",
+      "key": "cover_3",
       "text": "使用产品前请仔细阅读本说明书，并妥善保管。",
       "page": 1,
       "area": "cover",
       "subarea": "",
       "source": "document.xml",
-      "offset": 5695
+      "offset": 5694,
+      "split": false
     },
     {
-      "key": "cover_5",
+      "key": "cover_4",
       "text": "说明书中的产品、配件等插图均为示意图，仅供参考。由于产品的更新与升级，产品实物与示意图可能略有差异，请以实物为准。",
       "page": 1,
       "area": "cover",
       "subarea": "",
       "source": "document.xml",
-      "offset": 6142
+      "offset": 6141,
+      "split": false
     },
     {
       "key": "toc_1",
-      "text": "威富可",
+      "text": "说明书",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 7196
+      "offset": 7499,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "IMT050 — 说明书"
     },
     {
       "key": "toc_2",
-      "text": "IMT050 — 说明书",
-      "page": 2,
-      "area": "toc",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 7500
-    },
-    {
-      "key": "toc_3",
       "text": "目录",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 7948
+      "offset": 7947,
+      "split": false
     },
     {
-      "key": "toc_4",
+      "key": "toc_3",
       "text": "安全须知",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 8753
+      "offset": 8752,
+      "split": false
     },
     {
-      "key": "toc_5",
+      "key": "toc_4",
       "text": "产品及使用提示",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 9862
+      "offset": 9861,
+      "split": false
     },
     {
-      "key": "toc_6",
+      "key": "toc_5",
       "text": "产品结构",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 10974
+      "offset": 10973,
+      "split": false
     },
     {
-      "key": "toc_7",
+      "key": "toc_6",
       "text": "产品功能",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 12083
+      "offset": 12082,
+      "split": false
     },
     {
-      "key": "toc_8",
+      "key": "toc_7",
       "text": "技术参数",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 13192
+      "offset": 13191,
+      "split": false
     },
     {
-      "key": "toc_9",
+      "key": "toc_8",
       "text": "操作指引",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 14301
+      "offset": 14300,
+      "split": false
     },
     {
-      "key": "toc_10",
+      "key": "toc_9",
       "text": "故障排除",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 15410
+      "offset": 15409,
+      "split": false
     },
     {
-      "key": "toc_11",
+      "key": "toc_10",
       "text": "维护保养",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 16520
+      "offset": 16519,
+      "split": false
     },
     {
-      "key": "toc_12",
+      "key": "toc_11",
       "text": "安装运输、存储与拆除",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 17630
+      "offset": 17629,
+      "split": false
     },
     {
-      "key": "toc_13",
+      "key": "toc_12",
       "text": "品牌与保修信息",
       "page": 2,
       "area": "toc",
       "subarea": "",
       "source": "document.xml",
-      "offset": 18746
+      "offset": 18745,
+      "split": false
     },
     {
       "key": "safety_warning_1",
-      "text": "威富可",
-      "page": 3,
-      "area": "safety",
-      "subarea": "warning",
-      "source": "document.xml",
-      "offset": 20055
-    },
-    {
-      "key": "safety_warning_2",
       "text": "安全须知",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 21266
+      "offset": 21265,
+      "split": false
     },
     {
-      "key": "safety_warning_3",
+      "key": "safety_warning_2",
       "text": "为了您的安全，在使用本电器产品前，请阅读本手册中的所有说明，并始终遵守以下安全预防措施：",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 21697
+      "offset": 21696,
+      "split": false
     },
     {
-      "key": "safety_warning_4",
-      "text": "警告 WARNING",
+      "key": "safety_warning_3",
+      "text": "警告 ",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 23473
+      "offset": 23472,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "警告 WARNING"
     },
     {
-      "key": "safety_warning_5",
+      "key": "safety_warning_4",
       "text": "本机仅供家庭使用，请勿用于其他非设计用途。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 26177
+      "offset": 26176,
+      "split": false
     },
     {
-      "key": "safety_warning_6",
+      "key": "safety_warning_5",
       "text": "请勿让儿童玩耍本机或电源线。儿童、行动不便或认知受限人士应在成年人监督下使用。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 27160
+      "offset": 27159,
+      "split": false
     },
     {
-      "key": "safety_warning_7",
+      "key": "safety_warning_6",
       "text": "小零件可能造成窒息危险，请勿让儿童接触。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 28161
+      "offset": 28160,
+      "split": false
     },
     {
-      "key": "safety_warning_8",
+      "key": "safety_warning_7",
       "text": "请勿在高湿高温等环境使用本机，严禁在有易燃易爆气体的环境中使用。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 29143
+      "offset": 29142,
+      "split": false
     },
     {
-      "key": "safety_warning_9",
+      "key": "safety_warning_8",
       "text": "请确保电源电压与机器铭牌标示一致。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 30137
+      "offset": 30136,
+      "split": false
     },
     {
-      "key": "safety_warning_10",
+      "key": "safety_warning_9",
       "text": "使用后请切断电源。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 31116
+      "offset": 31115,
+      "split": false
     },
     {
-      "key": "safety_warning_11",
+      "key": "safety_warning_10",
       "text": "从电源插座上拔出插头时请手握插头拔出，请勿拉扯电源线。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 32087
+      "offset": 32086,
+      "split": false
     },
     {
-      "key": "safety_warning_12",
+      "key": "safety_warning_11",
       "text": "请勿将主机或电源线浸入水中或其他液体中。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 33076
+      "offset": 33075,
+      "split": false
     },
     {
-      "key": "safety_warning_13",
+      "key": "safety_warning_12",
       "text": "电源线需要直接插接符合安全规范的电源插座上。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 34058
+      "offset": 34057,
+      "split": false
     },
     {
-      "key": "safety_warning_14",
+      "key": "safety_warning_13",
       "text": "如发现插头、电源线或主机损坏，请立即停止使用并联系制造商或授权维修点处理，请勿自行拆修。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 35042
+      "offset": 35041,
+      "split": false
     },
     {
-      "key": "safety_warning_15",
+      "key": "safety_warning_14",
       "text": "电源线请勿悬挂于台面边缘，以免儿童拉扯或意外绊倒。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 36048
+      "offset": 36047,
+      "split": false
     },
     {
-      "key": "safety_warning_16",
+      "key": "safety_warning_15",
       "text": "禁止在手脚潮湿或未穿鞋的情况下触摸产品电源部件。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 37035
+      "offset": 37034,
+      "split": false
     },
     {
-      "key": "safety_warning_17",
+      "key": "safety_warning_16",
       "text": "产品所连接的电源需有漏电保护装置。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 38021
+      "offset": 38020,
+      "split": false
     },
     {
-      "key": "safety_warning_18",
+      "key": "safety_warning_17",
       "text": "插座必须满足当地法规要求，安全法规要求强制进行产品接地。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 39000
+      "offset": 38999,
+      "split": false
     },
     {
-      "key": "safety_warning_19",
+      "key": "safety_warning_18",
       "text": "清洁、维护或更换部件时，必须切断电源。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 39990
+      "offset": 39989,
+      "split": false
     },
     {
-      "key": "safety_warning_20",
+      "key": "safety_warning_19",
       "text": "切勿将螺丝刀或其它物体插入散热孔中。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 40971
+      "offset": 40970,
+      "split": false
     },
     {
-      "key": "safety_warning_21",
+      "key": "safety_warning_20",
       "text": "只有授权技术人员才能进行拆机检查和维修。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 41951
+      "offset": 41950,
+      "split": false
     },
     {
-      "key": "safety_warning_22",
+      "key": "safety_warning_21",
       "text": "发生火灾时，切勿浇水，请使用二氧化碳灭火器。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 42933
+      "offset": 42932,
+      "split": false
     },
     {
-      "key": "safety_warning_23",
+      "key": "safety_warning_22",
       "text": "除制造商推荐的方法外，不能使用机械手段或其他方法加速除霜。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 43917
+      "offset": 43916,
+      "split": false
     },
     {
-      "key": "safety_warning_24",
+      "key": "safety_warning_23",
       "text": "不要损坏制冷剂回路。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 44908
+      "offset": 44907,
+      "split": false
     },
     {
-      "key": "safety_warning_25",
+      "key": "safety_warning_24",
       "text": "警告：易燃材料，存在发生火灾的风险。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 45880
+      "offset": 45879,
+      "split": false
     },
     {
-      "key": "safety_warning_26",
+      "key": "safety_warning_25",
       "text": "制冷剂废料需在授权废物处理中心处理，不能靠近火源。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 46860
+      "offset": 46859,
+      "split": false
     },
     {
-      "key": "safety_warning_27",
+      "key": "safety_warning_26",
       "text": "请勿在本产品中储存含有易燃推进剂的气溶胶罐等爆炸性物质。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 47847
+      "offset": 47846,
+      "split": false
     },
     {
-      "key": "safety_warning_28",
+      "key": "safety_warning_27",
       "text": "保持所有通风口顺畅，保持产品远离热源或蒸汽装置。",
       "page": 3,
       "area": "safety",
       "subarea": "warning",
       "source": "document.xml",
-      "offset": 48837
+      "offset": 48836,
+      "split": false
     },
     {
       "key": "safety_caution_1",
-      "text": "威富可",
-      "page": 4,
-      "area": "safety",
-      "subarea": "caution",
-      "source": "document.xml",
-      "offset": 49999
-    },
-    {
-      "key": "safety_caution_2",
       "text": "安全须知（续）",
       "page": 4,
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 51210
+      "offset": 51209,
+      "split": false
     },
     {
-      "key": "safety_caution_3",
-      "text": "注意 CAUTION",
+      "key": "safety_caution_2",
+      "text": "注意 ",
       "page": 4,
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 52948
+      "offset": 52947,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "注意 CAUTION"
     },
     {
-      "key": "safety_caution_4",
+      "key": "safety_caution_3",
       "text": "移动或运输产品时保持产品直立，否则可能导致产品损坏。",
       "page": 4,
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 53920
+      "offset": 53919,
+      "split": false
     },
     {
-      "key": "safety_caution_5",
-      "text": "运输后需静置4小时，待冷媒稳定后再通电。",
+      "key": "safety_caution_4",
+      "text": "运输后需静置",
       "page": 4,
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 54908
+      "offset": 54907,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "运输后需静置4小时，待冷媒稳定后再通电。"
+    },
+    {
+      "key": "safety_caution_5",
+      "text": "小时，待冷媒稳定后再通电。",
+      "page": 4,
+      "area": "safety",
+      "subarea": "caution",
+      "source": "document.xml",
+      "offset": 54907,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "运输后需静置4小时，待冷媒稳定后再通电。"
     },
     {
       "key": "safety_caution_6",
@@ -479,7 +517,8 @@
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 55890
+      "offset": 55889,
+      "split": false
     },
     {
       "key": "safety_caution_7",
@@ -488,7 +527,8 @@
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 56870
+      "offset": 56869,
+      "split": false
     },
     {
       "key": "safety_caution_8",
@@ -497,7 +537,8 @@
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 57851
+      "offset": 57850,
+      "split": false
     },
     {
       "key": "safety_caution_9",
@@ -506,7 +547,8 @@
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 58829
+      "offset": 58828,
+      "split": false
     },
     {
       "key": "safety_caution_10",
@@ -515,394 +557,560 @@
       "area": "safety",
       "subarea": "caution",
       "source": "document.xml",
-      "offset": 59801
+      "offset": 59800,
+      "split": false
     },
     {
-      "key": "safety_caution_11",
-      "text": "提示 NOTICE",
+      "key": "safety_notice_1",
+      "text": "提示 ",
       "page": 4,
       "area": "safety",
-      "subarea": "caution",
+      "subarea": "notice",
       "source": "document.xml",
-      "offset": 61498
+      "offset": 61497,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "提示 NOTICE"
     },
     {
-      "key": "safety_caution_12",
-      "text": "产品噪音等级低于50 dB(A)。",
+      "key": "safety_notice_2",
+      "text": "产品噪音等级低于",
       "page": 4,
       "area": "safety",
-      "subarea": "caution",
+      "subarea": "notice",
       "source": "document.xml",
-      "offset": 62469
+      "offset": 62468,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "产品噪音等级低于50 dB(A)。"
     },
     {
-      "key": "safety_caution_13",
-      "text": "本产品的气候类型为SN，适合在10℃~32℃ / 50℉~89.6℉ 的环境温度中使用。",
+      "key": "safety_notice_3",
+      "text": "。",
       "page": 4,
       "area": "safety",
-      "subarea": "caution",
+      "subarea": "notice",
       "source": "document.xml",
-      "offset": 63448
+      "offset": 62468,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "产品噪音等级低于50 dB(A)。"
+    },
+    {
+      "key": "safety_notice_4",
+      "text": "本产品的气候类型为",
+      "page": 4,
+      "area": "safety",
+      "subarea": "notice",
+      "source": "document.xml",
+      "offset": 63447,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "本产品的气候类型为SN，适合在10℃~32℃ / 50℉~89.6℉ 的环境温度中使用。"
+    },
+    {
+      "key": "safety_notice_5",
+      "text": "，适合在",
+      "page": 4,
+      "area": "safety",
+      "subarea": "notice",
+      "source": "document.xml",
+      "offset": 63447,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "本产品的气候类型为SN，适合在10℃~32℃ / 50℉~89.6℉ 的环境温度中使用。"
+    },
+    {
+      "key": "safety_notice_6",
+      "text": "的环境温度中使用。",
+      "page": 4,
+      "area": "safety",
+      "subarea": "notice",
+      "source": "document.xml",
+      "offset": 63447,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "本产品的气候类型为SN，适合在10℃~32℃ / 50℉~89.6℉ 的环境温度中使用。"
     },
     {
       "key": "install_prep_1",
-      "text": "威富可",
-      "page": 5,
-      "area": "install",
-      "subarea": "prep",
-      "source": "document.xml",
-      "offset": 64630
-    },
-    {
-      "key": "install_prep_2",
       "text": "产品及使用提示",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 65845
+      "offset": 65844,
+      "split": false
     },
     {
-      "key": "install_prep_3",
+      "key": "install_prep_2",
       "text": "放置与首次使用",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 66398
+      "offset": 66397,
+      "split": false
     },
     {
-      "key": "install_prep_4",
+      "key": "install_prep_3",
       "text": "将产品放置在坚固、平坦、干燥的台面上。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 67212
+      "offset": 67211,
+      "split": false
     },
     {
-      "key": "install_prep_5",
-      "text": "确保产品四周留有至少 120mm（4.7&quot;）的通风间距。",
+      "key": "install_prep_4",
+      "text": "确保产品四周留有至少 ",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 68038
+      "offset": 68037,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "确保产品四周留有至少 120mm（4.7&quot;）的通风间距。"
+    },
+    {
+      "key": "install_prep_5",
+      "text": "（",
+      "page": 5,
+      "area": "install",
+      "subarea": "prep",
+      "source": "document.xml",
+      "offset": 68037,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "确保产品四周留有至少 120mm（4.7&quot;）的通风间距。"
     },
     {
       "key": "install_prep_6",
+      "text": "）的通风间距。",
+      "page": 5,
+      "area": "install",
+      "subarea": "prep",
+      "source": "document.xml",
+      "offset": 68037,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "确保产品四周留有至少 120mm（4.7&quot;）的通风间距。"
+    },
+    {
+      "key": "install_prep_7",
       "text": "远离热源（烤箱、灶台等），避免阳光直射。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 68878
-    },
-    {
-      "key": "install_prep_7",
-      "text": "首次使用前，请先运行一次清洁程序（参见 CH.08 维护保养）。",
-      "page": 5,
-      "area": "install",
-      "subarea": "prep",
-      "source": "document.xml",
-      "offset": 69705
+      "offset": 68877,
+      "split": false
     },
     {
       "key": "install_prep_8",
-      "text": "首次制冰前 5 次属于水降温阶段，冰形会随水温下降逐渐增大，属正常现象。",
+      "text": "首次使用前，请先运行一次清洁程序（参见 ",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 70544
+      "offset": 69704,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "首次使用前，请先运行一次清洁程序（参见 CH.08 维护保养）。"
     },
     {
       "key": "install_prep_9",
+      "text": "维护保养）。",
+      "page": 5,
+      "area": "install",
+      "subarea": "prep",
+      "source": "document.xml",
+      "offset": 69704,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "首次使用前，请先运行一次清洁程序（参见 CH.08 维护保养）。"
+    },
+    {
+      "key": "install_prep_10",
+      "text": "首次制冰前 ",
+      "page": 5,
+      "area": "install",
+      "subarea": "prep",
+      "source": "document.xml",
+      "offset": 70543,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "首次制冰前 5 次属于水降温阶段，冰形会随水温下降逐渐增大，属正常现象。"
+    },
+    {
+      "key": "install_prep_11",
+      "text": "次属于水降温阶段，冰形会随水温下降逐渐增大，属正常现象。",
+      "page": 5,
+      "area": "install",
+      "subarea": "prep",
+      "source": "document.xml",
+      "offset": 70543,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "首次制冰前 5 次属于水降温阶段，冰形会随水温下降逐渐增大，属正常现象。"
+    },
+    {
+      "key": "install_prep_12",
       "text": "用水要求",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 71127
+      "offset": 71126,
+      "split": false
     },
     {
-      "key": "install_prep_10",
+      "key": "install_prep_13",
       "text": "使用饮用水即可制冰，饮用水越纯净则冰越透明。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 71938
+      "offset": 71937,
+      "split": false
     },
     {
-      "key": "install_prep_11",
-      "text": "若想达到理想透明度，请使用矿物质含量较低的饮用水（TDS &lt; 200mg/L）。",
+      "key": "install_prep_14",
+      "text": "若想达到理想透明度，请使用矿物质含量较低的饮用水（",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 72767
+      "offset": 72766,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "若想达到理想透明度，请使用矿物质含量较低的饮用水（TDS &lt; 200mg/L）。"
     },
     {
-      "key": "install_prep_12",
-      "text": "适用水源：纯净饮用水、RO反渗透处理自来水、深度过滤自来水、低TDS矿泉水。",
+      "key": "install_prep_15",
+      "text": "）。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 73617
+      "offset": 72766,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "若想达到理想透明度，请使用矿物质含量较低的饮用水（TDS &lt; 200mg/L）。"
     },
     {
-      "key": "install_prep_13",
+      "key": "install_prep_16",
+      "text": "适用水源：纯净饮用水、",
+      "page": 5,
+      "area": "install",
+      "subarea": "prep",
+      "source": "document.xml",
+      "offset": 73616,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "适用水源：纯净饮用水、RO反渗透处理自来水、深度过滤自来水、低TDS矿泉水。"
+    },
+    {
+      "key": "install_prep_17",
+      "text": "反渗透处理自来水、深度过滤自来水、低",
+      "page": 5,
+      "area": "install",
+      "subarea": "prep",
+      "source": "document.xml",
+      "offset": 73616,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "适用水源：纯净饮用水、RO反渗透处理自来水、深度过滤自来水、低TDS矿泉水。"
+    },
+    {
+      "key": "install_prep_18",
+      "text": "矿泉水。",
+      "page": 5,
+      "area": "install",
+      "subarea": "prep",
+      "source": "document.xml",
+      "offset": 73616,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "适用水源：纯净饮用水、RO反渗透处理自来水、深度过滤自来水、低TDS矿泉水。"
+    },
+    {
+      "key": "install_prep_19",
       "text": "禁止",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 74470
+      "offset": 74469,
+      "split": false
     },
     {
-      "key": "install_prep_14",
+      "key": "install_prep_20",
       "text": "使用有色、有味、有气泡或含过饱和气体的饮品（茶、果汁、咖啡、牛奶、汽水等），这些会污染甚至损坏产品。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 74772
+      "offset": 74771,
+      "split": false
     },
     {
-      "key": "install_prep_15",
+      "key": "install_prep_21",
       "text": "使用提示",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 75369
+      "offset": 75368,
+      "split": false
     },
     {
-      "key": "install_prep_16",
+      "key": "install_prep_22",
       "text": "开箱后取出全部包装材料，并用湿布擦拭产品内部后再擦干。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 76180
+      "offset": 76179,
+      "split": false
     },
     {
-      "key": "install_prep_17",
+      "key": "install_prep_23",
       "text": "子弹冰篮装满后，产品会自动暂停制冰并发出提示音。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 77014
+      "offset": 77013,
+      "split": false
     },
     {
-      "key": "install_prep_18",
+      "key": "install_prep_24",
       "text": "三种尺寸不能同时制作，但可在制冰途中切换另一种尺寸。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 77845
+      "offset": 77844,
+      "split": false
     },
     {
-      "key": "install_prep_19",
+      "key": "install_prep_25",
       "text": "连续制冰过程中，受水质、水温和环境温度影响，偶尔出现冰块不透明属正常现象。",
       "page": 5,
       "area": "install",
       "subarea": "prep",
       "source": "document.xml",
-      "offset": 78678
+      "offset": 78677,
+      "split": false
     },
     {
       "key": "operate_structure_1",
-      "text": "威富可",
-      "page": 6,
-      "area": "operate",
-      "subarea": "structure",
-      "source": "document.xml",
-      "offset": 79714
-    },
-    {
-      "key": "operate_structure_2",
       "text": "产品结构",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 80928
+      "offset": 80927,
+      "split": false
+    },
+    {
+      "key": "operate_structure_2",
+      "text": "编号",
+      "page": 6,
+      "area": "operate",
+      "subarea": "structure",
+      "source": "document.xml",
+      "offset": 84435,
+      "split": false
     },
     {
       "key": "operate_structure_3",
-      "text": "编号",
+      "text": "名称",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 84436
+      "offset": 85724,
+      "split": false
     },
     {
       "key": "operate_structure_4",
-      "text": "名称",
-      "page": 6,
-      "area": "operate",
-      "subarea": "structure",
-      "source": "document.xml",
-      "offset": 85725
-    },
-    {
-      "key": "operate_structure_5",
       "text": "编号",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 87014
+      "offset": 87013,
+      "split": false
     },
     {
-      "key": "operate_structure_6",
+      "key": "operate_structure_5",
       "text": "名称",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 88303
+      "offset": 88302,
+      "split": false
     },
     {
-      "key": "operate_structure_7",
+      "key": "operate_structure_6",
       "text": "腔盖",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 90980
+      "offset": 90979,
+      "split": false
     },
     {
-      "key": "operate_structure_8",
+      "key": "operate_structure_7",
       "text": "水箱提手",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 93541
+      "offset": 93540,
+      "split": false
     },
     {
-      "key": "operate_structure_9",
+      "key": "operate_structure_8",
       "text": "冰篮",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 96220
+      "offset": 96219,
+      "split": false
     },
     {
-      "key": "operate_structure_10",
+      "key": "operate_structure_9",
       "text": "控制面板",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 98781
+      "offset": 98780,
+      "split": false
     },
     {
-      "key": "operate_structure_11",
+      "key": "operate_structure_10",
       "text": "制冰模具",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 101460
+      "offset": 101459,
+      "split": false
     },
     {
-      "key": "operate_structure_12",
+      "key": "operate_structure_11",
       "text": "排水孔",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 104023
+      "offset": 104022,
+      "split": false
     },
     {
-      "key": "operate_structure_13",
+      "key": "operate_structure_12",
       "text": "水箱",
       "page": 6,
       "area": "operate",
       "subarea": "structure",
       "source": "document.xml",
-      "offset": 106701
+      "offset": 106700,
+      "split": false
     },
     {
       "key": "operate_function_1",
-      "text": "威富可",
-      "page": 7,
-      "area": "operate",
-      "subarea": "function",
-      "source": "document.xml",
-      "offset": 110263
-    },
-    {
-      "key": "operate_function_2",
       "text": "产品功能",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 111476
+      "offset": 111475,
+      "split": false
     },
     {
-      "key": "operate_function_3",
-      "text": "No. / 按键",
+      "key": "operate_function_2",
+      "text": "按键",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 116369
+      "offset": 116368,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "No. / 按键"
     },
     {
-      "key": "operate_function_4",
+      "key": "operate_function_3",
       "text": "功能说明",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 117664
+      "offset": 117663,
+      "split": false
     },
     {
-      "key": "operate_function_5",
+      "key": "operate_function_4",
       "text": "电源",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 119165
+      "offset": 119164,
+      "split": false
     },
     {
-      "key": "operate_function_6",
+      "key": "operate_function_5",
       "text": "点击开机，长按关机。",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 120446
+      "offset": 120445,
+      "split": false
     },
     {
-      "key": "operate_function_7",
+      "key": "operate_function_6",
       "text": "制冰",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 121956
+      "offset": 121955,
+      "split": false
     },
     {
-      "key": "operate_function_8",
-      "text": "切换制冰尺寸（S / M / L），选择后产品自动制冰。",
+      "key": "operate_function_7",
+      "text": "切换制冰尺寸（",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 123237
+      "offset": 123236,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "切换制冰尺寸（S / M / L），选择后产品自动制冰。"
+    },
+    {
+      "key": "operate_function_8",
+      "text": "），选择后产品自动制冰。",
+      "page": 7,
+      "area": "operate",
+      "subarea": "function",
+      "source": "document.xml",
+      "offset": 123236,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "切换制冰尺寸（S / M / L），选择后产品自动制冰。"
     },
     {
       "key": "operate_function_9",
@@ -911,7 +1119,8 @@
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 124762
+      "offset": 124761,
+      "split": false
     },
     {
       "key": "operate_function_10",
@@ -920,7 +1129,8 @@
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 126043
+      "offset": 126042,
+      "split": false
     },
     {
       "key": "operate_function_11",
@@ -929,601 +1139,786 @@
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 127563
+      "offset": 127562,
+      "split": false
     },
     {
       "key": "operate_function_12",
-      "text": "指示灯（绿灯）— 冰篮已满，产品暂停制冰。",
+      "text": "指示灯（绿灯）",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 128844
+      "offset": 128843,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "指示灯（绿灯）— 冰篮已满，产品暂停制冰。"
     },
     {
       "key": "operate_function_13",
+      "text": "冰篮已满，产品暂停制冰。",
+      "page": 7,
+      "area": "operate",
+      "subarea": "function",
+      "source": "document.xml",
+      "offset": 128843,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "指示灯（绿灯）— 冰篮已满，产品暂停制冰。"
+    },
+    {
+      "key": "operate_function_14",
       "text": "加水",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 130366
+      "offset": 130365,
+      "split": false
     },
     {
-      "key": "operate_function_14",
-      "text": "指示灯（红灯）— 水箱缺水，产品暂停制冰，请及时补水。",
+      "key": "operate_function_15",
+      "text": "指示灯（红灯）",
       "page": 7,
       "area": "operate",
       "subarea": "function",
       "source": "document.xml",
-      "offset": 131647
+      "offset": 131646,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "指示灯（红灯）— 水箱缺水，产品暂停制冰，请及时补水。"
+    },
+    {
+      "key": "operate_function_16",
+      "text": "水箱缺水，产品暂停制冰，请及时补水。",
+      "page": 7,
+      "area": "operate",
+      "subarea": "function",
+      "source": "document.xml",
+      "offset": 131646,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "指示灯（红灯）— 水箱缺水，产品暂停制冰，请及时补水。"
     },
     {
       "key": "spec_1",
-      "text": "威富可",
-      "page": 8,
-      "area": "spec",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 132728
-    },
-    {
-      "key": "spec_2",
       "text": "技术参数",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 133947
+      "offset": 133946,
+      "split": false
     },
     {
-      "key": "spec_3",
+      "key": "spec_2",
       "text": "参数",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 135942
+      "offset": 135941,
+      "split": false
     },
     {
-      "key": "spec_4",
+      "key": "spec_3",
       "text": "规格",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 137231
+      "offset": 137230,
+      "split": false
     },
     {
-      "key": "spec_5",
+      "key": "spec_4",
       "text": "电压",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 138628
+      "offset": 138627,
+      "split": false
     },
     {
-      "key": "spec_6",
+      "key": "spec_5",
       "text": "频率",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 141315
+      "offset": 141314,
+      "split": false
     },
     {
-      "key": "spec_7",
+      "key": "spec_6",
       "text": "制冰功率",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 143996
+      "offset": 143995,
+      "split": false
     },
     {
-      "key": "spec_8",
+      "key": "spec_7",
       "text": "脱冰功率",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 146679
+      "offset": 146678,
+      "split": false
     },
     {
-      "key": "spec_9",
-      "text": "尺寸（宽×深×高）",
+      "key": "spec_8",
+      "text": "尺寸（宽",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 149362
+      "offset": 149361,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "尺寸（宽×深×高）"
+    },
+    {
+      "key": "spec_9",
+      "text": "深",
+      "page": 8,
+      "area": "spec",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 149361,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "尺寸（宽×深×高）"
     },
     {
       "key": "spec_10",
+      "text": "高）",
+      "page": 8,
+      "area": "spec",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 149361,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "尺寸（宽×深×高）"
+    },
+    {
+      "key": "spec_11",
       "text": "净重",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 152063
+      "offset": 152062,
+      "split": false
     },
     {
-      "key": "spec_11",
-      "text": "24h制冰量",
+      "key": "spec_12",
+      "text": "制冰量",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 154753
+      "offset": 154752,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "24h制冰量"
     },
     {
-      "key": "spec_12",
+      "key": "spec_13",
       "text": "排水方式",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 157443
+      "offset": 157442,
+      "split": false
     },
     {
-      "key": "spec_13",
+      "key": "spec_14",
       "text": "手动排水",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 158726
-    },
-    {
-      "key": "spec_14",
-      "text": "冰块 S",
-      "page": 8,
-      "area": "spec",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 160125
+      "offset": 158725,
+      "split": false
     },
     {
       "key": "spec_15",
-      "text": "冰块 M",
+      "text": "冰块 ",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 162814
+      "offset": 160124,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "冰块 S"
     },
     {
       "key": "spec_16",
-      "text": "冰块 L",
+      "text": "冰块 ",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 165503
+      "offset": 162813,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "冰块 M"
     },
     {
       "key": "spec_17",
+      "text": "冰块 ",
+      "page": 8,
+      "area": "spec",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 165502,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "冰块 L"
+    },
+    {
+      "key": "spec_18",
       "text": "通风间距",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 168192
+      "offset": 168191,
+      "split": false
     },
     {
-      "key": "spec_18",
+      "key": "spec_19",
       "text": "冷媒",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 170890
+      "offset": 170889,
+      "split": false
     },
     {
-      "key": "spec_19",
+      "key": "spec_20",
       "text": "水箱容量",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 173571
+      "offset": 173570,
+      "split": false
     },
     {
-      "key": "spec_20",
+      "key": "spec_21",
       "text": "制冰周期",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 176271
+      "offset": 176270,
+      "split": false
     },
     {
-      "key": "spec_21",
+      "key": "spec_22",
       "text": "工作环境",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 178993
+      "offset": 178992,
+      "split": false
     },
     {
-      "key": "spec_22",
+      "key": "spec_23",
       "text": "噪音",
       "page": 8,
       "area": "spec",
       "subarea": "",
       "source": "document.xml",
-      "offset": 181685
+      "offset": 181684,
+      "split": false
     },
     {
       "key": "operate_guide_1",
-      "text": "威富可",
-      "page": 9,
-      "area": "operate",
-      "subarea": "guide",
-      "source": "document.xml",
-      "offset": 184030
-    },
-    {
-      "key": "operate_guide_2",
       "text": "操作指引",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 185244
+      "offset": 185243,
+      "split": false
     },
     {
-      "key": "operate_guide_3",
+      "key": "operate_guide_2",
       "text": "工作前准备",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 185794
+      "offset": 185793,
+      "split": false
+    },
+    {
+      "key": "operate_guide_3",
+      "text": "务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与墙或物品之间距离必须 ",
+      "page": 9,
+      "area": "operate",
+      "subarea": "guide",
+      "source": "document.xml",
+      "offset": 186605,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与墙或物品之间距离必须 ≥ 120 mm（4.7 in），以确保通风良好。"
     },
     {
       "key": "operate_guide_4",
-      "text": "务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与墙或物品之间距离必须 ≥ 120 mm（4.7 in），以确保通风良好。",
+      "text": "（",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 186606
+      "offset": 186605,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与墙或物品之间距离必须 ≥ 120 mm（4.7 in），以确保通风良好。"
     },
     {
       "key": "operate_guide_5",
-      "text": "若第一次使用产品，或距离上一次很长时间没有使用产品，请先运行一次清洁程序。请参阅 CH.08 维护保养中的清洁说明。",
+      "text": "），以确保通风良好。",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 187496
+      "offset": 186605,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与墙或物品之间距离必须 ≥ 120 mm（4.7 in），以确保通风良好。"
     },
     {
       "key": "operate_guide_6",
+      "text": "若第一次使用产品，或距离上一次很长时间没有使用产品，请先运行一次清洁程序。请参阅 ",
+      "page": 9,
+      "area": "operate",
+      "subarea": "guide",
+      "source": "document.xml",
+      "offset": 187495,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "若第一次使用产品，或距离上一次很长时间没有使用产品，请先运行一次清洁程序。请参阅 CH.08 维护保养中的清洁说明。"
+    },
+    {
+      "key": "operate_guide_7",
+      "text": "维护保养中的清洁说明。",
+      "page": 9,
+      "area": "operate",
+      "subarea": "guide",
+      "source": "document.xml",
+      "offset": 187495,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "若第一次使用产品，或距离上一次很长时间没有使用产品，请先运行一次清洁程序。请参阅 CH.08 维护保养中的清洁说明。"
+    },
+    {
+      "key": "operate_guide_8",
       "text": "产品开机",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 188101
+      "offset": 188100,
+      "split": false
     },
     {
-      "key": "operate_guide_7",
-      "text": "给产品接通电源，产品发出&#x201C;滴&#x201D;一声，所有按键点亮后再熄灭，表示已经接通电源。",
+      "key": "operate_guide_9",
+      "text": "给产品接通电源，产品发出",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 188912
+      "offset": 188911,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "给产品接通电源，产品发出&#x201C;滴&#x201D;一声，所有按键点亮后再熄灭，表示已经接通电源。"
     },
     {
-      "key": "operate_guide_8",
+      "key": "operate_guide_10",
+      "text": "滴",
+      "page": 9,
+      "area": "operate",
+      "subarea": "guide",
+      "source": "document.xml",
+      "offset": 188911,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "给产品接通电源，产品发出&#x201C;滴&#x201D;一声，所有按键点亮后再熄灭，表示已经接通电源。"
+    },
+    {
+      "key": "operate_guide_11",
+      "text": "一声，所有按键点亮后再熄灭，表示已经接通电源。",
+      "page": 9,
+      "area": "operate",
+      "subarea": "guide",
+      "source": "document.xml",
+      "offset": 188911,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "给产品接通电源，产品发出&#x201C;滴&#x201D;一声，所有按键点亮后再熄灭，表示已经接通电源。"
+    },
+    {
+      "key": "operate_guide_12",
       "text": "然后点击 ",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 189771
+      "offset": 189770,
+      "split": false
     },
     {
-      "key": "operate_guide_9",
+      "key": "operate_guide_13",
       "text": " 按键，按键显示白灯，产品已处于开机状态。",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 190410
+      "offset": 190409,
+      "split": false
     },
     {
-      "key": "operate_guide_10",
+      "key": "operate_guide_14",
       "text": "如何制作子弹冰",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 190999
+      "offset": 190998,
+      "split": false
     },
     {
-      "key": "operate_guide_11",
+      "key": "operate_guide_15",
       "text": "   打开腔盖，并取出子弹冰篮和水箱。",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 191818
+      "offset": 191817,
+      "split": false
     },
     {
-      "key": "operate_guide_12",
+      "key": "operate_guide_16",
       "text": "   给子弹冰水箱中注满水，注水至水位刻度处。",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 192670
+      "offset": 192669,
+      "split": false
     },
     {
-      "key": "operate_guide_13",
+      "key": "operate_guide_17",
       "text": "   然后将水箱放入子弹冰内腔，请用手按压下水箱，确保已经装到位。水箱松动可能导致产品无法工作。",
       "page": 9,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 196760
+      "offset": 196759,
+      "split": false
     },
     {
-      "key": "operate_guide_14",
-      "text": "威富可",
-      "page": 10,
-      "area": "operate",
-      "subarea": "guide",
-      "source": "document.xml",
-      "offset": 200453
-    },
-    {
-      "key": "operate_guide_15",
+      "key": "operate_guide_18",
       "text": "操作指引（续）",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 201667
+      "offset": 201666,
+      "split": false
     },
     {
-      "key": "operate_guide_16",
+      "key": "operate_guide_19",
       "text": "   然后放入子弹冰篮，并关闭腔盖。",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 202485
+      "offset": 202484,
+      "split": false
     },
     {
-      "key": "operate_guide_17",
+      "key": "operate_guide_20",
       "text": "   点击 ",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 210011
+      "offset": 210010,
+      "split": false
     },
     {
-      "key": "operate_guide_18",
-      "text": " 按键，切换点亮按键上方的 S / M / L 指示灯，选择需要制作的子弹冰尺寸。",
+      "key": "operate_guide_21",
+      "text": " 按键，切换点亮按键上方的 ",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 210652
+      "offset": 210651,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": " 按键，切换点亮按键上方的 S / M / L 指示灯，选择需要制作的子弹冰尺寸。"
     },
     {
-      "key": "operate_guide_19",
+      "key": "operate_guide_22",
+      "text": "指示灯，选择需要制作的子弹冰尺寸。",
+      "page": 10,
+      "area": "operate",
+      "subarea": "guide",
+      "source": "document.xml",
+      "offset": 210651,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": " 按键，切换点亮按键上方的 S / M / L 指示灯，选择需要制作的子弹冰尺寸。"
+    },
+    {
+      "key": "operate_guide_23",
       "text": "   选择完尺寸后，产品自动开始制作子弹冰。",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 214157
+      "offset": 214156,
+      "split": false
     },
     {
-      "key": "operate_guide_20",
-      "text": "提示 NOTICE",
+      "key": "operate_guide_24",
+      "text": "提示 ",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 219254
+      "offset": 219253,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "提示 NOTICE"
     },
     {
-      "key": "operate_guide_21",
+      "key": "operate_guide_25",
       "text": "制冰中途可点击 ",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 220225
+      "offset": 220224,
+      "split": false
     },
     {
-      "key": "operate_guide_22",
+      "key": "operate_guide_26",
       "text": " 按键切换制冰尺寸。",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 220988
+      "offset": 220987,
+      "split": false
     },
     {
-      "key": "operate_guide_23",
+      "key": "operate_guide_27",
       "text": "制冰中途可点击 ",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 221981
+      "offset": 221980,
+      "split": false
     },
     {
-      "key": "operate_guide_24",
+      "key": "operate_guide_28",
       "text": " 按键终止，子弹冰制冰按键灯熄灭，产品停止子弹冰制冰。",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 222741
+      "offset": 222740,
+      "split": false
     },
     {
-      "key": "operate_guide_25",
+      "key": "operate_guide_29",
       "text": "当产品检测到子弹冰冰篮装满后，",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 223751
+      "offset": 223750,
+      "split": false
     },
     {
-      "key": "operate_guide_26",
+      "key": "operate_guide_30",
       "text": " 警示灯点亮为绿灯，产品停止制冰。待冰融解，或取走后，产品会自动恢复制冰。",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 224500
+      "offset": 224499,
+      "split": false
     },
     {
-      "key": "operate_guide_27",
+      "key": "operate_guide_31",
       "text": "请留意，制冰期间若 ",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 225520
+      "offset": 225519,
+      "split": false
     },
     {
-      "key": "operate_guide_28",
+      "key": "operate_guide_32",
       "text": " 警示灯点亮红灯，产品会停止制冰，请及时给水箱补充水。",
       "page": 10,
       "area": "operate",
       "subarea": "guide",
       "source": "document.xml",
-      "offset": 226286
+      "offset": 226285,
+      "split": false
     },
     {
       "key": "troubleshoot_1",
-      "text": "威富可",
-      "page": 11,
-      "area": "troubleshoot",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 227472
-    },
-    {
-      "key": "troubleshoot_2",
       "text": "故障排除",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 228692
+      "offset": 228691,
+      "split": false
     },
     {
-      "key": "troubleshoot_3",
+      "key": "troubleshoot_2",
       "text": "故障现象",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 230719
+      "offset": 230718,
+      "split": false
     },
     {
-      "key": "troubleshoot_4",
+      "key": "troubleshoot_3",
       "text": "可能原因",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 232010
+      "offset": 232009,
+      "split": false
     },
     {
-      "key": "troubleshoot_5",
+      "key": "troubleshoot_4",
       "text": "解决方案",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 233301
+      "offset": 233300,
+      "split": false
     },
     {
-      "key": "troubleshoot_6",
+      "key": "troubleshoot_5",
       "text": "不能开机",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 234700
+      "offset": 234699,
+      "split": false
     },
     {
-      "key": "troubleshoot_7",
+      "key": "troubleshoot_6",
       "text": "电源未连接或插座无电",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 235983
+      "offset": 235982,
+      "split": false
     },
     {
-      "key": "troubleshoot_8",
+      "key": "troubleshoot_7",
       "text": "检查电源连接及插座是否正常。",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 237272
+      "offset": 237271,
+      "split": false
     },
     {
-      "key": "troubleshoot_9",
+      "key": "troubleshoot_8",
       "text": "不能排水",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 238681
+      "offset": 238680,
+      "split": false
     },
     {
-      "key": "troubleshoot_10",
+      "key": "troubleshoot_9",
       "text": "排水胶塞未松开或排水口堵塞",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 239964
+      "offset": 239963,
+      "split": false
     },
     {
-      "key": "troubleshoot_11",
+      "key": "troubleshoot_10",
       "text": "检查产品底部排水胶塞是否已松开；检查排水口是否堵塞。",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 241256
+      "offset": 241255,
+      "split": false
     },
     {
-      "key": "troubleshoot_12",
+      "key": "troubleshoot_11",
       "text": "不能制冰",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 242677
+      "offset": 242676,
+      "split": false
     },
     {
-      "key": "troubleshoot_13",
-      "text": "水箱缺水（ADD WATER亮红灯）",
+      "key": "troubleshoot_12",
+      "text": "水箱缺水（",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 243960
+      "offset": 243959,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "水箱缺水（ADD WATER亮红灯）"
+    },
+    {
+      "key": "troubleshoot_13",
+      "text": "亮红灯）",
+      "page": 11,
+      "area": "troubleshoot",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 243959,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "水箱缺水（ADD WATER亮红灯）"
     },
     {
       "key": "troubleshoot_14",
@@ -1532,7 +1927,8 @@
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 245257
+      "offset": 245256,
+      "split": false
     },
     {
       "key": "troubleshoot_15",
@@ -1541,7 +1937,8 @@
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 246662
+      "offset": 246661,
+      "split": false
     },
     {
       "key": "troubleshoot_16",
@@ -1550,7 +1947,8 @@
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 247945
+      "offset": 247944,
+      "split": false
     },
     {
       "key": "troubleshoot_17",
@@ -1559,7 +1957,8 @@
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 249243
+      "offset": 249242,
+      "split": false
     },
     {
       "key": "troubleshoot_18",
@@ -1568,349 +1967,468 @@
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 250678
+      "offset": 250677,
+      "split": false
     },
     {
       "key": "troubleshoot_19",
-      "text": "冰篮已满（ICE FULL亮绿灯）",
+      "text": "冰篮已满（",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 251963
+      "offset": 251962,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "冰篮已满（ICE FULL亮绿灯）"
     },
     {
       "key": "troubleshoot_20",
+      "text": "亮绿灯）",
+      "page": 11,
+      "area": "troubleshoot",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 251962,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "冰篮已满（ICE FULL亮绿灯）"
+    },
+    {
+      "key": "troubleshoot_21",
       "text": "取走冰块或等待冰融解，产品会自动恢复制冰。",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 253259
+      "offset": 253258,
+      "split": false
     },
     {
-      "key": "troubleshoot_21",
+      "key": "troubleshoot_22",
       "text": "制冰中途停止",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 254675
+      "offset": 254674,
+      "split": false
     },
     {
-      "key": "troubleshoot_22",
-      "text": "水箱缺水（ADD WATER亮红灯）",
+      "key": "troubleshoot_23",
+      "text": "水箱缺水（",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 255960
+      "offset": 255959,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "水箱缺水（ADD WATER亮红灯）"
     },
     {
-      "key": "troubleshoot_23",
+      "key": "troubleshoot_24",
+      "text": "亮红灯）",
+      "page": 11,
+      "area": "troubleshoot",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 255959,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "水箱缺水（ADD WATER亮红灯）"
+    },
+    {
+      "key": "troubleshoot_25",
       "text": "及时给水箱补充水，产品会自动恢复制冰。",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 257257
+      "offset": 257256,
+      "split": false
     },
     {
-      "key": "troubleshoot_24",
-      "text": "前5次冰块偏小",
+      "key": "troubleshoot_26",
+      "text": "前",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 258671
+      "offset": 258670,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "前5次冰块偏小"
     },
     {
-      "key": "troubleshoot_25",
+      "key": "troubleshoot_27",
+      "text": "次冰块偏小",
+      "page": 11,
+      "area": "troubleshoot",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 258670,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "前5次冰块偏小"
+    },
+    {
+      "key": "troubleshoot_28",
       "text": "水温较高，处于降温阶段",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 259957
+      "offset": 259956,
+      "split": false
     },
     {
-      "key": "troubleshoot_26",
+      "key": "troubleshoot_29",
       "text": "属正常现象，冰形会随水温下降逐渐增大，达到标准尺寸。",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 261247
+      "offset": 261246,
+      "split": false
     },
     {
-      "key": "troubleshoot_27",
+      "key": "troubleshoot_30",
       "text": "制冰效果不理想",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 262668
+      "offset": 262667,
+      "split": false
     },
     {
-      "key": "troubleshoot_28",
+      "key": "troubleshoot_31",
       "text": "通风间距不足或环境温度过高",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 263954
+      "offset": 263953,
+      "split": false
     },
     {
-      "key": "troubleshoot_29",
-      "text": "确保四周≥120mm间距；将产品移至阴凉通风处。",
+      "key": "troubleshoot_32",
+      "text": "确保四周",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 265246
+      "offset": 265245,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "确保四周≥120mm间距；将产品移至阴凉通风处。"
     },
     {
-      "key": "troubleshoot_30",
+      "key": "troubleshoot_33",
+      "text": "间距；将产品移至阴凉通风处。",
+      "page": 11,
+      "area": "troubleshoot",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 265245,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "确保四周≥120mm间距；将产品移至阴凉通风处。"
+    },
+    {
+      "key": "troubleshoot_34",
       "text": "冰块不透明",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 266665
+      "offset": 266664,
+      "split": false
     },
     {
-      "key": "troubleshoot_31",
-      "text": "水质矿物质含量高或水温/环温影响",
+      "key": "troubleshoot_35",
+      "text": "水质矿物质含量高或水温",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 267949
+      "offset": 267948,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "水质矿物质含量高或水温/环温影响"
     },
     {
-      "key": "troubleshoot_32",
-      "text": "使用TDS&lt;200mg/L的纯净水；连续制冰偶尔不透明属正常现象。",
+      "key": "troubleshoot_36",
+      "text": "环温影响",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 269244
+      "offset": 267948,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "水质矿物质含量高或水温/环温影响"
     },
     {
-      "key": "troubleshoot_33",
-      "text": "免责声明 DISCLAIMER",
+      "key": "troubleshoot_37",
+      "text": "使用",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 271193
+      "offset": 269243,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "使用TDS&lt;200mg/L的纯净水；连续制冰偶尔不透明属正常现象。"
     },
     {
-      "key": "troubleshoot_34",
+      "key": "troubleshoot_38",
+      "text": "的纯净水；连续制冰偶尔不透明属正常现象。",
+      "page": 11,
+      "area": "troubleshoot",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 269243,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "使用TDS&lt;200mg/L的纯净水；连续制冰偶尔不透明属正常现象。"
+    },
+    {
+      "key": "troubleshoot_39",
+      "text": "免责声明 ",
+      "page": 11,
+      "area": "troubleshoot",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 271192,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "免责声明 DISCLAIMER"
+    },
+    {
+      "key": "troubleshoot_40",
       "text": "如果用户不按照本手册操作产品，并对产品造成任何损坏或质量问题，工厂、经销商及品牌商将不承担任何责任。",
       "page": 11,
       "area": "troubleshoot",
       "subarea": "",
       "source": "document.xml",
-      "offset": 271725
+      "offset": 271724,
+      "split": false
     },
     {
       "key": "clean_1",
-      "text": "威富可",
-      "page": 12,
-      "area": "clean",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 272913
-    },
-    {
-      "key": "clean_2",
       "text": "维护保养",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 274129
+      "offset": 274128,
+      "split": false
     },
     {
-      "key": "clean_3",
+      "key": "clean_2",
       "text": "自动清洁（制冰模具和制冰兜）",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 274679
+      "offset": 274678,
+      "split": false
     },
     {
-      "key": "clean_4",
+      "key": "clean_3",
       "text": "   给水箱加水至水位线。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 275505
+      "offset": 275504,
+      "split": false
     },
     {
-      "key": "clean_5",
+      "key": "clean_4",
       "text": "   开机状态下，点击 ",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 276351
+      "offset": 276350,
+      "split": false
     },
     {
-      "key": "clean_6",
+      "key": "clean_5",
       "text": " 按键，按键灯亮白灯，产品自动清洁制冰兜和制冰模。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 276997
+      "offset": 276996,
+      "split": false
     },
     {
-      "key": "clean_7",
+      "key": "clean_6",
       "text": "   清洁完成后，产品自动停止，按键灯熄灭。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 277855
+      "offset": 277854,
+      "split": false
     },
     {
-      "key": "clean_8",
+      "key": "clean_7",
       "text": "排水操作",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 278444
+      "offset": 278443,
+      "split": false
     },
     {
-      "key": "clean_9",
+      "key": "clean_8",
       "text": "   断开电源，将产品放置到水槽旁。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 279260
+      "offset": 279259,
+      "split": false
     },
     {
-      "key": "clean_10",
+      "key": "clean_9",
       "text": "   将产品底部的排水孔塞松脱，让内腔的水排干。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 280111
+      "offset": 280110,
+      "split": false
     },
     {
-      "key": "clean_11",
+      "key": "clean_10",
       "text": "   排水完成后，将排水孔塞回原位。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 280968
+      "offset": 280967,
+      "split": false
     },
     {
-      "key": "clean_12",
+      "key": "clean_11",
       "text": "日常保养",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 286205
+      "offset": 286204,
+      "split": false
     },
     {
-      "key": "clean_13",
+      "key": "clean_12",
       "text": "定期用干净的水清洗产品内部，建议",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 287016
+      "offset": 287015,
+      "split": false
     },
     {
-      "key": "clean_14",
+      "key": "clean_13",
       "text": "每天使用前清洗一次",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 287340
+      "offset": 287339,
+      "split": false
     },
     {
-      "key": "clean_15",
+      "key": "clean_14",
       "text": "。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 287649
+      "offset": 287648,
+      "split": false
     },
     {
-      "key": "clean_16",
+      "key": "clean_15",
       "text": "用柔软湿布擦拭产品外壳，请勿使用腐蚀性清洁剂。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 288457
+      "offset": 288456,
+      "split": false
     },
     {
-      "key": "clean_17",
+      "key": "clean_16",
       "text": "请遵循自动清洁步骤清洗制冰模具和制冰兜。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 289287
+      "offset": 289286,
+      "split": false
     },
     {
-      "key": "clean_18",
+      "key": "clean_17",
       "text": "清洁保养前请拔掉电源，待产品冷却后再进行处理。",
       "page": 12,
       "area": "clean",
       "subarea": "",
       "source": "document.xml",
-      "offset": 290114
+      "offset": 290113,
+      "split": false
     },
     {
       "key": "install_transport_1",
-      "text": "威富可",
-      "page": 13,
-      "area": "install",
-      "subarea": "transport",
-      "source": "document.xml",
-      "offset": 291136
-    },
-    {
-      "key": "install_transport_2",
       "text": "安装运输、存储与拆除",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 292374
+      "offset": 292373,
+      "split": false
     },
     {
-      "key": "install_transport_3",
+      "key": "install_transport_2",
       "text": "包装运输",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 292930
+      "offset": 292929,
+      "split": false
     },
     {
-      "key": "install_transport_4",
-      "text": "运输过程中请保持平衡，防止倾翻；产品倾斜角不得大于 45°。",
+      "key": "install_transport_3",
+      "text": "运输过程中请保持平衡，防止倾翻；产品倾斜角不得大于 ",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 293741
+      "offset": 293740,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "运输过程中请保持平衡，防止倾翻；产品倾斜角不得大于 45°。"
+    },
+    {
+      "key": "install_transport_4",
+      "text": "。",
+      "page": 13,
+      "area": "install",
+      "subarea": "transport",
+      "source": "document.xml",
+      "offset": 293740,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "运输过程中请保持平衡，防止倾翻；产品倾斜角不得大于 45°。"
     },
     {
       "key": "install_transport_5",
@@ -1919,142 +2437,216 @@
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 294578
+      "offset": 294577,
+      "split": false
     },
     {
       "key": "install_transport_6",
-      "text": "运输后需静置 4 小时，待冷媒稳定后再通电。",
+      "text": "运输后需静置 ",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 295414
+      "offset": 295413,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "运输后需静置 4 小时，待冷媒稳定后再通电。"
     },
     {
       "key": "install_transport_7",
+      "text": "小时，待冷媒稳定后再通电。",
+      "page": 13,
+      "area": "install",
+      "subarea": "transport",
+      "source": "document.xml",
+      "offset": 295413,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "运输后需静置 4 小时，待冷媒稳定后再通电。"
+    },
+    {
+      "key": "install_transport_8",
       "text": "安装",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 295983
+      "offset": 295982,
+      "split": false
     },
     {
-      "key": "install_transport_8",
+      "key": "install_transport_9",
       "text": "请将产品安装在平整、稳固、干燥的台面上，不得倾斜放置。",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 296792
+      "offset": 296791,
+      "split": false
     },
     {
-      "key": "install_transport_9",
+      "key": "install_transport_10",
       "text": "搬运时不要推拉产品，以避免倾覆或损坏部件。",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 297626
+      "offset": 297625,
+      "split": false
     },
     {
-      "key": "install_transport_10",
-      "text": "产品四周与墙或物品之间需保持至少 120mm（4.7&quot;）的间距，以确保通风和可维护性。",
+      "key": "install_transport_11",
+      "text": "产品四周与墙或物品之间需保持至少 ",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 298454
+      "offset": 298453,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "产品四周与墙或物品之间需保持至少 120mm（4.7&quot;）的间距，以确保通风和可维护性。"
     },
     {
-      "key": "install_transport_11",
+      "key": "install_transport_12",
+      "text": "（",
+      "page": 13,
+      "area": "install",
+      "subarea": "transport",
+      "source": "document.xml",
+      "offset": 298453,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "产品四周与墙或物品之间需保持至少 120mm（4.7&quot;）的间距，以确保通风和可维护性。"
+    },
+    {
+      "key": "install_transport_13",
+      "text": "）的间距，以确保通风和可维护性。",
+      "page": 13,
+      "area": "install",
+      "subarea": "transport",
+      "source": "document.xml",
+      "offset": 298453,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "产品四周与墙或物品之间需保持至少 120mm（4.7&quot;）的间距，以确保通风和可维护性。"
+    },
+    {
+      "key": "install_transport_14",
       "text": "请远离热源、蒸汽和阳光直射环境。",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 299309
+      "offset": 299308,
+      "split": false
     },
     {
-      "key": "install_transport_12",
+      "key": "install_transport_15",
       "text": "存储与拆除",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 299872
+      "offset": 299871,
+      "split": false
     },
     {
-      "key": "install_transport_13",
+      "key": "install_transport_16",
       "text": "长期存放前，请排空水箱和内腔中的水，并完成清洁与擦干。",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 300684
+      "offset": 300683,
+      "split": false
     },
     {
-      "key": "install_transport_14",
+      "key": "install_transport_17",
       "text": "请将产品置于干燥、通风环境中保存，避免重压和潮湿。",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 301518
+      "offset": 301517,
+      "split": false
     },
     {
-      "key": "install_transport_15",
-      "text": "本产品含电子元件和 R600a 制冷剂，不得与生活垃圾一同丢弃。",
+      "key": "install_transport_18",
+      "text": "本产品含电子元件和 ",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 302350
+      "offset": 302349,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "本产品含电子元件和 R600a 制冷剂，不得与生活垃圾一同丢弃。"
     },
     {
-      "key": "install_transport_16",
+      "key": "install_transport_19",
+      "text": "制冷剂，不得与生活垃圾一同丢弃。",
+      "page": 13,
+      "area": "install",
+      "subarea": "transport",
+      "source": "document.xml",
+      "offset": 302349,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "本产品含电子元件和 R600a 制冷剂，不得与生活垃圾一同丢弃。"
+    },
+    {
+      "key": "install_transport_20",
       "text": "拆除或报废时，请联系授权回收机构或零售商，按当地法规进行环保处置。",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 303189
+      "offset": 303188,
+      "split": false
     },
     {
-      "key": "install_transport_17",
+      "key": "install_transport_21",
       "text": "请勿损坏制冷剂回路。若需要报废处理，请交由具备资质的废弃物处理机构回收，以避免对环境和人身安全造成风险。",
       "page": 13,
       "area": "install",
       "subarea": "transport",
       "source": "document.xml",
-      "offset": 305408
+      "offset": 305407,
+      "split": false
     },
     {
       "key": "warranty_1",
-      "text": "威富可",
-      "page": 14,
-      "area": "warranty",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 306598
-    },
-    {
-      "key": "warranty_2",
       "text": "品牌与保修信息",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 307811
+      "offset": 307810,
+      "split": false
     },
     {
-      "key": "warranty_3",
-      "text": "感谢您购买 威富可 制冰机。如有任何问题，请通过以下方式联系我们：",
+      "key": "warranty_2",
+      "text": "感谢您购买 ",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 308245
+      "offset": 308244,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "感谢您购买 Wevac 制冰机。如有任何问题，请通过以下方式联系我们："
+    },
+    {
+      "key": "warranty_3",
+      "text": "制冰机。如有任何问题，请通过以下方式联系我们：",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 308244,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "感谢您购买 Wevac 制冰机。如有任何问题，请通过以下方式联系我们："
     },
     {
       "key": "warranty_4",
@@ -2063,7 +2655,8 @@
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 308901
+      "offset": 308900,
+      "split": false
     },
     {
       "key": "warranty_5",
@@ -2072,7 +2665,8 @@
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 310937
+      "offset": 310936,
+      "split": false
     },
     {
       "key": "warranty_6",
@@ -2081,7 +2675,8 @@
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 312266
+      "offset": 312265,
+      "split": false
     },
     {
       "key": "warranty_7",
@@ -2090,7 +2685,8 @@
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 313703
+      "offset": 313702,
+      "split": false
     },
     {
       "key": "warranty_8",
@@ -2099,412 +2695,574 @@
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 316489
+      "offset": 316488,
+      "split": false
     },
     {
       "key": "warranty_9",
-      "text": "香港九龙尖沙咀漆咸道南87-105号百利商业中心404A室",
+      "text": "香港九龙尖沙咀漆咸道南",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 317810
+      "offset": 317809,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "香港九龙尖沙咀漆咸道南87-105号百利商业中心404A室"
     },
     {
       "key": "warranty_10",
+      "text": "号百利商业中心",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 317809,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "香港九龙尖沙咀漆咸道南87-105号百利商业中心404A室"
+    },
+    {
+      "key": "warranty_11",
+      "text": "室",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 317809,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "香港九龙尖沙咀漆咸道南87-105号百利商业中心404A室"
+    },
+    {
+      "key": "warranty_12",
       "text": "网址",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 319274
+      "offset": 319273,
+      "split": false
     },
     {
-      "key": "warranty_11",
+      "key": "warranty_13",
       "text": "客服邮箱",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 322047
+      "offset": 322046,
+      "split": false
     },
     {
-      "key": "warranty_12",
+      "key": "warranty_14",
       "text": "授权制造商",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 323992
+      "offset": 323991,
+      "split": false
     },
     {
-      "key": "warranty_13",
+      "key": "warranty_15",
       "text": "项目",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 326028
+      "offset": 326027,
+      "split": false
     },
     {
-      "key": "warranty_14",
+      "key": "warranty_16",
       "text": "信息",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 327357
+      "offset": 327356,
+      "split": false
     },
     {
-      "key": "warranty_15",
+      "key": "warranty_17",
       "text": "制造商",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 328794
+      "offset": 328793,
+      "split": false
     },
     {
-      "key": "warranty_16",
+      "key": "warranty_18",
       "text": "广州亚俊氏真空科技股份有限公司",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 330116
+      "offset": 330115,
+      "split": false
     },
     {
-      "key": "warranty_17",
+      "key": "warranty_19",
       "text": "地址",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 331659
+      "offset": 331658,
+      "split": false
     },
     {
-      "key": "warranty_18",
-      "text": "广东省广州市番禺区南村镇启业路1号",
+      "key": "warranty_20",
+      "text": "广东省广州市番禺区南村镇启业路",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 332980
+      "offset": 332979,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "广东省广州市番禺区南村镇启业路1号"
     },
     {
-      "key": "warranty_19",
+      "key": "warranty_21",
+      "text": "号",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 332979,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "广东省广州市番禺区南村镇启业路1号"
+    },
+    {
+      "key": "warranty_22",
       "text": "网址",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 334432
+      "offset": 334431,
+      "split": false
     },
     {
-      "key": "warranty_20",
+      "key": "warranty_23",
       "text": "保修信息",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 336378
+      "offset": 336377,
+      "split": false
     },
     {
-      "key": "warranty_21",
+      "key": "warranty_24",
       "text": "本产品提供 ",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 336809
-    },
-    {
-      "key": "warranty_22",
-      "text": "2 年有限保修",
-      "page": 14,
-      "area": "warranty",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 337125
-    },
-    {
-      "key": "warranty_23",
-      "text": " 。自原始购买日期起 2 年内可享受保修更换服务。要获得保修更换资格，您必须：",
-      "page": 14,
-      "area": "warranty",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 337452
-    },
-    {
-      "key": "warranty_24",
-      "text": "在过去 2 年内购买过产品。",
-      "page": 14,
-      "area": "warranty",
-      "subarea": "",
-      "source": "document.xml",
-      "offset": 338318
+      "offset": 336808,
+      "split": false
     },
     {
       "key": "warranty_25",
+      "text": "年有限保修",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 337124,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "2 年有限保修"
+    },
+    {
+      "key": "warranty_26",
+      "text": " 。自原始购买日期起 ",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 337451,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": " 。自原始购买日期起 2 年内可享受保修更换服务。要获得保修更换资格，您必须："
+    },
+    {
+      "key": "warranty_27",
+      "text": "年内可享受保修更换服务。要获得保修更换资格，您必须：",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 337451,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": " 。自原始购买日期起 2 年内可享受保修更换服务。要获得保修更换资格，您必须："
+    },
+    {
+      "key": "warranty_28",
+      "text": "在过去 ",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 338317,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "在过去 2 年内购买过产品。"
+    },
+    {
+      "key": "warranty_29",
+      "text": "年内购买过产品。",
+      "page": 14,
+      "area": "warranty",
+      "subarea": "",
+      "source": "document.xml",
+      "offset": 338317,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "在过去 2 年内购买过产品。"
+    },
+    {
+      "key": "warranty_30",
       "text": "有原始订单号或购买时使用的电子邮件。",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 339138
+      "offset": 339137,
+      "split": false
     },
     {
-      "key": "warranty_26",
+      "key": "warranty_31",
       "text": "如通过经销商或零售合作伙伴购买，须提供原始收据的副本。",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 339962
+      "offset": 339961,
+      "split": false
     },
     {
-      "key": "warranty_27",
-      "text": "向我们发送电子邮件申请保修服务： support@wevactech.com",
+      "key": "warranty_32",
+      "text": "向我们发送电子邮件申请保修服务： ",
       "page": 14,
       "area": "warranty",
       "subarea": "",
       "source": "document.xml",
-      "offset": 340416
+      "offset": 340415,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "向我们发送电子邮件申请保修服务： support@wevactech.com"
     },
     {
       "key": "warranty_card_1",
-      "text": "威富可",
-      "page": 15,
-      "area": "warranty",
-      "subarea": "card",
-      "source": "document.xml",
-      "offset": 341453
-    },
-    {
-      "key": "warranty_card_2",
       "text": "品牌与保修信息（续）",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 342666
+      "offset": 342665,
+      "split": false
     },
     {
-      "key": "warranty_card_3",
+      "key": "warranty_card_2",
       "text": "保修卡",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 343222
+      "offset": 343221,
+      "split": false
     },
     {
-      "key": "warranty_card_4",
+      "key": "warranty_card_3",
       "text": "客户名称",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 345248
+      "offset": 345247,
+      "split": false
     },
     {
-      "key": "warranty_card_5",
+      "key": "warranty_card_4",
       "text": "地址",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 347980
+      "offset": 347979,
+      "split": false
     },
     {
-      "key": "warranty_card_6",
-      "text": "城市 / 州 / 邮政编码",
+      "key": "warranty_card_5",
+      "text": "城市 ",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 350710
+      "offset": 350709,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "城市 / 州 / 邮政编码"
+    },
+    {
+      "key": "warranty_card_6",
+      "text": "州 ",
+      "page": 15,
+      "area": "warranty",
+      "subarea": "card",
+      "source": "document.xml",
+      "offset": 350709,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "城市 / 州 / 邮政编码"
     },
     {
       "key": "warranty_card_7",
+      "text": "邮政编码",
+      "page": 15,
+      "area": "warranty",
+      "subarea": "card",
+      "source": "document.xml",
+      "offset": 350709,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "城市 / 州 / 邮政编码"
+    },
+    {
+      "key": "warranty_card_8",
       "text": "电话号码",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 353451
+      "offset": 353450,
+      "split": false
     },
     {
-      "key": "warranty_card_8",
+      "key": "warranty_card_9",
       "text": "电子邮件地址",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 356183
+      "offset": 356182,
+      "split": false
     },
     {
-      "key": "warranty_card_9",
+      "key": "warranty_card_10",
       "text": "原始购买日期",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 358917
+      "offset": 358916,
+      "split": false
     },
     {
-      "key": "warranty_card_10",
+      "key": "warranty_card_11",
       "text": "产品型号",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 361651
+      "offset": 361650,
+      "split": false
     },
     {
-      "key": "warranty_card_11",
+      "key": "warranty_card_12",
       "text": "序列号（如适用）",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 364383
+      "offset": 364382,
+      "split": false
     },
     {
-      "key": "warranty_card_12",
+      "key": "warranty_card_13",
       "text": "商户名称",
       "page": 15,
       "area": "warranty",
       "subarea": "card",
       "source": "document.xml",
-      "offset": 367119
+      "offset": 367118,
+      "split": false
     },
     {
       "key": "footer_1",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 2,
       "area": "footer",
       "subarea": "",
       "source": "footer2.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_2",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 3,
       "area": "footer",
       "subarea": "",
       "source": "footer3.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_3",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 4,
       "area": "footer",
       "subarea": "",
       "source": "footer4.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_4",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 5,
       "area": "footer",
       "subarea": "",
       "source": "footer5.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_5",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 6,
       "area": "footer",
       "subarea": "",
       "source": "footer6.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_6",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 7,
       "area": "footer",
       "subarea": "",
       "source": "footer7.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_7",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 8,
       "area": "footer",
       "subarea": "",
       "source": "footer8.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_8",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 9,
       "area": "footer",
       "subarea": "",
       "source": "footer9.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_9",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 10,
       "area": "footer",
       "subarea": "",
       "source": "footer10.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_10",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 11,
       "area": "footer",
       "subarea": "",
       "source": "footer11.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_11",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 12,
       "area": "footer",
       "subarea": "",
       "source": "footer12.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_12",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 13,
       "area": "footer",
       "subarea": "",
       "source": "footer13.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_13",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 14,
       "area": "footer",
       "subarea": "",
       "source": "footer14.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     },
     {
       "key": "footer_14",
-      "text": "威富可 IMT050 说明书",
+      "text": "说明书",
       "page": 15,
       "area": "footer",
       "subarea": "",
       "source": "footer15.xml",
-      "offset": 2838
+      "offset": 2838,
+      "split": true,
+      "chunk_kind": "cjk",
+      "split_origin_text": "Wevac IMT050 说明书"
     }
   ]
 }

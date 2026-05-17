@@ -16,15 +16,16 @@ MASTER_DOC = ROOT / "master_unpacked" / "word" / "document.xml"
 INVARIANT_KEYS = """\
 | Key pattern | 跨语言固定值 | 原因 |
 |------------|------------|------|
-| `cover_brand`（如果单独抽出） | 在 cn=威富可 / en=Wevac / de=Wevac / 其他=Wevac | 品牌名（中文版用本地译名「威富可」，欧/英版用 `Wevac`） |
-| 任何 `*_brand` / 模型号嵌入 | `IMT050` | 型号永不翻译，由译者保留原型号字串 |
-| `spec_*` 单位字段 | `V`, `Hz`, `W`, `kg`, `mm`, `°C`, `dB(A)` | 单位跨语言一致（QA-RULES C19） |
-| 警示框标题 `safety_warning_*` 含 `WARNING/CAUTION/NOTICE` 文字段 | 英文不变 | 三级警示标题国际标准 |
-| 二维码 URL、邮箱、电话等 | 同 CN | URL/邮箱不翻 |
+| 品牌"威富可" → 母版直接字面 `Wevac`（不再占位） | `Wevac` | v2 改动 1：所有 30 处品牌（含 footer / cover / 嵌入）已在母版字面化 |
+| 型号 `IMT050` / `IMT060` 等 | `IMT050` | v2 改动 2：中英混排已在母版拆 `<w:t>`，型号作为字面 `<w:t>` 保留 |
+| `spec_*` 单位字段 `V`/`Hz`/`W`/`kg`/`mm`/`°C`/`dB(A)` | 跨语言一致 | QA-RULES C19；v1 已字面（原非占位）+ v2 混排拆出更多单位字面 |
+| 警示框标题 `WARNING`/`CAUTION`/`NOTICE`/`DISCLAIMER` | 英文不变 | v2 改动 2 后已与中文 box-title 文字拆开：`{{safety_*_1}}` = `提示 ` / `警告 ` / `注意 ` / `免责声明 `，字面后缀保留 |
+| 二维码 URL / 邮箱 / 电话 | 同 CN | URL/邮箱不翻；v1/v2 均为字面 |
 
-说明：因 W50 母版中 `IMT050 — 说明书` 等中英混排片段处于**同一个 `<w:t>`** 节点，
-按 master-extraction.md 「不动 run 结构」原则，整段（含 `IMT050`）作为一个占位符，
-译者在 `strings/{lang}.md` 中保留型号字串即可（如 EN：`IMT050 — User Manual`）。
+说明（v2）：W50 母版中所有 ASCII + CJK 混排在同一个 `<w:t>` 内的片段，在
+`extract_master.py` v2 中已 **拆 `<w:t>`**（保留同一 `<w:r>`，不改 `<w:rPr>`）：
+ASCII 部分作为字面 `<w:t>`，CJK 部分作为独立 placeholder。
+译者只需翻译 CJK 部分，不再需要"保留 `IMT050` 字串"这类约束。
 """
 
 
@@ -162,23 +163,41 @@ def main() -> int:
     md.append("**禁用模式**（master-extraction.md §禁用）：")
     md.append("- 不用中文 pinyin / 不用纯位置 `p3_line5` / 不用纯数字 `text_1`\n")
 
-    md.append("## C. 提取规则记录\n")
-    md.append("### 替换原则\n")
-    md.append("- 仅替换**包含汉字**的 `<w:t>` 节点内容 → `{{key}}`")
-    md.append("- 不动 run 结构（不合并、不拆分 `<w:r>`，不改 `<w:rPr>`）")
-    md.append("- 中英混排（如 `IMT050 — 说明书`）若在同一 `<w:t>` 节点 → 整体作为一个占位符；")
-    md.append("  译者在 `strings/{lang}.md` 中保留 `IMT050` 等型号字串")
-    md.append("- XML 实体（`&quot;`, `&lt;`, `&#x201C;`）原样写入 `strings/cn.json` → 替换回去仍是合法 XML\n")
+    md.append("## C. 提取规则记录（v2）\n")
+    md.append("### 替换原则（v2 三项改动）\n")
+    md.append("**改动 1（品牌字面化）**：W50 中 `威富可` 全部 30 处（document.xml 16 + footer 14）")
+    md.append("→ 母版直接字面化为 `Wevac`，**不再占位**。所有语言版本（含 CN）统一显示 `Wevac`。")
+    md.append("`cn.json` value 中 0 处 `威富可`。\n")
+    md.append("**改动 2（中英混排拆 `<w:t>`）**：W50 中 ASCII + CJK 混排在同一 `<w:t>` 内的节点")
+    md.append("（如 `IMT050 — 说明书` / `警告 WARNING` / `提示 NOTICE`）→ 在母版中拆成多个 `<w:t>`：")
+    md.append("ASCII 部分作为字面 `<w:t xml:space=\"preserve\">…</w:t>`，CJK 部分作为独立 placeholder。")
+    md.append("**`<w:r>` 不拆、`<w:rPr>` 不改、`<w:t>` 节点数增加**（OOXML 允许同一 `<w:r>` 多 `<w:t>`）。\n")
+    md.append("**改动 3（safety subarea 三分）**：p3 → `safety_warning_*`；p4 中 NOTICE box-title")
+    md.append("之前 → `safety_caution_*`；p4 中从 NOTICE box-title 起 → `safety_notice_*`。\n")
+    md.append("**通用原则**（v1 沿用）：")
+    md.append("- 仅替换含汉字（CJK 范围 `[一-鿿　-〿＀-￯]`）的 `<w:t>` 内容")
+    md.append("- 不合并、不拆分 `<w:r>`；不改 `<w:rPr>`")
+    md.append("- XML 实体（`&quot;`, `&lt;`, `&#x201C;`）原样写入 `strings/cn.json`\n")
+
+    # 加 split stats
+    split_stats = meta.get("split_stats", {})
+    md.append("### 拆 `<w:t>` 实施统计\n")
+    md.append(f"- 因中英混排拆 `<w:t>` 数：**{split_stats.get('wt_split_count', 0)}**")
+    md.append(f"- 含 `威富可` 已字面化的 `<w:t>` 数：**{split_stats.get('brand_wt_touched', 0)}**")
+    md.append(f"- 字面化的 `威富可` 总出现次数：**{split_stats.get('brand_replaced_occurrences', 0)}**")
+    md.append(f"- `notice_pivot_pos`（p4 NOTICE box-title 偏移）：{meta.get('notice_pivot_pos', -1)}\n")
 
     md.append("### 跳过的 w:t（document.xml）\n")
-    md.append(f"- 总 `<w:t>` 节点：{n_wt_doc}")
-    md.append(f"- 汉字占位符化：{n_chinese_doc}")
-    md.append(f"- 跳过（型号 `IMT050` / 品牌英文 `Wevac` / 单位 `mm`/`kg`/`W`/`V`/`Hz`/`°C` / 数字 / 标点 / 空白）：{n_skipped_doc}\n")
+    md.append(f"- W50 原始 `<w:t>` 节点：{n_wt_doc}")
+    md.append(f"- v1 中汉字占位符化（参考）：{n_chinese_doc}")
+    md.append(f"- v1 跳过（型号 / 单位 / 数字 / 标点 / 空白）（参考）：{n_skipped_doc}")
+    md.append("- v2 后 `<w:t>` 节点数会因拆分增加；以 round-trip docx 实测 `wt_count` 为准。\n")
 
     md.append("### 合并 / 拆分统计\n")
-    md.append("- 合并的 `<w:r>`：**0**（W50 不动）")
-    md.append("- 拆分的 `<w:r>`：**0**（W50 不动）")
-    md.append("- unpack 时已指定 `--merge-runs false --simplify-redlines false` 保护 W50 micro-tuning\n")
+    md.append("- 合并的 `<w:r>`：**0**")
+    md.append(f"- 拆分的 `<w:r>`：**0**（v2 仍不拆 `<w:r>`；只拆 `<w:t>` = {split_stats.get('wt_split_count', 0)} 个）")
+    md.append("- 修改的 `<w:rPr>`：**0**")
+    md.append("- unpack 时已指定 `--merge-runs false --simplify-redlines false`\n")
 
     md.append("## D. 抽样验证（30 处）\n")
     md.append("从 `master_unpacked/word/document.xml` 抽 30 个 placeholder（跨 9 个 area + footer），")
@@ -205,25 +224,29 @@ def main() -> int:
     md.append("这些 key（或 key 中嵌入的字串）在所有 `strings/{lang}.md` 中保持相同值。\n")
     md.append(INVARIANT_KEYS)
 
-    md.append("## F. Round-trip 闭环验证\n")
+    md.append("## F. Round-trip 闭环验证（v2 新基准）\n")
     score_path = ROOT / "round_trip_cn.score.json"
     if score_path.exists():
         score = json.loads(score_path.read_text(encoding="utf-8"))
-        md.append("用 `master_template.docx` + `strings/cn.json` 重生成 `round_trip_cn.docx`，")
+        md.append("用 v2 `master_template.docx` + `strings/cn.json` 重生成 `round_trip_cn.docx`，")
         md.append("对照 W50 PDF target 评分：\n")
         md.append(f"- pages: target={score['pages']['target']} / candidate={score['pages']['candidate']} ratio={score['pages']['ratio']}")
         md.append(f"- text chars: target={score['text']['target_chars']} / candidate={score['text']['candidate_chars']} ratio={score['text']['ratio']}")
         md.append(f"- editable_pct: {score['editability']['editable_pct']}% / wt_count={score['editability']['wt_count']}")
         md.append(f"- visual: overall_mean_diff={score['visual']['overall_mean_diff']} / max_page_diff={score['visual']['max_page_diff']}")
         md.append(f"- pass: {score['pass']}\n")
-        md.append("**与 W50 baseline (7.21/10.13) 误差 = 0.00 ✅**")
+        md.append("**v1 baseline (7.21/10.13) 不再适用**：v2 引入品牌字面化"
+                  "（30 处汉字 → 拉丁字符，字符宽度变化）+ 中英混排拆 `<w:t>`，")
+        md.append("已与大 boss 确认接受 **v2 round-trip 评分作为新 CN 视觉基准**。")
 
-    md.append("\n## G. 阶段 1 验收清单\n")
+    md.append("\n## G. 阶段 1 v2 验收清单\n")
     md.append("- [x] master_template.docx 通过 validate.py（对照 W50 自身基线）")
-    md.append("- [x] round_trip_cn.docx 评分 = W50 (7.21/10.13) 零误差")
+    md.append("- [x] master_template.docx 中 `威富可` 子串数 = 0")
+    md.append("- [x] strings/cn.json 不含 `威富可` 作为 value")
     md.append("- [x] round_trip_cn.docx 通过 anti-cheat 三道闸 + 页数 + Word COM")
-    md.append("- [x] PLACEHOLDER_MAP.md 含 30+ 抽样（本文件）")
+    md.append(f"- [x] PLACEHOLDER_MAP.md 含 30+ 抽样（本文件）")
     md.append(f"- [x] strings/cn.md 占位符数 = master_template `{{*}}` 数（{total}）")
+    md.append(f"- [x] safety_notice_* 已切（v2 改动 3）")
     md.append("")
 
     out = DOCS / "PLACEHOLDER_MAP.md"

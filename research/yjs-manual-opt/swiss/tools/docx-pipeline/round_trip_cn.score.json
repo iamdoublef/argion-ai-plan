@@ -1,6 +1,6 @@
 {
-  "candidate": "research\\yjs-manual-opt\\swiss\\tools\\docx-pipeline\\round_trip_cn.docx",
-  "target": "research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "candidate": "round_trip_cn.docx",
+  "target": "..\\..\\00_discussions\\2026-05-pdf-to-docx-fidelity\\final\\_score_tmp\\pdf\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
     "candidate": 15,
@@ -8,11 +8,11 @@
   },
   "text": {
     "target_chars": 4626,
-    "candidate_chars": 4626,
-    "ratio": 1.0
+    "candidate_chars": 4686,
+    "ratio": 1.01
   },
   "editability": {
-    "wt_count": 448,
+    "wt_count": 545,
     "txbx_count": 0,
     "drawings_count": 16,
     "image_bytes": 530887,
@@ -21,24 +21,24 @@
   },
   "visual": {
     "per_page_mean_diff": [
-      2.17,
-      3.23,
-      10.03,
-      6.38,
-      8.55,
-      3.77,
-      7.18,
-      7.05,
-      9.69,
-      9.13,
-      10.13,
-      8.84,
-      9.25,
-      9.67,
-      3.04
+      1.03,
+      1.74,
+      10.1,
+      4.13,
+      7.17,
+      5.53,
+      5.15,
+      4.13,
+      6.9,
+      7.52,
+      7.91,
+      5.47,
+      6.86,
+      8.65,
+      1.49
     ],
-    "overall_mean_diff": 7.21,
-    "max_page_diff": 10.13
+    "overall_mean_diff": 5.59,
+    "max_page_diff": 10.1
   },
   "pass": {
     "pages": true,

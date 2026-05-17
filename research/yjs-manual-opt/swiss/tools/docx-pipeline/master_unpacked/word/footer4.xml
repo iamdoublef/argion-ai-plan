@@ -54,7 +54,7 @@
               <w:color w:val="E8E8E8"/>
               <w:spacing w:val="2"/>
             </w:rPr>
-            <w:t>{{footer_3}}</w:t>
+            <w:t xml:space="preserve">Wevac IMT050 </w:t><w:t>{{footer_3}}</w:t>
           </w:r>
         </w:p>
       </w:tc>

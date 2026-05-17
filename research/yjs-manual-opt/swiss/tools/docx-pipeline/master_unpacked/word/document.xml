@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 wp14">
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 wp14">
   <w:body>
     <w:p>
       <w:pPr>
@@ -23,7 +22,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{cover_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -92,7 +91,7 @@
           <w:color w:val="1A1A1A"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{cover_2}}</w:t>
+        <w:t>{{cover_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -107,7 +106,7 @@
           <w:color w:val="F5F5F5"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{cover_3}}</w:t>
+        <w:t>{{cover_2}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -145,7 +144,7 @@
           <w:color w:val="F5F5F5"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{cover_4}}</w:t>
+        <w:t>{{cover_3}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -160,7 +159,7 @@
           <w:color w:val="F5F5F5"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{cover_5}}</w:t>
+        <w:t>{{cover_4}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -192,7 +191,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{toc_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -202,7 +201,7 @@
           <w:color w:val="F5F5F5"/>
         </w:rPr>
         <w:tab/>
-        <w:t>{{toc_2}}</w:t>
+        <w:t xml:space="preserve">IMT050 — </w:t><w:t>{{toc_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -217,7 +216,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_3}}</w:t>
+        <w:t>{{toc_2}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -244,7 +243,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_4}}</w:t>
+        <w:t>{{toc_3}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -281,7 +280,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_5}}</w:t>
+        <w:t>{{toc_4}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -318,7 +317,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_6}}</w:t>
+        <w:t>{{toc_5}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -355,7 +354,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_7}}</w:t>
+        <w:t>{{toc_6}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -392,7 +391,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_8}}</w:t>
+        <w:t>{{toc_7}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -429,7 +428,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_9}}</w:t>
+        <w:t>{{toc_8}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -466,7 +465,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_10}}</w:t>
+        <w:t>{{toc_9}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -503,7 +502,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_11}}</w:t>
+        <w:t>{{toc_10}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -540,7 +539,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_12}}</w:t>
+        <w:t>{{toc_11}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -577,7 +576,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{toc_13}}</w:t>
+        <w:t>{{toc_12}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -619,7 +618,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{safety_warning_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -658,7 +657,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{safety_warning_2}}</w:t>
+        <w:t>{{safety_warning_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -673,7 +672,7 @@
           <w:color w:val="1A1A1A"/>
           <w:spacing w:val="8"/>
         </w:rPr>
-        <w:t>{{safety_warning_3}}</w:t>
+        <w:t>{{safety_warning_2}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -724,7 +723,7 @@
                 <w:color w:val="E63846"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{safety_warning_4}}</w:t>
+              <w:t xml:space="preserve">{{safety_warning_3}}</w:t><w:t>WARNING</w:t>
             </w:r>
           </w:p>
           <w:p>
@@ -766,6 +765,32 @@
                   </a:graphic>
                 </wp:inline>
               </w:drawing>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:before="0" w:after="27" w:line="228" w:lineRule="auto"/>
+              <w:ind w:left="266" w:hanging="266"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+                <w:b/>
+                <w:sz w:val="10"/>
+                <w:color w:val="E63846"/>
+                <w:spacing w:val="6"/>
+              </w:rPr>
+              <w:t xml:space="preserve">•    </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="13"/>
+                <w:color w:val="000000"/>
+                <w:spacing w:val="9"/>
+              </w:rPr>
+              <w:t>{{safety_warning_4}}</w:t>
             </w:r>
           </w:p>
           <w:p>
@@ -1366,32 +1391,6 @@
               <w:t>{{safety_warning_27}}</w:t>
             </w:r>
           </w:p>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:before="0" w:after="27" w:line="228" w:lineRule="auto"/>
-              <w:ind w:left="266" w:hanging="266"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-                <w:b/>
-                <w:sz w:val="10"/>
-                <w:color w:val="E63846"/>
-                <w:spacing w:val="6"/>
-              </w:rPr>
-              <w:t xml:space="preserve">•    </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="13"/>
-                <w:color w:val="000000"/>
-                <w:spacing w:val="9"/>
-              </w:rPr>
-              <w:t>{{safety_warning_28}}</w:t>
-            </w:r>
-          </w:p>
         </w:tc>
       </w:tr>
     </w:tbl>
@@ -1429,7 +1428,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{safety_caution_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -1468,7 +1467,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{safety_caution_2}}</w:t>
+        <w:t>{{safety_caution_1}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -1519,6 +1518,32 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
+              <w:t xml:space="preserve">{{safety_caution_2}}</w:t><w:t>CAUTION</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:before="0" w:after="27" w:line="228" w:lineRule="auto"/>
+              <w:ind w:left="266" w:hanging="266"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+                <w:b/>
+                <w:sz w:val="10"/>
+                <w:color w:val="E63846"/>
+                <w:spacing w:val="6"/>
+              </w:rPr>
+              <w:t xml:space="preserve">•    </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="13"/>
+                <w:color w:val="000000"/>
+                <w:spacing w:val="9"/>
+              </w:rPr>
               <w:t>{{safety_caution_3}}</w:t>
             </w:r>
           </w:p>
@@ -1545,33 +1570,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="9"/>
               </w:rPr>
-              <w:t>{{safety_caution_4}}</w:t>
-            </w:r>
-          </w:p>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:before="0" w:after="27" w:line="228" w:lineRule="auto"/>
-              <w:ind w:left="266" w:hanging="266"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-                <w:b/>
-                <w:sz w:val="10"/>
-                <w:color w:val="E63846"/>
-                <w:spacing w:val="6"/>
-              </w:rPr>
-              <w:t xml:space="preserve">•    </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="13"/>
-                <w:color w:val="000000"/>
-                <w:spacing w:val="9"/>
-              </w:rPr>
-              <w:t>{{safety_caution_5}}</w:t>
+              <w:t>{{safety_caution_4}}</w:t><w:t>4</w:t><w:t>{{safety_caution_5}}</w:t>
             </w:r>
           </w:p>
           <w:p>
@@ -1755,7 +1754,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{safety_caution_11}}</w:t>
+              <w:t xml:space="preserve">{{safety_notice_1}}</w:t><w:t>NOTICE</w:t>
             </w:r>
           </w:p>
           <w:p>
@@ -1781,7 +1780,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="9"/>
               </w:rPr>
-              <w:t>{{safety_caution_12}}</w:t>
+              <w:t>{{safety_notice_2}}</w:t><w:t>50 dB(A)</w:t><w:t>{{safety_notice_3}}</w:t>
             </w:r>
           </w:p>
           <w:p>
@@ -1807,7 +1806,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="9"/>
               </w:rPr>
-              <w:t>{{safety_caution_13}}</w:t>
+              <w:t>{{safety_notice_4}}</w:t><w:t>SN</w:t><w:t>{{safety_notice_5}}</w:t><w:t xml:space="preserve">10℃~32℃ / 50℉~89.6℉ </w:t><w:t>{{safety_notice_6}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -1847,7 +1846,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_prep_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -1886,7 +1885,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{install_prep_2}}</w:t>
+        <w:t>{{install_prep_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -1903,6 +1902,32 @@
           <w:sz w:val="15"/>
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
+        </w:rPr>
+        <w:t>{{install_prep_2}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
         </w:rPr>
         <w:t>{{install_prep_3}}</w:t>
       </w:r>
@@ -1930,59 +1955,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_prep_4}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="2"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
-        </w:rPr>
-        <w:t>{{install_prep_5}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="2"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
-        </w:rPr>
-        <w:t>{{install_prep_6}}</w:t>
+        <w:t xml:space="preserve">{{install_prep_4}}</w:t><w:t>120mm</w:t><w:t>{{install_prep_5}}</w:t><w:t>4.7&quot;</w:t><w:t>{{install_prep_6}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2034,7 +2007,33 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_prep_8}}</w:t>
+        <w:t xml:space="preserve">{{install_prep_8}}</w:t><w:t xml:space="preserve">CH.08 </w:t><w:t>{{install_prep_9}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
+        <w:t xml:space="preserve">{{install_prep_10}}</w:t><w:t xml:space="preserve">5 </w:t><w:t>{{install_prep_11}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2051,84 +2050,6 @@
           <w:sz w:val="15"/>
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
-        </w:rPr>
-        <w:t>{{install_prep_9}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="2"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
-        </w:rPr>
-        <w:t>{{install_prep_10}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="2"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
-        </w:rPr>
-        <w:t>{{install_prep_11}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="2"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
         </w:rPr>
         <w:t>{{install_prep_12}}</w:t>
       </w:r>
@@ -2150,13 +2071,29 @@
       </w:r>
       <w:r>
         <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
           <w:sz w:val="14"/>
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
         <w:t>{{install_prep_13}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -2166,7 +2103,69 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_prep_14}}</w:t>
+        <w:t>{{install_prep_14}}</w:t><w:t>TDS &lt; 200mg/L</w:t><w:t>{{install_prep_15}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
+        <w:t>{{install_prep_16}}</w:t><w:t>RO</w:t><w:t>{{install_prep_17}}</w:t><w:t>TDS</w:t><w:t>{{install_prep_18}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="273" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
+        <w:t>{{install_prep_19}}</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
+        <w:t>{{install_prep_20}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2184,7 +2183,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{install_prep_15}}</w:t>
+        <w:t>{{install_prep_21}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2210,7 +2209,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_prep_16}}</w:t>
+        <w:t>{{install_prep_22}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2236,7 +2235,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_prep_17}}</w:t>
+        <w:t>{{install_prep_23}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2262,7 +2261,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_prep_18}}</w:t>
+        <w:t>{{install_prep_24}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2288,7 +2287,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_prep_19}}</w:t>
+        <w:t>{{install_prep_25}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2320,7 +2319,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{operate_structure_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -2359,7 +2358,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{operate_structure_2}}</w:t>
+        <w:t>{{operate_structure_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -2459,7 +2458,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_3}}</w:t>
+              <w:t>{{operate_structure_2}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -2495,7 +2494,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_4}}</w:t>
+              <w:t>{{operate_structure_3}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -2531,7 +2530,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_5}}</w:t>
+              <w:t>{{operate_structure_4}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -2567,7 +2566,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_6}}</w:t>
+              <w:t>{{operate_structure_5}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -2644,7 +2643,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_7}}</w:t>
+              <w:t>{{operate_structure_6}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -2716,7 +2715,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_8}}</w:t>
+              <w:t>{{operate_structure_7}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -2793,7 +2792,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_9}}</w:t>
+              <w:t>{{operate_structure_8}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -2865,7 +2864,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_10}}</w:t>
+              <w:t>{{operate_structure_9}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -2942,7 +2941,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_11}}</w:t>
+              <w:t>{{operate_structure_10}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3014,7 +3013,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_12}}</w:t>
+              <w:t>{{operate_structure_11}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3091,7 +3090,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_structure_13}}</w:t>
+              <w:t>{{operate_structure_12}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3196,7 +3195,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{operate_function_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -3235,7 +3234,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{operate_function_2}}</w:t>
+        <w:t>{{operate_function_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -3373,7 +3372,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_function_3}}</w:t>
+              <w:t xml:space="preserve">No. / </w:t><w:t>{{operate_function_2}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3409,7 +3408,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_function_4}}</w:t>
+              <w:t>{{operate_function_3}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3454,7 +3453,7 @@
               <w:br/>
               <w:t>Power</w:t>
               <w:br/>
-              <w:t>{{operate_function_5}}</w:t>
+              <w:t>{{operate_function_4}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3490,7 +3489,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_function_6}}</w:t>
+              <w:t>{{operate_function_5}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3535,7 +3534,7 @@
               <w:br/>
               <w:t>Make Ice</w:t>
               <w:br/>
-              <w:t>{{operate_function_7}}</w:t>
+              <w:t>{{operate_function_6}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3571,7 +3570,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_function_8}}</w:t>
+              <w:t>{{operate_function_7}}</w:t><w:t>S / M / L</w:t><w:t>{{operate_function_8}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3733,7 +3732,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_function_12}}</w:t>
+              <w:t>{{operate_function_12}}</w:t><w:t xml:space="preserve">— </w:t><w:t>{{operate_function_13}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3778,7 +3777,7 @@
               <w:br/>
               <w:t>ADD WATER</w:t>
               <w:br/>
-              <w:t>{{operate_function_13}}</w:t>
+              <w:t>{{operate_function_14}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3814,7 +3813,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{operate_function_14}}</w:t>
+              <w:t>{{operate_function_15}}</w:t><w:t xml:space="preserve">— </w:t><w:t>{{operate_function_16}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3849,7 +3848,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{spec_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -3888,7 +3887,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{spec_2}}</w:t>
+        <w:t>{{spec_1}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -3946,7 +3945,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_3}}</w:t>
+              <w:t>{{spec_2}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -3982,7 +3981,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_4}}</w:t>
+              <w:t>{{spec_3}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4023,7 +4022,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_5}}</w:t>
+              <w:t>{{spec_4}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4100,7 +4099,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_6}}</w:t>
+              <w:t>{{spec_5}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4177,7 +4176,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_7}}</w:t>
+              <w:t>{{spec_6}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4254,7 +4253,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_8}}</w:t>
+              <w:t>{{spec_7}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4331,7 +4330,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_9}}</w:t>
+              <w:t>{{spec_8}}</w:t><w:t>×</w:t><w:t>{{spec_9}}</w:t><w:t>×</w:t><w:t>{{spec_10}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4408,7 +4407,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_10}}</w:t>
+              <w:t>{{spec_11}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4485,7 +4484,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_11}}</w:t>
+              <w:t>24h</w:t><w:t>{{spec_12}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4562,7 +4561,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_12}}</w:t>
+              <w:t>{{spec_13}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4598,7 +4597,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_13}}</w:t>
+              <w:t>{{spec_14}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4639,7 +4638,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_14}}</w:t>
+              <w:t xml:space="preserve">{{spec_15}}</w:t><w:t>S</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4716,7 +4715,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_15}}</w:t>
+              <w:t xml:space="preserve">{{spec_16}}</w:t><w:t>M</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4793,7 +4792,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_16}}</w:t>
+              <w:t xml:space="preserve">{{spec_17}}</w:t><w:t>L</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4870,7 +4869,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_17}}</w:t>
+              <w:t>{{spec_18}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4947,7 +4946,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_18}}</w:t>
+              <w:t>{{spec_19}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -5024,7 +5023,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_19}}</w:t>
+              <w:t>{{spec_20}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -5101,7 +5100,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_20}}</w:t>
+              <w:t>{{spec_21}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -5178,7 +5177,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_21}}</w:t>
+              <w:t>{{spec_22}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -5255,7 +5254,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{spec_22}}</w:t>
+              <w:t>{{spec_23}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -5326,7 +5325,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{operate_guide_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -5365,7 +5364,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{operate_guide_2}}</w:t>
+        <w:t>{{operate_guide_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5383,7 +5382,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{operate_guide_3}}</w:t>
+        <w:t>{{operate_guide_2}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5409,7 +5408,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{operate_guide_4}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_3}}</w:t><w:t>≥ 120 mm</w:t><w:t>{{operate_guide_4}}</w:t><w:t>4.7 in</w:t><w:t>{{operate_guide_5}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5435,7 +5434,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{operate_guide_5}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_6}}</w:t><w:t xml:space="preserve">CH.08 </w:t><w:t>{{operate_guide_7}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5453,7 +5452,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{operate_guide_6}}</w:t>
+        <w:t>{{operate_guide_8}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5479,7 +5478,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{operate_guide_7}}</w:t>
+        <w:t>{{operate_guide_9}}</w:t><w:t>&#x201C;</w:t><w:t>{{operate_guide_10}}</w:t><w:t>&#x201D;</w:t><w:t>{{operate_guide_11}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5505,7 +5504,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_8}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_12}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -5525,7 +5524,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_9}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_13}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5543,7 +5542,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{operate_guide_10}}</w:t>
+        <w:t>{{operate_guide_14}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5569,7 +5568,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_11}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_15}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5595,7 +5594,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_12}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_16}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5709,7 +5708,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_13}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_17}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -5812,7 +5811,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="0"/>
         </w:rPr>
-        <w:t>{{operate_guide_14}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -5851,7 +5850,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{operate_guide_15}}</w:t>
+        <w:t>{{operate_guide_18}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -5877,7 +5876,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="0"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_16}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_19}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -6076,7 +6075,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="0"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_17}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_20}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -6096,7 +6095,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="0"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_18}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_21}}</w:t><w:t xml:space="preserve">S / M / L </w:t><w:t>{{operate_guide_22}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -6193,7 +6192,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="0"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{operate_guide_19}}</w:t>
+        <w:t xml:space="preserve">{{operate_guide_23}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -6335,7 +6334,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{operate_guide_20}}</w:t>
+              <w:t xml:space="preserve">{{operate_guide_24}}</w:t><w:t>NOTICE</w:t>
             </w:r>
           </w:p>
           <w:p>
@@ -6361,7 +6360,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t xml:space="preserve">{{operate_guide_21}}</w:t>
+              <w:t xml:space="preserve">{{operate_guide_25}}</w:t>
             </w:r>
             <w:r>
               <w:rPr>
@@ -6372,98 +6371,6 @@
                 <w:spacing w:val="0"/>
               </w:rPr>
               <w:t>Make Ice</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="14"/>
-                <w:color w:val="000000"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t xml:space="preserve">{{operate_guide_22}}</w:t>
-            </w:r>
-          </w:p>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:before="0" w:after="27" w:line="216" w:lineRule="auto"/>
-              <w:ind w:left="266" w:hanging="266"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-                <w:b/>
-                <w:sz w:val="10"/>
-                <w:color w:val="E63846"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t xml:space="preserve">•    </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="14"/>
-                <w:color w:val="000000"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t xml:space="preserve">{{operate_guide_23}}</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-                <w:b/>
-                <w:sz w:val="14"/>
-                <w:color w:val="000000"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t>Power</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="14"/>
-                <w:color w:val="000000"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t xml:space="preserve">{{operate_guide_24}}</w:t>
-            </w:r>
-          </w:p>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:before="0" w:after="27" w:line="216" w:lineRule="auto"/>
-              <w:ind w:left="266" w:hanging="266"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-                <w:b/>
-                <w:sz w:val="10"/>
-                <w:color w:val="E63846"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t xml:space="preserve">•    </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="14"/>
-                <w:color w:val="000000"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t>{{operate_guide_25}}</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-                <w:b/>
-                <w:sz w:val="14"/>
-                <w:color w:val="000000"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t>ICE FULL</w:t>
             </w:r>
             <w:r>
               <w:rPr>
@@ -6509,7 +6416,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>ADD WATER</w:t>
+              <w:t>Power</w:t>
             </w:r>
             <w:r>
               <w:rPr>
@@ -6520,6 +6427,98 @@
                 <w:spacing w:val="0"/>
               </w:rPr>
               <w:t xml:space="preserve">{{operate_guide_28}}</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:before="0" w:after="27" w:line="216" w:lineRule="auto"/>
+              <w:ind w:left="266" w:hanging="266"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+                <w:b/>
+                <w:sz w:val="10"/>
+                <w:color w:val="E63846"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">•    </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="14"/>
+                <w:color w:val="000000"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t>{{operate_guide_29}}</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:color w:val="000000"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t>ICE FULL</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="14"/>
+                <w:color w:val="000000"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{operate_guide_30}}</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:before="0" w:after="27" w:line="216" w:lineRule="auto"/>
+              <w:ind w:left="266" w:hanging="266"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+                <w:b/>
+                <w:sz w:val="10"/>
+                <w:color w:val="E63846"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">•    </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="14"/>
+                <w:color w:val="000000"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{operate_guide_31}}</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:color w:val="000000"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t>ADD WATER</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="14"/>
+                <w:color w:val="000000"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{operate_guide_32}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -6559,7 +6558,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{troubleshoot_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -6598,7 +6597,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{troubleshoot_2}}</w:t>
+        <w:t>{{troubleshoot_1}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -6657,7 +6656,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_3}}</w:t>
+              <w:t>{{troubleshoot_2}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -6693,7 +6692,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_4}}</w:t>
+              <w:t>{{troubleshoot_3}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -6729,7 +6728,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_5}}</w:t>
+              <w:t>{{troubleshoot_4}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -6741,6 +6740,42 @@
         <w:tc>
           <w:tcPr>
             <w:tcW w:type="dxa" w:w="1596"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:left w:val="nil"/>
+              <w:right w:val="nil"/>
+              <w:insideV w:val="nil"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="32" w:type="dxa"/>
+              <w:start w:w="55" w:type="dxa"/>
+              <w:bottom w:w="32" w:type="dxa"/>
+              <w:end w:w="55" w:type="dxa"/>
+            </w:tcMar>
+            <w:shd w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="13"/>
+                <w:color w:val="1A1A1A"/>
+                <w:spacing w:val="2"/>
+              </w:rPr>
+              <w:t>{{troubleshoot_5}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="2395"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
               <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -6776,7 +6811,7 @@
         </w:tc>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:type="dxa" w:w="2395"/>
+            <w:tcW w:type="dxa" w:w="3265"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
               <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -6810,9 +6845,14 @@
             </w:r>
           </w:p>
         </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:trHeight w:val="225" w:hRule="atLeast"/>
+        </w:trPr>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:type="dxa" w:w="3265"/>
+            <w:tcW w:type="dxa" w:w="1596"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
               <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -6826,7 +6866,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
+            <w:shd w:fill="F1F1F6"/>
             <w:vAlign w:val="center"/>
           </w:tcPr>
           <w:p>
@@ -6846,14 +6886,9 @@
             </w:r>
           </w:p>
         </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:trPr>
-          <w:trHeight w:val="225" w:hRule="atLeast"/>
-        </w:trPr>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:type="dxa" w:w="1596"/>
+            <w:tcW w:type="dxa" w:w="2395"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
               <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -6889,42 +6924,6 @@
         </w:tc>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:type="dxa" w:w="2395"/>
-            <w:tcBorders>
-              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:left w:val="nil"/>
-              <w:right w:val="nil"/>
-              <w:insideV w:val="nil"/>
-            </w:tcBorders>
-            <w:tcMar>
-              <w:top w:w="32" w:type="dxa"/>
-              <w:start w:w="55" w:type="dxa"/>
-              <w:bottom w:w="32" w:type="dxa"/>
-              <w:end w:w="55" w:type="dxa"/>
-            </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
-            <w:vAlign w:val="center"/>
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-              <w:jc w:val="left"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="13"/>
-                <w:color w:val="1A1A1A"/>
-                <w:spacing w:val="2"/>
-              </w:rPr>
-              <w:t>{{troubleshoot_10}}</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
             <w:tcW w:type="dxa" w:w="3265"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -6955,7 +6954,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_11}}</w:t>
+              <w:t>{{troubleshoot_10}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -6996,7 +6995,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_12}}</w:t>
+              <w:t>{{troubleshoot_11}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -7032,7 +7031,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_13}}</w:t>
+              <w:t>{{troubleshoot_12}}</w:t><w:t>ADD WATER</w:t><w:t>{{troubleshoot_13}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -7258,7 +7257,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_19}}</w:t>
+              <w:t>{{troubleshoot_19}}</w:t><w:t>ICE FULL</w:t><w:t>{{troubleshoot_20}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -7294,7 +7293,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_20}}</w:t>
+              <w:t>{{troubleshoot_21}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -7306,42 +7305,6 @@
         <w:tc>
           <w:tcPr>
             <w:tcW w:type="dxa" w:w="1596"/>
-            <w:tcBorders>
-              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:left w:val="nil"/>
-              <w:right w:val="nil"/>
-              <w:insideV w:val="nil"/>
-            </w:tcBorders>
-            <w:tcMar>
-              <w:top w:w="32" w:type="dxa"/>
-              <w:start w:w="55" w:type="dxa"/>
-              <w:bottom w:w="32" w:type="dxa"/>
-              <w:end w:w="55" w:type="dxa"/>
-            </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
-            <w:vAlign w:val="center"/>
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-              <w:jc w:val="left"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="13"/>
-                <w:color w:val="1A1A1A"/>
-                <w:spacing w:val="2"/>
-              </w:rPr>
-              <w:t>{{troubleshoot_21}}</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:type="dxa" w:w="2395"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
               <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -7377,7 +7340,7 @@
         </w:tc>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:type="dxa" w:w="3265"/>
+            <w:tcW w:type="dxa" w:w="2395"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
               <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -7407,18 +7370,13 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_23}}</w:t>
+              <w:t>{{troubleshoot_23}}</w:t><w:t>ADD WATER</w:t><w:t>{{troubleshoot_24}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:trPr>
-          <w:trHeight w:val="225" w:hRule="atLeast"/>
-        </w:trPr>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:type="dxa" w:w="1596"/>
+            <w:tcW w:type="dxa" w:w="3265"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
               <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -7432,43 +7390,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
-            <w:vAlign w:val="center"/>
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-              <w:jc w:val="left"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="13"/>
-                <w:color w:val="1A1A1A"/>
-                <w:spacing w:val="2"/>
-              </w:rPr>
-              <w:t>{{troubleshoot_24}}</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:type="dxa" w:w="2395"/>
-            <w:tcBorders>
-              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:left w:val="nil"/>
-              <w:right w:val="nil"/>
-              <w:insideV w:val="nil"/>
-            </w:tcBorders>
-            <w:tcMar>
-              <w:top w:w="32" w:type="dxa"/>
-              <w:start w:w="55" w:type="dxa"/>
-              <w:bottom w:w="32" w:type="dxa"/>
-              <w:end w:w="55" w:type="dxa"/>
-            </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
+            <w:shd w:fill="F1F1F6"/>
             <w:vAlign w:val="center"/>
           </w:tcPr>
           <w:p>
@@ -7488,9 +7410,14 @@
             </w:r>
           </w:p>
         </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:trHeight w:val="225" w:hRule="atLeast"/>
+        </w:trPr>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:type="dxa" w:w="3265"/>
+            <w:tcW w:type="dxa" w:w="1596"/>
             <w:tcBorders>
               <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
               <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
@@ -7520,48 +7447,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_26}}</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:trPr>
-          <w:trHeight w:val="225" w:hRule="atLeast"/>
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:type="dxa" w:w="1596"/>
-            <w:tcBorders>
-              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:left w:val="nil"/>
-              <w:right w:val="nil"/>
-              <w:insideV w:val="nil"/>
-            </w:tcBorders>
-            <w:tcMar>
-              <w:top w:w="32" w:type="dxa"/>
-              <w:start w:w="55" w:type="dxa"/>
-              <w:bottom w:w="32" w:type="dxa"/>
-              <w:end w:w="55" w:type="dxa"/>
-            </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
-            <w:vAlign w:val="center"/>
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-              <w:jc w:val="left"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="13"/>
-                <w:color w:val="1A1A1A"/>
-                <w:spacing w:val="2"/>
-              </w:rPr>
-              <w:t>{{troubleshoot_27}}</w:t>
+              <w:t>{{troubleshoot_26}}</w:t><w:t>5</w:t><w:t>{{troubleshoot_27}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -7581,7 +7467,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
+            <w:shd w:fill="FFFFFF"/>
             <w:vAlign w:val="center"/>
           </w:tcPr>
           <w:p>
@@ -7617,7 +7503,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
+            <w:shd w:fill="FFFFFF"/>
             <w:vAlign w:val="center"/>
           </w:tcPr>
           <w:p>
@@ -7658,7 +7544,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
+            <w:shd w:fill="F1F1F6"/>
             <w:vAlign w:val="center"/>
           </w:tcPr>
           <w:p>
@@ -7694,7 +7580,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
+            <w:shd w:fill="F1F1F6"/>
             <w:vAlign w:val="center"/>
           </w:tcPr>
           <w:p>
@@ -7730,6 +7616,47 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
+            <w:shd w:fill="F1F1F6"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="13"/>
+                <w:color w:val="1A1A1A"/>
+                <w:spacing w:val="2"/>
+              </w:rPr>
+              <w:t>{{troubleshoot_32}}</w:t><w:t>≥120mm</w:t><w:t>{{troubleshoot_33}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:trHeight w:val="225" w:hRule="atLeast"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1596"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:left w:val="nil"/>
+              <w:right w:val="nil"/>
+              <w:insideV w:val="nil"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="32" w:type="dxa"/>
+              <w:start w:w="55" w:type="dxa"/>
+              <w:bottom w:w="32" w:type="dxa"/>
+              <w:end w:w="55" w:type="dxa"/>
+            </w:tcMar>
             <w:shd w:fill="FFFFFF"/>
             <w:vAlign w:val="center"/>
           </w:tcPr>
@@ -7746,7 +7673,79 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="2"/>
               </w:rPr>
-              <w:t>{{troubleshoot_32}}</w:t>
+              <w:t>{{troubleshoot_34}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="2395"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:left w:val="nil"/>
+              <w:right w:val="nil"/>
+              <w:insideV w:val="nil"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="32" w:type="dxa"/>
+              <w:start w:w="55" w:type="dxa"/>
+              <w:bottom w:w="32" w:type="dxa"/>
+              <w:end w:w="55" w:type="dxa"/>
+            </w:tcMar>
+            <w:shd w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="13"/>
+                <w:color w:val="1A1A1A"/>
+                <w:spacing w:val="2"/>
+              </w:rPr>
+              <w:t>{{troubleshoot_35}}</w:t><w:t>/</w:t><w:t>{{troubleshoot_36}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3265"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:left w:val="nil"/>
+              <w:right w:val="nil"/>
+              <w:insideV w:val="nil"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="32" w:type="dxa"/>
+              <w:start w:w="55" w:type="dxa"/>
+              <w:bottom w:w="32" w:type="dxa"/>
+              <w:end w:w="55" w:type="dxa"/>
+            </w:tcMar>
+            <w:shd w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="13"/>
+                <w:color w:val="1A1A1A"/>
+                <w:spacing w:val="2"/>
+              </w:rPr>
+              <w:t>{{troubleshoot_37}}</w:t><w:t>TDS&lt;200mg/L</w:t><w:t>{{troubleshoot_38}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -7805,7 +7804,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="10"/>
               </w:rPr>
-              <w:t>{{troubleshoot_33}}</w:t>
+              <w:t xml:space="preserve">{{troubleshoot_39}}</w:t><w:t>DISCLAIMER</w:t>
             </w:r>
           </w:p>
           <w:p>
@@ -7820,7 +7819,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{troubleshoot_34}}</w:t>
+              <w:t>{{troubleshoot_40}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -7860,7 +7859,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{clean_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -7899,7 +7898,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{clean_2}}</w:t>
+        <w:t>{{clean_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -7917,7 +7916,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{clean_3}}</w:t>
+        <w:t>{{clean_2}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -7943,7 +7942,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{clean_4}}</w:t>
+        <w:t xml:space="preserve">{{clean_3}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -7969,7 +7968,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{clean_5}}</w:t>
+        <w:t xml:space="preserve">{{clean_4}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -7989,7 +7988,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{clean_6}}</w:t>
+        <w:t xml:space="preserve">{{clean_5}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8015,7 +8014,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{clean_7}}</w:t>
+        <w:t xml:space="preserve">{{clean_6}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8033,7 +8032,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{clean_8}}</w:t>
+        <w:t>{{clean_7}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8050,6 +8049,32 @@
           <w:shd w:val="clear" w:color="auto" w:fill="000000"/>
         </w:rPr>
         <w:t xml:space="preserve">  1  </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
+        <w:t xml:space="preserve">{{clean_8}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="40" w:line="260" w:lineRule="auto"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:color w:val="FFFFFF"/>
+          <w:spacing w:val="8"/>
+          <w:shd w:val="clear" w:color="auto" w:fill="000000"/>
+        </w:rPr>
+        <w:t xml:space="preserve">  2  </w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -8075,32 +8100,6 @@
           <w:spacing w:val="8"/>
           <w:shd w:val="clear" w:color="auto" w:fill="000000"/>
         </w:rPr>
-        <w:t xml:space="preserve">  2  </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
-        </w:rPr>
-        <w:t xml:space="preserve">{{clean_10}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:after="40" w:line="260" w:lineRule="auto"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="14"/>
-          <w:color w:val="FFFFFF"/>
-          <w:spacing w:val="8"/>
-          <w:shd w:val="clear" w:color="auto" w:fill="000000"/>
-        </w:rPr>
         <w:t xml:space="preserve">  3  </w:t>
       </w:r>
       <w:r>
@@ -8111,7 +8110,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{clean_11}}</w:t>
+        <w:t xml:space="preserve">{{clean_10}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -8251,7 +8250,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{clean_12}}</w:t>
+        <w:t>{{clean_11}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8277,7 +8276,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{clean_13}}</w:t>
+        <w:t>{{clean_12}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -8287,7 +8286,33 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
+        <w:t>{{clean_13}}</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
         <w:t>{{clean_14}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="260" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="0"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -8354,32 +8379,6 @@
     </w:p>
     <w:p>
       <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="260" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="0"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
-        </w:rPr>
-        <w:t>{{clean_18}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
         <w:sectPr>
           <w:footerReference w:type="default" r:id="rId34"/>
           <w:pgSz w:w="8391" w:h="11906"/>
@@ -8407,7 +8406,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_transport_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -8446,7 +8445,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{install_transport_2}}</w:t>
+        <w:t>{{install_transport_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8464,7 +8463,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{install_transport_3}}</w:t>
+        <w:t>{{install_transport_2}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8490,7 +8489,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_transport_4}}</w:t>
+        <w:t xml:space="preserve">{{install_transport_3}}</w:t><w:t>45°</w:t><w:t>{{install_transport_4}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8542,7 +8541,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_transport_6}}</w:t>
+        <w:t xml:space="preserve">{{install_transport_6}}</w:t><w:t xml:space="preserve">4 </w:t><w:t>{{install_transport_7}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8559,32 +8558,6 @@
           <w:sz w:val="15"/>
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
-        </w:rPr>
-        <w:t>{{install_transport_7}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="278" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="0"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
         </w:rPr>
         <w:t>{{install_transport_8}}</w:t>
       </w:r>
@@ -8664,51 +8637,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{install_transport_11}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:after="80" w:before="170" w:line="278" w:lineRule="auto"/>
-        <w:pBdr>
-          <w:bottom w:val="single" w:sz="6" w:space="1" w:color="FFFFFF"/>
-        </w:pBdr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="15"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="5"/>
-        </w:rPr>
-        <w:t>{{install_transport_12}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="278" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
-          <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="0"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
-          <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
-        </w:rPr>
-        <w:t>{{install_transport_13}}</w:t>
+        <w:t xml:space="preserve">{{install_transport_11}}</w:t><w:t>120mm</w:t><w:t>{{install_transport_12}}</w:t><w:t>4.7&quot;</w:t><w:t>{{install_transport_13}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8739,26 +8668,18 @@
     </w:p>
     <w:p>
       <w:pPr>
-        <w:spacing w:before="0" w:after="32" w:line="278" w:lineRule="auto"/>
-        <w:ind w:left="181" w:hanging="181"/>
+        <w:spacing w:after="80" w:before="170" w:line="278" w:lineRule="auto"/>
+        <w:pBdr>
+          <w:bottom w:val="single" w:sz="6" w:space="1" w:color="FFFFFF"/>
+        </w:pBdr>
       </w:pPr>
       <w:r>
         <w:rPr>
           <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
           <w:b/>
-          <w:sz w:val="11"/>
-          <w:color w:val="E63846"/>
-          <w:spacing w:val="0"/>
-        </w:rPr>
-        <w:t xml:space="preserve">•    </w:t>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-          <w:b w:val="0"/>
-          <w:sz w:val="14"/>
+          <w:sz w:val="15"/>
           <w:color w:val="000000"/>
-          <w:spacing w:val="10"/>
+          <w:spacing w:val="5"/>
         </w:rPr>
         <w:t>{{install_transport_15}}</w:t>
       </w:r>
@@ -8787,6 +8708,84 @@
           <w:spacing w:val="10"/>
         </w:rPr>
         <w:t>{{install_transport_16}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="278" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="0"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
+        <w:t>{{install_transport_17}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="278" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="0"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
+        <w:t xml:space="preserve">{{install_transport_18}}</w:t><w:t xml:space="preserve">R600a </w:t><w:t>{{install_transport_19}}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="0" w:after="32" w:line="278" w:lineRule="auto"/>
+        <w:ind w:left="181" w:hanging="181"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial Black" w:hAnsi="Arial Black" w:cs="Arial Black" w:eastAsia="Microsoft YaHei"/>
+          <w:b/>
+          <w:sz w:val="11"/>
+          <w:color w:val="E63846"/>
+          <w:spacing w:val="0"/>
+        </w:rPr>
+        <w:t xml:space="preserve">•    </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+          <w:b w:val="0"/>
+          <w:sz w:val="14"/>
+          <w:color w:val="000000"/>
+          <w:spacing w:val="10"/>
+        </w:rPr>
+        <w:t>{{install_transport_20}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8852,7 +8851,7 @@
                 <w:color w:val="000000"/>
                 <w:spacing w:val="10"/>
               </w:rPr>
-              <w:t>{{install_transport_17}}</w:t>
+              <w:t>{{install_transport_21}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -8892,7 +8891,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{warranty_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -8931,7 +8930,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{warranty_2}}</w:t>
+        <w:t>{{warranty_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -8946,7 +8945,7 @@
           <w:color w:val="1A1A1A"/>
           <w:spacing w:val="8"/>
         </w:rPr>
-        <w:t>{{warranty_3}}</w:t>
+        <w:t xml:space="preserve">{{warranty_2}}</w:t><w:t xml:space="preserve">Wevac </w:t><w:t>{{warranty_3}}</w:t>
         <w:br/>
         <w:t>support@wevactech.com | www.wevactech.com</w:t>
       </w:r>
@@ -9208,7 +9207,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_9}}</w:t>
+              <w:t>{{warranty_9}}</w:t><w:t>87-105</w:t><w:t>{{warranty_10}}</w:t><w:t>404A</w:t><w:t>{{warranty_11}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9248,7 +9247,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_10}}</w:t>
+              <w:t>{{warranty_12}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9323,7 +9322,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_11}}</w:t>
+              <w:t>{{warranty_13}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9379,7 +9378,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{warranty_12}}</w:t>
+        <w:t>{{warranty_14}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -9436,7 +9435,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_13}}</w:t>
+              <w:t>{{warranty_15}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9471,7 +9470,7 @@
                 <w:color w:val="FFFFFF"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_14}}</w:t>
+              <w:t>{{warranty_16}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9511,7 +9510,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_15}}</w:t>
+              <w:t>{{warranty_17}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9546,7 +9545,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_16}}</w:t>
+              <w:t>{{warranty_18}}</w:t>
               <w:br/>
               <w:t>Guangzhou Argion Electric Appliance Co., Ltd.</w:t>
             </w:r>
@@ -9588,7 +9587,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_17}}</w:t>
+              <w:t>{{warranty_19}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9623,7 +9622,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_18}}</w:t>
+              <w:t>{{warranty_20}}</w:t><w:t>1</w:t><w:t>{{warranty_21}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9663,7 +9662,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_19}}</w:t>
+              <w:t>{{warranty_22}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -9719,7 +9718,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{warranty_20}}</w:t>
+        <w:t>{{warranty_23}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -9734,7 +9733,7 @@
           <w:color w:val="1A1A1A"/>
           <w:spacing w:val="8"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{warranty_21}}</w:t>
+        <w:t xml:space="preserve">{{warranty_24}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -9744,7 +9743,7 @@
           <w:color w:val="1A1A1A"/>
           <w:spacing w:val="8"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{warranty_22}}</w:t>
+        <w:t xml:space="preserve">2 </w:t><w:t>{{warranty_25}}</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -9754,7 +9753,7 @@
           <w:color w:val="1A1A1A"/>
           <w:spacing w:val="8"/>
         </w:rPr>
-        <w:t xml:space="preserve">{{warranty_23}}</w:t>
+        <w:t xml:space="preserve">{{warranty_26}}</w:t><w:t xml:space="preserve">2 </w:t><w:t>{{warranty_27}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -9780,7 +9779,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{warranty_24}}</w:t>
+        <w:t xml:space="preserve">{{warranty_28}}</w:t><w:t xml:space="preserve">2 </w:t><w:t>{{warranty_29}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -9806,7 +9805,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{warranty_25}}</w:t>
+        <w:t>{{warranty_30}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -9832,7 +9831,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{warranty_26}}</w:t>
+        <w:t>{{warranty_31}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -9847,7 +9846,7 @@
           <w:color w:val="1A1A1A"/>
           <w:spacing w:val="8"/>
         </w:rPr>
-        <w:t>{{warranty_27}}</w:t>
+        <w:t xml:space="preserve">{{warranty_32}}</w:t><w:t>support@wevactech.com</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -9879,7 +9878,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="10"/>
         </w:rPr>
-        <w:t>{{warranty_card_1}}</w:t>
+        <w:t>Wevac</w:t>
       </w:r>
       <w:r>
         <w:rPr>
@@ -9918,7 +9917,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="11"/>
         </w:rPr>
-        <w:t>{{warranty_card_2}}</w:t>
+        <w:t>{{warranty_card_1}}</w:t>
       </w:r>
     </w:p>
     <w:p>
@@ -9936,7 +9935,7 @@
           <w:color w:val="000000"/>
           <w:spacing w:val="5"/>
         </w:rPr>
-        <w:t>{{warranty_card_3}}</w:t>
+        <w:t>{{warranty_card_2}}</w:t>
       </w:r>
     </w:p>
     <w:tbl>
@@ -9993,7 +9992,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_card_4}}</w:t>
+              <w:t>{{warranty_card_3}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -10067,7 +10066,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_card_5}}</w:t>
+              <w:t>{{warranty_card_4}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -10141,7 +10140,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_card_6}}</w:t>
+              <w:t xml:space="preserve">{{warranty_card_5}}</w:t><w:t xml:space="preserve">/ </w:t><w:t xml:space="preserve">{{warranty_card_6}}</w:t><w:t xml:space="preserve">/ </w:t><w:t>{{warranty_card_7}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -10200,80 +10199,6 @@
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
             <w:shd w:fill="F1F1F6"/>
-            <w:vAlign w:val="top"/>
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-              <w:jc w:val="left"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="13"/>
-                <w:color w:val="1A1A1A"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-              <w:t>{{warranty_card_7}}</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:type="dxa" w:w="3628"/>
-            <w:tcBorders>
-              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:left w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:right w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-            </w:tcBorders>
-            <w:tcMar>
-              <w:top w:w="32" w:type="dxa"/>
-              <w:start w:w="87" w:type="dxa"/>
-              <w:bottom w:w="32" w:type="dxa"/>
-              <w:end w:w="55" w:type="dxa"/>
-            </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
-            <w:vAlign w:val="top"/>
-          </w:tcPr>
-          <w:p>
-            <w:pPr>
-              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-              <w:jc w:val="left"/>
-            </w:pPr>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
-                <w:b w:val="0"/>
-                <w:sz w:val="13"/>
-                <w:color w:val="1A1A1A"/>
-                <w:spacing w:val="0"/>
-              </w:rPr>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:trPr>
-          <w:trHeight w:val="225" w:hRule="atLeast"/>
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:type="dxa" w:w="3628"/>
-            <w:tcBorders>
-              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:left w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-              <w:right w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
-            </w:tcBorders>
-            <w:tcMar>
-              <w:top w:w="32" w:type="dxa"/>
-              <w:start w:w="87" w:type="dxa"/>
-              <w:bottom w:w="32" w:type="dxa"/>
-              <w:end w:w="55" w:type="dxa"/>
-            </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
             <w:vAlign w:val="top"/>
           </w:tcPr>
           <w:p>
@@ -10308,7 +10233,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
+            <w:shd w:fill="F1F1F6"/>
             <w:vAlign w:val="top"/>
           </w:tcPr>
           <w:p>
@@ -10347,7 +10272,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
+            <w:shd w:fill="FFFFFF"/>
             <w:vAlign w:val="top"/>
           </w:tcPr>
           <w:p>
@@ -10382,7 +10307,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
+            <w:shd w:fill="FFFFFF"/>
             <w:vAlign w:val="top"/>
           </w:tcPr>
           <w:p>
@@ -10421,7 +10346,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
+            <w:shd w:fill="F1F1F6"/>
             <w:vAlign w:val="top"/>
           </w:tcPr>
           <w:p>
@@ -10456,7 +10381,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="FFFFFF"/>
+            <w:shd w:fill="F1F1F6"/>
             <w:vAlign w:val="top"/>
           </w:tcPr>
           <w:p>
@@ -10495,7 +10420,7 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
-            <w:shd w:fill="F1F1F6"/>
+            <w:shd w:fill="FFFFFF"/>
             <w:vAlign w:val="top"/>
           </w:tcPr>
           <w:p>
@@ -10530,6 +10455,80 @@
               <w:bottom w:w="32" w:type="dxa"/>
               <w:end w:w="55" w:type="dxa"/>
             </w:tcMar>
+            <w:shd w:fill="FFFFFF"/>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="13"/>
+                <w:color w:val="1A1A1A"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr>
+          <w:trHeight w:val="225" w:hRule="atLeast"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3628"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="32" w:type="dxa"/>
+              <w:start w:w="87" w:type="dxa"/>
+              <w:bottom w:w="32" w:type="dxa"/>
+              <w:end w:w="55" w:type="dxa"/>
+            </w:tcMar>
+            <w:shd w:fill="F1F1F6"/>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Microsoft YaHei"/>
+                <w:b w:val="0"/>
+                <w:sz w:val="13"/>
+                <w:color w:val="1A1A1A"/>
+                <w:spacing w:val="0"/>
+              </w:rPr>
+              <w:t>{{warranty_card_12}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="3628"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="F5F5F5"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="32" w:type="dxa"/>
+              <w:start w:w="87" w:type="dxa"/>
+              <w:bottom w:w="32" w:type="dxa"/>
+              <w:end w:w="55" w:type="dxa"/>
+            </w:tcMar>
             <w:shd w:fill="F1F1F6"/>
             <w:vAlign w:val="top"/>
           </w:tcPr>
@@ -10585,7 +10584,7 @@
                 <w:color w:val="1A1A1A"/>
                 <w:spacing w:val="0"/>
               </w:rPr>
-              <w:t>{{warranty_card_12}}</w:t>
+              <w:t>{{warranty_card_13}}</w:t>
             </w:r>
           </w:p>
         </w:tc>
