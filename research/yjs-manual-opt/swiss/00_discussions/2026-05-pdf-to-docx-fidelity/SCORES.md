@@ -412,3 +412,31 @@ docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较
 | **W34 (iter-43 预期)** | **8.21/12.06** | 叠加 W33a+W33b |
 
 **累计 plateau 突破**：8.67 → 8.21 = **-0.46** (mean) / 12.35 → 12.06 = **-0.29** (max)
+
+### W34 突破 ✅ (2026-05-17, iter-40 自动叠加 iter-41)
+
+**8.20 / 12.06** (mean -0.08, max -0.08 vs W33)
+
+- iter-40 在 iter-16 自己发现 iter-41 的 sz=11/12 win 可叠加
+- 叠加产物：iter-40 p9/p13 line spacing + iter-41 sz=11/12 char spacing
+- Per-page: p9 -0.30, p13 -0.77, p14 -0.08, p5 -0.04，其余 ±0.01
+- commit: `548b1ab`
+
+**累计 plateau 突破（30+ 路径 plateau 后）**：
+- mean: 8.67 → 8.20 = **-0.47**
+- max: 12.35 → 12.06 = **-0.29**
+
+| Winner | mean | max | 关键突破 |
+|--------|------|-----|---------|
+| W27 baseline | 8.67 | 12.35 | 30 路径 plateau |
+| W29 | 8.63 | 12.30 | pgMar top +3 子像素 |
+| W30 | 8.57 | 12.26 | 多维 per-page pgMar |
+| W31 | 8.49 | 12.26 | keycap chip 结构 |
+| W32 | 8.27 | 12.22 | sz=14 BLACK spacing 5→8 |
+| W33a | 8.21 | 12.14 | p9/p13 line spacing 方向 |
+| W33b | 8.28 | 12.06 | sz=11/12 spacing 5→2 |
+| **W34** | **8.20** | **12.06** | **叠加 W33a+W33b** |
+
+### iter-44 启动 sz=13 spacing DOWN (177 sites 最大未碰 cohort)
+
+iter-41 推荐：sz=13 是 table body，177 sites 是最大未试 cohort，DOWN 方向未验证。
