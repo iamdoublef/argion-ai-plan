@@ -1,16 +1,21 @@
 # design-iter-49 path-before-linerule-surgery — STATUS
 
-## Outcome: BREAKTHROUGH at W39 (8.04/11.99) — mean -0.05 STACKED on W38
+## Outcome: DOUBLE BREAKTHROUGH — W40 at 8.01/11.98 (mean -0.16 from W37)
 
-After 11 iter-* runs + 1 stack run on top of the parallel W38 (Goldilocks rPr stack),
-this path found that **per-page differential on p9's line=264 cohort** composes cleanly
-with the rPr Goldilocks stack to give a deeper breakthrough:
+This path produced **two stacked wins** by adding `p9 line=264→252` (7 sites) on top
+of two successive rPr stacks from parallel agents:
 
-- W37 baseline: 8.17/11.97
-- W38 (parallel agent, Goldilocks rPr): 8.09/11.99
-- W39 (this run, W38 + p9 line=264→252 stacked): **8.04/11.99**
+| version | recipe | mean | max |
+|---------|--------|------|-----|
+| W37 baseline | (committed) | 8.17 | 11.97 |
+| W38 (other agent) | sz=14/10/13 Goldilocks rPr stack | 8.09 | 11.99 |
+| W38 + p9 surgery (this run, iter-stack-w38) | + line=264→252 (7 sites) | **8.04** | 11.99 |
+| W39 (other agent) | + sz=14 BLACK 9→10 / sz=10 RED 7→6 | 8.06 | 11.98 |
+| **W40 (this run, iter-stack-w39) — current final** | W39 + line=264→252 (7 sites) | **8.01** | **11.98** |
 
-Mean total drop from W37: −0.13. Max: +0.02 (within ≤0.05 rollback).
+Total mean drop W37 → W40: **−0.16**. Max W37 → W40: **+0.01** (within ≤0.05 rollback).
+The `p9 line=264→252` lever composes cleanly with ALL tested rPr stacks — independent
+axis, additive ~−0.05 mean each time.
 
 ## Baseline (W37 HEAD, c5f82bc)
 - committed JSON: mean **8.17**, max **11.97**
@@ -48,6 +53,7 @@ Mean total drop from W37: −0.13. Max: +0.02 (within ≤0.05 rollback).
 | 10 | p9 (169..183) line=264→252 surgical | 7 | **8.12** | **11.97** | **GAIN −0.06 mean** (p9 −0.78) |
 | 11 | p9 (169..183) line=264→240 surgical | 7 | 8.20 | 12.00 | regression past sweet spot |
 | stack-w38 | iter-10 patch (p9 line=264→252) ON W38 final (Goldilocks rPr) | 7 | **8.04** | **11.99** | **STACKED GAIN −0.05 vs W38** |
+| stack-w39 | iter-10 patch (p9 line=264→252) ON W39 final (sz=14/10 stack) | 7 | **8.01** | **11.98** | **STACKED GAIN −0.05 vs W39 (W40)** |
 
 ## What works (positive evidence)
 **Per-page differential on p9's `line=264` cohort**. This is the operation page,
