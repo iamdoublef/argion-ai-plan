@@ -1,12 +1,21 @@
-# Swiss 说明书 QA 审计规范
+# Swiss 说明书 QA 审计规范（SOT · 双流水线共享）
 
-**版本**：v1.2  
-**日期**：2026-03-12  
-**适用范围**：Swiss A5 booklet 产品说明书全流程质量保障  
-**引用标准**：`DESIGN-STANDARD.md`（视觉 + 内容结构标准）
+**版本**：v1.3
+**日期**：2026-05-17
+**适用范围**：Swiss A5 booklet 产品说明书全流程质量保障 — **PDF/HTML 流水线 + DOCX 流水线**
+**引用标准**：`DESIGN-STANDARD.md`（视觉 + 内容结构标准 SOT）
 
-> 本文件定义审计**流程和方法**。审计**标准**在 DESIGN-STANDARD.md 中。
-> Audit agent 执行审计时，必须同时读取本文件和 DESIGN-STANDARD.md。
+> ## 本文是 SOT (Single Source of Truth)
+>
+> 本文件定义审计**流程和方法**；审计**标准**在 `DESIGN-STANDARD.md` 中。
+> Audit agent 执行审计时，必须同时读取本文件和 `DESIGN-STANDARD.md`。
+>
+> 两条流水线（PDF/HTML + DOCX）共享 Phase 1（pre-render）+ Phase 4（翻译质检）+ Phase 5（全变体验证）。
+> Phase 2（构建）+ Phase 3（post-render 视觉）按各自流水线实现：
+> - **PDF/HTML 流水线**：`build-variant.js` + `audit-visual.js`（Playwright）
+> - **DOCX 流水线**：`generator.py` + `ai-qa.py` 3 轮 fix-or-escalate + anti-cheat + 人工 review
+>
+> 详见 §八 DOCX 流水线审计适配。
 
 ---
 
@@ -241,6 +250,76 @@ node tools/build-all.js --product products/<name>
 
 ---
 
+## 八、DOCX 流水线审计适配
+
+> DOCX 流水线（`swiss/tools/docx-pipeline/`）共享 SOT 但实现路径不同。本节说明哪些 Phase 直接复用、哪些需要替代实现。
+
+### 8.1 Phase 共享/替代矩阵
+
+| Phase | PDF/HTML | DOCX | 说明 |
+|------|---------|------|------|
+| 1a JSON 结构 | source JSON 校验 | `strings/{lang}.md` 结构校验 | 等效：检查 key 唯一 + 表格分组对齐 |
+| 1b 翻译完整性 | compiled JSON 空值 + `{{}}` 残留 | `strings/{lang}.md` 空值 + master_unpacked 中 `{{*}}` 残留 | **完全共享语义**，工具不同 |
+| 1c 图片资源 | images.json 校验 | W50 母版自带，仅检查 `word/media/` 完整 | W50 锁定，新 SKU 才需校验 |
+| 2 Build | `build-variant.js` | `generator.py --lang {lang}` | 各自实现 |
+| 3a 页面溢出 | Playwright scrollHeight | **页数变化** + **text_ratio** 代理 + 人工抽样 | DOCX 无 Playwright；C8/C9 转 §8.2 |
+| 3b 图片渲染 | Playwright 边界检查 | W50 母版固定 + LO/Word 渲染 PNG 抽样 | 同上 |
+| 3c 数据残留 | HTML 文本 grep | docx 文本提取 grep | **完全共享语义** |
+| 4a CJK 残留 | HTML 文本 + compiled JSON | docx 文本 + `strings/{lang}.md` | **完全共享语义** |
+| 4b T1/T2/T3 翻译失败 | 同 PDF 流水线 | 同 PDF 流水线 | **完全共享语义** |
+| 4c Workbook 同步 | 同 PDF 流水线 | 同 PDF 流水线 | **完全共享语义** |
+| 4d 单位一致性 | 同 PDF 流水线 | 同 PDF 流水线 | **完全共享语义** |
+| 5 全变体验证 | 21 个 HTML | 7 个 docx（cn/en/de/it/gb/hk/tw） | 各自实现 |
+
+### 8.2 DOCX 专属 anti-cheat（替代 Phase 3 视觉审计的"硬底线"部分）
+
+| 检查项 | 阈值 | 严重级别 |
+|-------|------|---------|
+| `wt_count` (w:t 节点数) | ≥ 300 | ERROR |
+| `image_hack` (整页图片替换) | false | ERROR |
+| `text_ratio` | [0.95, 1.20] | ERROR |
+| `validate.py` (官方 docx skill) | 通过 | ERROR |
+| MS Word COM 打开（`compare_word.py` / `docx2pdf`） | 不报错 | ERROR（W28 教训）|
+| 页数 = 15 (±1) | 是 | ERROR |
+| `score_candidate.py`（仅 CN 有 target PDF） | = W50 (7.21/10.13) ±0.01 | ERROR |
+
+任何一道挂 → 拒收 patch + 回滚。Python 实现见 `.claude/skills/docx-pipeline/references/anti-cheat-impl.md`。
+
+### 8.3 3 轮 fix-or-escalate（DOCX 替代多轮 sweep）
+
+DOCX 流水线**不做研究式调优**（W27→W50 那套 50 轮 sweep 是研究阶段，已结束）。生产阶段规则：
+
+```
+每个非 CN 语言生成后：
+  迭代 N (N=1,2,3):
+    1. 跑 Phase 1+3+4 检查（按 8.1 矩阵适配 DOCX）
+    2. 跑 anti-cheat 三道闸 + 页数 + Word COM（8.2）
+    3. 若全通过 → 标记 PASS，下一语言
+    4. 若有具体可定位错误（如 wt_count<300 / CJK 残留 / 页数 14）：
+       a. 精准定位（哪页 / 哪段 / 哪个 placeholder）
+       b. 单维度 fix（一轮只改一处）
+       c. 写 patches/{lang}.md 日志
+       d. 重跑步骤 1-3
+    5. 若 N=3 仍未通过 → 停，写诊断报告，转人工
+```
+
+**禁用**：sub-cohort sweep、研究式 lever exploration、5+ 轮迭代。
+
+### 8.4 DOCX 人工 review gate
+
+下述节点必须**大 boss 或指定人工 reviewer** 通过才能继续：
+
+| Gate | 触发 | 检查内容 |
+|------|------|---------|
+| G1 母版生成 | 阶段 1 完成 | PLACEHOLDER_MAP 命名合理、round-trip CN = W50 零误差、抽样占位符位置合理 |
+| G2 翻译对齐 | 阶段 2 完成 | spot-check 关键术语跨语言一致（IMT050/Wevac/制冰机/警告/单位） |
+| G3 批量生成完成 | 阶段 3 完成 | 7 个 docx 抽样人工看（LO 渲染 PNG）、ACCEPTANCE_REPORT.md review |
+| G4 fix-or-escalate 升级 | 任意语言 N=3 未通过 | 诊断报告 review + 决定（人工修 / 改 strings / 砍语言交付） |
+
+详见 `.claude/skills/docx-pipeline/SKILL.md`。
+
+---
+
 ## 变更记录
 
 | 版本 | 日期 | 变更内容 |
@@ -248,3 +327,4 @@ node tools/build-all.js --product products/<name>
 | v1.0 | 2026-03-16 | 初稿创建：5 阶段审计流程、翻译质检规则（3 种失败模式）、全变体验证矩阵、工具清单 |
 | v1.1 | 2026-03-12 | 回写 V23 派生审计经验：rowspan 错位、长页留白、保修分页、正文与规格表单位一致性、批准版派生检查 |
 | v1.2 | 2026-03-12 | 强化共性检查点：同组图片尺寸失衡、保修同范围拆页退化、产品 README 与公共 QA 的归属边界 |
+| v1.3 | 2026-05-17 | **升级为 SOT**：双流水线共享声明，新增§八 DOCX 流水线审计适配（Phase 共享矩阵、anti-cheat、3 轮 fix-or-escalate、4 个人工 review gate） |

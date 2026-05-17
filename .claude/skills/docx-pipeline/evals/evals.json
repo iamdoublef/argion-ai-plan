@@ -1,0 +1,55 @@
+{
+  "skill_name": "docx-pipeline",
+  "evals": [
+    {
+      "id": 0,
+      "name": "stage1-cn-roundtrip-G1",
+      "prompt": "用 docx-pipeline skill 走阶段 1：从 W50 docx 提取占位符做成 master + strings/cn.md + PLACEHOLDER_MAP.md + generator.py，跑 cn round-trip 验证，准备好 Gate G1 给大 boss review。\n\n输入：\n- W50 母版源: research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/final/imt050-wevac-eu-cn.docx (评分 7.21/10.13)\n- 评分脚本: research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/score_candidate.py\n- 官方 docx skill: C:\\Users\\iamdo\\.claude\\skills\\docx\\scripts\\office\\{unpack,pack,validate}.py\n- SOT 视觉规范: research/yjs-manual-opt/swiss/DESIGN-STANDARD.md\n- SOT 审计规范: research/yjs-manual-opt/swiss/QA-RULES.md\n\n输出（落地到 swiss/tools/docx-pipeline/）：\n- master_template.docx（W50 占位符化）\n- master_unpacked/\n- strings/cn.md\n- docs/PLACEHOLDER_MAP.md\n- generator.py\n- round_trip_cn.docx\n- docs/G1_review_packet.md（Gate G1 review 材料汇总）\n\n硬要求（违反就废）：\n- round_trip_cn.docx 评分 = W50 (7.21/10.13)，误差 ≤ 0.01\n- master_template.docx 必须通过 validate.py\n- 不替换型号 IMT050 / 品牌 Wevac/Argion / 单位 mm/kg/W/V/Hz（DESIGN-STANDARD §十八 跨语言不变 key）\n- 不合并/拆分 OOXML run\n- 所有 SOT 规范条款引用 DESIGN-STANDARD/QA-RULES，不在 skill 产出物中重新定义\n- commit msg 中文",
+      "expected_output": "完整阶段 1 产物 + round-trip cn 评分 = W50 + G1 review packet（含 PLACEHOLDER_MAP 命名说明、round-trip 评分对照、占位符抽样 30 行）。",
+      "assertions": [
+        {"name": "master_template_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/master_template.docx"},
+        {"name": "strings_cn_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/strings/cn.md"},
+        {"name": "placeholder_map_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/docs/PLACEHOLDER_MAP.md"},
+        {"name": "generator_py_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/generator.py"},
+        {"name": "round_trip_cn_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/round_trip_cn.docx"},
+        {"name": "g1_review_packet_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/docs/G1_review_packet.md"},
+        {"name": "round_trip_score_equals_W50", "type": "score_within", "target": [7.21, 10.13], "tolerance": 0.01, "desc": "round_trip_cn 评分零误差对齐 W50"},
+        {"name": "placeholder_count_match", "type": "custom_check", "desc": "master_template 中 {{*}} 数 = strings/cn.md 表格行数"},
+        {"name": "preserves_model_brand_units", "type": "custom_check", "desc": "strings/cn.md 不把 IMT050/Wevac/Argion/mm/kg/V/Hz/W 作为可翻译 value（跨语言不变 key）"},
+        {"name": "no_run_merge_split", "type": "custom_check", "desc": "master_template 与 W50 的 w:r 节点数差 ≤ 5（不允许合并/拆分 run）"},
+        {"name": "validate_pass", "type": "custom_check", "desc": "master_template.docx 通过官方 validate.py"},
+        {"name": "g1_packet_references_sot", "type": "text_contains_any", "files": ["swiss/tools/docx-pipeline/docs/G1_review_packet.md"], "values": ["DESIGN-STANDARD", "QA-RULES", "§十八", "SOT"]},
+        {"name": "no_sot_reduplication_in_skill_outputs", "type": "custom_check", "desc": "skill 产出物中不重新定义视觉/审计规范条款，全部引用 SOT"},
+        {"name": "commit_msg_chinese", "type": "custom_check", "desc": "git log 看最近 commit msg 是中文"},
+        {"name": "respects_naming_convention", "type": "text_not_contains_any", "files": ["swiss/tools/docx-pipeline/docs/G1_review_packet.md", "swiss/tools/docx-pipeline/docs/PLACEHOLDER_MAP.md"], "values": ["老板", "儿子", "家属"]}
+      ],
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "stage2-3-de-gen-fix-or-escalate",
+      "prompt": "上一步已经做好 swiss/tools/docx-pipeline/ 下的 master_template.docx + strings/cn.md + generator.py + round-trip cn = W50。现在继续用 docx-pipeline skill 做德语版，走阶段 2-3。\n\n阶段 2（翻译对齐）：\n- 从 swiss/template/imt050-master-de.html 解析德语翻译\n- 用 PLACEHOLDER_MAP.md 的 key 对齐 → strings/de.md\n- 跨语言不变 key 保持原值（IMT050/Wevac/mm/kg/Hz/V/W 等）\n\n阶段 3（生成 + 3 轮 fix-or-escalate）：\n- generator.py --lang de → output/imt050-wevac-eu-de.docx\n- 跑 QA-RULES §8.1 矩阵 + §8.2 anti-cheat 三道闸 + Word COM\n- 若有具体 ERROR：单维度 fix → patches/de.md 写日志 → 重 generator → 重检查\n- 上限 3 轮。3 轮没修通 → 写 docs/diagnosis-de.md 转人工\n\n硬要求：\n- patches/de.md 至少有 1 条（哪怕全 ✅ Applied 也行）\n- 每条 patch 单维度（一处改动）\n- 不出现禁忌 lever：w:contextualSpacing / w:val=\"nil\" / 全局 w:lineRule=auto→exact（W28/W33/W46 教训）\n- 不做 sub-cohort sweep / 不超过 3 轮 / 不探索性试 lever\n- 全部规范引用 SOT (DESIGN-STANDARD §十八 / QA-RULES §八)\n- commit msg 中文",
+      "expected_output": "swiss/tools/docx-pipeline/output/imt050-wevac-eu-de.docx + strings/de.md + patches/de.md (≤ 3 条记录) + 若未通过的 docs/diagnosis-de.md。",
+      "assertions": [
+        {"name": "strings_de_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/strings/de.md"},
+        {"name": "de_docx_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/output/imt050-wevac-eu-de.docx"},
+        {"name": "patches_de_exists", "type": "file_exists", "path": "swiss/tools/docx-pipeline/patches/de.md"},
+        {"name": "anti_cheat_wt_count", "type": "custom_check", "desc": "de docx wt_count ≥ 300 (QA §8.2)"},
+        {"name": "anti_cheat_no_image_hack", "type": "custom_check", "desc": "de docx image_hack == false (QA §8.2)"},
+        {"name": "anti_cheat_text_ratio", "type": "custom_check", "desc": "de docx text_ratio ∈ [0.95, 1.20] vs CN baseline (QA §8.2)"},
+        {"name": "validate_pass", "type": "custom_check", "desc": "de docx 通过 validate.py"},
+        {"name": "word_com_opens", "type": "custom_check", "desc": "de docx MS Word COM 可打开（docx2pdf 不报错）"},
+        {"name": "page_count_15", "type": "custom_check", "desc": "de docx 总页数 = 15 (±1)"},
+        {"name": "cross_lang_invariants_preserved", "type": "custom_check", "desc": "strings/de.md 中 IMT050/Wevac/mm/kg/Hz/V/W 等 key 保持 CN 原值"},
+        {"name": "no_cjk_in_de", "type": "custom_check", "desc": "output/imt050-wevac-eu-de.docx 文本中不含 CJK 字符 (QA §4a)"},
+        {"name": "patches_at_most_3", "type": "custom_check", "desc": "patches/de.md 条目数 ≤ 3（3 轮上限）"},
+        {"name": "single_lever_per_patch", "type": "custom_check", "desc": "patches/de.md 每条只改一处（selector + before + after）"},
+        {"name": "no_forbidden_levers", "type": "text_not_contains_any", "files": ["swiss/tools/docx-pipeline/patches/de.md", "swiss/tools/docx-pipeline/output/imt050-wevac-eu-de.docx"], "values": ["contextualSpacing", "w:val=\"nil\"", "lineRule w:val=\"auto\""]},
+        {"name": "no_sweep_language", "type": "text_not_contains_any", "files": ["swiss/tools/docx-pipeline/patches/de.md"], "values": ["sub-cohort", "sweep", "Goldilocks", "二次扫描", "探索 lever"]},
+        {"name": "references_sot_in_patches", "type": "text_contains_any", "files": ["swiss/tools/docx-pipeline/patches/de.md"], "values": ["QA-RULES", "DESIGN-STANDARD", "§八", "§8.", "§十八"]},
+        {"name": "escalation_handled", "type": "custom_check", "desc": "若 3 轮未通过 anti-cheat → docs/diagnosis-de.md 必须存在且含未通过的 ERROR 列表 + 推测原因 + 给大 boss 的建议"}
+      ],
+      "files": []
+    }
+  ]
+}

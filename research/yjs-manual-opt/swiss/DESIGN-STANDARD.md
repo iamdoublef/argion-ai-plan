@@ -1,12 +1,33 @@
-# Swiss Template Design Standard (A5 Booklet)
+# Swiss 说明书设计规范（SOT · 双流水线共享）
 
-**版本**：v1.5  
-**日期**：2026-03-12  
-**基准来源**：V23 模版 CSS + `data/d5-manual-standard.md` v2.0  
-**适用范围**：所有 Swiss A5 booklet 产品说明书模版（`swiss/template/*-master-*.html`）
+**版本**：v1.6
+**日期**：2026-05-17
+**基准来源**：V23 模版 CSS + `data/d5-manual-standard.md` v2.0
+**适用范围**：Swiss A5 booklet 产品说明书 — **PDF/HTML 流水线 + DOCX 流水线 共享规范**
 
-> 本文件是 Swiss A5 模版**唯一设计基准**。模版创建、审计、修正均以此为标准。
-> 与 d5 冲突时，以本文件为准（本文件已考虑 A5 适配）。
+> ## 本文是 SOT (Single Source of Truth)
+>
+> Swiss 说明书有两条流水线，必须保持**一致**：
+> - **PDF/HTML 流水线**：`swiss/tools/build-variant.js` + `swiss/template/*-master-*.html` → `output/*.pdf`
+> - **DOCX 流水线**：`swiss/tools/docx-pipeline/` + W50 母版 + 占位符 → `output/*.docx`
+>
+> 两条流水线**输出语义必须一致**，由本文件 + `QA-RULES.md` 定义"一致"的判定。
+>
+> ## 条款分类
+>
+> 本文正文条款若未明确标注，默认为**语义层**（双方共享）。
+> - **[语义]**（默认）：内容、颜色语义、字号语义、警示三级、内容结构、单位口径 — **PDF + DOCX 必须一致**。
+> - **[PDF 实现]**：CSS 选择器、border-left/right、flex 布局、Playwright 视觉审计 — **仅 PDF 流水线适用**。
+> - **[DOCX 实现]**：OOXML 元素、`w:shd`/`w:pBdr`/`w:rPr`、anti-cheat 三道闸 — **仅 DOCX 流水线适用**（见 `.claude/skills/docx-pipeline/references/ooxml-map.md` 把语义条款映射到 OOXML）。
+>
+> ## 双流水线一致性原则
+>
+> 1. **批准版基准**：CN 中文版（PDF 已交付 + W50 docx 7.21/10.13）是事实批准版。其他语言、其他流水线必须以此为锚。
+> 2. **结构不可漂移**：章节顺序、分页逻辑、图文组织 PDF/DOCX 必须一致（C18）。
+> 3. **数据同源**：翻译文本同源于 `swiss/template/imt050-master-{lang}.html` 与 `swiss/tools/docx-pipeline/strings/{lang}.md`，互为冗余备份。
+> 4. **规范变更需双向同步**：本文件改动 → PDF 模板 + DOCX 母版必须一起更新，单边变更视为不合规。
+>
+> 与 d5 冲突时以本文件为准。
 
 ### 变更记录
 
@@ -18,6 +39,7 @@
 | v1.3 | 2026-03-11 | 新增§十七内容结构约束（10条规则，含[结构]/[渲染]分类标签）；figure-row 多图 CSS 修复；IMT050 保修卡分页修复 |
 | v1.4 | 2026-03-12 | 回写 V23 批准版派生经验：图片承载尺寸、保修信息/保修卡分页、长页留白控制、表格 rowspan 防护、正文与规格表单位一致性 |
 | v1.5 | 2026-03-12 | 强化经验归属：明确本文件只记录可复用规则；补充同组图片尺寸失衡、保修同范围拆页、rowspan 空白单元格等判定口径 |
+| v1.6 | 2026-05-17 | **升级为 SOT**：双流水线（PDF + DOCX）共享规范声明，加 [语义]/[PDF 实现]/[DOCX 实现] 条款分类，加双流水线一致性原则。新增§十八 DOCX 实现映射小节 |
 
 ---
 
@@ -670,3 +692,66 @@ foreach ($f in $files) {
 | C17 | 含 `rowspan` 的结构化表格，分类列跨行数必须与实际数据行数严格一致 | [结构] | 修改分类项或行数后必须同步检查 rowspan；禁止“视觉上差不多”的手工估算；由 rowspan 错位引起的空白单元格视为错误 |
 | C18 | 同一产品线一旦确认中文批准版，后续地区/品牌变体不得漂移正文结构、分页逻辑和图文组织 | [结构] | 允许变化的仅限品牌字段、主题 token、本地化文本和法规/市场必需差异 |
 | C19 | 同一变体中的正文单位表达必须与规格表单位保持一致 | [结构] | 单位更新视为同一任务：正文和规格表必须一起改，不允许双套口径并存；正文已改而规格表未改同样视为不合规 |
+
+---
+
+## 十八、DOCX 流水线实现映射 [DOCX 实现]
+
+> 本节定义 §一-§十七 的语义条款在 DOCX 流水线下如何实现。详细 OOXML 映射见 `.claude/skills/docx-pipeline/references/ooxml-map.md`。
+
+### 18.1 母版与生成模型
+
+DOCX 流水线不动态生成布局，而是**复用 W50 母版**（`research/yjs-manual-opt/swiss/00_discussions/2026-05-pdf-to-docx-fidelity/final/imt050-wevac-eu-cn.docx`，评分 7.21/10.13）作为视觉基准：
+
+- 母版 = W50 docx 的占位符化版本（200-400 个 `{{key}}`）
+- 生成 = `generator.py` 把 `strings/{lang}.md` 的译文替换进 master_unpacked，pack 成 `output/imt050-wevac-eu-{lang}.docx`
+- W50 母版本身已经实现了 §一-§十七 的视觉效果（CSS-equivalent OOXML）
+
+### 18.2 条款映射速查
+
+| SOT 条款 | DOCX 实现 |
+|---------|----------|
+| §二 色彩（swiss-black/red/gray-bg/gray-text） | `w:color`/`w:shd w:fill` 用对应色值；GRAY 在 footer*.xml 中需独立设置 |
+| §三 字号语义 | `w:sz`（half-point 单位）；长语言补偿（DE/IT）见 18.3 |
+| §五 §六 §七 标题/表格/警示 | W50 母版已实现；不要重新搭，只替换文本内容 |
+| §十一 Compact 类（溢出管理） | DOCX 无 CSS class；由 W50 母版的几何/字距 baked-in；DE/IT 溢出靠 18.3 补偿 |
+| §十三 内容结构（标准页面序列） | W50 母版固定 15 页结构；新语言不得改变页数（页数 ≠ 15 视为不合规） |
+| §十七 C18 批准版派生不漂移 | DOCX 多语言必须与 W50 CN 视觉对齐，不得为本地化漂移结构 |
+| §十七 C19 正文单位与规格表一致 | 单位作为跨语言不变 key（如 `spec_unit_v="V"`）从 `strings/cn.md` 锁定 |
+
+### 18.3 DOCX 语言补偿
+
+PDF 流水线靠 CSS（line-height/font-size）补偿 DE/IT；DOCX 流水线靠 W50 baked-in OOXML 微调 + 必要时按 18.4 的 fix 模式微调：
+
+- 若 DE/IT 文本溢出导致页数变化 → fix-or-escalate（见 18.4），不要 sweep 调优
+- 不可改维度：`w:contextualSpacing`（W28 教训）、`w:val="nil"` 边框（W46 教训）、全局 `w:lineRule=auto→exact`（W33 教训）
+
+### 18.4 3 轮 fix-or-escalate
+
+DOCX 多语言生成后若出现具体可定位的不合规（如：page 数变、`{{*}}` 残留、CJK 残留、anti-cheat 挂、Word COM 打不开）：
+
+- 每轮：**精准定位 → 单维度 fix → 验证**，不做 sweep
+- 上限：**3 轮**。3 轮未修通 → 停 + 写诊断报告 → 转人工
+- 不要把生产流水线变成研究式调优
+
+详见 `.claude/skills/docx-pipeline/SKILL.md` §"3 轮 fix-or-escalate"。
+
+### 18.5 哪些 SOT 条款不在 DOCX 自动验证里
+
+DOCX 流水线**无 Playwright**，下述 [渲染] 条款转为人工 review：
+
+- C3 step 不跨页 → 人工抽样
+- C4 figure 容器宽度 → W50 母版固定
+- C5 图片右边界 → W50 母版固定
+- C8 页面溢出 → 用页数变化 + text_ratio 代理；最终人工 review
+- C9 DE/IT 文本溢出 → 同上 + 必要时 fix-or-escalate
+- C11 / C12 图片标注可辨认 → W50 母版固定 + 人工抽样
+- C14 / C15 留白失衡 → 人工抽样
+
+强制项（DOCX 自动）：
+- 数据残留（`{{*}}` / `undefined` / `null` / `TODO`）
+- CJK 残留（en/de/it 不许有汉字）
+- anti-cheat 三道闸（wt_count ≥ 300 / image_hack=false / text_ratio ∈ [0.95, 1.20]）
+- validate.py 通过
+- Word COM 打开（W28 硬约束）
+- 页数 = 15（±1）
