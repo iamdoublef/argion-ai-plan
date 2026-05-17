@@ -1,8 +1,21 @@
 # IMT050 Word DOCX 视觉保真评分记录
 
-## 当前最优：W31（design-iter-36 多维 pgMar 扫描 + iter-37 设计修复叠加）
+## 当前最优：W33（design-iter-41 path-kern-smallsz iter-11 — 小字号 spacing DOWN）
 
 - **文件**: `final/imt050-wevac-eu-cn.docx`
+- **LibreOffice 渲染评分**: `8.28 / 12.06`（mean / max）— 突破 W32 plateau，max -0.08
+- **手法**: W32 基础上对 sz=11 (35 sites, RED accent) + sz=12 (22 sites, Arial Black/Arial) 的 rPr w:spacing 从 5 收紧到 2 — 与 sz=14 的 spacing UP 完全反向
+- **要点**: 大字号 (sz=14, 7pt) 缺空, 小字号 (sz=11/12, 5.5-6pt) 过空, 方向相反
+- 详见: `design-iter-41/path-kern-smallsz/STATUS.md`
+
+## 历史 W32（design-iter-36 多维 pgMar 扫描 + iter-37 设计修复 + iter-39 rPr 字距）
+
+- **LibreOffice 渲染评分**: `8.28 / 12.14`（mean / max，重测 W32 base）
+- **手法**: W31 + sz=14 BLACK rPr w:spacing 5→8 (71 sites)
+- 已被 W33 替换
+
+## 历史 W31（design-iter-36 多维 pgMar 扫描 + iter-37 设计修复叠加）
+
 - **LibreOffice 渲染评分**: `8.30 / 12.20`（mean / max）— 突破 W30 plateau
 - **Anti-cheat**: PASS（wt_count=446, image_hack=false, text_ratio=1.0, drawings=16）
 - **MS Word 可打开**: PASS（docx2pdf Word COM 渲染 15 页）
@@ -304,3 +317,30 @@ docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较
 - val=9 在新基线下让 p10/p12 超阈值；val=8 是新甜区
 
 **累计 plateau 突破**：8.67 → 8.27 = **-0.40**（5 个 winner，30+ 路径都不知道的甜区集合）
+
+### iter-31 swiss-pipeline backport 完成 ✅ 里程碑
+
+**boss 第二核心目标达成**：swiss pipeline 视觉改善 + 模板化批量交付
+
+**评分**：
+- Swiss baseline: 13.87 / 26.65
+- **Swiss 最终: 11.74 / 18.83**（mean -15.4%, max -29.3%）
+
+**关键改动 5 项**：
+1. **Line spacing 公式 bug 修复**：原公式 `Math.max(180, size * 13.5)` 算出 0.79 行高（错），改为 280 ≈ 1.16 行高 — **单项最大贡献**
+2. W27 字号集（body 7pt, table 6.7pt, header 6pt, small 5.4pt）通过新的 `DEFAULT_DOCX_SIZES` 路由（theme-overridable）
+3. 手动 `•   ` 红色 Arial Black bullet 替代 docx-js numbering（LO 渲染问题）
+4. 内联 shaded step-flow badge（替代 2-col 表）
+5. `cellWarranty` 边距 + `isWarrantyTable()` + `compactSafety` flags
+
+**模板化保留**：
+- imt050 (cn/gb/hk/de) + v23 (wevac/vesta/act) — 所有变体验证通过
+- brand-themes.json > <brand>.docx 接受 `sizes` / `images` / `margins` override 块
+- 文字替换批量交付能力完整
+
+**剩余 3 分差距**：结构性，HTML vs JSON 段落树差异
+
+**含义**：
+- 通过 Swiss pipeline 已经能交付 11.74 视觉 + 完整多 SKU 模板化
+- 通过 W32 final docx 能交付 8.28 视觉但单一型号
+- 客户可以选择交付链：Swiss pipeline（批量 + 视觉 11.74）或 W32 final（单 SKU + 视觉 8.28）
