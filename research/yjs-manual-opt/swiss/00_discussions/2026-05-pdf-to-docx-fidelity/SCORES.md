@@ -58,8 +58,9 @@
 
 | Winner | Path | Visualdiff | 备注 |
 |--------|------|-----------|------|
-| W32 | iter-39 path-docx-skill-stack (iter-9) | **8.27 / 12.22** | **当前 final** — W31 + sz=14 black rPr spacing 5→8 (71 sites) |
-| W31 | iter-36 + iter-37 双层叠加 | 8.30 / 12.20 | pgMar + 设计修复正交叠加 (前 final) |
+| W33 | iter-41 path-kern-smallsz (iter-11) | **8.28 / 12.06** | **当前 final** — W32 + sz=11+sz=12 rPr spacing 5→2 (57 sites) |
+| W32 | iter-39 path-docx-skill-stack (iter-9) | 8.28 / 12.14 | W31 + sz=14 black rPr spacing 5→8 (71 sites) — 前 final |
+| W31 | iter-36 + iter-37 双层叠加 | 8.30 / 12.20 | pgMar + 设计修复正交叠加 |
 | W30a | design-iter-36 path-margin-sweep | 8.57 / 12.26 | 仅 pgMar 多维 |
 | W30b | design-iter-37 path-design-fixes | 8.54 / 12.24 | 仅设计修复 |
 | W29 | design-iter-33 path-ooxml-microtune | 8.63 / 12.30 | 前 final |
@@ -344,3 +345,35 @@ docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较
 - 通过 Swiss pipeline 已经能交付 11.74 视觉 + 完整多 SKU 模板化
 - 通过 W32 final docx 能交付 8.28 视觉但单一型号
 - 客户可以选择交付链：Swiss pipeline（批量 + 视觉 11.74）或 W32 final（单 SKU + 视觉 8.28）
+
+### W33 突破 ✅ (2026-05-17, iter-41 path-kern-smallsz — 小字号 spacing 反向收紧)
+
+**第四层突破**：8.28 mean (持平 W32) / **12.06 max (-0.08 vs W32 12.14)**
+
+- 方法：W32 sz=14 BLACK spacing UP 之后，转头查 sz=11/sz=12 小字号 cohort
+- **关键发现**：sz=11 (35 sites, RED Arial Black accent) + sz=12 (22 sites, Arial Black/Arial)
+  原本 spacing=5；调到 **val=2** (减少, 与 sz=14 反向) 即破局
+- iter-9 (sz=11 only) 8.28/12.07；iter-11 (sz=11 + sz=12 stacked) **8.28/12.06**
+- 改善: p5 -0.04, p14 -0.08；回归全部 <= +0.04
+- val=2 是甜区；val=0 (移除) 过冲 (mean +0.02)；val=3 不足；val=5→8 错向 (mean +0.01)
+- **w:kern 完全无效**：iter-2/iter-3/iter-6 验证 LO Writer 对低/高 threshold kern 都几乎无渲染响应
+- Word-safe: validate.py PASS (328 → 328) + Word COM 7s 无错误
+- 路径: `design-iter-41/path-kern-smallsz/iter-11/output.docx`
+- candidate: `final/candidates/W33-iter41-sz11sz12-tighten-spacing.docx`
+
+**方法论教训**：
+- **不同字号 cohort 的 spacing 方向是反的**：sz=14 (7pt) 缺空 → UP；sz=11/12 (5.5-6pt) 过空 → DOWN
+- 一刀切（"所有字号都改"）会顾此失彼；按 cohort 分别调才能堆叠
+- **w:kern 是死路**（LO Writer 对此基本不响应）；不要再花轮在 kern 上
+- sz=10 cohort 太敏感（包含 p4 +0.06 超容差），需要色/字体子分组
+
+### W30 → W33 累计突破
+
+| Winner | 评分 | 突破方法 | Δ vs 前 |
+|--------|------|---------|---------|
+| W30a | 8.57 / 12.26 | pgMar 多维子像素扫描 | base plateau 突破 |
+| W31 | 8.30 / 12.20 | W30a + W30b 设计修复正交叠加 | -0.27/-0.06 |
+| W32 | 8.28 / 12.14 | W31 + sz=14 BLACK rPr spacing 5→8 | -0.02/-0.06 |
+| W33 | **8.28 / 12.06** | W32 + sz=11+sz=12 rPr spacing 5→2 |持平/**-0.08** |
+
+**累计 plateau 突破**：8.67 → 8.28 = **mean -0.39**，12.35 → 12.06 = **max -0.29**（6 个 winner，30+ 路径都未发现的甜区集合）

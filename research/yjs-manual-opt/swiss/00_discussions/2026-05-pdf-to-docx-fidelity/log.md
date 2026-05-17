@@ -166,8 +166,45 @@ node export-docx.js --region cn --product products/imt050
 2. 或先用 final/imt050-wevac-eu-cn.docx 在 Word 实测编辑性，确认后再交付
 3. （主版 export-docx.js 已被 B1 改成紧凑版，影响所有 region/brand 后续产出 — 这是个 commit 级决策，需大 boss 确认是否 commit）
 
+---
 
+## 2026-05-17 10:15 · design-iter-41 · W33 小字号字距收紧突破 8.28/12.06
 
+**操作**：在 W32 (8.27/12.22 → 重测 8.28/12.14) 基础上沿"小字号字距 cohort"继续突破。
+
+**iter 概要**（12 个）：
+
+| iter | 改动 | mean | max | 结论 |
+|---|---|---|---|---|
+| 1 | grep w:kern | — | — | body 0 处, styles 仅 sz=52 |
+| 2 | w:kern val=2 → sz=14 BLACK (71) | 8.28 | 12.14 | 无效 |
+| 3 | w:kern val=14 → sz=14 全部 (88) | 8.28 | 12.13 | 微差 |
+| 4 | sz=12 spacing 5→8 (22) | 8.28 | 12.14 | 平 |
+| 5 | sz=11 spacing 5→8 (35) | 8.29 | 12.17 | ❌ 反向回退 |
+| 6 | sz=12 5→8 + kern val=14 (22+327) | 8.28 | 12.14 | 平 |
+| 7 | sz=14 非BLACK spacing 8→9 (17) | 8.28 | 12.14 | 平 |
+| 8 | sz=11 spacing 5→3（**反向**）| 8.28 | 12.11 | ✅ 首信号 |
+| 9 | sz=11 spacing 5→2 | 8.28 | 12.07 | ✅ max -0.07 |
+| 10 | sz=11 spacing remove (val=0) | 8.30 | 12.07 | ❌ mean 回退 |
+| **11** | **sz=11 + sz=12 5→2 stacked (57)** | **8.28** | **12.06** | **✅ 全门 PASS** |
+| 12 | iter-11 + sz=10 5→2 (+15) | 8.28 | 12.06 | ❌ p4 +0.06 超容差 |
+
+**关键发现**：
+1. **w:kern 在 LO Writer 几乎无效** — 任何 threshold 都只影响 max 0.01 级别
+2. **sz=14 (7pt) 需要更宽 spacing** (W32: 5→8)，**sz=11/sz=12 小字号需要更紧 spacing** (W33: 5→2) — 方向相反
+3. sz=10 太敏感（包含进去 p4 即超容差），sz=10 单独 cohort 留待未来
+4. val=2 是甜点值，val=0 (移除) 过度，val=3 不足
+
+**Final 升级**：
+- W32 → W33 = 8.28/12.06（max -0.08）
+- 备份 `final/imt050-wevac-eu-cn.W32-backup.docx`
+- 候选 `final/candidates/W33-iter41-sz11sz12-tighten-spacing.docx`
+- preview.pdf via Word COM 7s 无错误
+
+**下一推荐**：
+- sz=13 spacing DOWN (5→2)：177 sites 最大未试 cohort，DOWN 方向未验证
+- sz=10 GRAY 或 RED 子集（分色而非整 cohort）
+- 差分按页（spacing=2 只在 p5/p14 段落，避免 p9 +0.04 漂移）
 
 
 
