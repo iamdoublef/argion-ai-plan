@@ -1,0 +1,48 @@
+You are Codex doing design-iter-29. Plateau confirmed at W27 (8.67/12.35) on LibreOffice baseline across 28 paths.
+
+NEW INSIGHT: Scoring uses LibreOffice render, but customer opens in MS Word. Word render of W27 is 9.16/15.27 (WORSE than LO). So we've been optimizing for the wrong target. Word renders CJK with different kerning/line-spacing than LibreOffice. Pages where Word does much worse than LO: p3 (+3.23), p9 (+1.87), p11 (+2.10), p14 (+2.10). Pages where Word does better: p6 (-2.24), p13 (-1.90).
+
+NEW GOAL: Optimize specifically for what Word renders. Try OOXML/python-docx settings that python-docx-as-LO-pattern doesn't notice but Word will:
+
+1. w:rPr/w:kern w:val (kerning threshold) — Word reads this, LO often ignores
+2. w:spacing w:after/before in micro-tweaks specific to Word's CJK paragraph metrics
+3. w:rPr/w:szCs (complex script size) different from w:sz — Word distinguishes for CJK
+4. East Asian font hint w:hint="eastAsia" on ALL Chinese runs (currently may be mixed)
+5. w:adjustRightInd, w:autoSpaceDE, w:autoSpaceDN explicitly w:val="0" — but ONLY on body paragraphs, NOT on document-default (avoid the W28 breakage)
+6. tcMar (table cell margins) tighter on hard pages (p3/p9/p11/p14)
+
+⚠️ Word compatibility gate: each iter must pass `PYTHONUTF8=1 python ../../design-iter-06/compare_word.py iter-N/output.docx iter-N/word_render.pdf`
+
+EVAL: score TWO ways:
+1. LibreOffice baseline (existing score_candidate.py)
+2. Word baseline: render iter-N/word_render.pdf to PNGs, compare against ../../baseline/target_png
+
+Accept iter if EITHER baseline improves AND neither regresses >0.5.
+
+STARTER: design-iter-22/path-codex/build_b2_docx.py (W27 builder)
+WORKDIR: design-iter-29/path-codex
+Up to 6 iter. STATUS.md. PYTHONUTF8=1.
+
+For Word baseline scoring, you can adapt this snippet:
+```python
+import fitz, numpy as np
+from PIL import Image
+from pathlib import Path
+def render_pdf_pngs(pdf, outdir):
+    doc = fitz.open(pdf); outdir.mkdir(exist_ok=True, parents=True)
+    for i,p in enumerate(doc):
+        pix = p.get_pixmap(matrix=fitz.Matrix(150/72,150/72), alpha=False)
+        pix.save(str(outdir / f'page-{i+1:02d}.png'))
+def diff_dirs(a_dir, b_dir):
+    a=sorted(Path(a_dir).glob('*.png')); b=sorted(Path(b_dir).glob('*.png'))
+    ds=[]
+    for x,y in zip(a,b):
+        ai=np.array(Image.open(x).convert('RGB')); bi=np.array(Image.open(y).convert('RGB'))
+        if ai.shape!=bi.shape:
+            from PIL import Image as I
+            bi=np.array(I.open(y).convert('RGB').resize((ai.shape[1],ai.shape[0])))
+        ds.append(float(np.abs(ai.astype(int)-bi.astype(int)).mean()))
+    return ds
+```
+
+START NOW.

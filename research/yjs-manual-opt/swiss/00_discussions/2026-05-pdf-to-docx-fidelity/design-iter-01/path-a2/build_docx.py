@@ -417,19 +417,19 @@ class ManualBuilder:
 
         # Header paragraph with top border
         p = header.add_paragraph()
-        set_paragraph_spacing(p, before_pt=0, after_pt=4, line_spacing=1.0)
+        set_paragraph_spacing(p, before_pt=0, after_pt=6, line_spacing=1.0)
         # top border (full width, thick black)
         set_paragraph_border(p, top=(12, "000000"))
         right_tab = Mm(PAGE_W_MM - 2 * PAGE_MARGIN_MM)
         pf = p.paragraph_format
         pf.tab_stops.add_tab_stop(right_tab, alignment=WD_TAB_ALIGNMENT.RIGHT)
-        # left: 威富可
+        # left: 威富可 (matches TARGET span: 6.75pt YaHei-Bold)
         r1 = p.add_run("威富可")
-        set_run_fonts(r1, size_pt=7.5, bold=True, color=C_BLACK)
+        set_run_fonts(r1, size_pt=6.75, bold=True, color=C_BLACK)
         p.add_run("\t")
-        # right: CH.XX — SECTION (Courier New, gray, 5.25pt)
+        # right: CH.XX — SECTION (Courier New, gray, 5.62pt)
         r2 = p.add_run("CHAPTER_REF_PLACEHOLDER")
-        set_run_fonts(r2, size_pt=5.25, color=C_GRAY_TEXT, mono=True)
+        set_run_fonts(r2, size_pt=5.62, color=C_GRAY_TEXT, mono=True)
 
         # ── FOOTER
         footer = section.footer
@@ -500,7 +500,7 @@ class ManualBuilder:
         rPr.append(sp)
 
         # spacers to push image down to ~middle (page is ~210mm tall, image starts ~80mm)
-        for _ in range(4):
+        for _ in range(8):
             spc = self.doc.add_paragraph()
             set_paragraph_spacing(spc, before_pt=0, after_pt=0, line_spacing=1.0)
             spc.add_run("")
@@ -770,22 +770,22 @@ class ManualBuilder:
         else:
             text = block.get("text", "")
 
-        # Per-kind styling
+        # Per-kind styling — matches PDF target
         if kind == "warning":
             border_color = "E63946"
-            shading = "FFFFFF"
+            shading = "FFFFFF"   # warning: thick red border, white interior, ▲ icon
             border_width = 8
             icon_char = "▲"
             icon_color = C_RED
         elif kind == "caution":
-            border_color = "000000"
-            shading = "FFFFFF"
-            border_width = 6
-            icon_char = "▲"
+            border_color = "1A1A1A"
+            shading = "FFFFFF"   # caution: thin black border, WHITE interior, no icon
+            border_width = 4
+            icon_char = ""
             icon_color = C_BLACK
         else:  # notice
             border_color = "8E8E93"
-            shading = "F4F4F4"
+            shading = "F4F4F4"   # notice: gray border, light gray fill, no icon
             border_width = 4
             icon_char = ""
             icon_color = C_BLACK

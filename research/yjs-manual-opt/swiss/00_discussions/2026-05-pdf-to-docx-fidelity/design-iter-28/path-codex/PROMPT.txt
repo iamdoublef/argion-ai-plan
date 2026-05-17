@@ -1,0 +1,28 @@
+You are Codex doing design-iter-28.
+
+⚠️ CRITICAL DISCOVERY: W28 (containing OOXML autoSpaceDE/DN post-process) made the .docx UNOPENABLE in MS Word (Word reports "file may be damaged"). LibreOffice rendered it fine, but Word rejected it. We rolled back to W27 (visual 8.67/max 12.35, MS Word-compatible).
+
+⚠️ Anti-cheat: wt≥300, no image hack, text≤1.20. NEW: MS Word must open the .docx (use docx2pdf which uses Word COM).
+
+Therefore any OOXML post-process must be Word-safe. Earlier OOXML probes (autoSpaceDE, bookmarks, autoSpace, etc.) may have triggered Word's strict validation.
+
+REVISED GOAL: keep visual 8.67 OR better while STAYING WORD-COMPATIBLE.
+
+Try (all WITHOUT OOXML post-process, stay within python-docx API):
+1. Per-page table cell margins tweaks via python-docx
+2. Try paragraph_format.space_after sub-pt variations
+3. Adjust text size by 0.05pt increments
+4. Image scale per-page 99%, 101% via python-docx Image transform
+5. Try paragraph_format.tab_stops for specific layouts
+
+STARTER: design-iter-22/path-codex/build_b2_docx.py (W27 builder, no OOXML hack)
+WORKDIR: design-iter-28/path-codex
+
+PER ITER:
+1. python build_b2_docx.py iter-N/output.docx
+2. Score
+3. VERIFY Word-open: PYTHONUTF8=1 python ../../design-iter-06/compare_word.py iter-N/output.docx iter-N/word_render.pdf
+4. If Word fails → reject the change
+
+Up to 6 iter. STATUS.md. PYTHONUTF8=1.
+START NOW.

@@ -28,7 +28,7 @@ BLACK = "000000"
 DARK = "1A1A1A"
 GRAY = "8E8E93"
 LIGHT_GRAY = "F2F2F7"
-ZEBRA_GRAY = "F4F4F4"
+ZEBRA_GRAY = "F2F2F7"
 BORDER_GRAY = "CCCCCC"
 INFO_BLUE = "007AFF"
 
@@ -36,8 +36,10 @@ LATIN_FONT = "Arial"
 CJK_FONT = "Microsoft YaHei"
 LATIN_BOLD_FONT = "Arial Black"
 MONO_FONT = "Courier New"
+CHAR_SPACING_TWIPS = 5
+WARNING_CHAR_SPACING_TWIPS = 8
 
-BODY_PT = 7.0
+BODY_PT = 7.05
 SECTION_TITLE_PT = 9.0
 SUB_TITLE_PT = 7.5
 CHAPTER_NUM_PT = 13.5
@@ -278,6 +280,30 @@ def set_run_font(run, size=BODY_PT, bold=False, color=BLACK, is_mono=False) -> N
         color_node = OxmlElement("w:color")
         run._element.rPr.append(color_node)
     color_node.set(qn("w:val"), color)
+    if not is_mono:
+        spacing_node = run._element.rPr.find(qn("w:spacing"))
+        if spacing_node is None:
+            spacing_node = OxmlElement("w:spacing")
+            run._element.rPr.append(spacing_node)
+        spacing_node.set(qn("w:val"), str(CHAR_SPACING_TWIPS))
+
+
+def override_run_spacing(run, twips: int) -> None:
+    r_pr = run._element.get_or_add_rPr()
+    spacing_node = r_pr.find(qn("w:spacing"))
+    if spacing_node is None:
+        spacing_node = OxmlElement("w:spacing")
+        r_pr.append(spacing_node)
+    spacing_node.set(qn("w:val"), str(twips))
+
+
+def set_run_position(run, half_points: int) -> None:
+    r_pr = run._element.get_or_add_rPr()
+    pos = r_pr.find(qn("w:position"))
+    if pos is None:
+        pos = OxmlElement("w:position")
+        r_pr.append(pos)
+    pos.set(qn("w:val"), str(half_points))
 
 
 def set_run_shading(run, fill: str) -> None:
@@ -377,6 +403,8 @@ def add_image_paragraph(parent, img: Tag, *, align=WD_ALIGN_PARAGRAPH.CENTER, fo
     style = img.get("style", "")
     alt = img.get("alt", "")
     is_warranty_separator = "Warranty separator" in alt
+    if is_warranty_separator:
+        return None
     max_h = force_h or parse_mm(style, "max-height") or (4.0 if is_warranty_separator else 45)
     pct_w = parse_pct(style, "max-width")
     max_w = force_w or (60.0 if is_warranty_separator else (CONTENT_W_MM * pct_w / 100 if pct_w else CONTENT_W_MM))
@@ -387,7 +415,7 @@ def add_image_paragraph(parent, img: Tag, *, align=WD_ALIGN_PARAGRAPH.CENTER, fo
     p = parent.add_paragraph()
     p.alignment = align
     if is_warranty_separator:
-        p.paragraph_format.space_before = Pt(20)
+        p.paragraph_format.space_before = Pt(0)
         p.paragraph_format.space_after = Pt(0)
     else:
         p.paragraph_format.space_after = Pt(8)
@@ -429,8 +457,8 @@ def add_section_title(doc: Document, node: Tag) -> None:
     set_run_font(r2, size=CHAPTER_TITLE_PT, bold=True, color=BLACK)
 
 
-def add_sub_title(doc: Document, node: Tag) -> None:
-    p = add_para(doc, node.get_text(" ", strip=True), size=SUB_TITLE_PT, bold=True, after=4, before=4)
+def add_sub_title(doc: Document, node: Tag, *, before=4) -> None:
+    p = add_para(doc, node.get_text(" ", strip=True), size=SUB_TITLE_PT, bold=True, after=4, before=before)
     set_paragraph_border(p, bottom={"size": 6, "color": BLACK, "space": 1})
 
 
@@ -442,22 +470,34 @@ def add_bullet_list(
     red_bullet=True,
     tight=False,
     indent_mm=3.2,
+    line_spacing=None,
+    space_after_pt=None,
+    char_spacing_twips=None,
 ) -> None:
     for li in ul.find_all("li", recursive=False):
         p = parent.add_paragraph()
         p.paragraph_format.left_indent = Mm(indent_mm)
         p.paragraph_format.first_line_indent = Mm(-indent_mm)
-        p.paragraph_format.space_after = Pt(1.35 if tight else BULLET_SPACE_AFTER_PT)
-        p.paragraph_format.line_spacing = 0.96 if tight else BULLET_LINE_SPACING
-        bullet = p.add_run(u"\u2022  ")
-        bullet_size = 5.25 if tight else max(5.5, size - 1.0)
+        p.paragraph_format.space_before = Pt(0)
+        after_pt = space_after_pt if space_after_pt is not None else (1.35 if tight else BULLET_SPACE_AFTER_PT)
+        p.paragraph_format.space_after = Pt(after_pt)
+        p.paragraph_format.line_spacing = line_spacing if line_spacing is not None else (0.96 if tight else BULLET_LINE_SPACING)
+        bullet = p.add_run("•    ")
+        bullet_size = 5.25 if tight else 5.8
         set_run_font(bullet, size=bullet_size, bold=True, color=RED if red_bullet else BLACK)
         add_text_runs(p, li, size=size, color=BLACK)
+        if char_spacing_twips is not None:
+            for run in p.runs:
+                override_run_spacing(run, char_spacing_twips)
 
 
 def add_alert_box(doc: Document, node: Tag, *, compact_safety=False) -> None:
     classes = set(node.get("class", []))
     is_note = "note-box" in classes
+    title = node.select_one(".box-title")
+    if is_note and title and "WEEE" in title.get_text(" ", strip=True):
+        spacer = doc.add_paragraph()
+        compact_paragraph(spacer, size=BODY_PT, after=3, line=0.1)
     color = RED if "warning-box" in classes else (BLACK if "caution-box" in classes else GRAY)
     fill = "FFFFFF" if not is_note else LIGHT_GRAY
     table = doc.add_table(rows=1, cols=1)
@@ -467,27 +507,24 @@ def add_alert_box(doc: Document, node: Tag, *, compact_safety=False) -> None:
     cell.vertical_alignment = WD_ALIGN_VERTICAL.TOP
     if not is_note:
         set_cell_borders(cell, color=color, size=12 if color == RED else 8)
-    pad_start = 205 if is_note else 110
+    pad_start = 205 if is_note else 176
     pad_v = 44 if is_note else ALERT_CELL_PAD_V
     set_cell_margins(cell, top=pad_v, start=pad_start, bottom=pad_v, end=110)
     if fill != "FFFFFF":
         set_cell_shading(cell, fill)
-    title = node.select_one(".box-title")
     if title:
         p_title = cell.paragraphs[0]
-        has_real_icon = node.find("img") is not None
-        if not is_note and not has_real_icon and not compact_safety:
-            icon = "\u25B2" if "warning-box" in classes or "caution-box" in classes else "\u2139"
-            icon_color = RED if "warning-box" in classes else (BLACK if "caution-box" in classes else INFO_BLUE)
-            r_icon = p_title.add_run(icon + " ")
-            set_run_font(r_icon, size=7.0, bold=True, color=icon_color)
         r_title = p_title.add_run(title.get_text(" ", strip=True))
         title_size = 6.38 if compact_safety else 6.5
         set_run_font(r_title, size=title_size, bold=True, color=color if color != GRAY else BLACK)
         compact_paragraph(p_title, size=title_size, after=1 if compact_safety else 2)
     for img in node.find_all("img"):
-        p_img = add_image_paragraph(cell, img, align=WD_ALIGN_PARAGRAPH.LEFT, force_h=6, force_w=8)
+        icon_h = 5.2 if compact_safety else 6
+        icon_w = 6.9 if compact_safety else 8
+        p_img = add_image_paragraph(cell, img, align=WD_ALIGN_PARAGRAPH.LEFT, force_h=icon_h, force_w=icon_w)
         if p_img:
+            if compact_safety:
+                p_img.paragraph_format.left_indent = Mm(-3.1)
             p_img.paragraph_format.space_before = Pt(0)
             p_img.paragraph_format.space_after = Pt(1)
     for child in node.children:
@@ -505,8 +542,11 @@ def add_alert_box(doc: Document, node: Tag, *, compact_safety=False) -> None:
                 cell,
                 child,
                 size=6.98 if compact_safety else BODY_PT,
-                tight=compact_safety,
+                tight=compact_safety or is_note,
                 indent_mm=4.7,
+                line_spacing=1.10 if "warning-box" in classes and not compact_safety else None,
+                space_after_pt=0.5 if "warning-box" in classes and not compact_safety else None,
+                char_spacing_twips=WARNING_CHAR_SPACING_TWIPS if "warning-box" in classes else None,
             )
         elif child.name == "p":
             add_para(cell, child, size=BODY_PT, after=1)
@@ -518,6 +558,29 @@ def add_image_row(parent, node: Tag, *, max_h_override=None) -> None:
     imgs = node.find_all("img", recursive=False)
     if not imgs and node.name != "div":
         return
+    if "step-figures" in node.get("class", []) and len(imgs) == 2:
+        p = parent.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p.paragraph_format.left_indent = Mm(30)
+        p.paragraph_format.space_after = Pt(5)
+        p.paragraph_format.line_spacing = 1
+        for i, img in enumerate(imgs):
+            path = image_path(img)
+            if not path.exists():
+                continue
+            style = img.get("style", "")
+            max_h = max_h_override or parse_mm(style, "max-height") or 24
+            pct_w = parse_pct(style, "max-width")
+            max_w = CONTENT_W_MM * pct_w / 100 if pct_w else 45
+            w_mm, h_mm = fit_image_mm(path, max_w, max_h)
+            run = p.add_run()
+            run.add_picture(str(path), width=Mm(w_mm), height=Mm(h_mm))
+            if i == 1:
+                set_run_position(run, 41)
+            if i != len(imgs) - 1:
+                gap = p.add_run("       ")
+                set_run_font(gap, size=7)
+        return
     if "status-indicator-row" in node.get("class", []):
         p = parent.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -525,7 +588,7 @@ def add_image_row(parent, node: Tag, *, max_h_override=None) -> None:
         for child in children:
             if child.name == "span":
                 r = p.add_run(child.get_text(" ", strip=True) + " ")
-                set_run_font(r, size=BODY_PT, bold=True)
+                set_run_font(r, size=6.15, bold=False)
             elif child.name == "img":
                 path = image_path(child)
                 if path.exists():
@@ -556,7 +619,7 @@ def add_image_row(parent, node: Tag, *, max_h_override=None) -> None:
         run.add_picture(str(path), width=Mm(w_mm), height=Mm(h_mm))
 
 
-def add_html_table(doc: Document, node: Tag, *, compact_warranty=False) -> None:
+def add_html_table(doc: Document, node: Tag, *, compact_warranty=False, troubleshooting=False) -> None:
     rows = node.find_all("tr")
     if not rows:
         return
@@ -566,7 +629,8 @@ def add_html_table(doc: Document, node: Tag, *, compact_warranty=False) -> None:
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     col_widths = table_column_widths(rows, max_cols)
     set_table_grid(table, col_widths)
-    compact = len(rows) > 8 or "warranty-card" in node.get("class", [])
+    is_warranty_card = "warranty-card" in node.get("class", [])
+    compact = len(rows) > 8 or is_warranty_card
     size = 6.52 if compact and max_cols >= 3 else TABLE_BODY_PT
     remove_table_borders(table)
     for r_idx, tr in enumerate(rows):
@@ -575,13 +639,16 @@ def add_html_table(doc: Document, node: Tag, *, compact_warranty=False) -> None:
             cell = table.cell(r_idx, c_idx)
             if c_idx < len(col_widths):
                 set_cell_width(cell, col_widths[c_idx])
-            if compact_warranty:
+            if compact_warranty or troubleshooting:
                 set_cell_borders(cell, color="D9D9D9", size=4)
             else:
                 set_cell_horizontal_borders(cell)
-            pad_v = 56 if compact_warranty and not compact else (TABLE_CELL_PAD_COMPACT if compact else 36)
-            set_cell_margins(cell, top=pad_v, start=55, bottom=pad_v, end=55)
-            if r_idx == 0:
+            pad_v = 32 if troubleshooting and compact else (52 if compact_warranty and not compact else (TABLE_CELL_PAD_COMPACT if compact else 36))
+            start_pad = 87 if compact_warranty else 55
+            set_cell_margins(cell, top=pad_v, start=start_pad, bottom=pad_v, end=55)
+            if is_warranty_card:
+                set_cell_shading(cell, ZEBRA_GRAY if r_idx % 2 == 1 else "FFFFFF")
+            elif r_idx == 0:
                 set_cell_shading(cell, DARK)
             elif r_idx % 2 == 1:
                 set_cell_shading(cell, "FFFFFF")
@@ -594,9 +661,14 @@ def add_html_table(doc: Document, node: Tag, *, compact_warranty=False) -> None:
             p.alignment = WD_ALIGN_PARAGRAPH.LEFT
             run = p.add_run(text)
             run_size = TABLE_HEADER_PT if r_idx == 0 else size
-            set_run_font(run, size=run_size, bold=(r_idx == 0), color="FFFFFF" if r_idx == 0 else DARK)
-            cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
-        row_height = 250 if compact_warranty and not compact else (225 if compact else 215)
+            set_run_font(
+                run,
+                size=run_size,
+                bold=(r_idx == 0 and not is_warranty_card),
+                color="FFFFFF" if r_idx == 0 and not is_warranty_card else DARK,
+            )
+            cell.vertical_alignment = WD_ALIGN_VERTICAL.TOP if compact_warranty else WD_ALIGN_VERTICAL.CENTER
+        row_height = 242 if compact_warranty and not compact else (225 if compact else 215)
         set_row_height(table.rows[r_idx], row_height)
 
 def add_step_flow(doc: Document, node: Tag) -> None:
@@ -610,7 +682,7 @@ def add_step_flow(doc: Document, node: Tag) -> None:
             r_num = p.add_run("  " + num + "  ")
             set_run_font(r_num, size=BODY_PT, bold=True, color="FFFFFF")
             set_run_shading(r_num, BLACK)
-            r_gap = p.add_run("  ")
+            r_gap = p.add_run("   ")
             set_run_font(r_gap, size=BODY_PT)
             add_text_runs(p, row.select_one(".step-text"), size=BODY_PT)
         for fig in step.select(".figure-row"):
@@ -621,7 +693,7 @@ def add_cover(doc: Document, page: Tag) -> None:
     brand = page.select_one(".cover-brand").get_text(" ", strip=True)
     p_brand = doc.add_paragraph()
     p_brand.paragraph_format.space_before = Pt(20)
-    p_brand.paragraph_format.space_after = Pt(75)
+    p_brand.paragraph_format.space_after = Pt(138)
     # PDF target uses a SHORT red dash before \u5a01\u5bcc\u53ef, not a long line; one character matches better
     r_line = p_brand.add_run(u"\u2501\u2501 ")
     set_run_font(r_line, size=7.5, bold=True, color=RED)
@@ -629,8 +701,9 @@ def add_cover(doc: Document, page: Tag) -> None:
     set_run_font(r_brand, size=7.5, bold=True, color=BLACK)
     img = page.find("img")
     if img:
-        p_img = add_image_paragraph(doc, img, align=WD_ALIGN_PARAGRAPH.LEFT, force_h=34, force_w=42)
+        p_img = add_image_paragraph(doc, img, align=WD_ALIGN_PARAGRAPH.LEFT, force_h=32.5, force_w=42)
         if p_img:
+            p_img.paragraph_format.space_before = Pt(8)
             p_img.paragraph_format.space_after = Pt(30)
     model = page.select_one(".cover-model").get_text(" ", strip=True)
     title = page.select_one(".cover-title").get_text(" ", strip=True)
@@ -641,7 +714,7 @@ def add_cover(doc: Document, page: Tag) -> None:
     p_div = doc.add_paragraph()
     r_div = p_div.add_run(u"\u2501\u2501\u2501\u2501")
     set_run_font(r_div, size=7.0, bold=True, color=RED)
-    p_div.paragraph_format.space_after = Pt(92)
+    p_div.paragraph_format.space_after = Pt(113)
     bottom = page.select_one(".cover-bottom").get_text(" ", strip=True)
     p_rule = doc.add_paragraph()
     set_paragraph_border(p_rule, top={"size": 10, "color": BLACK, "space": 1})
@@ -670,9 +743,12 @@ def add_toc_page(doc: Document, page: Tag) -> None:
 
 def add_body_page(doc: Document, page: Tag) -> None:
     page_classes = set(page.get("class", []))
+    previous_was_list = False
     for child in page.find_all(recursive=False):
         if not isinstance(child, Tag):
             continue
+        after_list = previous_was_list
+        previous_was_list = child.name == "ul"
         classes = set(child.get("class", []))
         if "page-footer" in classes:
             continue
@@ -681,15 +757,21 @@ def add_body_page(doc: Document, page: Tag) -> None:
         elif "section-title" in classes:
             add_section_title(doc, child)
         elif "sub-title" in classes:
-            add_sub_title(doc, child)
+            add_sub_title(doc, child, before=8 if after_list else 4)
         elif child.name == "p":
             text = child.get_text(" ", strip=True)
             if "compact-warranty" in page_classes and "support@wevactech.com |" in text:
                 text = text.replace("联系我们： ", "联系我们：\n")
             add_para(doc, text if text else child, size=BODY_PT, color=DARK, after=3)
         elif child.name == "ul":
-            add_bullet_list(doc, child)
+            if "compact-warranty" in page_classes:
+                add_bullet_list(doc, child, line_spacing=1.0, space_after_pt=0.25)
+            else:
+                add_bullet_list(doc, child)
         elif "warning-box" in classes or "caution-box" in classes or "note-box" in classes:
+            if "compact-ts" in page_classes and "caution-box" in classes:
+                spacer = doc.add_paragraph()
+                compact_paragraph(spacer, size=BODY_PT, after=0, line=0.1)
             add_alert_box(doc, child, compact_safety=("compact-safety" in page_classes))
         elif "step-flow" in classes:
             add_step_flow(doc, child)
@@ -700,7 +782,12 @@ def add_body_page(doc: Document, page: Tag) -> None:
         elif "figure-row" in classes:
             add_image_row(doc, child)
         elif child.name == "table":
-            add_html_table(doc, child, compact_warranty=("compact-warranty" in page_classes))
+            add_html_table(
+                doc,
+                child,
+                compact_warranty=("compact-warranty" in page_classes),
+                troubleshooting=("troubleshooting-primary" in page_classes),
+            )
 
 
 def add_page_field(paragraph) -> None:
@@ -727,12 +814,12 @@ def add_page_field(paragraph) -> None:
 def configure_section(section, page_no: int | None = None) -> None:
     section.page_width = Mm(PAGE_W_MM)
     section.page_height = Mm(PAGE_H_MM)
-    section.top_margin = Mm(MARGIN_MM)
+    section.top_margin = Mm(10.2)
     section.bottom_margin = Mm(MARGIN_MM)
     section.left_margin = Mm(MARGIN_MM)
     section.right_margin = Mm(MARGIN_MM)
     section.header_distance = Mm(4)
-    section.footer_distance = Mm(5)
+    section.footer_distance = Mm(3.5)
     section.different_first_page_header_footer = False
     footer = section.footer
     footer.is_linked_to_previous = False
