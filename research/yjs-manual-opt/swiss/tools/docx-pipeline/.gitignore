@@ -1,0 +1,6 @@
+# score_candidate.py 临时工作目录
+_score_tmp/
+
+# Python
+__pycache__/
+*.pyc
