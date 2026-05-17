@@ -1,5 +1,5 @@
 {
-  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-36\\path-margin-sweep\\r9-mega1.docx",
+  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-36\\path-margin-sweep\\r20-final-best.docx",
   "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
@@ -12,7 +12,7 @@
     "ratio": 1.0
   },
   "editability": {
-    "wt_count": 445,
+    "wt_count": 446,
     "txbx_count": 0,
     "drawings_count": 16,
     "image_bytes": 530887,
@@ -21,24 +21,24 @@
   },
   "visual": {
     "per_page_mean_diff": [
-      2.93,
+      2.88,
       3.25,
-      11.86,
-      7.09,
-      10.75,
-      6.19,
-      7.81,
-      7.84,
-      11.87,
-      10.01,
-      11.56,
+      11.66,
+      6.34,
+      10.65,
+      4.35,
+      7.73,
+      7.83,
+      11.88,
+      9.92,
+      11.09,
       9.85,
-      11.57,
-      12.26,
-      3.65
+      11.53,
+      12.2,
+      3.34
     ],
-    "overall_mean_diff": 8.57,
-    "max_page_diff": 12.26
+    "overall_mean_diff": 8.3,
+    "max_page_diff": 12.2
   },
   "pass": {
     "pages": true,
