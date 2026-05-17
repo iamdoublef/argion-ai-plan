@@ -1,5 +1,5 @@
 {
-  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-51\\path-goldilocks-continue\\iter-5\\output.docx",
+  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-51\\path-goldilocks-continue\\iter-3\\output.docx",
   "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
@@ -23,21 +23,21 @@
     "per_page_mean_diff": [
       2.88,
       3.25,
-      10.96,
-      6.23,
+      11.07,
+      6.26,
       9.9,
       4.33,
       7.71,
       7.85,
       11.22,
-      10.01,
+      10.02,
       10.92,
       9.93,
       10.39,
       11.98,
       3.31
     ],
-    "overall_mean_diff": 8.06,
+    "overall_mean_diff": 8.07,
     "max_page_diff": 11.98
   },
   "pass": {

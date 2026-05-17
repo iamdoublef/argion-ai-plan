@@ -1,0 +1,82 @@
+"""Pack iter-N/unpacked -> iter-N/output.docx, then score it.
+
+Baseline = W37 (8.17/11.97). Run from this dir.
+"""
+import json
+import os
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+ENV = os.environ.copy()
+ENV["PYTHONUTF8"] = "1"
+ENV["PYTHONIOENCODING"] = "utf-8"
+
+ROOT = Path(__file__).parent
+DOCX_SKILL = Path(r"C:/Users/iamdo/.claude/skills/docx/scripts/office")
+SCORE = ROOT.parent.parent / "score_candidate.py"
+TARGET_PDF = ROOT.parent.parent.parent.parent / "output" / "imt050-wevac-eu-cn.pdf"
+BASELINE_PNGS = ROOT.parent.parent / "baseline" / "target_png"
+BASELINE_DOCX = ROOT / "baseline.docx"
+BASELINE_UNPACKED = ROOT / "baseline_unpacked"
+
+
+def ensure_unpacked(iter_name: str):
+    """Copy baseline_unpacked into iter-N/unpacked if not already there."""
+    iter_dir = ROOT / iter_name
+    unpacked = iter_dir / "unpacked"
+    iter_dir.mkdir(exist_ok=True)
+    if not unpacked.exists():
+        shutil.copytree(BASELINE_UNPACKED, unpacked)
+        print(f"Copied baseline_unpacked -> {unpacked}")
+
+
+def run(iter_name: str):
+    iter_dir = ROOT / iter_name
+    unpacked = iter_dir / "unpacked"
+    out = iter_dir / "output.docx"
+
+    if not unpacked.exists():
+        print(f"ERROR: {unpacked} missing")
+        return 1
+
+    cmd = ["python", str(DOCX_SKILL / "pack.py"), str(unpacked), str(out),
+           "--original", str(BASELINE_DOCX)]
+    r = subprocess.run(cmd, capture_output=True, text=True, env=ENV,
+                       encoding="utf-8", errors="replace")
+    print("PACK stdout:", (r.stdout or "")[-400:])
+    print("PACK stderr:", (r.stderr or "")[-400:])
+    if r.returncode != 0:
+        print(f"PACK FAILED rc={r.returncode}")
+        return 1
+
+    iter_env = ENV.copy()
+    iter_env["LO_USER_PROFILE"] = str(iter_dir / "_lo_profile")
+    cmd = ["python", str(SCORE), str(out),
+           "--target", str(TARGET_PDF),
+           "--baseline-pngs", str(BASELINE_PNGS)]
+    r = subprocess.run(cmd, capture_output=True, text=True, env=iter_env,
+                       encoding="utf-8", errors="replace")
+    print("SCORE stdout:", r.stdout[-1500:])
+    if r.stderr:
+        print("SCORE stderr:", r.stderr[-400:])
+
+    score_json = out.with_suffix(".score.json")
+    if score_json.exists():
+        d = json.loads(score_json.read_text(encoding="utf-8"))
+        v = d.get("visual", {})
+        print(f"\n=== {iter_name} ===")
+        print(f"mean: {v.get('overall_mean_diff')} max: {v.get('max_page_diff')}")
+        print(f"per-page: {v.get('per_page_mean_diff')}")
+        print(f"wt_count: {d['editability']['wt_count']}  text_ratio: {d['text']['ratio']}")
+        print(f"PASS overall: {d['pass']['overall']}")
+        return 0
+    return 1
+
+
+if __name__ == "__main__":
+    if len(sys.argv) >= 3 and sys.argv[1] == "prep":
+        ensure_unpacked(sys.argv[2])
+    else:
+        sys.exit(run(sys.argv[1]))
