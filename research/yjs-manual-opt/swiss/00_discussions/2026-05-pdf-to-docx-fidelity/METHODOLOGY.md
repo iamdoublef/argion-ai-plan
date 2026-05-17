@@ -277,8 +277,25 @@
 | **W47** | **7.28** | **10.16** | **line cohort 228 + inner border F5** | **line 微调** |
 | **W48** | **7.27** | **10.13** | **p11 disclaimer spacing 10→0 + table cells 2→0** | **page-isolated char spacing** |
 | **W49** | **7.23** | **10.13** | **p10 spacing 级联 0 (28 sites) + p9 char-spacing 三档 (10 sites)** | **page-isolated 级联** |
+| **W50** | **7.21** | **10.13** | **p10 line=228→216 (4 sites, page-isolated sub-cohort)** | **sub-cohort 二次 sweep** |
 
-**累计**：mean **-1.44** (-17%) / max **-2.22** (-18%)
+**累计**：mean **-1.46** (-17%) / max **-2.22** (-18%)
+
+### W50 关键洞察（page-isolated sub-cohort 二次 sweep）
+
+iter-61b 已合并全局 line=230→228 (37 sites)，p10 占其中 4 个。在 W49 基线上 p10 这 4-site 子集仍可继续 sweep：216 是新甜区（p10: 9.48→9.13, mean -0.02）。
+
+**新方法论**：**全局 cohort 饱和后，page-isolated sub-cohort 仍可再次扫描**。同一 lever 值在不同基线、不同 sub-cohort 下甜区不同。
+
+### W50 已 NEGATIVE / saturated lever（更新）
+
+| Lever | 现象 |
+|-------|------|
+| **p14 line=250 双向 ±10** | 双向都 +0.3-0.5 p14（250 是甜区） |
+| **p14 char-spc tighten cascade (11→9, 10→8, 8→6)** | p14 +0.43 灾难 |
+| **p11 tcMar 32→16** | max +3.21 BLOW UP（cell vertical pad saturated） |
+| **p11 tcMar 32→48** | max +4.19 BLOW UP（双向都灾难） |
+| **p9 line=244 双向 ±4** | 双向都 +0.24-0.48 p9（244 是甜区） |
 
 ---
 

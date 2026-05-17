@@ -1,6 +1,14 @@
 # IMT050 Word DOCX 视觉保真评分记录
 
-## 当前最优：W34（design-iter-40 path-max-attack iter-16 — 双轴 stacked 突破）
+## 当前最优：W50（design-iter-62 path-p11-innovate-p14-first iter-13 — p10 sub-cohort line sweep）
+
+- **文件**: `final/imt050-wevac-eu-cn.docx`
+- **LibreOffice 渲染评分**: `7.21 / 10.13`（mean / max）— mean -0.02 vs W49（max 同）
+- **手法**: W49 基础上对 p10 line=228 (4 sites page-isolated sub-cohort) sweep → 216 是新甜区，p10: 9.48→9.13（-0.35）
+- **方法论**: page-isolated sub-cohort 在全局 cohort 已饱和后仍可继续二次 sweep
+- 详见: `design-iter-62/path-p11-innovate-p14-first/STATUS.md`
+
+## 历史 W34（design-iter-40 path-max-attack iter-16 — 双轴 stacked 突破）
 
 - **文件**: `final/imt050-wevac-eu-cn.docx`
 - **LibreOffice 渲染评分**: `8.20 / 12.06`（mean / max）— mean & max 同时突破 W32 plateau (-0.08 / -0.08)
