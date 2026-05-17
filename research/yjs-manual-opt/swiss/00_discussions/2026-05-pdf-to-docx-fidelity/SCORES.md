@@ -440,3 +440,29 @@ docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较
 ### iter-44 启动 sz=13 spacing DOWN (177 sites 最大未碰 cohort)
 
 iter-41 推荐：sz=13 是 table body，177 sites 是最大未试 cohort，DOWN 方向未验证。
+
+### W35 突破 ✅ (2026-05-17, iter-44b 配额前部分完成)
+
+**8.19 / 11.99**（mean -0.01, **max -0.07** vs W34）
+
+- **关键改动**：sz=13 (6.5pt) cohort `w:spacing 5→2`（DOWN 方向）
+- 印证 iter-41 推论：sz=11/12/13 都是 DOWN 甜区，sz=14 BLACK 是 UP 甜区
+- 来源：iter-44b agent 配额限制前部分完成的 iter-2 候选（未写 STATUS.md）
+- max 改善显著 (12.06→11.99)，越过 12.00 心理关口
+
+**累计 plateau 突破（30+ 路径 plateau 后）**：
+- mean: 8.67 → 8.19 = **-0.48**
+- max: 12.35 → 11.99 = **-0.36**
+
+### 完整突破谱
+
+| Winner | mean | max | 关键突破 |
+|--------|------|-----|---------|
+| W27 baseline | 8.67 | 12.35 | 30 路径 plateau |
+| W29 | 8.63 | 12.30 | pgMar top +3 子像素 |
+| W30 | 8.57 | 12.26 | 多维 per-page pgMar |
+| W31 | 8.49 | 12.26 | keycap chip 结构 |
+| W32 | 8.27 | 12.22 | sz=14 BLACK spacing 5→8 (UP) |
+| W33 | 8.21 | 12.06 | p9/p13 line + sz=11/12 DOWN |
+| W34 | 8.20 | 12.06 | 叠加 W33 双轴 |
+| **W35** | **8.19** | **11.99** | **sz=13 cohort spacing 5→2 (DOWN)** |
