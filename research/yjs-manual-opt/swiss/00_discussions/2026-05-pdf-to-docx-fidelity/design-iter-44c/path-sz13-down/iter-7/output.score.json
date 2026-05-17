@@ -1,6 +1,6 @@
 {
-  "candidate": "imt050-wevac-eu-cn.docx",
-  "target": "..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
+  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-44c\\path-sz13-down\\iter-7\\output.docx",
+  "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
     "candidate": 15,
@@ -31,11 +31,11 @@
       7.84,
       11.51,
       10.02,
-      11.01,
+      11.0,
       9.97,
       10.63,
       11.99,
-      3.31
+      3.34
     ],
     "overall_mean_diff": 8.19,
     "max_page_diff": 11.99

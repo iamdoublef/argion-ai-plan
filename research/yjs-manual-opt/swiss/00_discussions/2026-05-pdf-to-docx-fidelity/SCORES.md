@@ -441,13 +441,15 @@ docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较
 
 iter-41 推荐：sz=13 是 table body，177 sites 是最大未试 cohort，DOWN 方向未验证。
 
-### W35 突破 ✅ (2026-05-17, iter-44b 配额前部分完成)
+### W35 突破 ✅ (2026-05-17, iter-44b 配额前部分完成 → iter-44c 7 轮完整探索 + 收敛 GRAY-only)
 
 **8.19 / 11.99**（mean -0.01, **max -0.07** vs W34）
 
-- **关键改动**：sz=13 (6.5pt) cohort `w:spacing 5→2`（DOWN 方向）
+- **关键改动**：sz=13 (6.5pt) **GRAY (1A1A1A) Arial body cohort** `w:spacing 5→2`（DOWN 方向，117 sites）
 - 印证 iter-41 推论：sz=11/12/13 都是 DOWN 甜区，sz=14 BLACK 是 UP 甜区
-- 来源：iter-44b agent 配额限制前部分完成的 iter-2 候选（未写 STATUS.md）
+- iter-44b iter-2 (全 143 sites 5→2) 已突破，但 p4 +0.04 回退
+- **iter-44c iter-5 收敛到 GRAY-only 117 sites**：同分 8.19/11.99 但 **零回退**（p4 不变）
+- iter-44c 完整网格：5→1 (overshoot)、5→2 (win)、5→3 (tie)、BLACK-only (inert)
 - max 改善显著 (12.06→11.99)，越过 12.00 心理关口
 
 **累计 plateau 突破（30+ 路径 plateau 后）**：
