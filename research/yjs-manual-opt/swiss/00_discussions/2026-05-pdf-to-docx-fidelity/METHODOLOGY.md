@@ -277,6 +277,7 @@
 | **W47** | **7.28** | **10.16** | **line cohort 228 + inner border F5** | **line 微调** |
 | **W48** | **7.27** | **10.13** | **p11 disclaimer spacing 10→0 + table cells 2→0** | **page-isolated char spacing** |
 | **W49** | **7.23** | **10.13** | **p10 spacing 级联 0 (28 sites) + p9 char-spacing 三档 (10 sites)** | **page-isolated 级联** |
+| **W50** | **7.21** | **10.13** | **p10 line=228→216 sub-cohort 二次 sweep (4 sites)** | **sub-cohort 二次 sweep** |
 | **W50** | **7.21** | **10.13** | **p10 line=228→216 (4 sites, page-isolated sub-cohort)** | **sub-cohort 二次 sweep** |
 
 **累计**：mean **-1.46** (-17%) / max **-2.22** (-18%)
