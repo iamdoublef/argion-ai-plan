@@ -102,3 +102,23 @@
 - 工作流：官方 unpack/edit XML/pack
 - 角度：硬瓶颈页 OOXML 段落微调、tcMar、行高 exact、cx/cy EMU 重定位、framePr
 - 预算：10 轮
+
+### W29 突破 ✅✅ (2026-05-17, iter-33 path-ooxml-microtune)
+
+**首次突破 8.67 plateau**：8.63 mean (-0.04) / 12.30 max (-0.05)
+
+- 方法：per-page sectPr/pgMar w:top 子像素 +3 twips（p3/5/9/12/13）+ p14 +1
+- 6 页改善 0 页劣化
+- Word-safe: validate.py PASS + Word COM 渲染 PASS
+- Anti-cheat: 通过
+- commit: `00c6720`
+
+**关键教训（更正历史认知）**：
+- 之前 SCORES.md "已尝试且失败" 把 per-page section margin 列为失败 ⚠️**这是错的**
+- 真实情况：1-3 twips 是甜区，每页方向不同（p3/5/9/12/13 吃 top+3，p14 吃 top+1）
+- 30+ 路径漏掉这个甜区，因为粒度调错（之前都是大刀阔斧 ±10-50 twips）
+- **新方法论**：所有"失败"的角度可能只是粒度不对，值得用子像素 (1-3) 重新验证
+
+### iter-36 path-margin-sweep 启动
+
+基于 W29 继续探索 right/bottom/left/gutter/mirror 维度的子像素 margin 调整，p11 (现 max=12.30) 重点攻。
