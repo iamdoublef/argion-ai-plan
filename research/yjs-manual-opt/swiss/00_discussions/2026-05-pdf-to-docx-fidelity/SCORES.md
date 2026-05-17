@@ -180,3 +180,49 @@ commit: `5bd3db5`
 ### iter-38 path-keycap-chip 启动
 
 唯一未尝试的高影响审计修复 FIX #2：p7/p11 按键说明双行堆叠 → 单行内联 chip（带 Courier 边框 + 黑色 chip），预测 mean -1.0。
+
+### iter-31 path-swiss-pipeline 部分完成 (2026-05-17)
+
+**目标**：把 W27 视觉 backport 到 swiss pipeline (docx-js)。
+**结果**：swiss/output/imt050-wevac-eu-cn.docx 从 **13.87/26.65** → **11.74/18.83**（部分改善）
+**未达 W30 水平**，但产出详细视觉参数对比表（见 STATUS.md）：
+- 字号差距：W27 body 7pt vs Swiss 7pt (match)，但 table/header/title 较大
+- 字距：W27 char spacing 5/8 twips，Swiss 无 per-run spacing
+- Padding：alert box 90→176/205 dxa，table cell pad 60→32/56 dxa
+- Bullet indent：太宽 (420/210)，应 3.2mm/3.2mm
+
+集成建议：把 sizes 放进 brand-themes.json 的 docx 块，保持多 SKU 支持。
+
+### iter-32 path-docxjs-fromscratch 完成（保留作参考）
+
+docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较差。但是 anti-cheat + validate.py + Word 全通过。结论：docx-js 路径短期内难突破 W30 水平。
+
+### iter-35 path-docx-skill-continue 突破 ✅ (官方 docx skill 路径)
+
+**iter-10 突破**：8.64/12.29 (-0.03 / -0.06 vs W27)
+**关键杠杆**：body rPr `w:spacing 5→8`（75 sites, sz=14）— widen char spacing 改 line-wrap
+**洞察**：LO 默默忽略 autoSpaceDE/DN at pPr, useFELayout, themeFontLang, autoSpaceLikeWord95, noPunctuationKerning
+**commit**: `d0fcca3`
+
+### iter-36 path-margin-sweep 突破 ✅ (W30 = 当前 final)
+
+**iter-9 突破**：**8.57/12.26**（mean -0.06, max -0.04 vs W29）
+**关键杠杆**：多维 per-page sectPr/pgMar 微调
+- p11 top -17 twips → p11 12.14 → 11.56 (-0.58!) 反向突破
+- p14 right +5 → -0.04（top+right 加性）
+- p10 top -5 → -0.13
+- p13 top +3 → -0.11
+**新教训**：top **反向**（-17）在某些页是甜区，不只 +3。
+
+## 累计 plateau 突破进展
+
+| Winner | 评分 | 关键突破 |
+|--------|------|---------|
+| W27 baseline | 8.67/12.35 | 30 路径 plateau |
+| W29 (iter-33) | 8.63/12.30 | pgMar top +3 子像素 |
+| W30 (iter-36) | **8.57/12.26** | 多维 per-page pgMar 微调 |
+| docx-skill 续 iter-35 | 8.64/12.29 | rPr w:spacing 5→8 (正交方向，可与 W30 叠加) |
+
+**正在跑**：
+- iter-38 keycap chip 结构（FIX #2，预测 -1.0）
+- iter-39 docx skill 续跑 + iter-35/36 叠加（预测 -0.05~-0.10）
