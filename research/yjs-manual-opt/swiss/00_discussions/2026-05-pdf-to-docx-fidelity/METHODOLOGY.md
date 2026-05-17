@@ -161,6 +161,8 @@
 | **footer 颜色没传播** | document.xml 改了 GRAY 但 footer*.xml 14 个文件没改，要全部同步 |
 | **w:kern 全部 inert** | LO Writer 对 kerning 不响应，所有 threshold 值都 ≤0.01 |
 | **schema gotcha**：pPr 子元素顺序 | pPr 内必须：pStyle, numPr, spacing, ind, jc, rPr 顺序，pack.py validate 会捕获 |
+| **p3 极敏感（W49 教训）** | val=6/9/line=228 任意 ±2 让 p3 BLOW UP 至 11.4-12.7。p3 字距/行距 saturated，需切换 page-isolated 非整 cohort |
+| **全局 w:after=120 灾难（W49）** | 35 sites 在 W48 上加这一 cohort 平均 +0.6 mean。所有全局 after cohort 调整在 W48+ 阶段 FATAL |
 
 ### 3.4 Agent 编排坑
 
@@ -274,8 +276,9 @@
 | **W46** | **7.38** | **10.90** | **invisible borders** | **隐藏元素** |
 | **W47** | **7.28** | **10.16** | **line cohort 228 + inner border F5** | **line 微调** |
 | **W48** | **7.27** | **10.13** | **p11 disclaimer spacing 10→0 + table cells 2→0** | **page-isolated char spacing** |
+| **W49** | **7.23** | **10.13** | **p10 spacing 级联 0 (28 sites) + p9 char-spacing 三档 (10 sites)** | **page-isolated 级联** |
 
-**累计**：mean **-1.40** (-16%) / max **-2.22** (-18%)
+**累计**：mean **-1.44** (-17%) / max **-2.22** (-18%)
 
 ---
 
