@@ -468,3 +468,49 @@ iter-41 推荐：sz=13 是 table body，177 sites 是最大未试 cohort，DOWN 
 | W33 | 8.21 | 12.06 | p9/p13 line + sz=11/12 DOWN |
 | W34 | 8.20 | 12.06 | 叠加 W33 双轴 |
 | **W35** | **8.19** | **11.99** | **sz=13 cohort spacing 5→2 (DOWN)** |
+
+### W46 突破 ✅ (2026-05-17, iter-58 path-footer-propagation — "make-invisible" 边框揭秘)
+
+**7.38 / 10.90** (mean **−0.35**, max **−0.02** vs W45 7.73/10.92)
+
+- **关键发现**：candidate 里的若干 black borders 在 target PDF 中 INVISIBLE
+- **3 个 make-invisible 边框 lever**（合计 18 sites）：
+  1. `bottom sz=6 000→FFFFFF` (16 sites)：表格行底部边框，target 不显示
+  2. `top sz=10 000→FFFFFF` (1 site, paragraph 4)：p1 顶部 hairline 分隔线
+  3. `top sz=8 SECOND only 000→FFFFFF` (1 site, paragraph 234 = p11)：p11 disclaimer 顶
+- **关键技巧**：保留 `w:val="single"`（保留 border 占位空间，不重排），只翻色到 white
+  - `w:val="nil"` 会触发 catastrophic reflow（+0.6 mean, +2.9 max）
+- **+ 红色 banner sz=2 thinner**（13 sites，sz=18→2）：banner 太粗，target 是细红线
+- **+ footer micro-tunes**（sz=10 spacing 5→2 + color F5→E8）：±0.001 噪声级附加
+- 单独贡献：bottom_sz6_FF −0.28 / top_sz10_FF −0.04 / top_sz8_2nd −0.02 / red_sz2 −0.02 / footer ±0.001
+- 路径: `design-iter-58/path-footer-propagation/iter-58/output.docx`
+- candidate: `final/imt050-wevac-eu-cn.docx`（已升级；W45-backup 保留）
+
+**Per-page 改善**：
+- p1: 2.69 → **2.17 (−0.52)**
+- p5: 9.86 → **8.83 (−1.03)**
+- p11: 10.43 → **10.16 (−0.27)**
+- p12: 9.75 → **8.87 (−0.88)**
+- p13: 10.35 → **9.32 (−1.03)**
+- p14: 10.72 → **9.70 (−1.02)**
+- p15: 3.22 → **3.00 (−0.22)**
+- p3: 10.92 → **10.90 (−0.02)** — 新 max
+
+**Word-safe**: validate PASS (328→328), COM round-trip PASS (1.6s)
+
+**方法论教训（新的 lever class 发现）**：
+- "make-invisible" border lever：不是颜色微调，而是把 black borders 直接 → white
+- target PDF 有许多 "应该有但不显示" 的元素（border 占位但不可见）
+- 关键约束：保留 `w:val="single"` 占位，仅翻色，避免 reflow
+
+**累计 plateau 突破（30+ 路径 plateau 后）**：
+- mean: 8.67 → **7.38** = **-1.29**
+- max: 12.35 → **10.90** = **-1.45**
+
+| Winner | mean | max | 关键突破 |
+|--------|------|-----|---------|
+| W35 | 8.19 | 11.99 | sz=13 spacing 5→2 |
+| W42 | 7.99 | 11.93 | iter-54 p14 pBdr + bold warranty |
+| W43 | 7.76 | 10.94 | 5-stack: red+borders+shd+line |
+| W45 | 7.73 | 10.92 | gray 8E→F5 + footer 28 sites |
+| **W46** | **7.38** | **10.90** | **make-invisible borders + red sz=2** |
