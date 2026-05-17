@@ -1,21 +1,33 @@
 # IMT050 Word DOCX 视觉保真评分记录
 
-## 当前最优：W30（design-iter-36 多维 pgMar 扫描）
+## 当前最优：W31（design-iter-36 多维 pgMar 扫描 + iter-37 设计修复叠加）
 
 - **文件**: `final/imt050-wevac-eu-cn.docx`
-- **LibreOffice 渲染评分**: `8.57 / 12.26`（mean / max）— 突破 W29 plateau
-- **Anti-cheat**: PASS（wt_count=445, image_hack=false, text_ratio=1.0, drawings=16）
+- **LibreOffice 渲染评分**: `8.30 / 12.20`（mean / max）— 突破 W30 plateau
+- **Anti-cheat**: PASS（wt_count=446, image_hack=false, text_ratio=1.0, drawings=16）
 - **MS Word 可打开**: PASS（docx2pdf Word COM 渲染 15 页）
 - **页数**: 15（与目标 PDF 一致）
 - **可编辑性**: 100%（无 text_box / 图片 hack）
-- **突破手法**: per-section pgMar 多维度子像素扫描——w:right（p14 +5/p3 +3/p5 +3/p9 +2/p11 +1）、w:top 大幅度反向（p11 -17/p10 -5/p14 -3/p13 +3）
+- **突破手法**: 在 iter-37 W30（设计修复）baseline 上叠加 iter-36 多维 pgMar 调整——key wins：p6 top +20（−1.84）、p4 top +10（−0.75）、p11 top −17（−1.05）、p14 right +5 / top −3（−0.10）
 - **详见**: `design-iter-36/path-margin-sweep/STATUS.md`
+
+## 历史 W30a（design-iter-36 仅 pgMar）
+
+- **LibreOffice 渲染评分**: `8.57 / 12.26`（mean / max）
+- **突破手法**: per-section pgMar 多维度子像素扫描——w:right（p14 +5/p3 +3/p5 +3/p9 +2/p11 +1）、w:top 大幅度反向（p11 -17/p10 -5/p14 -3/p13 +3）
+- 已被 W31 替换
+
+## 历史 W30b（design-iter-37 仅设计修复）
+
+- **LibreOffice 渲染评分**: `8.54 / 12.24`（mean / max）
+- **突破手法**: zebra F1F1F6, WARNING/CAUTION 边框, 红 E63846, p1 footer split
+- 已被 W31 替换
 
 ## 历史 W29（前 plateau）
 
 - **LibreOffice 渲染评分**: `8.63 / 12.30`（mean / max）
 - **突破手法**: per-section pgMar w:top 子像素微调（p3/p5/p9/p12/p13 各 +3 twips，p14 +1 twip）
-- 已被 W30 替换
+- 已被 W30/W31 替换
 
 ## 历史 W27（前 plateau）
 
@@ -33,8 +45,11 @@
 
 | Winner | Path | Visualdiff | 备注 |
 |--------|------|-----------|------|
-| W30 | design-iter-36 path-margin-sweep | **8.57 / 12.26** | **当前 final** — 多维 pgMar 子像素扫描 |
-| W29 | design-iter-33 path-ooxml-microtune | 8.63 / 12.30 | 前 final，已被 W30 替换 |
+| W32 | iter-39 path-docx-skill-stack (iter-9) | **8.27 / 12.22** | **当前 final** — W31 + sz=14 black rPr spacing 5→8 (71 sites) |
+| W31 | iter-36 + iter-37 双层叠加 | 8.30 / 12.20 | pgMar + 设计修复正交叠加 (前 final) |
+| W30a | design-iter-36 path-margin-sweep | 8.57 / 12.26 | 仅 pgMar 多维 |
+| W30b | design-iter-37 path-design-fixes | 8.54 / 12.24 | 仅设计修复 |
+| W29 | design-iter-33 path-ooxml-microtune | 8.63 / 12.30 | 前 final |
 | W27 | codex-design-iter22-iter08 | 8.67 / 12.35 | 前 final，已被 W29 替换 |
 | W28 | codex-design-iter24-pathA | 8.67 / OOXML autospace | ⚠ Word 报"文件损坏" — 已回退 |
 | W26 | 双路并发 char-spacing + image | 8.69 / 12.40 | |
@@ -220,9 +235,58 @@ docx-js 独立路径：**11.32/17.77**（比 W30 差 2.65 mean）。p3/p6/p7 较
 |--------|------|---------|
 | W27 baseline | 8.67/12.35 | 30 路径 plateau |
 | W29 (iter-33) | 8.63/12.30 | pgMar top +3 子像素 |
-| W30 (iter-36) | **8.57/12.26** | 多维 per-page pgMar 微调 |
-| docx-skill 续 iter-35 | 8.64/12.29 | rPr w:spacing 5→8 (正交方向，可与 W30 叠加) |
+| W30a (iter-36 单独) | 8.57/12.26 | 多维 pgMar 微调 |
+| W30b (iter-37 单独) | 8.54/12.24 | 设计修复 zebra/border/red/footer |
+| W31 (iter-36 + iter-37 叠加) | 8.30/12.20 | 两路径正交叠加 + p4/p6 大幅度 top +10/+20 |
+| **W32 (iter-39 stack)** | **8.27/12.22** | **rPr w:spacing 5→8 on sz=14 black (71 sites) — 与几何修复正交** |
 
 **正在跑**：
 - iter-38 keycap chip 结构（FIX #2，预测 -1.0）
-- iter-39 docx skill 续跑 + iter-35/36 叠加（预测 -0.05~-0.10）
+- iter-39 docx skill 续跑 + iter-35/36 叠加（实际 -0.03 ✓）
+
+### W31 突破 ✅✅✅ (2026-05-17, iter-36 阶段 3 — pgMar 叠加 iter-37 设计修复)
+
+**双层突破**：8.30 mean (-0.33 vs W29) / 12.20 max (-0.10 vs W29)
+
+- 方法：发现 iter-37 (W30 设计修复) 与 iter-36 (pgMar 多维) **正交**，叠加后 7 页继续改善
+- W30plus baseline: iter-37 W30 + iter-36 pgMar (W30a) → 8.48/12.20
+- 继续 sweep r11-r20：
+  - **p6 top +20**：p6 6.18 → 4.35 (-1.84！) — 单页最大改进，因 p6 内容轻、上半空白
+  - **p4 top +10**：p4 7.09 → 6.34 (-0.75)
+  - p7 right +3 / top +3、p5 top +3、p15 top +3 各微贡献
+- 累计 11 页改善，0 页超阈值（>+0.05）回退
+- Word-safe: validate.py PASS (paragraphs 328→328) + Word COM 15 页 PASS
+- Anti-cheat: wt_count=446, image_hack=false, text_ratio=1.0
+- 路径: `design-iter-36/path-margin-sweep/W31-winner.docx`
+- 详见: `design-iter-36/path-margin-sweep/STATUS.md`
+
+**重大方法论教训**：
+- **w:top 大幅度调整（10-20 twips）在内容轻的页是巨大甜区**（p4/p6/p15）
+- p11 顶部空白少 → 反向 top -17 也是甜区
+- **结构修复（zebra/border/color）与几何修复（pgMar）正交**，可独立叠加
+- iter-36 与 iter-37 在不同 baseline 下竞争，叠加后达成超 1+1
+- **下一瓶颈**：p9 (11.88) / p12 (9.85) — pgMar 调整不再有效，需要内部段落/drawing 微调
+
+### W32 突破 ✅ (2026-05-17, iter-39 path-docx-skill-stack — rPr 字距叠加 W31)
+
+**第三层突破**：8.27 mean (-0.03 vs W31) / 12.22 max (+0.02, 容差内)
+
+- 方法：W31 已经叠加了 iter-36 几何 + iter-37 设计；本轮验证 iter-35 的 **rPr w:spacing**
+  字距 lever 是否还能继续叠加 — 答案是**可以**
+- 关键修正：任务规范说 baseline=W30 (8.57/12.26)，实测 HEAD 已经是 W31 (8.30/12.20)
+- W31 中 sz=14 body 88 个 site 仍全部为 w:spacing val=5（iter-35 的胜利动作在 W27→W30
+  迁移时丢失），是干净的 stack 目标
+- iter-39 sweep 10 轮，发现 sweet spot：**sz=14 BLACK 71 sites, val=5 → val=8**
+  - val=9 (iter-35 用的) 在新 baseline 下让 p10/p12 超阈值
+  - val=7 增益不够，val=10 over-shoot 全面回退
+  - sz=13 / sz=14 white 都不能动
+- 累计 3 页改善 (p5 -0.27, p9 -0.10, p13 -0.13)，0 页超阈值
+- Word-safe: validate.py PASS + Word COM PASS (3s)
+- 路径: `design-iter-39/path-docx-skill-stack/iter-9/output.docx`
+- candidate: `final/candidates/W32-iter39-sz14-black-spacing8-stacked.docx`
+
+**方法论教训**：
+- **rPr 字距 lever 与 sectPr 几何 lever 在 LibreOffice 渲染上完全正交**，可堆叠
+- 同样的「+3 twips magic number」在 W27 → W31 跨基线后**仍然成立**
+- 但**作用集合需要重新搜索**（W27 用 75 sites all colors→9；W31 用 71 sites black-only→8）
+- 下一瓶颈：p3 (11.66) / p9 (11.78) / p11 (11.09) / p13 (11.40) / p14 (12.22) 五页 plateau
