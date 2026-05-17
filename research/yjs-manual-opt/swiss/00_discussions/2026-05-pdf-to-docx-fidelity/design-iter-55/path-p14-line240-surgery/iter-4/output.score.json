@@ -1,18 +1,18 @@
 {
-  "candidate": "research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\final\\imt050-wevac-eu-cn.docx",
-  "target": "research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-55\\path-p14-line240-surgery\\iter-4\\output.docx",
+  "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
     "candidate": 15,
     "ratio": 1.0
   },
   "text": {
-    "target_chars": 4620,
+    "target_chars": 4626,
     "candidate_chars": 4626,
     "ratio": 1.0
   },
   "editability": {
-    "wt_count": 448,
+    "wt_count": 446,
     "txbx_count": 0,
     "drawings_count": 16,
     "image_bytes": 530887,
@@ -34,11 +34,11 @@
       10.92,
       9.79,
       10.39,
-      11.68,
+      11.71,
       3.31
     ],
     "overall_mean_diff": 7.98,
-    "max_page_diff": 11.68
+    "max_page_diff": 11.71
   },
   "pass": {
     "pages": true,

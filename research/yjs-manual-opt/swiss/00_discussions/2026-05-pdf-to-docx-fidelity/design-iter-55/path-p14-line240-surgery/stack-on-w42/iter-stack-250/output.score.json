@@ -1,6 +1,6 @@
 {
-  "candidate": "research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\final\\imt050-wevac-eu-cn.docx",
-  "target": "research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "candidate": "stack-on-w42\\iter-stack-250\\output.docx",
+  "target": "..\\..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
     "candidate": 15,
