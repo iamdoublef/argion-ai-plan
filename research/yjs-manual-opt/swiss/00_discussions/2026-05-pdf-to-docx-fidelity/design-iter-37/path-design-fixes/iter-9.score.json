@@ -1,6 +1,6 @@
 {
-  "candidate": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\00_discussions\\2026-05-pdf-to-docx-fidelity\\design-iter-36\\path-margin-sweep\\r9-mega1.docx",
-  "target": "D:\\work\\private\\yjsplan\\research\\yjs-manual-opt\\swiss\\output\\imt050-wevac-eu-cn.pdf",
+  "candidate": "iter-9.docx",
+  "target": "..\\..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
     "candidate": 15,
@@ -12,7 +12,7 @@
     "ratio": 1.0
   },
   "editability": {
-    "wt_count": 445,
+    "wt_count": 446,
     "txbx_count": 0,
     "drawings_count": 16,
     "image_bytes": 530887,
@@ -21,24 +21,24 @@
   },
   "visual": {
     "per_page_mean_diff": [
-      2.93,
+      2.88,
       3.25,
-      11.86,
-      7.09,
+      11.69,
+      6.77,
       10.75,
-      6.19,
-      7.81,
-      7.84,
-      11.87,
-      10.01,
-      11.56,
+      6.18,
+      7.85,
+      7.83,
+      11.88,
+      10.06,
+      11.68,
       9.85,
-      11.57,
-      12.26,
-      3.65
+      11.63,
+      12.24,
+      3.58
     ],
-    "overall_mean_diff": 8.57,
-    "max_page_diff": 12.26
+    "overall_mean_diff": 8.54,
+    "max_page_diff": 12.24
   },
   "pass": {
     "pages": true,
