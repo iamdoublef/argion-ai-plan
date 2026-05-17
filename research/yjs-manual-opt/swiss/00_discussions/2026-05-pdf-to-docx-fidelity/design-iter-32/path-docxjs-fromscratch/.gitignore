@@ -1,0 +1,6 @@
+node_modules/
+_score_tmp/
+_w27_pdf/
+_word_page-*.png
+_diff_*.png
+_tmp_pdf/

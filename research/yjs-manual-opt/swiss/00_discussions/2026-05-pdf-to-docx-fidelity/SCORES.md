@@ -1,21 +1,27 @@
 # IMT050 Word DOCX 视觉保真评分记录
 
-## 当前最优：W29（design-iter-33 OOXML 微调）
+## 当前最优：W30（design-iter-36 多维 pgMar 扫描）
 
 - **文件**: `final/imt050-wevac-eu-cn.docx`
-- **LibreOffice 渲染评分**: `8.63 / 12.30`（mean / max）— 突破 W27 plateau
+- **LibreOffice 渲染评分**: `8.57 / 12.26`（mean / max）— 突破 W29 plateau
 - **Anti-cheat**: PASS（wt_count=445, image_hack=false, text_ratio=1.0, drawings=16）
 - **MS Word 可打开**: PASS（docx2pdf Word COM 渲染 15 页）
 - **页数**: 15（与目标 PDF 一致）
 - **可编辑性**: 100%（无 text_box / 图片 hack）
+- **突破手法**: per-section pgMar 多维度子像素扫描——w:right（p14 +5/p3 +3/p5 +3/p9 +2/p11 +1）、w:top 大幅度反向（p11 -17/p10 -5/p14 -3/p13 +3）
+- **详见**: `design-iter-36/path-margin-sweep/STATUS.md`
+
+## 历史 W29（前 plateau）
+
+- **LibreOffice 渲染评分**: `8.63 / 12.30`（mean / max）
 - **突破手法**: per-section pgMar w:top 子像素微调（p3/p5/p9/p12/p13 各 +3 twips，p14 +1 twip）
-- **详见**: `design-iter-33/path-ooxml-microtune/STATUS.md`
+- 已被 W30 替换
 
 ## 历史 W27（前 plateau）
 
 - **LibreOffice 渲染评分**: `8.67 / 12.35`（mean / max）
 - **MS Word 渲染评分**: `9.16 / 15.27`（mean / max）
-- 已被 W29 替换
+- 已被 W29/W30 替换
 
 ## 评分基准说明
 
@@ -27,7 +33,8 @@
 
 | Winner | Path | Visualdiff | 备注 |
 |--------|------|-----------|------|
-| W29 | design-iter-33 path-ooxml-microtune | **8.63 / 12.30** | **当前 final** — pgMar w:top 子像素微调 |
+| W30 | design-iter-36 path-margin-sweep | **8.57 / 12.26** | **当前 final** — 多维 pgMar 子像素扫描 |
+| W29 | design-iter-33 path-ooxml-microtune | 8.63 / 12.30 | 前 final，已被 W30 替换 |
 | W27 | codex-design-iter22-iter08 | 8.67 / 12.35 | 前 final，已被 W29 替换 |
 | W28 | codex-design-iter24-pathA | 8.67 / OOXML autospace | ⚠ Word 报"文件损坏" — 已回退 |
 | W26 | 双路并发 char-spacing + image | 8.69 / 12.40 | |
@@ -96,12 +103,18 @@
 
 **意义**：boss 要的两个核心需求（视觉一致 + 文字替换批量交付）**通过官方 docx skill 路径达成**。但仍未突破 8.67 plateau，所以 iter-35 持续优化 agent 已启动。
 
-### iter-35 path-docx-skill-continue 启动（不能断的 docx skill 路径）
+### iter-35 path-docx-skill-continue ✅ 突破（2026-05-17）
 
 - 基线：iter-30/iter-4 (8.67/12.35)
 - 工作流：官方 unpack/edit XML/pack
-- 角度：硬瓶颈页 OOXML 段落微调、tcMar、行高 exact、cx/cy EMU 重定位、framePr
-- 预算：10 轮
+- **iter-10 BREAKTHROUGH**: body rPr `<w:spacing w:val="5"/>` → `8` on 75 sz=14 body runs
+- 评分：**8.64 / 12.29**（mean -0.03, max -0.06）— 突破 plateau，max 比 W29 的 12.30 还低
+- 改善：p5 -0.23, p9 -0.10, p13 -0.11, p14 -0.06
+- 小回归（均 <0.05）：p3 +0.03, p10 +0.03, p11 +0.01
+- Word-safe: validate.py PASS + Word COM 15 页 PASS（3.4s, 无 corruption）
+- 关键发现：LO 忽略 settings/compat 层的 CJK 控制（autoSpaceDE/DN, useFELayout, themeFontLang, noPunctuationKerning），唯一对 LO 生效的是 rPr 字符间距。LO 比 target PDF 渲染**更窄**，反向加宽 +3 twips 强制更早换行匹配 target wrap points
+- 路径：`design-iter-35/path-docx-skill-continue/final/imt050-wevac-eu-cn.docx`
+- iter 摘要：iter-1..9 都是 neutral 或 regression；iter-9 (5→2) 反向劣化证实方向错误，iter-10 (5→8) 反向加宽即破局
 
 ### W29 突破 ✅✅ (2026-05-17, iter-33 path-ooxml-microtune)
 
@@ -122,3 +135,48 @@
 ### iter-36 path-margin-sweep 启动
 
 基于 W29 继续探索 right/bottom/left/gutter/mirror 维度的子像素 margin 调整，p11 (现 max=12.30) 重点攻。
+
+### W30 突破 ✅✅✅ (2026-05-17, iter-36 path-margin-sweep)
+
+**首次突破 W29 plateau**：8.57 mean (-0.06) / 12.26 max (-0.04)
+
+- 方法：多维 per-section pgMar 子像素扫描（10 轮 r1-r10）
+  - **w:right**（W29 未触及的维度）：p3 +3、p5 +3、p9 +2、p11 +1、p14 +5
+  - **w:top 反向**（W29 只加未减）：p10 -5、p11 -17、p14 -3、p13 +3
+- 6 页改善 0 页劣化
+  - p3: 11.89→11.86 / p9: 11.88→11.87 / p10: 10.14→10.01 / **p11: 12.14→11.56 (-0.58)** / p13: 11.68→11.57 / p14: 12.30→12.26
+- Word-safe: validate.py PASS（vs W29，paragraphs 327→327）+ Word COM 15 页 PASS
+- Anti-cheat: wt_count=445, image_hack=false, text_ratio=1.0
+- 路径: `design-iter-36/path-margin-sweep/W30-winner.docx`
+- 详见: `design-iter-36/path-margin-sweep/STATUS.md`
+
+**关键教训（再次更正历史认知）**：
+- W29 STATUS 提到 "p11 受 +3 反向" → 实证发现：**p11 对 top 负方向（向上推）极敏感**，-15..-17 twips 让 p11 减 0.56
+- "w:right" 在 28 路径里未被独立测试，p14 right+5 单维就让 max 从 12.30→12.27
+- **w:right 和 w:top 是有效维度**；w:bottom/w:left/w:gutter/w:header/w:footer 几乎全噪声层（LO 不敏感）
+- plateau 8.57/12.26 多变体同分，是 LO rasterization rounding 下限
+- **下一突破方向**：行间距/字间距子像素（spacing/jc 维度）、drawing anchor 微调、image extent 子像素
+
+
+### W30 突破 ✅ (iter-37, 2026-05-17)
+
+**实施 5 条设计修复**：8.54 / 12.24（mean -0.09, max -0.06）
+
+**接受的 FIX**：
+- iter-2b: FIX #7 zebra `F2F2F7` → `F1F1F6`（PIL 实测纠正审计 F0F0F0）
+- iter-4: WARNING 边框 4 边 → 仅 top
+- iter-5: CAUTION 边框 4 边 → 仅 top（单次最大 -0.05）
+- iter-6: 红色 `E63946` → `E63846`（品质修正）
+- iter-9: p1 footer 拆 2 段
+
+**拒绝**：
+- FIX #1 字号 styles.xml 无效（W29 已用 inline `w:sz` 覆盖 — **重要发现：styles.xml 是被绕过的**）
+- FIX #6 trHeight 破坏对齐
+- FIX #5 TOC line spacing 反退
+- FIX #B1 top margin 大退化
+
+commit: `5bd3db5`
+
+### iter-38 path-keycap-chip 启动
+
+唯一未尝试的高影响审计修复 FIX #2：p7/p11 按键说明双行堆叠 → 单行内联 chip（带 Courier 边框 + 黑色 chip），预测 mean -1.0。

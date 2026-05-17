@@ -1,0 +1,13 @@
+{
+  "name": "imt050-docxjs-fromscratch",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "docx": "^9.6.1",
+    "image-size": "^2.0.2"
+  }
+}
