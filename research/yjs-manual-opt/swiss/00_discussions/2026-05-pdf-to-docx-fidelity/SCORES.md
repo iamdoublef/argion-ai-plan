@@ -63,3 +63,26 @@
 - 新约束：用 `C:/Users/iamdo/.claude/skills/docx/` 的 unpack/pack/validate 工作流
 - 新需求：docx 必须可参数化（文字替换 → 快速交付 IMT060/IMT070 等变体）
 - 进行中（后台 bqacq4kha）
+
+### iter-30 path-docx-skill 完成 ✅ 里程碑
+
+**官方 docx skill 路径达成等同 W27 视觉 + 完整文字参数化**
+
+- 评分：`8.67 / 12.35`（与 W27 等同）
+- 官方 validate.py：**All validations PASSED**
+- Anti-cheat：wt_count=457, image_hack=false, text_ratio=1.0
+- 流程：unpack W27 → 提取文本到 params.json + template_parts/ → pack → validate
+- 产物：
+  - docx: `design-iter-30/path-docx-skill/iter-4/output.docx`
+  - 参数化: `iter-4/params.json` + `iter-4/text_params.json`
+  - 模板片段: `iter-4/template_parts/`
+  - 说明: `design-iter-30/path-docx-skill/TEMPLATE.md`
+
+**意义**：boss 要的两个核心需求（视觉一致 + 文字替换批量交付）**通过官方 docx skill 路径达成**。但仍未突破 8.67 plateau，所以 iter-35 持续优化 agent 已启动。
+
+### iter-35 path-docx-skill-continue 启动（不能断的 docx skill 路径）
+
+- 基线：iter-30/iter-4 (8.67/12.35)
+- 工作流：官方 unpack/edit XML/pack
+- 角度：硬瓶颈页 OOXML 段落微调、tcMar、行高 exact、cx/cy EMU 重定位、framePr
+- 预算：10 轮
