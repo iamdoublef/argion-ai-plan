@@ -1,12 +1,20 @@
 # IMT050 Word DOCX 视觉保真评分记录
 
-## 当前最优：W33（design-iter-41 path-kern-smallsz iter-11 — 小字号 spacing DOWN）
+## 当前最优：W34（design-iter-40 path-max-attack iter-16 — 双轴 stacked 突破）
 
 - **文件**: `final/imt050-wevac-eu-cn.docx`
+- **LibreOffice 渲染评分**: `8.20 / 12.06`（mean / max）— mean & max 同时突破 W32 plateau (-0.08 / -0.08)
+- **手法**: 在 iter-41 W33 (sz=11/12 rPr spacing DOWN) 之上叠加 iter-40 的 p13 w:line 271→278 (loosen) + p9 w:line 271→264 (tighten)
+- **要点**: pPr 段落级 w:line 与 rPr 字符级 w:spacing 正交; 同 paragraph 类型 (sz=14 bullets) 不同页方向相反 (p13 要 loosen, p9 要 tighten)
+- **改动**: W33 基础上 +15 行 (`w:line="271"` → `w:line="278"` x11 in p13 + `w:line="264"` x4 in p9)
+- 详见: `design-iter-40/path-max-attack/STATUS.md` (iter-16)
+
+## 历史 W33（design-iter-41 path-kern-smallsz iter-11 — 小字号 spacing DOWN）
+
 - **LibreOffice 渲染评分**: `8.28 / 12.06`（mean / max）— 突破 W32 plateau，max -0.08
 - **手法**: W32 基础上对 sz=11 (35 sites, RED accent) + sz=12 (22 sites, Arial Black/Arial) 的 rPr w:spacing 从 5 收紧到 2 — 与 sz=14 的 spacing UP 完全反向
 - **要点**: 大字号 (sz=14, 7pt) 缺空, 小字号 (sz=11/12, 5.5-6pt) 过空, 方向相反
-- 详见: `design-iter-41/path-kern-smallsz/STATUS.md`
+- 已被 W34 替换
 
 ## 历史 W32（design-iter-36 多维 pgMar 扫描 + iter-37 设计修复 + iter-39 rPr 字距）
 

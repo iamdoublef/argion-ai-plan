@@ -1,6 +1,6 @@
 {
-  "candidate": "imt050-wevac-eu-cn.docx",
-  "target": "..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
+  "candidate": "iter-16\\output.docx",
+  "target": "..\\..\\..\\..\\output\\imt050-wevac-eu-cn.pdf",
   "pages": {
     "target": 15,
     "candidate": 15,
