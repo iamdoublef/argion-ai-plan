@@ -51,3 +51,15 @@
 
 - [ ] design-iter-30：调用官方 `/docx` skill 走另一路径
 - [ ] 验证 W27 在 MS Word 里替换文字的可编辑性（"通过替换文字实现新版本快速交付"）
+
+## 2026-05-17 进展
+
+### iter-29 path-codex（Word baseline 角度）
+- 全部 6 轮回归（LO +1.79~+1.95，max +7.20~+9.96）
+- Word COM gate 在 codex sandbox 无法跑（pywintypes COM session 错误）
+- 结论：w:hint=eastAsia + w:szCs + w:kern 反而让 LO 评分变差，需绕路。W27 default 保留为 fallback。
+
+### iter-30 path-docx-skill（官方 docx skill 重做）
+- 新约束：用 `C:/Users/iamdo/.claude/skills/docx/` 的 unpack/pack/validate 工作流
+- 新需求：docx 必须可参数化（文字替换 → 快速交付 IMT060/IMT070 等变体）
+- 进行中（后台 bqacq4kha）

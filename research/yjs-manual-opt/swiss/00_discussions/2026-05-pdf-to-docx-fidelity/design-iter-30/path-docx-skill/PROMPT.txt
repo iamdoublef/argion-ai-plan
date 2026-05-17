@@ -1,0 +1,42 @@
+You are Codex doing design-iter-30. Plateau confirmed at W27 (8.67/12.35) across 29 prior paths.
+
+NEW CONSTRAINT from boss: "调用官方 docx skill 来生成；可通过替换文字实现新版本快速交付".
+
+This means:
+1. Use the official Claude docx skill at `C:/Users/iamdo/.claude/skills/docx/` — its scripts/office/ directory contains unpack.py, pack.py, validate.py for OOXML manipulation.
+2. The resulting docx must be TEMPLATABLE — text strings must be findable + replaceable so new SKU variants (IMT060, IMT070, etc.) can be produced by text substitution alone.
+
+⚠️ Anti-cheat unchanged: wt_count≥300, no image hack, text_ratio≤1.20.
+
+NEW APPROACH (docx-skill native):
+1. Read C:/Users/iamdo/.claude/skills/docx/SKILL.md to understand the official workflow
+2. Generate the imt050 docx from SCRATCH following the skill's prescribed approach (CREATING docx from word/ XML templates, not modifying python-docx output)
+3. The skill emphasizes: unpack original sample → edit XML directly → repack → validate
+4. Reference docx samples in `C:/Users/iamdo/.claude/skills/docx/reference/`
+5. Validate via the skill's validate.py before scoring
+
+TARGET: IMT050 ice maker manual, A5 (148×210mm), 15 pages, Chinese.
+SOURCE OF TRUTH for content: design-iter-22/path-codex/build_b2_docx.py (W27 builder — extract its text content + structure plan, then rebuild via docx skill's templating workflow).
+SOURCE OF TRUTH for target visual: ../../output/imt050-wevac-eu-cn.pdf
+
+PROCESS:
+1. Read SKILL.md fully
+2. Find best matching reference docx (Chinese product manual or A5 booklet if exists)
+3. Unpack it
+4. Build a parametric template: extract all text into a dict, replace placeholders in XML
+5. Pack → validate → score
+6. Iterate: tweak XML for visual match
+7. Document the text-replacement workflow in TEMPLATE.md (which keys map to which text in the docx)
+
+WORKDIR: design-iter-30/path-docx-skill
+PYTHONUTF8=1
+Up to 6 iter. STATUS.md when done.
+
+Each iter:
+1. python build_template.py iter-N/output.docx --params iter-N/params.json
+2. python C:/Users/iamdo/.claude/skills/docx/scripts/office/validate.py iter-N/output.docx
+3. PYTHONUTF8=1 python ../../score_candidate.py iter-N/output.docx --target ../../../../output/imt050-wevac-eu-cn.pdf --baseline-pngs ../../baseline/target_png
+
+Accept iter if: LO visualdiff ≤ 12.35 max + 8.67 mean (W27 baseline) AND validation pass AND text params extracted.
+
+START NOW.
