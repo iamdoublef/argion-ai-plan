@@ -45,18 +45,15 @@
 [PASS] word_com:    SKIPPED
 ```
 
-## 三、CN round-trip 视觉差异（vs 原 W50 docx）
+## 三、CN round-trip 视觉差异（vs 原 W50 docx，**字体修复后**）
 
-15 页中 14 页 mean ≈ 0.06（LO 反走样级别噪声，无内容差异）。**仅 p14 偏差显著**：
+> 注：W50 source PDF 也已用同一 fontconfig（Liberation Sans fallback）重新渲染，比较公平。
 
-### 偏差 #1 — p14 保修页"威富可" → "Wevac"
-- **位置**：p14 章节标题正下方介绍段，原 W50 `感谢您购买 威富可 制冰机`，round-trip 显示 `感谢您购买 Wevac 制冰机`。30 处 brand 全部字面化为 `Wevac`。
-- **来源**：阶段 1 v2 母版 G1 审批通过的设计决策。理由：让 7 个语言（CN/EN/DE/IT/HK/TW/GB）共用一个母版，brand 字面值在 OOXML 内不进 placeholder。
-- **影响**：CN docx 的 30 处"威富可"将永久显示为"Wevac"。
-- **是否回滚**：⚠️ **请大 boss 确认**。如要回滚，需把 30 处 `Wevac` 改回 `{{brand_*}}` 占位 + 每个 lang.json 写 30 个 `brand_* = "Wevac"`（CN 写 `威富可`），增加翻译者 30 处机会出错。
-- **当前默认**：A 路线（保留字面化），事实基线 = round-trip 不是原 W50。
+15 页中 12 页 mean < 1.0，3 页轻微突出（p3=1.44 / p6=1.18 / p14=1.57），都是 brand `威富可`→`Wevac` 字面化的副作用（footer 每页都有 brand，少量内容页 brand 出现在主体）。**整体 mean 0.555**，在 LO 反走样噪声级别，无内容/布局差异。
 
-其他 14 页：均 mean < 0.08（视觉无可辨差异）。
+### 偏差 #1 — p14 保修页"威富可" → "Wevac"（保留 / G1 v2 已批准）
+
+设计决策不变（A 路线）。详见 §0 字体修复说明 + 阶段 1 v2 G1 review packet。
 
 ## 四、EN vs CN 视觉差异（per page，全部 15 页人工对照）
 
