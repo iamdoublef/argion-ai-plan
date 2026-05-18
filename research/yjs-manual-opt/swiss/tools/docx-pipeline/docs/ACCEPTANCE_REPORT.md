@@ -1,8 +1,18 @@
 # IMT050 docx 流水线 — CN + EN 验收报告
 
-> 跑日期：2026-05-18
+> 跑日期：2026-05-18（含 Linux 字体修复重渲染）
 > Skill：`.claude/skills/docx-pipeline/` v2
 > 工作目录：`research/yjs-manual-opt/swiss/tools/docx-pipeline/`
+
+## 0. 字体修复（2026-05-18 增补）
+
+**问题**：首版 EN 渲染丑（字形偏窄、笔画不匀）。根因：W50 母版 OOXML 写 `Arial` / `Arial Black`，Linux 上无 Arial，LO 默认 fallback 到 FreeSans 渲染出来不专业。
+
+**修复**：加 `setup_linux_fonts.sh`，配 fontconfig 别名 `Arial → Liberation Sans`（Arial 的 metrics-equivalent free 替代品）。**不改任何 docx OOXML**，仅影响 Linux 端预览渲染。Windows 客户用 MS Word 打开仍是真 Arial。
+
+**对比**：见 `_viz/en_before_after/page-*.png` BEFORE/AFTER 三联图。
+
+**SKILL.md 已加硬规则 #9**：Linux dev 工位首次跑流水线前必须执行 `bash setup_linux_fonts.sh`。
 
 ## 一、产物清单
 
