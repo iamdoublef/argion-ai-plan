@@ -25,7 +25,18 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-OFFICE_SCRIPTS = Path(r"C:/Users/iamdo/.claude/skills/docx/scripts/office")
+
+
+def _docx_skill_root() -> Path:
+    env = os.environ.get("DOCX_SKILL_ROOT")
+    if env:
+        return Path(env)
+    if os.name == "nt":
+        return Path(r"C:/Users/iamdo/.claude/skills/docx")
+    return Path.home() / ".claude" / "skills" / "docx"
+
+
+OFFICE_SCRIPTS = _docx_skill_root() / "scripts" / "office"
 PACK_PY = OFFICE_SCRIPTS / "pack.py"
 VALIDATE_PY = OFFICE_SCRIPTS / "validate.py"
 
@@ -33,14 +44,19 @@ VALIDATE_PY = OFFICE_SCRIPTS / "validate.py"
 PLACEHOLDER_RE = re.compile(r"\{\{([A-Za-z0-9_]+)\}\}")
 
 
+_ENTITY_RE = re.compile(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)")
+
+
 def xml_escape(s: str) -> str:
-    """Escape characters that need encoding inside <w:t>."""
-    # We must NOT double-escape entities that already exist (the source W50
-    # contains literal `&quot;` etc.). The placeholder is the ONLY thing being
-    # replaced; the strings/cn.json values come straight from the original
-    # w:t innerText (which still contains the original entities like
-    # `&#x201C;` / `&quot;` since extract_master.py reads the raw XML).
-    # So we leave them alone.
+    """Escape characters that need encoding inside <w:t>.
+
+    The placeholder is replaced with the lang value; existing entities in
+    cn.json (e.g. ``&#x201C;``) are preserved. We only escape:
+      - Raw ``&`` not part of a valid entity (turn into ``&amp;``)
+      - Raw ``<`` and ``>`` (turn into ``&lt;`` / ``&gt;``)
+    """
+    s = _ENTITY_RE.sub("&amp;", s)
+    s = s.replace("<", "&lt;").replace(">", "&gt;")
     return s
 
 

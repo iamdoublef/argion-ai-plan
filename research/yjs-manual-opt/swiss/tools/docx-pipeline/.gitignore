@@ -1,6 +1,9 @@
 # score_candidate.py 临时工作目录
 _score_tmp/
 
+# Visual diff intermediate output (PDFs/PNGs/diffs) — regenerable
+_viz/
+
 # Python
 __pycache__/
 *.pyc
