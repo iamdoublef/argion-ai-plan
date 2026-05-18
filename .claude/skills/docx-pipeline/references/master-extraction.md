@@ -35,27 +35,31 @@ W50 部分段落中英混排（型号 + 中文描述）。中英混排在 OOXML 
 
 ## Key 命名规范
 
-格式：`<area>_<subarea>_<sequence>`
+格式：`<area>[_<subarea>]_<sequence>`（v2 实地：`<area>_<seq>` 位置式即可，多数 area 不分 subarea）
 
-| Area | 含义 | 示例 |
-|------|------|------|
-| `cover` | 封面 | `cover_brand`, `cover_model`, `cover_tagline` |
-| `toc` | 目录 | `toc_chapter_1`, `toc_chapter_2` |
-| `safety` | 安全章节 | `safety_warning_1`, `safety_caution_3` |
-| `install` | 安装章节 | `install_step_1`, `install_diagram_label_a` |
-| `operate` | 操作章节 | `operate_button_start`, `operate_mode_normal` |
-| `clean` | 清洁保养 | `clean_step_1`, `clean_warning` |
-| `spec` | 规格表 | `spec_voltage_label`, `spec_dim_label` |
-| `troubleshoot` | 故障排查 | `troubleshoot_q1`, `troubleshoot_a1` |
-| `warranty` | 保修 | `warranty_terms`, `warranty_period` |
-| `footer` | 页脚 | `footer_copyright`, `footer_url` |
+| Area | 含义 | v2 实例（位置式 seq） |
+|------|------|---------------------|
+| `cover` | 封面 | `cover_1` ~ `cover_4` |
+| `toc` | 目录 | `toc_1` ~ `toc_12` |
+| `safety` | 安全（v2 三 subarea） | `safety_warning_*` (p3) / `safety_caution_*` (p4 前) / `safety_notice_*` (p4 后) |
+| `install` | 安装（v2 二 subarea） | `install_prep_*` (p5) / `install_transport_*` (p13) |
+| `operate` | 操作（v2 三 subarea） | `operate_structure_*` (p6) / `operate_function_*` (p7) / `operate_guide_*` (p9-p10) |
+| `clean` | 清洁保养 | `clean_1` ~ `clean_17` (p12) |
+| `spec` | 规格表 | `spec_1` ~ `spec_23` (p8) |
+| `troubleshoot` | 故障排查 | `troubleshoot_1` ~ `troubleshoot_40` (p11) |
+| `warranty` | 保修（v2 二 subarea） | `warranty_*` (p14) / `warranty_card_*` (p15) |
+| `footer` | 页脚 | `footer2_001` ~ `footer15_001`（每页一个，按页号）|
 
-**序号**：sequence 是文档内出现顺序，从 1 起。
+**v2 实际 304 keys 分布**：cover 4 / toc 12 / safety 43 / install 46 / operate 60 / spec 23 / troubleshoot 40 / clean 17 / warranty 45 / footer 14。
+
+**序号**：sequence 是该 area（或 area+subarea）内文档先后顺序，从 1 起。
 
 **禁用**：
 - 不要用中文 pinyin（如 `anquan_jinggao_1`）
 - 不要用纯位置（`p3_line5`），因为页码会变
 - 不要用纯数字（`text_1`），看不出语义
+
+> **brand `Wevac` / 型号 `IMT050` / 单位 `V/Hz/W/kg/mm/°C` 不进 placeholder**（v2 已字面化在母版 OOXML 内）。详见 `references/ooxml-map.md` "跨语言锁定 keys §A 字面化在母版"。
 
 ## 提取算法
 
@@ -95,28 +99,34 @@ def extract_master(w50_unpacked_dir):
 ### 1. `master_template.docx`
 W50 的占位符化版本。所有中文 run 的 `<w:t>` 被替换为 `{{key}}`。
 
-### 2. `strings/cn.md`
-```markdown
-# IMT050 中文翻译字典
+### 2. `strings/cn.json` + `strings/cn.md`
 
-> 总占位符数：347 个（来自 W50）
-> 来源：final/imt050-wevac-eu-cn.docx
-> 评分锚：7.21/10.13（round-trip 必须复现）
+cn.json 是事实 SOT（generator.py 读这个），cn.md 是给人看的对照表（手改任何一份后必须同步）：
+
+```markdown
+# IMT050 中文翻译字典 (v2)
+
+> 总占位符数：304（来自 W50 v2 母版）
+> 来源：swiss/output/imt050-wevac-eu-cn.docx → 阶段 1 v2 提取
+> Round-trip CN 评分：mean 5.59 / max 10.10（不再是 v1 的 7.21/10.13；brand 字面化导致结构性偏移）
 
 ## 封面
 | Key | 中文文本 | 位置 | 备注 |
 |-----|---------|------|------|
-| cover_brand | Wevac | p1 顶部 | 跨语言不变（**别替换**）|
-| cover_model | IMT050 | p1 中央 | 跨语言不变（**别替换**）|
-| cover_tagline_1 | 自动制冰机 | p1 副标 | |
-| cover_subtitle | 使用说明书 | p1 底部 | |
+| cover_1 | 制冰机 | p1 副标 | |
+| cover_2 | 说明书 | p1 标题 | |
+| cover_3 | 使用产品前请仔细阅读本说明书，并妥善保管。 | p1 提示 | |
+| cover_4 | 说明书中的产品、配件等插图均为示意图... | p1 免责 | |
 
-## 第 1 章 安全注意事项 (p3-p4)
+> brand `Wevac` 与型号 `IMT050` 已字面化在母版 OOXML 内，不在 cn.json 中。
+
+## 第 1 章 安全须知 (p3-p4)
 | Key | 中文文本 | 位置 | 备注 |
 |-----|---------|------|------|
-| safety_intro | 请仔细阅读本说明书并妥善保管以备参考 | p3 章首 | |
-| safety_warning_1 | 本产品仅供家庭使用 | p3 警告框 | |
-| safety_warning_2 | 安装前请关闭电源 | p3 警告框 | |
+| safety_warning_1 | 本机仅供家庭使用... | p3 WARNING 框 | |
+| safety_warning_2 | 安装前请关闭电源 | p3 WARNING 框 | |
+| safety_caution_1 | ... | p4 CAUTION 框 | |
+| safety_notice_1 | ... | p4 NOTICE 框 | v2 新增 subarea |
 ```
 
 ### 3. `docs/PLACEHOLDER_MAP.md`
@@ -147,23 +157,20 @@ W50 的占位符化版本。所有中文 run 的 `<w:t>` 被替换为 `{{key}}`�
 | safety_warning_1 | document.xml:1247 | 本产品仅供家庭使用 | sz=14 BLACK Microsoft YaHei |
 | ... | | | |
 
-## 跨语言不变 key 清单
-（这些 key 在所有 strings/{lang}.md 中保持原值）
-- cover_brand: Wevac
-- cover_model: IMT050
-- spec_unit_v: V
-- spec_unit_hz: Hz
-- spec_unit_w: W
+## 跨语言锁定 keys 清单
+（这些 key 在所有 strings/{lang}.json 中保持原 cn 值；详见 `ooxml-map.md` "跨语言锁定 keys"）
+- 自动识别：cn value 匹配纯数字 / URL / email / 电话 / 英文 box-title 的 keys（由 `tools/check_invariants.py` 输出 `docs/stage2-invariant-keys.json`）
+- 字面值不进 cn.json：brand `Wevac` / 型号 `IMT050` / 单位 `V/Hz/W/kg/mm/°C` 已母版字面化
 ```
 
 ## 阶段 1 验收清单
 
 - [ ] master_template.docx 通过 validate
-- [ ] master_template.docx 通过 MS Word COM
-- [ ] strings/cn.md 占位符数 = master_template.docx 中 `{{*}}` 数
+- [ ] master_template.docx 通过 MS Word COM（Linux dev 可用 `--skip-word-com`，但 G1 packet 必须含一次 Windows 验证）
+- [ ] strings/cn.json 占位符数 = master_template.docx 中 `{{*}}` 数（v2 = 304）
 - [ ] PLACEHOLDER_MAP.md 抽样 30 处人工 review 通过
-- [ ] generator.py --lang cn → 评分 = W50 (7.21/10.13 零误差) ← **硬指标**
-- [ ] 跨语言不变 key 清单已列出
+- [ ] generator.py --lang cn → round-trip CN docx 评分 mean ≤ 12 / max ≤ 12（v2 baseline 5.59/10.10）
+- [ ] 跨语言锁定 keys 已自动识别并写入 `docs/stage2-invariant-keys.json`
 - [ ] 大 boss 人工 review 通过
 
-通过才进阶段 2。**round-trip ≠ W50 就退回重做，绝不带病前进**。
+通过才进阶段 2。**round-trip 越界（mean>12 或 max>12）就退回重做，绝不带病前进**。

@@ -43,7 +43,7 @@ T1 自动可查；T2/T3 需要人工抽检 5-10 条（G2 阶段已做 + G3 再�
 |------|------|
 | 正文中 `V/Hz/W/kg/mm/°C` 与规格表一致 | ERROR if 冲突 |
 | 不混用单位体系（公制/英制） | ERROR if 同变体混用 |
-| `spec_unit_*` key 跨语言不变 | ERROR if 任一 lang 变了 |
+| 跨语言锁定 keys（spec 数字 / URL / email / 电话 / box-title） = cn 值 | ERROR if 任一 lang 偏移 |
 
 ### QA-RULES §8.2 — anti-cheat 三道闸
 
@@ -58,7 +58,9 @@ T1 自动可查；T2/T3 需要人工抽检 5-10 条（G2 阶段已做 + G3 再�
 | 检查 | 工具 | 阈值 |
 |------|------|------|
 | `validate.py`（官方 docx skill） | 必须通过 | ERROR |
-| MS Word COM 打开 | `compare_word.py` 或 `docx2pdf.convert()` 不报错 | ERROR（W28 教训）|
+| MS Word COM 打开 | `anti_cheat.py` 内 `check_word_com()`（基于 docx2pdf） | ERROR（W28 教训）|
+
+**Linux/Mac dev 环境**：允许 `anti_cheat.py --skip-word-com` 跳过；但 G3 验收前必须在 Windows 工位补一次完整跑（见 SKILL §二硬规则 2）。
 
 ### 页数
 
@@ -70,26 +72,28 @@ T1 自动可查；T2/T3 需要人工抽检 5-10 条（G2 阶段已做 + G3 再�
 
 | 检查 | 工具 | 阈值 |
 |------|------|------|
-| `score_candidate.py` | 评分 vs W50 PDF target | = 7.21/10.13 (±0.01) |
+| `score_candidate.py` round-trip vs W50 PDF target | mean ≤ 12 / max ≤ 12（v2 baseline 5.59/10.10） | ERROR if 越界 |
 
 ## 二、Fix 决策表
 
 发现某条 ERROR 时，**只允许做表中"fix"列定义的动作**。**不允许** sweep / 探索 lever / 改多维度。
 
-| ERROR | 定位 | Fix（单维度，1 处）| Anti-pattern |
+> **一轮粒度（SKILL §二硬规则 5）**：1 轮 = 1 类 ERROR。同一类 ERROR（如 5 个不同 key 的 `{{*}}` 残留）允许在 1 轮内一并补齐；不同类 ERROR 算不同轮。**禁止** 把 OOXML 微调和 strings 缺译揉在一轮。
+
+| ERROR | 定位 | Fix（同类 ERROR 一并修，仍算 1 轮）| Anti-pattern |
 |-------|------|-------------------|--------------|
-| `{{*}}` 残留 | 哪个 key | 补 `strings/{lang}.md` 缺失的 key | ❌ 改 master_template / 改 generator 逻辑 |
-| CJK 残留 en/de/it | 哪个 key | 补译该 key | ❌ 改 OOXML |
-| `undefined`/`null`/`TODO` | 哪段 | 修 generator 模板替换逻辑 或 补 strings | ❌ 加 catch-all |
-| 单位不一致 | 哪个 spec_unit_* key | 把该 key 重置为 CN 标准值 | ❌ 让 lang 各自定义 |
-| `wt_count < 300` | 比 W50 缺哪些 run | 检查最近 patch 是否合并 run / 删 run → 回滚 | ❌ 加假 `<w:t>` 充数 |
+| `{{*}}` 残留 | 哪些 key | 在 `strings/{lang}.json` 一并补齐缺失的 keys | ❌ 改 master_template / 改 generator 逻辑 |
+| CJK 残留 en/de/it | 哪些 key | 一并补译；同 1 轮处理所有 CJK 残留 key | ❌ 改 OOXML |
+| `undefined`/`null`/`TODO` | 哪些段 | 一并修 generator 模板替换逻辑 或 补 strings | ❌ 加 catch-all |
+| 跨语言锁定 keys 偏移 | 哪些 key | 一并设回 cn 值（参考 `ooxml-map.md` "跨语言锁定 keys"） | ❌ 让 lang 各自定义 |
+| `wt_count < 300` | 比 W50 缺哪些 run | 检查最近 patch 是否合并/删 run → 回滚 | ❌ 加假 `<w:t>` 充数 |
 | `image_hack == true` | 哪页变图 | 立即回滚最近 patch | ❌ "重做更细致的图片替换" |
 | `text_ratio < 0.95` | 哪段文本丢失 | 补 strings 或回滚漏 key 的 patch | ❌ 加 dummy 文本 |
 | `text_ratio > 1.20` | 哪段被重复替换 | 修 generator 幂等性 | ❌ 改 anti-cheat 阈值 |
 | validate 失败 | 错误行号 | 修对应 XML 语法（METHODOLOGY §3.1） | ❌ 跳过 validate |
-| Word COM 打不开 | 最近 patch | 回滚最近 patch | ❌ 切到 LO 替代 |
+| Word COM 打不开 | 最近 patch | 回滚最近 patch；Linux dev 阶段允许 `--skip-word-com` 但 G3 前补 Windows 验证 | ❌ 切到 LO 替代当 Word COM |
 | 页数 ≠ 15 | 哪段多/少 | 多 1 页：检查最近 patch 是否拉长某段；少 1 页：检查是否合段了 | ❌ 改 sectPr 强加分页 |
-| score（CN）≠ W50 | 哪页 diff 高 | 阶段 1 占位符提取错了，回阶段 1 retry | ❌ 在阶段 3 修 OOXML 让 CN 评分回来 |
+| score（CN）越界 (mean>12 或 max>12) | 哪页 diff 高 | 阶段 1 占位符提取错了，回阶段 1 retry | ❌ 在阶段 3 修 OOXML 让 CN 评分回来 |
 
 ## 三、Patches 日志格式（patches/{lang}.md）
 

@@ -136,24 +136,67 @@ OOXML 实现：黑底白字方块编号 + `w:tab` 缩进文本。
 | C14/C15 留白失衡 | LO PNG 人工抽样 | |
 | C17 rowspan 一致 | 表格 `w:vMerge` 校验 | W50 已对齐 |
 | C18 批准版不漂移 | 7 语言 docx 视觉与 W50 CN 对齐 | **核心** |
-| C19 单位一致 | spec_unit_* key 跨语言锁定 | strings/{lang}.md 强制 |
+| C19 单位一致 | 跨语言锁定 keys 强制 = cn 值（见本文 "跨语言锁定 keys" 段） | strings/{lang}.json 由 `tools/check_invariants.py` 校验 |
 
-## 跨语言不变 key 速查
+## 跨语言锁定 keys（v2 实地版本）
 
-下述 key 在所有 `strings/{lang}.md` 中**保持相同值**（W50 中文母版定义的就是事实标准）：
+> **重要变更（v2 阶段 1）**：brand `威富可` / `Wevac` 已**字面化在母版 OOXML 内**，不再是 placeholder。型号 `IMT050`、单位 `V/Hz/W/kg/mm/°C` 大多本来就是字面值，不在 cn.json 中。
+>
+> 因此 `cover_brand` / `cover_model` / `spec_unit_*` 这类**虚构 key 不存在**于 v2 cn.json。真正需要锁定的是 **cn.json 中已存在的、跨语言必须等于 cn 值的 key**。
 
-| Key pattern | 值 | 原因 |
-|------------|---|------|
-| `cover_brand` | Wevac / Argion / Vesta（按品牌变体） | 品牌名 |
-| `cover_model` | IMT050 | 型号 |
-| `spec_unit_v` | V | 电压单位 |
-| `spec_unit_hz` | Hz | 频率 |
-| `spec_unit_w` | W | 功率 |
-| `spec_unit_kg` | kg | 重量 |
-| `spec_unit_mm` | mm | 尺寸 |
-| `spec_unit_celsius` | °C | 温度 |
-| 警示标题 box-title key | WARNING / CAUTION / NOTICE | 跨语言英文不变 |
-| 二维码 URL key | 同 CN | URL 不翻 |
+### A. 字面化在母版（无 placeholder，自动跨语言一致）
+
+下列字面值在 W50 母版 OOXML 中直接固化，所有语言自动一致：
+
+| 字面值 | 出现位置 | 备注 |
+|--------|---------|------|
+| `Wevac` | document.xml + footer*.xml 共 30 处 | v2 阶段 1 改动 1 强制字面化 |
+| `IMT050` | 封面 + footer + spec 表 | 型号，原 W50 已字面 |
+| `V` / `Hz` / `W` / `kg` / `mm` / `°C` / `Hz/V` | spec 表单元、技术参数行 | 单位字面 |
+
+**生产规则**：阶段 2 翻译对齐时，这些字面值不应出现在任何 `strings/{lang}.json` 的 value 中（否则属于"占位符提取失误"，回阶段 1 retry）。
+
+### B. cn.json 内必须跨语言锁定的 keys（强制 = cn 值）
+
+下列 keys 在 `strings/{en,de,it,gb,hk,tw}.json` 中必须**等于 cn.json 的 value**。`tools/check_invariants.py` 在阶段 2/3 自动校验，违反 = ERROR。
+
+| key 模式 | cn 值（示例） | 锁定理由 |
+|---------|-------------|---------|
+| `spec_2` | "220-240" | 电压数字范围（C19 单位口径） |
+| `spec_3` | "50/60" | 频率数字 |
+| `spec_4` | "150" | 功率数字 |
+| `spec_5` | "26" | 净重数字 |
+| `spec_6` | "12" / "24" | 制冰量数字 |
+| `spec_7..23` 中**纯数字行** | 数字 | C19 |
+| `cover_*` 中含 `IMT050` 字符串的（混排已拆 `<w:t>`，纯数字若有） | 数字 | 型号附属 |
+| `troubleshoot_*` 中故障代码 (E1/E2/E3) | 代码 | 维修一致性 |
+| `warranty_*_url` 任何 URL | URL | 不翻译 |
+| `warranty_*_email` 邮箱 | 邮箱 | 不翻译 |
+| `warranty_*_phone` 电话 | 电话 | 不翻译 |
+| `safety_*_box_title` 若 cn 是 "WARNING"/"CAUTION"/"NOTICE"（英文） | 英文 box-title | 跨语言 box-title 用英文 |
+
+> **运行时**：`tools/check_invariants.py` 读 `cn.json` 与 `{lang}.json` 比对，列出违反 keys → 进 fix 循环（一类 ERROR）。
+>
+> **现状**：v2 阶段 1 完成时 cn.json 304 keys 用的是 `<area>_<seq>` 位置式命名（如 `spec_1..spec_23`、`troubleshoot_1..40`）。具体哪些 seq 是数字行 / URL / 邮箱 / 电话，需要在阶段 2 启动时根据 cn.json 实际 value **生成锁定 keys 清单**（不是预设）。`tools/check_invariants.py` 的实现思路：扫描 cn.json value，匹配纯数字 / URL 正则 / 邮箱正则 / 电话正则 → 自动入锁定列表。
+
+### C. 锁定 keys 自动检测正则（参考实现）
+
+```python
+import re, json
+def is_invariant(value: str) -> bool:
+    if not value or not value.strip(): return False
+    # 纯数字 / 数字范围 / 频率
+    if re.fullmatch(r'[\d.\-/x×]+', value.strip()): return True
+    # URL
+    if re.search(r'https?://', value): return True
+    # email
+    if re.search(r'[\w.\-]+@[\w.\-]+', value): return True
+    # phone (含国家码或长数字)
+    if re.fullmatch(r'[\+\d\s\-()]{7,}', value.strip()): return True
+    # 英文 box-title
+    if value.strip() in {'WARNING', 'CAUTION', 'NOTICE', 'DANGER'}: return True
+    return False
+```
 
 ## 母版动 vs 不动决策树
 
@@ -166,5 +209,5 @@ OOXML 实现：黑底白字方块编号 + `w:tab` 缩进文本。
 │   └── 是总体劣化（mean diff 偏高 / 视觉感"不太对"）？
 │       └── 不动 OOXML。回 master 阶段（研究模式），不在本 skill
 └── 不在 fix 流程中？
-    └── 不动 OOXML。母版 = W50，锁定不重建
+    └── 不动 OOXML。母版 = W50 v2，锁定不重建
 ```

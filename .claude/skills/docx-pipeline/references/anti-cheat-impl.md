@@ -124,8 +124,28 @@ if __name__ == '__main__':
     main()
 ```
 
-## 部署位置
-`swiss/tools/docx-pipeline/anti_cheat.py`
+## 跨平台路径（v2 调整）
+
+`anti_cheat.py` 内不再硬编码 Windows 路径。官方 docx skill 路径通过环境变量 `DOCX_SKILL_ROOT` 解析，参考实现：
+
+```python
+import os, platform, pathlib
+def docx_skill_root() -> pathlib.Path:
+    env = os.environ.get('DOCX_SKILL_ROOT')
+    if env:
+        return pathlib.Path(env)
+    if platform.system() == 'Windows':
+        return pathlib.Path(r'C:\Users\iamdo\.claude\skills\docx')
+    return pathlib.Path.home() / '.claude' / 'skills' / 'docx'
+```
+
+`generator.py` / `extract_master.py` 同样用此函数解析 unpack/pack/validate 脚本路径。
+
+## image_hack 阈值统一
+
+文档与代码一致：**`media_actual > media_baseline + 1`** = image_hack（即 baseline + 2 起触发）。SKILL.md 旧文 "+ 2" 表述指的是同一阈值（≥ baseline + 2 = "比 baseline 多 ≥ 2"），代码侧 `media_actual > media_baseline + 1` 等价。
+
+
 
 ## 跑的时机
 - 每次 `generator.py` 跑完
