@@ -37,7 +37,7 @@ description: 亚俊氏 IMT050 多语言 docx 说明书流水线 — W50 母版 +
 6. **称呼**：项目 owner 叫"管理者"，提问者叫"大 boss"。**禁止**"老板""儿子""家属"。生成的文档、注释、commit 全部遵守。
 7. **commit msg 中文**。
 8. **流水线工作根目录**：所有阶段 1-4 的产物落在 `research/yjs-manual-opt/swiss/tools/docx-pipeline/` 下（不是 `template-system/`，那是 v1 弃用代码）。
-9. **Linux 渲染必须配 Arial 字体替换**：W50 母版 OOXML 写的是 `Arial` / `Arial Black`，Windows 自动拿真 Arial，**Linux 默认 fallback 到 FreeSans 字形偏窄笔画不匀（视觉上 EN 会变丑）**。Linux dev 工位首次跑流水线前**必须**执行 `bash setup_linux_fonts.sh`，配 fontconfig 别名 `Arial → Liberation Sans`（metrics-equivalent，渲染清晰）。不改任何 docx OOXML，仅影响 Linux 端 LO/PDF 预览。
+9. **Linux 渲染必须配 Calibri 字体替换**：母版 OOXML 写的是 `Calibri`（正文+标题），Windows 自动拿真 Calibri，**Linux 默认 fallback 到 DejaVu Sans 度量不一致会排版偏移**。Linux dev 工位首次跑流水线前**必须**执行 `bash setup_linux_fonts.sh`，配 fontconfig 别名 `Calibri → Carlito`（Google 出品的 metrics-equivalent 开源替代）。不改任何 docx OOXML，仅影响 Linux 端 LO/PDF 预览。
 
 ## 三、流水线 4 阶段总览
 

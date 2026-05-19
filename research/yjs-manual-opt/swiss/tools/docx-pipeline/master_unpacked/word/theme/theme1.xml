@@ -83,8 +83,8 @@
         <a:font script="Hang" typeface="맑은 고딕"/>
         <a:font script="Hans" typeface="宋体"/>
         <a:font script="Hant" typeface="新細明體"/>
-        <a:font script="Arab" typeface="Arial"/>
-        <a:font script="Hebr" typeface="Arial"/>
+        <a:font script="Arab" typeface="Calibri"/>
+        <a:font script="Hebr" typeface="Calibri"/>
         <a:font script="Thai" typeface="Cordia New"/>
         <a:font script="Ethi" typeface="Nyala"/>
         <a:font script="Beng" typeface="Vrinda"/>
@@ -106,7 +106,7 @@
         <a:font script="Laoo" typeface="DokChampa"/>
         <a:font script="Sinh" typeface="Iskoola Pota"/>
         <a:font script="Mong" typeface="Mongolian Baiti"/>
-        <a:font script="Viet" typeface="Arial"/>
+        <a:font script="Viet" typeface="Calibri"/>
         <a:font script="Uigh" typeface="Microsoft Uighur"/>
         <a:font script="Geor" typeface="Sylfaen"/>
       </a:minorFont>

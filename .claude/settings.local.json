@@ -31,5 +31,9 @@
       "WebFetch(domain:visme.co)"
     ]
   },
-  "prefersReducedMotion": false
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "prefersReducedMotion": false,
+  "enableAllProjectMcpServers": true
 }

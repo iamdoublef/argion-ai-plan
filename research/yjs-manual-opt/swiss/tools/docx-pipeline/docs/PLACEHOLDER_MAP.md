@@ -93,36 +93,36 @@ ASCII 部分作为字面 `<w:t xml:space="preserve">…</w:t>`，CJK 部分作�
 
 | # | Key | 中文文本 | OOXML 位置 | run rPr |
 |---|-----|----------|-----------|---------|
-| 1 | `cover_1` | 制冰机 | `document.xml:94` | sz=36 font=Arial Black color=1A1A1A bold |
+| 1 | `cover_1` | 制冰机 | `document.xml:94` | sz=36 font=Calibri bold color=1A1A1A bold |
 | 2 | `toc_1` | 说明书 | `document.xml:204` | sz=10 font=Courier New color=F5F5F5 |
-| 3 | `safety_warning_1` | 安全须知 | `document.xml:660` | sz=22 font=Arial Black color=000000 bold |
-| 4 | `safety_warning_15` | 禁止在手脚潮湿或未穿鞋的情况下触摸产品电源部件。 | `document.xml:1079` | sz=13 font=Arial color=000000 |
-| 5 | `safety_caution_2` | 注意  | `document.xml:1521` | sz=12 font=Arial Black color=000000 bold |
-| 6 | `install_prep_1` | 产品及使用提示 | `document.xml:1888` | sz=22 font=Arial Black color=000000 bold |
-| 7 | `install_prep_16` | 适用水源：纯净饮用水、 | `document.xml:2132` | sz=14 font=Arial color=000000 |
-| 8 | `install_transport_6` | 运输后需静置  | `document.xml:8544` | sz=14 font=Arial color=000000 |
-| 9 | `operate_structure_1` | 产品结构 | `document.xml:2361` | sz=22 font=Arial Black color=000000 bold |
-| 10 | `operate_structure_11` | 排水孔 | `document.xml:3016` | sz=13 font=Arial color=1A1A1A |
-| 11 | `operate_function_9` | 清洁 | `document.xml:3618` | sz=13 font=Arial color=1A1A1A |
-| 12 | `operate_guide_3` | 务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与墙或物品之间距离必须  | `document.xml:5411` | sz=14 font=Arial color=000000 |
-| 13 | `operate_guide_13` |  按键，按键显示白灯，产品已处于开机状态。 | `document.xml:5527` | sz=14 font=Arial color=000000 |
-| 14 | `operate_guide_23` |    选择完尺寸后，产品自动开始制作子弹冰。 | `document.xml:6195` | sz=14 font=Arial color=000000 |
-| 15 | `spec_1` | 技术参数 | `document.xml:3890` | sz=22 font=Arial Black color=000000 bold |
-| 16 | `spec_8` | 尺寸（宽 | `document.xml:4333` | sz=13 font=Arial color=1A1A1A |
-| 17 | `spec_15` | 冰块  | `document.xml:4641` | sz=13 font=Arial color=1A1A1A |
-| 18 | `troubleshoot_1` | 故障排除 | `document.xml:6600` | sz=22 font=Arial Black color=000000 bold |
-| 19 | `troubleshoot_14` | 给水箱加水至水位线。 | `document.xml:7070` | sz=13 font=Arial color=1A1A1A |
-| 20 | `troubleshoot_27` | 次冰块偏小 | `document.xml:7450` | sz=13 font=Arial color=1A1A1A |
-| 21 | `clean_1` | 维护保养 | `document.xml:7901` | sz=22 font=Arial Black color=000000 bold |
-| 22 | `clean_9` |    将产品底部的排水孔塞松脱，让内腔的水排干。 | `document.xml:8087` | sz=14 font=Arial color=000000 |
-| 23 | `warranty_1` | 品牌与保修信息 | `document.xml:8933` | sz=22 font=Arial Black color=000000 bold |
-| 24 | `warranty_12` | 网址 | `document.xml:9250` | sz=13 font=Arial color=1A1A1A |
-| 25 | `warranty_23` | 保修信息 | `document.xml:9721` | sz=15 font=Arial Black color=000000 bold |
-| 26 | `warranty_card_2` | 保修卡 | `document.xml:9938` | sz=15 font=Arial Black color=000000 bold |
-| 27 | `footer_1` | 说明书 | `footer2.xml:57` | sz=10 font=Arial color=E8E8E8 |
-| 28 | `footer_4` | 说明书 | `footer5.xml:57` | sz=10 font=Arial color=E8E8E8 |
-| 29 | `footer_7` | 说明书 | `footer8.xml:57` | sz=10 font=Arial color=E8E8E8 |
-| 30 | `footer_10` | 说明书 | `footer11.xml:57` | sz=10 font=Arial color=E8E8E8 |
+| 3 | `safety_warning_1` | 安全须知 | `document.xml:660` | sz=22 font=Calibri bold color=000000 bold |
+| 4 | `safety_warning_15` | 禁止在手脚潮湿或未穿鞋的情况下触摸产品电源部件。 | `document.xml:1079` | sz=13 font=Calibri color=000000 |
+| 5 | `safety_caution_2` | 注意  | `document.xml:1521` | sz=12 font=Calibri bold color=000000 bold |
+| 6 | `install_prep_1` | 产品及使用提示 | `document.xml:1888` | sz=22 font=Calibri bold color=000000 bold |
+| 7 | `install_prep_16` | 适用水源：纯净饮用水、 | `document.xml:2132` | sz=14 font=Calibri color=000000 |
+| 8 | `install_transport_6` | 运输后需静置  | `document.xml:8544` | sz=14 font=Calibri color=000000 |
+| 9 | `operate_structure_1` | 产品结构 | `document.xml:2361` | sz=22 font=Calibri bold color=000000 bold |
+| 10 | `operate_structure_11` | 排水孔 | `document.xml:3016` | sz=13 font=Calibri color=1A1A1A |
+| 11 | `operate_function_9` | 清洁 | `document.xml:3618` | sz=13 font=Calibri color=1A1A1A |
+| 12 | `operate_guide_3` | 务必将产品放置在平整稳固的平面，且产品背部和右侧散热孔处不能放置任何东西，以免阻挡散热。产品与墙或物品之间距离必须  | `document.xml:5411` | sz=14 font=Calibri color=000000 |
+| 13 | `operate_guide_13` |  按键，按键显示白灯，产品已处于开机状态。 | `document.xml:5527` | sz=14 font=Calibri color=000000 |
+| 14 | `operate_guide_23` |    选择完尺寸后，产品自动开始制作子弹冰。 | `document.xml:6195` | sz=14 font=Calibri color=000000 |
+| 15 | `spec_1` | 技术参数 | `document.xml:3890` | sz=22 font=Calibri bold color=000000 bold |
+| 16 | `spec_8` | 尺寸（宽 | `document.xml:4333` | sz=13 font=Calibri color=1A1A1A |
+| 17 | `spec_15` | 冰块  | `document.xml:4641` | sz=13 font=Calibri color=1A1A1A |
+| 18 | `troubleshoot_1` | 故障排除 | `document.xml:6600` | sz=22 font=Calibri bold color=000000 bold |
+| 19 | `troubleshoot_14` | 给水箱加水至水位线。 | `document.xml:7070` | sz=13 font=Calibri color=1A1A1A |
+| 20 | `troubleshoot_27` | 次冰块偏小 | `document.xml:7450` | sz=13 font=Calibri color=1A1A1A |
+| 21 | `clean_1` | 维护保养 | `document.xml:7901` | sz=22 font=Calibri bold color=000000 bold |
+| 22 | `clean_9` |    将产品底部的排水孔塞松脱，让内腔的水排干。 | `document.xml:8087` | sz=14 font=Calibri color=000000 |
+| 23 | `warranty_1` | 品牌与保修信息 | `document.xml:8933` | sz=22 font=Calibri bold color=000000 bold |
+| 24 | `warranty_12` | 网址 | `document.xml:9250` | sz=13 font=Calibri color=1A1A1A |
+| 25 | `warranty_23` | 保修信息 | `document.xml:9721` | sz=15 font=Calibri bold color=000000 bold |
+| 26 | `warranty_card_2` | 保修卡 | `document.xml:9938` | sz=15 font=Calibri bold color=000000 bold |
+| 27 | `footer_1` | 说明书 | `footer2.xml:57` | sz=10 font=Calibri color=E8E8E8 |
+| 28 | `footer_4` | 说明书 | `footer5.xml:57` | sz=10 font=Calibri color=E8E8E8 |
+| 29 | `footer_7` | 说明书 | `footer8.xml:57` | sz=10 font=Calibri color=E8E8E8 |
+| 30 | `footer_10` | 说明书 | `footer11.xml:57` | sz=10 font=Calibri color=E8E8E8 |
 
 ## E. 跨语言不变 Key 清单
 

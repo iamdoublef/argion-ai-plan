@@ -13,7 +13,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="1800"/>
         </w:tabs>
-        <w:ind w:left="1800" w:hanging="360"/>
+        <w:ind w:left="1800" w:hanging="480"/>
       </w:pPr>
     </w:lvl>
   </w:abstractNum>
@@ -30,7 +30,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="1440"/>
         </w:tabs>
-        <w:ind w:left="1440" w:hanging="360"/>
+        <w:ind w:left="1440" w:hanging="480"/>
       </w:pPr>
     </w:lvl>
   </w:abstractNum>
@@ -48,7 +48,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="1080"/>
         </w:tabs>
-        <w:ind w:left="1080" w:hanging="360"/>
+        <w:ind w:left="1080" w:hanging="480"/>
       </w:pPr>
     </w:lvl>
   </w:abstractNum>
@@ -66,7 +66,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="720"/>
         </w:tabs>
-        <w:ind w:left="720" w:hanging="360"/>
+        <w:ind w:left="720" w:hanging="480"/>
       </w:pPr>
     </w:lvl>
   </w:abstractNum>
@@ -83,7 +83,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="1440"/>
         </w:tabs>
-        <w:ind w:left="1440" w:hanging="360"/>
+        <w:ind w:left="1440" w:hanging="480"/>
       </w:pPr>
       <w:rPr>
         <w:rFonts w:ascii="Symbol" w:hAnsi="Symbol" w:hint="default"/>
@@ -104,7 +104,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="1080"/>
         </w:tabs>
-        <w:ind w:left="1080" w:hanging="360"/>
+        <w:ind w:left="1080" w:hanging="480"/>
       </w:pPr>
       <w:rPr>
         <w:rFonts w:ascii="Symbol" w:hAnsi="Symbol" w:hint="default"/>
@@ -125,7 +125,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="720"/>
         </w:tabs>
-        <w:ind w:left="720" w:hanging="360"/>
+        <w:ind w:left="720" w:hanging="480"/>
       </w:pPr>
       <w:rPr>
         <w:rFonts w:ascii="Symbol" w:hAnsi="Symbol" w:hint="default"/>
@@ -146,7 +146,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="360"/>
         </w:tabs>
-        <w:ind w:left="360" w:hanging="360"/>
+        <w:ind w:left="360" w:hanging="480"/>
       </w:pPr>
     </w:lvl>
   </w:abstractNum>
@@ -164,7 +164,7 @@
         <w:tabs>
           <w:tab w:val="num" w:pos="360"/>
         </w:tabs>
-        <w:ind w:left="360" w:hanging="360"/>
+        <w:ind w:left="360" w:hanging="480"/>
       </w:pPr>
       <w:rPr>
         <w:rFonts w:ascii="Symbol" w:hAnsi="Symbol" w:hint="default"/>
